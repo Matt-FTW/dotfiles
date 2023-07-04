@@ -1,0 +1,45 @@
+#!/usr/bin/bash
+
+# variables
+config=$HOME/.config/hypr
+scripts=$config/scripts
+
+# Notification Daemon
+swaync &
+
+# Bar
+waybar &
+
+# OSD Window
+swayosd &
+
+# Automounter for removable media
+udiskie &
+
+# Wallpaper
+$scripts/wallpaper &
+
+# Idle daemon to screen lock
+/home/matt/.config/sway/idle.sh &
+
+# Clipboard
+wl-clip-persist --clipboard regular &
+wl-paste --watch cliphist store &
+
+# Gnome polkit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# umm is this unnecessary?
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+
+# Launch autostart apps
+dex -a -s ~/.config/autostart/ &                           # Easyeffects and thunderbird
+/docs/Documentos/Scripts-Presets/System/openWebServer.sh & # Miniserver for serving a startpage
+# Launch tui monitors for cpu and gpu
+kitty --class btop-kitty btop &
+kitty --class nvtop-kitty nvtop &
+
+# Other
+xrdb -merge ~/.Xresources
+$scripts/launch_portals &
