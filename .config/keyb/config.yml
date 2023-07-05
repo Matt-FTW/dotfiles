@@ -1,0 +1,43 @@
+settings:
+  keyb_path: /home/matt/.config/keyb/default.yml
+  debug: false
+  reverse: false
+  mouse: true
+  search_mode: false
+  sort_keys: true
+  title: ""
+  prompt: "> "
+  prompt_location: top
+  placeholder: ""
+  prefix_sep: ;
+  sep_width: 4
+  margin: 0
+  padding: 1
+  border: hidden
+color:
+  prompt: ""
+  cursor_fg: ""
+  cursor_bg: "#626880"
+  filter_fg: "#ef9f76"
+  filter_bg: ""
+  counter_fg: "#8caaee"
+  counter_bg: ""
+  placeholder_fg: "#8caaee"
+  placeholder_bg: ""
+  border_color: ""
+keys:
+  quit: ctrl+c
+  up: k, up
+  down: j, down
+  half_up: ctrl+u
+  half_down: ctrl+d
+  full_up: ctrl+up
+  full_bottom: ctrl+down
+  first_line: g
+  last_line: G
+  top: ctrl+b
+  middle: M
+  bottom: ctrl+f
+  search: /
+  clear_search: q
+  normal: enter

@@ -1,0 +1,323 @@
+- name: WM Apps/Widgets
+  keybinds:
+  - name: Web Browser (Librewolf)
+    key: WIN + .
+  - name: File Manager (Thunar)
+    key: WIN + 0 Numpad
+  - name: Text Editor (VSCodium)
+    key: WIN + BackSpace
+  - name: Mail Client (Thunderbird)
+    key: WIN + 1 Numpad
+  - name: Notes Application (Notion)
+    key: WIN + 2 Numpad
+  - name: Office Suite (LibreOffice)
+    key: WIN + 3 Numpad
+  - name: Video Recorder (OBS)
+    key: WIN + 4 Numpad
+  - name: Sound Control Panel (Pavucontrol)
+    key: WIN + 5 Numpad
+  - name: Chat App (Discord)
+    key: WIN + 7 Numpad
+  - name: Games Store/Launcher (Steam)
+    key: WIN + 8 Numpad
+  - name: Games Store/Launcher (Heroic)
+    key: WIN + 9 Numpad
+  - name: Music App (Spotify)
+    key: WIN + º
+  - name: Application Launcher (Rofi)
+    key: WIN + TAB
+  - name: Client Switcher (Rofi)
+    key: ALT + TAB
+  - name: Power Menu (Awesome Widget)
+    key: WIN + ESC
+  - name: Screenshot Program (Rofi)
+    key: ImpaPant
+
+
+- name: WM Layouts
+  keybinds:
+  - name: Floating
+    key: Control + WIN + 0 Numpad
+  - name: Magnifier
+    key: Control + WIN + 5 Numpad
+  - name: Tiling Right
+    key: Control + WIN + 6 Numpad
+  - name: Tiling Left
+    key: Control + WIN + 4 Numpad
+  - name: Tiling Top
+    key: Control + WIN + 8 Numpad
+  - name: Tiling Bottom
+    key: Control + WIN + 2 Numpad
+
+
+- name: WM Windows/Tags
+  keybinds:
+  - name: Right Tag
+    key: WIN + Right Arrow
+  - name: Left Tag
+    key: WIN + Left Arrow
+  - name: Increase Right Width
+    key: WIN + /
+  - name: Increase Left Width
+    key: WIN + *
+  - name: Increase Number Of Columns
+    key: WIN + +
+  - name: Decrease Number Of Columns
+    key: WIN + -
+  - name: Decrease Number Of Columns
+    key: WIN + -
+  - name: Move Window To X Tag
+    key: WIN + 1/2/3/4
+  - name: Fullscreen Window
+    key: WIN + f
+  - name: Maximize Window
+    key: WIN + m
+  - name: Minimize Window
+    key: WIN + n
+  - name: Toggle Floating Window
+    key: WIN + a
+  - name: Close Window
+    key: Control + q
+
+
+- name: WM Misc.
+  keybinds:
+  - name: Pause/Play
+    key: WIN + F7 | WIN + Left-Big Mouse Button
+  - name: Mute
+    key: WIN + FN
+  - name: Raise Volume
+    key: WIN + F11 | WIN + Left-Up Mouse Button
+  - name: Lower Volume
+    key: WIN + F10 | WIN + Left-Down Mouse Button
+  - name: Start Compositor (Picom)
+    key: WIN + Inicio
+  - name: Kill Compositor (Picom)
+    key: WIN + Fin
+  - name: Restart WM (AwesomeWM)
+    key: Control + WIN + r
+
+
+- name: Web Browser (Librewolf)
+  keybinds:
+  - name: Focus on URL
+    key: F6
+  - name: Restart Page
+    key: F5
+  - name: New Tab
+    key: Control + t
+  - name: New Window
+    key: Control + n
+  - name: Watch History
+    key: Control + h
+  - name: Cycle Through Recent Tabs
+    key: Control + TAB
+  - name: Zoom In
+    key: Control + +
+  - name: Zoom Out
+    key: Control + -
+  - name: Search For An Specific Word
+    key: Control + f
+  - name: Toggle Bookmarks
+    key: Control + Shift + b
+
+
+- name: Text Editor (VSCodium)
+  keybinds:
+  - name: Save
+    key: Control + s
+  - name: Toggle Command Box
+    key: Control + Shift + p
+  - name: Format Document
+    key: Control + WIN + +
+  - name: Open Live Server
+    key: Control + 1
+  - name: New File
+    key: Control + n
+  - name: Go To Definition
+    key: F12
+  - name: Search For
+    key: Control + f
+  - name: Search And Replace
+    key: Control + h
+  - name: Go To Line
+    key: Control + g
+  - name: Zoom In
+    key: Control + +
+  - name: Zoom Out
+    key: Control + -
+  - name: Cycle Through Recent Tabs
+    key: Control + TAB
+  - name: Toggle Zen Mode
+    key: Control + F11
+  - name: Toggle Lateral Bar
+    key: Control + b
+  - name: Toggle Lateral Menu
+    key: Control + ç
+  - name: Toggle Status Menu
+    key: Control + Shift + ç
+  - name: Toggle Bookmark
+    key: Control + Shift + m
+
+
+- name: File Manager (Thunar)
+  keybinds:
+  - name: Focus on URL
+    key: Control + l
+  - name: New Folder
+    key: Control + Shift + n
+  - name: New Tab
+    key: Control + t
+  - name: New Window
+    key: Control + n
+  - name: Properties Of The Folder
+    key: Alt + Enter
+  - name: Rename File
+    key: F2
+  - name: Bookmarks
+    key: Control + b
+  - name: Tree Bar
+    key: Control + e
+  - name: Zoom In
+    key: Control + +
+  - name: Zoom Out
+    key: Control + -
+  - name: Menu Tab
+    key: Control + m
+
+
+- name: PDF Reader (Zathura)
+  keybinds:
+  - name: Toggle Statusbar
+    key: a
+  - name: Page Down
+    key: RePag
+  - name: Page Up
+    key: AvPag
+  - name: Rotate
+    key: r
+  - name: Switch Theme
+    key: Control + r
+  - name: Zoom In
+    key: Control + Mouse Wheel
+  - name: Zoom Out
+    key: Control + Mouse Wheel
+
+
+- name: Office Suite (LibreOffice)
+  keybinds:
+  - name: Bold Text
+    key: Control + b
+  - name: Italic Text
+    key: Control + i
+  - name: Underline Text
+    key: Control + u
+  - name: Zoom In
+    key: Control + +
+  - name: Zoom Out
+    key: Control + -
+  - name: Select All
+    key: Control + e
+  - name: Save
+    key: Control + s
+  - name: Table
+    key: Control + F12
+  - name: Hiperlink
+    key: Control + Alt + k
+  - name: Toggle Side Bar
+    key: Control + x
+  - name: Toggle Status Bar
+    key: Control + w
+  - name: Toggle Menu Bar
+    key: Control + p
+
+
+- name: Notes Application (Notion)
+  keybinds:
+  - name: Save
+    key: Control + s
+  - name: Search Pages
+    key: Control + p
+  - name: New Page
+    key: Control + n
+  - name: New Tab
+    key: Control + t
+  - name: Create Comment
+    key: Control + Shift + m
+  - name: Bold Text
+    key: Control + b
+  - name: Italic Text
+    key: Control + i
+  - name: Underline Text
+    key: Control + u
+  - name: Zoom In
+    key: Control + Mouse Wheel
+  - name: Zoom Out
+    key: Control + Mouse Wheel
+  - name: Create Text
+    key: Control + Shift + 0
+  - name: Create H1
+    key: Control + Shift + 1
+  - name: Create H2
+    key: Control + Shift + 2
+  - name: Create H3
+    key: Control + Shift + 3
+  - name: Create CheckBox
+    key: Control + Shift + 4
+  - name: Create Bulleted List
+    key: Control + Shift + 5
+  - name: Create Numbered List
+    key: Control + Shift + 6
+  - name: Create Toggle List
+    key: Control + Shift + 7
+  - name: Create Code Block
+    key: Control + Shift + 8
+  - name: Create Turn
+    key: Control + Shift + 9
+  - name: Open Plugin Options
+    key: Control + Alt + e
+
+- name: Email Client (Thunderbird)
+  keybinds:
+  - name: Mark As Read
+    key: Shift + c
+  - name: Search Pages
+    key: Control + p
+  - name: New Page
+    key: Control + n
+  - name: New Tab
+    key: Control + t
+  - name: Create Comment
+    key: Control + Shift + m
+  - name: Bold Text
+    key: Control + b
+  - name: Italic Text
+    key: Control + i
+  - name: Underline Text
+    key: Control + u
+  - name: Zoom In
+    key: Control + Mouse Wheel
+  - name: Zoom Out
+    key: Control + Mouse Wheel
+  - name: Create Text
+    key: Control + Shift + 0
+  - name: Create H1
+    key: Control + Shift + 1
+  - name: Create H2
+    key: Control + Shift + 2
+  - name: Create H3
+    key: Control + Shift + 3
+  - name: Create CheckBox
+    key: Control + Shift + 4
+  - name: Create Bulleted List
+    key: Control + Shift + 5
+  - name: Create Numbered List
+    key: Control + Shift + 6
+  - name: Create Toggle List
+    key: Control + Shift + 7
+  - name: Create Code Block
+    key: Control + Shift + 8
+  - name: Create Turn
+    key: Control + Shift + 9
+  - name: Open Plugin Options
+    key: Control + Alt + e

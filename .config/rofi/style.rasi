@@ -1,0 +1,175 @@
+/*****----- Configuration -----*****/
+configuration {
+	modi:                       "drun,filebrowser,window";
+    show-icons:                 true;
+    display-drun:               "Apps";
+    display-run:                "Run";
+    display-filebrowser:        "Files";
+    display-window:             "Windows";
+	drun-display-format:        "{name}\n[<span weight='light' size='small'><i>({generic})</i></span>]";
+	window-format:              "Class : {c}\nWorkspace : {w}";
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "JetBrains Mono Nerd Font 10";
+}
+
+/*****----- Main Window -----*****/
+window {
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    border:                      2px;
+    border-radius:               15px;
+    border-color:                #B7BDF87F;
+    width:                       500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border-radius:               20px;
+    cursor:                      "default";
+    background-color:            #24273A;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     15px;
+    padding:                     30px;
+    background-color:            transparent;
+    children:                    [ "inputbar", "mode-switcher", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    background-color:            transparent;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+
+}
+
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    padding:                     12px 16px;
+    border:                      0px;
+    border-radius:               10px;
+    border-color:                gray/30%;
+    background-color:            gray/15%;
+    text-color:                  #CAD3F5;
+    str:                         "";
+}
+entry {
+    enabled:                     true;
+    padding:                     12px 16px;
+    border:                      0px;
+    border-radius:               10px;
+    border-color:                gray/30%;
+    background-color:            gray/15%;
+    text-color:                  #CAD3F5;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       5;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+
+    spacing:                     10px;
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px solid;
+    border-radius:               15px;
+    background-color:            transparent;
+    text-color:                  #CAD3F5;
+    cursor:                      pointer;
+}
+element normal.active {
+    background-image:            linear-gradient(to right, #19B466, #7BF4B7);
+    text-color:                  #CAD3F5;
+}
+element selected.normal {
+    border-radius:               15px;
+    background-image:            linear-gradient(to right, #363A4F, #B7BDF89F);
+    text-color:                  #CAD3F5;
+}
+element selected.active {
+    background-image:            linear-gradient(to right, #EA5553, #EAACAB);
+    text-color:                  #CAD3F5;
+}
+element-icon {
+    background-color:            transparent;
+    size:                        48px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/*****----- Mode Switcher -----*****/
+mode-switcher{
+    enabled:                     true;
+    expand:                      false;
+    spacing:                     15px;
+    background-color:            #24273A;
+}
+button {
+    font:                        "JetBrains Mono Nerd Font 10";
+    padding:                     10px;
+    border-radius:               100%;
+    background-image:            linear-gradient(#939ab7);
+    text-color:                  #24273A;
+    cursor:                      pointer;
+}
+button selected {
+    background-image:            linear-gradient(#B7BDF89F);
+    text-color:                  #24273A;
+}
+
+/*****----- Message -----*****/
+error-message {
+    padding:                     20px;
+    background-color:            #24273A;
+    text-color:                  #CAD3F5;
+}
+textbox {
+    padding:                     0px;
+    border-radius:               0px;
+    text-color:                  #CAD3F5;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}

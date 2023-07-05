@@ -1,0 +1,301 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  min-height: 0;
+}
+
+/* General Settings */
+#custom-clipboard,
+#custom-notifications,
+#custom-arch,
+#custom-gpu-temp,
+#custom-gpu-usage,
+#custom-updates,
+#mode,
+#cpu,
+#memory,
+#temperature,
+#custom-music,
+#custom-fans,
+#clock,
+#idle_inhibitor,
+#language,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#tray,
+#custom-power-menu,
+#custom-weather,
+#custom-weather.severe,
+#custom-weather.sunnyDay,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.default {
+  background-color: #24273a;
+  padding: 0 10px;
+  margin: 2px 4px 5px 4px;
+  border-radius: 15px;
+  border: 2px solid rgba(183, 189, 248, 0.5);
+  box-shadow: 3px 3px 1px 1px #101010;
+  background-clip: padding-box;
+
+}
+
+/* Window */
+window#waybar {
+  color: #cad3f5;
+  background: transparent;
+    color: #cdd6f4;
+
+}
+
+window#waybar.hidded {
+  opacity: 0.0;
+}
+
+/* Workspaces */
+#workspaces * {
+  font-size: 13px;
+}
+#workspaces button label{
+    color: 	#b7bdf8 ;
+    font-weight: bolder;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+}
+
+#workspaces button.active label{
+    color: #24273a;
+    font-weight: bolder;
+}
+
+#workspaces button.urgent label{
+  color: #e06c75;
+  font-weight: bolder;
+}
+
+#workspaces{
+  background-color: #24273a;
+  padding: 0 10px;
+  margin: 2px 4px 5px 4px;
+  border-radius: 15px;
+  border: 2px solid rgba(183, 189, 248, 0.5);
+  box-shadow: 3px 3px 1px 1px #101010;
+  background-clip: padding-box;
+}
+
+#workspaces button{
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    background-color: #24273a ;
+    border-radius: 15px;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding: 0 5px;
+    font-weight: bolder;
+    min-width: 20px;
+    color: #24273a;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+}
+
+#workspaces button.active{
+    padding-right: 6px;
+    padding-left: 6px;
+    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #cad3f5;
+    background-size: 100% 200%;
+    animation: gradient_f 20s ease-in-out infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    color: #c678dd;
+}
+
+#workspaces button:hover {
+  background-color: #363a4f;
+}
+
+#workspaces button.focused:hover {
+  background-color: #24273a;
+}
+
+#workspaces button.focused:hover label{
+  color: #cad3f5;
+}
+
+/* Individual Modules */
+#cpu {
+  background-color: #24273a;
+  color: #8aadf4;
+  transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+}
+
+#memory {
+  background-color: #24273a;
+  color: #a6da95;
+  transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+}
+
+#custom-notifications {
+  background-color: #24273a;
+  color: #eed49f;
+}
+
+#custom-updates {
+  background-color: #24273a;
+  color: #8bd5ca;
+}
+
+#custom-gpu-temp {
+  background-color: #24273a;
+  color: #f5a97f;
+}
+
+#custom-gpu-usage {
+  background-color: #24273a;
+  color: #8bd5ca;
+}
+
+#custom-power-menu {
+  color: #e06c75;
+}
+
+#temperature {
+  background-color: #24273a;
+  color: #f5a97f;
+}
+
+#temperature.critical {
+  background-color: #ed8796;
+  color: #1e2030;
+}
+
+#custom-music {
+  background: #b7bdf8;
+  /*background: radial-gradient(circle, rgb(139, 213, 202) 0%, rgb(145, 215, 227) 21%, rgb(238, 212, 159) 	 34%, rgb(139, 213, 202) 35%, rgb(166, 218, 149) 59%, rgb(145, 215, 227) 	 74%, rgb(166, 218, 149) 74%, rgb(125, 196, 228) 100%, rgb(245, 169, 127) 0%, rgb(238, 153, 160) 30%, rgb(237, 135, 150) 	 48%, rgb(245, 169, 127) 77%, rgb(238, 212, 159) 100%, rgb(145, 215, 227) 0%, rgb(125, 196, 228) 19%, rgb(138, 173, 244) 43%, rgb(145, 215, 227) 56%, rgb(125, 196, 228) 80%, rgb(183, 189, 248) 100%);*/
+  background-size: 400% 400%;
+  animation: gradient_f 14s ease infinite;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  font-weight: bold;
+  color: #1e2030;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#custom-fans {
+  color: #98c379;
+}
+
+#clock {
+  color: #b7bdf8;
+}
+
+#idle_inhibitor {
+  color: #abb2bf;
+}
+
+#idle_inhibitor.activated {
+  background-color: #abb2bf;
+  color: #1e222a;
+}
+
+#language {
+  color: #56b6c2;
+}
+
+#pulseaudio {
+  background-color: #24273a;
+  color: #f5bde6;
+}
+
+#pulseaudio.muted {
+  background-color: #ed8796;
+  color: #1e222a;
+}
+
+#backlight {
+  color: #61afef;
+}
+
+#battery {
+  color: #98c379;
+}
+
+#battery.charging, #battery.plugged {
+  background-color: #98c379;
+  color: #1e222a;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #e06c75;
+    color: #1e222a;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+  background-color: #24273a;
+    color: #8bd5ca
+}
+
+#network.disconnected {
+    background-color: #ed8796;
+    color: #1e222a;
+}
+
+#custom-notifications {
+  padding-right: 10px;
+}
+
+/* Animation Keyframes */
+@keyframes blink {
+  to {
+    background-color: #24273a;
+      color: #e06c75;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 30%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient_f {
+  0% {
+    background-position: 0% 200%;
+  }
+
+  50% {
+    background-position: 200% 0%;
+  }
+
+  100% {
+    background-position: 400% 200%;
+  }
+}
+
+@keyframes gradient_f_nh {
+  0% {
+    background-position: 0% 200%;
+  }
+
+  100% {
+    background-position: 200% 200%;
+  }
+}
