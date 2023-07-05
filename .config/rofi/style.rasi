@@ -63,8 +63,8 @@ textbox-prompt-colon {
     padding:                     12px 16px;
     border:                      0px;
     border-radius:               10px;
-    border-color:                gray/30%;
-    background-color:            gray/15%;
+    border-color:                #363A4F;
+    background-color:            #363A4F;
     text-color:                  #CAD3F5;
     str:                         "";
 }
@@ -73,8 +73,8 @@ entry {
     padding:                     12px 16px;
     border:                      0px;
     border-radius:               10px;
-    border-color:                gray/30%;
-    background-color:            gray/15%;
+    border-color:                #363A4F;
+    background-color:            #363A4F;
     text-color:                  #CAD3F5;
     cursor:                      text;
     placeholder:                 "Search...";

@@ -86,10 +86,10 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='lvim'
- else
-   export EDITOR='lvim'
- fi
+  export EDITOR='lvim'
+else
+  export EDITOR='lvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -125,6 +125,5 @@ alias sysproc='sysz'
 PATH=$PATH:/home/matt/.local/bin
 TERMINAL=$TERMINAL:/usr/bin/kitty
 export EDITOR=vscodium
-
 
 neofetch

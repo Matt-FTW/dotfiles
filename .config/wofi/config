@@ -1,0 +1,16 @@
+width=700
+height=360
+location=center
+show=drun
+prompt=Search...
+filter_rate=2
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
+insensitive=false
+allow_images=true
+image_size=40
+gtk_dark=true
+term=kitty
