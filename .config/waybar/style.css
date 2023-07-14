@@ -42,7 +42,7 @@
   margin: 2px 4px 5px 4px;
   border-radius: 15px;
   border: 2px solid rgba(183, 189, 248, 0.5);
-  box-shadow: 3px 3px 1px 1px #101010;
+  box-shadow: 3px 3px 1px 1px #181926;
   background-clip: padding-box;
 
 }
@@ -85,7 +85,7 @@ window#waybar.hidded {
   margin: 2px 4px 5px 4px;
   border-radius: 15px;
   border: 2px solid rgba(183, 189, 248, 0.5);
-  box-shadow: 3px 3px 1px 1px #101010;
+  box-shadow: 3px 3px 1px 1px #181926;
   background-clip: padding-box;
 }
 
@@ -177,9 +177,9 @@ window#waybar.hidded {
 
 #custom-music {
   background: #b7bdf8;
-  /*background: radial-gradient(circle, rgb(139, 213, 202) 0%, rgb(145, 215, 227) 21%, rgb(238, 212, 159) 	 34%, rgb(139, 213, 202) 35%, rgb(166, 218, 149) 59%, rgb(145, 215, 227) 	 74%, rgb(166, 218, 149) 74%, rgb(125, 196, 228) 100%, rgb(245, 169, 127) 0%, rgb(238, 153, 160) 30%, rgb(237, 135, 150) 	 48%, rgb(245, 169, 127) 77%, rgb(238, 212, 159) 100%, rgb(145, 215, 227) 0%, rgb(125, 196, 228) 19%, rgb(138, 173, 244) 43%, rgb(145, 215, 227) 56%, rgb(125, 196, 228) 80%, rgb(183, 189, 248) 100%);*/
+  /*background: radial-gradient(circle, rgba(183, 189, 248, 0.7) 0%, rgb(183, 189, 248) 50%);*/
   background-size: 400% 400%;
-  animation: gradient_f 14s ease infinite;
+  animation: gradient_f 13s ease infinite;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
   font-weight: bold;
   color: #1e2030;

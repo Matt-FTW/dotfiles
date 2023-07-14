@@ -1,6 +1,8 @@
 Xcursor.theme: Catppuccin-Macchiato-Dark
 Xcursor.size: 16
 Xft.dpi: 100
+
+! COLORS
 *background: #303446
 *foreground: #C6D0F5
 

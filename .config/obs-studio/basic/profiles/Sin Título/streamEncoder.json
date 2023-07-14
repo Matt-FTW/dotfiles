@@ -1,0 +1,1 @@
+{"bf":1,"bitrate":8000,"keyint_sec":2,"ffmpeg_opts":"MaxNumRefFrames=4 HighMotionQualityBoostEnable=1 with this also so it would be like? this BReferenceEnable=true EnableVBAQ=false EnablePreAnalysis=true PASceneChangeDetectionEnable=false PATemporalAQMode=1 PAHighMotionQualityBoostMode=1 PAFrameSadEnable=true MaxNumRefFrames=4 HighMotionQualityBoostEnable=1"}

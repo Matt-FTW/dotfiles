@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Easy Effects
+Comment=Efectos de sonido para las aplicaciones PipeWire
+Exec=easyeffects --gapplication-service
+Icon=com.github.wwmm.easyeffects
+StartupNotify=true
+Terminal=false
+Type=Application
+Path=

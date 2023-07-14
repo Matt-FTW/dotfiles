@@ -1,0 +1,74 @@
+[
+	{
+		"fullPath": "/home/matt/Repos/Personal/Dotfiles",
+		"name": "Dotfiles"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/1ºDAM/Entorno",
+		"name": "Entorno"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/1ºDAM/LenguajeDeMarcas",
+		"name": "LenguajeDeMarcas"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/1ºDAM/Programming",
+		"name": "Programming"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/2ºDAM/DATA_ACCESS_SLC_2223",
+		"name": "DATA_ACCESS_SLC_2223"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/2ºDAM/MultimediaProgramming",
+		"name": "MultimediaProgramming"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/2ºDAM/DesarrolloInterfaces",
+		"name": "DesarrolloInterfaces"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/2ºDAM/PSP",
+		"name": "PSP"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/2ºDAM/PythonEmpresa",
+		"name": "PythonEmpresa"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Clase/2ºDAM/Trakabum",
+		"name": "Trakabum"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/AwesomeWM/awesomeCrylia",
+		"name": "awesomeCrylia"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/AwesomeWM/awesomeGlorious",
+		"name": "awesomeGlorious"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/BSPWM/bspwmGreen",
+		"name": "bspwmGreen"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/Hyprland/.dotfiles",
+		"name": ".dotfiles"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/Hyprland/dotfiles-hypr",
+		"name": "dotfiles-hypr"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/Hyprland/dotfiles-hyprland",
+		"name": "dotfiles-hyprland"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/Sway/glorious-dots",
+		"name": "glorious-dots"
+	},
+	{
+		"fullPath": "/home/matt/Repos/Non-Personal/Community Dotfiles/Dots/Xmonad/XMonad",
+		"name": "XMonad"
+	}
+]

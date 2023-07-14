@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Spotify
+Comment=
+Exec=spotify --uri=%U
+Icon=spotify-client
+StartupNotify=false
+Terminal=false
+Type=Application
+Path=

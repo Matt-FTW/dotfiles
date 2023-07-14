@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Discord
+Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
+Exec=/usr/bin/discord
+Icon=discord
+StartupNotify=false
+Terminal=false
+Type=Application
+Path=

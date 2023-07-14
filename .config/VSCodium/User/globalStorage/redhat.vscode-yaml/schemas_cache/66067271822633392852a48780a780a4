@@ -1,0 +1,2739 @@
+{
+  "$id": "https://static.trunk.io/pub/trunk-yaml-schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "definitions": {
+    "filetype_list": {
+      "description": "List of filetypes\nTo refer to all filetypes, use [ALL]",
+      "items": {
+        "examples": [
+          "ALL",
+          "bazel-build",
+          "bazel-workspace",
+          "c",
+          "c#",
+          "c++",
+          "c++-header",
+          "c++-source",
+          "c-header",
+          "c-source",
+          "c/c++",
+          "c/c++-source",
+          "css",
+          "cue",
+          "docker",
+          "dotenv",
+          "gemspec",
+          "go",
+          "graphql",
+          "haml",
+          "html",
+          "java",
+          "javascript",
+          "json",
+          "kotlin",
+          "latex",
+          "markdown",
+          "php",
+          "prettier_supported_configs",
+          "proto",
+          "python",
+          "ruby",
+          "rust",
+          "sass",
+          "scala",
+          "shell",
+          "sql",
+          "starlark",
+          "svg",
+          "terraform",
+          "toml",
+          "typescript",
+          "yaml",
+          "zsh"
+        ],
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "linter_list": {
+      "description": "List of linter IDs\nTo refer to all linters, use [ALL]",
+      "items": {
+        "examples": [
+          "ALL",
+          "actionlint",
+          "ansible-lint",
+          "autopep8",
+          "bandit",
+          "black",
+          "black-py",
+          "brakeman",
+          "buf-breaking",
+          "buf-format",
+          "buf-lint",
+          "buildifier",
+          "cfnlint",
+          "clang-format",
+          "clang-tidy",
+          "clippy",
+          "cue-fmt",
+          "detekt",
+          "detekt-explicit",
+          "detekt-gradle",
+          "dotenv-linter",
+          "eslint",
+          "flake8",
+          "git-diff-check",
+          "gitleaks",
+          "gofmt",
+          "goimports",
+          "golangci-lint",
+          "hadolint",
+          "haml-lint",
+          "include-what-you-use",
+          "isort",
+          "ktlint",
+          "markdownlint",
+          "mypy",
+          "prettier",
+          "pylint",
+          "rubocop",
+          "rubocop-fmt",
+          "rufo",
+          "rustfmt",
+          "scalafmt",
+          "semgrep",
+          "shellcheck",
+          "shfmt",
+          "sql-formatter",
+          "standardrb",
+          "stylelint",
+          "stylelint-fmt",
+          "svgo",
+          "taplo",
+          "taplo-fmt",
+          "terraform",
+          "terraform-fmt",
+          "terraform-validate",
+          "tflint",
+          "yamllint",
+          "yapf"
+        ],
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "template_string": {
+      "description": "String where \"${key1} ${key2}\" will be expanded into \"value1 value2\"",
+      "type": "string"
+    }
+  },
+  "description": "The last linter you'll ever need",
+  "properties": {
+    "actions": {
+      "properties": {
+        "definitions": {
+          "items": {
+            "properties": {
+              "description": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "id": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "interactive": {
+                "type": "boolean"
+              },
+              "notify_on_error": {
+                "type": "boolean"
+              },
+              "output_type": {
+                "examples": [
+                  "notification_v1"
+                ],
+                "type": "string"
+              },
+              "packages_file": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_from": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "runtime": {
+                "examples": [
+                  "go",
+                  "java",
+                  "node",
+                  "python",
+                  "ruby",
+                  "rust"
+                ],
+                "type": "string"
+              },
+              "triggers": {
+                "items": {
+                  "properties": {
+                    "files": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "git_hooks": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "schedule": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "disabled": {
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "type": "array"
+        },
+        "enabled": {
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "api": {
+      "properties": {
+        "address": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "cli": {
+      "properties": {
+        "check_for_upgrades": {
+          "type": "boolean"
+        },
+        "options": {
+          "items": {
+            "properties": {
+              "args": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "commands": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "sha256": {
+          "properties": {
+            "darwin_arm64": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "darwin_x86_64": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "linux_x86_64": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "version": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "daemon": {
+      "properties": {
+        "check_for_upgrades": {
+          "type": "boolean"
+        },
+        "log_level": {
+          "examples": [
+            "critical",
+            "debug",
+            "error",
+            "info",
+            "off",
+            "trace",
+            "warn"
+          ],
+          "type": "string"
+        },
+        "monitor_repository": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "downloads": {
+      "items": {
+        "properties": {
+          "args": {
+            "additionalProperties": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "type": "object"
+          },
+          "downloads": {
+            "items": {
+              "properties": {
+                "cpu": {
+                  "additionalProperties": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "type": "object"
+                },
+                "os": {
+                  "additionalProperties": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "type": "object"
+                },
+                "sha256": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "strip_components": {
+                  "type": "integer"
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "version": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "executable": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "version": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "environments": {
+      "items": {
+        "properties": {
+          "environment": {
+            "items": {
+              "properties": {
+                "list": {
+                  "items": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "type": "array"
+                },
+                "name": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "optional": {
+                  "type": "boolean"
+                },
+                "value": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "name": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "lint": {
+      "properties": {
+        "allow": {
+          "items": {
+            "properties": {
+              "linters": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "paths": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "bazel": {
+          "properties": {
+            "all_targets_query": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "compiler_override_paths": {
+              "items": {
+                "properties": {
+                  "cpu": {
+                    "examples": [
+                      "arm_64",
+                      "x86_64"
+                    ],
+                    "type": "string"
+                  },
+                  "os": {
+                    "examples": [
+                      "linux",
+                      "macos"
+                    ],
+                    "type": "string"
+                  },
+                  "path": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "paths": {
+              "properties": {
+                "system": {
+                  "items": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "type": "array"
+                },
+                "workspace": {
+                  "items": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "comment_formats": {
+          "items": {
+            "properties": {
+              "leading_delimiter": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "trailing_delimiter": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "compile_commands": {
+          "examples": [
+            "bazel",
+            "json"
+          ],
+          "type": "string"
+        },
+        "default_max_file_size": {
+          "type": "integer"
+        },
+        "definitions": {
+          "items": {
+            "dependencies": {
+              "download": {
+                "not": {
+                  "required": [
+                    "package"
+                  ]
+                }
+              },
+              "package": {
+                "allOf": [
+                  {
+                    "required": [
+                      "runtime"
+                    ]
+                  },
+                  {
+                    "not": {
+                      "required": [
+                        "download"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "properties": {
+              "affects_cache": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "allow_empty_files": {
+                "description": "Whether or not this will be run on empty files",
+                "type": "boolean"
+              },
+              "batch": {
+                "description": "Whether linter invocations for multiple targets should be batched; used to cut down on per-invocation overhead\n\nCauses every token containing ${target} to be expanded multiple times, e.g. 'my_linter target=${target}' would be expanded into 'my_linter target=target1 target=target2 ... target=targetN'",
+                "type": "boolean"
+              },
+              "cache_results": {
+                "description": "Whether Trunk can cache results for this linter",
+                "type": "boolean"
+              },
+              "command": {
+                "description": "argv of the command to invoke the linter with",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "commands": {
+                "items": {
+                  "properties": {
+                    "allow_empty_files": {
+                      "description": "Whether or not this will be run on empty files",
+                      "type": "boolean"
+                    },
+                    "batch": {
+                      "description": "Whether linter invocations for multiple targets should be batched; used to cut down on per-invocation overhead\n\nCauses every token containing ${target} to be expanded multiple times, e.g. 'my_linter target=${target}' would be expanded into 'my_linter target=target1 target=target2 ... target=targetN'",
+                      "type": "boolean"
+                    },
+                    "cache_results": {
+                      "description": "Whether Trunk can cache results for this linter",
+                      "type": "boolean"
+                    },
+                    "disable_upstream": {
+                      "description": "Whether or not we support linting the upstream version of a target",
+                      "type": "boolean"
+                    },
+                    "enabled": {
+                      "description": "Whether the command is enabled to run when the linter is run. Allows some commands of a linter to be run by default without others.",
+                      "type": "boolean"
+                    },
+                    "error_codes": {
+                      "description": "Exit codes implying the linter experienced an internal error",
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "formatter": {
+                      "description": "Whether or not this linter will be run by 'trunk fmt'; default: false",
+                      "type": "boolean"
+                    },
+                    "in_place": {
+                      "description": "Whether the linter modifies ${target} files in-place.",
+                      "type": "boolean"
+                    },
+                    "max_file_size": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "output": {
+                      "description": "Output type of this linter; controls how `trunk` parses its output",
+                      "examples": [
+                        "actionlint",
+                        "ansible_lint",
+                        "arcanist",
+                        "bandit",
+                        "brakeman",
+                        "buf",
+                        "buildifier",
+                        "cfnlint",
+                        "clippy",
+                        "detekt_gradle",
+                        "diff",
+                        "eslint",
+                        "gitleaks",
+                        "golangci_lint",
+                        "hadolint",
+                        "haml_lint",
+                        "iwyu",
+                        "llvm",
+                        "lsp_json",
+                        "markdownlint",
+                        "mypy",
+                        "pass_fail",
+                        "pylint",
+                        "regex",
+                        "rewrite",
+                        "rubocop",
+                        "sarif",
+                        "semgrep",
+                        "shellcheck",
+                        "shfmt",
+                        "stylelint",
+                        "taplo",
+                        "terraform_validate"
+                      ],
+                      "type": "string"
+                    },
+                    "parse_regex": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "parser": {
+                      "properties": {
+                        "run": {
+                          "type": [
+                            "string",
+                            "number",
+                            "boolean"
+                          ]
+                        },
+                        "runtime": {
+                          "examples": [
+                            "go",
+                            "java",
+                            "node",
+                            "python",
+                            "ruby",
+                            "rust"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "prepare_run": {
+                      "description": "Command to initialize the linter with",
+                      "examples": [
+                        "tflint --init"
+                      ],
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "read_output_from": {
+                      "description": "Tell parser where to expect output from for reading (if 'tmpfile', then the linter should write its output to ${tmpfile})\n\nNOTE: this field is only respected for type=sarif linters currently",
+                      "examples": [
+                        "stderr",
+                        "stdout",
+                        "tmp_file"
+                      ],
+                      "type": "string"
+                    },
+                    "run": {
+                      "$ref": "#/definitions/template_string",
+                      "description": "Command to invoke the linter with (write as if you were typing into your shell)",
+                      "examples": [
+                        "\"${path}\" will expand to $PATH",
+                        "\"${home}\" will expand to $HOME",
+                        "\"${linter}\" will expand to the directory a linter is installed into, e.g. \"${linter}/node_modules/.bin\" is appended to the `PATH` of any linter with `runtime: node`",
+                        "\"${runtime}\" will expand to the directory a runtime is installed into, e.g. with `runtime: node`, \"${runtime}/bin/npm\" will yield the path to the installed NPM binary",
+                        "\"${linter}\" will expand to the directory a linter is installed into, e.g. \"${linter}/node_modules/.bin\" is appended to the `PATH` of any linter with `runtime: node`",
+                        "\"${runtime}\" will expand to the directory a runtime is installed into, e.g. with `runtime: node`, \"${runtime}/bin/npm\" will yield the path to the installed NPM binary",
+                        "stylelint --fix ${target}"
+                      ]
+                    },
+                    "run_from_root_target": {
+                      "description": "The nearest target to search for when 'run_linter_from' is 'root_file' or 'root_directory'",
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "run_linter_from": {
+                      "description": "What to use as the current working directory:\n  * workspace - the root of the repository\n  * parent_directory - the directory containing the linter target\n  * directory - the linter target itself, with the condition that the linter target is a directory itself\n  * root_file - the nearest directory containing 'run_from_root_target', e.g. the nearest directory containing a go.mod file\n  * root_directory - the nearest directory matching 'run_from_root_target', e.g. the nearest src/ directory\n",
+                      "examples": [
+                        "compile_command",
+                        "directory",
+                        "parent_directory",
+                        "root_directory",
+                        "root_file",
+                        "workspace"
+                      ],
+                      "type": "string"
+                    },
+                    "run_when": {
+                      "items": {
+                        "examples": [
+                          "ci",
+                          "cli",
+                          "lsp",
+                          "monitor"
+                        ],
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "stdin": {
+                      "description": "Whether or not this linter takes its input from stdin",
+                      "type": "boolean"
+                    },
+                    "success_codes": {
+                      "description": "Exit codes corresponding to no issues found or issues found",
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "supports_sandbox": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "deprecated": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "direct_configs": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "disable_upstream": {
+                "description": "Whether or not we support linting the upstream version of a target",
+                "type": "boolean"
+              },
+              "disabled": {
+                "type": "boolean"
+              },
+              "download": {
+                "description": "The download containing this linter (i.e. the `name` of an entry in `downloads`)",
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "enabled": {
+                "description": "Whether the command is enabled to run when the linter is run. Allows some commands of a linter to be run by default without others.",
+                "type": "boolean"
+              },
+              "environment": {
+                "description": "Environment variables set when `trunk` runs the linter",
+                "items": {
+                  "oneOf": [
+                    {
+                      "required": [
+                        "name",
+                        "value"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "name",
+                        "list"
+                      ]
+                    }
+                  ],
+                  "properties": {
+                    "list": {
+                      "description": "The envvar will be set to the `:`-joined list",
+                      "items": {
+                        "$ref": "#/definitions/template_string",
+                        "examples": [
+                          "\"${path}\" will expand to $PATH",
+                          "\"${home}\" will expand to $HOME",
+                          "\"${linter}\" will expand to the directory a linter is installed into, e.g. \"${linter}/node_modules/.bin\" is appended to the `PATH` of any linter with `runtime: node`",
+                          "\"${runtime}\" will expand to the directory a runtime is installed into, e.g. with `runtime: node`, \"${runtime}/bin/npm\" will yield the path to the installed NPM binary"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "$ref": "#/definitions/template_string",
+                      "examples": [
+                        "\"${path}\" will expand to $PATH",
+                        "\"${home}\" will expand to $HOME",
+                        "\"${linter}\" will expand to the directory a linter is installed into, e.g. \"${linter}/node_modules/.bin\" is appended to the `PATH` of any linter with `runtime: node`",
+                        "\"${runtime}\" will expand to the directory a runtime is installed into, e.g. with `runtime: node`, \"${runtime}/bin/npm\" will yield the path to the installed NPM binary"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "error_codes": {
+                "description": "Exit codes implying the linter experienced an internal error",
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "extra_packages": {
+                "description": "Extra packages needed to run this linter; also installed using the runtime's package manager",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "files": {
+                "$ref": "#/definitions/filetype_list",
+                "description": "Filetypes to run this linter on"
+              },
+              "formatter": {
+                "description": "Whether or not this linter will be run by 'trunk fmt'; default: false",
+                "type": "boolean"
+              },
+              "good_without_config": {
+                "type": "boolean"
+              },
+              "hold_the_line": {
+                "type": "boolean"
+              },
+              "in_place": {
+                "description": "Whether the linter modifies ${target} files in-place.",
+                "type": "boolean"
+              },
+              "include_lfs": {
+                "description": "Whether or not this linter can handle LFS files; default: false",
+                "type": "boolean"
+              },
+              "include_scanner_type": {
+                "examples": [
+                  "compile_command",
+                  "none"
+                ],
+                "type": "string"
+              },
+              "is_manual": {
+                "type": "boolean"
+              },
+              "is_recommended": {
+                "type": "boolean"
+              },
+              "issue_url_format": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "known_bad_versions": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "known_good_version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "name": {
+                "description": "Linter ID; use this in fields like `enabled` to reference this linter",
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "package": {
+                "description": "The package containing this linter; installed using the runtime's package manager",
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "plugin_url": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "prepare_command": {
+                "description": "argv of the command to initialize the linter with",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "query_compile_commands": {
+                "type": "boolean"
+              },
+              "read_output_from": {
+                "description": "Tell parser where to expect output from for reading (if 'tmpfile', then the linter should write its output to ${tmpfile})\n\nNOTE: this field is only respected for type=sarif linters currently",
+                "examples": [
+                  "stderr",
+                  "stdout",
+                  "tmp_file"
+                ],
+                "type": "string"
+              },
+              "run_from_root_file": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_from_root_target": {
+                "description": "The nearest target to search for when 'run_linter_from' is 'root_file' or 'root_directory'",
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_linter_from": {
+                "description": "What to use as the current working directory:\n  * workspace - the root of the repository\n  * parent_directory - the directory containing the linter target\n  * directory - the linter target itself, with the condition that the linter target is a directory itself\n  * root_file - the nearest directory containing 'run_from_root_target', e.g. the nearest directory containing a go.mod file\n  * root_directory - the nearest directory matching 'run_from_root_target', e.g. the nearest src/ directory\n",
+                "examples": [
+                  "compile_command",
+                  "directory",
+                  "parent_directory",
+                  "root_directory",
+                  "root_file",
+                  "workspace"
+                ],
+                "type": "string"
+              },
+              "run_timeout": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_when": {
+                "items": {
+                  "examples": [
+                    "ci",
+                    "cli",
+                    "lsp",
+                    "monitor"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "runtime": {
+                "description": "The runtime, toolchain, and package manager used to run and install a linter",
+                "examples": [
+                  "go",
+                  "java",
+                  "node",
+                  "python",
+                  "ruby",
+                  "rust"
+                ],
+                "type": "string"
+              },
+              "stdin": {
+                "description": "Whether or not this linter takes its input from stdin",
+                "type": "boolean"
+              },
+              "success_codes": {
+                "description": "Exit codes corresponding to no issues found or issues found",
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "symlinks": {
+                "items": {
+                  "properties": {
+                    "from": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "to": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "type": {
+                "description": "Output type of this linter; controls how `trunk` parses its output",
+                "examples": [
+                  "pass_fail",
+                  "lsp_json",
+                  "rewrite",
+                  "arcanist",
+                  "sarif"
+                ],
+                "type": "string"
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "version_command": {
+                "properties": {
+                  "parse_regex": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "run": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "disabled": {
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "type": "array"
+        },
+        "do_not_recommend_linters": {
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "type": "array"
+        },
+        "downloads": {
+          "items": {
+            "properties": {
+              "args": {
+                "additionalProperties": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "object"
+              },
+              "downloads": {
+                "items": {
+                  "properties": {
+                    "cpu": {
+                      "additionalProperties": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "object"
+                    },
+                    "os": {
+                      "additionalProperties": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "object"
+                    },
+                    "sha256": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "strip_components": {
+                      "type": "integer"
+                    },
+                    "url": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "version": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "executable": {
+                "type": "boolean"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "enabled": {
+          "items": {
+            "oneOf": [
+              {
+                "description": "linter@envOrVersion, where envOrVersion is either the name of an environment, the version of the main `package` if `runtime` is set, or the verson of the `download`",
+                "examples": [
+                  "gofmt@1.16.7",
+                  "shellcheck@0.7.2"
+                ],
+                "type": "string"
+              },
+              {
+                "additionalProperties": {
+                  "properties": {
+                    "commands": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "packages": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "examples": [
+                  "flake8@4.0.1 { packages [ 'flake8-bugbear@21.9.2', 'flake8-docstring@1.6.0' ] }"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "environments": {
+          "items": {
+            "properties": {
+              "environment": {
+                "items": {
+                  "properties": {
+                    "list": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "files": {
+          "items": {
+            "properties": {
+              "comments": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "extensions": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "filenames": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "inherit": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "regexes": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "shebangs": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "ignore": {
+          "items": {
+            "properties": {
+              "linters": {
+                "$ref": "#/definitions/linter_list"
+              },
+              "paths": {
+                "description": "Paths to exclude from linting",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "landing_mode": {
+          "items": {
+            "properties": {
+              "landing_mode": {
+                "examples": [
+                  "burn_down",
+                  "clean",
+                  "hold_the_line"
+                ],
+                "type": "string"
+              },
+              "linters": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "linters": {
+          "items": {
+            "properties": {
+              "affects_cache": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "allow_empty_files": {
+                "type": "boolean"
+              },
+              "batch": {
+                "type": "boolean"
+              },
+              "cache_results": {
+                "type": "boolean"
+              },
+              "command": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "commands": {
+                "items": {
+                  "properties": {
+                    "allow_empty_files": {
+                      "type": "boolean"
+                    },
+                    "batch": {
+                      "type": "boolean"
+                    },
+                    "cache_results": {
+                      "type": "boolean"
+                    },
+                    "disable_upstream": {
+                      "type": "boolean"
+                    },
+                    "enabled": {
+                      "type": "boolean"
+                    },
+                    "error_codes": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "formatter": {
+                      "type": "boolean"
+                    },
+                    "in_place": {
+                      "type": "boolean"
+                    },
+                    "max_file_size": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "output": {
+                      "examples": [
+                        "actionlint",
+                        "ansible_lint",
+                        "arcanist",
+                        "bandit",
+                        "brakeman",
+                        "buf",
+                        "buildifier",
+                        "cfnlint",
+                        "clippy",
+                        "detekt_gradle",
+                        "diff",
+                        "eslint",
+                        "gitleaks",
+                        "golangci_lint",
+                        "hadolint",
+                        "haml_lint",
+                        "iwyu",
+                        "llvm",
+                        "lsp_json",
+                        "markdownlint",
+                        "mypy",
+                        "pass_fail",
+                        "pylint",
+                        "regex",
+                        "rewrite",
+                        "rubocop",
+                        "sarif",
+                        "semgrep",
+                        "shellcheck",
+                        "shfmt",
+                        "stylelint",
+                        "taplo",
+                        "terraform_validate"
+                      ],
+                      "type": "string"
+                    },
+                    "parse_regex": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "parser": {
+                      "properties": {
+                        "run": {
+                          "type": [
+                            "string",
+                            "number",
+                            "boolean"
+                          ]
+                        },
+                        "runtime": {
+                          "examples": [
+                            "go",
+                            "java",
+                            "node",
+                            "python",
+                            "ruby",
+                            "rust"
+                          ],
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "prepare_run": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "read_output_from": {
+                      "examples": [
+                        "stderr",
+                        "stdout",
+                        "tmp_file"
+                      ],
+                      "type": "string"
+                    },
+                    "run": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "run_from_root_target": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "run_linter_from": {
+                      "examples": [
+                        "compile_command",
+                        "directory",
+                        "parent_directory",
+                        "root_directory",
+                        "root_file",
+                        "workspace"
+                      ],
+                      "type": "string"
+                    },
+                    "run_when": {
+                      "items": {
+                        "examples": [
+                          "ci",
+                          "cli",
+                          "lsp",
+                          "monitor"
+                        ],
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "stdin": {
+                      "type": "boolean"
+                    },
+                    "success_codes": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "type": "array"
+                    },
+                    "supports_sandbox": {
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "deprecated": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "direct_configs": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "disable_upstream": {
+                "type": "boolean"
+              },
+              "disabled": {
+                "type": "boolean"
+              },
+              "download": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "environment": {
+                "items": {
+                  "properties": {
+                    "list": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "error_codes": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "extra_packages": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "files": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "formatter": {
+                "type": "boolean"
+              },
+              "good_without_config": {
+                "type": "boolean"
+              },
+              "hold_the_line": {
+                "type": "boolean"
+              },
+              "in_place": {
+                "type": "boolean"
+              },
+              "include_lfs": {
+                "type": "boolean"
+              },
+              "include_scanner_type": {
+                "examples": [
+                  "compile_command",
+                  "none"
+                ],
+                "type": "string"
+              },
+              "is_manual": {
+                "type": "boolean"
+              },
+              "is_recommended": {
+                "type": "boolean"
+              },
+              "issue_url_format": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "known_bad_versions": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "known_good_version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "package": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "plugin_url": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "prepare_command": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "query_compile_commands": {
+                "type": "boolean"
+              },
+              "read_output_from": {
+                "examples": [
+                  "stderr",
+                  "stdout",
+                  "tmp_file"
+                ],
+                "type": "string"
+              },
+              "run_from_root_file": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_from_root_target": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_linter_from": {
+                "examples": [
+                  "compile_command",
+                  "directory",
+                  "parent_directory",
+                  "root_directory",
+                  "root_file",
+                  "workspace"
+                ],
+                "type": "string"
+              },
+              "run_timeout": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "run_when": {
+                "items": {
+                  "examples": [
+                    "ci",
+                    "cli",
+                    "lsp",
+                    "monitor"
+                  ],
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "runtime": {
+                "examples": [
+                  "go",
+                  "java",
+                  "node",
+                  "python",
+                  "ruby",
+                  "rust"
+                ],
+                "type": "string"
+              },
+              "stdin": {
+                "type": "boolean"
+              },
+              "success_codes": {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array"
+              },
+              "symlinks": {
+                "items": {
+                  "properties": {
+                    "from": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "to": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "type": {
+                "examples": [
+                  "actionlint",
+                  "ansible_lint",
+                  "arcanist",
+                  "bandit",
+                  "brakeman",
+                  "buf",
+                  "buildifier",
+                  "cfnlint",
+                  "clippy",
+                  "detekt_gradle",
+                  "diff",
+                  "eslint",
+                  "gitleaks",
+                  "golangci_lint",
+                  "hadolint",
+                  "haml_lint",
+                  "iwyu",
+                  "llvm",
+                  "lsp_json",
+                  "markdownlint",
+                  "mypy",
+                  "pass_fail",
+                  "pylint",
+                  "regex",
+                  "rewrite",
+                  "rubocop",
+                  "sarif",
+                  "semgrep",
+                  "shellcheck",
+                  "shfmt",
+                  "stylelint",
+                  "taplo",
+                  "terraform_validate"
+                ],
+                "type": "string"
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "version_command": {
+                "properties": {
+                  "parse_regex": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  },
+                  "run": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean"
+                    ]
+                  }
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "runtimes": {
+          "items": {
+            "properties": {
+              "download": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "known_good_version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "linter_environment": {
+                "items": {
+                  "properties": {
+                    "list": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "runtime_environment": {
+                "items": {
+                  "properties": {
+                    "list": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "system_version": {
+                "examples": [
+                  "allowed",
+                  "ignored",
+                  "required"
+                ],
+                "type": "string"
+              },
+              "type": {
+                "examples": [
+                  "go",
+                  "java",
+                  "node",
+                  "python",
+                  "ruby",
+                  "rust"
+                ],
+                "type": "string"
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "version_commands": {
+                "items": {
+                  "properties": {
+                    "parse_regex": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "run": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "shared_configs": {
+          "items": {
+            "properties": {
+              "file": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "regex": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "threshold": {
+          "items": {
+            "properties": {
+              "level": {
+                "examples": [
+                  "high",
+                  "low",
+                  "medium",
+                  "none"
+                ],
+                "type": "string"
+              },
+              "linters": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "triggers": {
+          "items": {
+            "properties": {
+              "files": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "linters": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "paths": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "regexes": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              },
+              "targets": {
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "merge": {
+      "properties": {
+        "required_statuses": {
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "type": "array"
+        },
+        "statuses": {
+          "items": {
+            "type": [
+              "string",
+              "number",
+              "boolean"
+            ]
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "notifications": {
+      "properties": {
+        "sleep": {
+          "additionalProperties": {
+            "properties": {
+              "priority": {
+                "additionalProperties": {
+                  "type": [
+                    "string",
+                    "number",
+                    "boolean"
+                  ]
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "plugin_url": {
+      "type": [
+        "string",
+        "number",
+        "boolean"
+      ]
+    },
+    "plugins": {
+      "properties": {
+        "sources": {
+          "items": {
+            "properties": {
+              "id": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "import_to_global": {
+                "type": "boolean"
+              },
+              "local": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "ref": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "uri": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "repo": {
+      "properties": {
+        "git": {
+          "properties": {
+            "allowed_user_email_domains": {
+              "items": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "type": "array"
+            },
+            "branch_name_format": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "new_files_warning_threshold_kb": {
+              "type": "integer"
+            }
+          },
+          "type": "object"
+        },
+        "repo": {
+          "properties": {
+            "host": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "name": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            },
+            "owner": {
+              "type": [
+                "string",
+                "number",
+                "boolean"
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "trunk_branch": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ]
+        },
+        "trunk_primary_remote": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ]
+        },
+        "use_branch_upstream": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "required_trunk_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean"
+      ]
+    },
+    "runtimes": {
+      "properties": {
+        "definitions": {
+          "items": {
+            "properties": {
+              "download": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "enabled": {
+                "type": "boolean"
+              },
+              "known_good_version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "linter_environment": {
+                "items": {
+                  "properties": {
+                    "list": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "runtime_environment": {
+                "items": {
+                  "properties": {
+                    "list": {
+                      "items": {
+                        "type": [
+                          "string",
+                          "number",
+                          "boolean"
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "optional": {
+                      "type": "boolean"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "system_version": {
+                "examples": [
+                  "allowed",
+                  "ignored",
+                  "required"
+                ],
+                "type": "string"
+              },
+              "type": {
+                "examples": [
+                  "go",
+                  "java",
+                  "node",
+                  "python",
+                  "ruby",
+                  "rust"
+                ],
+                "type": "string"
+              },
+              "version": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean"
+                ]
+              },
+              "version_commands": {
+                "items": {
+                  "properties": {
+                    "parse_regex": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    },
+                    "run": {
+                      "type": [
+                        "string",
+                        "number",
+                        "boolean"
+                      ]
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "enabled": {
+          "items": {
+            "description": "See https://docs.trunk.io",
+            "examples": [
+              "ruby@>=2.7.1",
+              "python@3.9.1"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "version": {
+      "description": "The trunk config version being parsed. The only possible value is 0.1.",
+      "enum": [
+        "0.1",
+        0.1
+      ]
+    }
+  },
+  "required": [
+    "version"
+  ],
+  "title": "Configuration schema for trunk, a powerful linter runner - https://docs.trunk.io",
+  "type": "object"
+}
