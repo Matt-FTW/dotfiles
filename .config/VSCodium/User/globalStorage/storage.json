@@ -59,6 +59,39 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/matt/.oh-my-zsh",
+                                        "path": "/home/matt/.oh-my-zsh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.oh-my-zsh"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.oh-my-zsh/themes",
+                                        "path": "/home/matt/.oh-my-zsh/themes",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.oh-my-zsh/themes"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/lazygit",
+                                        "path": "/home/matt/.config/lazygit",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/lazygit"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/matt/.librewolf/jj4t427t.default-release/chrome",
                                         "path": "/home/matt/.librewolf/jj4t427t.default-release/chrome",
                                         "scheme": "file"
@@ -70,12 +103,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config/BetterDiscord/plugins",
-                                        "path": "/home/matt/.config/BetterDiscord/plugins",
+                                        "external": "file:///usr/share/sddm/themes/sugar-candy",
+                                        "path": "/usr/share/sddm/themes/sugar-candy",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/BetterDiscord/plugins"
+                                    "label": "/usr/share/sddm/themes/sugar-candy"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -87,6 +120,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Repos/Personal/StartPage"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/BetterDiscord/plugins",
+                                        "path": "/home/matt/.config/BetterDiscord/plugins",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/BetterDiscord/plugins"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -111,62 +155,29 @@
                                     "label": "/usr/lib/librewolf/browser"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.local/share/yadm/repo.git",
-                                        "path": "/home/matt/.local/share/yadm/repo.git",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.local/share/yadm/repo.git"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt",
-                                        "path": "/home/matt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/home/matt"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.config/rofi",
-                                        "path": "/home/matt/.config/rofi",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/rofi"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/Repos/Clase/2%C2%BADAM/PSP",
-                                        "path": "/home/matt/Repos/Clase/2ºDAM/PSP",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Repos/Clase/2ºDAM/PSP"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.vscode/extensions/github.copilot-1.96.255/dist/extension.js",
-                                        "path": "/home/matt/.vscode/extensions/github.copilot-1.96.255/dist/extension.js",
+                                        "external": "file:///home/matt/.config/fish/functions/fish_prompt.fish",
+                                        "path": "/home/matt/.config/fish/functions/fish_prompt.fish",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.vscode/extensions/github.copilot-1.96.255/dist/extension.js"
+                                    "label": "~/.config/fish/functions/fish_prompt.fish"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.zshrc",
+                                        "path": "/home/matt/.zshrc",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.zshrc"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -178,6 +189,17 @@
                                     },
                                     "enabled": true,
                                     "label": "/opt/vscodium-bin/resources/app/product.json"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.vscode/extensions/github.copilot-1.96.255/dist/extension.js",
+                                        "path": "/home/matt/.vscode/extensions/github.copilot-1.96.255/dist/extension.js",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.vscode/extensions/github.copilot-1.96.255/dist/extension.js"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -238,34 +260,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.zshrc",
-                                        "path": "/home/matt/.zshrc",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.zshrc"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///docs/Documentos/Repos/Non-Personal/Community%20Dotfiles/.zshrc",
                                         "path": "/docs/Documentos/Repos/Non-Personal/Community Dotfiles/.zshrc",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "/docs/Documentos/Repos/Non-Personal/Community Dotfiles/.zshrc"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/%25F",
-                                        "path": "/home/matt/%F",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/%F"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -681,8 +681,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1794,7 +1793,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 295,
+            "sideBarWidth": 0,
             "statusBarHeight": 0,
             "windowBorder": false
         }
@@ -1805,10 +1804,10 @@
             "backupPath": "/home/matt/.config/VSCodium/Backups/375730732710406c4b825f9cde716ece",
             "uiState": {
                 "mode": 1,
-                "x": 0,
-                "y": 0,
-                "width": 2516,
-                "height": 976
+                "x": 21,
+                "y": 1109,
+                "width": 2404,
+                "height": 934
             }
         },
         "openedWindows": []
@@ -1823,10 +1822,7 @@
                 "folderUri": "file:///home/matt/.config/awesome"
             },
             {
-                "folderUri": "file:///home/matt/.config/BetterDiscord/plugins"
-            },
-            {
-                "folderUri": "file:///home/matt/.librewolf/jj4t427t.default-release/chrome"
+                "folderUri": "file:///home/matt/.oh-my-zsh"
             },
             {
                 "folderUri": "file:///home/matt/.config"
@@ -1882,9 +1878,13 @@
             "file:///home/matt/.local/share/yadm/repo.git": "__default__profile__",
             "file:///usr/lib/librewolf/browser": "6378edb4",
             "file:///home/matt/.config/pipewire": "__default__profile__",
-            "file:///home/matt/Repos/Personal/StartPage": "__default__profile__",
             "file:///home/matt/.config/BetterDiscord/plugins": "__default__profile__",
+            "file:///home/matt/Repos/Personal/StartPage": "__default__profile__",
+            "file:///usr/share/sddm/themes/sugar-candy": "__default__profile__",
             "file:///home/matt/.librewolf/jj4t427t.default-release/chrome": "__default__profile__",
+            "file:///home/matt/.config/lazygit": "__default__profile__",
+            "file:///home/matt/.oh-my-zsh/themes": "__default__profile__",
+            "file:///home/matt/.oh-my-zsh": "__default__profile__",
             "file:///home/matt/.config": "__default__profile__"
         },
         "emptyWindows": {}

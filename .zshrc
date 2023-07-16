@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="intheloop"
 
 # source ~/.oh-my-zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -73,12 +73,20 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git adb aliases archlinux colorize command-not-found colored-man-pages cp docker docker-machine docker-compose dotenv
+          zsh-autocomplete fast-syntax-highlighting zsh-autosuggestions fzf man python ripgrep rust sudo
+         )
+
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
+--color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
+--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+export FZF_BASE=/usr/bin/fzf
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+# /home/matt/.config/tty/macchiato.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -102,11 +110,12 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-/home/matt/.config/tty/macchiato.sh
+
 
 # Some aliases
 alias code='vscodium'
-alias ls='exa --long --header -a'
+alias ls='exa --long --header -a --icons'
+alias tree='exa --long --header -a --icons --tree'
 alias bruh='genact -s 4'
 alias matrix='unimatrix'
 alias q='exit'
@@ -121,9 +130,11 @@ alias gpt='tgpt'
 alias clock='tty-clock -sbc'
 alias l='xplr'
 alias sysproc='sysz'
+alias cat='bat'
+alias dots='yadm enter lazygit'
 
 PATH=$PATH:/home/matt/.local/bin
 TERMINAL=$TERMINAL:/usr/bin/kitty
-export EDITOR=vscodium
+export EDITOR=codium
 
-neofetch
+ neofetch

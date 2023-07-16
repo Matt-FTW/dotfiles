@@ -134,7 +134,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontFamily": "'JetBrains Mono Light', 'monospace', monospace",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.shellIntegration.suggestEnabled": true,
@@ -250,10 +250,10 @@
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "codeium.enableConfig": {
-    "*": false
+    "*": true
   },
   "search.followSymlinks": false,
-  "workbench.statusBar.visible": false,
   "workbench.editor.showTabs": false,
-  "editor.minimap.enabled": false
+  "workbench.statusBar.visible": false,
+  "editor.minimap.enabled": false,
 }

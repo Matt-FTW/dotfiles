@@ -2,12 +2,12 @@
     "settings": {
         "tabs": [
             {
-                "name": "#general",
-                "url": "/channels/674984102860161025/674985827121758208",
+                "name": "#arte-picasso",
+                "url": "/channels/674984102860161025/1007802241035538452",
                 "selected": true,
                 "currentStatus": "none",
-                "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "674985827121758208"
+                "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=44",
+                "channelId": "1007802241035538452"
             },
             {
                 "name": "#feedback-and-suggestions",
@@ -26,12 +26,11 @@
                 "channelId": "635625917623828520"
             },
             {
-                "name": "@spider300",
-                "url": "/channels/@me/347377928914337792",
+                "name": "Friends",
+                "url": "/channels/@me",
                 "selected": false,
-                "currentStatus": "online",
-                "iconUrl": "https://cdn.discordapp.com/avatars/346980245028601857/fa3802f0571349385c58a99e46c4ff07.webp?size=40",
-                "channelId": "347377928914337792"
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
             }
         ],
         "favs": [],

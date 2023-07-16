@@ -51,6 +51,13 @@
   background: transparent;
 }
 
+#star-button[starred],
+#star-button {
+  display: none !important;
+}
+
+#bookmarks-menu-button toolbarbutton { visibility:collapse !important; }
+
 /* multi tab selection */
 #tabbrowser-tabs:not([noshadowfortests])
   .tabbrowser-tab:is([multiselected])
@@ -678,7 +685,7 @@ url(about:home) {
   text-align: center !important;
   justify-content: center;
   align-items: center;
-  margin: 6px 6px 6px 6px !important;
+  margin: 6px 0px 6px 6px !important;
   border: 2px solid rgba(183, 189, 248, 0.5);
   background-clip: padding-box;
   padding-inline: 0 !important;

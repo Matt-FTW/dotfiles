@@ -10,8 +10,6 @@ if [[ "$?" == 0 ]]; then
         playerctl --all-players stop
         pkill wleave
         sleep 0.5s
-        ~/.config/sway/lock.sh
-        sleep 0.5s
         systemctl suspend-then-hibernate
     elif [[ "$1" == 'lock' ]]; then
         pkill wleave
@@ -20,8 +18,6 @@ if [[ "$?" == 0 ]]; then
     elif [[ "$1" == 'suspend' ]]; then
         playerctl --all-players stop
         pkill wleave
-        sleep 0.5s
-        ~/.config/sway/lock.sh
         sleep 0.5s
         systemctl suspend
     elif [[ "$1" == 'logout' ]]; then
