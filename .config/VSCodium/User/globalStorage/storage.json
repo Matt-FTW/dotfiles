@@ -48,6 +48,17 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/matt/.config/kitty",
+                                        "path": "/home/matt/.config/kitty",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/kitty"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/matt/.config",
                                         "path": "/home/matt/.config",
                                         "scheme": "file"
@@ -142,17 +153,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/pipewire"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///usr/lib/librewolf/browser",
-                                        "path": "/usr/lib/librewolf/browser",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/usr/lib/librewolf/browser"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -666,11 +666,13 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
-                                    "label": "Zen Mode"
+                                    "label": "Zen Mode",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "&&Centered Layout"
+                                    "label": "&&Centered Layout",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1003,45 +1005,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1241,7 +1252,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1792,7 +1804,7 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 48,
+            "activityBarWidth": 0,
             "sideBarWidth": 0,
             "statusBarHeight": 0,
             "windowBorder": false
@@ -1800,13 +1812,13 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/matt/.config",
-            "backupPath": "/home/matt/.config/VSCodium/Backups/375730732710406c4b825f9cde716ece",
+            "folder": "file:///home/matt/.config/kitty",
+            "backupPath": "/home/matt/.config/VSCodium/Backups/f862d78a22ff70d122e141cd428aace5",
             "uiState": {
                 "mode": 1,
-                "x": 21,
+                "x": 1234,
                 "y": 1109,
-                "width": 2404,
+                "width": 1191,
                 "height": 934
             }
         },
@@ -1822,10 +1834,7 @@
                 "folderUri": "file:///home/matt/.config/awesome"
             },
             {
-                "folderUri": "file:///home/matt/.oh-my-zsh"
-            },
-            {
-                "folderUri": "file:///home/matt/.config"
+                "folderUri": "file:///home/matt/.config/kitty"
             }
         ],
         "emptyWindows": []
@@ -1869,7 +1878,6 @@
             "file:///home/matt/Repos/Non-Personal/Community%20Dotfiles/Dots/AwesomeWM/awesomeCrylia": "__default__profile__",
             "file:///home/matt/Repos/Personal/Dotfiles": "__default__profile__",
             "file:///home/matt/.zhs": "__default__profile__",
-            "file:///home/matt/.config/kitty": "__default__profile__",
             "file:///home/matt/Repos/Non-Personal/Community%20Dotfiles/Dots/Hyprland/dotfiles-hyprland": "__default__profile__",
             "file:///home/matt/Repos/Non-Personal/Community%20Dotfiles/Dots/Hyprland/.dotfiles": "__default__profile__",
             "file:///home/matt/Repos/Clase/2%C2%BADAM/PSP": "__default__profile__",
@@ -1885,7 +1893,8 @@
             "file:///home/matt/.config/lazygit": "__default__profile__",
             "file:///home/matt/.oh-my-zsh/themes": "__default__profile__",
             "file:///home/matt/.oh-my-zsh": "__default__profile__",
-            "file:///home/matt/.config": "__default__profile__"
+            "file:///home/matt/.config": "__default__profile__",
+            "file:///home/matt/.config/kitty": "__default__profile__"
         },
         "emptyWindows": {}
     },
