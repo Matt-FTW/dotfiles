@@ -128,13 +128,18 @@ alias yayupdate='yay -Syu'
 alias search='pacseek'
 alias gpt='tgpt'
 alias clock='tty-clock -sbc'
-alias l='xplr'
+alias files='xplr'
 alias sysproc='sysz'
 alias cat='bat'
 alias dots='yadm enter lazygit'
+alias audiorestart='systemctl --user restart wireplumber pipewire pipewire-pulse'
+alias info='tldr'
+alias cd='z'
+alias disks='duf'
+alias cdh='zi'
 
 PATH=$PATH:/home/matt/.local/bin
 TERMINAL=$TERMINAL:/usr/bin/kitty
 export EDITOR=codium
 
- neofetch
+neofetch

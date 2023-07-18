@@ -48,12 +48,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config/kitty",
-                                        "path": "/home/matt/.config/kitty",
+                                        "external": "file:///home/matt/.config/nvim",
+                                        "path": "/home/matt/.config/nvim",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/kitty"
+                                    "label": "~/.config/nvim"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/nvim/lua",
+                                        "path": "/home/matt/.config/nvim/lua",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/nvim/lua"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -65,6 +76,61 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/eDEX-UI/themes",
+                                        "path": "/home/matt/.config/eDEX-UI/themes",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/eDEX-UI/themes"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/fish",
+                                        "path": "/home/matt/.config/fish",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/fish"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///docs/Musica",
+                                        "path": "/docs/Musica",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/docs/Musica"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///docs/Documentos/Repos",
+                                        "path": "/docs/Documentos/Repos",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/docs/Documentos/Repos"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/kitty",
+                                        "path": "/home/matt/.config/kitty",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/kitty"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -89,84 +155,18 @@
                                     "label": "~/.oh-my-zsh/themes"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.config/lazygit",
-                                        "path": "/home/matt/.config/lazygit",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/lazygit"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.librewolf/jj4t427t.default-release/chrome",
-                                        "path": "/home/matt/.librewolf/jj4t427t.default-release/chrome",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.librewolf/jj4t427t.default-release/chrome"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///usr/share/sddm/themes/sugar-candy",
-                                        "path": "/usr/share/sddm/themes/sugar-candy",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/usr/share/sddm/themes/sugar-candy"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/Repos/Personal/StartPage",
-                                        "path": "/home/matt/Repos/Personal/StartPage",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Repos/Personal/StartPage"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.config/BetterDiscord/plugins",
-                                        "path": "/home/matt/.config/BetterDiscord/plugins",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/BetterDiscord/plugins"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.config/pipewire",
-                                        "path": "/home/matt/.config/pipewire",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/pipewire"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config/fish/functions/fish_prompt.fish",
-                                        "path": "/home/matt/.config/fish/functions/fish_prompt.fish",
+                                        "external": "file:///home/matt/.config/eDEX-UI/settings.json",
+                                        "path": "/home/matt/.config/eDEX-UI/settings.json",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/fish/functions/fish_prompt.fish"
+                                    "label": "~/.config/eDEX-UI/settings.json"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -178,6 +178,50 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.zshrc"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/starship.toml",
+                                        "path": "/home/matt/.config/starship.toml",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/starship.toml"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/fish/aliases.fish",
+                                        "path": "/home/matt/.config/fish/aliases.fish",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/fish/aliases.fish"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/xplr/init.lua",
+                                        "path": "/home/matt/.config/xplr/init.lua",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/xplr/init.lua"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/fish/config.fish",
+                                        "path": "/home/matt/.config/fish/config.fish",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/fish/config.fish"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -224,50 +268,6 @@
                                     "label": "~/Descargas/Documentos/Personal/svr27-i448u.csv"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/Descargas/Documentos/Personal/contacts.csv",
-                                        "path": "/home/matt/Descargas/Documentos/Personal/contacts.csv",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Descargas/Documentos/Personal/contacts.csv"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/Descargas/Documentos/Personal/contacts.vcf",
-                                        "path": "/home/matt/Descargas/Documentos/Personal/contacts.vcf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Descargas/Documentos/Personal/contacts.vcf"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.config/kitty/kitty.conf",
-                                        "path": "/home/matt/.config/kitty/kitty.conf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/kitty/kitty.conf"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///docs/Documentos/Repos/Non-Personal/Community%20Dotfiles/.zshrc",
-                                        "path": "/docs/Documentos/Repos/Non-Personal/Community Dotfiles/.zshrc",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/docs/Documentos/Repos/Non-Personal/Community Dotfiles/.zshrc"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -312,8 +312,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -325,7 +324,7 @@
                             "items": [
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
-                                    "label": "Export Profile (Default)..."
+                                    "label": "Export Profile (Lua)..."
                                 },
                                 {
                                     "id": "workbench.profiles.actions.importProfile",
@@ -348,7 +347,7 @@
                             "items": [
                                 {
                                     "id": "submenuitem.Profiles",
-                                    "label": "Profiles (Default)",
+                                    "label": "Profiles (Lua)",
                                     "submenu": {
                                         "items": [
                                             {
@@ -365,8 +364,7 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.__default__profile__",
-                                                "label": "Default",
-                                                "checked": true
+                                                "label": "Default"
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-7191cca2",
@@ -378,7 +376,8 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1645caa6",
-                                                "label": "Lua"
+                                                "label": "Lua",
+                                                "checked": true
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1f364037",
@@ -394,6 +393,10 @@
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
+                                            },
+                                            {
+                                                "id": "workbench.profiles.actions.renameCurrentProfile",
+                                                "label": "Rename..."
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.showProfileContents",
@@ -666,13 +669,11 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
-                                    "label": "Zen Mode",
-                                    "checked": true
+                                    "label": "Zen Mode"
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "&&Centered Layout",
-                                    "checked": true
+                                    "label": "&&Centered Layout"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -683,7 +684,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -760,7 +762,8 @@
                                 },
                                 {
                                     "id": "editor.action.toggleMinimap",
-                                    "label": "&&Minimap"
+                                    "label": "&&Minimap",
+                                    "checked": true
                                 },
                                 {
                                     "id": "breadcrumbs.toggle",
@@ -890,6 +893,10 @@
                     {
                         "id": "workbench.view.extensions",
                         "label": "E&&xtensions"
+                    },
+                    {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1804,22 +1811,22 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 0,
-            "sideBarWidth": 0,
+            "activityBarWidth": 48,
+            "sideBarWidth": 295,
             "statusBarHeight": 0,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/matt/.config/kitty",
-            "backupPath": "/home/matt/.config/VSCodium/Backups/f862d78a22ff70d122e141cd428aace5",
+            "folder": "file:///home/matt/.config/nvim",
+            "backupPath": "/home/matt/.config/VSCodium/Backups/0cb1dd62df9d1360fc2678a48f592495",
             "uiState": {
                 "mode": 1,
-                "x": 1234,
-                "y": 1109,
-                "width": 1191,
-                "height": 934
+                "x": 21,
+                "y": 78,
+                "width": 2404,
+                "height": 933
             }
         },
         "openedWindows": []
@@ -1834,7 +1841,7 @@
                 "folderUri": "file:///home/matt/.config/awesome"
             },
             {
-                "folderUri": "file:///home/matt/.config/kitty"
+                "folderUri": "file:///home/matt/.config/nvim"
             }
         ],
         "emptyWindows": []
@@ -1893,8 +1900,14 @@
             "file:///home/matt/.config/lazygit": "__default__profile__",
             "file:///home/matt/.oh-my-zsh/themes": "__default__profile__",
             "file:///home/matt/.oh-my-zsh": "__default__profile__",
-            "file:///home/matt/.config": "__default__profile__",
-            "file:///home/matt/.config/kitty": "__default__profile__"
+            "file:///home/matt/.config/kitty": "__default__profile__",
+            "file:///docs/Documentos/Repos": "-1645caa6",
+            "file:///docs/Musica": "-1645caa6",
+            "file:///home/matt/.config/fish": "__default__profile__",
+            "file:///home/matt/.config/eDEX-UI/themes": "__default__profile__",
+            "file:///home/matt/.config": "-1645caa6",
+            "file:///home/matt/.config/nvim/lua": "-1645caa6",
+            "file:///home/matt/.config/nvim": "-1645caa6"
         },
         "emptyWindows": {}
     },

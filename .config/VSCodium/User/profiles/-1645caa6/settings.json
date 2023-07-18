@@ -134,7 +134,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.fontFamily": "'JetBrains Mono Light', 'monospace', monospace",
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.shellIntegration.suggestEnabled": true,
@@ -246,8 +246,6 @@
   "redhat.telemetry.enabled": false,
   "terminal.integrated.env.linux": {},
   "cSpell.language": "en, es",
-  "workbench.editor.showTabs": false,
-  "editor.minimap.enabled": false,
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
@@ -255,5 +253,9 @@
     "*": false
   },
   "search.followSymlinks": false,
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "workbench.editor.showTabs": false
 }

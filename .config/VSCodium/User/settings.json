@@ -255,5 +255,4 @@
   "search.followSymlinks": false,
   "workbench.editor.showTabs": false,
   "workbench.statusBar.visible": false,
-  "editor.minimap.enabled": false,
 }
