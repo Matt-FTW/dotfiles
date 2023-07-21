@@ -1,0 +1,43 @@
+{
+  "timeStamp": 1689879206578,
+  "version": "1.50.0",
+  "userSettings": {
+    "uiTheme": "dark",
+    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
+    "importedLists": [
+      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt"
+    ],
+    "popupPanelSections": 31
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "adguard-generic",
+    "adguard-mobile",
+    "easylist",
+    "LegitimateURLShortener",
+    "adguard-spyware-url",
+    "easyprivacy",
+    "urlhaus-1",
+    "curben-phishing",
+    "plowe-0"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "edge-scheme",
+    "opera-scheme",
+    "trends.google.es",
+    "vivaldi-scheme",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": "! Title: uBlock₀ filters – Annoyances\n! Description: |\n!   Filters optimized for uBlock Origin, to be used with Fanboy's\n!   and/or Adguard's \"Annoyances\" list(s)\n! Expires: 7 days\n! Last modified: %timestamp%\n! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE\n! Homepage: https://github.com/uBlockOrigin/uAssets\n! Forums: https://github.com/uBlockOrigin/uAssets/issues\n\n!#include annoyances-cookies.txt\n!#include annoyances-others.txt\n"
+}

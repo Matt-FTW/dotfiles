@@ -140,7 +140,7 @@
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "catppuccin.extraBordersEnabled": true,
   "codeium.enableSearch": true,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailningWhitespace": false,
@@ -253,9 +253,10 @@
     "*": false
   },
   "search.followSymlinks": false,
-  "workbench.statusBar.visible": false,
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
   },
-  "workbench.editor.showTabs": false
+  "workbench.editor.showTabs": false,
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": false
 }

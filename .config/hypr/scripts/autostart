@@ -16,6 +16,9 @@ swayosd &
 # Automounter for removable media
 udiskie &
 
+# Notify about devices connecting and disconnecting
+devify &
+
 # Wallpaper
 $scripts/wallpaper &
 

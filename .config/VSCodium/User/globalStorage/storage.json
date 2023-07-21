@@ -59,23 +59,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config/nvim/lua",
-                                        "path": "/home/matt/.config/nvim/lua",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/nvim/lua"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/matt/.config",
                                         "path": "/home/matt/.config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/.config"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/nvim/lua",
+                                        "path": "/home/matt/.config/nvim/lua",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/nvim/lua"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -156,6 +156,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config/kitty/kitty.conf",
+                                        "path": "/home/matt/.config/kitty/kitty.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/kitty/kitty.conf"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -257,17 +268,6 @@
                                     "label": "~/packagesyay.txt"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/Descargas/Documentos/Personal/svr27-i448u.csv",
-                                        "path": "/home/matt/Descargas/Documentos/Personal/svr27-i448u.csv",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Descargas/Documentos/Personal/svr27-i448u.csv"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -312,7 +312,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -762,8 +763,7 @@
                                 },
                                 {
                                     "id": "editor.action.toggleMinimap",
-                                    "label": "&&Minimap",
-                                    "checked": true
+                                    "label": "&&Minimap"
                                 },
                                 {
                                     "id": "breadcrumbs.toggle",
@@ -1812,7 +1812,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 295,
+            "sideBarWidth": 247,
             "statusBarHeight": 0,
             "windowBorder": false
         }
@@ -1823,10 +1823,10 @@
             "backupPath": "/home/matt/.config/VSCodium/Backups/0cb1dd62df9d1360fc2678a48f592495",
             "uiState": {
                 "mode": 1,
-                "x": 21,
-                "y": 78,
-                "width": 2404,
-                "height": 933
+                "x": 0,
+                "y": 0,
+                "width": 2516,
+                "height": 976
             }
         },
         "openedWindows": []
@@ -1905,8 +1905,8 @@
             "file:///docs/Musica": "-1645caa6",
             "file:///home/matt/.config/fish": "__default__profile__",
             "file:///home/matt/.config/eDEX-UI/themes": "__default__profile__",
-            "file:///home/matt/.config": "-1645caa6",
             "file:///home/matt/.config/nvim/lua": "-1645caa6",
+            "file:///home/matt/.config": "-1645caa6",
             "file:///home/matt/.config/nvim": "-1645caa6"
         },
         "emptyWindows": {}

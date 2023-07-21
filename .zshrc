@@ -140,6 +140,6 @@ alias cdh='zi'
 
 PATH=$PATH:/home/matt/.local/bin
 TERMINAL=$TERMINAL:/usr/bin/kitty
-export EDITOR=codium
+export EDITOR='nvim'
 
-neofetch
+colorscript random
