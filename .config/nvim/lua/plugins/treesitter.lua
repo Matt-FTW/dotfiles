@@ -25,6 +25,9 @@ return {
                 "gitcommit",
                 "gitignore",
                 "go",
+                "gomod",
+                "gowork",
+                "gosum",
                 "groovy",
                 "hjson",
                 "http",
@@ -41,6 +44,7 @@ return {
                 "prisma",
                 "python",
                 "r",
+                "ron",
                 "rasi",
                 "regex",
                 "ruby",
@@ -54,6 +58,8 @@ return {
                 "vim",
                 "vue",
                 "yaml",
+                "ninja",
+                "rst"
             })
         end,
     },
