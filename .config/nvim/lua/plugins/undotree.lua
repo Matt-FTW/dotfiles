@@ -1,6 +1,6 @@
 return {
   {
-    "dnlhc/glance.nvim",
+    "mbbill/undotree",
     lazy = false,
   },
 }
