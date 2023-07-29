@@ -2,12 +2,12 @@
     "settings": {
         "tabs": [
             {
-                "name": "#general",
-                "url": "/channels/674984102860161025/674985827121758208",
+                "name": "#multimedia-general",
+                "url": "/channels/674984102860161025/675014488097030153",
                 "selected": true,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "674985827121758208"
+                "channelId": "675014488097030153"
             },
             {
                 "name": "#feedback-and-suggestions",
@@ -26,12 +26,11 @@
                 "channelId": "635625917623828520"
             },
             {
-                "name": "@Sergio Laín",
-                "url": "/channels/@me/1107960185529581679",
+                "name": "Friends",
+                "url": "/channels/@me",
                 "selected": false,
-                "currentStatus": "offline",
-                "iconUrl": "https://cdn.discordapp.com/avatars/1087642197685452850/b61c2b287c9f9e3e31a5a9741884a33d.webp?size=40",
-                "channelId": "1107960185529581679"
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
             }
         ],
         "favs": [],

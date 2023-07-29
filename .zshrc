@@ -111,6 +111,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(zoxide init zsh)"
 
 # Some aliases
 alias code='vscodium'
@@ -119,12 +120,9 @@ alias tree='exa --long --header -a --icons --tree'
 alias bruh='genact -s 4'
 alias matrix='unimatrix'
 alias q='exit'
-alias install='sudo pacman -S '
-alias uninstall='sudo pacman -R '
-alias yayinstall='yay -S '
-alias yayuninstall='yay -R '
-alias update='sudo pacman -Syu'
-alias yayupdate='yay -Syu'
+alias install='yay -S '
+alias uninstall='yay -R '
+alias update='yay -Syu'
 alias search='pacseek'
 alias gpt='tgpt'
 alias clock='tty-clock -sbc'

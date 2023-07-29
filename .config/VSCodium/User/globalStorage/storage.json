@@ -38,11 +38,21 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/.config",
+                                        "path": "/home/matt/.config",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -59,12 +69,23 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config",
-                                        "path": "/home/matt/.config",
+                                        "external": "file:///docs/Documentos/Repos/Personal/Cursos/Python",
+                                        "path": "/docs/Documentos/Repos/Personal/Cursos/Python",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config"
+                                    "label": "/docs/Documentos/Repos/Personal/Cursos/Python"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/matt/Juegos/SteamLibrary/steamapps/common/ELDEN%20RING",
+                                        "path": "/home/matt/Juegos/SteamLibrary/steamapps/common/ELDEN RING",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Juegos/SteamLibrary/steamapps/common/ELDEN RING"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -131,28 +152,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/kitty"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.oh-my-zsh",
-                                        "path": "/home/matt/.oh-my-zsh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.oh-my-zsh"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.oh-my-zsh/themes",
-                                        "path": "/home/matt/.oh-my-zsh/themes",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.oh-my-zsh/themes"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -312,8 +311,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1819,13 +1817,13 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/matt/.config/nvim",
-            "backupPath": "/home/matt/.config/VSCodium/Backups/0cb1dd62df9d1360fc2678a48f592495",
+            "folder": "file:///home/matt/.config",
+            "backupPath": "/home/matt/.config/VSCodium/Backups/375730732710406c4b825f9cde716ece",
             "uiState": {
                 "mode": 1,
                 "x": 0,
                 "y": 0,
-                "width": 2516,
+                "width": 1246,
                 "height": 976
             }
         },
@@ -1841,7 +1839,7 @@
                 "folderUri": "file:///home/matt/.config/awesome"
             },
             {
-                "folderUri": "file:///home/matt/.config/nvim"
+                "folderUri": "file:///home/matt/.config"
             }
         ],
         "emptyWindows": []
@@ -1906,8 +1904,10 @@
             "file:///home/matt/.config/fish": "__default__profile__",
             "file:///home/matt/.config/eDEX-UI/themes": "__default__profile__",
             "file:///home/matt/.config/nvim/lua": "-1645caa6",
-            "file:///home/matt/.config": "-1645caa6",
-            "file:///home/matt/.config/nvim": "-1645caa6"
+            "file:///home/matt/Juegos/SteamLibrary/steamapps/common/ELDEN%20RING": "__default__profile__",
+            "file:///docs/Documentos/Repos/Personal/Cursos/Python": "-1f364037",
+            "file:///home/matt/.config/nvim": "-1645caa6",
+            "file:///home/matt/.config": "-1645caa6"
         },
         "emptyWindows": {}
     },

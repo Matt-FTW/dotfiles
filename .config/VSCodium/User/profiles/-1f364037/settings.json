@@ -140,7 +140,7 @@
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "catppuccin.extraBordersEnabled": true,
   "codeium.enableSearch": true,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailningWhitespace": false,
@@ -252,8 +252,8 @@
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "codeium.enableConfig": {
-    "*": false
+    "*": true,
+    "log": true
   },
-  "search.followSymlinks": false,
-  "workbench.statusBar.visible": false
+  "search.followSymlinks": false
 }
