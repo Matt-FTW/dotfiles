@@ -34,5 +34,5 @@ return {
                 which_key = true,
             },
         },
-    }
+    },
 }
