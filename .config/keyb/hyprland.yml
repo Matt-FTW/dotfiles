@@ -1,0 +1,75 @@
+- name: Hyprland Media
+  keybinds:
+    - name: Restart Waybar
+      key: CTRL + WIN + R
+    - name: Logout Hyprland
+      key: CTRL + WIN + M
+    - name: Play-Pause Music
+      key: CTRL + WIN + Middle Mouse Button
+    - name: Play Previous Song
+      key: CTRL + WIN + Mouse Wheel Down
+    - name: Play Next Song
+      key: CTRL + WIN + Mouse Wheel Up
+    - name: Screenshoot Tool
+      key: ImprPant
+    - name: Color Picker
+      key: WIN + ImprPant
+    - name: Logout Menu
+      key: WIN + Calc
+    - name: Keybindings Cheatsheet
+      key: WIN + /
+
+- name: Hyprland Window Management
+  keybinds:
+    - name: Move Window
+      key: WIN + Mouse Left Button
+    - name: Resize Window
+      key: WIN + Mouse Right Button
+    - name: Kill Active Window
+      key: WIN + Q
+    - name: Focusing on Windows
+      key: WIN + Arrow Keys / Vim Navigation Keys
+    - name: Moving Windows
+      key: SHIFT + WIN + Arrow Keys / Vim Navigation Keys
+    - name: Toggle Floating Window
+      key: WIN + A
+    - name: Toggle Pseudo Mode
+      key: WIN + P
+    - name: Toggle Fullscreen Window
+      key: WIN + F
+    - name: Toggle Group
+      key: WIN + S
+    - name: Change Active Group
+      key: ALT + TAB
+    - name: Toggle Group Split
+      key: WIN + W
+
+- name: Hyprland Workspace Management
+  keybinds:
+    - name: Moving to a specific Workspace
+      key: WIN + 1-2-3...
+    - name: Moving Windows to other specific Worskpace
+      key: SHIFT + WIN + 1-2-3...
+    - name: Moving Windows to other specific Workspace (Silent)
+      key: WIN + ALT + 1-2-3...
+    - name: Moving to the next Workspace (Mouse)
+      key: WIN + Mouse Wheel Down / Up
+    - name: Moving to the next Worskpace (Keyboard)
+      key: CTRL + WIN + Left Key / Rigth Key
+
+- name: Hyprland Apps
+  keybinds:
+    - name: Launch Browser
+      key: WIN + .
+    - name: Launch Editor / IDE
+      key: WIN + Return
+    - name: Launch Alternative Editor / IDE
+      key: SHIFT + WIN + Return
+    - name: Launch File Manager
+      key: WIN + NP0
+    - name: Launch Terminal
+      key: WIN + Enter
+    - name: Open Launcher
+      key: WIN + TAB
+    - name: Open Alternative Launcher
+      key: WIN + SPACE

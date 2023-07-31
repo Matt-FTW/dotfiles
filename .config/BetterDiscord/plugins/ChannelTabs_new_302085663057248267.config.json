@@ -2,35 +2,36 @@
     "settings": {
         "tabs": [
             {
-                "name": "#multimedia-general",
-                "url": "/channels/674984102860161025/675014488097030153",
-                "selected": true,
+                "name": "#general",
+                "url": "/channels/674984102860161025/674985827121758208",
+                "selected": false,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "675014488097030153"
+                "channelId": "674985827121758208"
             },
             {
-                "name": "#feedback-and-suggestions",
-                "url": "/channels/959006368784850994/1027703875291062373",
+                "name": "#gameplay-topics",
+                "url": "/channels/959006368784850994/1066831318618472468",
                 "selected": false,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/959006368784850994/ffd2d5ef008ed1d63fb3145840b1a6db.webp?size=40",
-                "channelId": "1027703875291062373"
+                "channelId": "1066831318618472468"
             },
             {
-                "name": "#showcase",
-                "url": "/channels/635612648934735892/635625917623828520",
+                "name": "#ricing-theming",
+                "url": "/channels/635612648934735892/635625925748457482",
                 "selected": false,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/635612648934735892/a_3a2557b931496fa8f2d0134b2ced5feb.webp?size=40",
-                "channelId": "635625917623828520"
+                "channelId": "635625925748457482"
             },
             {
-                "name": "Friends",
-                "url": "/channels/@me",
-                "selected": false,
+                "name": "#general",
+                "url": "/channels/674984102860161025/674985827121758208",
+                "selected": true,
                 "currentStatus": "none",
-                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+                "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
+                "channelId": "674985827121758208"
             }
         ],
         "favs": [],

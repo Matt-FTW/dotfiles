@@ -38,7 +38,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -323,7 +324,7 @@
                             "items": [
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
-                                    "label": "Export Profile (Lua)..."
+                                    "label": "Export Profile (Default)..."
                                 },
                                 {
                                     "id": "workbench.profiles.actions.importProfile",
@@ -346,7 +347,7 @@
                             "items": [
                                 {
                                     "id": "submenuitem.Profiles",
-                                    "label": "Profiles (Lua)",
+                                    "label": "Profiles (Default)",
                                     "submenu": {
                                         "items": [
                                             {
@@ -363,7 +364,8 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.__default__profile__",
-                                                "label": "Default"
+                                                "label": "Default",
+                                                "checked": true
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-7191cca2",
@@ -375,8 +377,7 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1645caa6",
-                                                "label": "Lua",
-                                                "checked": true
+                                                "label": "Lua"
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1f364037",
@@ -392,10 +393,6 @@
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.renameCurrentProfile",
-                                                "label": "Rename..."
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.showProfileContents",
@@ -696,8 +693,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "&&Activity Bar",
-                                    "checked": true
+                                    "label": "&&Activity Bar"
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
@@ -891,10 +887,6 @@
                     {
                         "id": "workbench.view.extensions",
                         "label": "E&&xtensions"
-                    },
-                    {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1809,7 +1801,7 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 48,
+            "activityBarWidth": 0,
             "sideBarWidth": 247,
             "statusBarHeight": 0,
             "windowBorder": false
@@ -1823,7 +1815,7 @@
                 "mode": 1,
                 "x": 0,
                 "y": 0,
-                "width": 1246,
+                "width": 2516,
                 "height": 976
             }
         },
@@ -1907,7 +1899,7 @@
             "file:///home/matt/Juegos/SteamLibrary/steamapps/common/ELDEN%20RING": "__default__profile__",
             "file:///docs/Documentos/Repos/Personal/Cursos/Python": "-1f364037",
             "file:///home/matt/.config/nvim": "-1645caa6",
-            "file:///home/matt/.config": "-1645caa6"
+            "file:///home/matt/.config": "__default__profile__"
         },
         "emptyWindows": {}
     },

@@ -1,5 +1,5 @@
 settings:
-  keyb_path: /home/matt/.config/keyb/default.yml
+  keyb_path: /home/matt/.config/keyb/hyprland.yml
   debug: false
   reverse: false
   mouse: true
@@ -17,12 +17,12 @@ settings:
 color:
   prompt: ""
   cursor_fg: ""
-  cursor_bg: "#626880"
-  filter_fg: "#ef9f76"
+  cursor_bg: "#5b6078"
+  filter_fg: "#8bd5ca"
   filter_bg: ""
-  counter_fg: "#8caaee"
+  counter_fg: "#b7bdf8"
   counter_bg: ""
-  placeholder_fg: "#8caaee"
+  placeholder_fg: "#b7bdf8"
   placeholder_bg: ""
   border_color: ""
 keys:
@@ -38,6 +38,6 @@ keys:
   top: ctrl+b
   middle: M
   bottom: ctrl+f
-  search: /
+  search: i
   clear_search: q
   normal: enter
