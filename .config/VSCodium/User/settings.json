@@ -255,7 +255,6 @@
   "search.followSymlinks": false,
   "workbench.editor.showTabs": false,
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false,
   "cSpell.enableFiletypes": [
     "!yaml"
   ],

@@ -38,8 +38,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -324,7 +323,7 @@
                             "items": [
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
-                                    "label": "Export Profile (Default)..."
+                                    "label": "Export Profile (Lua)..."
                                 },
                                 {
                                     "id": "workbench.profiles.actions.importProfile",
@@ -347,7 +346,7 @@
                             "items": [
                                 {
                                     "id": "submenuitem.Profiles",
-                                    "label": "Profiles (Default)",
+                                    "label": "Profiles (Lua)",
                                     "submenu": {
                                         "items": [
                                             {
@@ -364,8 +363,7 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.__default__profile__",
-                                                "label": "Default",
-                                                "checked": true
+                                                "label": "Default"
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-7191cca2",
@@ -377,7 +375,8 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1645caa6",
-                                                "label": "Lua"
+                                                "label": "Lua",
+                                                "checked": true
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1f364037",
@@ -393,6 +392,10 @@
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
+                                            },
+                                            {
+                                                "id": "workbench.profiles.actions.renameCurrentProfile",
+                                                "label": "Rename..."
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.showProfileContents",
@@ -520,6 +523,22 @@
                     {
                         "id": "editor.action.clipboardCopyAction",
                         "label": "&&Copy"
+                    },
+                    {
+                        "id": "submenuitem.MenubarCopy",
+                        "label": "Copy As",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "gitlens.copyRemoteFileUrlToClipboard",
+                                    "label": "Copy Remote File URL"
+                                },
+                                {
+                                    "id": "gitlens.copyRemoteFileUrlFrom",
+                                    "label": "Copy Remote File URL From..."
+                                }
+                            ]
+                        }
                     },
                     {
                         "id": "editor.action.clipboardPasteAction",
@@ -693,7 +712,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleActivityBarVisibility",
-                                    "label": "&&Activity Bar"
+                                    "label": "&&Activity Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
@@ -889,6 +909,10 @@
                         "label": "E&&xtensions"
                     },
                     {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
+                    },
+                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -1002,54 +1026,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1801,8 +1816,8 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 0,
-            "sideBarWidth": 247,
+            "activityBarWidth": 48,
+            "sideBarWidth": 310,
             "statusBarHeight": 0,
             "windowBorder": false
         }
@@ -1899,7 +1914,8 @@
             "file:///home/matt/Juegos/SteamLibrary/steamapps/common/ELDEN%20RING": "__default__profile__",
             "file:///docs/Documentos/Repos/Personal/Cursos/Python": "-1f364037",
             "file:///home/matt/.config/nvim": "-1645caa6",
-            "file:///home/matt/.config": "__default__profile__"
+            "file:///home/matt/.config/nvim.old": "__default__profile__",
+            "file:///home/matt/.config": "-1645caa6"
         },
         "emptyWindows": {}
     },

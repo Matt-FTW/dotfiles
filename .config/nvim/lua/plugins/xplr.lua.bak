@@ -1,8 +1,0 @@
-return {
-    {
-        "fhill2/xplr.nvim",
-        lazy = false,
-        build = function() require 'xplr'.install({ hide = true }) end,
-        dependencies = { { 'nvim-lua/plenary.nvim' }, { 'MunifTanjim/nui.nvim' } }
-    }
-}

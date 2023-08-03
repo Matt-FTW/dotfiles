@@ -1,6 +1,6 @@
 return {
-  {
-    "dnlhc/glance.nvim",
-    lazy = false,
-  },
+    {
+        "dnlhc/glance.nvim",
+        lazy = true,
+    },
 }

@@ -1,3 +1,3 @@
 return {
-    { "ellisonleao/glow.nvim", config = true, lazy = false, cmd = "Glow" }
+    { "ellisonleao/glow.nvim", config = true, lazy = true, cmd = "Glow" },
 }
