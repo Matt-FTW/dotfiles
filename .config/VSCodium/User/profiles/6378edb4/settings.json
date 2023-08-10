@@ -140,7 +140,7 @@
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "catppuccin.extraBordersEnabled": true,
   "codeium.enableSearch": true,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailningWhitespace": false,
@@ -247,7 +247,6 @@
   "terminal.integrated.env.linux": {},
   "cSpell.language": "en, es",
   "workbench.editor.showTabs": false,
-  "editor.minimap.enabled": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

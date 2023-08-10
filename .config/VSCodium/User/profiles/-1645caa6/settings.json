@@ -111,7 +111,7 @@
   "gitlens.hovers.currentLine.over": "line",
   "editor.smoothScrolling": true,
   "vscode_custom_css.imports": [
-    "file:///home/matt/.vscode-oss/extensions/brandonkirbyson.vscode-animations-1.0.12/dist/updateHandler.js"
+    "file:///home/matt/.vscode-oss/extensions/brandonkirbyson.vscode-animations-1.0.14/dist/updateHandler.js"
   ],
   "animations.Scrolling": "Slide",
   "animations.Durations": {

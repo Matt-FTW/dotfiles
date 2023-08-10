@@ -38,7 +38,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -53,6 +54,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///docs/Documentos/ObsidianStarterVault/root",
+                                        "path": "/docs/Documentos/ObsidianStarterVault/root",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/docs/Documentos/ObsidianStarterVault/root"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -143,18 +155,18 @@
                                     "label": "/docs/Documentos/Repos"
                                 },
                                 {
-                                    "id": "openRecentFolder",
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config/kitty",
-                                        "path": "/home/matt/.config/kitty",
+                                        "external": "file:///docs/Documentos/ObsidianStarterVault/root/.obsidian/plugins/obsidian-kanban/main.js",
+                                        "path": "/docs/Documentos/ObsidianStarterVault/root/.obsidian/plugins/obsidian-kanban/main.js",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/kitty"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
+                                    "label": "/docs/Documentos/ObsidianStarterVault/root/.obsidian/plugins/obsidian-kanban/main.js"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -256,17 +268,6 @@
                                     "label": "~/.vscode/extensions/github.copilot-1.96.255/dist/extension.js"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/packagesyay.txt",
-                                        "path": "/home/matt/packagesyay.txt",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/packagesyay.txt"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -311,7 +312,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -394,12 +396,12 @@
                                                 "id": "vscode.menubar.separator"
                                             },
                                             {
-                                                "id": "workbench.profiles.actions.renameCurrentProfile",
-                                                "label": "Rename..."
+                                                "id": "workbench.profiles.actions.editCurrentProfile",
+                                                "label": "Edit Profile..."
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.showProfileContents",
-                                                "label": "Show Contents..."
+                                                "label": "Show Profile Contents"
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
@@ -444,6 +446,10 @@
                                 {
                                     "id": "workbench.action.openSnippets",
                                     "label": "Configure User Snippets"
+                                },
+                                {
+                                    "id": "workbench.action.tasks.openUserTasks",
+                                    "label": "User Tasks"
                                 },
                                 {
                                     "id": "submenuitem.ThemesSubMenu",
@@ -523,22 +529,6 @@
                     {
                         "id": "editor.action.clipboardCopyAction",
                         "label": "&&Copy"
-                    },
-                    {
-                        "id": "submenuitem.MenubarCopy",
-                        "label": "Copy As",
-                        "submenu": {
-                            "items": [
-                                {
-                                    "id": "gitlens.copyRemoteFileUrlToClipboard",
-                                    "label": "Copy Remote File URL"
-                                },
-                                {
-                                    "id": "gitlens.copyRemoteFileUrlFrom",
-                                    "label": "Copy Remote File URL From..."
-                                }
-                            ]
-                        }
                     },
                     {
                         "id": "editor.action.clipboardPasteAction",
@@ -1026,45 +1016,54 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3"
+                                    "label": "Group &&3",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4"
+                                    "label": "Group &&4",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5"
+                                    "label": "Group &&5",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group"
+                                    "label": "&&Next Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group"
+                                    "label": "&&Previous Group",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left"
+                                    "label": "Group &&Left",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right"
+                                    "label": "Group &&Right",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above"
+                                    "label": "Group &&Above",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below"
+                                    "label": "Group &&Below",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -1915,6 +1914,7 @@
             "file:///docs/Documentos/Repos/Personal/Cursos/Python": "-1f364037",
             "file:///home/matt/.config/nvim": "-1645caa6",
             "file:///home/matt/.config/nvim.old": "__default__profile__",
+            "file:///docs/Documentos/ObsidianStarterVault/root": "__default__profile__",
             "file:///home/matt/.config": "-1645caa6"
         },
         "emptyWindows": {}

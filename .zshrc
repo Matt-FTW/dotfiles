@@ -74,8 +74,7 @@ ZSH_THEME="intheloop"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git adb aliases archlinux colorize command-not-found colored-man-pages cp docker docker-machine docker-compose dotenv
-          zsh-autocomplete fast-syntax-highlighting zsh-autosuggestions fzf man python ripgrep rust sudo
-         )
+zsh-autocomplete fast-syntax-highlighting zsh-autosuggestions fzf man python ripgrep rust sudo)
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
@@ -94,9 +93,9 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='lvim'
+    export EDITOR='nvim'
 else
-  export EDITOR='lvim'
+    export EDITOR='nvim'
 fi
 
 # Compilation flags

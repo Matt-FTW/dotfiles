@@ -10,6 +10,8 @@ return {
         "ktlint",
         "rustywind",
         "sqlfmt",
+        "markdownlint",
+        "marksman"
       },
     },
   },

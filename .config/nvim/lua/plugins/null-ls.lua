@@ -13,7 +13,8 @@ return {
                 nls.builtins.formatting.ktlint,
                 nls.builtins.formatting.rustywind,
                 nls.builtins.formatting.sqlfmt,
-                nls.builtins.formatting.rustfmt
+                nls.builtins.formatting.rustfmt,
+                nls.builtins.diagnostics.markdownlint,
             })
         end,
     },
