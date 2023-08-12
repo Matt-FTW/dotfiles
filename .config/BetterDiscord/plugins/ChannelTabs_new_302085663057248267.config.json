@@ -2,12 +2,12 @@
     "settings": {
         "tabs": [
             {
-                "name": "#general",
-                "url": "/channels/674984102860161025/674985827121758208",
+                "name": "#noticias_gd",
+                "url": "/channels/674984102860161025/888017395195736116",
                 "selected": true,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "674985827121758208"
+                "channelId": "888017395195736116"
             },
             {
                 "name": "#gameplay-topics",
@@ -18,20 +18,19 @@
                 "channelId": "1066831318618472468"
             },
             {
-                "name": "#showcase",
-                "url": "/channels/635612648934735892/635625917623828520",
+                "name": "#memes",
+                "url": "/channels/184802320565927936/418478500274765826",
                 "selected": false,
                 "currentStatus": "none",
-                "iconUrl": "https://cdn.discordapp.com/icons/635612648934735892/a_3a2557b931496fa8f2d0134b2ced5feb.webp?size=40",
-                "channelId": "635625917623828520"
+                "iconUrl": "https://cdn.discordapp.com/icons/184802320565927936/db1c63b64338fa7acfc148f3dd9af243.webp?size=40",
+                "channelId": "418478500274765826"
             },
             {
-                "name": "@mat0.2",
-                "url": "/channels/@me/681216999690469399",
+                "name": "Friends",
+                "url": "/channels/@me",
                 "selected": false,
-                "currentStatus": "online",
-                "iconUrl": "https://cdn.discordapp.com/avatars/681216357228085263/a16b40e4095d4d978d42168466f4d1d2.webp?size=40",
-                "channelId": "681216999690469399"
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
             }
         ],
         "favs": [],

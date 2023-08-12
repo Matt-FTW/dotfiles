@@ -42,8 +42,6 @@ kitty --class nvtop-kitty nvtop &
 
 #Launch autostart apps
 dex -a -s ~/.config/autostart/ & # Easyeffects, Spotify, Discord and Thunderbird
-openStartpageServer &            # Miniserver for serving a startpage
-
 
 # Other
 xrdb -merge ~/.Xresources

@@ -33,7 +33,7 @@
     "msgBarMaxHeight": "400",
     "windowBarHeight": "18",
     "collapsedDistance": "0",
-    "serverListButtonActive": "true",
+    "serverListButtonActive": "false",
     "channelListButtonActive": "true",
     "msgBarButtonActive": "true",
     "membersListButtonActive": "true",

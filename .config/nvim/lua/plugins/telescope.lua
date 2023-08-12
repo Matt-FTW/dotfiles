@@ -87,7 +87,7 @@ return {
             { "<leader>sm", "<cmd>Telescope marks<cr>", desc = "Jump to Mark" },
             { "<leader>so", "<cmd>Telescope vim_options<cr>", desc = "Options" },
             { "<leader>sR", "<cmd>Telescope resume<cr>", desc = "Resume" },
-            { "<leader>su", "<cmd>Telescope undo<cr>", desc = "Undo" },
+            { "<leader>fu", "<cmd>Telescope undo<cr>", desc = "Telescope Undotree" },
             {
                 "<leader>sw",
                 Util.telescope("grep_string", { word_match = "-w" }),

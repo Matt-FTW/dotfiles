@@ -59,6 +59,17 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///docs/Documentos/Repos/Personal/StartPageStatic",
+                                        "path": "/docs/Documentos/Repos/Personal/StartPageStatic",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/docs/Documentos/Repos/Personal/StartPageStatic"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///docs/Documentos/ObsidianStarterVault/root",
                                         "path": "/docs/Documentos/ObsidianStarterVault/root",
                                         "scheme": "file"
@@ -142,17 +153,6 @@
                                     },
                                     "enabled": true,
                                     "label": "/docs/Musica"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///docs/Documentos/Repos",
-                                        "path": "/docs/Documentos/Repos",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/docs/Documentos/Repos"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1829,7 +1829,7 @@
                 "mode": 1,
                 "x": 0,
                 "y": 0,
-                "width": 2516,
+                "width": 1246,
                 "height": 976
             }
         },
@@ -1843,6 +1843,9 @@
             },
             {
                 "folderUri": "file:///home/matt/.config/awesome"
+            },
+            {
+                "folderUri": "file:///docs/Documentos/Repos/Personal/StartPageStatic"
             },
             {
                 "folderUri": "file:///home/matt/.config"
@@ -1915,6 +1918,7 @@
             "file:///home/matt/.config/nvim": "-1645caa6",
             "file:///home/matt/.config/nvim.old": "__default__profile__",
             "file:///docs/Documentos/ObsidianStarterVault/root": "__default__profile__",
+            "file:///docs/Documentos/Repos/Personal/StartPageStatic": "-1645caa6",
             "file:///home/matt/.config": "-1645caa6"
         },
         "emptyWindows": {}

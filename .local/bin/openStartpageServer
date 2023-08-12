@@ -1,3 +1,0 @@
-#!/bin/sh
-cd ~/Repos/Personal/StartPage/
-python -m http.server 8080
