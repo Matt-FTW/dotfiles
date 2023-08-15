@@ -2,20 +2,20 @@
     "settings": {
         "tabs": [
             {
-                "name": "#noticias_gd",
-                "url": "/channels/674984102860161025/888017395195736116",
+                "name": "#memes",
+                "url": "/channels/674984102860161025/675369610253434900",
                 "selected": true,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "888017395195736116"
+                "channelId": "675369610253434900"
             },
             {
-                "name": "#gameplay-topics",
-                "url": "/channels/959006368784850994/1066831318618472468",
+                "name": "#feedback-and-suggestions",
+                "url": "/channels/959006368784850994/1027703875291062373",
                 "selected": false,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/959006368784850994/ffd2d5ef008ed1d63fb3145840b1a6db.webp?size=40",
-                "channelId": "1066831318618472468"
+                "channelId": "1027703875291062373"
             },
             {
                 "name": "#memes",
@@ -26,11 +26,12 @@
                 "channelId": "418478500274765826"
             },
             {
-                "name": "Friends",
-                "url": "/channels/@me",
+                "name": "@spider300",
+                "url": "/channels/@me/347377928914337792",
                 "selected": false,
-                "currentStatus": "none",
-                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+                "currentStatus": "offline",
+                "iconUrl": "https://cdn.discordapp.com/avatars/346980245028601857/fa3802f0571349385c58a99e46c4ff07.webp?size=40",
+                "channelId": "347377928914337792"
             }
         ],
         "favs": [],

@@ -148,6 +148,26 @@ return {
                 desc = "Goto Symbol (Workspace)",
             },
             {
+                "<leader>sv",
+                Util.telescope("lsp_document_symbols", {
+                    symbols = {
+                        "Variable",
+                        "Parameter",
+                    },
+                }),
+                desc = "Variables",
+            },
+            {
+                "<leader>sV",
+                Util.telescope("lsp_dynamic_workspace_symbols", {
+                    symbols = {
+                        "Variable",
+                        "Parameter",
+                    },
+                }),
+                desc = "Variables (Workspace)",
+            },
+            {
                 "<leader>sA",
                 Util.telescope("treesitter"),
                 desc = "Treesitter Symbols",

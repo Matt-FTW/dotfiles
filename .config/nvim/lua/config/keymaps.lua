@@ -85,3 +85,15 @@ map("n", "<c-/>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
 map("n", "<c-_>", ":FloatermToggle<CR>", { desc = "which_key_ignore" })
 
 vim.keymap.set("n", "<leader>fU", vim.cmd.UndotreeToggle, { noremap = true, silent = true, desc = "Toggle Undotree" })
+vim.api.nvim_set_keymap(
+    "i",
+    "<C-l>",
+    ":lua require('neogen').jump_next<CR>",
+    { noremap = true, silent = true, desc = "Next Neogen Annotation" }
+)
+vim.api.nvim_set_keymap(
+    "i",
+    "<C-h>",
+    ":lua require('neogen').jump_prev<CR>",
+    { noremap = true, silent = true, desc = "Prev Neogen Annotation" }
+)
