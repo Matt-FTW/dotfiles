@@ -1,6 +1,6 @@
 /** ********** Fonts ********** **/
 * {
-  font-family: "CaskaydiaCove Nerd Font", "Lato", sans-serif;
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 15px;
   font-weight: bold;
 }
@@ -29,34 +29,51 @@ button {
   background-clip: padding-box;
 }
 
-
 button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #363a4f;
   outline-style: none;
 }
 
 /** ********** Icons ********** **/
 #lock {
-  background-image: image(url("icons/lock.png"), url("/usr/share/wlogout/icons/lock.png"));
+  background-image: image(
+    url("icons/lock.png"),
+    url("/usr/share/wleave/icons/lock.png")
+  );
 }
 
 #logout {
-  background-image: image(url("icons/logout.png"), url("/usr/share/wlogout/icons/logout.png"));
+  background-image: image(
+    url("icons/logout.png"),
+    url("/usr/share/wleave/icons/logout.png")
+  );
 }
 
 #suspend {
-  background-image: image(url("icons/suspend.png"), url("/usr/share/wlogout/icons/suspend.png"));
+  background-image: image(
+    url("icons/suspend.png"),
+    url("/usr/share/wleave/icons/suspend.png")
+  );
 }
 
 #hibernate {
-  background-image: image(url("icons/hibernate.png"), url("/usr/share/wlogout/icons/hibernate.png"));
+  background-image: image(
+    url("icons/hibernate.png"),
+    url("/usr/share/wleave/icons/hibernate.png")
+  );
 }
 
 #shutdown {
-  background-image: image(url("icons/shutdown.png"), url("/usr/share/wlogout/icons/shutdown.png"));
+  background-image: image(
+    url("icons/shutdown.png"),
+    url("/usr/share/wleave/icons/shutdown.png")
+  );
 }
 
 #reboot {
-  background-image: image(url("icons/reboot.png"), url("/usr/share/wlogout/icons/reboot.png"));
+  background-image: image(
+    url("icons/reboot.png"),
+    url("/usr/share/wleave/icons/reboot.png")
+  );
 }
