@@ -114,16 +114,16 @@ eval "$(zoxide init zsh)"
 
 # Some aliases
 alias code='vscodium'
-alias ls='exa --long --header -a --icons'
-alias tree='exa --long --header -a --icons --tree'
+alias l='exa --long --header -a --icons --git'
+alias ls='exa -a --icons'
+alias lt='exa --long --header -a --icons --tree --git'
+alias ld='exa --long --header -a --icons -D --git'
 alias bruh='genact -s 4'
-alias matrix='unimatrix'
+alias matrix='unimatrix -s 95'
 alias q='exit'
 alias install='yay -S '
 alias uninstall='yay -R '
 alias update='yay -Syu'
-alias search='pacseek'
-alias gpt='tgpt'
 alias clock='tty-clock -sbc'
 alias files='xplr'
 alias sysproc='sysz'
@@ -133,10 +133,15 @@ alias audiorestart='systemctl --user restart wireplumber pipewire pipewire-pulse
 alias info='tldr'
 alias cd='z'
 alias disks='duf'
-alias cdh='zi'
+alias h='zi'
+alias vim='nvim'
+alias vi='nvim'
+alias fsend='floaterm'
+alias dsize='dua i'
 
 PATH=$PATH:/home/matt/.local/bin
 TERMINAL=$TERMINAL:/usr/bin/kitty
 export EDITOR='nvim'
+export LS_COLORS="$(vivid generate catppuccin-macchiato)"
 
 colorscript random

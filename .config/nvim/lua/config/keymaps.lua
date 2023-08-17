@@ -81,8 +81,8 @@ map(
 )
 map("n", "<A-Left>", "FloatermPrev<CR>", { desc = "Previous Terminal" })
 map("n", "<A-Right>", "FloatermNext<CR>", { desc = "Next Terminal" })
+map("n", "<c-Return>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
 map("n", "<c-/>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
-map("n", "<c-_>", ":FloatermToggle<CR>", { desc = "which_key_ignore" })
 
 vim.keymap.set("n", "<leader>fU", vim.cmd.UndotreeToggle, { noremap = true, silent = true, desc = "Toggle Undotree" })
 vim.api.nvim_set_keymap(

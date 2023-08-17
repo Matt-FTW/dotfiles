@@ -1,12 +1,12 @@
 [user]
-	name = Sergio Laín
+    name = Sergio Laín
 	email = sergiolain11@gmail.com
 [safe]
 	directory = Repos/
 [credential "https://github.com"]
-	username = matt
+    username = Matt-FTW
 [filter "lfs"]
-	clean = git-lfs clean -- %f
+    clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
@@ -15,4 +15,21 @@
 [protocol "file"]
 	allow = always
 [credential]
-	helper = libsecret
+    helper = libsecret
+[core]
+    editor = nvim
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    side-by-side = true
+    line-numbers = true
+    syntax-theme = Monokai Extended
+[merge]
+    conflictstyle = diff3
+[pager]
+    blame = delta
+[diff]
+    colorMoved = default
