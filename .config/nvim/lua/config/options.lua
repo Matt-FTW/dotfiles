@@ -77,8 +77,6 @@ if vim.g.neovide then
     vim.g.neovide_theme = "catppuccin-macchiato"
 end
 
-vim.opt.relativenumber = false
-
 vim.opt.shell = "fish"
 
 vim.opt.shiftwidth = 4

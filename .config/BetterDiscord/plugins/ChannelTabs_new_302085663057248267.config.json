@@ -26,11 +26,12 @@
                 "channelId": "923262113500246027"
             },
             {
-                "name": "Friends",
-                "url": "/channels/@me",
+                "name": "@spider300",
+                "url": "/channels/@me/347377928914337792",
                 "selected": false,
-                "currentStatus": "none",
-                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+                "currentStatus": "online",
+                "iconUrl": "https://cdn.discordapp.com/avatars/346980245028601857/fa3802f0571349385c58a99e46c4ff07.webp?size=40",
+                "channelId": "347377928914337792"
             }
         ],
         "favs": [],

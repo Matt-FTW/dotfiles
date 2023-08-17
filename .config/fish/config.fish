@@ -21,6 +21,7 @@ if status is-interactive
     fzf_configure_bindings --directory=\cf
 
     source ~/.config/fish/functions/fzf_git.fish
+    source ~/.config/fish/functions/fzf_git_all.fish
 
     colorscript random
 end
