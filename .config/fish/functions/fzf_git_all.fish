@@ -5,6 +5,5 @@ function allrepos
 
     if test -n "$selected_dir"
         cd "$selected_dir"
-        vim .
     end
 end

@@ -23,10 +23,19 @@
     diffFilter = delta --color-only
 [delta]
     navigate = true    # use n and N to move between diff sections
-    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    light = false
+    dark = true      
     side-by-side = true
     line-numbers = true
-    syntax-theme = Monokai Extended
+    features = decorations     
+    line-numbers-minus-style = "#ed8796"
+    line-numbers-plus-style = "#a6da95"
+    line-numbers-zero-style = "#cad3f5"
+    minus-style = "#24273a" bold "#aa4b59"
+    minus-emph-style = "#24273a" bold "#ed8796"
+    file-style = "#b7bdf8"
+    plus-style = "#24273a" bold "#478a37"
+    plus-emph-style = "#24273a" bold "#a6da95"
 [merge]
     conflictstyle = diff3
 [pager]

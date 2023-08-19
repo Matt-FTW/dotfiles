@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-grim -g "$(slurp)" - | swappy -f - -o ~/Imagenes/Capturas/PC/screenshot$(date +%s).png

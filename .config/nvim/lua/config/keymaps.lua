@@ -97,3 +97,6 @@ vim.api.nvim_set_keymap(
     ":lua require('neogen').jump_prev<CR>",
     { noremap = true, silent = true, desc = "Prev Neogen Annotation" }
 )
+
+vim.keymap.set("n", "<C-c>", "<cmd>PickColor<cr>", { noremap = true, silent = true, desc = "Pick Color" })
+vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", { noremap = true, silent = true, desc = "Pick Color" })

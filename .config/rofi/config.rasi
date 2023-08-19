@@ -53,7 +53,7 @@ configuration {
 
 	/*---------- History and Sorting ----------*/
 	disable-history: false;
-	sorting-method: "normal";
+	sorting-method: "fzf";
 	max-history-size: 25;
 
 	/*---------- Display setting ----------*/

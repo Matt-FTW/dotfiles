@@ -161,6 +161,28 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/matt/.config/xplr/init.lua",
+                                        "path": "/home/matt/.config/xplr/init.lua",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/xplr/init.lua"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///docs/Documentos/Repos/Clase/2%C2%BADAM/PSP/README.md",
+                                        "path": "/docs/Documentos/Repos/Clase/2ºDAM/PSP/README.md",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/docs/Documentos/Repos/Clase/2ºDAM/PSP/README.md"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///docs/Documentos/ObsidianStarterVault/root/.obsidian/plugins/obsidian-kanban/main.js",
                                         "path": "/docs/Documentos/ObsidianStarterVault/root/.obsidian/plugins/obsidian-kanban/main.js",
                                         "scheme": "file"
@@ -227,17 +249,6 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/matt/.config/xplr/init.lua",
-                                        "path": "/home/matt/.config/xplr/init.lua",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/xplr/init.lua"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/matt/.config/fish/config.fish",
                                         "path": "/home/matt/.config/fish/config.fish",
                                         "scheme": "file"
@@ -255,17 +266,6 @@
                                     },
                                     "enabled": true,
                                     "label": "/opt/vscodium-bin/resources/app/product.json"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/matt/.vscode/extensions/github.copilot-1.96.255/dist/extension.js",
-                                        "path": "/home/matt/.vscode/extensions/github.copilot-1.96.255/dist/extension.js",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.vscode/extensions/github.copilot-1.96.255/dist/extension.js"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -312,8 +312,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -491,10 +490,6 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
-                    },
-                    {
-                        "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -689,8 +684,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1452,11 +1446,6 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
-            "workbench.action.closeFolder": {
-                "label": "Ctrl+K F",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k f"
-            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1816,21 +1805,20 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 310,
+            "sideBarWidth": 0,
             "statusBarHeight": 0,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/matt/.config",
-            "backupPath": "/home/matt/.config/VSCodium/Backups/375730732710406c4b825f9cde716ece",
+            "backupPath": "/home/matt/.config/VSCodium/Backups/1692447698773",
             "uiState": {
                 "mode": 1,
-                "x": 0,
-                "y": 0,
-                "width": 1246,
-                "height": 976
+                "x": 1019,
+                "y": 1095,
+                "width": 1405,
+                "height": 933
             }
         },
         "openedWindows": []
@@ -1843,15 +1831,13 @@
             },
             {
                 "folderUri": "file:///home/matt/.config/awesome"
-            },
-            {
-                "folderUri": "file:///docs/Documentos/Repos/Personal/StartPageStatic"
-            },
-            {
-                "folderUri": "file:///home/matt/.config"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1692447698773"
+            }
+        ]
     },
     "userDataProfilesMigration": true,
     "profileAssociations": {
@@ -1921,7 +1907,9 @@
             "file:///docs/Documentos/Repos/Personal/StartPageStatic": "-1645caa6",
             "file:///home/matt/.config": "-1645caa6"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1692447698773": "-1645caa6"
+        }
     },
     "profileAssociationsMigration": true,
     "userDataProfiles": [

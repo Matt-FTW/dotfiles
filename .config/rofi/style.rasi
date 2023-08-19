@@ -1,10 +1,11 @@
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,filebrowser,window";
+	modi:                       "drun,file-browser-extended,window";
     show-icons:                 true;
     display-drun:               "Apps";
     display-run:                "Run";
     display-filebrowser:        "Files";
+    display-file-browser-extended: "Files";
     display-window:             "Windows";
 	drun-display-format:        "{name}\n[<span weight='light' size='small'><i>({generic})</i></span>]";
 	window-format:              "Class : {c}\nWorkspace : {w}";

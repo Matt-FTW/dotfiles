@@ -1,7 +1,6 @@
 function repos
-    set selected_dir (find ~/Repos/ -type d -name '.git' -prune | sed 's/\/\.git$//' | sed 's/^\.\///' | fzf)
+    set selected_dir (fd --type d --base-directory ~/Repos/ -H '^\.git$' | sed 's/\/\.git\/$//' | fzf)
     if test -n "$selected_dir"
         cd "$selected_dir"
-        vim .
     end
 end
