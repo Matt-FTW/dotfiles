@@ -1,4 +1,0 @@
-- name: example
-  keybinds:
-  - name: add your keys in
-    key: /home/matt/.config/keyb/keyb.yml

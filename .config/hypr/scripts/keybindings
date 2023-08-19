@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+CONFIG=$(ls $HOME/.config/keyb/bindings/ | rofi -dmenu -i -p "Selecciona una configuracion de binds" -theme ~/.config/rofi/style.rasi)
+
+if [ -n "$CONFIG" ]; then
+    kitty --class keyb-kitty keyb -k $HOME/.config/keyb/bindings/$CONFIG &
+fi

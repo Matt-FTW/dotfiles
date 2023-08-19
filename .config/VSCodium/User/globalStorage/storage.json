@@ -312,7 +312,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -324,7 +325,7 @@
                             "items": [
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
-                                    "label": "Export Profile (Lua)..."
+                                    "label": "Export Profile (Default)..."
                                 },
                                 {
                                     "id": "workbench.profiles.actions.importProfile",
@@ -347,7 +348,7 @@
                             "items": [
                                 {
                                     "id": "submenuitem.Profiles",
-                                    "label": "Profiles (Lua)",
+                                    "label": "Profiles (Default)",
                                     "submenu": {
                                         "items": [
                                             {
@@ -364,7 +365,8 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.__default__profile__",
-                                                "label": "Default"
+                                                "label": "Default",
+                                                "checked": true
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-7191cca2",
@@ -376,8 +378,7 @@
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1645caa6",
-                                                "label": "Lua",
-                                                "checked": true
+                                                "label": "Lua"
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.profileEntry.-1f364037",
@@ -393,10 +394,6 @@
                                             },
                                             {
                                                 "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.editCurrentProfile",
-                                                "label": "Edit Profile..."
                                             },
                                             {
                                                 "id": "workbench.profiles.actions.showProfileContents",
@@ -490,6 +487,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -684,7 +685,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -761,7 +763,8 @@
                                 },
                                 {
                                     "id": "editor.action.toggleMinimap",
-                                    "label": "&&Minimap"
+                                    "label": "&&Minimap",
+                                    "checked": true
                                 },
                                 {
                                     "id": "breadcrumbs.toggle",
@@ -891,10 +894,6 @@
                     {
                         "id": "workbench.view.extensions",
                         "label": "E&&xtensions"
-                    },
-                    {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1446,6 +1445,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1805,20 +1809,21 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 310,
             "statusBarHeight": 0,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/matt/.config/VSCodium/Backups/1692447698773",
+            "folder": "file:///home/matt/.config",
+            "backupPath": "/home/matt/.config/VSCodium/Backups/375730732710406c4b825f9cde716ece",
             "uiState": {
                 "mode": 1,
-                "x": 1019,
-                "y": 1095,
-                "width": 1405,
-                "height": 933
+                "x": 0,
+                "y": 0,
+                "width": 1246,
+                "height": 976
             }
         },
         "openedWindows": []
@@ -1831,6 +1836,9 @@
             },
             {
                 "folderUri": "file:///home/matt/.config/awesome"
+            },
+            {
+                "folderUri": "file:///home/matt/.config"
             }
         ],
         "emptyWindows": [
@@ -1905,11 +1913,9 @@
             "file:///home/matt/.config/nvim.old": "__default__profile__",
             "file:///docs/Documentos/ObsidianStarterVault/root": "__default__profile__",
             "file:///docs/Documentos/Repos/Personal/StartPageStatic": "-1645caa6",
-            "file:///home/matt/.config": "-1645caa6"
+            "file:///home/matt/.config": "__default__profile__"
         },
-        "emptyWindows": {
-            "1692447698773": "-1645caa6"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "userDataProfiles": [

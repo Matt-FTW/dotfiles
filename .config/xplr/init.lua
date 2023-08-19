@@ -1293,25 +1293,7 @@ xplr.config.modes.builtin.default.key_bindings.on_key["l"] =
 	xplr.config.modes.builtin.default.key_bindings.on_key["right"]
 xplr.config.modes.builtin.default.key_bindings.on_key["tab"] =
 	xplr.config.modes.builtin.default.key_bindings.on_key["ctrl-i"] -- compatibility workaround
-xplr.config.modes.builtin.default.key_bindings.on_key.P = {
-	help = "preview",
-	messages = {
-		{
-			BashExecSilently0 = [===[
-			  FIFO_PATH="/tmp/xplr.fifo"
 
-			  if [ -e "$FIFO_PATH" ]; then
-				"$XPLR" -m StopFifo
-				rm -f -- "$FIFO_PATH"
-			  else
-				mkfifo "$FIFO_PATH"
-				"$HOME/.local/bin/imv-open.sh" "$FIFO_PATH" "$XPLR_FOCUS_PATH" &
-				"$XPLR" -m 'StartFifo: %q' "$FIFO_PATH"
-			  fi
-			]===],
-		},
-	},
-}
 
 -- The builtin debug error mode.
 --

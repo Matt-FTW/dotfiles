@@ -140,7 +140,7 @@
   "terminal.integrated.shellIntegration.suggestEnabled": true,
   "catppuccin.extraBordersEnabled": true,
   "codeium.enableSearch": true,
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": false,
   "files.trimTrailingWhitespace": true,
   "[markdown]": {
     "files.trimTrailningWhitespace": false,
