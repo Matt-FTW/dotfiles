@@ -11,5 +11,6 @@
     "ImageUtilities": true,
     "DoNotTrack": false,
     "ShowAllActivities": true,
-    "HideDisabledEmojis": true
+    "HideDisabledEmojis": true,
+    "Uncompressed Images": true
 }

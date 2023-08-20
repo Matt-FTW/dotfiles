@@ -28,5 +28,6 @@ end
 
 starship init fish | source
 zoxide init fish | source
+navi widget fish | source
 
 source ~/.config/fish/aliases.fish

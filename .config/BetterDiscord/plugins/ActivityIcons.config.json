@@ -1,9 +1,13 @@
 {
     "settings": {
-        "normalIconBehavior": 1
+        "normalActivityIcons": true,
+        "richPresenceIcons": true,
+        "platformIcons": true,
+        "listeningIcons": true,
+        "watchingIcons": true
     },
     "currentVersionInfo": {
-        "version": "1.3.0",
+        "version": "1.4.0",
         "hasShownChangelog": true
     }
 }
