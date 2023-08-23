@@ -1,8 +1,8 @@
 {
 	"all": {
 		"cachedState": {
-			"date": "2023-08-20T12:06:15.619Z",
-			"value": false
+			"date": "2023-08-21T07:20:07.022Z",
+			"value": true
 		},
 		"general": {
 			"showButton": true,
@@ -10,6 +10,10 @@
 			"playEnable": true,
 			"playDisable": true
 		},
+		"keybind": [
+			18,
+			71
+		],
 		"selections": {
 			"enableSound": "stream_started",
 			"disableSound": "stream_ended"

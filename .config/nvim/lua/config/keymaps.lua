@@ -100,3 +100,30 @@ vim.api.nvim_set_keymap(
 
 vim.keymap.set("n", "<C-c>", "<cmd>PickColor<cr>", { noremap = true, silent = true, desc = "Pick Color" })
 vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", { noremap = true, silent = true, desc = "Pick Color" })
+
+vim.keymap.set(
+    "n",
+    "<leader>spd",
+    "<CMD>Glance definitions<CR>",
+    { noremap = true, silent = true, desc = "Glance definitions" }
+)
+
+vim.keymap.set(
+    "n",
+    "<leader>spr",
+    "<CMD>Glance references<CR>",
+    { noremap = true, silent = true, desc = "Glance references" }
+)
+
+vim.keymap.set(
+    "n",
+    "<leader>spt",
+    "<CMD>Glance type_definitions<CR>",
+    { noremap = true, silent = true, desc = "Glance type_definitions" }
+)
+vim.keymap.set(
+    "n",
+    "<leader>spi",
+    "<CMD>Glance implementations<CR>",
+    { noremap = true, silent = true, desc = "Glance implementations" }
+)

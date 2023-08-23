@@ -1,6 +1,13 @@
 return {
     {
         "dnlhc/glance.nvim",
-        lazy = true,
+        cmd = { "Glance" },
+        config = function()
+            require("glance").setup({
+                border = {
+                    enable = true,
+                },
+            })
+        end,
     },
 }

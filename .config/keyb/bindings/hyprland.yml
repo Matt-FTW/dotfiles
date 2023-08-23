@@ -1,75 +1,77 @@
-- name: Hyprland Media
+- name: Media
   keybinds:
     - name: Restart Waybar
-      key: CTRL + WIN + R
+      key: Ctrl + Win + R
     - name: Logout Hyprland
-      key: CTRL + WIN + M
+      key: Ctrl + Win + M
     - name: Play-Pause Music
-      key: CTRL + WIN + Middle Mouse Button
+      key: Ctrl + Win + Middle Mouse Button
     - name: Play Previous Song
-      key: CTRL + WIN + Mouse Wheel Down
+      key: Ctrl + Win + Mouse Wheel Down
     - name: Play Next Song
-      key: CTRL + WIN + Mouse Wheel Up
-    - name: Screenshoot Tool
+      key: Ctrl + Win + Mouse Wheel Up
+    - name: Screenshoot Tool (Output)
       key: ImprPant
+    - name: Screenshoot Tool (Selection)
+      key: Ctrl + ImprPant
+    - name: Screenshoot Tool (Window)
+      key: Shift + ImprPant
+    - name: Screenshoot Picker
+      key: Alt + ImprPant
     - name: Color Picker
-      key: WIN + ImprPant
+      key: Win + ImprPant
     - name: Logout Menu
-      key: WIN + Calc
+      key: Win + Space
     - name: Keybindings Cheatsheet
-      key: WIN + /
+      key: Win + I
 
-- name: Hyprland Window Management
+- name: Window Management
   keybinds:
     - name: Move Window
-      key: WIN + Mouse Left Button
+      key: Win + Mouse Left Button
     - name: Resize Window
-      key: WIN + Mouse Right Button
+      key: Win + Mouse Right Button
     - name: Kill Active Window
-      key: WIN + Q
+      key: Win + Q
     - name: Focusing on Windows
-      key: WIN + Arrow Keys / Vim Navigation Keys
+      key: Win + Arrow Keys / Vim Navigation Keys
     - name: Moving Windows
-      key: SHIFT + WIN + Arrow Keys / Vim Navigation Keys
+      key: Shift + Win + Arrow Keys / Vim Navigation Keys
     - name: Toggle Floating Window
-      key: WIN + A
+      key: Win + A
     - name: Toggle Pseudo Mode
-      key: WIN + P
+      key: Win + P
     - name: Toggle Fullscreen Window
-      key: WIN + F
+      key: Win + F
     - name: Toggle Group
-      key: WIN + S
+      key: Win + S
     - name: Change Active Group
-      key: ALT + TAB
+      key: Alt + TAB
     - name: Toggle Group Split
-      key: WIN + W
+      key: Win + W
 
-- name: Hyprland Workspace Management
+- name: Workspace Management
   keybinds:
     - name: Moving to a specific Workspace
-      key: WIN + 1-2-3...
+      key: Win + 1-2-3...
     - name: Moving Windows to other specific Worskpace
-      key: SHIFT + WIN + 1-2-3...
+      key: Shift + Win + 1-2-3...
     - name: Moving Windows to other specific Workspace (Silent)
-      key: WIN + ALT + 1-2-3...
+      key: Win + Alt + 1-2-3...
     - name: Moving to the next Workspace (Mouse)
-      key: WIN + Mouse Wheel Down / Up
+      key: Win + Mouse Wheel Down / Up
     - name: Moving to the next Worskpace (Keyboard)
-      key: CTRL + WIN + Left Key / Rigth Key
+      key: Ctrl + Win + Left Key / Right Key
 
-- name: Hyprland Apps
+- name: Apps
   keybinds:
     - name: Launch Browser
-      key: WIN + .
+      key: Win + .
     - name: Launch Editor / IDE
-      key: WIN + Return
-    - name: Launch Alternative Editor / IDE
-      key: SHIFT + WIN + Return
+      key: Win + Return
     - name: Launch File Manager
-      key: WIN + NP0
+      key: Win + NP0
     - name: Launch Terminal
-      key: WIN + Enter
+      key: Win + Enter
     - name: Open Launcher
-      key: WIN + TAB
-    - name: Open Alternative Launcher
-      key: WIN + SPACE
+      key: Win + TAB

@@ -1,0 +1,39 @@
+- name: Movement/View
+  keybinds:
+    - name: Next Page
+      key: Shift + J / Down Arrow
+    - name: Previous Page
+      key: Shift + K / Up Arrow
+    - name: Snap Current Page
+      key: P
+    - name: Top Current Page
+      key: H
+    - name: Bottom Current Page
+      key: L
+    - name: Rotate Page by 90º
+      key: r
+    - name: Toggle Status Bar
+      key: a
+    - name: Toggle Fullscreen
+      key: f
+    - name: Toggle Presentation Mode
+      key: F5
+    - name: Toggle Dual Pane
+      key: d
+    - name: Show Index
+      key: Tab
+    - name: Zoom Out
+      key: '-'
+    - name: Zoom In
+      key: '+'
+
+- name: Points
+  keybinds:
+    - name: Search for Text
+      key: '?'
+    - name: Search for the Next Result
+      key: n
+    - name: Search for the Previous Result
+      key: N
+    - name: Open Document
+      key: o

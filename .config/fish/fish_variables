@@ -1,7 +1,18 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EDITOR:nvim
+SETUVAR --export FZF_DEFAULT_COMMAND:fd\x20\x2d\x2dtype\x20f\x20\x2d\x2dfollow\x20\x2d\x2dhidden\x20\x2d\x2dexclude\x20\x2egit
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23363a4f\x2cbg\x3a\x2324273a\x2cspinner\x3a\x23f4dbd6\x2chl\x3a\x23ed8796\x20\x2d\x2dcolor\x3dfg\x3a\x23cad3f5\x2cheader\x3a\x23ed8796\x2cinfo\x3a\x23c6a0f6\x2cpointer\x3a\x23f4dbd6\x20\x2d\x2dcolor\x3dmarker\x3a\x23f4dbd6\x2cfg\x2b\x3a\x23cad3f5\x2cprompt\x3a\x23c6a0f6\x2chl\x2b\x3a\x23ed8796
+SETUVAR --export --path GOPATH:/home/matt/\x2elocal/share/go
+SETUVAR --export LANG:es_ES\x2eUTF\x2d8
+SETUVAR --export LC_ALL:es_ES\x2eUTF\x2d8
 SETUVAR TO_DIR:/home/matt/\x2etofish
+SETUVAR --export VISUAL:nvim
+SETUVAR --export XDG_BIN_HOME:/home/matt/\x2elocal/bin
+SETUVAR --export XDG_CACHE_HOME:/home/matt/\x2ecache
+SETUVAR --export XDG_CONFIG_HOME:/home/matt/\x2econfig
+SETUVAR --export XDG_DATA_HOME:/home/matt/\x2elocal/share
+SETUVAR --export XDG_SCRIPT_HOME:/home/matt/\x2elocal/script
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_acomagu_2F_fish_2D_async_2D_prompt_files:\x7e/\x2econfig/fish/conf\x2ed/__async_prompt\x2efish
 SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish

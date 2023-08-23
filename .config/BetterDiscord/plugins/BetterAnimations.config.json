@@ -11,7 +11,7 @@
             "duration": 400
         },
         "channel": {
-            "enabled": true,
+            "enabled": false,
             "type": "slipUp",
             "easing": "easeInOutCubic",
             "duration": 500

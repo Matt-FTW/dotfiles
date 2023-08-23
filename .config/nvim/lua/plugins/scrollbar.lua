@@ -1,9 +1,10 @@
 return {
     {
         "dstein64/nvim-scrollview",
+        event = "BufReadPost",
         config = function()
             require("scrollview").setup({
-                excluded_filetypes = { "neo-tree", "neotree" },
+                excluded_filetypes = { "neo-tree", "alpha", "symbols-outline" },
                 signs_column = 0,
                 winblend = 25,
                 diagnostics_error_symbol = "",

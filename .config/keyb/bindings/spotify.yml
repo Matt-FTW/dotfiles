@@ -1,0 +1,48 @@
+- name: Basic
+  keybinds:
+    - name: New Playlist
+      key: Ctrl + N
+    - name: New Folder
+      key: Ctrl + Shift + N
+    - name: Select All
+      key: Ctrl + A
+    - name: Filter
+      key: Ctrl + F
+    - name: Search on Library
+      key: Ctrl + Alt + F
+
+- name: Reproduction
+  keybinds:
+    - name: Play-Pause
+      key: Space
+    - name: Like Song
+      key: Alt + Shift + B
+    - name: Random Song
+      key: Ctrl + S
+    - name: Repeat Song
+      key: Ctrl + R
+    - name: Previous Song
+      key: Ctrl + Left Arrow
+    - name: Next Song
+      key: Ctrl + Right Arrow
+
+- name: Navigation
+  keybinds:
+    - name: Home
+      key: Alt + Shift + H
+    - name: Search
+      key: Ctrl + L
+    - name: Fast Search
+      key: Ctrl + K
+    - name: Liked Songs
+      key: Alt + Shift + S
+    - name: Queue
+      key: Alt + Shift + Q
+    - name: My Lists
+      key: Alt + Shift + 1
+    - name: My Podcasts
+      key: Alt + Shift + 2
+    - name: My Artists
+      key: Alt + Shift + 3
+    - name: My Albums
+      key: Alt + Shift + 4
