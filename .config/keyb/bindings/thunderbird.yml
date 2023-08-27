@@ -1,0 +1,89 @@
+- name: Message Functions
+  keybinds:
+    - name: New Message
+      key: Ctrl + N
+    - name: Reply to Message (Sender only)
+      key: Ctrl + R
+    - name: Reply to Message (All)
+      key: Ctrl + Shift + R
+    - name: Reply to List
+      key: Ctrl + Shift + L
+    - name: Forward Message
+      key: Ctrl + L
+    - name: Edit Message as New
+      key: Ctrl + D
+    - name: Get New Messages (Current Account)
+      key: F5
+    - name: Get New Messages (All Accounts)
+      key: Shift + F5
+    - name: Open Message
+      key: Enter / Ctrl + O
+    - name: Expand Thread
+      key: Right Arrow Key
+    - name: Collapse Thread
+      key: Left Arrow Key
+    - name: Expand All Threads
+      key: '*'
+    - name: Collapse All Threads
+      key: '\'
+    - name: Save Message
+      key: Ctrl + S
+    - name: Select all Messages
+      key: Ctrl + A
+    - name: Select Thread
+      key: Ctrl + Shift + A
+    - name: Archive Message
+      key: A
+    - name: Mark Thread as Read
+      key: R
+    - name: Mark as Junk
+      key: J
+    - name: Mark as Read
+      key: Shift + C
+    - name: Toggle Star
+      key: S
+
+- name: Search and Filter
+  keybinds:
+    - name: Search all Messages
+      key: Ctrl + K
+    - name: Quick Filter (Messages in current folder or view)
+      key: Ctrl + Shift + K
+    - name: Find Text in Message
+      key: Ctrl + F
+
+- name: Moving
+  keybinds:
+    - name: Startpage
+      key: Alt + Home
+    - name: Go to Next Message
+      key: F
+    - name: Go to Previous Message
+      key: B
+    - name: Move to Next UI Area
+      key: F6
+    - name: Move to Previous UI Area
+      key: Shift + F6
+    - name: Next Tab
+      key: Ctrl + Tab
+    - name: Previous Tab
+      key: Ctrl + Shift + Tab
+    - name: Address Book
+      key: Ctrl + Shift + B
+    - name: Toggle Message Pane
+      key: F8
+    - name: Close Window or Tab
+      key: Ctrl + W
+
+- name: Calendar
+  keybinds:
+    - name: Toggle Today Pane
+      key: F11
+    - name: New Event
+      key: Ctrl + I
+    - name: Go to Today
+      key: Alt + End
+    - name: Go to Next Day
+      key: ']'
+    - name: Go to Previous Day
+      key: '['

@@ -1,4 +1,7 @@
 #source ~/.config/fish/variables.fish
+set -xg fzf_preview_dir_cmd exa --long --header --icons --all --color=always --group-directories-first
+set -xg fzf_fd_opts --hidden --exclude=.git
+set -xg fzf_diff_highlighter delta --paging=never --width=20
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -14,12 +17,14 @@ if status is-interactive
 
     source ~/.config/fish/functions/fzf_git.fish
     source ~/.config/fish/functions/fzf_git_all.fish
+    source ~/.config/fish/functions/fzf_forgit.fish
 
+    bind \cg fgit
+    bind \e\z zi
     colorscript random
 end
 
 starship init fish | source
 zoxide init fish | source
-navi widget fish | source
 
 source ~/.config/fish/aliases.fish

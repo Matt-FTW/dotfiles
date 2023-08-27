@@ -1,0 +1,35 @@
+- name: General
+  keybinds:
+    - name: Go to the Beginning of the Line
+      key: Ctrl + A
+    - name: Go to the End of the Line
+      key: Ctrl + E
+    - name: Switch to the Previous Command
+      key: Up Arrow Key
+    - name: Delete to the Beginning
+      key: Ctrl + U
+    - name: Cancel the Line
+      key: Ctrl + C
+    - name: Show the command man description
+      key: Alt + H
+    - name: Repeat the Last Argument
+      key: Alt + .
+    - name: Insert Sudo
+      key: Alt + S
+
+- name: Fzf
+  keybinds:
+    - name: Files and Folders
+      key: Ctrl + F
+    - name: Search Git Log
+      key: Ctrl + Alt + L
+    - name: Search Git Status
+      key: Ctrl + Alt + S
+    - name: Search HIstory
+      key: Ctrl + R
+    - name: Search Processes
+      key: Ctrl + Alt + P
+    - name: Search Variables
+      key: Ctrl + Alt + V
+    - name: Search Git Options
+      key: Ctrl + G

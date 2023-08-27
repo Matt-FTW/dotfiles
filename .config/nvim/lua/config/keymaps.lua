@@ -66,7 +66,7 @@ map(
     { desc = "Lazydocker" }
 )
 
-map("n", "<leader>t", ":Telescope floaterm<CR>", { desc = "Terminals" })
+map("n", "<leader>T", ":Telescope floaterm<CR>", { desc = "Terminals" })
 map(
     "n",
     "<leader>ft",
@@ -84,46 +84,30 @@ map("n", "<A-Right>", "FloatermNext<CR>", { desc = "Next Terminal" })
 map("n", "<c-Return>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
 map("n", "<c-/>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
 
-vim.keymap.set("n", "<leader>fU", vim.cmd.UndotreeToggle, { noremap = true, silent = true, desc = "Toggle Undotree" })
-vim.api.nvim_set_keymap(
-    "i",
-    "<C-l>",
-    ":lua require('neogen').jump_next<CR>",
-    { noremap = true, silent = true, desc = "Next Neogen Annotation" }
-)
-vim.api.nvim_set_keymap(
-    "i",
-    "<C-h>",
-    ":lua require('neogen').jump_prev<CR>",
-    { noremap = true, silent = true, desc = "Prev Neogen Annotation" }
-)
+vim.keymap.set("n", "<leader>gU", vim.cmd.UndotreeToggle, { noremap = true, silent = true, desc = "Toggle Undotree" })
 
 vim.keymap.set("n", "<C-c>", "<cmd>PickColor<cr>", { noremap = true, silent = true, desc = "Pick Color" })
 vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", { noremap = true, silent = true, desc = "Pick Color" })
 
-vim.keymap.set(
-    "n",
-    "<leader>spd",
-    "<CMD>Glance definitions<CR>",
-    { noremap = true, silent = true, desc = "Glance definitions" }
-)
+map("n", "gd", "<CMD>Glance definitions<CR>", { noremap = true, silent = true, desc = "Glance definitions" })
 
-vim.keymap.set(
-    "n",
-    "<leader>spr",
-    "<CMD>Glance references<CR>",
-    { noremap = true, silent = true, desc = "Glance references" }
-)
+map("n", "gr", "<CMD>Glance references<CR>", { noremap = true, silent = true, desc = "Glance references" })
 
+map("n", "gy", "<CMD>Glance type_definitions<CR>", { noremap = true, silent = true, desc = "Glance type_definitions" })
+map("n", "gI", "<CMD>Glance implementations<CR>", { noremap = true, silent = true, desc = "Glance implementations" })
+
+-- Open compiler
+vim.keymap.set("n", "<leader>ccc", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Open Compiler" })
+
+vim.keymap.set("n", "<leader>ccR", function()
+    vim.cmd("CompilerStop")
+    vim.cmd("CompilerRedo")
+end, { noremap = true, silent = true, desc = "Redo Compiler" })
+
+-- Toggle compiler results
 vim.keymap.set(
     "n",
-    "<leader>spt",
-    "<CMD>Glance type_definitions<CR>",
-    { noremap = true, silent = true, desc = "Glance type_definitions" }
-)
-vim.keymap.set(
-    "n",
-    "<leader>spi",
-    "<CMD>Glance implementations<CR>",
-    { noremap = true, silent = true, desc = "Glance implementations" }
+    "<leader>ccr",
+    "<cmd>CompilerToggleResults<cr>",
+    { noremap = true, silent = true, desc = "Toggle Compiler Results" }
 )

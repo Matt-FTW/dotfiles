@@ -1,0 +1,109 @@
+- name: General
+  keybinds:
+    - name: New Window
+      key: Ctrl + N
+    - name: Close Window or Tab
+      key: Ctrl + W
+    - name: Close all Windows
+      key: Ctrl + Q
+    - name: Toggle Extra Pane
+      key: F3
+    - name: Search
+      key: Ctrl + F
+    - name: Bookmark Current Location
+      key: Ctrl + D
+    - name: Edit Bookmarks
+      key: Ctrl + B
+    - name: Make Link
+      key: Ctrl + M
+    - name: Pin/Unpin Selection
+      key: Ctrl + Shift + D
+
+- name: Opening
+  keybinds:
+    - name: Open
+      key: Enter / Ctrl + D
+    - name: Open in New Tab
+      key: Ctrl + Shift + T
+    - name: Open in New Window
+      key: Ctrl + Shift + O
+
+- name: Tabs
+  keybinds:
+    - name: New Tab
+      key: Ctrl + T
+    - name: Go to Previous Tab
+      key: Ctrl + RePag
+    - name: Go to Next Tab
+      key: Ctrl + AvPag
+    - name: Switch to Tab 1-9
+      key: Alt + 0-8
+    - name: Move Tab Left
+      key: Ctrl + Shift + RePag
+    - name: Move Tab Right
+      key: Ctrl + Shift + AvPag
+    - name: Cycle Tabs
+      key: Ctrl + Tab
+
+- name: Navigation
+  keybinds:
+    - name: Go Back
+      key: Backspace
+    - name: Go Forward
+      key: Alt + Right Arrow
+    - name: Go Up
+      key: Alt + Up Arrow
+    - name: Go Down
+      key: Alt + Down Arrow
+    - name: Go to Home Folder
+      key: Alt + Home
+    - name: Toggle Location Entry
+      key: Ctrl + L
+
+- name: View
+  keybinds:
+    - name: Zoom In
+      key: Ctrl + Plus
+    - name: Zoom Out
+      key: Ctrl + Minus
+    - name: Reset Zoom
+      key: Ctrl + 0
+    - name: Refresh
+      key: F5
+    - name: Toggle Hidden Files
+      key: Ctrl + H
+    - name: Toggle Sidebar
+      key: F9
+    - name: Toggle Action Menu
+      key: F10
+    - name: Icon View
+      key: Ctrl + 1
+    - name: List View
+      key: Ctrl + 2
+    - name: Compact View
+      key: Ctrl + 3
+
+- name: Editing
+  keybinds:
+    - name: Create Folder
+      key: Ctrl + Shift + N
+    - name: Rename
+      key: F2
+    - name: Move to Trash
+      key: Supr
+    - name: Delete Permanently
+      key: Shift + Supr
+    - name: Cut
+      key: Ctrl + X
+    - name: Copy
+      key: Ctrl + C
+    - name: Paste
+      key: Ctrl + V
+    - name: Select All
+      key: Ctrl + A
+    - name: Undo
+      key: Ctrl + Z
+    - name: Redo
+      key: Ctrl + Y
+    - name: Show Item Properties
+      key: Alt + Enter / Ctrl + I

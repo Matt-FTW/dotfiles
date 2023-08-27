@@ -1,0 +1,101 @@
+- name: Navigation
+  keybinds:
+    - name: Go Back
+      key: Alt + Left Arrow
+    - name: Go Forward
+      key: Alt + Right Arrow
+    - name: Reload
+      key: F5 / Ctrl + R
+    - name: Home
+      key: Alt + Home
+    - name: Open File
+      key: Ctrl + O
+
+- name: Current Page
+  keybinds:
+    - name: Print
+      key: Ctrl + P
+    - name: Zoom In
+      key: Ctrl + Plus
+    - name: Zoom Out
+      key: Ctrl + Minus
+    - name: Reset Zoom
+      key: Ctrl + 0
+    - name: Save Page As
+      key: Ctrl + S
+
+- name: Editing
+  keybinds:
+    - name: Copy
+      key: Ctrl + C
+    - name: Cut
+      key: Ctrl + X
+    - name: Delete
+      key: Supr
+    - name: Paste
+      key: Ctrl + V
+    - name: Select All
+      key: Ctrl + A
+    - name: Undo
+      key: Ctrl + Z
+    - name: Redo
+      key: Ctrl + Y
+
+- name: Search
+  keybinds:
+    - name: Find in this Page
+      key: Ctrl + F
+    - name: Find Again
+      key: F3
+    - name: Find Previous
+      key: Shift + F3
+    - name: Focus Search Bar
+      key: F6 / Ctrl + K / Ctrl + J
+
+- name: Windows & Tabs
+  keybinds:
+    - name: New Window
+      key: Ctrl + N
+    - name: New Private Window
+      key: Ctrl + Shift + P
+    - name: Close Window or Tab
+      key: Ctrl + W
+    - name: Close all Windows
+      key: Ctrl + Q
+    - name: New Tab
+      key: Ctrl + T
+    - name: Go to Previous Tab
+      key: Ctrl + RePag
+    - name: Go to Next Tab
+      key: Ctrl + AvPag
+    - name: Switch to Tab 1-9
+      key: Alt + 0-8
+    - name: Move Tab Left
+      key: Ctrl + Shift + RePag
+    - name: Move Tab Right
+      key: Ctrl + Shift + AvPag
+    - name: Cycle Tabs
+      key: Ctrl + Tab
+
+- name: Windows & Tabs
+  keybinds:
+    - name: Downloads
+      key: Ctrl + Shift + Y
+    - name: Add-Ons
+      key: Ctrl + Shift + A
+    - name: Toggle Developer Tools
+      key: F12
+    - name: Web Console
+      key: Ctrl + Shift + K
+    - name: Style Editor
+      key: Shift + F7
+    - name: Network
+      key: Ctrl + Shift + E
+    - name: Responsive Design View
+      key: Ctrl + Shift + M
+    - name: Page Source
+      key: Ctrl + U
+    - name: Page Info
+      key: Ctrl + I
+    - name: History
+      key: Ctrl + H

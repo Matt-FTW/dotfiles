@@ -1,0 +1,248 @@
+- name: Windows, Buffers and Tabs
+  keybinds:
+    - name: (Nor, Term) Go to the Left Window
+      key: Ctrl + h
+    - name: (Nor, Term) Go to the Right Window
+      key: Ctrl + l
+    - name: (Nor, Term) Go to the Uppper Window
+      key: Ctrl + k
+    - name: (Nor, Term) Go to the Bottom Window
+      key: Ctrl + j
+    - name: (Nor) Increase Window Height
+      key: Ctrl + Up Arrow Key
+    - name: (Nor) Decrease Window Height
+      key: Ctrl + Down Arrow Key
+    - name: (Nor) Increase Window Width
+      key: Ctrl + Right Arrow Key
+    - name: (Nor) Decrease Window Width
+      key: Ctrl + Left Arrow Key
+    - name: (Nor) Previous Buffer
+      key: Shift + h / [ + b
+    - name: (Nor) Next Buffer
+      key: Shift + l / ] + b
+    - name: (Nor) Switch to Other Buffer
+      key: Space + b + b
+    - name: (Nor) Switch to Other Window
+      key: Space + w + w
+    - name: (Nor) Delete Buffer
+      key: Space + b + d
+    - name: (Nor) Delete Window
+      key: Space + w + d
+    - name: (Nor) Split Window Horizontally
+      key: Space + w + - / Space + -
+    - name: (Nor) Split Window Vertically
+      key: Space + w + | / Space + |
+    - name: (Nor) New Tab
+      key: Space + Tab + Tab
+    - name: (Nor) Previous Tab
+      key: Space + Tab + [
+    - name: (Nor) Next Tab
+      key: Space + Tab + ]
+    - name: (Nor) First Tab
+      key: Space + Tab + f
+    - name: (Nor) Last Tab
+      key: Space + Tab + l
+    - name: (Nor) Close Tab
+      key: Space + Tab + d
+
+- name: Debug
+  keybinds:
+    - name: (Nor) Breakpoint Condition
+      key: Space + d + B
+    - name: (Nor) Toggle Breakpoint
+      key: Space + d + b
+    - name: (Nor) Continue
+      key: Space + d + c
+    - name: (Nor) Run to Cursor
+      key: Space + d + C
+    - name: (Nor) Go to line (no execute)
+      key: Space + d + g
+    - name: (Nor) Step Into
+      key: Space + d + i
+    - name: (Nor) Down
+      key: Space + d + j
+    - name: (Nor) Up
+      key: Space + d + k
+    - name: (Nor) Run Last
+      key: Space + d + l
+    - name: (Nor) Step Out
+      key: Space + d + o
+    - name: (Nor) Step Over
+      key: Space + d + O
+    - name: (Nor) Pause
+      key: Space + d + p
+    - name: (Nor) Toggle REPL
+      key: Space + d + r
+    - name: (Nor) Session
+      key: Space + d + s
+    - name: (Nor) Terminate
+      key: Space + d + t
+    - name: (Nor) Widgets
+      key: Space + d + w
+    - name: (Nor) Dap UI
+      key: Space + d + u
+    - name: (Nor, Virt) Eval
+      key: Space + d + e
+    - name: (Nor) Debug Method (Python)
+      key: Space + d + P + t
+    - name: (Nor) Debug Class (Python)
+      key: Space + d + P + c
+
+- name: Test
+  keybinds:
+    - name: (Nor) Run File
+      key: Space + t + t
+    - name: (Nor) Run All Test Files
+      key: Space + t + T
+    - name: (Nor) Run Nearest
+      key: Space + t + r
+    - name: (Nor) Debug Nearest
+      key: Space + t + d
+    - name: (Nor) Toggle Summary
+      key: Space + t + s
+    - name: (Nor) Show Output
+      key: Space + t + o
+    - name: (Nor) Toggle Output Panel
+      key: Space + t + O
+    - name: (Nor) Stop
+      key: Space + t + S
+
+- name: Git & File Version Control
+  keybinds:
+    - name: (Nor) Lazygit (root)
+      key: Space + g + g
+    - name: (Nor) Lazygit (cwd)
+      key: Space + g + G
+    - name: (Nor) Commits
+      key: Space + g + c
+    - name: (Nor) Status
+      key: Space + g + s
+    - name: (Nor) Blame Line
+      key: Space + g + h + b
+    - name: (Nor) Diff This ~
+      key: Space + g + h + D
+    - name: (Nor) Diff This
+      key: Space + g + h + d
+    - name: (Nor) Preview Hunk
+      key: Space + g + p
+    - name: (Nor) Reset Buffer
+      key: Space + g + R
+    - name: (Nor) Reset Hunk
+      key: Space + g + h + r
+    - name: (Nor) Stage Buffer
+      key: Space + g + h + S
+    - name: (Nor) Stage Hunk
+      key: Space + g + h + s
+    - name: (Nor) Undo Stage Hunk
+      key: Space + g + h + u
+    - name: (Nor) Toggle UndoTree
+      key: Space + g + U
+    - name: (Nor) UndoTree (Telescope)
+      key: Space + g + u
+    - name: (Nor) Undo Changes
+      key: u
+    - name: (Nor) Redo Changes
+      key: Ctrl + r
+    - name: (Nor) Save File
+      key: Ctrl + s
+
+- name: Annotations & Comments
+  keybinds:
+    - name: (Nor) Class
+      key: Space + a + c
+    - name: (Nor) Default
+      key: Space + a + d
+    - name: (Nor) File
+      key: Space + a + F
+    - name: (Nor) Function
+      key: Space + a + f
+    - name: (Nor) Type
+      key: Space + a + t
+    - name: (Nor) Todo (Telescope)
+      key: Space + s + t
+    - name: (Nor) Todo/Fix/Fixme (Telescope)
+      key: Space + s + T
+    - name: (Nor) Todo (Trouble)
+      key: Space + x + t
+    - name: (Nor) Todo/Fix/Fixme (Trouble)
+      key: Space + x + T
+
+- name: File Management
+  keybinds:
+    - name: (Nor) Buffers (Telescope)
+      key: Space + f + b
+    - name: (Nor) Lazydocker
+      key: Space + f + d
+    - name: (Nor) File Explorer (cwd)
+      key: Space + f + e / Space + e
+    - name: (Nor) File Explorer (root)
+      key: Space + f + E / Space + E
+    - name: (Nor) Find Files (cwd) (Telescope)
+      key: Space + f + F
+    - name: (Nor) Find Files (root) (Telescope)
+      key: Space + f + f / Space + Space
+    - name: (Nor) New File
+      key: Space + f + n
+    - name: (Nor) Recent Files (cwd) (Telescope)
+      key: Space + f + R
+    - name: (Nor) Recent Files (Telescope)
+      key: Space + f + r
+    - name: (Nor) Workspaces (Telescope)
+      key: Space + f + w
+    - name: (Nor) Xplr (cwd)
+      key: Space + f + X
+    - name: (Nor) Xplr
+      key: Space + f + x (root)
+
+
+- name: Terminal
+  keybinds:
+    - name: (Nor) New Terminal (root)
+      key: Space + f + t
+    - name: (Nor) New Terminal (cwd)
+      key: Space + f + T
+    - name: (Nor) Terminals (Telescope)
+      key: Space + T
+    - name: (Nor) Toggle Terminal
+      key: Ctrl + / | Ctrl + Enter
+
+- name: Compile
+  keybinds:
+    - name: (Nor) Compiler (Telescope)
+      key: Space + c + c + c
+    - name: (Nor) Redo Compiler
+      key: Space + c + c + R
+    - name: (Nor) Compiler Result
+      key: Space + c + c + r
+
+- name: Misc
+  keybinds:
+    - name: Directory Size (root) (Dua Cli)
+      key: Space + s + s
+    - name: Directory Size (cwd) (Dua Cli)
+      key: Space + s + S
+
+- name: Diagnostics
+  keybinds:
+    - name: (Nor) Document Diagnostics (Trouble)
+      key: Space + x + x
+    - name: (Nor) Workspace Diagnostics (Trouble)
+      key: Space + x + X
+    - name: (Nor) Location List
+      key: Space + x + L
+    - name: (Nor) QuickFix List
+      key: Space + x + Q
+    - name: (Nor) Previous Diagnostic
+      key: '[q'
+    - name: (Nor) Next Diagnostic
+      key: ']q'
+    - name: (Nor) Recent Files (cwd) (Telescope)
+      key: Space + f + R
+    - name: (Nor) Recent Files (Telescope)
+      key: Space + f + r
+    - name: (Nor) Workspaces (Telescope)
+      key: Space + f + w
+    - name: (Nor) Xplr (cwd)
+      key: Space + f + X
+    - name: (Nor) Xplr
+      key: Space + f + x (root)

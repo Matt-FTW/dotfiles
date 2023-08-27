@@ -8,7 +8,6 @@ return {
         version = false, -- telescope did only one release, so use HEAD for now
         dependencies = {},
         keys = {
-
             {
                 "<leader>,",
                 "<cmd>Telescope buffers show_all_buffers=true<cr>",
@@ -87,7 +86,7 @@ return {
             { "<leader>sm", "<cmd>Telescope marks<cr>", desc = "Jump to Mark" },
             { "<leader>so", "<cmd>Telescope vim_options<cr>", desc = "Options" },
             { "<leader>sR", "<cmd>Telescope resume<cr>", desc = "Resume" },
-            { "<leader>fu", "<cmd>Telescope undo<cr>", desc = "Telescope Undotree" },
+            { "<leader>gu", "<cmd>Telescope undo<cr>", desc = "Telescope Undotree" },
             {
                 "<leader>sw",
                 Util.telescope("grep_string", { word_match = "-w" }),

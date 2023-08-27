@@ -1,0 +1,86 @@
+- name: Global
+  keybinds:
+    - name: Previous Tab
+      key: '['
+    - name: Next Tab
+      key: ']'
+    - name: Filter List
+      key: '/'
+    - name: Focus Main Panel
+      key: Enter
+    - name: Run Predifinied Custom Command
+      key: c
+    - name: View Bulk Commands
+      key: b
+
+- name: Project
+  keybinds:
+    - name: Edit Lazydocker Config
+      key: e
+    - name: Open Lazydocker Config
+      key: o
+    - name: View Logs
+      key: m
+
+- name: Containers
+  keybinds:
+    - name: Remove
+      key: d
+    - name: Toggle Stopped Containers
+      key: e
+    - name: Pause
+      key: p
+    - name: Stop
+      key: s
+    - name: Restart
+      key: r
+    - name: Attach
+      key: a
+    - name: View Logs
+      key: m
+    - name: Exec Shell
+      key: E
+    - name: Open in Browser
+      key: w
+
+- name: Services
+  keybinds:
+    - name: Up Service
+      key: u
+    - name: Remove containers
+      key: d
+    - name: Pause
+      key: p
+    - name: Stop
+      key: s
+    - name: Restart
+      key: r
+    - name: Attach
+      key: a
+    - name: View Logs
+      key: m
+    - name: Up Project
+      key: U
+    - name: Down Project
+      key: D
+    - name: View Restart Options
+      key: R
+    - name: Exec Shell
+      key: E
+    - name: Open in Browser
+      key: w
+
+- name: Images
+  keybinds:
+    - name: Remove Image
+      key: d
+
+- name: Volumes
+  keybinds:
+    - name: Remove Volume
+      key: d
+
+- name: Networks
+  keybinds:
+    - name: Remove Network
+      key: d
