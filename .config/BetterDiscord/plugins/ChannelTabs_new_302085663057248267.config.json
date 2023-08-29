@@ -2,12 +2,12 @@
     "settings": {
         "tabs": [
             {
-                "name": "#noticias_gd",
-                "url": "/channels/674984102860161025/888017395195736116",
+                "name": "#memes",
+                "url": "/channels/674984102860161025/675369610253434900",
                 "selected": true,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "888017395195736116"
+                "channelId": "675369610253434900"
             },
             {
                 "name": "#feedback-and-suggestions",
@@ -18,12 +18,12 @@
                 "channelId": "1027703875291062373"
             },
             {
-                "name": "#archived-suggestions",
-                "url": "/channels/907385605422448742/923262113500246027/933063572425170976",
+                "name": "#rices",
+                "url": "/channels/907385605422448742/1101893177557925888",
                 "selected": false,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/907385605422448742/15eb0b4e27967b11f7e72c9ccb133ad1.webp?size=40",
-                "channelId": "923262113500246027"
+                "channelId": "1101893177557925888"
             },
             {
                 "name": "Friends",

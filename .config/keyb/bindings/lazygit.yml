@@ -1,0 +1,446 @@
+- name: Global
+  keybinds:
+    - name: Switch to a Recent Repo
+      key: Ctrl + r
+    - name: Previous Tab
+      key: '['
+    - name: Next Tab
+      key: ']'
+    - name: Open Command Log Menu
+      key: '@'
+    - name: View Custom Patch Options
+      key: Ctrl + p
+    - name: View Merge/Rebase Options
+      key: m
+    - name: Refresh
+      key: r
+    - name: Next Screen Mode
+      key: +
+    - name: Previous Screen Mode
+      key: _
+    - name: Open Menu
+      key: '?'
+    - name: View Filter-By-Path Options
+      key: Ctrl + s
+    - name: Open Diff Menu
+      key: Ctrl + e / W
+    - name: Toggle Whitespaces in Diff View
+      key: Ctrl + w
+    - name: Undo
+      key: u
+    - name: Redo
+      key: Ctrl + z
+    - name: Push
+      key: P
+    - name: Pull
+      key: p
+    - name: Search the Current View by Text
+      key: /
+
+- name: Commit Files
+  keybinds:
+    - name: Copy the Committed File Name to the Clipboard
+      key: Ctrl + o
+    - name: Checkout File
+      key: c
+    - name: Discard this Commits Changes to this File
+      key: d
+    - name: Open File
+      key: o
+    - name: Edit File
+      key: e
+    - name: Toggle File Included in Patch
+      key: Space
+    - name: Toggle all Files Included in Patch
+      key: a
+    - name: Enter File to add Selected Lines to the Patch
+      key: Enter
+    - name: Toggle File Tree View
+      key: '`'
+
+- name: Commits
+  keybinds:
+    - name: Copy Commit SHA to the Clipboard
+      key: Ctrl + o
+    - name: Rest Copied Commits Selection
+      key: Ctrl + r
+    - name: View Bisect Options
+      key: b
+    - name: Squash Down
+      key: s
+    - name: Fixup Commit
+      key: f
+    - name: Reword Commit
+      key: r
+    - name: Reword Commit with Editor
+      key: R
+    - name: Delete Commit
+      key: d
+    - name: Edit Commit
+      key: e
+    - name: Pick Commit
+      key: p
+    - name: Creat Fixup Comit for this Commit
+      key: F
+    - name: Squash all 'fixup!' Commits above Selected Commit (Autosquash)
+      key: S
+    - name: Move Commit Down One
+      key: Ctrl + j
+    - name: Move Commit Up One
+      key: Ctrl + k
+    - name: Paste Commits
+      key: v
+    - name: Mark Commit as Base Commit for Rebase
+      key: B
+    - name: Ammend Commit with Staged Changes
+      key: A
+    - name: Set/Reset Commit Author
+      key: a
+    - name: Reverse Commit
+      key: t
+    - name: Tag Commit
+      key: T
+    - name: Open Log Menu
+      key: Ctrl + l
+    - name: View Worktree Options
+      key: w
+    - name: Checkout Commit
+      key: Space
+    - name: Copy Commit Attribute
+      key: y
+    - name: Open Commit in Browser
+      key: o
+    - name: Create Branch from Commit
+      key: n
+    - name: View Reset Options
+      key: g
+    - name: Copy Commit
+      key: c
+    - name: Copy Commit Range
+      key: C
+    - name: View Selected Items Files
+      key: Enter
+
+- name: Files
+  keybinds:
+    - name: Copy the File Name to the Clipboard
+      key: Ctrl + o
+    - name: View Discard Changes Options
+      key: d
+    - name: Toggle Staged
+      key: Space
+    - name: Filter Files by Status
+      key: Ctrl + b
+    - name: Commit Changes
+      key: c
+    - name: Commit Changes without Pre-Commit Hook
+      key: w
+    - name: Ammend last Commit
+      key: A
+    - name: Commit Changes using Git Editor
+      key: C
+    - name: Edit File
+      key: e
+    - name: Open File
+      key: o
+    - name: Ignore or Exclude File
+      key: i
+    - name: Refresh Files
+      key: r
+    - name: Stash all Changes
+      key: s
+    - name: View Stash Options
+      key: S
+    - name: Stage/Unstage all Files
+      key: a
+    - name: Stage Individual Hunks/Lines for File, or Collapse/Expand for Directory
+      key: Enter
+    - name: View Upstream Reset Options
+      key: g
+    - name: View Reset Options
+      key: D
+    - name: Toggle File Tree View
+      key: '`'
+    - name: Open External Merge Tool
+      key: M
+    - name: Fetch
+      key: f
+
+- name: Local Branches
+  keybinds:
+    - name: Copy Branch Name to the Clipboard
+      key: Ctrl + o
+    - name: Show Git-Flow Options
+      key: i
+    - name: Checkout
+      key: Space
+    - name: New Branch
+      key: n
+    - name: Create Pull Request
+      key: o
+    - name: Create Pull Request Options
+      key: O
+    - name: Copy Pull Request URL to the Clipboard
+      key: Ctrl + y
+    - name: Checkout by Name
+      key: c
+    - name: Force Checkout
+      key: F
+    - name: View Delete Options
+      key: d
+    - name: Rebase Checkec-Out Branch onto this Branch
+      key: r
+    - name: Merge into Currently Checked Out Branch
+      key: M
+    - name: Fast-Forward this Branch from its Upstream
+      key: f
+    - name: Create Tag
+      key: t
+    - name: View Reset Options
+      key: g
+    - name: Rename Branch
+      key: R
+    - name: Set/Unset Upstream
+      key: u
+    - name: View Worktree Options
+      key: w
+    - name: View Commits
+      key: Enter
+
+- name: Main Panel (Merging)
+  keybinds:
+    - name: Open File
+      key: o
+    - name: Edit File
+      key: e
+    - name: Select Previous Conflict
+      key: Left Arrow Key
+    - name: Select Next Hunk
+      key: Right Arrow Key
+    - name: Select Previous Hunk
+      key: Up Arrow Key
+    - name: Select Next Hunk
+      key: Down Arrow Key
+    - name: Undo
+      key: z
+    - name: Open External Merge Tool
+      key: M
+    - name: Pick Hunk
+      key: Space
+    - name: Pick All Hunks
+      key: b
+    - name: Return to the Files Panel
+      key: Esc
+
+- name: Main Panel (Patch Building)
+  keybinds:
+    - name: Select Previous Hunk
+      key: Left Arrow Key
+    - name: Select Next Hunk
+      key: Right Arrow Key
+    - name: Toggle Drag Select
+      key: v
+    - name: Toggle Select Hunk
+      key: a
+    - name: Copy the Selected Text to the Clipboard
+      key: Ctrl + o
+    - name: Open File
+      key: o
+    - name: Edit File
+      key: e
+    - name: Add/Remove Line to/from Patch
+      key: Space
+    - name: Exit Custom Patch Builder
+      key: Esc
+
+- name: Main Panel (Staging)
+  keybinds:
+    - name: Select Previous Hunk
+      key: Left Arrow Key
+    - name: Select Next Hunk
+      key: Right Arrow Key
+    - name: Toggle Drag Select
+      key: v
+    - name: Toggle Select Hunk
+      key: a
+    - name: Copy the Selected Text to the Clipboard
+      key: Ctrl + o
+    - name: Open File
+      key: o
+    - name: Edit File
+      key: e
+    - name: Return to the Files Panel
+      key: Esc
+    - name: Switch to Other Panel
+      key: Tab
+    - name: Toggle Line Staged / Unstaged
+      key: Space
+    - name: Discard Change
+      key: d
+    - name: Edit Hunk
+      key: E
+    - name: Commit Changes
+      key: c
+    - name: Commit Changes without Pre-Commit Hook
+      key: w
+    - name: Commit Changes using Git Editor
+      key: C
+
+- name: Reflog
+  keybinds:
+    - name: Copy Commit SHA to the Clipboard
+      key: Ctrl + o
+    - name: View Worktree Options
+      key: w
+    - name: Checkout Commit
+      key: Space
+    - name: Copy Commit Attribute
+      key: y
+    - name: Open Commit in Browser
+      key: o
+    - name: Create New Branch off of Commit
+      key: n
+    - name: View Reset Options
+      key: g
+    - name: Copy Commit
+      key: c
+    - name: Copy Commit Range
+      key: C
+    - name: Reset Copied Commits Selection
+      key: Ctrl + r
+    - name: View Commits
+      key: Enter
+
+- name: Remote Branches
+  keybinds:
+    - name: Copy Branch Name to the Clipboard
+      key: Ctrl + o
+    - name: Checkout
+      key: Space
+    - name: New Branch
+      key: n
+    - name: Merge into Currently Checked Out Branch
+      key: M
+    - name: Rebase Checked-Out Branch onto this Branch
+      key: r
+    - name: Delete Remote Tag
+      key: d
+    - name: Set as Upstream of Checked-Out Branch
+      key: u
+    - name: View Reset Options
+      key: g
+    - name: View Worktree Options
+      key: w
+    - name: View Commits
+      key: Enter
+
+- name: Remotes
+  keybinds:
+    - name: Fetch Remote
+      key: f
+    - name: Add New Remote
+      key: n
+    - name: Delete Remove
+      key: d
+    - name: Edit Remote
+      key: e
+
+- name: Stash
+  keybinds:
+    - name: Apply
+      key: Space
+    - name: Pop
+      key: g
+    - name: Drop
+      key: d
+    - name: New Branch
+      key: n
+    - name: Rename Stash
+      key: r
+    - name: View Worktree Options
+      key: w
+    - name: View Selected Items Files
+      key: Enter
+
+- name: Status
+  keybinds:
+    - name: Open Config File
+      key: o
+    - name: Edit Config File
+      key: e
+    - name: Switch to a Recent Repo
+      key: Enter
+    - name: Show all Branch Logs
+      key: a
+
+- name: Sub-commits
+  keybinds:
+    - name: Copy Commit SHA to the Clipboard
+      key: Ctrl + o
+    - name: View Worktree Options
+      key: w
+    - name: Checkout Commit
+      key: Space
+    - name: Copy Commit Attribute
+      key: y
+    - name: Open Commit in Browser
+      key: o
+    - name: Create New Branch off of Commit
+      key: n
+    - name: View Reset Options
+      key: g
+    - name: Copy Commit
+      key: c
+    - name: Copy Commit Range
+      key: C
+    - name: Reset Copied Commits Selection
+      key: Ctrl + r
+    - name: View Selected Items Files
+      key: Enter
+
+- name: Submodules
+  keybinds:
+    - name: Copy Submodule to the Clipboard
+      key: Ctrl + o
+    - name: Enter Submodule
+      key: Space / Enter
+    - name: Remove Submodule
+      key: d
+    - name: Update Submodule
+      key: u
+    - name: Add New Submodule
+      key: n
+    - name: Update Submodule URL
+      key: e
+    - name: Initialize Submodule
+      key: i
+    - name: View Bulk Submodule Options
+      key: b
+
+- name: Tags
+  keybinds:
+    - name: Checkout
+      key: Space
+    - name: View Delete Options
+      key: d
+    - name: Push Tag
+      key: P
+    - name: Create Tag
+      key: n
+    - name: View Reset Options
+      key: g
+    - name: View Worktree Options
+      key: w
+    - name: View Commits
+      key: Enter
+
+- name: Worktrees
+  keybinds:
+    - name: Create Worktree
+      key: n
+    - name: Switch to Worktree
+      key: Space / Enter
+    - name: Open in Editor
+      key: e
+    - name: Remove Worktree
+      key: d

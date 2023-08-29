@@ -174,7 +174,16 @@ return {
         },
         opts = {
             defaults = {
-                file_ignore_patterns = { "node_modules", "build", "dist", "yarn.lock", "*.git/*", "*/tmp/*", "Juegos/" },
+                file_ignore_patterns = {
+                    ".gitignore",
+                    "node_modules",
+                    "build",
+                    "dist",
+                    "yarn.lock",
+                    "*.git/*",
+                    "*/tmp/*",
+                    "Juegos/",
+                },
             },
             pickers = {
                 find_files = {

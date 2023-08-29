@@ -89,13 +89,6 @@ vim.keymap.set("n", "<leader>gU", vim.cmd.UndotreeToggle, { noremap = true, sile
 vim.keymap.set("n", "<C-c>", "<cmd>PickColor<cr>", { noremap = true, silent = true, desc = "Pick Color" })
 vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", { noremap = true, silent = true, desc = "Pick Color" })
 
-map("n", "gd", "<CMD>Glance definitions<CR>", { noremap = true, silent = true, desc = "Glance definitions" })
-
-map("n", "gr", "<CMD>Glance references<CR>", { noremap = true, silent = true, desc = "Glance references" })
-
-map("n", "gy", "<CMD>Glance type_definitions<CR>", { noremap = true, silent = true, desc = "Glance type_definitions" })
-map("n", "gI", "<CMD>Glance implementations<CR>", { noremap = true, silent = true, desc = "Glance implementations" })
-
 -- Open compiler
 vim.keymap.set("n", "<leader>ccc", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Open Compiler" })
 

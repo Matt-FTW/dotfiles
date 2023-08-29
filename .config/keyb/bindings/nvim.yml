@@ -44,6 +44,10 @@
       key: Space + Tab + l
     - name: (Nor) Close Tab
       key: Space + Tab + d
+    - name: (Nor) Pin Buffer
+      key: Space + b + p
+    - name: (Nor) Delete Non-Pinned Buffers
+      key: Space + b + D
 
 - name: Debug
   keybinds:
@@ -201,8 +205,6 @@
       key: Space + f + t
     - name: (Nor) New Terminal (cwd)
       key: Space + f + T
-    - name: (Nor) Terminals (Telescope)
-      key: Space + T
     - name: (Nor) Toggle Terminal
       key: Ctrl + / | Ctrl + Enter
 
@@ -236,13 +238,176 @@
       key: '[q'
     - name: (Nor) Next Diagnostic
       key: ']q'
-    - name: (Nor) Recent Files (cwd) (Telescope)
-      key: Space + f + R
-    - name: (Nor) Recent Files (Telescope)
-      key: Space + f + r
-    - name: (Nor) Workspaces (Telescope)
-      key: Space + f + w
-    - name: (Nor) Xplr (cwd)
-      key: Space + f + X
-    - name: (Nor) Xplr
-      key: Space + f + x (root)
+
+- name: LSP
+  keybinds:
+    - name: (Nor) Toggle Line Diagnostics
+      key: Space + c + d
+    - name: (Nor) Toggle Lsp Info
+      key: Space + c + l
+    - name: (Nor) Goto Definition (Glance)
+      key: g + d
+    - name: (Nor) References (Glance)
+      key: g + r
+    - name: (Nor) Goto Declaration
+      key: g + D
+    - name: (Nor) Goto Implementation
+      key: g + I
+    - name: (Nor) Goto Type Definition
+      key: g + y
+    - name: (Nor) Hover
+      key: K
+    - name: (Nor) Signature Help
+      key: g + K
+    - name: (Ins) Signature Help
+      key: Ctrl + k
+    - name: (Nor) Next Diagnostic
+      key: ']d'
+    - name: (Nor) Previous Diagnostic
+      key: '[d'
+    - name: (Nor) Next Error
+      key: ']e'
+    - name: (Nor) Previous Error
+      key: '[e'
+    - name: (Nor) Next Warning
+      key: ']w'
+    - name: (Nor) Previous Warning
+      key: '[w'
+    - name: (Nor) Format Document
+      key: Space + c + f
+    - name: (Visual) Format Range
+      key: Space + c + f
+    - name: (Nor, Visual) Code Action
+      key: Space + c + a
+    - name: (Nor) Source Action
+      key: Space + c + A
+    - name: (Nor) Rename
+      key: Space + c + r
+    - name: (Nor) Mason
+      key: Space + c + m
+
+- name: Navigation / Moving Around (Vim Motions)
+  keybinds:
+    - name: (Nor) Move to the Beginning of the Next Word
+      key: w
+    - name: (Nor) Move to the Beginning of the Previous Word
+      key: b
+    - name: (Nor) Move to the End of the Next Word
+      key: e
+    - name: (Nor) Move to the End of the Previous Word
+      key: ge
+    - name: (Nor) Move to the Beginning of the Next WORD
+      key: W
+    - name: (Nor) Move to the Beginning of the Previous WORD
+      key: B
+    - name: (Nor) Move to the End of the Next WORD
+      key: E
+    - name: (Nor) Move to the End of the Previous WORD
+      key: gE
+    - name: (Nor) Move to a Specific Character (Flash)
+      key: f
+    - name: (Nor) Move to a Specific Character (Flash) (Backwards)
+      key: F
+    - name: (Nor, Org) Flash
+      key: s
+    - name: (Nor, Org) Flash Treesitter
+      key: S
+    - name: (Org) Remote Flash
+      key: r
+    - name: (Nor) Treesitter Backwards
+      key: R
+    - name: (Nor) Search a Pattern Forwards
+      key: /
+    - name: (Nor) Search a Pattern Backwards
+      key: '?'
+    - name: (Nor) Move to the First Character of the Line
+      key: 0
+    - name: (Nor) Move to the Last Character of the Line
+      key: $
+    - name: (Nor) Move to the First Non-Blank Character of the Line
+      key: ^
+    - name: (Nor) Move to the Last Non-Blank Character of the Line
+      key: g_
+    - name: (Nor) Jump to the Beginning of the Document
+      key: gg
+    - name: (Nor) Jump Entire Paragraphs Downwards
+      key: '{'
+    - name: (Nor) Jump Entire Paragraphs Upwards
+      key: '}'
+    - name: (Nor) Jump to the End of the Document
+      key: G
+    - name: (Nor) Move Down Half a Page
+      key: Ctrl + d
+    - name: (Nor) Move Up Half a Page
+      key: Ctrl + u
+
+- name: Searching
+  keybinds:
+    - name: (Nor) Autocomands
+      key: Space + s + a
+    - name: (Nor) Treesitter Symbols
+      key: Space + s + A
+    - name: (Nor) Buffers
+      key: Space + s + b
+    - name: (Nor) Commands
+      key: Space + s + c
+    - name: (Nor) Command History
+      key: Space + s + C
+    - name: (Nor) Document Diagnostics
+      key: Space + s + d
+    - name: (Nor) Workspace Diagnostics
+      key: Space + s + D
+    - name: (Nor) Grep (cwd)
+      key: Space + s + g
+    - name: (Nor) Grep (root)
+      key: Space + s + G | Space + /
+    - name: (Nor) Help Pages
+      key: Space + s + h
+    - name: (Nor) Highlight Groups
+      key: Space + s + H
+    - name: (Nor) Keymaps
+      key: Space + s + k
+    - name: (Nor) Lsp Symbols Outline
+      key: Space + s + l
+    - name: (Nor) Jump to Mark
+      key: Space + s + m
+    - name: (Nor) Man Pages
+      key: Space + s + M
+    - name: (Nor) Options
+      key: Space + s + o
+    - name: (Nor) Replace in Files (Spectre)
+      key: Space + s + r
+    - name: (Nor) Resume
+      key: Space + s + R
+    - name: (Nor) Goto Symbol
+      key: Space + s + s
+    - name: (Nor) Goto Symbol (Workspace)
+      key: Space + s + S
+    - name: (Nor) Todo
+      key: Space + s + t
+    - name: (Nor) Todo/Fix/Fixme
+      key: Space + s + T
+    - name: (Nor) Variables
+      key: Space + s + v
+    - name: (Nor) Variables (Workspace)
+      key: Space + s + V
+    - name: (Nor) Word (cwd)
+      key: Space + s + W
+    - name: (Nor) Word (root)
+      key: Space + s + w
+    - name: (Nor) Terminals
+      key: Space + T
+    - name: (Nor) Yank History
+      key: Space + p
+
+- name: Quit & Sessions
+  keybinds:
+    - name: (Nor) Quit All
+      key: Space + q + Q
+    - name: (Nor) Dont Save Current Session
+      key: Space + q + d
+    - name: (Nor) Restore Session
+      key: Space + q + s
+    - name: (Nor) Restore Last Session
+      key: Space + q + l
+

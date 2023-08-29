@@ -18,9 +18,10 @@ if status is-interactive
     source ~/.config/fish/functions/fzf_git.fish
     source ~/.config/fish/functions/fzf_git_all.fish
     source ~/.config/fish/functions/fzf_forgit.fish
+    source ~/.config/fish/functions/zi.fish
 
     bind \cg fgit
-    bind \e\z zi
+    bind \e\z cdzi
     colorscript random
 end
 
