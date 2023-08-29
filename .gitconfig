@@ -1,6 +1,7 @@
 [user]
     name = Sergio Laín
 	email = sergiolain11@gmail.com
+	signingkey = .ssh/id_ed25519.pub
 [safe]
 	directory = Repos/
 [credential "https://github.com"]
@@ -42,3 +43,5 @@
     blame = delta
 [diff]
     colorMoved = default
+[gpg]
+	format = ssh
