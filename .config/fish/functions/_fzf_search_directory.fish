@@ -18,10 +18,16 @@ function _fzf_search_directory --description "Search the current directory. Repl
     if string match --quiet -- "*/" $unescaped_exp_token && test -d "$unescaped_exp_token"
         set --append fd_cmd --base-directory=$unescaped_exp_token
         # use the directory name as fzf's prompt to indicate the search is limited to that directory
-        set --prepend fzf_arguments --prompt="Search Directory $unescaped_exp_token> " --preview="_fzf_preview_file $expanded_token{}"
+        set --prepend fzf_arguments --prompt="All >" --header 'CTRL-A: All / CTRL-D: Directories / CTRL-F: Files' \
+            --bind 'ctrl-a:change-prompt(All> )+reload(fd)' \
+            --bind 'ctrl-d:change-prompt(Directories> )+reload(fd -t d)' \
+            --bind 'ctrl-f:change-prompt(Files> )+reload(fd -t f)' --preview="_fzf_preview_file $expanded_token{}"
         set -f file_paths_selected $unescaped_exp_token($fd_cmd 2>/dev/null | _fzf_wrapper $fzf_arguments)
     else
-        set --prepend fzf_arguments --prompt="Search Directory> " --query="$unescaped_exp_token" --preview='_fzf_preview_file {}'
+        set --prepend fzf_arguments --prompt="All >" --header 'CTRL-A: All / CTRL-D: Directories / CTRL-F: Files' \
+            --bind 'ctrl-a:change-prompt(All> )+reload(fd)' \
+            --bind 'ctrl-d:change-prompt(Directories> )+reload(fd -t d)' \
+            --bind 'ctrl-f:change-prompt(Files> )+reload(fd -t f)' --query="$unescaped_exp_token" --preview='_fzf_preview_file {}'
         set -f file_paths_selected ($fd_cmd 2>/dev/null | _fzf_wrapper $fzf_arguments)
     end
 

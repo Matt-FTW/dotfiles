@@ -25,7 +25,7 @@
       key: Ctrl + Alt + L
     - name: Search Git Status
       key: Ctrl + Alt + S
-    - name: Search HIstory
+    - name: Search Command History
       key: Ctrl + R
     - name: Search Processes
       key: Ctrl + Alt + P
@@ -33,3 +33,9 @@
       key: Ctrl + Alt + V
     - name: Search Git Options
       key: Ctrl + G
+    - name: Search Aliases
+      key: Ctrl + Alt + A
+    - name: Search Navi Pages
+      key: Ctrl + Alt + I
+    - name: Search Zoxide History
+      key: Alt + Z
