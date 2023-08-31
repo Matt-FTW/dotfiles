@@ -36,7 +36,7 @@ set -xg SUDO_EDITOR $EDITOR
 set -xg LANG es_ES.UTF-8
 set -xg LC_ALL es_ES.UTF-8
 
-set -xg FZF_DEFAULT_COMMAND fd
+set -xg FZF_DEFAULT_COMMAND fd --hidden --exclude .git
 set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border --margin=1 --padding=1 \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
