@@ -172,33 +172,36 @@ return {
                 desc = "Treesitter Symbols",
             },
         },
-        opts = {
-            defaults = {
-                file_ignore_patterns = {
-                    ".gitignore",
-                    "node_modules",
-                    "build",
-                    "dist",
-                    "yarn.lock",
-                    "*.git/*",
-                    "*/tmp/*",
-                    "Juegos/",
-                },
-            },
-            pickers = {
-                find_files = {
-                    hidden = true,
-                },
-            },
-            extensions = {
-                undo = {
-                    side_by_side = true,
-                    layout_strategy = "vertical",
-                    layout_config = {
-                        preview_height = 0.65,
+        config = function()
+            require("telescope").setup({
+                defaults = {
+                    file_ignore_patterns = {
+                        ".gitignore",
+                        "node_modules",
+                        "build",
+                        "dist",
+                        "yarn.lock",
+                        "*.git/*",
+                        "*/tmp/*",
+                        "Juegos/",
                     },
                 },
-            },
-        },
+                pickers = {
+                    find_files = {
+                        hidden = true,
+                    },
+                },
+                extensions = {
+                    undo = {
+                        side_by_side = true,
+                        layout_strategy = "vertical",
+                        layout_config = {
+                            preview_height = 0.65,
+                        },
+                    },
+                },
+            })
+            require("telescope").load_extension("refactoring")
+        end,
     },
 }

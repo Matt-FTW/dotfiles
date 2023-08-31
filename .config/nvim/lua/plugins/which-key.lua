@@ -23,6 +23,7 @@ return {
                 ["<leader>w"] = { name = "+windows" },
                 ["<leader>x"] = { name = "+diagnostics/quickfix" },
                 ["<leader>cc"] = { name = "+compile" },
+                ["<leader>cp"] = { name = "+packages" },
             },
         },
         config = function(_, opts)

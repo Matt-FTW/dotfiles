@@ -2,12 +2,12 @@
     "settings": {
         "tabs": [
             {
-                "name": "#noticias_gd",
-                "url": "/channels/674984102860161025/888017395195736116",
+                "name": "#general",
+                "url": "/channels/674984102860161025/674985827121758208",
                 "selected": true,
                 "currentStatus": "none",
                 "iconUrl": "https://cdn.discordapp.com/icons/674984102860161025/a4c5c84a118b923dfe68dccd886d1d87.webp?size=40",
-                "channelId": "888017395195736116"
+                "channelId": "674985827121758208"
             },
             {
                 "name": "#feedback-and-suggestions",

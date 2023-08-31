@@ -104,3 +104,42 @@ vim.keymap.set(
     "<cmd>CompilerToggleResults<cr>",
     { noremap = true, silent = true, desc = "Toggle Compiler Results" }
 )
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>cps",
+    "<cmd>lua require('package-info').show({ force = true })<cr>",
+    { silent = true, noremap = true, desc = "Show Package Versions" }
+)
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>cpu",
+    "<cmd>lua require('package-info').update()<cr>",
+    { silent = true, noremap = true, desc = "Update Package" }
+)
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>cpr",
+    "<cmd>lua require('package-info').delete()<cr>",
+    { silent = true, noremap = true, desc = "Remove Package" }
+)
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>cpv",
+    "<cmd>lua require('package-info').change_version()<cr>",
+    { silent = true, noremap = true, desc = "Change Package Version" }
+)
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>cpn",
+    "<cmd>lua require('package-info').install()<cr>",
+    { silent = true, noremap = true, desc = "Install New Dependency" }
+)
+
+vim.keymap.set({ "n", "x" }, "<leader>cR", function()
+    require("telescope").extensions.refactoring.refactors()
+end, { noremap = true, silent = true, desc = "Refactor" })
