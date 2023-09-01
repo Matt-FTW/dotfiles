@@ -13,6 +13,7 @@ set -xg CARGO_HOME $XDG_DATA_HOME/cargo
 set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
 set -xg NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
+set -xg ANDROID_HOME $XDG_DATA_HOME/android
 
 set -x fish_user_paths
 fish_add_path $XDG_BIN_HOME

@@ -26,6 +26,7 @@ require("lazy").setup({
         { import = "lazyvim.plugins.extras.coding.copilot" },
         { import = "lazyvim.plugins.extras.lang.yaml" },
         { import = "lazyvim.plugins.extras.coding.yanky" },
+        { import = "lazyvim.plugins.extras.util.project" },
         { import = "plugins" },
     },
     defaults = {

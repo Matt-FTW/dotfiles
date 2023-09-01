@@ -5,10 +5,7 @@ return {
         cmd = "SymbolsOutline",
         keys = { { "<leader>sl", "<cmd>SymbolsOutline<cr>", desc = "Lsp Symbols Outline" } },
         config = function()
-            require("symbols-outline").setup({
-                width = 40,
-                relative_width = false,
-            })
+            require("symbols-outline").setup()
         end,
     },
 }

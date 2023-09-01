@@ -9,6 +9,10 @@ return {
                         disable = false,
                         sorting = "frecency",
                     },
+                    ["project.nvim#projects"] = {
+                        disable = false,
+                        sorting = "frecency",
+                    },
                 },
             })
         end,

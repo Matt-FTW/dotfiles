@@ -48,6 +48,12 @@
       key: Space + b + p
     - name: (Nor) Delete Non-Pinned Buffers
       key: Space + b + D
+    - name: (Nor) Maximise Window Vertically
+      key: Space + w + v
+    - name: (Nor) Maximise Window Horizontally
+      key: Space + w + h
+    - name: (Nor) Equilaze Window
+      key: Space + w + e
 
 - name: Debug
   keybinds:
@@ -198,7 +204,6 @@
     - name: (Nor) Xplr
       key: Space + f + x (root)
 
-
 - name: Terminal
   keybinds:
     - name: (Nor) New Terminal (root)
@@ -285,6 +290,8 @@
       key: Space + c + r
     - name: (Nor) Mason
       key: Space + c + m
+    - name: (Nor, Visual) Refactor
+      key: Space + c + R
 
 - name: Navigation / Moving Around (Vim Motions)
   keybinds:
@@ -411,3 +418,15 @@
     - name: (Nor) Restore Last Session
       key: Space + q + l
 
+- name: Package Management
+  keybinds:
+    - name: (Nor) Install New Package
+      key: Space + c + p + n
+    - name: (Nor) Update Package
+      key: Space + c + p + u
+    - name: (Nor) Remove Package
+      key: Space + c + p + r
+    - name: (Nor) Change Package Version
+      key: Space + c + p + v
+    - name: (Nor) Show Packages Versions
+      key: Space + c + p + s

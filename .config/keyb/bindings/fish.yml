@@ -39,3 +39,6 @@
       key: Ctrl + Alt + I
     - name: Search Zoxide History
       key: Alt + Z
+    - name: Tab Completion
+      key: Tab
+

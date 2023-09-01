@@ -1,0 +1,91 @@
+- name: General
+  keybinds:
+    - name: New Note
+      key: Ctrl + N
+    - name: New Note in a Different Pane
+      key: Ctrl + Shift + N
+    - name: Toggle Edit/Preview Mode
+      key: Ctrl + Space
+    - name: Open Command Palette
+      key: Ctrl + Shift + P
+    - name: View Merge/Rebase Options
+      key: m
+    - name: Refresh
+      key: r
+    - name: Next Screen Mode
+      key: +
+    - name: Previous Screen Mode
+      key: _
+    - name: Open Menu
+      key: '?'
+    - name: View Filter-By-Path Options
+      key: Ctrl + s
+    - name: Open Diff Menu
+      key: Ctrl + e / W
+    - name: Toggle Whitespaces in Diff View
+      key: Ctrl + w
+    - name: Undo
+      key: u
+    - name: Redo
+      key: Ctrl + z
+    - name: Push
+      key: P
+    - name: Pull
+      key: p
+    - name: Search the Current View by Text
+      key: /
+
+- name: Tabs and Views
+  keybinds:
+    - name: New Tab
+      key: Ctrl + T
+    - name: Close Tab
+      key: Ctrl + W
+    - name: Go to Tab (1...9)
+      key: Ctrl + 1-9
+    - name: Go to Next Tab
+      key: Ctrl + Tab / Ctrl + Page Down
+    - name: Go to Previous Tab
+      key: Ctrl + Shift + Tab / Ctrl + Page Up
+    - name: Home Tab
+      key: Ctrl + Home
+    - name: Open Link Under Cursor in New Tab
+      key: Ctrl + Click
+    - name: Undo Close Tab
+      key: Ctrl + Shift + T
+    - name: Split Horizontally
+      key: Ctrl + -
+    - name: Split Vertically
+      key: Ctrl + \
+    - name: Toggle Left Sidebar
+      key: Ctrl + Shift + ´
+    - name: Toggle Right Sidebar
+      key: Ctrl + Shift + ç
+
+- name: Searching
+  keybinds:
+    - name: Search Text in Current Note
+      key: Ctrl + F
+    - name: Search Text in All Notes
+      key: Ctrl + Shift + F
+    - name: Search Notes
+      key: Ctrl + P
+
+- name: Formatting
+  keybinds:
+    - name: Toggle Bold
+      key: Control + B
+    - name: Toggle Italic
+      key: Control + I
+    - name: Toggle Underline
+      key: Control + U
+    - name: Undo
+      key: Control + Z
+    - name: Redo
+      key: Control + R
+    - name: Cut
+      key: Control + X
+    - name: Copy
+      key: Control + C
+    - name: Paste
+      key: Control + V
