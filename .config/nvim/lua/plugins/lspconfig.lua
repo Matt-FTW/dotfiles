@@ -8,5 +8,15 @@ return {
             keys[#keys + 1] = { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" }
             keys[#keys + 1] = { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" }
         end,
+        opts = {
+            servers = {
+                marksman = {},
+            },
+            setup = {
+                marksman = function()
+                    require("lazyvim.util").on_attach(function(client, _) end)
+                end,
+            },
+        },
     },
 }
