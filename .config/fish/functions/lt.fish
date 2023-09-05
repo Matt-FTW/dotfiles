@@ -1,4 +1,4 @@
-function lt --wraps='exa --long --header -a --icons --tree --git --group-directories-first' --description 'alias lt=exa --long --header -a --icons --tree --git --group-directories-first'
-  exa --long --header -a --icons --tree --git --group-directories-first $argv
-        
+function lt --wraps='eza --long --header -a --icons --tree --git --group-directories-first' --description 'alias lt=eza --long --header -a --icons --tree --git --group-directories-first'
+    eza --long --header -a --icons --tree --git --group-directories-first --hyperlink $argv
+
 end

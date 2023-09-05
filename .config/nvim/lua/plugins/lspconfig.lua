@@ -10,12 +10,19 @@ return {
         end,
         opts = {
             servers = {
-                marksman = {},
-            },
-            setup = {
-                marksman = function()
-                    require("lazyvim.util").on_attach(function(client, _) end)
-                end,
+                cssmodules_ls = {
+                    filetypes = {
+                        "javascript",
+                        "javascriptreact",
+                        "typescript",
+                        "typescriptreact",
+                        "css",
+                        "scss",
+                        "less",
+                        "html",
+                    },
+                },
+                omnisharp_mono = {},
             },
         },
     },

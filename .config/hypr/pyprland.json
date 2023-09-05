@@ -1,0 +1,13 @@
+{
+  "pyprland": {
+    "plugins": ["scratchpads", "expose", "magnify"]
+  },
+  "scratchpads": {
+    "volume": {
+      "command": "pavucontrol",
+      "unfocus": "hide",
+      "animation": "fromLeft",
+      "margin": 20
+    }
+  }
+}

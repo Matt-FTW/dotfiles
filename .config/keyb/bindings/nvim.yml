@@ -402,6 +402,8 @@
       key: Space + s + W
     - name: (Nor) Word (root)
       key: Space + s + w
+    - name: (Nor) Word Under Cursor
+      key: '*'
     - name: (Nor) Terminals
       key: Space + T
     - name: (Nor) Yank History

@@ -29,7 +29,7 @@ DESCRIPTION
 
     Pass -h or --help to print this help message and exit.
 
-EXAMPLES
+ezaMPLES
     Default bindings but bind Search Directory to Ctrl+F and Search Variables to Ctrl+Alt+V
         \$ fzf_configure_bindings --directory=\cf --variables=\e\cv
     Default bindings but disable Search History

@@ -1,4 +1,4 @@
-function ls --wraps='exa -a --icons --group-directories-first' --description 'alias ls=exa -a --icons --group-directories-first'
-  exa -a --icons --group-directories-first $argv
-        
+function ls --wraps='eza -a --icons --group-directories-first' --description 'alias ls=eza -a --icons --group-directories-first'
+    eza -a --icons --group-directories-first --hyperlink $argv
+
 end

@@ -4,6 +4,9 @@
 config=$HOME/.config/hypr
 scripts=$config/scripts
 
+# Plugins
+pypr &
+
 # Notification Daemon
 swaync &
 
