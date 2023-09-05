@@ -8,32 +8,6 @@
       key: Ctrl + Space
     - name: Open Command Palette
       key: Ctrl + Shift + P
-    - name: View Merge/Rebase Options
-      key: m
-    - name: Refresh
-      key: r
-    - name: Next Screen Mode
-      key: +
-    - name: Previous Screen Mode
-      key: _
-    - name: Open Menu
-      key: '?'
-    - name: View Filter-By-Path Options
-      key: Ctrl + s
-    - name: Open Diff Menu
-      key: Ctrl + e / W
-    - name: Toggle Whitespaces in Diff View
-      key: Ctrl + w
-    - name: Undo
-      key: u
-    - name: Redo
-      key: Ctrl + z
-    - name: Push
-      key: P
-    - name: Pull
-      key: p
-    - name: Search the Current View by Text
-      key: /
 
 - name: Tabs and Views
   keybinds:

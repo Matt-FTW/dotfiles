@@ -5,7 +5,7 @@ STYLE="$HOME/.config/wleave/style.css"
 
 if [[ ! $(pidof wlogout) ]]; then
     wleave --layout ${LAYOUT} --css ${STYLE} \
-        --buttons-per-row 3 \
+        --buttons-per-row 2 \
         --column-spacing 50 \
         --row-spacing 50 \
         --margin-top 290 \

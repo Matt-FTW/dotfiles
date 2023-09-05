@@ -1,5 +1,5 @@
 [Default]
-save_dir=$HOME/Imagenes/Capturas/PC/
+save_dir=$XDG_SCREENSHOTS_HOME/PC/
 save_filename_format=captura-%Y-%m-%d-%s.png 
 show_panel=false
 line_size=5

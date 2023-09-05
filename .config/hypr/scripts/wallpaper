@@ -2,7 +2,7 @@
 
 # Change the path of the image to yours
 function load_wp(){
-    swww img --transition-type wipe --transition-pos top-right --transition-duration 3.8 --transition-step 255 --transition-fps 75 ~/.config/wallpaper.png
+    swww img --transition-type wipe --transition-pos top-right --transition-duration 3.8 --transition-step 255  ~/.config/wallpaper.png
 }
 
 swww init

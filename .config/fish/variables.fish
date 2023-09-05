@@ -4,6 +4,7 @@ set -xg XDG_DATA_HOME ~/.local/share
 set -xg XDG_STATE_HOME ~/.local/state
 set -xg XDG_BIN_HOME ~/.local/bin
 set -xg XDG_SCRIPT_HOME ~/.local/script
+set -xg XDG_SCREENSHOTS_HOME ~/Imagenes/Capturas
 
 set -xg CONAN_USER_HOME $XDG_CONFIG_HOME
 set -xg GOPATH $XDG_DATA_HOME/go
