@@ -10,6 +10,10 @@
       key: Ctrl + Win + Mouse Wheel Down
     - name: Play Next Song
       key: Ctrl + Win + Mouse Wheel Up
+    - name: Toggle Pavucontrol
+      key: Win + V
+    - name: Restart Audio
+      key: Ctrl + Win + V
     - name: Screenshoot Tool (Output)
       key: ImprPant
     - name: Screenshoot Tool (Selection)
@@ -20,6 +24,8 @@
       key: Alt + ImprPant
     - name: Color Picker
       key: Win + ImprPant
+    - name: Zoom
+      key: Win + Z
     - name: Logout Menu
       key: Win + Space
     - name: Keybindings Cheatsheet

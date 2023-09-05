@@ -1,0 +1,10 @@
+#/bin/bash
+pkill easyeffects
+
+wait
+
+systemctl --user restart wireplumber pipewire pipewire-pulse
+
+notify-send "Audio restarted" "Audio services have been restarted"
+
+easyeffects --gapplication-service &
