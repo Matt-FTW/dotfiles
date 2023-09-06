@@ -2,6 +2,7 @@ source ~/.config/fish/variables.fish
 source ~/.config/fish/keybinds.fish
 
 if status is-interactive
+    source /usr/share/doc/find-the-command/ftc.fish
     colorscript random
 end
 
