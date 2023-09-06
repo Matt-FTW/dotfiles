@@ -228,6 +228,10 @@
       key: Space + s + s
     - name: Directory Size (cwd) (Dua Cli)
       key: Space + s + S
+    - name: (Nor) Spell Suggestions
+      key: z=
+    - name: (Nor) Zen Mode
+      key: Space + z
 
 - name: Diagnostics
   keybinds:
