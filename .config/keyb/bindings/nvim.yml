@@ -230,8 +230,6 @@
       key: Space + s + S
     - name: (Nor) Spell Suggestions
       key: z=
-    - name: (Nor) Zen Mode
-      key: Space + z
 
 - name: Diagnostics
   keybinds:

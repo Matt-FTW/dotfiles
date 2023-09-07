@@ -12,7 +12,7 @@
         "margin-right": 17,
         "modules-left": [
             "custom/arch",
-            "wlr/workspaces"
+            "hyprland/workspaces"
         ],
         "modules-center": [
             "custom/music"
@@ -64,7 +64,7 @@
             "on-click-right": "swaync-client -d -sw",
             "escape": true
         },
-        "wlr/workspaces": {
+        "hyprland/workspaces": {
             "disable-scroll": true,
             "all-outputs": false,
             "enable-bar-scroll": true,
@@ -104,8 +104,8 @@
                 "focused": " ",
                 "default": " "
             },
-            "on-scroll-up": "hyprctl dispatch workspace m-1",
-            "on-scroll-down": "hyprctl dispatch workspace m+1",
+            "on-scroll-up": "hyprctl dispatch workspace r-1",
+            "on-scroll-down": "hyprctl dispatch workspace r+1",
             "on-click": "activate",
             "sort-by-number": true
         },
@@ -246,7 +246,7 @@
         "margin-right": 17,
         "modules-left": [
             "custom/arch",
-            "wlr/workspaces"
+            "hyprland/workspaces"
         ],
         "modules-center": [
             "custom/music"
@@ -288,7 +288,7 @@
             "on-click-right": "swaync-client -d -sw",
             "escape": true
         },
-        "wlr/workspaces": {
+        "hyprland/workspaces": {
             "disable-scroll": true,
             "all-outputs": false,
             "enable-bar-scroll": true,
@@ -328,8 +328,8 @@
                 "focused": "",
                 "default": ""
             },
-            "on-scroll-up": "hyprctl dispatch workspace m-1",
-            "on-scroll-down": "hyprctl dispatch workspace m+1",
+            "on-scroll-up": "hyprctl dispatch workspace r-1",
+            "on-scroll-down": "hyprctl dispatch workspace r+1",
             "on-click": "activate",
             "sort-by-number": true
         },
@@ -475,7 +475,7 @@
         "margin-right": 17,
         "modules-left": [
             "custom/arch",
-            "wlr/workspaces"
+            "hyprland/workspaces"
         ],
         "modules-center": [
             "custom/music"
@@ -520,7 +520,7 @@
             "on-click-right": "swaync-client -d -sw",
             "escape": true
         },
-        "wlr/workspaces": {
+        "hyprland/workspaces": {
             "disable-scroll": true,
             "active-only": false,
             "all-outputs": false,
@@ -561,8 +561,8 @@
                 "focused": "",
                 "default": ""
             },
-            "on-scroll-up": "hyprctl dispatch workspace m-1",
-            "on-scroll-down": "hyprctl dispatch workspace m+1",
+            "on-scroll-up": "hyprctl dispatch workspace r-1",
+            "on-scroll-down": "hyprctl dispatch workspace r+1",
             "on-click": "activate",
             "sort-by-number": true
         },

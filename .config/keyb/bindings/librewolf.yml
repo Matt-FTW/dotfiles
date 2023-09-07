@@ -77,7 +77,7 @@
     - name: Cycle Tabs
       key: Ctrl + Tab
 
-- name: Windows & Tabs
+- name: Other
   keybinds:
     - name: Downloads
       key: Ctrl + Shift + Y
@@ -99,3 +99,5 @@
       key: Ctrl + I
     - name: History
       key: Ctrl + H
+    - name: Bitwarden Menu
+      key: Ctrl + Alt + P
