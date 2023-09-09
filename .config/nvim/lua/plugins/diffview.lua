@@ -3,8 +3,9 @@ return {
         "sindrets/diffview.nvim",
         cmd = { "DiffviewOpen", "DiffviewFileHistory" },
         keys = {
-            { "<Leader>gd", "<cmd>DiffviewFileHistory<CR>", desc = "Diff File" },
-            { "<Leader>gv", "<cmd>DiffviewOpen<CR>", desc = "Diff View" },
+            { "<Leader>gdd", "<cmd>DiffviewFileHistory<CR>", desc = "Diff File History" },
+            { "<Leader>gdo", "<cmd>DiffviewOpen<CR>", desc = "Open Diff View" },
+            { "<Leader>gdc", "<cmd>DiffviewClose<CR>", desc = "Close Diff View" },
         },
         event = "BufRead",
         config = function()

@@ -23,6 +23,7 @@
 [interactive]
     diffFilter = diff-so-fancy --patch
 [merge]
+    tool = nvim
     conflictstyle = diff3
 [pager]
     blame = diff-so-fancy | less --tabs=4 -RFX

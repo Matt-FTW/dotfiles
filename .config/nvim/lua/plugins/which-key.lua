@@ -24,6 +24,7 @@ return {
                 ["<leader>x"] = { name = "+diagnostics/quickfix" },
                 ["<leader>cc"] = { name = "+compile" },
                 ["<leader>cp"] = { name = "+packages" },
+                ["<leader>gd"] = { name = "+diff" },
             },
         },
         config = function(_, opts)
