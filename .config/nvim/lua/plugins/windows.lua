@@ -4,7 +4,7 @@ return {
         event = "WinNew",
         dependencies = {
             { "anuvyklack/middleclass" },
-            { "anuvyklack/animation.nvim", enabled = false },
+            { "anuvyklack/animation.nvim" },
         },
         keys = {
             { "<leader>wv", "<cmd>WindowsMaximizeVertically<cr>", desc = "Vertical Zoom" },
@@ -15,9 +15,7 @@ return {
             vim.o.winwidth = 10
             vim.o.winminwidth = 10
             vim.o.equalalways = false
-            require("windows").setup({
-                animation = { enable = false, duration = 150 },
-            })
+            require("windows").setup()
         end,
     },
 }

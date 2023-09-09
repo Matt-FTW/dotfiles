@@ -7,6 +7,7 @@ return {
             "SmiteshP/nvim-navic",
             "nvim-tree/nvim-web-devicons", -- optional dependency
         },
+        event = "BufRead",
         opts = {
             -- configurations go here
         },
