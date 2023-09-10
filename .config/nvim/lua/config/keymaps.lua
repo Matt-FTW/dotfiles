@@ -145,3 +145,11 @@ vim.api.nvim_set_keymap(
 vim.keymap.set({ "n", "x" }, "<leader>cR", function()
     require("telescope").extensions.refactoring.refactors()
 end, { noremap = true, silent = true, desc = "Refactor" })
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+vim.keymap.set("n", "n", "nzzzv")
+
+vim.keymap.set("n", "N", "Nzzzv")
