@@ -199,6 +199,10 @@ return {
                             preview_height = 0.65,
                         },
                     },
+                    import = {
+                        -- Add imports to the top of the file keeping the cursor in place
+                        insert_at_top = true,
+                    },
                 },
             })
             require("telescope").load_extension("refactoring")
