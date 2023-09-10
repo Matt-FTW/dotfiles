@@ -17,10 +17,10 @@
 # dialect = "us"
 
 ## enable or disable automatic sync
-# auto_sync = true
+auto_sync = true
 
 ## enable or disable automatic update checks
-# update_check = true
+update_check = true
 
 ## address of the sync server
 # sync_address = "https://api.atuin.sh"
@@ -28,11 +28,11 @@
 ## how often to sync history. note that this is only triggered when a command
 ## is ran, so sync intervals may well be longer
 ## set it to 0 to sync after every command
-# sync_frequency = "1h"
+sync_frequency = "0"
 
 ## which search mode to use
 ## possible values: prefix, fulltext, fuzzy, skim
-# search_mode = "fuzzy"
+search_mode = "fulltext"
 
 ## which filter mode to use
 ## possible values: global, host, session, directory
@@ -45,11 +45,11 @@
 
 ## which style to use
 ## possible values: auto, full, compact
-# style = "auto"
+style = "full"
 
 ## the maximum number of lines the interface should take up
 ## set it to 0 to always go full screen
-# inline_height = 0
+inline_height = 40
 
 ## enable or disable showing a preview of the selected command
 ## useful when the command is longer than the terminal width and is cut off

@@ -374,6 +374,8 @@
       key: Space + s + h
     - name: (Nor) Highlight Groups
       key: Space + s + H
+    - name: (Nor) Imports
+      key: Space + s + i
     - name: (Nor) Keymaps
       key: Space + s + k
     - name: (Nor) Lsp Symbols Outline
@@ -434,3 +436,10 @@
       key: Space + c + p + v
     - name: (Nor) Show Packages Versions
       key: Space + c + p + s
+
+- name: Folds
+  keybinds:
+    - name: (Nor) Open All Folds (Ufo)
+      key: z + R
+    - name: (Nor) Close All Folds (Ufo)
+      key: z + M

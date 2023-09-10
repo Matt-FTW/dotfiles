@@ -67,6 +67,8 @@ map(
 )
 
 map("n", "<leader>T", ":Telescope floaterm<CR>", { desc = "Terminals" })
+
+map("n", "<leader>si", ":Telescope import<CR>", { desc = "Imports" })
 map(
     "n",
     "<leader>ft",
@@ -143,3 +145,6 @@ vim.api.nvim_set_keymap(
 vim.keymap.set({ "n", "x" }, "<leader>cR", function()
     require("telescope").extensions.refactoring.refactors()
 end, { noremap = true, silent = true, desc = "Refactor" })
+
+vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+vim.keymap.set("n", "zM", require("ufo").closeAllFolds)

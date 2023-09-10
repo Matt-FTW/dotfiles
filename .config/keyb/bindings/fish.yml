@@ -20,7 +20,7 @@
 - name: Fzf
   keybinds:
     - name: Files and Folders
-      key: Ctrl + F
+      key: Ctrl + Alt + F
     - name: Search Git Log
       key: Ctrl + Alt + L
     - name: Search Git Status
@@ -30,15 +30,17 @@
     - name: Search Processes
       key: Ctrl + Alt + P
     - name: Search Variables
-      key: Ctrl + Alt + V
+      key: Ctrl + V
     - name: Search Git Options
-      key: Ctrl + G
-    - name: Search Aliases
-      key: Ctrl + Alt + A
+      key: Ctrl + Alt + G
     - name: Search Navi Pages
       key: Ctrl + Alt + I
     - name: Search Zoxide History
       key: Alt + Z
     - name: Tab Completion
       key: Tab
+    - name: Searching Repos
+      key: Control + Alt + R
+    - name: Search Kitty Tabs
+      key: Alt + Tab
 
