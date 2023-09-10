@@ -44,42 +44,40 @@
   border: 2px solid rgba(183, 189, 248, 0.5);
   box-shadow: 3px 3px 1px 1px #181926;
   background-clip: padding-box;
-
 }
 
 /* Window */
 window#waybar {
   color: #cad3f5;
   background: transparent;
-    color: #cdd6f4;
-
+  color: #cdd6f4;
 }
 
 window#waybar.hidded {
-  opacity: 0.0;
+  opacity: 0;
 }
 
 /* Workspaces */
 #workspaces * {
   font-size: 13px;
 }
-#workspaces button label{
-    color: 	#b7bdf8 ;
-    font-weight: bolder;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+#workspaces button label {
+  color: #b7bdf8;
+  font-weight: bolder;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
-#workspaces button.active label{
-    color: #24273a;
-    font-weight: bolder;
+#workspaces button.active label {
+  color: #24273a;
+  font-weight: bolder;
 }
 
-#workspaces button.urgent label{
+#workspaces button.urgent label {
   color: #e06c75;
   font-weight: bolder;
 }
 
-#workspaces{
+#workspaces {
   background-color: #24273a;
   padding: 0 10px;
   margin: 2px 4px 5px 4px;
@@ -89,31 +87,31 @@ window#waybar.hidded {
   background-clip: padding-box;
 }
 
-#workspaces button{
-    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
-    background-color: #24273a ;
-    border-radius: 15px;
-    margin-right: 3px;
-    margin-left: 3px;
-    padding: 0 5px;
-    font-weight: bolder;
-    min-width: 20px;
-    color: #24273a;
-    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+#workspaces button {
+  box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+  background-color: #24273a;
+  border-radius: 15px;
+  margin-right: 3px;
+  margin-left: 3px;
+  padding: 0 5px;
+  font-weight: bolder;
+  min-width: 20px;
+  color: #24273a;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
-#workspaces button.active{
-    padding-right: 6px;
-    padding-left: 6px;
-    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
-    padding-bottom: 3px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background: #cad3f5;
-    background-size: 100% 200%;
-    animation: gradient_f 20s ease-in-out infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-    color: #c678dd;
+#workspaces button.active {
+  padding-right: 6px;
+  padding-left: 6px;
+  box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+  padding-bottom: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: #cad3f5;
+  background-size: 100% 200%;
+  animation: gradient_f 20s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  color: #c678dd;
 }
 
 #workspaces button:hover {
@@ -124,7 +122,7 @@ window#waybar.hidded {
   background-color: #24273a;
 }
 
-#workspaces button.focused:hover label{
+#workspaces button.focused:hover label {
   color: #cad3f5;
 }
 
@@ -132,13 +130,13 @@ window#waybar.hidded {
 #cpu {
   background-color: #24273a;
   color: #8aadf4;
-  transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
 #memory {
   background-color: #24273a;
   color: #a6da95;
-  transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
 #custom-notifications {
@@ -183,7 +181,7 @@ window#waybar.hidded {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
   font-weight: bold;
   color: #1e2030;
-  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #custom-fans {
@@ -225,29 +223,30 @@ window#waybar.hidded {
   color: #98c379;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
   background-color: #98c379;
   color: #1e222a;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #e06c75;
-    color: #1e222a;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: #e06c75;
+  color: #1e222a;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #network {
   background-color: #24273a;
-    color: #8bd5ca
+  color: #8bd5ca;
 }
 
 #network.disconnected {
-    background-color: #ed8796;
-    color: #1e222a;
+  background-color: #ed8796;
+  color: #1e222a;
 }
 
 #custom-notifications {
@@ -258,7 +257,7 @@ window#waybar.hidded {
 @keyframes blink {
   to {
     background-color: #24273a;
-      color: #e06c75;
+    color: #e06c75;
   }
 }
 
