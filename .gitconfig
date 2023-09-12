@@ -1,7 +1,7 @@
 [user]
     name = Sergio Laín
 	email = sergiolain11@gmail.com
-	signingkey = .ssh/id_ed25519.pub
+	signingKey = 14C9B8080681777B
 [safe]
 	directory = Repos/
 [credential "https://github.com"]
@@ -29,5 +29,7 @@
     blame = diff-so-fancy | less --tabs=4 -RFX
 [diff]
     colorMoved = default
+[commit]
+	gpgsign = true
 [gpg]
-	format = ssh
+	program = /sbin/gpg

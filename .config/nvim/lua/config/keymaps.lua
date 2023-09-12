@@ -84,7 +84,7 @@ map(
 map("n", "<A-Left>", "FloatermPrev<CR>", { desc = "Previous Terminal" })
 map("n", "<A-Right>", "FloatermNext<CR>", { desc = "Next Terminal" })
 map("n", "<c-Return>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
-map("n", "<c-/>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
+map("t", "<C-Return>", "<C-\\><C-n><C-\\><C-n>:FloatermToggle<CR>", { desc = "Toggle Terminal", nowait = true })
 
 vim.keymap.set("n", "<leader>gU", vim.cmd.UndotreeToggle, { noremap = true, silent = true, desc = "Toggle Undotree" })
 

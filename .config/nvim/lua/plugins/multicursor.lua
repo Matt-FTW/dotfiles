@@ -14,5 +14,6 @@ return {
                 desc = "Create a selection for selected text or word under the cursor",
             },
         },
+        config = true,
     },
 }

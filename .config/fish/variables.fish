@@ -34,6 +34,7 @@ set -xg EDITOR nvim
 set -xg VISUAL $EDITOR
 set -xg SUDO_EDITOR $EDITOR
 
+set -xg GPG_TTY (tty)
 set -xg LANG es_ES.UTF-8
 set -xg LC_ALL es_ES.UTF-8
 
