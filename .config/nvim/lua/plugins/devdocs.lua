@@ -12,6 +12,10 @@ return {
             "DevdocsUpdate",
             "DevdocsUpdateAll",
         },
+        keys = {
+            { "<leader>sE", "<cmd>DevdocsOpen<cr>", desc = "Devdocs" },
+            { "<leader>se", "<cmd>DevdocsOpenCurrent<cr>", desc = "Devdocs Current" },
+        },
         opts = {
             ensure_installed = {
                 "css",
