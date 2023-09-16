@@ -25,6 +25,9 @@ return {
                 ["<leader>cc"] = { name = "+compile" },
                 ["<leader>cp"] = { name = "+packages" },
                 ["<leader>gd"] = { name = "+diff" },
+                ["<leader>gw"] = { name = "+worktrees" },
+                ["<leader>cR"] = { name = "+refactor" },
+                ["<leader>D"] = { name = "+database" },
             },
         },
         config = function(_, opts)

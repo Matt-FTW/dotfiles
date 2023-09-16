@@ -68,7 +68,14 @@ map(
 
 map("n", "<leader>T", ":Telescope floaterm<CR>", { desc = "Terminals" })
 
+map("n", "<leader>sz", ":Telescope zoxide list<CR>", { desc = "Zoxide" })
+
+map("n", "<leader>sL", ":Telescope luasnip<CR>", { desc = "Snippets (Luasnip)" })
+
+map("n", "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" })
+
 map("n", "<leader>si", ":Telescope import<CR>", { desc = "Imports" })
+
 map(
     "n",
     "<leader>ft",
@@ -141,10 +148,6 @@ vim.api.nvim_set_keymap(
     "<cmd>lua require('package-info').install()<cr>",
     { silent = true, noremap = true, desc = "Install New Dependency" }
 )
-
-vim.keymap.set({ "n", "x" }, "<leader>cR", function()
-    require("telescope").extensions.refactoring.refactors()
-end, { noremap = true, silent = true, desc = "Refactor" })
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
