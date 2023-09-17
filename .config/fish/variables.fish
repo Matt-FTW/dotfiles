@@ -47,5 +47,7 @@ set -xg fzf_preview_dir_cmd eza --long --header --icons --all --color=always --g
 set -xg fzf_fd_opts --hidden --exclude=.git --color=always
 set -xg fzf_diff_highlighter delta --paging=never --width=20
 
+set -x THEFUCK_OVERRIDDEN_ALIASES 'vi, yarn, eza, vim, neofetch, onefetch, cat, tty-clock, dua i'
+
 set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 set -xg BAT_THEME Catppuccin-macchiato

@@ -46,6 +46,7 @@ return {
             window = {
                 mappings = {
                     ["<space>"] = "none",
+                    ["e"] = "open",
                 },
             },
             default_component_configs = {

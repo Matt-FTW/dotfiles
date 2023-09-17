@@ -63,6 +63,12 @@ return {
                         },
                     },
                     lualine_y = {
+                        {
+                            function()
+                                local ok, m = pcall(require, "better_escape")
+                                return ok and m.waiting and "✺" or ""
+                            end,
+                        },
                         { "progress", separator = " ", padding = { left = 1, right = 0 } },
                         { "location", padding = { left = 0, right = 1 } },
                     },
