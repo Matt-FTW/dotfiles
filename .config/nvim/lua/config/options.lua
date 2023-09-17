@@ -3,6 +3,9 @@
 -- Add any additional options here
 vim.loader.enable()
 
+vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+vim.o.foldcolumn = "1"
+
 vim.g.gui_font_default_size = 10
 vim.g.gui_font_size = vim.g.gui_font_default_size
 vim.g.gui_font_face = "JetBrainsMono Nerd Font"
