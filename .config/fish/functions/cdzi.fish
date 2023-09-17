@@ -3,5 +3,7 @@ function cdzi --description 'Open directories from zoxide in a new Kitty tab'
 
     if test -n "$selected_dir"
         cd $selected_dir
+    else
+        commandline -f repaint
     end
 end
