@@ -28,6 +28,8 @@ return {
                 ["<leader>gw"] = { name = "+worktrees" },
                 ["<leader>cR"] = { name = "+refactor" },
                 ["<leader>D"] = { name = "+database" },
+                ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
+                ["<leader>ss"] = { name = "+Goto Symbols" },
             },
         },
         config = function(_, opts)

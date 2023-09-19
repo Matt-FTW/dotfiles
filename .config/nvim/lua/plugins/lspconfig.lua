@@ -8,22 +8,5 @@ return {
             keys[#keys + 1] = { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" }
             keys[#keys + 1] = { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" }
         end,
-        opts = {
-            servers = {
-                cssmodules_ls = {
-                    filetypes = {
-                        "javascript",
-                        "javascriptreact",
-                        "typescript",
-                        "typescriptreact",
-                        "css",
-                        "scss",
-                        "less",
-                        "html",
-                    },
-                },
-                omnisharp_mono = {},
-            },
-        },
     },
 }
