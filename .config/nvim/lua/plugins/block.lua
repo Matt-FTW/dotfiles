@@ -1,7 +1,7 @@
 return {
     {
         "HampusHauffman/block.nvim",
-        keys = { "<leader>ub", ":Block", desc = "Toggle Block" },
+        keys = { { "<leader>ub", ":Block", desc = "Toggle Block" } },
         config = function()
             require("block").setup({
                 percent = 0.9,

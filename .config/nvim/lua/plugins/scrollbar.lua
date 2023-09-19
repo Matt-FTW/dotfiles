@@ -2,6 +2,7 @@ return {
     {
         "dstein64/nvim-scrollview",
         event = "BufReadPost",
+        keys = { { "<leader>uS", "<cmd>ScrollViewToggle<CR>", desc = "Toggle Scrollview" } },
         config = function()
             require("scrollview").setup({
                 excluded_filetypes = { "neo-tree", "alpha", "symbols-outline" },
