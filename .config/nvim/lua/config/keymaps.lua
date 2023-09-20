@@ -88,8 +88,6 @@ map(
     ":FloatermNew --name=termcwd --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer><CR>",
     { desc = "New Terminal (cwd)" }
 )
-map("n", "<A-Left>", "FloatermPrev<CR>", { desc = "Previous Terminal" })
-map("n", "<A-Right>", "FloatermNext<CR>", { desc = "Next Terminal" })
 map("n", "<c-Return>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
 map("t", "<C-Return>", "<C-\\><C-n><C-\\><C-n>:FloatermToggle<CR>", { desc = "Toggle Terminal", nowait = true })
 
@@ -231,12 +229,12 @@ end
 
 local keyopts = { noremap = true, silent = true }
 
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-o>", goto_parent_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-i>", goto_child_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-n>", goto_next_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-p>", goto_prev_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-o>", goto_parent_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-i>", goto_child_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-n>", goto_next_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-p>", goto_prev_node, keyopts)
 
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-h>", goto_parent_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-l>", goto_child_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-j>", goto_next_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<A-k>", goto_prev_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-h>", goto_parent_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-l>", goto_child_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-j>", goto_next_node, keyopts)
+vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-k>", goto_prev_node, keyopts)

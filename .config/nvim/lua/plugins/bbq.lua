@@ -8,8 +8,6 @@ return {
             "nvim-tree/nvim-web-devicons", -- optional dependency
         },
         event = "BufRead",
-        opts = {
-            -- configurations go here
-        },
+        opts = {},
     },
 }
