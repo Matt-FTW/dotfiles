@@ -6,7 +6,13 @@ return {
         commit = vim.fn.has("nvim-0.9.0") == 0 and "057ee0f8783" or nil,
         cmd = "Telescope",
         version = false, -- telescope did only one release, so use HEAD for now
-        dependencies = {},
+        dependencies = {
+            "nvim-telescope/telescope-fzf-native.nvim",
+            build = "make",
+            config = function()
+                require("telescope").load_extension("fzf")
+            end,
+        },
         keys = {
             {
                 "<leader>,",
@@ -355,6 +361,7 @@ return {
             },
         },
         config = function()
+            local actions = require("telescope.actions")
             require("telescope").setup({
                 defaults = {
                     file_ignore_patterns = {
@@ -366,6 +373,13 @@ return {
                         "*.git/*",
                         "*/tmp/*",
                         "Juegos/",
+                    },
+                    mappings = {
+                        i = {
+                            ["<C-k>"] = actions.move_selection_previous,
+                            ["<C-j>"] = actions.move_selection_next,
+                            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+                        },
                     },
                 },
                 pickers = {
