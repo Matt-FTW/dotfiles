@@ -1,0 +1,9 @@
+layout {
+    tab name="terminal" {
+        pane size="70%" borderless=false
+        pane size="30%" borderless=false
+        pane size=1 borderless=true {
+            plugin location="file:~/.config/zellij/plugins/statusbar.wasm"
+        }
+    }
+}
