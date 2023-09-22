@@ -81,10 +81,10 @@ git:
   parseEmoji: false
   diffContextSize: 3 # how many lines of context are shown around a change in diffs
 os:
-  editPreset: "neovim" # see 'Configuring File Editing' section
-  edit: "neovim {{filename}}"
-  editAtLine: "neovim --line={{line}} {{filename}}"
-  editAtLineAndWait: "neovim --block --line={{line}} {{filename}}"
+  editPreset: "nvim-remote" # see 'Configuring File Editing' section
+  edit: "nvim {{filename}}"
+  editAtLine: "nvim --line={{line}} {{filename}}"
+  editAtLineAndWait: "nvim --block --line={{line}} {{filename}}"
 refresher:
   refreshInterval: 10 # File/submodule refresh interval in seconds. Auto-refresh can be disabled via option 'git.autoRefresh'.
   fetchInterval: 60 # Re-fetch interval in seconds. Auto-fetch can be disabled via option 'git.autoFetch'.
@@ -226,3 +226,10 @@ keybinding:
     init: "i"
     update: "u"
     bulkMenu: "b"
+customCommands:
+  - key: "C"
+    command: "git cz c"
+    description: "commit with commitizen"
+    context: "files"
+    loadingText: "opening commitizen commit tool"
+    subprocess: true
