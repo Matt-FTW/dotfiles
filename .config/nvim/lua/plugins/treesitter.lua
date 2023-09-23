@@ -6,6 +6,10 @@ return {
                 enable = true,
             }
 
+            opts.endwise = {
+                enable = true,
+            }
+
             vim.list_extend(opts.ensure_installed, {
                 "arduino",
                 "diff",

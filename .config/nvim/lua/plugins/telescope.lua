@@ -327,7 +327,6 @@ return {
             {
                 "<leader>sSF",
                 Util.telescope("lsp_dynamic_workspace_symbols", {
-
                     symbols = {
                         "Field",
                     },
