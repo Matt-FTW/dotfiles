@@ -1,4 +1,4 @@
-function dots --wraps='yadm enter lazygit' --description 'alias dots=yadm enter lazygit'
-  yadm enter lazygit $argv
-        
+function dots --description 'alias dots=yadm enter lazygit'
+    cd ~
+    yadm enter lazygit $argv
 end
