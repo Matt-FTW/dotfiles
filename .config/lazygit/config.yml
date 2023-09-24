@@ -228,7 +228,7 @@ keybinding:
     bulkMenu: "b"
 customCommands:
   - key: "C"
-    command: "git cz c"
+    command: "git cz"
     description: "commit with commitizen"
     context: "files"
     loadingText: "opening commitizen commit tool"
