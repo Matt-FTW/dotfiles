@@ -34,7 +34,10 @@ return {
         end,
         opts = {
             sources = { "filesystem", "git_status", "buffers", "document_symbols" },
-
+            -- source_selector = {
+            --     winbar = true,
+            --     statusline = true,
+            -- },
             open_files_do_not_replace_types = { "terminal", "Trouble", "qf", "Outline" },
             enable_git_status = true,
             enable_diagnostics = true,

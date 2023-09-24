@@ -8,6 +8,8 @@ return {
             "nvim-tree/nvim-web-devicons", -- optional dependency
         },
         event = "BufRead",
-        opts = {},
+        opts = {
+            theme = "catppuccin-macchiato",
+        },
     },
 }

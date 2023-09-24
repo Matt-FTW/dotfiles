@@ -13,6 +13,9 @@ return {
                         disable = false,
                         sorting = "frecency",
                     },
+                    ["yanky.nvim#yank_history"] = {
+                        disable = true,
+                    },
                 },
             })
         end,
