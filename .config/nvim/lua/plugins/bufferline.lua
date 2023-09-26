@@ -34,9 +34,6 @@ return {
                 end,
                 themable = true,
                 view = "multiwindow",
-                indicator = {
-                    style = "underline",
-                },
                 diagnostics = "nvim_lsp",
                 always_show_bufferline = false,
                 diagnostics_indicator = function(_, _, diag)
