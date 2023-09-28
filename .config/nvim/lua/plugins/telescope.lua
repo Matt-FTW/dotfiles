@@ -1,4 +1,5 @@
 local Util = require("lazyvim.util")
+local macchiato = require("catppuccin.palettes").get_palette("macchiato")
 
 return {
     {
@@ -130,6 +131,8 @@ return {
                         "Trait",
                         "Field",
                         "Property",
+                        "Enum",
+                        "Constant",
                     },
                 }),
                 desc = "All",
@@ -169,6 +172,15 @@ return {
                     },
                 }),
                 desc = "Constructor",
+            },
+            {
+                "<leader>sse",
+                Util.telescope("lsp_document_symbols", {
+                    symbols = {
+                        "Enum",
+                    },
+                }),
+                desc = "Enum",
             },
             {
                 "<leader>ssi",
@@ -248,6 +260,8 @@ return {
                         "Trait",
                         "Field",
                         "Property",
+                        "Enum",
+                        "Constant",
                     },
                 }),
                 desc = "All",
@@ -287,6 +301,15 @@ return {
                     },
                 }),
                 desc = "Constructor",
+            },
+            {
+                "<leader>sSe",
+                Util.telescope("lsp_dynamic_workspace_symbols", {
+                    symbols = {
+                        "Enum",
+                    },
+                }),
+                desc = "Enum",
             },
             {
                 "<leader>sSi",
@@ -359,10 +382,52 @@ return {
                 desc = "Treesitter Symbols",
             },
         },
-        config = function()
+        opts = function()
             local actions = require("telescope.actions")
-            require("telescope").setup({
+            local open_with_trouble = function(...)
+                return require("trouble.providers.telescope").open_with_trouble(...)
+            end
+
+            local open_selected_with_trouble = function(...)
+                return require("trouble.providers.telescope").open_selected_with_trouble(...)
+            end
+
+            local find_files_no_ignore = function()
+                local action_state = require("telescope.actions.state")
+                local line = action_state.get_current_line()
+                Util.telescope("find_files", { no_ignore = true, default_text = line })()
+            end
+
+            local find_files_with_hidden = function()
+                local action_state = require("telescope.actions.state")
+                local line = action_state.get_current_line()
+                Util.telescope("find_files", { hidden = true, default_text = line })()
+            end
+
+            local TelescopeColor = {}
+
+            return {
                 defaults = {
+                    prompt_prefix = " ",
+                    selection_caret = " ",
+                    mappings = {
+                        i = {
+                            ["<c-t>"] = open_with_trouble,
+                            ["<a-t>"] = open_selected_with_trouble,
+                            ["<a-i>"] = find_files_no_ignore,
+                            ["<a-h>"] = find_files_with_hidden,
+                            ["<C-Down>"] = actions.cycle_history_next,
+                            ["<C-Up>"] = actions.cycle_history_prev,
+                            ["<C-f>"] = actions.preview_scrolling_down,
+                            ["<C-b>"] = actions.preview_scrolling_up,
+                            ["<C-k>"] = actions.move_selection_previous,
+                            ["<C-j>"] = actions.move_selection_next,
+                            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+                        },
+                        n = {
+                            ["q"] = actions.close,
+                        },
+                    },
                     file_ignore_patterns = {
                         ".gitignore",
                         "node_modules",
@@ -373,34 +438,27 @@ return {
                         "*/tmp/*",
                         "Juegos/",
                     },
-                    mappings = {
-                        i = {
-                            ["<C-k>"] = actions.move_selection_previous,
-                            ["<C-j>"] = actions.move_selection_next,
-                            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+                    pickers = {
+                        find_files = {
+                            hidden = true,
+                        },
+                    },
+                    extensions = {
+                        undo = {
+                            side_by_side = true,
+                            layout_strategy = "vertical",
+                            layout_config = {
+                                preview_height = 0.65,
+                            },
+                        },
+                        import = {
+                            -- Add imports to the top of the file keeping the cursor in place
+                            insert_at_top = true,
                         },
                     },
                 },
-                pickers = {
-                    find_files = {
-                        hidden = true,
-                    },
-                },
-                extensions = {
-                    undo = {
-                        side_by_side = true,
-                        layout_strategy = "vertical",
-                        layout_config = {
-                            preview_height = 0.65,
-                        },
-                    },
-                    import = {
-                        -- Add imports to the top of the file keeping the cursor in place
-                        insert_at_top = true,
-                    },
-                },
-            })
-            require("telescope").load_extension("refactoring")
+                require("telescope").load_extension("refactoring"),
+            }
         end,
     },
 }
