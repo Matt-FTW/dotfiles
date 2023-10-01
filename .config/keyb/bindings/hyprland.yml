@@ -15,15 +15,15 @@
     - name: Restart Audio
       key: Ctrl + Win + V
     - name: Screenshoot Tool (Output)
-      key: ImprPant
+      key: Shift + Insert
     - name: Screenshoot Tool (Selection)
-      key: Ctrl + ImprPant
+      key: Ctrl + Insert
     - name: Screenshoot Tool (Window)
-      key: Shift + ImprPant
+      key: Win + Shift + Insert
     - name: Screenshoot Picker
-      key: Alt + ImprPant
+      key: Alt + Insert
     - name: Color Picker
-      key: Win + ImprPant
+      key: Win + Insert
     - name: Zoom
       key: Win + Z
     - name: Logout Menu
@@ -50,11 +50,11 @@
     - name: Toggle Fullscreen Window
       key: Win + F
     - name: Toggle Group
-      key: Win + S
+      key: Win + G
     - name: Change Active Group
-      key: Alt + TAB
+      key: Alt + Tab
     - name: Toggle Group Split
-      key: Win + W
+      key: Win + S
 
 - name: Workspace Management
   keybinds:
@@ -72,11 +72,11 @@
 - name: Apps
   keybinds:
     - name: Launch Browser
-      key: Win + .
+      key: Win + W
     - name: Launch Editor / IDE
       key: Win + Return
     - name: Launch File Manager
-      key: Win + NP0
+      key: Win + M
     - name: Launch Terminal
       key: Win + Enter
     - name: Open Launcher
