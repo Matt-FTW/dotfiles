@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Because Git submodule commands cannot operate without a work tree, they must
+# be run from within $HOME (assuming this is the root of your dotfiles)
+cd "$HOME"
+
+echo "Init submodules"
+yadm submodule update --recursive --init
+
+system_type=$(lsb_release -s -d | tr -d '"')
+
+if [[ $system_type == "Arch Linux" ]]; then
+    # Install System Tools and Configurations
+    ansible-galaxy collection install kewlfft.aur
+    ansible-playbook -v -u $USER -K playbook_system_arch.yml
+    ansible-playbook -v -u $USER -K playbook_packages_arch.yml

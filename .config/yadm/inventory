@@ -1,0 +1,15 @@
+[target_arch_machines]
+localhost
+# 10.0.19.165
+# 10.0.19.160
+# 10.0.19.153
+# arch-docker-host
+# archlinuxx
+# 192.168.1.50
+
+[all:vars]
+ansible_connection=local
+# ansible_connection=ssh
+# ansible_user=spravca
+# ansible_ssh_pass=aaa
+# ansible_sudo_pass=aaa

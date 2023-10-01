@@ -1,0 +1,270 @@
+---
+- name: playbook_system.yml - arch system changes and services
+  hosts: all
+  become: yes
+
+  tasks:
+    # ARCH FULL UPDATE  ----------------------------------------------------------
+
+    - name: update arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+    # YAY TO ACCESS AUR REPOSITORY  ----------------------------------------------
+
+    - name: disable need for password for pacman to allow yay install
+      lineinfile:
+        path: /etc/sudoers.d/temp_allow_no_pswd_pacman
+        state: present
+        line: "ALL ALL=NOPASSWD: /usr/bin/pacman"
+        validate: /usr/sbin/visudo -cf %s
+        create: yes
+
+    - name: git clone yay-bin repo in to /tmp
+      become: no
+      git:
+        repo: "https://aur.archlinux.org/yay-bin.git"
+        dest: /tmp/yay-bin
+        clone: yes
+
+    - name: install yay using makepkg
+      become: no
+      expect:
+        chdir: /tmp/yay-bin
+        command: makepkg -si
+        responses:
+          (?i)Proceed with installation: "y"
+
+    - name: re-enable need for password for pacman
+      file:
+        path: /etc/sudoers.d/temp_allow_no_pswd_pacman
+        state: absent
+
+    - name: set yay options to cleanafter package installation
+      become: no
+      shell: yay -Y --answerclean All --removemake --cleanafter --save
+      args:
+        executable: /usr/bin/bash
+
+    # SYSTEM SETTINGS CHANGES ----------------------------------------------------
+
+    - name: pacman - enable color
+      lineinfile:
+        path: /etc/pacman.conf
+        regexp: "^#Color$"
+        line: "Color"
+
+    - name: pacman - enable ParallelDownloads = 5
+      lineinfile:
+        path: /etc/pacman.conf
+        regexp: "#ParallelDownloads = 5"
+        line: "ParallelDownloads = 5"
+
+    - name: makepkg - disable compression
+      lineinfile:
+        path: /etc/makepkg.conf
+        regexp: "PKGEXT='.pkg.tar.zst'"
+        line: "PKGEXT='.pkg.tar'"
+
+    - name: makepkg - enable parallel compilation MAKEFLAGS="-j$(nproc)"
+      lineinfile:
+        path: /etc/makepkg.conf
+        regexp: '#MAKEFLAGS="-j2"'
+        line: 'MAKEFLAGS="-j$(nproc)"'
+
+    - name: fstab change relatime to noatime
+      replace:
+        path: /etc/fstab
+        regexp: "relatime"
+        replace: "noatime"
+
+    - name: change number of failed logins that triger 10min lockout
+      lineinfile:
+        path: /etc/security/faillock.conf
+        regexp: "^# deny = 3$"
+        line: "deny = 10"
+
+    - name: enable members of wheel group to sudo
+      lineinfile:
+        path: /etc/sudoers.d/01_wheel_allow_sudo
+        state: present
+        line: "%wheel ALL=(ALL:ALL) ALL"
+        validate: /usr/sbin/visudo -cf %s
+        create: yes
+
+    # SSH ------------------------------------------------------------------------
+
+    - name: install ssh
+      pacman:
+        name:
+          - openssh
+
+    - name: enable and start ssh service
+      systemd:
+        name: sshd
+        enabled: yes
+        state: started
+
+    # LOCATE THE QUICK FILE SEARCH  ----------------------------------------------
+
+    - name: install plocate
+      pacman:
+        name:
+          - plocate
+
+    - name: enable and start ~12h updatedb timer
+      systemd:
+        name: plocate-updatedb.timer
+        enabled: yes
+        state: started
+
+    # ARCHLINUX-KEYRING WEEKLY UPDATE  -------------------------------------------
+
+    - name: archlinux-keyring - enable weekly update
+      systemd:
+        name: archlinux-keyring-wkd-sync.timer
+        enabled: yes
+        state: started
+
+    # SSD TRIM SCHEDULED  --------------------------------------------------------
+
+    - name: install util-linux
+      pacman:
+        name:
+          - util-linux
+
+    - name: enable and start weekly ssd disks trim using fstrim timer
+      systemd:
+        name: fstrim.timer
+        enabled: yes
+        state: started
+
+    # REFLECTOR TO REGULARLY UPDATE MIRRORLIST  ---
+
+    - name: install reflector
+      pacman:
+        name:
+          - reflector
+
+    - name: write reflector configuration file
+      copy:
+        dest: "/etc/xdg/reflector/reflector.conf"
+        content: |
+          --save /etc/pacman.d/mirrorlist
+          --protocol http
+          --country ES
+          --score 20
+          --sort rate
+
+    - name: enable and start reflector timer
+      systemd:
+        name: reflector.timer
+        enabled: yes
+        state: started
+
+    - name: do initial run of reflector.service
+      systemd:
+        name: reflector
+        enabled: yes
+        state: started
+
+    # LOGROTATE  -----------------------------------------------------------------
+
+    - name: install logrotate
+      pacman:
+        name:
+          - logrotate
+
+    - name: logrotate - enable compression
+      lineinfile:
+        path: /etc/logrotate.conf
+        regexp: "^#compress$"
+        line: "compress"
+
+    - name: enable and start daily logs rotation, cleanup
+      systemd:
+        name: logrotate.timer
+        enabled: yes
+        state: started
+
+      # DOCKER --------------------------------------------------------------------
+    - name: install docker and docker compose
+      pacman:
+        update_cache: yes
+        name:
+          - docker
+          - docker-compose
+
+    - name: install lazydocker
+      kewlfft.aur.aur:
+        name:
+          - lazydocker
+
+    - name: docker service
+      systemd:
+        name: docker
+        enabled: yes
+        state: restarted
+
+    - name: add the user to docker group
+      user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: yes
+
+    - name: Create /etc/docker directory if it does not exist
+      file:
+        path: /etc/docker
+        state: directory
+        mode: "0755"
+
+    - name: set default max logs size to 250MB and set logs rotation
+      copy:
+        dest: "/etc/docker/daemon.json"
+        content: |
+          {
+            "log-driver": "json-file",
+            "log-opts": {
+              "max-size": "50m",
+              "max-file": "5"
+            }
+          }
+
+    # PIPEWIRE ---------------------------------------------------------------------------------
+    - name: install pipewire and dependencies
+      pacman:
+        name:
+          - pipewire
+          - pipewire-alsa
+          - wireplumber
+          - alsa-utils
+
+    - name: Pipewire service
+      systemd:
+        name: pipewire
+        state: restarted
+        enabled: yes
+
+    - name: WirePlumber service
+      systemd:
+        name: wireplumber
+        state: restarted
+        enabled: yes
+
+    # FISH -------------------------------------------------------------
+    - name: intall fish, fisher and other tools
+      pacman:
+        name:
+          - fish
+          - fisher
+          - atuin
+          - zoxide
+          - thefuck
+          - starship
+          - vivid
+
+    - name: change default shell to fish for the local user
+      user:
+        name: "{{ ansible_user }}"
+        shell: /usr/bin/fish
