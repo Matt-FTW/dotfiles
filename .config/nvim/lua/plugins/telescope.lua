@@ -1,5 +1,4 @@
 local Util = require("lazyvim.util")
-local macchiato = require("catppuccin.palettes").get_palette("macchiato")
 
 return {
     {
@@ -404,10 +403,15 @@ return {
                 Util.telescope("find_files", { hidden = true, default_text = line })()
             end
 
-            local TelescopeColor = {}
-
             return {
                 defaults = {
+                    -- layout_strategy = "horizontal",
+                    -- layout_config = {
+                    --     horizontal = {
+                    --         prompt_position = "top",
+                    --     },
+                    -- },
+                    -- sorting_strategy = "ascending",
                     prompt_prefix = " ",
                     selection_caret = " ",
                     mappings = {
@@ -423,6 +427,9 @@ return {
                             ["<C-k>"] = actions.move_selection_previous,
                             ["<C-j>"] = actions.move_selection_next,
                             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+                            ["<esc>"] = actions.close,
+                            ["<C-u>"] = false,
+                            ["<c-d>"] = actions.delete_buffer + actions.move_to_top,
                         },
                         n = {
                             ["q"] = actions.close,
@@ -454,6 +461,12 @@ return {
                         import = {
                             -- Add imports to the top of the file keeping the cursor in place
                             insert_at_top = true,
+                        },
+                        fzf = {
+                            fuzzy = true,
+                            override_generic_sorter = true,
+                            override_file_sorter = true,
+                            case_mode = "smart_case",
                         },
                     },
                 },

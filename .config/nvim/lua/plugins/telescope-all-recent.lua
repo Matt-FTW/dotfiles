@@ -16,6 +16,9 @@ return {
                     ["yanky.nvim#yank_history"] = {
                         disable = true,
                     },
+                    ["zoxide.nvim#zoxide"] = {
+                        disable = true,
+                    },
                 },
             })
         end,

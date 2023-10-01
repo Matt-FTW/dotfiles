@@ -11,6 +11,8 @@ return {
                     theme = "catppuccin",
                     globalstatus = true,
                     disabled_filetypes = { statusline = { "dashboard", "alpha" } },
+                    component_separators = "",
+                    section_separators = { left = "", right = "" },
                 },
                 sections = {
                     lualine_a = { "mode" },

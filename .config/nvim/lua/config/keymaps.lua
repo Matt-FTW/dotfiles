@@ -1,8 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-local Util = require("lazyvim.util")
-
 local function map(mode, lhs, rhs, opts)
     local keys = require("lazy.core.handler").handlers.keys
     ---@cast keys LazyKeysHandler
@@ -75,6 +73,8 @@ map("n", "<leader>sL", ":Telescope luasnip<CR>", { desc = "Snippets (Luasnip)" }
 map("n", "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" })
 
 map("n", "<leader>si", ":Telescope import<CR>", { desc = "Imports" })
+
+map("n", "<leader>cn", ":NullLsInfo<CR>", { desc = "NullLs Info" })
 
 map(
     "n",
@@ -311,11 +311,6 @@ vim.keymap.set({ "n", "x" }, "h", "<Cmd>lua Scroll('h', 0, 1)<CR>")
 vim.keymap.set({ "n", "x" }, "l", "<Cmd>lua Scroll('l', 0, 1)<CR>")
 vim.keymap.set({ "n", "x" }, "<Left>", "<Cmd>lua Scroll('h', 0, 1)<CR>")
 vim.keymap.set({ "n", "x" }, "<Right>", "<Cmd>lua Scroll('l', 0, 1)<CR>")
-
--- SCROLL_WHEEL_KEYMAPS:
-
-vim.keymap.set({ "n", "x" }, "<ScrollWheelUp>", "<Cmd>lua Scroll('<ScrollWheelUp>')<CR>")
-vim.keymap.set({ "n", "x" }, "<ScrollWheelDown>", "<Cmd>lua Scroll('<ScrollWheelDown>')<CR>")
 
 vim.keymap.set("n", "<M-BS>", "<Cmd>noh<CR>", { noremap = true, silent = true, desc = "Clear Search" })
 

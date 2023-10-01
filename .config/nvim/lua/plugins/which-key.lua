@@ -31,6 +31,7 @@ return {
                 ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
                 ["<leader>ss"] = { name = "+Goto Symbols" },
                 ["<leader>db"] = { name = "+Breakpoints" },
+                ["<leader>sr"] = { name = "+replace" },
             },
         },
         config = function(_, opts)
