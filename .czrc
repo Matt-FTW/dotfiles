@@ -1,0 +1,61 @@
+{
+  "path": "cz-git",
+  "scopes": [
+    { "name": "auth", "description": "Authentication module" },
+    { "name": "ui", "description": "UI components" },
+    { "name": "api", "description": "API module" },
+    { "name": "config", "description": "Configuration" },
+    { "name": "utils", "description": "Utilities" },
+    { "name": "header", "description": "Header component" },
+    { "name": "footer", "description": "Footer component" },
+    { "name": "sidebar", "description": "Sidebar component" },
+    { "name": "modal", "description": "Modal component" },
+    { "name": "authentication", "description": "Authentication feature" },
+    { "name": "authorization", "description": "Authorization feature" },
+    { "name": "search", "description": "Search feature" },
+    { "name": "payment", "description": "Payment feature" },
+    { "name": "user-management", "description": "User management module" },
+    { "name": "data-processing", "description": "Data processing module" },
+    { "name": "logging", "description": "Logging module" },
+    { "name": "unit-tests", "description": "Unit tests" },
+    { "name": "integration-tests", "description": "Integration tests" },
+    { "name": "e2e-tests", "description": "End-to-end tests" },
+    { "name": "onboarding", "description": "Onboarding workflow" },
+    { "name": "checkout", "description": "Checkout workflow" },
+    { "name": "user-profile", "description": "User profile workflow" },
+    { "name": "deployment", "description": "Deployment tasks" },
+    { "name": "server-config", "description": "Server configuration" },
+    { "name": "database-config", "description": "Database configuration" },
+    { "name": "eslint", "description": "ESLint configuration" },
+    { "name": "babel", "description": "Babel configuration" },
+    { "name": "webpack", "description": "Webpack configuration" }
+  ],
+  "types": [
+    { "value": "✨ feat", "name": "✨ feat:     Add a new feature" },
+    { "value": "🐛 fix", "name": "🐛 fix:      Fix a bug" },
+    { "value": "📚 docs", "name": "📚 docs:     Documentation changes" },
+    { "value": "💄 style", "name": "💄 style:    Code style changes" },
+    { "value": "♻️ refactor", "name": "♻️ refactor: Code refactoring" },
+    { "value": "🧪 test", "name": "🧪 test:     Add or modify tests" },
+    {
+      "value": "🔧 chore",
+      "name": "🔧 chore:    Maintenance tasks or non-code changes"
+    },
+    { "value": "🚀 perf", "name": "🚀 perf:     Performance improvements" },
+    { "value": "⬆️ deps", "name": "⬆️ deps:     Update dependencies" },
+    { "value": "🗑️ remove", "name": "🗑️ remove:   Remove obsolete code" },
+    { "value": "💬 comments", "name": "💬 comments: Add comments to the code" },
+    { "value": "🚨 error", "name": "🚨 error:    Handle errors or warnings" },
+    { "value": "🎨 ux", "name": "🎨 ux:       Improve user experience" },
+    {
+      "value": "⚙️ config",
+      "name": "⚙️ config:   Changes in project configuration"
+    },
+    {
+      "value": "📁 files",
+      "name": "📁 files:    Changes in files or directories"
+    }
+  ],
+  "allowCustomScopes": true,
+  "allowBreakingChanges": ["✨ feat", "🐛 fix"]
+}
