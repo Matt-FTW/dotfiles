@@ -4,6 +4,15 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+[git_status]
+untracked = '[ $count](bold yellow) '
+staged = '[ $count](bold green) '
+stashed = "[ ](cyan) "
+deleted = '[ $count](bold red) '
+modified = '[ $count](bold blue) '
+behind = '[ ](bold purple) '
+format = '([$all_status$ahead_behind]($style))'
+
 [aws]
 symbol = "  "
 
