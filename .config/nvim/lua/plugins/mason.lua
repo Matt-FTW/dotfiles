@@ -4,6 +4,7 @@ return {
         opts = {
             ensure_installed = {
                 "black",
+                "prettierd",
                 "beautysh",
                 "codespell",
                 "csharpier",
