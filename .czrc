@@ -35,14 +35,14 @@
     { "value": "🐛 fix", "name": "🐛 fix:      Fix a bug" },
     { "value": "📚 docs", "name": "📚 docs:     Documentation changes" },
     { "value": "💄 style", "name": "💄 style:    Code style changes" },
-    { "value": "♻️  refactor", "name": "♻️  refactor: Code refactoring" },
+    { "value": "♻️ refactor", "name": "♻️ refactor: Code refactoring" },
     { "value": "🧪 test", "name": "🧪 test:     Add or modify tests" },
     {
       "value": "🔧 chore",
       "name": "🔧 chore:    Maintenance tasks or non-code changes"
     },
     { "value": "🚀 perf", "name": "🚀 perf:     Performance improvements" },
-    { "value": "⬆️  deps", "name": "⬆️  deps:     Update dependencies" },
+    { "value": "⬆️ deps", "name": "⬆️ deps:     Update dependencies" },
     { "value": "🗑️ remove", "name": "🗑️ remove:   Remove obsolete code" },
     { "value": "💬 comments", "name": "💬 comments: Add comments to the code" },
     { "value": "🚨 error", "name": "🚨 error:    Handle errors or warnings" },
