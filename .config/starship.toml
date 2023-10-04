@@ -13,6 +13,13 @@ modified = '[ $count](bold blue) '
 behind = '[ ](bold purple) '
 format = '([$all_status$ahead_behind]($style))'
 
+[custom.neovim]
+command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
+detect_folders = ["lua"]
+style = "green"
+format = "[ $output ]($style)"
+shell = ["bash"]
+
 [aws]
 symbol = "  "
 
@@ -71,6 +78,7 @@ symbol = " "
 symbol = " "
 
 [lua]
+detect_folders = []
 symbol = " "
 
 [memory_usage]
