@@ -74,6 +74,10 @@ map("n", "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" })
 
 map("n", "<leader>si", ":Telescope import<CR>", { desc = "Imports" })
 
+map("n", "<leader>sI", ":Gitignore<CR>", { desc = "Gitignore" })
+
+map("n", "<leader>um", ":MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
+
 map("n", "<leader>cn", ":NullLsInfo<CR>", { desc = "NullLs Info" })
 
 map(
