@@ -13,6 +13,7 @@ return {
                 nls.builtins.formatting.sqlfmt,
                 nls.builtins.formatting.rustfmt,
                 nls.builtins.formatting.fish_indent,
+                nls.builtins.formatting.taplo,
                 nls.builtins.diagnostics.fish,
                 --nls.builtins.diagnostics.cspell,
                 --nls.builtins.code_actions.cspell,
