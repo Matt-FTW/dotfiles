@@ -6,8 +6,8 @@ return {
         opts = {
             plugins = {
                 scrollview = { enabled = false },
+                satellite = { enabled = false },
                 gitsigns = { enabled = false },
-                barbacue = { enabled = false },
             },
         },
     },
