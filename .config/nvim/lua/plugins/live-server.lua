@@ -1,8 +1,12 @@
 return {
     {
-        "barrett-ruth/live-server.nvim",
-        build = "yarn global add live-server",
-        cmd = { "LiveServerStop", "LiveServerStart" },
-        config = true,
+        "aurum77/live-server.nvim",
+        build = function()
+            require("live_server.util").install()
+        end,
+        cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+        keys = {
+            { "<leader>cs", "<cmd>LiveServer<CR>", desc = "Toggle LiveServer" },
+        },
     },
 }
