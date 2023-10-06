@@ -1,6 +1,6 @@
 {
     "currentVersionInfo": {
-        "version": "7.2.4",
+        "version": "7.3.0",
         "hasShownChangelog": true
     },
     "cuiSettingsVersion": "9",
@@ -43,5 +43,6 @@
     "disableMsgBarBtnCollapse": "false",
     "messageBarButtonsMaxWidth": "200",
     "messageBarButtonsMinWidth": "40",
-    "buttonCollapseFudgeFactor": "10"
+    "buttonCollapseFudgeFactor": "10",
+    "resizableMembersList": "true"
 }
