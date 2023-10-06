@@ -2,7 +2,7 @@ return {
     {
         "Bekaboo/dropbar.nvim",
         config = function()
-            require("dropbar").config()
+            require("dropbar").setup()
         end,
     },
 }
