@@ -14,3 +14,4 @@ if [[ $system_type == "Arch Linux" ]]; then
     ansible-galaxy collection install kewlfft.aur
     ansible-playbook -v -u $USER -K playbook_system_arch.yml
     ansible-playbook -v -u $USER -K playbook_packages_arch.yml
+fi

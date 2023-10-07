@@ -153,7 +153,13 @@
         content: |
           --save /etc/pacman.d/mirrorlist
           --protocol http
-          --country ES
+          --country Spain
+          --country France
+          --country Germany
+          --country Portugal
+          --country Italy
+          --country United_Kingdom
+          --latest 20
           --score 20
           --sort rate
 
