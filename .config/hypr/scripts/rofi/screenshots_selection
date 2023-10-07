@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+IMAGE_DIR="$HOME/Imagenes/Capturas/PC/"
+
+SELECTION=$(ls -t "$IMAGE_DIR" | rofi -show file-browser-extended -file-browser-stdin -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir "$IMAGE_DIR")
+
+swappy -f "$SELECTION"
