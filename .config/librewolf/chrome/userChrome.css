@@ -3,7 +3,7 @@
 * {
   /*--tab-corner-rounding: 5px;*/
   --animation-speed: 0.4s;
-  --button-corner-rounding: 30px;
+  --button-corner-rounding: 10px;
   --urlbar-container-height: 40px !important;
   --urlbar-min-height: 30px !important;
   --urlbar-height: 30px !important;
@@ -290,7 +290,7 @@ tab:not(:active) .tab-background {
 
   /*  Left and Right "dip" of the container indicator
      *  0px equals tab width
-     *  higher values make the indicator smaller
+     *  higer values make the indicator smaller
      */
   --container-tabs-indicator-margin: 10px;
 
@@ -301,13 +301,17 @@ tab:not(:active) .tab-background {
 }
 
 :root:not([customizing]) :hover > .tabbrowser-tab:not(:hover) {
-  transition: blur, ease 0.5s !important;
+  transition:
+    blur,
+    ease 0.5s !important;
   --uc-active-tab-width: clamp(100px, 30vw, 300px);
   --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
 }
 
 :root:not([customizing]) :not(:hover) > .tabbrowser-tab {
-  transition: blur, ease 0.2s !important;
+  transition:
+    blur,
+    ease 0.2s !important;
   --uc-active-tab-width: clamp(100px, 30vw, 300px);
   --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
 }
@@ -333,7 +337,7 @@ tab:not([selected]):hover .tab-background {
 
 .tab-close-button {
   list-style-image: url("active_close.png");
-  border-radius: 15px;
+  border-radius: 10px;
   transition: list-style-image var(--animation-speed) ease-out !important;
 }
 
@@ -449,8 +453,8 @@ tab:not([selected]):hover .tab-background {
 
 .urlbarView {
   background: var(--toolbar-field-focus-background-color) !important;
-  border-bottom-left-radius: 15px !important;
-  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
   box-shadow: 10px 45px 146px -64px rgba(0, 0, 0, 0.65);
   margin-inline: 0 !important;
   width: 100% !important;
@@ -720,8 +724,15 @@ url(about:home) {
   transition-delay: 1s;
   filter: alpha(opacity=0);
   opacity: 0;
-  transition: visibility, ease 0.5s, margin-top, ease 0.5s, opacity, ease 0.5s,
-    rotate, ease 0.4s !important;
+  transition:
+    visibility,
+    ease 0.5s,
+    margin-top,
+    ease 0.5s,
+    opacity,
+    ease 0.5s,
+    rotate,
+    ease 0.4s !important;
 }
 
 #tabs-newtab-button {
@@ -783,7 +794,7 @@ window#places[title="Library"] {
 menupopup {
   -moz-appearance: none !important;
   padding: 8px !important;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
   background: red !important;
   background: var(--toolbar-field-focus-background-color) !important;
   border: none !important;
@@ -928,57 +939,52 @@ menuitem[_moz-menuactive="true"] {
   color: inherit !important;
 }
 
-/* Clean and tight extensions menu  */
+/*
+ Clean and tight extensions menu
 #unified-extensions-view .panel-header,
 #unified-extensions-view .panel-header + toolbarseparator,
 #unified-extensions-view .panel-subview-body + toolbarseparator,
 #unified-extensions-view #unified-extensions-manage-extensions {
-  display: none !important;
+    display:none !important;
 }
 
-#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton {
-  visibility: hidden !important;
-  transition: 300ms !important;
-  -moz-margin-end: -3.6em !important;
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton{
+    visibility: hidden !important;
+    transition: 300ms !important;
+    -moz-margin-end: -3.6em !important;
 }
 
 #unified-extensions-view .panel-subview-body {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
 }
 
 #unified-extensions-view:hover
-  .unified-extensions-item-menu-button.subviewbutton {
-  visibility: visible !important;
-  transition: 300ms !important;
-  -moz-margin-end: initial !important;
+.unified-extensions-item-menu-button.subviewbutton{
+    visibility: visible !important;
+    transition: 300ms !important;
+    -moz-margin-end: initial !important;
 }
 
 #unified-extensions-view .unified-extensions-item-icon,
-#unified-extensions-view
-  .unified-extensions-item[unified-extensions="true"]
-  .webextension-browser-action
-  > .toolbarbutton-badge-stack
-  > .toolbarbutton-icon {
-  height: 20px !important;
-  width: 20px !important;
+#unified-extensions-view .unified-extensions-item[unified-extensions="true"] .webextension-browser-action
+> .toolbarbutton-badge-stack > .toolbarbutton-icon {
+    height: 20px !important;
+    width: 20px !important;
 }
 
 #unified-extensions-view .unified-extensions-item-icon,
-#unified-extensions-view
-  .unified-extensions-item[unified-extensions="true"]
-  .webextension-browser-action
-  > .toolbarbutton-badge-stack {
+#unified-extensions-view .unified-extensions-item[unified-extensions="true"] .webextension-browser-action > .toolbarbutton-badge-stack {
   margin-inline-end: 2px !important;
 }
 
 #unified-extensions-view .unified-extensions-item-name,
 #unified-extensions-view .unified-extensions-item-message {
-  padding-inline-start: 0.5em !important;
-  width: 21em !important;
+    padding-inline-start: 0.5em !important;
+    width: 21em !important;
 }
 
 #unified-extensions-view .unified-extensions-item-action-button.subviewbutton {
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
-}
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}*/
