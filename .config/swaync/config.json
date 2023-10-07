@@ -23,7 +23,7 @@
   "transition-time": 200,
   "hide-on-clear": false,
   "hide-on-action": true,
-  "widgets": ["title", "buttons-grid", "notifications", "mpris"],
+  "widgets": ["title", "notifications", "mpris"],
   "widget-config": {
     "title": {
       "text": "Notifications",
@@ -53,7 +53,7 @@
         },
         {
           "label": "󰌾",
-          "command": "swaylock"
+          "command": "$HOME/.config/sway/lock.sh"
         },
         {
           "label": "󰍃",
@@ -64,16 +64,8 @@
           "command": "systemctl suspend"
         },
         {
-          "label": "󰕾",
-          "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-        },
-        {
-          "label": "󰍬",
-          "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
-        },
-        {
-          "label": "󰖩",
-          "command": "iwgtk"
+          "label": "󰛳",
+          "command": "nm-connection-editor"
         },
         {
           "label": "󰂯",
