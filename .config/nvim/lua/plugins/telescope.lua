@@ -405,13 +405,6 @@ return {
 
             return {
                 defaults = {
-                    -- layout_strategy = "horizontal",
-                    -- layout_config = {
-                    --     horizontal = {
-                    --         prompt_position = "top",
-                    --     },
-                    -- },
-                    -- sorting_strategy = "ascending",
                     prompt_prefix = " ",
                     selection_caret = " ",
                     mappings = {
@@ -443,7 +436,6 @@ return {
                         "yarn.lock",
                         "*.git/*",
                         "*/tmp/*",
-                        "Juegos/",
                     },
                     pickers = {
                         find_files = {
@@ -459,7 +451,6 @@ return {
                             },
                         },
                         import = {
-                            -- Add imports to the top of the file keeping the cursor in place
                             insert_at_top = true,
                         },
                         fzf = {
