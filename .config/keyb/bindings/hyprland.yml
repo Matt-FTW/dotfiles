@@ -24,6 +24,8 @@
       key: Alt + Insert
     - name: Color Picker
       key: Win + Insert
+    - name: Wallpaper Picker
+      key: Win + Shift + W
     - name: Zoom
       key: Win + Z
     - name: Logout Menu

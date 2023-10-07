@@ -23,7 +23,7 @@ udiskie &
 devify &
 
 # Wallpaper
-$scripts/wallpaper &
+$scripts/random_wallpaper &
 
 # Idle daemon to screen lock
 /home/matt/.config/sway/idle.sh &
