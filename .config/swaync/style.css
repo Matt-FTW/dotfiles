@@ -16,7 +16,7 @@
 }
 
 .widget-mpris {
-  background: @noti-bg-darker;
+  background: linear-gradient(to right, #363a4f, rgba(183, 189, 248, 0.3));
 
   padding: 10px;
   border-radius: 10px;
@@ -41,8 +41,6 @@
   padding: 8px;
   margin-top: 10px;
   border-radius: 10px;
-
-  background: @noti-bg-darker;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
