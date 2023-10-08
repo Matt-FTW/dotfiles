@@ -1,0 +1,728 @@
+[
+  {
+    "height": 50,
+    "layer": "top",
+    "output": "DP-1",
+    "mod": "dock",
+    "exclusive": true,
+    "passtrough": false,
+    "margin-top": 10,
+    "margin-left": 17,
+    "margin-bottom": 0,
+    "margin-right": 17,
+    "modules-left": ["custom/arch", "hyprland/workspaces", "cava"],
+    "modules-center": ["custom/music"],
+    "modules-right": [
+      "custom/updates",
+      "hyprland/language",
+      "custom/weather",
+      "clock",
+      "pulseaudio",
+      "custom/notifications"
+    ],
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 50,
+      "rewrite": {
+        "(.*) — LibreWolf": "🌎 $1",
+        "(.*) - fish": "> [$1]"
+      },
+      "separate-outputs": false
+    },
+    "custom/updates": {
+      "format": "{} {icon}",
+      "return-type": "json",
+      "format-icons": {
+        "has-updates": "󱍷",
+        "updated": "󰂪"
+      },
+      "exec-if": "which waybar-module-pacman-updates",
+      "exec": "waybar-module-pacman-updates"
+    },
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "rofi -show drun -theme ~/.config/rofi/style.rasi",
+      "on-click-right": "wleave"
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+      "on-click": "xdg-open https://www.eltiempo.es/alicante.html"
+    },
+    "custom/updates": {
+      "format": "{} {icon}",
+      "return-type": "json",
+      "format-icons": {
+        "has-updates": "󱍷",
+        "updated": "󰂪"
+      },
+      "exec-if": "which waybar-module-pacman-updates",
+      "exec": "waybar-module-pacman-updates"
+    },
+    "custom/notifications": {
+      "tooltip": false,
+      "format": "{} {icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+    },
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "enable-bar-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "🖵",
+        "4": "",
+        "5": "",
+        "6": "🎜",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": "",
+        "11": "",
+        "12": "",
+        "13": "🖵",
+        "14": "",
+        "15": "",
+        "16": "🎜",
+        "17": "",
+        "18": "",
+        "19": "",
+        "20": "",
+        "21": "",
+        "22": "󰍨",
+        "23": "✉",
+        "24": "🖵",
+        "25": "",
+        "26": "",
+        "27": "",
+        "28": "",
+        "29": "",
+        "30": ""
+      },
+      "on-scroll-up": "hyprctl dispatch workspace r-1",
+      "on-scroll-down": "hyprctl dispatch workspace r+1",
+      "on-click": "activate",
+      "sort-by-number": true
+    },
+    "sway/mode": {
+      "format": "<span style=\"italic\">{}</span>"
+    },
+    "hyprland/language": {
+      "format": "{}",
+      "format-en": "  US",
+      "format-es": "  ES",
+      "on-click": "hyprctl switchxkblayout evision-usb-device next"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+      }
+    },
+    "tray": {
+      "spacing": 10
+    },
+    "clock": {
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+        "mode": "year",
+        "mode-mon-col": 3,
+        "weeks-pos": "right",
+        "on-scroll": 1,
+        "on-click-right": "mode",
+        "format": {
+          "months": "<span color='#eed49f'><b>{}</b></span>",
+          "days": "<span color='#cad3f5'><b>{}</b></span>",
+          "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
+          "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
+          "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
+        }
+      },
+      "format": "{:%H:%M}  ",
+      "format-alt": "{:%A, %B %d, %Y}  ",
+      "actions": {
+        "on-click-right": "mode",
+        "on-click-forward": "tz_up",
+        "on-click-backward": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+      }
+    },
+    "cpu": {
+      "on-click": "kitty btop",
+      "format": "{usage}%  ",
+      "tooltip": false,
+      "interval": 2
+    },
+    "memory": {
+      "format": "{}%  ",
+      "on-click": "kitty btop",
+      "tooltip": true,
+      "interval": 2
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format-critical": "{icon} {temperatureC}°C",
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""],
+      "tooltip": true,
+      "on-click": "kitty btop",
+      "interval": 2
+    },
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": [" ", " "],
+      "on-scroll-up": "light -A 1",
+      "on-scroll-down": "light -U 1"
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "tooltip-format": "{timeTo}, {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " ",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+      "format-wifi": "直 ",
+      "format-ethernet": "{ifname}: {ipaddr}/{cidr}  ",
+      "format-linked": "{ifname} (No IP)  ",
+      "format-disconnected": "睊 ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "tooltip-format": "{essid} {signalStrength}%"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}% {format_source}",
+      "format-bluetooth": "{icon} {volume}% {format_source}",
+      "format-bluetooth-muted": "   {volume}% {format_source}",
+      "format-muted": "  {format_source}",
+      "format-source": " ",
+      "format-source-muted": " ",
+      "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": " ",
+        "portable": " ",
+        "car": " ",
+        "default": [" ", " ", " "]
+      },
+      "tooltip-format": "{desc}, {volume}%",
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click-middle": "easyeffects"
+    },
+    "cava": {
+      "autosens": 1,
+      "bar_delimiter": 0,
+      "bars": 18,
+      "format-icons": [
+        "<span foreground='#cba6f7'>▁</span>",
+        "<span foreground='#cba6f7'>▂</span>",
+        "<span foreground='#cba6f7'>▃</span>",
+        "<span foreground='#cba6f7'>▄</span>",
+        "<span foreground='#89b4fa'>▅</span>",
+        "<span foreground='#89b4fa'>▆</span>",
+        "<span foreground='#89b4fa'>▇</span>",
+        "<span foreground='#89b4fa'>█</span>"
+      ],
+      "framerate": 75,
+      "higher_cutoff_freq": 10000,
+      "input_delay": 5,
+      "lower_cutoff_freq": 50,
+      "method": "pipewire",
+      "monstercat": false,
+      "reverse": false,
+      "source": "auto",
+      "stereo": true,
+      "waves": false
+    },
+    "custom/music": {
+      "format": "{icon} {}",
+      "return-type": "json",
+      "max-length": 100,
+      "format-icons": {
+        "spotify": " ",
+        "default": " "
+      },
+      "escape": true,
+      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+      "on-click": "playerctl --player=spotify play-pause",
+      "on-scroll-up": "playerctl --player=spotify next",
+      "on-scroll-down": "playerctl --player=spotify previous"
+    },
+    "custom/fans": {
+      "format": "{}",
+      "exec": "$HOME/.config/waybar/scripts/fans.sh",
+      "escape": true,
+      "restart-interval": 10
+    }
+  },
+  {
+    "height": 50,
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "margin-top": 10,
+    "margin-left": 17,
+    "margin-bottom": 0,
+    "margin-right": 17,
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "custom/notifications"],
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "wleave",
+      "on-click-right": "wleave"
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+      "on-click": "xdg-open https://www.eltiempo.es/alicante.html"
+    },
+    "custom/notifications": {
+      "tooltip": false,
+      "format": "{} {icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+    },
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "enable-bar-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "🖵",
+        "4": "",
+        "5": "",
+        "6": "🎜",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": "",
+        "11": "",
+        "12": "",
+        "13": "🖵",
+        "14": "",
+        "15": "",
+        "16": "🎜",
+        "17": "",
+        "18": "",
+        "19": "",
+        "20": "",
+        "21": "",
+        "22": "󰍨",
+        "23": "✉",
+        "24": "🖵",
+        "25": "",
+        "26": "",
+        "27": "",
+        "28": "",
+        "29": "",
+        "30": ""
+      },
+      "on-scroll-up": "hyprctl dispatch workspace r-1",
+      "on-scroll-down": "hyprctl dispatch workspace r+1",
+      "on-click": "activate",
+      "sort-by-number": true
+    },
+    "sway/mode": {
+      "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/language": {
+      "format": "{short} ⠀⠀"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+      }
+    },
+    "tray": {
+      "spacing": 10
+    },
+    "clock": {
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+        "mode": "year",
+        "mode-mon-col": 3,
+        "weeks-pos": "right",
+        "on-scroll": 1,
+        "on-click-right": "mode",
+        "format": {
+          "months": "<span color='#eed49f'><b>{}</b></span>",
+          "days": "<span color='#cad3f5'><b>{}</b></span>",
+          "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
+          "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
+          "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
+        }
+      },
+      "format": "{:%H:%M   - %A, %B %d, %Y  }",
+      "actions": {
+        "on-click-right": "mode",
+        "on-click-forward": "tz_up",
+        "on-click-backward": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+      }
+    },
+    "cpu": {
+      "on-click": "kitty btop",
+      "format": "{usage}%  ",
+      "tooltip": false,
+      "interval": 2
+    },
+    "memory": {
+      "format": "{}%  ",
+      "on-click": "kitty btop",
+      "tooltip": true,
+      "interval": 2
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format-critical": "{icon} {temperatureC}°C",
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""],
+      "tooltip": true,
+      "on-click": "kitty btop",
+      "interval": 2
+    },
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": [" ", " "],
+      "on-scroll-up": "light -A 1",
+      "on-scroll-down": "light -U 1"
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "tooltip-format": "{timeTo}, {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " ",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+      "format-wifi": "直 ",
+      "format-ethernet": "{ifname}: {ipaddr}/{cidr}  ",
+      "format-linked": "{ifname} (No IP)  ",
+      "format-disconnected": "睊 ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "tooltip-format": "{essid} {signalStrength}%"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}% {format_source}",
+      "format-bluetooth": "{icon} {volume}% {format_source}",
+      "format-bluetooth-muted": "   {volume}% {format_source}",
+      "format-muted": "  {format_source}",
+      "format-source": " ",
+      "format-source-muted": " ",
+      "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": " ",
+        "portable": " ",
+        "car": " ",
+        "default": [" ", " ", " "]
+      },
+      "tooltip-format": "{desc}, {volume}%",
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click-middle": "easyeffects"
+    },
+    "custom/music": {
+      "format": "{icon} {}",
+      "return-type": "json",
+      "max-length": 100,
+      "format-icons": {
+        "spotify": " ",
+        "default": " "
+      },
+      "escape": true,
+      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+      "on-click": "playerctl play-pause",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
+    },
+    "custom/fans": {
+      "format": "{}",
+      "exec": "$HOME/.config/waybar/scripts/fans.sh",
+      "escape": true,
+      "restart-interval": 10
+    }
+  },
+  {
+    "height": 50,
+    "layer": "top",
+    "output": "DP-3",
+    "margin-top": 10,
+    "margin-left": 17,
+    "margin-bottom": 0,
+    "margin-right": 17,
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+      "memory",
+      "cpu",
+      "temperature",
+      "custom/gpu-usage",
+      "custom/gpu-temp",
+      "custom/notifications"
+    ],
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 80,
+      "rewrite": {
+        "(.*) — LibreWolf": "󰇧 $1",
+        "(.*) - Discord": "󰙯 $1",
+        "(.*) - fish": "> [$1]"
+      },
+      "separate-outputs": false
+    },
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "wleave",
+      "on-click-right": "wleave"
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+      "on-click": "xdg-open https://www.eltiempo.es/alicante.html"
+    },
+    "custom/notifications": {
+      "tooltip": false,
+      "format": "{} {icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+    },
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "active-only": false,
+      "all-outputs": false,
+      "enable-bar-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "🖵",
+        "4": "",
+        "5": "",
+        "6": "🎜",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": "",
+        "11": "",
+        "12": "",
+        "13": "🖵",
+        "14": "",
+        "15": "",
+        "16": "🎜",
+        "17": "",
+        "18": "",
+        "19": "",
+        "20": "",
+        "21": "",
+        "22": "󰍨",
+        "23": "✉",
+        "24": "🖵",
+        "25": "",
+        "26": "",
+        "27": "",
+        "28": "",
+        "29": "",
+        "30": ""
+      },
+      "on-scroll-up": "hyprctl dispatch workspace r-1",
+      "on-scroll-down": "hyprctl dispatch workspace r+1",
+      "on-click": "activate",
+      "sort-by-number": true
+    },
+    "sway/mode": {
+      "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/language": {
+      "format": "{short} ⠀⠀"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+      }
+    },
+    "tray": {
+      "spacing": 10
+    },
+    "clock": {
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format": "{:%H:%M}  ",
+      "format-alt": "{:%A, %B %d, %Y}  "
+    },
+    "cpu": {
+      "on-click": "kitty --class btop-kitty btop",
+      "format": "CPU: {usage}%",
+      "tooltip": false,
+      "interval": 2
+    },
+    "custom/gpu-usage": {
+      "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+      "on-click": "kitty --class nvtop-kitty nvtop",
+      "format": "GPU: {}%",
+      "return-type": "",
+      "interval": 2
+    },
+    "memory": {
+      "format": "{}%  ",
+      "on-click": "kitty --class btop-kitty btop",
+      "tooltip": true,
+      "interval": 2
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "on-click": "kitty --class btop-kitty btop",
+      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+      "format-critical": "{icon} {temperatureC}°C",
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""],
+      "tooltip": true,
+      "interval": 2
+    },
+    "custom/gpu-temp": {
+      "exec": "cat /sys/class/hwmon/hwmon1/temp1_input | cut -b 1-2",
+      "on-click": "kitty --class nvtop-kitty nvtop",
+      "format": " {}°C",
+      "return-type": "",
+      "interval": 2
+    },
+    "backlight": {
+      "format": "{icon} {percent}%",
+      "format-icons": [" ", " "],
+      "on-scroll-up": "light -A 1",
+      "on-scroll-down": "light -U 1"
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon} {capacity}%",
+      "tooltip-format": "{timeTo}, {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " ",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+      "format-wifi": "直 ",
+      "format-ethernet": "{ifname}: {ipaddr}/{cidr}  ",
+      "format-linked": "{ifname} (No IP)  ",
+      "format-disconnected": "睊 ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "tooltip-format": "{essid} {signalStrength}%"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}% {format_source}",
+      "format-bluetooth": "{icon} {volume}% {format_source}",
+      "format-bluetooth-muted": "   {volume}% {format_source}",
+      "format-muted": "  {format_source}",
+      "format-source": " ",
+      "format-source-muted": " ",
+      "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": " ",
+        "portable": " ",
+        "car": " ",
+        "default": [" ", " ", " "]
+      },
+      "tooltip-format": "{desc}, {volume}%",
+      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click-middle": "easyeffects"
+    },
+    "custom/music": {
+      "format": "{icon} {}",
+      "return-type": "json",
+      "max-length": 100,
+      "format-icons": {
+        "spotify": " ",
+        "default": " "
+      },
+      "escape": true,
+      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+      "on-click": "playerctl play-pause",
+      "on-scroll-up": "playerctl next",
+      "on-scroll-down": "playerctl previous"
+    },
+    "custom/fans": {
+      "format": "{}",
+      "exec": "$HOME/.config/waybar/scripts/fans.sh",
+      "escape": true,
+      "restart-interval": 10
+    }
+  }
+]

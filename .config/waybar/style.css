@@ -157,6 +157,10 @@ window#waybar.hidden {
   color: #eed49f;
 }
 
+#custom-weather {
+  color: #ee99a0;
+}
+
 #custom-updates {
   background-color: #24273a;
   color: #8bd5ca;
@@ -242,7 +246,7 @@ window#waybar.hidden {
 }
 
 #language {
-  color: #56b6c2;
+  color: #8aadf4;
 }
 
 #pulseaudio {
