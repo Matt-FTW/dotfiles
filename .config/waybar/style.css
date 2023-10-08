@@ -5,6 +5,7 @@
 }
 
 /* General Settings */
+#cava,
 #custom-clipboard,
 #custom-notifications,
 #custom-arch,
@@ -26,6 +27,9 @@
 #network,
 #tray,
 #custom-power-menu,
+#custom-updates,
+#language,
+#window,
 #custom-weather,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
@@ -53,7 +57,7 @@ window#waybar {
   color: #cdd6f4;
 }
 
-window#waybar.hidded {
+window#waybar.hidden {
   opacity: 0;
 }
 
@@ -88,8 +92,8 @@ window#waybar.hidded {
 }
 
 #workspaces button {
-  background-color: #24273a;
-  border-radius: 10px;
+  background-color: transparent;
+  border-radius: 15px;
   margin-right: 3px;
   margin-left: 3px;
   margin-top: 3px;
@@ -98,7 +102,7 @@ window#waybar.hidded {
   font-weight: bolder;
   min-width: 20px;
   color: #24273a;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #workspaces button.active {
@@ -108,11 +112,19 @@ window#waybar.hidded {
   padding-bottom: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background: #cad3f5;
-  background-size: 100% 200%;
-  animation: gradient_f 20s ease-in-out infinite;
+  background: linear-gradient(
+    52deg,
+    rgba(139, 213, 202, 1) 0%,
+    rgba(138, 173, 244, 1) 30%,
+    rgba(183, 189, 248, 1) 48%,
+    rgba(198, 160, 246, 1) 77%,
+    rgba(238, 153, 160, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
   color: #c678dd;
+  border-radius: 12px;
 }
 
 #workspaces button:hover {
@@ -169,6 +181,25 @@ window#waybar.hidded {
   color: #f5a97f;
 }
 
+#window {
+  background: #b7bdf8;
+  background: linear-gradient(
+    52deg,
+    rgba(139, 213, 202, 1) 0%,
+    rgba(138, 173, 244, 1) 30%,
+    rgba(183, 189, 248, 1) 48%,
+    rgba(198, 160, 246, 1) 77%,
+    rgba(238, 153, 160, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  font-weight: bold;
+  color: #1e2030;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  border: none;
+}
+
 #temperature.critical {
   background-color: #ed8796;
   color: #1e2030;
@@ -176,13 +207,21 @@ window#waybar.hidded {
 
 #custom-music {
   background: #b7bdf8;
-  /*background: radial-gradient(circle, rgba(183, 189, 248, 0.7) 0%, rgb(183, 189, 248) 50%);*/
+  background: linear-gradient(
+    52deg,
+    rgba(139, 213, 202, 1) 0%,
+    rgba(138, 173, 244, 1) 30%,
+    rgba(183, 189, 248, 1) 48%,
+    rgba(198, 160, 246, 1) 77%,
+    rgba(238, 153, 160, 1) 100%
+  );
   background-size: 400% 400%;
-  animation: gradient_f 13s ease infinite;
+  animation: gradient 15s ease infinite;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
   font-weight: bold;
   color: #1e2030;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  border: none;
 }
 
 #custom-fans {
@@ -266,11 +305,9 @@ window#waybar.hidded {
   0% {
     background-position: 0% 50%;
   }
-
   50% {
-    background-position: 100% 30%;
+    background-position: 100% 50%;
   }
-
   100% {
     background-position: 0% 50%;
   }
