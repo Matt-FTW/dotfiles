@@ -47,5 +47,4 @@ kitty --class nvtop-kitty nvtop &
 dex -a -s ~/.config/autostart/ & # Easyeffects, Spotify, Discord and Thunderbird
 
 # Other
-xrdb -merge ~/.Xresources
 $scripts/launch_portals &
