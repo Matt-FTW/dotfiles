@@ -1,0 +1,36 @@
+#!/usr/bin/bash
+
+wf-recorder_check() {
+    if pgrep -x "wf-recorder" >/dev/null; then
+        pkill -INT -x wf-recorder
+        notify-send "Saved recording at " "$(cat /tmp/recording.txt)"
+        pkill -RTMIN+8 waybar
+        wl-copy <"$(cat /tmp/recording.txt)"
+        exit 0
+    fi
+}
+
+wf-recorder_check
+
+SCREEN=$(echo "$(hyprctl monitors | awk '/^Monitor/ {print $2} END { print "selection" }')" | rofi -dmenu -theme ~/.config/rofi/style.rasi)
+
+AUDIO=$(echo "$(pactl list sources | grep Name | grep -v easyeffects | awk -F ": " '{print $2}' | awk '{$1=$1};1')" | rofi -dmenu -theme ~/.config/rofi/style.rasi)
+
+VID="$HOME/Videos/Escritorio/$(date +%Y-%m-%d-%s).mp4"
+
+if [ "$SCREEN" = "selection" ]; then
+    echo "$VID" >/tmp/recording.txt
+    sleep 1
+    wf-recorder -c hevc_vaapi --audio="$AUDIO" -d /dev/dri/renderD128 -g "$(slurp)" -f "$VID" &>/dev/null &
+    while pgrep -x slurp >/dev/null; do
+        sleep 1
+    done
+    notify-send "Recording started" "Selection\nAudio: $AUDIO"
+    pkill -RTMIN+8 waybar
+elif [ -n "$SCREEN" ]; then
+    echo "$VID" >/tmp/recording.txt
+    sleep 1
+    wf-recorder -c hevc_vaapi --audio="$AUDIO" -d /dev/dri/renderD128 -o "$SCREEN" -f "$VID" &>/dev/null &
+    notify-send "Recording started" "Screen: $SCREEN\nAudio: $AUDIO"
+    pkill -RTMIN+8 waybar
+fi

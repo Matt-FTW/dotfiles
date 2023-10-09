@@ -20,7 +20,7 @@
 #custom-fans,
 #clock,
 #idle_inhibitor,
-#language,
+#custom-wf-recorder,
 #pulseaudio,
 #backlight,
 #battery,
@@ -164,6 +164,10 @@ window#waybar.hidden {
 #custom-updates {
   background-color: #24273a;
   color: #8bd5ca;
+}
+
+#custom-wf-recorder {
+  color: #ed8796;
 }
 
 #custom-gpu-temp {

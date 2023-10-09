@@ -10,7 +10,12 @@
     "margin-left": 17,
     "margin-bottom": 0,
     "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces", "cava"],
+    "modules-left": [
+      "custom/arch",
+      "hyprland/workspaces",
+      "cava",
+      "custom/wf-recorder"
+    ],
     "modules-center": ["custom/music"],
     "modules-right": [
       "custom/updates",
@@ -20,6 +25,15 @@
       "pulseaudio",
       "custom/notifications"
     ],
+    "custom/wf-recorder": {
+      "format": "{}",
+      "interval": "once",
+      "exec": "echo ''",
+      "tooltip": "false",
+      "exec-if": "pgrep 'wf-recorder'",
+      "on-click": "exec $HOME/.config/hypr/scripts/rofi/recording",
+      "signal": 8
+    },
     "hyprland/window": {
       "format": "{}",
       "max-length": 50,
@@ -50,16 +64,6 @@
       "restart-interval": 300,
       "return-type": "json",
       "on-click": "xdg-open https://www.eltiempo.es/alicante.html"
-    },
-    "custom/updates": {
-      "format": "{} {icon}",
-      "return-type": "json",
-      "format-icons": {
-        "has-updates": "󱍷",
-        "updated": "󰂪"
-      },
-      "exec-if": "which waybar-module-pacman-updates",
-      "exec": "waybar-module-pacman-updates"
     },
     "custom/notifications": {
       "tooltip": false,
