@@ -43,6 +43,11 @@ systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 kitty --class btop-kitty btop &
 kitty --class nvtop-kitty nvtop &
 
+# Activity Watch
+aw-server-rust &
+aw-watcher-window-wayland &
+aw-watcher-afk &
+
 #Launch autostart apps
 dex -a -s ~/.config/autostart/ & # Easyeffects, Spotify, Discord and Thunderbird
 
