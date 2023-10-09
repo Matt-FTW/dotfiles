@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to change the wallpaper each 2 hours
+
+[Timer]
+OnBootSec=0min
+OnCalendar=0/2:00:00
+Unit=change_wallpaper.service
+
+[Install]
+WantedBy=timers.target
