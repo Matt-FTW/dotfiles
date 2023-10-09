@@ -3,8 +3,8 @@
 wf-recorder_check() {
     if pgrep -x "wf-recorder" >/dev/null; then
         pkill -INT -x wf-recorder
-        notify-send "Saved recording at " "$(cat /tmp/recording.txt)"
         pkill -RTMIN+8 waybar
+        notify-send "Saved recording at " "$(cat /tmp/recording.txt)"
         wl-copy <"$(cat /tmp/recording.txt)"
         exit 0
     fi

@@ -5,7 +5,6 @@ readarray -t LINES <<<"$MONITOR_DATA"
 
 CURRENT_MONITOR=""
 
-# Recorrer las líneas y buscar el nombre y el estado enfocado
 for LINE in "${LINES[@]}"; do
     if [[ $LINE == *"Monitor"* ]]; then
         CURRENT_MONITOR=$(echo $LINE | awk '{print $2}')
