@@ -7,11 +7,16 @@ return {
     cmd = "Telescope",
     version = false, -- telescope did only one release, so use HEAD for now
     dependencies = {
-      "nvim-telescope/telescope-fzf-native.nvim",
-      build = "make",
-      config = function()
-        require("telescope").load_extension("fzf")
-      end,
+      {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        build = "make",
+        enabled = vim.fn.executable("make") == 1,
+        config = function()
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("fzf")
+          end)
+        end,
+      },
     },
     keys = {
       {
@@ -407,6 +412,19 @@ return {
         defaults = {
           prompt_prefix = " ",
           selection_caret = " ",
+          -- open files in the first window that is an actual file.
+          -- use the current window if no other window is available.
+          get_selection_window = function()
+            local wins = vim.api.nvim_list_wins()
+            table.insert(wins, 1, vim.api.nvim_get_current_win())
+            for _, win in ipairs(wins) do
+              local buf = vim.api.nvim_win_get_buf(win)
+              if vim.bo[buf].buftype == "" then
+                return win
+              end
+            end
+            return 0
+          end,
           mappings = {
             i = {
               ["<c-t>"] = open_with_trouble,
