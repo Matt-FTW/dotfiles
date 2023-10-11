@@ -14,6 +14,7 @@ set -xg CARGO_HOME $XDG_DATA_HOME/cargo
 set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
 set -xg ANDROID_HOME $XDG_DATA_HOME/android
+set -xg BUN_INSTALL "$HOME/.bun"
 
 set -x fish_user_paths
 fish_add_path $XDG_BIN_HOME
@@ -29,6 +30,7 @@ fish_add_path /sbin
 fish_add_path /usr/lib/rustup/bin/
 fish_add_path /usr/lib/go/bin/
 fish_add_path $HOME/.dotnet/tools
+fish_add_path $BUN_INSTALL/bin
 
 set -xg EDITOR nvim
 set -xg VISUAL $EDITOR
