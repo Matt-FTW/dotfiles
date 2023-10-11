@@ -1,5 +1,6 @@
 source ~/.config/fish/variables.fish
 source ~/.config/fish/keybinds.fish
+source ~/.config/fish/abbreviations.fish
 
 if status is-interactive
     atuin init fish | source
