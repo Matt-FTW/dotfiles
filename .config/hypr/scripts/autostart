@@ -10,6 +10,10 @@ pypr &
 # Notification Daemon
 swaync &
 
+# Wallpaper Backend
+swww init &
+./wallpaper random
+
 # Bar
 waybar &
 
@@ -21,9 +25,6 @@ udiskie &
 
 # Notify about devices connecting and disconnecting
 devify &
-
-# Wallpaper
-$scripts/random_wallpaper &
 
 # Idle daemon to screen lock
 /home/matt/.config/sway/idle.sh &
