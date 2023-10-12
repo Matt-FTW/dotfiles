@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# variables
+# Variables
 config=$HOME/.config/hypr
 scripts=$config/scripts
 
@@ -52,5 +52,6 @@ aw-watcher-afk &
 #Launch autostart apps
 dex -a -s ~/.config/autostart/ & # Easyeffects, Spotify, Discord and Thunderbird
 
-# Other
+# Screen sharing and portals
 $scripts/launch_portals &
+xwaylandvideobridge &
