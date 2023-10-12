@@ -2,22 +2,22 @@
 
 mode=$1
 
-if [ -z "$mode" ]; then
-    echo "Usage: $0 [select|random]"
-    exit 1
+if [ "$mode" = "" ]; then
+	echo "Usage: $0 [select|random]"
+	exit 1
 fi
 
 if [ "$mode" == "select" ]; then
-    IMAGE=$(rofi -show file-browser-extended -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir $HOME/.config/hypr/themes/luna/walls/)
+	IMAGE=$(rofi -show file-browser-extended -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir "$HOME"/.config/hypr/themes/luna/walls/)
 
-    if [ -z "$IMAGE" ]; then
-        exit 1
-    fi
+	if [ "$IMAGE" = "" ]; then
+		exit 1
+	fi
 elif [ "$mode" == "random" ]; then
-    RANDOM_IMAGE=$(fd -e png -e jpg --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | shuf -n 1)
-    IMAGE="$HOME/.config/hypr/themes/luna/walls/$RANDOM_IMAGE"
+	RANDOM_IMAGE=$(fd -e png -e jpg --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | shuf -n 1)
+	IMAGE="$HOME/.config/hypr/themes/luna/walls/$RANDOM_IMAGE"
 else
-    exit 1
+	exit 1
 fi
 
 swww img --transition-type grow --transition-pos top-right --transition-fps 75 --transition-duration 3.8 --transition-step 255 "$IMAGE"

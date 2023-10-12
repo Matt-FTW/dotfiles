@@ -12,3 +12,4 @@ starship init fish | source
 zoxide init fish | source
 
 alias cd='z' # Couldn't create it as a function because of zoxide init
+

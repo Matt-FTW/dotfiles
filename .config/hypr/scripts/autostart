@@ -12,7 +12,7 @@ swaync &
 
 # Wallpaper Backend
 swww init
-$scripts/wallpaper random &
+"$scripts"/wallpaper random &
 
 # Bar
 waybar &
@@ -53,5 +53,5 @@ aw-watcher-afk &
 dex -a -s ~/.config/autostart/ & # Easyeffects, Spotify, Discord and Thunderbird
 
 # Screen sharing and portals
-$scripts/launch_portals &
+"$scripts"/launch_portals &
 xwaylandvideobridge &
