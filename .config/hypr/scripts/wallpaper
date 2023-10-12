@@ -20,5 +20,5 @@ else
     exit 1
 fi
 
-swww img --transition-type wipe --transition-pos top-right --transition-duration 3.8 --transition-step 255 "$IMAGE"
+swww img --transition-type grow --transition-pos top-right --transition-fps 75 --transition-duration 3.8 --transition-step 255 "$IMAGE"
 notify-send "Wallpaper Changed" "Wallpaper changed to $IMAGE"
