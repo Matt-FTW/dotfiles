@@ -1,5 +1,4 @@
 source ~/.config/fish/variables.fish
-source ~/.config/fish/keybinds.fish
 source ~/.config/fish/abbreviations.fish
 
 if status is-interactive
@@ -12,4 +11,3 @@ starship init fish | source
 zoxide init fish | source
 
 alias cd='z' # Couldn't create it as a function because of zoxide init
-
