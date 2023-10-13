@@ -7,6 +7,7 @@ return {
       keys[#keys + 1] = { "gr", "<CMD>Glance references<CR>", desc = "References" }
       keys[#keys + 1] = { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" }
       keys[#keys + 1] = { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" }
+      keys[#keys + 1] = { "<leader>ca", require("actions-preview").code_actions, desc = "Code Action Preview" }
     end,
     opts = {
       -- options for vim.diagnostic.config()
