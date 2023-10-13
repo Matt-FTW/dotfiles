@@ -39,7 +39,7 @@ return {
     ---@type TSConfig
     ---@diagnostic disable-next-line: missing-fields
     opts = {
-      autotag = { enable = true },
+      -- autotag = { enable = true },
       endwise = { enable = true },
       highlight = { enable = true },
       indent = { enable = true },
