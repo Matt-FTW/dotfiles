@@ -30,6 +30,8 @@ return {
         "delve",
         "impl",
         "gomodifytags",
+        "isort",
+        "stylelint",
       },
     },
   },

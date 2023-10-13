@@ -11,6 +11,9 @@ return {
         python = { "pylint" },
         yaml = { "yamllint" },
         dockerfile = { "hadolint" },
+        css = { "stylelint" },
+        sass = { "stylelint" },
+        scss = { "stylelint" },
       },
       -- LazyVim extension to easily override linter options
       -- or add custom linters.

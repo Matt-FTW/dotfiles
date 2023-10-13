@@ -32,9 +32,13 @@ return {
         typescript = { { "prettierd", "prettier", "rustywind" } },
         typescriptreact = { { "prettierd", "prettier", "rustywind" } },
         vue = { { "prettierd", "prettier", "rustywind" } },
-        html = { { "prettierd", "prettier", "rustywind" } },
+        html = { { "prettierd", "prettier", "rustywind", "stylelint" } },
         rust = { "rusfmt" },
         go = { "gofumpt", "goimports" },
+        sass = { "stylelint" },
+        css = { { "prettierd", "prettier", "stylelint" } },
+        scss = { { "prettierd", "prettier", "stylelint" } },
+        less = { { "prettierd", "prettier", "stylelint" } },
       },
       -- LazyVim will merge the options you set here with builtin formatters.
       -- You can also define any custom formatters here.
