@@ -238,10 +238,10 @@ vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-i>", goto_child_node, keyopts)
 vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-n>", goto_next_node, keyopts)
 vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-p>", goto_prev_node, keyopts)
 
-vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-h>", goto_parent_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-l>", goto_child_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-j>", goto_next_node, keyopts)
-vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-k>", goto_prev_node, keyopts)
+-- vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-h>", goto_parent_node, keyopts)
+-- vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-l>", goto_child_node, keyopts)
+-- vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-j>", goto_next_node, keyopts)
+-- vim.keymap.set({ "n", "v", "o", "i" }, "<C-M-k>", goto_prev_node, keyopts)
 
 -- DEFAULT_KEYMAPS:
 
