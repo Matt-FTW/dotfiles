@@ -14,7 +14,8 @@ set -xg CARGO_HOME $XDG_DATA_HOME/cargo
 set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
 set -xg ANDROID_HOME $XDG_DATA_HOME/android
-set -xg BUN_INSTALL "$HOME/.bun"
+set -xg BUN_INSTALL $HOME/.bun
+set -xg RIPGREP_CONFIG_PATH $HOME/.config/rg/.ripgreprc
 
 set -x fish_user_paths
 fish_add_path $XDG_BIN_HOME
