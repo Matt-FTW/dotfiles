@@ -10,7 +10,6 @@ gui:
   timeFormat: "02 Jan 06" # https://pkg.go.dev/time#Time.Format
   shortTimeFormat: "3:04PM"
   theme:
-    lightTheme: false
     activeBorderColor:
       - "#a6da95" # Green
       - bold
@@ -40,12 +39,11 @@ gui:
   experimentalShowBranchHeads: false # visualize branch heads with (*) in commits list
   showBottomLine: true # for hiding the bottom information line (unless it has important information to tell you)
   showCommandLog: true
-  showIcons: false # deprecated: use nerdFontsVersion instead
-  nerdFontsVersion: "" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
+  nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
   commandLogSize: 8
   splitDiff: "auto" # one of 'auto' | 'always'
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
-  border: "single" # one of 'single' | 'double' | 'rounded' | 'hidden'
+  border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
 git:
   paging:
     colorArg: always
@@ -81,7 +79,7 @@ git:
   parseEmoji: false
   diffContextSize: 3 # how many lines of context are shown around a change in diffs
 os:
-  editPreset: "nvim-remote" # see 'Configuring File Editing' section
+  editPreset: "nvim" # see 'Configuring File Editing' section
   edit: "nvim {{filename}}"
   editAtLine: "nvim --line={{line}} {{filename}}"
   editAtLineAndWait: "nvim --block --line={{line}} {{filename}}"
@@ -116,8 +114,8 @@ keybinding:
     scrollRight: "L" # scroll right within list view
     prevBlock: "<left>" # goto the previous block / panel
     nextBlock: "<right>" # goto the next block / panel
-    prevBlock-alt: "h" # goto the previous block / panel
-    nextBlock-alt: "l" # goto the next block / panel
+    prevBlock-alt: "" # goto the previous block / panel
+    nextBlock-alt: "" # goto the next block / panel
     jumpToBlock: ["1", "2", "3", "4", "5"] # goto the Nth block / panel
     nextMatch: "n"
     prevMatch: "N"
@@ -143,8 +141,8 @@ keybinding:
     pullFiles: "p"
     refresh: "R"
     createPatchOptionsMenu: "<c-p>"
-    nextTab: "]"
-    prevTab: "["
+    nextTab: "l"
+    prevTab: "h"
     nextScreenMode: "+"
     prevScreenMode: "_"
     undo: "z"
