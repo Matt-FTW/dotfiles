@@ -25,7 +25,7 @@ return {
         lua = { "stylua" },
         fish = { "fish_indent" },
         sh = { "shfmt", "shellharden" },
-        python = { "isort", "black" },
+        python = { "black" },
         bash = { "shfmt", "shellharden" },
         javascript = { { "prettierd", "prettier", "rustywind" } },
         javascriptreact = { { "prettierd", "prettier", "rustywind" } },
@@ -39,6 +39,7 @@ return {
         css = { { "prettierd", "prettier", "stylelint" } },
         scss = { { "prettierd", "prettier", "stylelint" } },
         less = { { "prettierd", "prettier", "stylelint" } },
+        markdown = { { "prettierd", "prettier" } },
       },
       -- LazyVim will merge the options you set here with builtin formatters.
       -- You can also define any custom formatters here.

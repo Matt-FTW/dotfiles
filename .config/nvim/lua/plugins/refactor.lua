@@ -1,13 +1,11 @@
 return {
-    {
-        "ThePrimeagen/refactoring.nvim",
-        requires = {
-            { "nvim-lua/plenary.nvim" },
-            { "nvim-treesitter/nvim-treesitter" },
-        },
-        config = function()
-            require("refactoring").setup()
-        end,
+  {
+    "ThePrimeagen/refactoring.nvim",
+    requires = {
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-treesitter/nvim-treesitter" },
+    },
+    opts = {},
         -- stylua: ignore
     keys = {
       { "<leader>Rs", function() require("telescope").extensions.refactoring.refactors() end, mode = { "v" }, desc = "Refactor Options", },
@@ -22,5 +20,5 @@ return {
       { "<leader>cRx", function() require('refactoring').refactor('Extract Variable') end, mode = {"v"}, desc = "Extract Variable" },
       { "<leader>cRp", function() require('refactoring').debug.print_var({}) end, mode = {"v"}, desc =  "Debug Print Variable" },
     },
-    },
+  },
 }

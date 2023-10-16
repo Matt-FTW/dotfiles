@@ -1,6 +1,6 @@
 return {
-    {
-        "mbbill/undotree",
-        cmd = "UndotreeToggle",
-    },
+  {
+    "mbbill/undotree",
+    event = "BufReadPost",
+  },
 }

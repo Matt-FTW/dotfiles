@@ -23,7 +23,7 @@ return {
         ["<leader>w"] = { name = "+windows" },
         ["<leader>x"] = { name = "+diagnostics/quickfix" },
         ["<leader>cc"] = { name = "+compile" },
-        ["<leader>cp"] = { name = "+packages" },
+        ["<leader>cP"] = { name = "+packages" },
         ["<leader>gd"] = { name = "+diff" },
         ["<leader>gw"] = { name = "+worktrees" },
         ["<leader>cR"] = { name = "+refactor" },

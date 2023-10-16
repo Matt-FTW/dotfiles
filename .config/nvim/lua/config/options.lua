@@ -99,6 +99,9 @@ vim.api.nvim_set_var("terminal_color_15", "#B8C0E0")
 
 vim.opt.shell = "fish"
 
+vim.o.winwidth = 10
+vim.o.winminwidth = 10
+vim.o.equalalways = false
 -- vim.opt.shiftwidth = 4
 -- vim.opt.tabstop = 4
 -- vim.opt.smartindent = true

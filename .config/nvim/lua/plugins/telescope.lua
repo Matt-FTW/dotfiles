@@ -17,6 +17,75 @@ return {
           end)
         end,
       },
+      {
+        "debugloop/telescope-undo.nvim",
+        opts = {},
+        event = "VeryLazy",
+        config = function(_, opts)
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("undo")
+          end)
+        end,
+      },
+      {
+        "prochri/telescope-all-recent.nvim",
+        event = "VeryLazy",
+        opts = {
+          pickers = {
+            ["workspaces.nvim#workspaces"] = {
+              disable = false,
+              sorting = "frecency",
+            },
+            ["project.nvim#projects"] = {
+              disable = false,
+              sorting = "frecency",
+            },
+            ["yanky.nvim#yank_history"] = {
+              disable = true,
+            },
+            ["zoxide.nvim#zoxide"] = {
+              disable = true,
+            },
+          },
+        },
+      },
+      {
+        "benfowler/telescope-luasnip.nvim",
+        event = "VeryLazy",
+        config = function()
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("luasnip")
+          end)
+        end,
+      },
+      {
+        "piersolenski/telescope-import.nvim",
+        requires = "nvim-telescope/telescope.nvim",
+        event = "VeryLazy",
+        config = function(_, opts)
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("import")
+          end)
+        end,
+      },
+      {
+        "jvgrootveld/telescope-zoxide",
+        event = "VeryLazy",
+        config = function()
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("zoxide")
+          end)
+        end,
+      },
+      {
+        "tsakirist/telescope-lazy.nvim",
+        event = "VeryLazy",
+        config = function()
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("lazy")
+          end)
+        end,
+      },
     },
     keys = {
       {
@@ -97,7 +166,7 @@ return {
       { "<leader>sm", "<cmd>Telescope marks<cr>", desc = "Jump to Mark" },
       { "<leader>so", "<cmd>Telescope vim_options<cr>", desc = "Options" },
       { "<leader>sR", "<cmd>Telescope resume<cr>", desc = "Resume" },
-      { "<leader>gu", "<cmd>Telescope undo<cr>", desc = "Telescope Undotree" },
+      { "<leader>cu", "<cmd>Telescope undo<cr>", desc = "Undotree" },
       {
         "<leader>sw",
         Util.telescope("grep_string", { word_match = "-w" }),

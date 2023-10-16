@@ -34,6 +34,7 @@ return {
           lualine_a = { "mode" },
           lualine_b = { "branch" },
           lualine_c = {
+            Util.lualine.root_dir(),
             {
               "diagnostics",
               symbols = {
@@ -45,9 +46,7 @@ return {
             },
             { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
             {
-              function()
-                return Util.root.pretty_path()
-              end,
+              Util.lualine.pretty_path(),
             },
 -- stylua: ignore
                         {
@@ -88,6 +87,16 @@ return {
                 modified = icons.git.modified,
                 removed = icons.git.removed,
               },
+              source = function()
+                local gitsigns = vim.b.gitsigns_status_dict
+                if gitsigns then
+                  return {
+                    added = gitsigns.added,
+                    modified = gitsigns.changed,
+                    removed = gitsigns.removed,
+                  }
+                end
+              end,
             },
           },
           lualine_y = {

@@ -15,56 +15,56 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-map(
-  "n",
-  "<leader>xs",
-  ":FloatermNew --disposable --name=duaroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> dua i<CR>",
-  { desc = "Workspace Size (root dir)" }
-)
+-- map(
+--   "n",
+--   "<leader>xs",
+--   ":FloatermNew --disposable --name=duaroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> dua i<CR>",
+--   { desc = "Workspace Size (root dir)" }
+-- )
+--
+-- map(
+--   "n",
+--   "<leader>xS",
+--   ":FloatermNew --disposable --name=duabuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> dua i<CR>",
+--   { desc = "Workspace Size (cwd)" }
+-- )
+--
+-- map(
+--   "n",
+--   "<leader>fx",
+--   ":FloatermNew --disposable --name=xplrroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> xplr<CR>",
+--   { desc = "Xplr (root dir)" }
+-- )
+--
+-- map(
+--   "n",
+--   "<leader>fX",
+--   ":FloatermNew --disposable --name=xplrbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> xplr<CR>",
+--   { desc = "Xplr (cwd)" }
+-- )
+--
+-- map(
+--   "n",
+--   "<leader>gg",
+--   ":FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>",
+--   { desc = "Lazygit (root dir)" }
+-- )
+--
+-- map(
+--   "n",
+--   "<leader>gG",
+--   ":FloatermNew --disposable --name=lazygitbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> lazygit<CR>",
+--   { desc = "Lazygit (cwd)" }
+-- )
+--
+-- map(
+--   "n",
+--   "<leader>fd",
+--   ":FloatermNew --disposable --name=lazydocker --opener=edit --titleposition=center --height=0.85 --width=0.85 lazydocker<CR>",
+--   { desc = "Lazydocker" }
+-- )
 
-map(
-  "n",
-  "<leader>xS",
-  ":FloatermNew --disposable --name=duabuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> dua i<CR>",
-  { desc = "Workspace Size (cwd)" }
-)
-
-map(
-  "n",
-  "<leader>fx",
-  ":FloatermNew --disposable --name=xplrroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> xplr<CR>",
-  { desc = "Xplr (root dir)" }
-)
-
-map(
-  "n",
-  "<leader>fX",
-  ":FloatermNew --disposable --name=xplrbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> xplr<CR>",
-  { desc = "Xplr (cwd)" }
-)
-
-map(
-  "n",
-  "<leader>gg",
-  ":FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>",
-  { desc = "Lazygit (root dir)" }
-)
-
-map(
-  "n",
-  "<leader>gG",
-  ":FloatermNew --disposable --name=lazygitbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> lazygit<CR>",
-  { desc = "Lazygit (cwd)" }
-)
-
-map(
-  "n",
-  "<leader>fd",
-  ":FloatermNew --disposable --name=lazydocker --opener=edit --titleposition=center --height=0.85 --width=0.85 lazydocker<CR>",
-  { desc = "Lazydocker" }
-)
-
-map("n", "<leader>T", ":Telescope floaterm<CR>", { desc = "Terminals" })
+-- map("n", "<leader>T", ":Telescope floaterm<CR>", { desc = "Terminals" })
 
 map("n", "<leader>sz", ":Telescope zoxide list<CR>", { desc = "Zoxide" })
 
@@ -78,24 +78,18 @@ map("n", "<leader>sI", ":Gitignore<CR>", { desc = "Gitignore" })
 
 map("n", "<leader>cC", ":ConformInfo<CR>", { desc = "Conform Info" })
 
-map("n", "<leader>um", ":MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
-
-map(
-  "n",
-  "<leader>ft",
-  ":FloatermNew --name=termroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root><CR>",
-  { desc = "New Terminal (root dir)" }
-)
-map(
-  "n",
-  "<leader>fT",
-  ":FloatermNew --name=termcwd --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer><CR>",
-  { desc = "New Terminal (cwd)" }
-)
-map("n", "<c-Return>", ":FloatermToggle<CR>", { desc = "Toggle Terminal" })
-map("t", "<C-Return>", "<C-\\><C-n><C-\\><C-n>:FloatermToggle<CR>", { desc = "Toggle Terminal", nowait = true })
-
-vim.keymap.set("n", "<leader>gU", vim.cmd.UndotreeToggle, { noremap = true, silent = true, desc = "Toggle Undotree" })
+-- map(
+--   "n",
+--   "<leader>ft",
+--   ":FloatermNew --name=termroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root><CR>",
+--   { desc = "New Terminal (root dir)" }
+-- )
+-- map(
+--   "n",
+--   "<leader>fT",
+--   ":FloatermNew --name=termcwd --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer><CR>",
+--   { desc = "New Terminal (cwd)" }
+-- )
 
 vim.keymap.set("n", "<C-c>", "<cmd>PickColor<cr>", { noremap = true, silent = true, desc = "Pick Color" })
 vim.keymap.set("i", "<C-c>", "<cmd>PickColorInsert<cr>", { noremap = true, silent = true, desc = "Pick Color" })
@@ -118,35 +112,35 @@ vim.keymap.set(
 
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>cps",
+  "<leader>cPs",
   "<cmd>lua require('package-info').show({ force = true })<cr>",
   { silent = true, noremap = true, desc = "Show Package Versions" }
 )
 
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>cpu",
+  "<leader>cPu",
   "<cmd>lua require('package-info').update()<cr>",
   { silent = true, noremap = true, desc = "Update Package" }
 )
 
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>cpr",
+  "<leader>cPr",
   "<cmd>lua require('package-info').delete()<cr>",
   { silent = true, noremap = true, desc = "Remove Package" }
 )
 
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>cpv",
+  "<leader>cPv",
   "<cmd>lua require('package-info').change_version()<cr>",
   { silent = true, noremap = true, desc = "Change Package Version" }
 )
 
 vim.api.nvim_set_keymap(
   "n",
-  "<leader>cpn",
+  "<leader>cPn",
   "<cmd>lua require('package-info').install()<cr>",
   { silent = true, noremap = true, desc = "Install New Dependency" }
 )

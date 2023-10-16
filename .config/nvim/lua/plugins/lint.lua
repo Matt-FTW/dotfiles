@@ -9,7 +9,6 @@ return {
         fish = { "fish" },
         markdown = { "markdownlint" },
         python = { "pylint" },
-        yaml = { "yamllint" },
         dockerfile = { "hadolint" },
         css = { "stylelint" },
         sass = { "stylelint" },
