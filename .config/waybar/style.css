@@ -301,6 +301,24 @@ window#waybar.hidden {
   padding-right: 10px;
 }
 
+#clock.cl2 {
+  background: #b7bdf8;
+  background: linear-gradient(
+    52deg,
+    rgba(139, 213, 202, 1) 0%,
+    rgba(138, 173, 244, 1) 30%,
+    rgba(183, 189, 248, 1) 48%,
+    rgba(198, 160, 246, 1) 77%,
+    rgba(238, 153, 160, 1) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  color: #1e2030;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+  border: none;
+}
+
 /* Animation Keyframes */
 @keyframes blink {
   to {

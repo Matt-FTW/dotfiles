@@ -320,7 +320,7 @@
       "hyprland/workspaces"
     ],
     "modules-center": [
-      "clock"
+      "clock#cl2"
     ],
     "modules-right": [
       "tray",
@@ -417,7 +417,7 @@
     "tray": {
       "spacing": 10
     },
-    "clock": {
+    "clock#cl2": {
       "tooltip-format": "<tt><small>{calendar}</small></tt>",
       "calendar": {
         "mode": "year",
