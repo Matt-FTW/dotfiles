@@ -20,7 +20,6 @@ return {
       {
         "debugloop/telescope-undo.nvim",
         opts = {},
-        event = "VeryLazy",
         config = function(_, opts)
           Util.on_load("telescope.nvim", function()
             require("telescope").load_extension("undo")
@@ -29,7 +28,6 @@ return {
       },
       {
         "prochri/telescope-all-recent.nvim",
-        event = "VeryLazy",
         opts = {
           pickers = {
             ["workspaces.nvim#workspaces"] = {
@@ -51,7 +49,6 @@ return {
       },
       {
         "benfowler/telescope-luasnip.nvim",
-        event = "VeryLazy",
         config = function()
           Util.on_load("telescope.nvim", function()
             require("telescope").load_extension("luasnip")
@@ -60,8 +57,6 @@ return {
       },
       {
         "piersolenski/telescope-import.nvim",
-        requires = "nvim-telescope/telescope.nvim",
-        event = "VeryLazy",
         config = function(_, opts)
           Util.on_load("telescope.nvim", function()
             require("telescope").load_extension("import")
@@ -70,7 +65,6 @@ return {
       },
       {
         "jvgrootveld/telescope-zoxide",
-        event = "VeryLazy",
         config = function()
           Util.on_load("telescope.nvim", function()
             require("telescope").load_extension("zoxide")
@@ -79,7 +73,6 @@ return {
       },
       {
         "tsakirist/telescope-lazy.nvim",
-        event = "VeryLazy",
         config = function()
           Util.on_load("telescope.nvim", function()
             require("telescope").load_extension("lazy")
