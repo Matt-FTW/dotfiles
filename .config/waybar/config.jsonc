@@ -16,7 +16,9 @@
       "cava",
       "custom/wf-recorder"
     ],
-    "modules-center": ["custom/music"],
+    "modules-center": [
+      "custom/music"
+    ],
     "modules-right": [
       "custom/updates",
       "hyprland/language",
@@ -120,7 +122,8 @@
         "27": "",
         "28": "",
         "29": "",
-        "30": ""
+        "30": "󰈙",
+        "default": "󰈙"
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
@@ -189,14 +192,21 @@
       "critical-threshold": 80,
       "format-critical": "{icon} {temperatureC}°C",
       "format": "{icon} {temperatureC}°C",
-      "format-icons": ["", "", ""],
+      "format-icons": [
+        "",
+        "",
+        ""
+      ],
       "tooltip": true,
       "on-click": "kitty btop",
       "interval": 2
     },
     "backlight": {
       "format": "{icon} {percent}%",
-      "format-icons": [" ", " "],
+      "format-icons": [
+        " ",
+        " "
+      ],
       "on-scroll-up": "light -A 1",
       "on-scroll-down": "light -U 1"
     },
@@ -210,7 +220,13 @@
       "format-charging": " {capacity}%",
       "format-plugged": " ",
       "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""]
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     "network": {
       "format-wifi": "直 ",
@@ -234,7 +250,11 @@
         "phone": " ",
         "portable": " ",
         "car": " ",
-        "default": [" ", " ", " "]
+        "default": [
+          " ",
+          " ",
+          " "
+        ]
       },
       "tooltip-format": "{desc}, {volume}%",
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -295,9 +315,17 @@
     "margin-left": 17,
     "margin-bottom": 0,
     "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["tray", "custom/notifications"],
+    "modules-left": [
+      "custom/arch",
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "tray",
+      "custom/notifications"
+    ],
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
@@ -365,7 +393,8 @@
         "27": "",
         "28": "",
         "29": "",
-        "30": ""
+        "30": "",
+        "default": "󰈙"
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
@@ -429,14 +458,21 @@
       "critical-threshold": 80,
       "format-critical": "{icon} {temperatureC}°C",
       "format": "{icon} {temperatureC}°C",
-      "format-icons": ["", "", ""],
+      "format-icons": [
+        "",
+        "",
+        ""
+      ],
       "tooltip": true,
       "on-click": "kitty btop",
       "interval": 2
     },
     "backlight": {
       "format": "{icon} {percent}%",
-      "format-icons": [" ", " "],
+      "format-icons": [
+        " ",
+        " "
+      ],
       "on-scroll-up": "light -A 1",
       "on-scroll-down": "light -U 1"
     },
@@ -450,7 +486,13 @@
       "format-charging": " {capacity}%",
       "format-plugged": " ",
       "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""]
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     "network": {
       "format-wifi": "直 ",
@@ -474,7 +516,11 @@
         "phone": " ",
         "portable": " ",
         "car": " ",
-        "default": [" ", " ", " "]
+        "default": [
+          " ",
+          " ",
+          " "
+        ]
       },
       "tooltip-format": "{desc}, {volume}%",
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -510,8 +556,13 @@
     "margin-left": 17,
     "margin-bottom": 0,
     "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "modules-left": [
+      "custom/arch",
+      "hyprland/workspaces"
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
     "modules-right": [
       "memory",
       "cpu",
@@ -598,7 +649,8 @@
         "27": "",
         "28": "",
         "29": "",
-        "30": ""
+        "30": "",
+        "default": "󰈙"
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
@@ -651,7 +703,11 @@
       "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
       "format-critical": "{icon} {temperatureC}°C",
       "format": "{icon} {temperatureC}°C",
-      "format-icons": ["", "", ""],
+      "format-icons": [
+        "",
+        "",
+        ""
+      ],
       "tooltip": true,
       "interval": 2
     },
@@ -664,7 +720,10 @@
     },
     "backlight": {
       "format": "{icon} {percent}%",
-      "format-icons": [" ", " "],
+      "format-icons": [
+        " ",
+        " "
+      ],
       "on-scroll-up": "light -A 1",
       "on-scroll-down": "light -U 1"
     },
@@ -678,7 +737,13 @@
       "format-charging": " {capacity}%",
       "format-plugged": " ",
       "format-alt": "{time} {icon}",
-      "format-icons": ["", "", "", "", ""]
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     "network": {
       "format-wifi": "直 ",
@@ -702,7 +767,11 @@
         "phone": " ",
         "portable": " ",
         "car": " ",
-        "default": [" ", " ", " "]
+        "default": [
+          " ",
+          " ",
+          " "
+        ]
       },
       "tooltip-format": "{desc}, {volume}%",
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
