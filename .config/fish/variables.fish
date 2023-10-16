@@ -37,6 +37,12 @@ set -xg EDITOR nvim
 set -xg VISUAL $EDITOR
 set -xg SUDO_EDITOR $EDITOR
 
+set -xg ZELLIJ_RUNNER_ROOT_DIR Repos
+set -xg ZELLIJ_RUNNER_IGNORE_DIRS node_modules,target
+set -xg ZELLIJ_RUNNER_MAX_DIRS_DEPTH 3
+set -xg ZELLIJ_RUNNER_LAYOUTS_DIR .config/zellij/layouts
+set -xg ZELLIJ_RUNNER_BANNERS_DIR .config/zellij/banners
+
 set -xg GPG_TTY (tty)
 set -xg LANG es_ES.UTF-8
 set -xg LC_ALL es_ES.UTF-8

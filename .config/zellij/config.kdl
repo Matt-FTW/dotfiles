@@ -1,11 +1,5 @@
 keybinds {
-    shared_except "locked" {
-        bind "Ctrl y" {
-            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
-                floating true
-            }
-        }
-    }
+    
 }
 
 plugins {
