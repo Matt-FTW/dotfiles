@@ -2,6 +2,7 @@ return {
   {
     "lewis6991/satellite.nvim",
     event = "BufRead",
+    enabled = false,
     opts = {
       current_only = true,
       winblend = 50,
