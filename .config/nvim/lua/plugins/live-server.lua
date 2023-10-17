@@ -6,7 +6,7 @@ return {
     end,
     cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
     keys = {
-      { "<leader>cL", "<cmd>LiveServer<CR>", desc = "Toggle LiveServer" },
+      { "<leader>cL", "<cmd>LiveServer<CR>", desc = "LiveServer" },
     },
   },
 }
