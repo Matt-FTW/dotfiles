@@ -16,7 +16,7 @@ return {
       },
     },
     keys = {
-      { "<leader>gci", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
+      { "<leader>gct", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
       { "<leader>gco", "<cmd>GitConflictChooseOurs<cr>", desc = "Choose Our Changes" },
       { "<leader>gcb", "<cmd>GitConflictChooseBoth<cr>", desc = "Choose Both changes" },
       { "<leader>gcl", "<cmd>GitConflictListQf<cr>", desc = "Git Conflict Quicklist" },
