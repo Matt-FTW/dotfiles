@@ -74,8 +74,6 @@ map("n", "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" })
 
 map("n", "<leader>si", ":Telescope import<CR>", { desc = "Imports" })
 
-map("n", "<leader>sI", ":Gitignore<CR>", { desc = "Gitignore" })
-
 map("n", "<leader>cC", ":ConformInfo<CR>", { desc = "Conform Info" })
 
 -- map(

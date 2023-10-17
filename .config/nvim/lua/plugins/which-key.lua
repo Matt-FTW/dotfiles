@@ -24,7 +24,6 @@ return {
         ["<leader>x"] = { name = "+diagnostics/quickfix" },
         ["<leader>cc"] = { name = "+compile" },
         ["<leader>cP"] = { name = "+packages" },
-        ["<leader>gd"] = { name = "+diff" },
         ["<leader>gw"] = { name = "+worktrees" },
         ["<leader>cR"] = { name = "+refactor" },
         ["<leader>D"] = { name = "+database" },
@@ -33,6 +32,7 @@ return {
         ["<leader>db"] = { name = "+Breakpoints" },
         ["<leader>sr"] = { name = "+replace" },
         ["<leader>dP"] = { name = "+python" },
+        ["<leader>gc"] = { name = "+conflicts" },
       },
     },
     config = function(_, opts)

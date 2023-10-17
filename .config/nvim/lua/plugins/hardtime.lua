@@ -3,6 +3,10 @@ return {
     "m4xshen/hardtime.nvim",
     dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
     enabled = false,
+    event = "VeryLazy",
+    keys = {
+      { "<leader>uH", "<cmd>Hardtime toggle<CR>", desc = "Toggle Hardtime" },
+    },
     opts = {
       disabled_filetypes = {
         "qf",
@@ -12,11 +16,10 @@ return {
         "mason",
         "oil",
         "neo-tree",
-        "floaterm",
         "symbols-outline",
         "vim-be-good",
       },
-      disable_mouse = false,
+      restriction_mode = "hint",
       restricted_keys = {
         ["h"] = { "n", "x" },
         ["l"] = { "n", "x" },
