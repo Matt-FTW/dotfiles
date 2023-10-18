@@ -3,6 +3,13 @@ local cmp = require("cmp")
 return {
   {
     "hrsh7th/nvim-cmp",
+    dependencies = {
+      {
+        "vuki656/package-info.nvim",
+        event = { "BufRead package.json" },
+        opts = {},
+      },
+    },
     opts = {
       mapping = cmp.mapping.preset.insert({
         ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
