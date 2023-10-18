@@ -10,10 +10,6 @@ return {
     "akinsho/git-conflict.nvim",
     opts = {
       default_mappings = false,
-      highlights = {
-        incoming = "DiffAdd",
-        current = "DiffText",
-      },
     },
     keys = {
       { "<leader>gct", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
