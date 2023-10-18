@@ -1,7 +1,6 @@
 return {
   {
     "stevearc/conform.nvim",
-    dependencies = { "mason.nvim" },
     keys = {
       {
         "<leader>cC",
@@ -30,23 +29,7 @@ return {
         scss = { { "prettierd", "prettier", "stylelint" } },
         less = { { "prettierd", "prettier", "stylelint" } },
         markdown = { { "prettierd", "prettier" } },
-      },
-      -- LazyVim will merge the options you set here with builtin formatters.
-      -- You can also define any custom formatters here.
-      ---@type table<string,table>
-      formatters = {
-        injected = { options = { ignore_errors = true } },
-        -- -- Example of using dprint only when a dprint.json file is present
-        -- dprint = {
-        --   condition = function(ctx)
-        --     return vim.fs.find({ "dprint.json" }, { path = ctx.filename, upward = true })[1]
-        --   end,
-        -- },
-        taplo = {
-          condition = function(ctx)
-            return vim.fs.find({ "Cargo.toml" }, { path = ctx.filename, upward = true })[1]
-          end,
-        },
+        toml = { "taplo" },
       },
     },
   },
