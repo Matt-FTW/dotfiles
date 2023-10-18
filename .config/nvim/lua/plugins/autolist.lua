@@ -8,31 +8,23 @@ return {
       "plaintex",
       "norg",
     },
-    config = function()
-      require("autolist").setup()
+    opts = {},
+    keys = {
+      { "<tab>", "<cmd>AutolistTab<cr>", mode = { "i" } },
+      { "<s-tab>", "<cmd>AutolistShiftTab<cr>", mode = { "i" } },
+      { "<CR>", "<CR><cmd>AutolistNewBullet<cr>", mode = { "i" } },
+      { "o", "o<cmd>AutolistNewBullet<cr>", mode = { "n" } },
+      { "O", "O<cmd>AutolistNewBulletBefore<cr>", mode = { "n" } },
+      { "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>", mode = { "n" } },
+      { "<C-r>", "<cmd>AutolistRecalculate<cr>", mode = { "n" } },
 
-      vim.keymap.set("i", "<tab>", "<cmd>AutolistTab<cr>")
-      vim.keymap.set("i", "<s-tab>", "<cmd>AutolistShiftTab<cr>")
-      -- vim.keymap.set("i", "<c-t>", "<c-t><cmd>AutolistRecalculate<cr>") -- an example of using <c-t> to indent
-      vim.keymap.set("i", "<CR>", "<CR><cmd>AutolistNewBullet<cr>")
-      vim.keymap.set("n", "o", "o<cmd>AutolistNewBullet<cr>")
-      vim.keymap.set("n", "O", "O<cmd>AutolistNewBulletBefore<cr>")
-      vim.keymap.set("n", "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>")
-      vim.keymap.set("n", "<C-r>", "<cmd>AutolistRecalculate<cr>")
+      { "].", "<cmd>AutolistCycleNext<cr>", mode = { "n" }, { desc = "Next List Type" } },
+      { "[.", "<cmd>AutolistCyclePrev<cr>", mode = { "n" }, { desc = "Prev List Type" } },
 
-      -- cycle list types with dot-repeat
-      vim.keymap.set("n", "].", require("autolist").cycle_next_dr, { desc = "Next List Type", expr = true })
-      vim.keymap.set("n", "[.", require("autolist").cycle_prev_dr, { desc = "Prev List Type", expr = true })
-
-      -- if you don't want dot-repeat
-      -- vim.keymap.set("n", "<leader>cn", "<cmd>AutolistCycleNext<cr>")
-      -- vim.keymap.set("n", "<leader>cp", "<cmd>AutolistCycleNext<cr>")
-
-      -- functions to recalculate list on edit
-      vim.keymap.set("n", ">>", ">><cmd>AutolistRecalculate<cr>")
-      vim.keymap.set("n", "<<", "<<<cmd>AutolistRecalculate<cr>")
-      vim.keymap.set("n", "dd", "dd<cmd>AutolistRecalculate<cr>")
-      vim.keymap.set("v", "d", "d<cmd>AutolistRecalculate<cr>")
-    end,
+      { ">>", ">><cmd>AutolistRecalculate<cr>", mode = { "n" } },
+      { "<<", "<<<cmd>AutolistRecalculate<cr>", mode = { "n" } },
+      { "dd", "dd<cmd>AutolistRecalculate<cr>", mode = { "n" } },
+      { "d", "d<cmd>AutolistRecalculate<cr>", mode = { "v" } },
+    },
   },
 }
