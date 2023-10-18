@@ -23,7 +23,10 @@
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.project",
     "lazyvim.plugins.extras.vscode",
-    "plugins.extras.alpha"
+    "plugins.extras.alpha",
+    "plugins.extras.codeium",
+    "plugins.extras.git",
+    "plugins.extras.github"
   ],
   "news": {
     "NEWS.md": "2123"
