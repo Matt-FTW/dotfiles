@@ -29,16 +29,11 @@ return {
         ["<leader>D"] = { name = "+database" },
         ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
         ["<leader>ss"] = { name = "+Goto Symbols" },
-        ["<leader>db"] = { name = "+Breakpoints" },
         ["<leader>sr"] = { name = "+replace" },
         ["<leader>dP"] = { name = "+python" },
         ["<leader>gc"] = { name = "+conflicts" },
+        ["<leader>G"] = { name = "+github" },
       },
     },
-    config = function(_, opts)
-      local wk = require("which-key")
-      wk.setup(opts)
-      wk.register(opts.defaults)
-    end,
   },
 }
