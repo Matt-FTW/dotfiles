@@ -310,12 +310,6 @@ vim.keymap.set({ "n", "x" }, "<Right>", "<Cmd>lua Scroll('l', 0, 1)<CR>")
 
 vim.keymap.set("n", "<M-BS>", "<Cmd>noh<CR>", { noremap = true, silent = true, desc = "Clear Search" })
 
-vim.keymap.set("n", "]b", require("goto-breakpoints").next, { desc = "Next Breakpoint" })
-vim.keymap.set("n", "[b", require("goto-breakpoints").prev, { desc = "Prev Breakpoint" })
-vim.keymap.set("n", "<leader>dbn", require("goto-breakpoints").next, { desc = "Next Breakpoint" })
-vim.keymap.set("n", "<leader>dbp", require("goto-breakpoints").prev, { desc = "Prev Breakpoint" })
-vim.keymap.set("n", "<leader>dbs", require("goto-breakpoints").stopped, { desc = "Stopped Breakpoint" })
-
 -- vim.keymap.set({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<CR>", { desc = "Spider-w" })
 -- vim.keymap.set({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<CR>", { desc = "Spider-e" })
 -- vim.keymap.set({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<CR>", { desc = "Spider-b" })
