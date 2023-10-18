@@ -50,6 +50,7 @@ return {
         noice = true,
         ufo = true,
         overseer = false,
+        octo = true,
         rainbow_delimiters = true,
         semantic_tokens = true,
         telescope = {
