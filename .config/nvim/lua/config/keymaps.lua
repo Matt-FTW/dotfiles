@@ -41,6 +41,12 @@ if vim.lsp.inlay_hint then
     vim.lsp.inlay_hint(0, nil)
   end, { desc = "Toggle Inlay Hints" })
 end
+
+---@param path string
+local function open(path)
+  vim.fn.jobstart({ vim.g.open_command, path }, { detach = true })
+  vim.notify(string.format("Opening %s", path))
+end
 -- map(
 --   "n",
 --   "<leader>xs",
