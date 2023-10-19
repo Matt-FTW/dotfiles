@@ -26,7 +26,10 @@
     "plugins.extras.alpha",
     "plugins.extras.codeium",
     "plugins.extras.git",
-    "plugins.extras.github"
+    "plugins.extras.github",
+    "plugins.extras.hints",
+    "plugins.extras.rest-client",
+    "plugins.extras.typescript"
   ],
   "news": {
     "NEWS.md": "2123"
