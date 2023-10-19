@@ -35,6 +35,12 @@ end, { desc = "Google" })
 vim.keymap.set("x", "<leader>?", function()
   google(vim.fn.getreg("g"), false)
 end, { desc = "Google" })
+
+if vim.lsp.inlay_hint then
+  vim.keymap.set("n", "<leader>uh", function()
+    vim.lsp.inlay_hint(0, nil)
+  end, { desc = "Toggle Inlay Hints" })
+end
 -- map(
 --   "n",
 --   "<leader>xs",
