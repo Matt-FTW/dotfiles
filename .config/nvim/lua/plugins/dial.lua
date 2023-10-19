@@ -1,7 +1,8 @@
 return {
   {
     "monaqa/dial.nvim",
-    config = true,
+    event = "VeryLazy",
+    -- splutylua: ignore
     keys = {
       {
         "<C-a>",
@@ -20,5 +21,18 @@ return {
         desc = "Decrement",
       },
     },
+    config = function()
+      local augend = require("dial.augend")
+      require("dial.config").augends:register_group({
+        default = {
+          augend.integer.alias.decimal,
+          augend.integer.alias.hex,
+          augend.date.alias["%Y/%m/%d"],
+          augend.constant.alias.bool,
+          augend.constant.new({ elements = { "let", "const" } }),
+          augend.semver.alias.semver,
+        },
+      })
+    end,
   },
 }
