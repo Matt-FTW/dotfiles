@@ -15,6 +15,26 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
+--  ╭───────────────────────────────────────────────────────────╮
+--  │ Credit: June Gunn <Leader>?/! | Google it / Feeling lucky │
+--  ╰───────────────────────────────────────────────────────────╯
+---@param pat string
+---@param lucky boolean
+local function google(pat, lucky)
+  local query = '"' .. vim.fn.substitute(pat, '["\n]', " ", "g") .. '"'
+  query = vim.fn.substitute(query, "[[:punct:] ]", [[\=printf("%%%02X", char2nr(submatch(0)))]], "g")
+  vim.fn.system(
+    vim.fn.printf(vim.g.open_command .. ' "https://www.google.com/search?%sq=%s"', lucky and "btnI&" or "", query)
+  )
+end
+
+vim.keymap.set("n", "<leader>?", function()
+  google(vim.fn.expand("<cWORD>"), false)
+end, { desc = "Google" })
+
+vim.keymap.set("x", "<leader>?", function()
+  google(vim.fn.getreg("g"), false)
+end, { desc = "Google" })
 -- map(
 --   "n",
 --   "<leader>xs",
@@ -75,6 +95,8 @@ map("n", "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" })
 map("n", "<leader>si", ":Telescope import<CR>", { desc = "Imports" })
 
 map("n", "<leader>cC", ":ConformInfo<CR>", { desc = "Conform Info" })
+
+map("n", "<leader>cM", ":CmpStatus<CR>", { desc = "Cmp Status" })
 
 -- map(
 --   "n",
