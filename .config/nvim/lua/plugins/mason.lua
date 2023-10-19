@@ -32,6 +32,7 @@ return {
         "gomodifytags",
         "isort",
         "stylelint",
+        "js-debug-adapter",
       },
     },
   },
