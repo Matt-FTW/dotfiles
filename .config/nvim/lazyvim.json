@@ -28,6 +28,7 @@
     "plugins.extras.git",
     "plugins.extras.github",
     "plugins.extras.rest-client",
+    "plugins.extras.scrollbar",
     "plugins.extras.test-extended"
   ],
   "news": {
