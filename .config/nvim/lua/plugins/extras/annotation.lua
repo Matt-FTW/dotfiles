@@ -1,7 +1,6 @@
 return {
   {
     "danymat/neogen",
-    dependencies = "nvim-treesitter/nvim-treesitter",
     opts = {
       snippet_engine = "luasnip",
       enabled = true,
@@ -49,6 +48,18 @@ return {
     opts = {
       defaults = {
         ["<leader>a"] = { name = "+annotation" },
+      },
+    },
+  },
+  {
+    "Zeioth/dooku.nvim",
+    cmd = { "DookuGenerate", "DookuOpen", "DookuAutoSetup" },
+    opts = {},
+    keys = {
+      {
+        "<leader>ag",
+        "<Cmd>DookuGenerate<CR>",
+        desc = "Generate HTML Docs",
       },
     },
   },
