@@ -80,25 +80,6 @@ if vim.g.neovide then
   vim.g.neovide_theme = "catppuccin-macchiato"
 end
 
-vim.api.nvim_set_var("terminal_color_0", "#494D64")
-vim.api.nvim_set_var("terminal_color_1", "#ED8796")
-vim.api.nvim_set_var("terminal_color_2", "#A6DA95")
-vim.api.nvim_set_var("terminal_color_3", "#EED49F")
-vim.api.nvim_set_var("terminal_color_4", "#8AADF4")
-vim.api.nvim_set_var("terminal_color_5", "#F5BDE6")
-vim.api.nvim_set_var("terminal_color_6", "#8BD5CA")
-vim.api.nvim_set_var("terminal_color_7", "#B8C0E0")
-vim.api.nvim_set_var("terminal_color_8", "#5B6078")
-vim.api.nvim_set_var("terminal_color_9", "#ED8796")
-vim.api.nvim_set_var("terminal_color_10", "#A6DA95")
-vim.api.nvim_set_var("terminal_color_11", "#EED49F")
-vim.api.nvim_set_var("terminal_color_12", "#8AADF4")
-vim.api.nvim_set_var("terminal_color_13", "#F5BDE6")
-vim.api.nvim_set_var("terminal_color_14", "#8BD5CA")
-vim.api.nvim_set_var("terminal_color_15", "#B8C0E0")
-
-vim.opt.shell = "fish"
-
 vim.o.winwidth = 10
 vim.o.winminwidth = 10
 vim.o.equalalways = false

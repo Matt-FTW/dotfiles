@@ -8,6 +8,33 @@ return {
         "vuki656/package-info.nvim",
         event = { "BufRead package.json" },
         opts = {},
+        keys = {
+          {
+            "<leader>cPs",
+            "<cmd>lua require('package-info').show({ force = true })<cr>",
+            desc = "Show Package Versions",
+          },
+          {
+            "<leader>cPu",
+            "<cmd>lua require('package-info').update()<cr>",
+            desc = "Update Package",
+          },
+          {
+            "<leader>cPr",
+            "<cmd>lua require('package-info').delete()<cr>",
+            desc = "Remove Package",
+          },
+          {
+            "<leader>cPv",
+            "<cmd>lua require('package-info').change_version()<cr>",
+            desc = "Change Package Version",
+          },
+          {
+            "<leader>cPn",
+            "<cmd>lua require('package-info').install()<cr>",
+            desc = "Install New Dependency",
+          },
+        },
       },
       {
         "petertriho/cmp-git",
@@ -16,16 +43,19 @@ return {
         "amarakon/nvim-cmp-fonts",
       },
     },
+    keys = {
+      { "<leader>cM", ":CmpStatus<CR>", { desc = "Cmp Status" } },
+    },
     opts = function(_, opts)
       cmp.setup.filetype("gitcommit", {
         sources = cmp.config.sources({
-          { name = "git" }, -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
+          { name = "git" },
         }),
       })
 
       cmp.setup.filetype("css", {
         sources = cmp.config.sources({
-          { name = "fonts", option = { space_filter = "-" } }, -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
+          { name = "fonts", option = { space_filter = "-" } },
         }),
       })
       opts.mapping = cmp.mapping.preset.insert({
@@ -50,5 +80,13 @@ return {
         documentation = cmp.config.window.bordered(),
       }
     end,
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>cP"] = { name = "+packages" },
+      },
+    },
   },
 }

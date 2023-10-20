@@ -109,6 +109,9 @@ return {
             require("telescope").load_extension("import")
           end)
         end,
+        keys = {
+          { "<leader>si", ":Telescope import<CR>", { desc = "Imports" } },
+        },
       },
       {
         "jvgrootveld/telescope-zoxide",
@@ -117,6 +120,9 @@ return {
             require("telescope").load_extension("zoxide")
           end)
         end,
+        keys = {
+          { "<leader>sz", ":Telescope zoxide list<CR>", { desc = "Zoxide" } },
+        },
       },
       {
         "tsakirist/telescope-lazy.nvim",
@@ -125,6 +131,9 @@ return {
             require("telescope").load_extension("lazy")
           end)
         end,
+        keys = {
+          { "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" } },
+        },
       },
     },
     keys = {
@@ -442,6 +451,16 @@ return {
         },
       },
       require("telescope").load_extension("refactoring"),
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
+        ["<leader>ss"] = { name = "+Goto Symbols" },
+        ["<leader>gw"] = { name = "+worktrees" },
+      },
     },
   },
 }

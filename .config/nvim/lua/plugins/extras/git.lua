@@ -20,4 +20,12 @@ return {
       { "]g", "<cmd>GitConflictPrevConflict<cr>", desc = "Next Git Conflict" },
     },
   },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>gc"] = { name = "+conflicts" },
+      },
+    },
+  },
 }

@@ -24,12 +24,22 @@
     "lazyvim.plugins.extras.util.project",
     "lazyvim.plugins.extras.vscode",
     "plugins.extras.alpha",
+    "plugins.extras.annotation",
+    "plugins.extras.breadcrumbs",
     "plugins.extras.codeium",
+    "plugins.extras.compiler",
+    "plugins.extras.db",
+    "plugins.extras.discordrcp",
+    "plugins.extras.documentation",
     "plugins.extras.git",
     "plugins.extras.github",
+    "plugins.extras.harpoon",
+    "plugins.extras.rainbow-delimeters",
     "plugins.extras.rest-client",
     "plugins.extras.scrollbar",
-    "plugins.extras.test-extended"
+    "plugins.extras.smooth-scrolling",
+    "plugins.extras.test-extended",
+    "plugins.extras.zen-mode"
   ],
   "news": {
     "NEWS.md": "2123"

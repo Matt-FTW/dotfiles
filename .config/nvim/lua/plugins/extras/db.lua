@@ -41,4 +41,12 @@ return {
       { "<leader>Dq", "<cmd>DBUILastQueryInfo<cr>", desc = "Last Query Info" },
     },
   },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>D"] = { name = "+database" },
+      },
+    },
+  },
 }

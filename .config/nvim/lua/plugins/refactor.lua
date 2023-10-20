@@ -21,4 +21,12 @@ return {
       { "<leader>cRp", function() require('refactoring').debug.print_var({}) end, mode = {"v"}, desc =  "Debug Print Variable" },
     },
   },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>cR"] = { name = "+refactor" },
+      },
+    },
+  },
 }
