@@ -1,6 +1,8 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+local Util = require("lazyvim.util")
+
 local function map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
   ---@cast keys LazyKeysHandler
@@ -18,6 +20,8 @@ end
 --  ╭───────────────────────────────────────────────────────────╮
 --  │ Credit: June Gunn <Leader>?/! | Google it / Feeling lucky │
 --  ╰───────────────────────────────────────────────────────────╯
+
+vim.g.open_command = vim.g.open_command or "xdg-open"
 ---@param pat string
 ---@param lucky boolean
 local function google(pat, lucky)
@@ -39,6 +43,7 @@ end, { desc = "Google" })
 if vim.lsp.inlay_hint then
   vim.keymap.set("n", "<leader>uh", function()
     vim.lsp.inlay_hint(0, nil)
+    Util.notify("Toggle Inlay Hints", { title = "Inlay Hints" })
   end, { desc = "Toggle Inlay Hints" })
 end
 
