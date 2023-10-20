@@ -11,9 +11,6 @@ return {
           "stevearc/dressing.nvim",
         },
         cmd = "Nerdy",
-        keys = {
-          { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
-        },
       },
       {
         "nvim-telescope/telescope-fzf-native.nvim",
@@ -42,14 +39,12 @@ return {
             require("telescope").load_extension("git_worktree")
           end)
         end,
-    --stylua: ignore
-    keys = {
-      {"<leader>gwm", function() require("telescope").extensions.git_worktree.git_worktrees() end, desc = "Manage Worktrees"},
-      {"<leader>gwc", function() require("telescope").extensions.git_worktree.create_git_worktree() end, desc = "Create Worktree"},
-    },
       },
       {
         "prochri/telescope-all-recent.nvim",
+        dependencies = {
+          "kkharji/sqlite.lua",
+        },
         opts = {
           pickers = {
             ["workspaces.nvim#workspaces"] = {
@@ -76,33 +71,6 @@ return {
             require("telescope").load_extension("dap")
           end)
         end,
-        keys = {
-          {
-            "<leader>dm",
-            "<cmd>Telescope dap commands<CR>",
-            desc = "Commands",
-          },
-          {
-            "<leader>df",
-            "<cmd>Telescope dap frames<CR>",
-            desc = "Frames",
-          },
-          {
-            "<leader>dG",
-            "<cmd>Telescope dap configurations<CR>",
-            desc = "Configurations",
-          },
-          {
-            "<leader>dL",
-            "<cmd>Telescope dap list_breakpoints<CR>",
-            desc = "List Breakpoints",
-          },
-          {
-            "<leader>dv",
-            "<cmd>Telescope dap variables<CR>",
-            desc = "Variables",
-          },
-        },
       },
       {
         "benfowler/telescope-luasnip.nvim",
@@ -119,9 +87,6 @@ return {
             require("telescope").load_extension("import")
           end)
         end,
-        keys = {
-          { "<leader>si", ":Telescope import<CR>", { desc = "Imports" } },
-        },
       },
       {
         "jvgrootveld/telescope-zoxide",
@@ -130,9 +95,6 @@ return {
             require("telescope").load_extension("zoxide")
           end)
         end,
-        keys = {
-          { "<leader>sz", ":Telescope zoxide list<CR>", { desc = "Zoxide" } },
-        },
       },
       {
         "tsakirist/telescope-lazy.nvim",
@@ -141,12 +103,53 @@ return {
             require("telescope").load_extension("lazy")
           end)
         end,
-        keys = {
-          { "<leader>sp", ":Telescope lazy<CR>", { desc = "Plugins (Lazy)" } },
-        },
       },
     },
     keys = {
+
+      {
+        "<leader>gwm",
+        function()
+          require("telescope").extensions.git_worktree.git_worktrees()
+        end,
+        desc = "Manage Worktrees",
+      },
+      {
+        "<leader>gwc",
+        function()
+          require("telescope").extensions.git_worktree.create_git_worktree()
+        end,
+        desc = "Create Worktree",
+      },
+      {
+        "<leader>dm",
+        "<cmd>Telescope dap commands<CR>",
+        desc = "Commands",
+      },
+      {
+        "<leader>df",
+        "<cmd>Telescope dap frames<CR>",
+        desc = "Frames",
+      },
+      {
+        "<leader>dG",
+        "<cmd>Telescope dap configurations<CR>",
+        desc = "Configurations",
+      },
+      {
+        "<leader>dL",
+        "<cmd>Telescope dap list_breakpoints<CR>",
+        desc = "List Breakpoints",
+      },
+      {
+        "<leader>dv",
+        "<cmd>Telescope dap variables<CR>",
+        desc = "Variables",
+      },
+      { "<leader>si", ":Telescope import<CR>", desc = "Imports" },
+      { "<leader>sz", ":Telescope zoxide list<CR>", desc = "Zoxide" },
+      { "<leader>sp", ":Telescope lazy<CR>", desc = "Plugins (Lazy)" },
+      { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
       { "<leader>gC", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
 
       { "<leader>cu", "<cmd>Telescope undo<cr>", desc = "Undotree" },

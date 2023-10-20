@@ -8,7 +8,7 @@ return {
       {
         "<leader>ccc",
         "<cmd>CompilerOpen<cr>",
-        { noremap = true, silent = true, desc = "Open Compiler", mode = { "n" } },
+        desc = "Open Compiler",
       },
       {
         "<leader>ccR",
@@ -16,12 +16,12 @@ return {
           vim.cmd("CompilerStop")
           vim.cmd("CompilerRedo")
         end,
-        { noremap = true, silent = true, desc = "Redo Compiler", mode = { "n" } },
+        desc = "Redo Compiler",
       },
       {
         "<leader>ccr",
         "<cmd>CompilerToggleResults<cr>",
-        { noremap = true, silent = true, desc = "Toggle Compiler Results", mode = { "n" } },
+        desc = "Toggle Compiler Results",
       },
     },
   },

@@ -1,5 +1,0 @@
-return {
-    {
-        "kkharji/sqlite.lua",
-    },
-}

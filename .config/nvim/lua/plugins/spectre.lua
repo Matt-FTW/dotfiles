@@ -2,7 +2,7 @@ return {
   {
     "nvim-pack/nvim-spectre",
     cmd = "Spectre",
-    opts = { open_cmd = "noswapfile vnew" },
+    opts = {},
   -- stylua: ignore
   keys = {
     { "<leader>srf", function() require("spectre").toggle() end, desc = "Replace globally" },
