@@ -174,4 +174,42 @@ return {
       },
     },
   },
+  {
+    "kosayoda/nvim-lightbulb",
+    event = "BufReadPre",
+    opts = {
+      sign = {
+        enabled = false,
+        priority = 10,
+      },
+      float = {
+        enabled = true,
+        text = "💡",
+        win_opts = {},
+      },
+      virtual_text = {
+        enabled = false,
+        text = "💡",
+      },
+    },
+  },
+  {
+    "hinell/lsp-timeout.nvim",
+    event = "BufRead",
+    enabled = false,
+    dependencies = { "neovim/nvim-lspconfig" },
+    init = function()
+      vim.g["lsp-timeout-config"] = {
+        startTimeout = 1000 * 1, -- ms before restart
+      }
+    end,
+  },
+  {
+    "VidocqH/lsp-lens.nvim",
+    event = "BufReadPost",
+    opts = {},
+    keys = {
+      { "<leader>ue", "<cmd>LspLensToggle<cr>", desc = "Toggle Lsp Lens" },
+    },
+  },
 }

@@ -71,4 +71,19 @@ return {
       },
     },
   },
+  {
+    "RRethy/nvim-treesitter-endwise",
+    event = "BufRead",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = "LazyFile",
+    enabled = true,
+    opts = { mode = "cursor" },
+  },
+  {
+    "chrisgrieser/nvim-puppeteer",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+  },
 }

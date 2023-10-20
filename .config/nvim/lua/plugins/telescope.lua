@@ -6,6 +6,16 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       {
+        "2kabhishek/nerdy.nvim",
+        dependencies = {
+          "stevearc/dressing.nvim",
+        },
+        cmd = "Nerdy",
+        keys = {
+          { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
+        },
+      },
+      {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
         enabled = vim.fn.executable("make") == 1,
@@ -407,7 +417,6 @@ return {
     },
     opts = {
       defaults = {
-
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous,
@@ -450,7 +459,6 @@ return {
           },
         },
       },
-      require("telescope").load_extension("refactoring"),
     },
   },
   {
@@ -461,6 +469,14 @@ return {
         ["<leader>ss"] = { name = "+Goto Symbols" },
         ["<leader>gw"] = { name = "+worktrees" },
       },
+    },
+  },
+  {
+    "axieax/urlview.nvim",
+    cmd = { "UrlView" },
+    keys = { { "<leader>su", "<cmd>UrlView<cr>", desc = "Search Urls" } },
+    opts = {
+      default_picker = "telescope",
     },
   },
 }

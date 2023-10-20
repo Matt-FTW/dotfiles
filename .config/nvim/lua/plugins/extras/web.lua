@@ -9,4 +9,10 @@ return {
       { "<leader>cL", "<cmd>LiveServer<CR>", desc = "LiveServer" },
     },
   },
+  {
+    "barrett-ruth/import-cost.nvim",
+    build = "sh install.sh yarn",
+    event = "BufReadPost",
+    config = true,
+  },
 }

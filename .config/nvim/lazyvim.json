@@ -27,6 +27,7 @@
     "plugins.extras.annotation",
     "plugins.extras.breadcrumbs",
     "plugins.extras.codeium",
+    "plugins.extras.color",
     "plugins.extras.compiler",
     "plugins.extras.db",
     "plugins.extras.discordrcp",
@@ -34,11 +35,14 @@
     "plugins.extras.git",
     "plugins.extras.github",
     "plugins.extras.harpoon",
+    "plugins.extras.multicursor",
     "plugins.extras.rainbow-delimeters",
+    "plugins.extras.refactor",
     "plugins.extras.rest-client",
     "plugins.extras.scrollbar",
     "plugins.extras.smooth-scrolling",
     "plugins.extras.test-extended",
+    "plugins.extras.web",
     "plugins.extras.zen-mode"
   ],
   "news": {
