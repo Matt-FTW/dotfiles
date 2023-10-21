@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+if ! command -v spotdl &>/dev/null; then
+	notify-send "Spotdl Sync" "Error: spotdl is not installed"
+	exit 1
+fi
+
+FOLDERS=(
+	"EDM-House"
+	"Metal-Rock"
+	"Synth-Chill"
+	"Lofi-Sleppy"
+	"Space-Cyberpunk"
+	"Cyberpunk-Darksynth"
+)
+
+notify-send "Spotdl Sync" "Started syncing..."
+
+for folder in "${FOLDERS[@]}"; do
+	spotdlSync "$folder"
+done
+
+notify-send "Spotdl Sync Complete"

@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+FOLDER=$1
+
+if [ ! -d "$HOME/Musica/Listen-To/$FOLDER" ]; then
+	notify-send "Spotdl Sync" "The folder $FOLDER doesnt exist"
+	exit 1
+fi
+
+cd "$HOME/Musica/Listen-To/$FOLDER"
+
+spotdl sync "${FOLDER,,}.sync.spotdl"
+
+notify-send "Spotdl Sync" "$FOLDER synced"

@@ -1,0 +1,10 @@
+[Unit]
+Description=Download music using spotdl
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/matt/.local/bin/downloadMusic
+
+[Install]
+WantedBy=default.target
