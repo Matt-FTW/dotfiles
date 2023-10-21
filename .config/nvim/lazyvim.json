@@ -35,6 +35,7 @@
     "plugins.extras.documentation",
     "plugins.extras.git",
     "plugins.extras.github",
+    "plugins.extras.gpt",
     "plugins.extras.harpoon",
     "plugins.extras.lsp",
     "plugins.extras.multicursor",
