@@ -47,17 +47,42 @@ return {
       { "<leader>cM", ":CmpStatus<CR>", desc = "Cmp Status" },
     },
     opts = function(_, opts)
-      cmp.setup.filetype("gitcommit", {
-        sources = cmp.config.sources({
-          { name = "git" },
-        }),
-      })
+      -- TODO: Fix this comments
+      -- cmp.setup.filetype("gitcommit", {
+      --   sources = cmp.config.sources({
+      --     { name = "git" },
+      --   }),
+      -- })
+      --
+      -- cmp.setup.filetype("css", {
+      --   sources = cmp.config.sources({
+      --     { name = "nvim_lsp" },
+      --     { name = "luasnip" },
+      --     { name = "path" },
+      --   }, {
+      --     { name = "buffer" },
+      --     { name = "fonts", option = { space_filter = "-" } },
+      --   }),
+      -- })
+      --
+      -- -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+      -- cmp.setup.cmdline({ "/", "?" }, {
+      --   mapping = cmp.mapping.preset.cmdline(),
+      --   sources = {
+      --     { name = "buffer" },
+      --   },
+      -- })
+      --
+      -- -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+      -- cmp.setup.cmdline(":", {
+      --   mapping = cmp.mapping.preset.cmdline(),
+      --   sources = cmp.config.sources({
+      --     { name = "path" },
+      --   }, {
+      --     { name = "cmdline" },
+      --   }),
+      -- })
 
-      cmp.setup.filetype("css", {
-        sources = cmp.config.sources({
-          { name = "fonts", option = { space_filter = "-" } },
-        }),
-      })
       opts.mapping = cmp.mapping.preset.insert({
         ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
         ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
