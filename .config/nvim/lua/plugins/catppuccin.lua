@@ -59,7 +59,7 @@ return {
         semantic_tokens = true,
         telescope = {
           enabled = true,
-          -- style = "nvchad"
+          -- style = "nvchad",
         },
         lsp_trouble = false,
         symbols_outline = false,
