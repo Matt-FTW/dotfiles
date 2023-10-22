@@ -23,6 +23,14 @@ return {
         end,
       },
       {
+        "dawsers/telescope-floaterm.nvim",
+        config = function()
+          Util.on_load("telescope.nvim", function()
+            require("telescope").load_extension("floaterm")
+          end)
+        end,
+      },
+      {
         "debugloop/telescope-undo.nvim",
         opts = {},
         config = function(_, opts)
@@ -426,6 +434,7 @@ return {
             ["<C-j>"] = actions.move_selection_next,
             ["<esc>"] = actions.close,
             ["<C-u>"] = false,
+            ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
           },
         },
         file_ignore_patterns = {
