@@ -1,41 +1,30 @@
+local sql_ft = { "sql", "mysql", "plsql" }
+
 return {
   {
     "tpope/vim-dadbod",
     dependencies = {
       "kristijanhusak/vim-dadbod-ui",
-      "kristijanhusak/vim-dadbod-completion",
-      "jsborjesson/vim-uppercase-sql",
+      { "kristijanhusak/vim-dadbod-completion", ft = sql_ft },
+      { "jsborjesson/vim-uppercase-sql", ft = sql_ft },
     },
-    cmd = { "DBUI", "DBUIToggle" },
-    ft = "sql",
-    opts = {
-      db_competion = function()
-        require("cmp").setup.buffer({ sources = { { name = "vim-dadbod-completion" } } })
-      end,
-    },
-    config = function(_, opts)
-      vim.g.db_ui_save_location = vim.fn.stdpath("config") .. require("plenary.path").path.sep .. "db_ui"
+    cmd = { "DBUI", "DBUIToggle", "DBUIAddConnection", "DBUIFindBuffer" },
+    init = function()
+      vim.g.db_ui_use_nerd_fonts = true
+      vim.g.db_ui_save_location = vim.fn.stdpath("data") .. "/db_ui"
+      vim.g.db_ui_execute_on_save = false
 
       vim.api.nvim_create_autocmd("FileType", {
-        pattern = {
-          "sql",
-        },
-        command = [[setlocal omnifunc=vim_dadbod_completion#omni]],
-      })
-
-      vim.api.nvim_create_autocmd("FileType", {
-        pattern = {
-          "sql",
-          "mysql",
-          "plsql",
-        },
+        pattern = sql_ft,
         callback = function()
-          vim.schedule(opts.db_completion)
+          ---@diagnostic disable-next-line: missing-fields
+          require("cmp").setup.buffer({ sources = { { name = "vim-dadbod-completion" } } })
         end,
       })
     end,
     keys = {
-      { "<leader>Dt", "<cmd>DBUIToggle<cr>", desc = "Toggle UI" },
+      { "<leader>Da", "<cmd>DBUIAddConnection<cr>", desc = "Add Connection" },
+      { "<leader>Du", "<cmd>DBUIToggle<cr>", desc = "Toggle UI" },
       { "<leader>Df", "<cmd>DBUIFindBuffer<cr>", desc = "Find Buffer" },
       { "<leader>Dr", "<cmd>DBUIRenameBuffer<cr>", desc = "Rename Buffer" },
       { "<leader>Dq", "<cmd>DBUILastQueryInfo<cr>", desc = "Last Query Info" },
