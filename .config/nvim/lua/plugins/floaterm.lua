@@ -1,7 +1,7 @@
 return {
   {
     "voldikss/vim-floaterm",
-    cmd = { "FloatermNew", "FloatermToggle", "FloatermNext", "FloatermPrev" },
+    cmd = { "FloatermNew", "FloatermToggle", "FloatermNext", "FloatermPrev", "FloatermLast", "FloatermFirst" },
     --stylua: ignore
     keys = {
   { "<leader>Ts", "<cmd>FloatermNew --disposable --name=duaroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> dua i<CR>", desc = "Workspace Size (root dir)" },
