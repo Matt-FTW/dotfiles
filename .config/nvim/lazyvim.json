@@ -43,6 +43,7 @@
     "plugins.extras.refactor",
     "plugins.extras.rest-client",
     "plugins.extras.scrollbar",
+    "plugins.extras.semshi",
     "plugins.extras.smooth-scrolling",
     "plugins.extras.test-extended",
     "plugins.extras.web",
