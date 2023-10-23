@@ -30,6 +30,9 @@ if vim.lsp.inlay_hint then
   end, { desc = "Toggle Inlay Hints" })
 end
 
+vim.keymap.set("n", "<leader>ft", "<Nop>")
+vim.keymap.set("n", "<leader>fT", "<Nop>")
+
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
