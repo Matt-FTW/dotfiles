@@ -4,7 +4,7 @@ return {
     keys = {
       {
         "<leader>cC",
-        ":ConformInfo<CR>",
+        "<cmd>ConformInfo<CR>",
         mode = { "n", "v" },
         desc = "Conform Info",
       },

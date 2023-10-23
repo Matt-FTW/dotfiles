@@ -154,9 +154,10 @@ return {
         "<cmd>Telescope dap variables<CR>",
         desc = "Variables",
       },
-      { "<leader>si", ":Telescope import<CR>", desc = "Imports" },
-      { "<leader>sz", ":Telescope zoxide list<CR>", desc = "Zoxide" },
-      { "<leader>sp", ":Telescope lazy<CR>", desc = "Plugins (Lazy)" },
+      { "<leader>si", "<cmd>Telescope import<CR>", desc = "Imports" },
+      { "<leader>sz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
+      { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
+      { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
       { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
       { "<leader>gC", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
 
