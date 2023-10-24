@@ -18,10 +18,15 @@ return {
   },
   {
     "mvllow/modes.nvim",
-    tag = "v0.2.0",
-    enabled = false,
     event = "BufReadPost",
-    opts = {},
+    opts = {
+      colors = {
+        copy = "#f5a97f",
+        delete = "#ee99a0",
+        insert = "#8bd5ca",
+        visual = "#8aadf4",
+      },
+    },
   },
   {
     "nacro90/numb.nvim",
