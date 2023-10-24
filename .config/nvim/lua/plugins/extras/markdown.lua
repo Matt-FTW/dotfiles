@@ -1,5 +1,14 @@
 return {
   {
+    "lukas-reineke/headlines.nvim",
+    opts = {
+      markdown = {
+        headline_highlights = false,
+      },
+    },
+    ft = { "markdown", "norg", "rmd", "org" },
+  },
+  {
     "gaoDean/autolist.nvim",
     ft = {
       "markdown",
