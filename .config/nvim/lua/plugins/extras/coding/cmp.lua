@@ -6,7 +6,10 @@ return {
     dependencies = {
       {
         "vuki656/package-info.nvim",
-        event = { "BufRead package.json" },
+        event = {
+          "BufRead package.json",
+          "BufRead package-lock.json",
+        },
         opts = {},
         keys = {
           {
