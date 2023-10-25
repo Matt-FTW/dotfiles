@@ -91,8 +91,8 @@
 	#############
 	g = grep -p
 	#############
-	l = log --oneline
-	lg = log --oneline --graph --decorate
+  l = log --oneline --graph --decorate
+  lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 	#############
 	ls = ls-files
 	lsf = !git ls-files | grep -i
