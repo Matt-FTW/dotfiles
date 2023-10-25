@@ -14,7 +14,7 @@ return {
         lua = { "stylua" },
         fish = { "fish_indent" },
         sh = { "shfmt", "shellharden" },
-        python = { "black" },
+        python = { "isort", "black" },
         bash = { "shfmt", "shellharden" },
         javascript = { { "prettierd", "prettier", "rustywind" } },
         javascriptreact = { { "prettierd", "prettier", "rustywind" } },
