@@ -55,7 +55,6 @@ return {
         "prisma",
         "r",
         "rasi",
-        "regex",
         "ruby",
         "sql",
         "scss",

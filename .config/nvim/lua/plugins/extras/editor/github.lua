@@ -1,5 +1,4 @@
 local prefix = "<leader>G"
-local icon = vim.g.icons_enabled and " " or ""
 return {
   {
     "almo7aya/openingh.nvim",

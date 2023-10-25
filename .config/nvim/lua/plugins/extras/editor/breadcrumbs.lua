@@ -1,6 +1,6 @@
 return {
   {
-    "Bekaboo/dropbar.nvim",
+    "Bekaboo/dropbar.nvim", -- NOTE: NVIM >= 10.0
     event = "BufRead",
     opts = {
       sources = {
@@ -11,7 +11,7 @@ return {
     },
   },
   {
-    "utilyre/barbecue.nvim",
+    "utilyre/barbecue.nvim", -- NOTE: NVIM < 10.0
     name = "barbecue",
     version = "*",
     dependencies = {

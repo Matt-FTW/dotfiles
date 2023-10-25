@@ -1,6 +1,8 @@
+local Util = require("lazyvim.util")
+
 return {
-    {
-        "ThePrimeagen/harpoon",
+  {
+    "ThePrimeagen/harpoon",
     --stylua: ignore
     keys = {
       { "<leader>'", function() require("harpoon.mark").add_file() end, desc = "Add File" },
@@ -12,14 +14,16 @@ return {
       { "<leader>5", function() require("harpoon.ui").nav_file(5) end, desc = "File 5" },
       { "<leader>6", function() require("harpoon.ui").nav_file(6) end, desc = "File 6" },
     },
-        opts = {
-            globalsettings = {
-                save_on_toggle = true,
-                enter_on_sendcmd = true,
-            },
-        },
-        setup = function()
-            require("telescope").load_extension("harpoon")
-        end,
+    opts = {
+      globalsettings = {
+        save_on_toggle = true,
+        enter_on_sendcmd = true,
+      },
     },
+    config = function()
+      Util.on_load("telescope.nvim", function()
+        require("telescope").load_extension("harpoon")
+      end)
+    end,
+  },
 }

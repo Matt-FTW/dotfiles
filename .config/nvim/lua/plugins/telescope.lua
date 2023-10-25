@@ -40,15 +40,6 @@ return {
         end,
       },
       {
-        "ThePrimeagen/git-worktree.nvim",
-        opts = {},
-        config = function(_, opts)
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("git_worktree")
-          end)
-        end,
-      },
-      {
         "prochri/telescope-all-recent.nvim",
         dependencies = {
           "kkharji/sqlite.lua",
@@ -114,21 +105,6 @@ return {
       },
     },
     keys = {
-
-      {
-        "<leader>gwm",
-        function()
-          require("telescope").extensions.git_worktree.git_worktrees()
-        end,
-        desc = "Manage Worktrees",
-      },
-      {
-        "<leader>gwc",
-        function()
-          require("telescope").extensions.git_worktree.create_git_worktree()
-        end,
-        desc = "Create Worktree",
-      },
       {
         "<leader>dm",
         "<cmd>Telescope dap commands<CR>",

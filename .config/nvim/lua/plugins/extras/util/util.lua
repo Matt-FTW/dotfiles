@@ -195,4 +195,10 @@ return {
     "ThePrimeagen/vim-be-good",
     cmd = "VimBeGood",
   },
+  {
+    "vidocqh/auto-indent.nvim",
+    enabled = false,
+    event = "BufReadPost",
+    opts = {},
+  },
 }
