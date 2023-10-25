@@ -63,6 +63,7 @@ return {
         },
         lsp_trouble = false,
         symbols_outline = false,
+        lsp_trouble = true,
         treesitter = true,
         treesitter_context = false,
         which_key = true,
