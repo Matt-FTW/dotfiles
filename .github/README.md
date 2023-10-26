@@ -2,12 +2,14 @@
 <a href=""><img src="./assets/images/dotfiles-title.png"></a>
 </div>
 
-<p align="center">
-  <a href="#about"><img width="195px" src="./assets/images/dotfiles-about.png"></a>
-  <a href="#setup"><img width="195px" src="./assets/images/dotfiles-setup.png"></a>
-  <a href="#gallery"><img width="195px" src="./assets/images/dotfiles-gallery.png"></a>
-  <a href="#credits"><img width="195px" src="./assets/images/dotfiles-credits.png"></a>
-</p>
+<div align="center">
+
+[<img width="190px" src="./assets/images/dotfiles-about.png">](#about)
+[<img width="190px" src="./assets/images/dotfiles-setup.png">](#setup)
+[<img width="190px" src="./assets/images/dotfiles-gallery.png">](#gallery)
+[<img width="190px" src="./assets/images/dotfiles-credits.png">](#credits)
+
+</div>
 
 ## :herb: <samp>[About](#about)</samp>
 
