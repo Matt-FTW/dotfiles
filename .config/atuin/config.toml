@@ -90,3 +90,6 @@ inline_height = 40
 # cwd_filter = [
 #   "^/very/secret/area"
 # ]
+
+invert = true
+enter_accept = true
