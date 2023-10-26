@@ -49,7 +49,7 @@ Here is some _small_ information about my setup:
 - **Terminal Emulator**: Kitty
 - **Shell**: Fish
 - **Shell Prompt**: Starship
-- **Shell History**: Atuin
+- **Shell History**: [Atuin](https://github.com/atuinsh/atuin) ([Config](../.config/atuin/README.md))
 - **CD Replacement**: zoxide
 - **LS Replacement**: eza
 - **Cat Replacement**: bat
