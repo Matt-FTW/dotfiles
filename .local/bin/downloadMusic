@@ -17,7 +17,7 @@ FOLDERS=(
 notify-send "Spotdl Sync" "Started syncing..."
 
 for folder in "${FOLDERS[@]}"; do
-	spotdlSync "$folder"
+	/home/matt/.local/bin/spotdlSync "$folder"
 done
 
 notify-send "Spotdl Sync Complete"
