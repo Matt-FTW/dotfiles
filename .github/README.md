@@ -35,7 +35,7 @@ Here is some _small_ information about my setup:
 - **Panel**: [Waybar](https://github.com/Alexays/Waybar) :sparkles: ([Config](../.config/waybar/)) :gear:
 - **Terminal Emulator**: [Kitty](https://sw.kovidgoyal.net/kitty/) :sparkles: ([Config](../.config/kitty/)) :gear:
 - **Notification Daemon/Center**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) ([Config](../.config/swaync/)) :gear:
-- **Application Launcher**: [Rofi](https://github.com/lbonn/rofi) ([Config](../.config/rofi/)) :gear:
+- **Application Launcher**: [Rofi](https://github.com/lbonn/rofi) :sparkles: ([Config](../.config/rofi/)) :gear:
 - **Audio Daemon**: [Pipewire](https://pipewire.org/) ([Config](../.config/pipewire/)) :gear:
 - **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
 - **AUR Helper**: [yay](https://github.com/Jguer/yay)
@@ -56,14 +56,14 @@ Here is some _small_ information about my setup:
 - **Shell**: [Fish](https://fishshell.com/) :sparkles: ([Config](../.config/fish/)) :gear:
 - **Shell Prompt**: [Starship](https://starship.rs/) ([Config](../.config/starship/)) :gear:
 - **Shell History**: [Atuin](https://github.com/atuinsh/atuin) ([Config](../.config/atuin/)) :gear:
-- **CD Replacement**: [zoxide](https://github.com/ajeetdsouza/zoxide)
+- **CD Replacement**: [zoxide](https://github.com/ajeetdsouza/zoxide) :sparkles:
 - **LS Replacement**: [eza](https://github.com/eza-community/eza)
 - **Cat Replacement**: [bat](https://github.com/sharkdp/bat) ([Config](../.config/bat/)) :gear:
 - **Help Pages**: [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) ([Config](../.config/navi/)) :gear:
-- **Fuzzy File Finder**: [fzf](https://github.com/junegunn/fzf)
+- **Fuzzy File Finder**: [fzf](https://github.com/junegunn/fzf) :sparkles:
 - **Fuzzy Word Finder**: [Ripgrep](https://github.com/BurntSushi/ripgrep) ([Config](../.config/rg/)) :gear:
 - **Editor**: [Neovim](https://neovim.io/) :sparkles: ([Config](../.config/nvim/)) :gear:
-- **File Manager**: [Yazi](https://yazi-rs.github.io/) ([Config](../.config/yazi/)) :gear:
+- **File Manager**: [Yazi](https://yazi-rs.github.io/) :sparkles: ([Config](../.config/yazi/)) :gear:
 - **Git UI**: [Lazygit](https://github.com/jesseduffield/lazygit) :sparkles: ([Config](../.config/lazygit/)) :gear:
 - **Npm Manager UI**: [Lazynpm](https://github.com/jesseduffield/lazynpm)
 - **Docker UI**: [Lazydocker](https://github.com/jesseduffield/lazydocker)
@@ -74,7 +74,7 @@ Here is some _small_ information about my setup:
 - **GPU Monitor**: [nvtop](https://github.com/Syllo/nvtop)
 - **System Fetch**: [Neofetch](https://github.com/dylanaraps/neofetch) ([Config](../.config/neofetch/)) :gear:
 - **Git Fetch**: [Onefetch](https://github.com/o2sh/onefetch)
-- **Keybindings TUI**: [Keyb](https://github.com/kencx/keyb) ([Config](../.config/keyb/)) :gear:
+- **Keybindings TUI**: [Keyb](https://github.com/kencx/keyb) :sparkles: ([Config](../.config/keyb/)) :gear:
 
 </details>
 
@@ -102,9 +102,9 @@ Here is some _small_ information about my setup:
 <details>
   <summary><b>🔍 Other</b></summary>
 
-- **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin)
+- **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) :sparkles:
 - **Font**: [Jetbrains Mono Nerd](https://www.jetbrains.com/es-es/lp/mono/)
-- **Dotfiles Manager**: [yadm](https://yadm.io/) ([Config](../.config/yadm/)) :gear:
+- **Dotfiles Manager**: [yadm](https://yadm.io/) :sparkles: ([Config](../.config/yadm/)) :gear:
 - **Automatic System Deployment**: [Ansible](https://www.ansible.com/)
 
 </details>
