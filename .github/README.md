@@ -68,6 +68,7 @@ Here is some _small_ information about my setup:
 - **Npm Manager UI**: [Lazynpm](https://github.com/jesseduffield/lazynpm)
 - **Docker UI**: [Lazydocker](https://github.com/jesseduffield/lazydocker)
 - **Arch Package Search UI**: [Pacseek](https://github.com/moson-mo/pacseek) ([Config](../.config/pacseek/)) :gear:
+- **Update Tool**: [Topgrade](https://github.com/topgrade-rs/topgrade) ([Config](../.config/topgrade/)) :gear:
 - **Audio Visualizer**: [Cava](https://github.com/karlstav/cava) ([Config](../.config/cava/)) :gear:
 - **System Monitor**: [btop](https://github.com/aristocratos/btop) ([Config](../.config/btop/)) :gear:
 - **GPU Monitor**: [nvtop](https://github.com/Syllo/nvtop)

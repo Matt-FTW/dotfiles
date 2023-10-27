@@ -9,16 +9,16 @@
 # Run `sudo -v` to cache credentials at the start of the run
 # This avoids a blocking password prompt in the middle of an unattended run
 # (default: false)
-# pre_sudo = false
+pre_sudo = true
 
 # Sudo command to be used
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-# disable = ["system", "emacs"]
+disable = ["shell", "spicetify", "vim"]
 
 # Ignore failures for these steps
-# ignore_failures = ["powershell"]
+ignore_failures = ["oh-my-zsh"]
 
 # List of remote machines with Topgrade installed on them
 # remote_topgrades = ["toothless", "pi", "parnas"]
@@ -51,7 +51,7 @@
 # cleanup = true
 
 # Send a notification for every step (default: false)
-notify_each_step = true
+# notify_each_step = true
 
 # Skip sending a notification at the end of a run (default: false)
 # skip_notify = true
@@ -238,4 +238,3 @@ arch_package_manager = "yay"
 # use_root = false
 
 # containers = ["archlinux-latest"]
-
