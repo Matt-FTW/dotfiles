@@ -11,7 +11,7 @@
 
 </div>
 
-## :herb: <samp>[About](#about)</samp>
+## :herb: <samp>About</samp>
 
 Hey there! :wave:
 
@@ -53,27 +53,27 @@ Here is some _small_ information about my setup:
 <details>
   <summary><b>🖥️ CLI/TUI Apps</b></summary>
 
-- **Shell**: Fish :sparkles: ([Config](../.config/fish/)) :gear:
-- **Shell Prompt**: Starship ([Config](../.config/starship/)) :gear:
+- **Shell**: [Fish](https://fishshell.com/) :sparkles: ([Config](../.config/fish/)) :gear:
+- **Shell Prompt**: [Starship](https://starship.rs/) ([Config](../.config/starship/)) :gear:
 - **Shell History**: [Atuin](https://github.com/atuinsh/atuin) ([Config](../.config/atuin/)) :gear:
-- **CD Replacement**: zoxide
-- **LS Replacement**: eza
-- **Cat Replacement**: bat ([Config](../.config/bat/)) :gear:
-- **Help Pages**: Navi / TLDR ([Config](../.config/navi/)) :gear:
-- **Fuzzy File Finder**: Fzf
-- **Fuzzy Word Finder**: Ripgrep ([Config](../.config/rg/)) :gear:
-- **Editor**: Neovim :sparkles: ([Config](../.config/nvim/)) :gear:
-- **File Manager**: Yazi ([Config](../.config/yazi/)) :gear:
-- **Git UI**: Lazygit :sparkles: ([Config](../.config/lazygit/)) :gear:
-- **Npm Manager UI**: Lazynpm
-- **Docker UI**: Lazydocker
+- **CD Replacement**: [zoxide](https://github.com/ajeetdsouza/zoxide)
+- **LS Replacement**: [eza](https://github.com/eza-community/eza)
+- **Cat Replacement**: [bat](https://github.com/sharkdp/bat) ([Config](../.config/bat/)) :gear:
+- **Help Pages**: [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) ([Config](../.config/navi/)) :gear:
+- **Fuzzy File Finder**: [fzf](https://github.com/junegunn/fzf)
+- **Fuzzy Word Finder**: [Ripgrep](https://github.com/BurntSushi/ripgrep) ([Config](../.config/rg/)) :gear:
+- **Editor**: [Neovim](https://neovim.io/) :sparkles: ([Config](../.config/nvim/)) :gear:
+- **File Manager**: [Yazi](https://yazi-rs.github.io/) ([Config](../.config/yazi/)) :gear:
+- **Git UI**: [Lazygit](https://github.com/jesseduffield/lazygit) :sparkles: ([Config](../.config/lazygit/)) :gear:
+- **Npm Manager UI**: [Lazynpm](https://github.com/jesseduffield/lazynpm)
+- **Docker UI**: [Lazydocker](https://github.com/jesseduffield/lazydocker)
 - **Arch Package Search UI**: [Pacseek](https://github.com/moson-mo/pacseek) ([Config](../.config/pacseek/)) :gear:
-- **Audio Visualizer**: Cava ([Config](../.config/cava/)) :gear:
-- **System Monitor**: btop ([Config](../.config/btop/)) :gear:
-- **GPU Monitor**: nvtop
-- **System Fetch**: Neofetch ([Config](../.config/neofetch/)) :gear:
-- **Git Fetch**: Onefetch
-- **Keybindings TUI**: Keyb ([Config](../.config/keyb/)) :gear:
+- **Audio Visualizer**: [Cava](https://github.com/karlstav/cava) ([Config](../.config/cava/)) :gear:
+- **System Monitor**: [btop](https://github.com/aristocratos/btop) ([Config](../.config/btop/)) :gear:
+- **GPU Monitor**: [nvtop](https://github.com/Syllo/nvtop)
+- **System Fetch**: [Neofetch](https://github.com/dylanaraps/neofetch) ([Config](../.config/neofetch/)) :gear:
+- **Git Fetch**: [Onefetch](https://github.com/o2sh/onefetch)
+- **Keybindings TUI**: [Keyb](https://github.com/kencx/keyb) ([Config](../.config/keyb/)) :gear:
 
 </details>
 
@@ -86,7 +86,7 @@ Here is some _small_ information about my setup:
 - **Email Client**: [Thunderbird](https://www.thunderbird.net/)
 - **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) ([Config](../.config/zathura/)) :gear:
 - **Note Taking**: [Obsidian](https://obsidian.md/) :sparkles:
-- **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/))
+- **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) ([Config](../.config/mpv/)) :gear:
 - **Image Viewer**: [geeqie](https://www.geeqie.org/)
 - **File Manager**: [Nemo](https://community.linuxmint.com/software/view/nemo)
 - **Audio Effects**: [Easyeffects](https://github.com/wwmm/easyeffects)
@@ -94,7 +94,7 @@ Here is some _small_ information about my setup:
 - **Paint Tool**: [Pinta](https://www.pinta-project.com/)
 - **VM Manager**: [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))
 - **Recording Program**: [OBS](https://obsproject.com/)
-- **Office Apps**: [LibreOffice](https://www.libreoffice.org/)
+- **Office Apps**: [LibreOffice](https://www.libreoffice.org/) ([Config](../.config/libreoffice/4/user/config/)) :gear:
 
 </details>
 
@@ -108,7 +108,7 @@ Here is some _small_ information about my setup:
 
 </details>
 
-## :wrench: <samp>[Setup](#setup)</samp>
+## :wrench: <samp>Setup</samp>
 
 #### :package: <samp>Automatic Installation (Arch Linux)</samp>
 
@@ -122,13 +122,13 @@ Here is some _small_ information about my setup:
 
 ##### WIP
 
-## :camera: <samp>[Gallery](#gallery)</samp>
+## :camera: <samp>Gallery</samp>
 
 ![overview-1](./assets/images/screenshots/overview-1.png)
 ![overview-2](./assets/images/screenshots/overview-2.png)
 ![overview-3](./assets/images/screenshots/overview-3.png)
 
-## :tada: <samp>[Credits](#credits)</samp>
+## :tada: <samp>Credits</samp>
 
 Big thanks to everyone at r/unixporn for inspiring me to make this!
 
