@@ -1,6 +1,6 @@
 {
     "BDFDB": true,
-    "ZeresPluginLibrary": true,
+    "ZeresPluginLibrary": false,
     "ActivityIcons": true,
     "BetterAnimations": true,
     "ChannelTabs": true,
