@@ -65,6 +65,7 @@ Here is some _small_ information about my setup:
 - **Git UI**: Lazygit ([Config](../.config/lazygit/))
 - **Npm Manager UI**: Lazynpm
 - **Docker UI**: Lazydocker
+- **Arch Package Search UI**: [Pacseek](https://github.com/moson-mo/pacseek) ([Config](../.config/pacseek/))
 - **Audio Visualizer**: Cava ([Config](../.config/cava/))
 - **System Monitor**: btop ([Config](../.config/btop/))
 - **GPU Monitor**: nvtop
