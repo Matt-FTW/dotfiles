@@ -25,84 +25,86 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 Here is some _small_ information about my setup:
 
+> :information_source: INFO: Some of this apps have the config included in the repo (marked with :gear:), others dont because simply they dont have any or is not worth saving it because use of their defaults. Also, my favorite programs and tools are marked with :sparkles:
+
 <details>
   <summary><b>🐧 System</b></summary>
 
-- **OS**: Arch Linux ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
-- **Window Manager**: Hyprland ([Config](../.config/hypr/))
-- **Panel**: Waybar ([Config](../.config/waybar/))
-- **Terminal Emulator**: Kitty ([Config](../.config/kitty/))
-- **Notification Daemon/Center**: swaync ([Config](../.config/swaync/))
-- **Application Launcher**: Rofi ([Config](../.config/rofi/))
-- **Audio Daemon**: Pipewire ([Config](../.config/pipewire/))
-- **Firewall**: ufw
-- **AUR Helper**: yay
-- **Clipboard Manager**: wl-clipboard (with cliphist)
-- **Wallpaper Switcher**: swww
-- **Lock Screen**: swaylock-effects ([Config](../.config/sway/))
-- **Idle Timeout**: swayidle ([Config](../.config/sway/))
-- **Color Picker**: Hyprpicker
-- **Recording Tool**: wf-recorder
-- **Screenshot Tool**: Hyprshot
-- **Logout Menu**: wleave ([Config](../.config/wleave/))
+- **OS**: [Arch Linux](https://archlinux.org/) ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
+- **Window Manager**: [Hyprland](https://hyprland.org/) :sparkles: ([Config](../.config/hypr/)) :gear:
+- **Panel**: [Waybar](https://github.com/Alexays/Waybar) :sparkles: ([Config](../.config/waybar/)) :gear:
+- **Terminal Emulator**: [Kitty](https://sw.kovidgoyal.net/kitty/) :sparkles: ([Config](../.config/kitty/)) :gear:
+- **Notification Daemon/Center**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) ([Config](../.config/swaync/)) :gear:
+- **Application Launcher**: [Rofi](https://github.com/lbonn/rofi) ([Config](../.config/rofi/)) :gear:
+- **Audio Daemon**: [Pipewire](https://pipewire.org/) ([Config](../.config/pipewire/)) :gear:
+- **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
+- **AUR Helper**: [yay](https://github.com/Jguer/yay)
+- **Clipboard Manager**: [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))
+- **Wallpaper Switcher**: [swww](https://github.com/Horus645/swww)
+- **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/sway/)) :gear:
+- **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) ([Config](../.config/sway/)) :gear:
+- **Color Picker**: [Hyprpicker](https://github.com/hyprwm/hyprpicker)
+- **Recording Tool**: [wf-recorder](https://github.com/ammen99/wf-recorder)
+- **Screenshot Tool**: [Hyprshot](https://github.com/Gustash/Hyprshot)
+- **Logout Menu**: [wleave](https://github.com/AMNatty/wleave) ([Config](../.config/wleave/)) :gear:
 
 </details>
 
 <details>
   <summary><b>🖥️ CLI/TUI Apps</b></summary>
 
-- **Shell**: Fish ([Config](../.config/fish/))
-- **Shell Prompt**: Starship ([Config](../.config/starship/))
-- **Shell History**: [Atuin](https://github.com/atuinsh/atuin) ([Config](../.config/atuin/))
+- **Shell**: Fish :sparkles: ([Config](../.config/fish/)) :gear:
+- **Shell Prompt**: Starship ([Config](../.config/starship/)) :gear:
+- **Shell History**: [Atuin](https://github.com/atuinsh/atuin) ([Config](../.config/atuin/)) :gear:
 - **CD Replacement**: zoxide
 - **LS Replacement**: eza
-- **Cat Replacement**: bat ([Config](../.config/bat/))
-- **Help Pages**: Navi / TLDR ([Config](../.config/navi/))
+- **Cat Replacement**: bat ([Config](../.config/bat/)) :gear:
+- **Help Pages**: Navi / TLDR ([Config](../.config/navi/)) :gear:
 - **Fuzzy File Finder**: Fzf
-- **Fuzzy Word Finder**: Ripgrep ([Config](../.config/rg/))
-- **Editor**: Neovim ([Config](../.config/nvim/))
-- **File Manager**: Yazi ([Config](../.config/yazi/))
-- **Git UI**: Lazygit ([Config](../.config/lazygit/))
+- **Fuzzy Word Finder**: Ripgrep ([Config](../.config/rg/)) :gear:
+- **Editor**: Neovim :sparkles: ([Config](../.config/nvim/)) :gear:
+- **File Manager**: Yazi ([Config](../.config/yazi/)) :gear:
+- **Git UI**: Lazygit :sparkles: ([Config](../.config/lazygit/)) :gear:
 - **Npm Manager UI**: Lazynpm
 - **Docker UI**: Lazydocker
-- **Arch Package Search UI**: [Pacseek](https://github.com/moson-mo/pacseek) ([Config](../.config/pacseek/))
-- **Audio Visualizer**: Cava ([Config](../.config/cava/))
-- **System Monitor**: btop ([Config](../.config/btop/))
+- **Arch Package Search UI**: [Pacseek](https://github.com/moson-mo/pacseek) ([Config](../.config/pacseek/)) :gear:
+- **Audio Visualizer**: Cava ([Config](../.config/cava/)) :gear:
+- **System Monitor**: btop ([Config](../.config/btop/)) :gear:
 - **GPU Monitor**: nvtop
-- **System Fetch**: Neofetch ([Config](../.config/neofetch/))
+- **System Fetch**: Neofetch ([Config](../.config/neofetch/)) :gear:
 - **Git Fetch**: Onefetch
-- **Keybindings TUI**: Keyb ([Config](../.config/keyb/))
+- **Keybindings TUI**: Keyb ([Config](../.config/keyb/)) :gear:
 
 </details>
 
 <details>
   <summary><b>🖱️ GUI Apps</b></summary>
 
-- **Music Player**: Spotify (patched with Spicetify) ([Config](../.config/spicetify/))
-- **Web Browser**: Librewolf / Thorium ([Config](../.config/librewolf/))
-- **Messaging App**: Discord (patched with BetterDiscord) ([Config](../.config/BetterDiscord/))
-- **Email Client**: Thunderbird
-- **PDF Viewer**: Zathura ([Config](../.config/zathura/))
-- **Note Taking**: Obsidian
-- **Video Player**: Celluloid (MPV)
-- **Image Viewer**: geeqie
-- **File Manager**: Nemo
-- **Audio Effects**: Easyeffects
-- **Image Editor**: Gimp
-- **Paint Tool**: Pinta
-- **VM Manager**: KVM (QEMU)
-- **Recording Program**: OBS
-- **Office Apps**: LibreOffice
+- **Music Player**: [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) ([Config](../.config/spicetify/)) :gear:
+- **Web Browser**: [Librewolf](https://librewolf.net/) / [Thorium](https://thorium.rocks/) :sparkles: ([Config](../.config/librewolf/)) :gear:
+- **Messaging App**: [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) ([Config](../.config/BetterDiscord/)) :gear:
+- **Email Client**: [Thunderbird](https://www.thunderbird.net/)
+- **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) ([Config](../.config/zathura/)) :gear:
+- **Note Taking**: [Obsidian](https://obsidian.md/) :sparkles:
+- **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/))
+- **Image Viewer**: [geeqie](https://www.geeqie.org/)
+- **File Manager**: [Nemo](https://community.linuxmint.com/software/view/nemo)
+- **Audio Effects**: [Easyeffects](https://github.com/wwmm/easyeffects)
+- **Image Editor**: [Gimp](https://www.gimp.org/)
+- **Paint Tool**: [Pinta](https://www.pinta-project.com/)
+- **VM Manager**: [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))
+- **Recording Program**: [OBS](https://obsproject.com/)
+- **Office Apps**: [LibreOffice](https://www.libreoffice.org/)
 
 </details>
 
 <details>
   <summary><b>🔍 Other</b></summary>
 
-- **Colorscheme**: Catppuccin Macchiato
-- **Font**: Jetbrains Mono Nerd
-- **Dotfiles Manager**: yadm ([Config](../.config/yadm/))
-- **Automatic System Deployment**: Ansible
+- **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin)
+- **Font**: [Jetbrains Mono Nerd](https://www.jetbrains.com/es-es/lp/mono/)
+- **Dotfiles Manager**: [yadm](https://yadm.io/) ([Config](../.config/yadm/)) :gear:
+- **Automatic System Deployment**: [Ansible](https://www.ansible.com/)
 
 </details>
 
