@@ -25,56 +25,63 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 Here is some _small_ information about my setup:
 
-#### System
+<details>
+  <summary><b>🐧 System</b></summary>
 
-- **OS**: Arch Linux (btw)
-- **Window Manager**: Hyprland
-- **Panel**: Waybar
-- **Notification Daemon/Center**: swaync
-- **Application Launcher**: Rofi
-- **Audio Daemon**: Pipewire
+- **OS**: Arch Linux ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
+- **Window Manager**: Hyprland ([Config](../.config/hypr/))
+- **Panel**: Waybar ([Config](../.config/waybar/))
+- **Terminal Emulator**: Kitty ([Config](../.config/kitty/))
+- **Notification Daemon/Center**: swaync ([Config](../.config/swaync/))
+- **Application Launcher**: Rofi ([Config](../.config/rofi/))
+- **Audio Daemon**: Pipewire ([Config](../.config/pipewire/))
 - **Firewall**: ufw
 - **AUR Helper**: yay
 - **Clipboard Manager**: wl-clipboard (with cliphist)
 - **Wallpaper Switcher**: swww
-- **Lock Screen**: swaylock-effects
-- **Idle Timeout**: swayidle
+- **Lock Screen**: swaylock-effects ([Config](../.config/sway/))
+- **Idle Timeout**: swayidle ([Config](../.config/sway/))
 - **Color Picker**: Hyprpicker
 - **Recording Tool**: wf-recorder
 - **Screenshot Tool**: Hyprshot
-- **Logout Menu**: wleave
+- **Logout Menu**: wleave ([Config](../.config/wleave/))
 
-#### CLI/TUI
+</details>
 
-- **Terminal Emulator**: Kitty
-- **Shell**: Fish
-- **Shell Prompt**: Starship
+<details>
+  <summary><b>🖥️ CLI/TUI Apps</b></summary>
+
+- **Shell**: Fish ([Config](../.config/fish/))
+- **Shell Prompt**: Starship ([Config](../.config/starship/))
 - **Shell History**: [Atuin](https://github.com/atuinsh/atuin) ([Config](../.config/atuin/))
 - **CD Replacement**: zoxide
 - **LS Replacement**: eza
-- **Cat Replacement**: bat
-- **Help Pages**: Navi / TLDR
+- **Cat Replacement**: bat ([Config](../.config/bat/))
+- **Help Pages**: Navi / TLDR ([Config](../.config/navi/))
 - **Fuzzy File Finder**: Fzf
-- **Fuzzy Word Finder**: Ripgrep
-- **Editor**: Neovim
-- **File Manager**: Yazi
-- **Git UI**: Lazygit
+- **Fuzzy Word Finder**: Ripgrep ([Config](../.config/rg/))
+- **Editor**: Neovim ([Config](../.config/nvim/))
+- **File Manager**: Yazi ([Config](../.config/yazi/))
+- **Git UI**: Lazygit ([Config](../.config/lazygit/))
 - **Npm Manager UI**: Lazynpm
 - **Docker UI**: Lazydocker
-- **Audio Visualizer**: Cava
-- **System Monitor**: btop
+- **Audio Visualizer**: Cava ([Config](../.config/cava/))
+- **System Monitor**: btop ([Config](../.config/btop/))
 - **GPU Monitor**: nvtop
-- **System Fetch**: Neofetch
+- **System Fetch**: Neofetch ([Config](../.config/neofetch/))
 - **Git Fetch**: Onefetch
-- **Keybindings TUI**: Keyb
+- **Keybindings TUI**: Keyb ([Config](../.config/keyb/))
 
-#### GUI Apps
+</details>
 
-- **Music Player**: Spotify (patched with Spicetify)
-- **Web Browser**: Librewolf / Thorium
-- **Messaging App**: Discord (patched with BetterDiscord)
+<details>
+  <summary><b>🖱️ GUI Apps</b></summary>
+
+- **Music Player**: Spotify (patched with Spicetify) ([Config](../.config/spicetify/))
+- **Web Browser**: Librewolf / Thorium ([Config](../.config/librewolf/))
+- **Messaging App**: Discord (patched with BetterDiscord) ([Config](../.config/BetterDiscord/))
 - **Email Client**: Thunderbird
-- **PDF Viewer**: Zathura
+- **PDF Viewer**: Zathura ([Config](../.config/zathura/))
 - **Note Taking**: Obsidian
 - **Video Player**: Celluloid (MPV)
 - **Image Viewer**: geeqie
@@ -86,12 +93,17 @@ Here is some _small_ information about my setup:
 - **Recording Program**: OBS
 - **Office Apps**: LibreOffice
 
-#### Other
+</details>
 
-- **Colorscheme**: Catppuccin
+<details>
+  <summary><b>🔍 Other</b></summary>
+
+- **Colorscheme**: Catppuccin Macchiato
 - **Font**: Jetbrains Mono Nerd
-- **Dotfiles Manager**: yadm
+- **Dotfiles Manager**: yadm ([Config](../.config/yadm/))
 - **Automatic System Deployment**: Ansible
+
+</details>
 
 ## :wrench: <samp>[Setup](#setup)</samp>
 
