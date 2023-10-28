@@ -125,9 +125,9 @@ Here is some _small_ information about my setup:
 
 ## :camera: <samp>Gallery</samp>
 
-![overview-1](./assets/images/screenshots/overview-1.png)
-![overview-2](./assets/images/screenshots/overview-2.png)
-![overview-3](./assets/images/screenshots/overview-3.png)
+![overview-1](./assets/images/overview-1.png)
+![overview-2](./assets/images/overview-2.png)
+![overview-3](./assets/images/overview-3.png)
 
 ## :tada: <samp>Credits</samp>
 

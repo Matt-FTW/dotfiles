@@ -1,0 +1,6 @@
+{
+    "device": "alsa_output.pci-0000_0b_00.4.analog-stereo",
+    "device-description": "Starship/Matisse HD Audio Controller Estéreo analógico",
+    "device-profile": "analog-output-lineout",
+    "preset-name": "speakers"
+}

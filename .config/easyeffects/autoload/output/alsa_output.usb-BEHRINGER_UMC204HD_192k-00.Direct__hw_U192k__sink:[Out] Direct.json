@@ -1,0 +1,6 @@
+{
+    "device": "alsa_output.usb-BEHRINGER_UMC204HD_192k-00.Direct__hw_U192k__sink",
+    "device-description": "UMC204HD 192k Direct UMC204HD 192k",
+    "device-profile": "[Out] Direct",
+    "preset-name": "dt770pro"
+}

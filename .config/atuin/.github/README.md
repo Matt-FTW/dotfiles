@@ -1,11 +1,11 @@
 <div align="center">
-<a href=""><img src="../../.github/assets/images/atuin-title.png"></a>
+<a href=""><img src="./title.png"></a>
 </div>
 
 <p align="center">
-  <a href="#about"><img width="195px" src="../../.github/assets/images/dotfiles-about.png"></a>
-  <a href="#config"><img width="195px" src="../../.github/assets/images/dotfiles-config.png"></a>
-  <a href="#gallery"><img width="195px" src="../../.github/assets/images/dotfiles-gallery.png"></a>
+  <a href="#about"><img width="195px" src="../../../.github/assets/images/dotfiles-about.png"></a>
+  <a href="#config"><img width="195px" src="../../../.github/assets/images/dotfiles-config.png"></a>
+  <a href="#gallery"><img width="195px" src="../../../.github/assets/images/dotfiles-gallery.png"></a>
 </p>
 
 ## :arrows_counterclockwise: <samp>[Shell History Sync](#arrows_counterclockwise-about)</samp>
@@ -23,6 +23,6 @@ For more info on how to configure the Atuin config file, check out the **officia
 
 ## :camera: <samp>[Gallery](#camera-gallery)</samp>
 
-![overview-1](../../.github/assets/images/screenshots/atuin-overview-1.png)
+![overview-1](./overview-1.png)
 
-![overview-2](../../.github/assets/images/screenshots/atuin-overview-2.png)
+![overview-2](./overview-2.png)
