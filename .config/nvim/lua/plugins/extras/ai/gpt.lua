@@ -92,6 +92,16 @@ return {
     },
   },
   {
+    "voldikss/vim-floaterm",
+    keys = {
+      {
+        "<leader>CT",
+        "<cmd>FloatermNew --name=gpt --opener=edit --titleposition=center --width=0.85 --height=0.85 gpt<CR>",
+        desc = "Terminal GPT",
+      },
+    },
+  },
+  {
     "folke/which-key.nvim",
     opts = {
       defaults = {

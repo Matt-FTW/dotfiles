@@ -28,7 +28,7 @@
     "lazyvim.plugins.extras.vscode",
     "plugins.extras.ai.codeium",
     "plugins.extras.ai.gpt",
-    "plugins.extras.coding.cmp",
+    "plugins.extras.coding.package-info",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.documentation",
     "plugins.extras.coding.refactoring",

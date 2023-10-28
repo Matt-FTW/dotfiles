@@ -5,41 +5,6 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       {
-        "vuki656/package-info.nvim",
-        event = {
-          "BufRead package.json",
-          "BufRead package-lock.json",
-        },
-        opts = {},
-        keys = {
-          {
-            "<leader>cPs",
-            "<cmd>lua require('package-info').show({ force = true })<cr>",
-            desc = "Show Package Versions",
-          },
-          {
-            "<leader>cPu",
-            "<cmd>lua require('package-info').update()<cr>",
-            desc = "Update Package",
-          },
-          {
-            "<leader>cPr",
-            "<cmd>lua require('package-info').delete()<cr>",
-            desc = "Remove Package",
-          },
-          {
-            "<leader>cPv",
-            "<cmd>lua require('package-info').change_version()<cr>",
-            desc = "Change Package Version",
-          },
-          {
-            "<leader>cPn",
-            "<cmd>lua require('package-info').install()<cr>",
-            desc = "Install New Dependency",
-          },
-        },
-      },
-      {
         "petertriho/cmp-git",
       },
       {
@@ -110,13 +75,5 @@ return {
         documentation = cmp.config.window.bordered(),
       }
     end,
-  },
-  {
-    "folke/which-key.nvim",
-    opts = {
-      defaults = {
-        ["<leader>cP"] = { name = "+packages" },
-      },
-    },
   },
 }
