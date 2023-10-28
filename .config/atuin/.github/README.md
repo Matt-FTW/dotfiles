@@ -12,14 +12,18 @@
 
 Atuin is such a cool tool. It lets you easily sync all your shell history across multiple devices. I was looking for something like this for a while, and I'm glad I found it.
 
+After the installation, you have to create a user with a password and save the key that will be given to you. Then you use that key and user on the other PC to sync their history together.
+
 ## :gear: <samp>[Configuration](#gear-config)</samp>
 
-I have set Atuin to function with my shell (fish), so if you have a different shell, go over to the Fish Configuration section of the dotfiles to see how to change it.
-That's only part of initializing Atuin to be able to work with your shell.
+Atuin works at the start of a session with the shell you have.
 
-Apart from that, the configuration file can be used with all the common shells like zsh, bash, etc.
+The base configuration found here can be used regardless of the shell you have `:)`
 
-For more info on how to configure the Atuin config file, check out the **official [Atuin Configuration Guide](https://atuin.sh/docs/config/)**.
+I have Atuin configured to work with the fish shell, as it is the one I use on a daily basis. If you want to know how to change it, take a look at the **official [Atuin Configuration Guide](https://atuin.sh/docs/config/)**.
+
+Aside from that, I have configured Atuin to replace the up-arrow history of Fish with a fuzzy search included in Atuin itself.
+I also changed the frequency at which Atuin syncs its history with the server; it basically syncs every time you execute a command (**dont worry**, it will not slow down your shell).
 
 ## :camera: <samp>[Gallery](#camera-gallery)</samp>
 
