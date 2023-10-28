@@ -34,6 +34,8 @@
 [gpg]
   program = /sbin/gpg
 [alias]
+  aliases = config --get-regexp alias
+  #############
 	a = add --all
 	ai = add -i
 	#############
