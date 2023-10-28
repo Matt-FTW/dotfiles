@@ -18,7 +18,7 @@ pre_sudo = true
 disable = ["shell", "spicetify", "vim"]
 
 # Ignore failures for these steps
-ignore_failures = ["oh-my-zsh"]
+# ignore_failures = []
 
 # List of remote machines with Topgrade installed on them
 # remote_topgrades = ["toothless", "pi", "parnas"]
