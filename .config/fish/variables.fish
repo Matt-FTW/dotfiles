@@ -57,7 +57,8 @@ set -xg FZF_DEFAULT_COMMAND fd --hidden --exclude .git
 set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border --margin=1 --padding=1 \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
---color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+--color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
+--bind 'ctrl-y:execute-silent(printf {} | cut -f 2- | wl-copy --trim-newline)'"
 set -xg fzf_preview_dir_cmd eza --long --header --icons --all --color=always --group-directories-first --hyperlink
 set -xg fzf_fd_opts --hidden --exclude=.git --color=always
 set -xg fzf_diff_highlighter delta --paging=never --width=20
