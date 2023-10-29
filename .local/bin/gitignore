@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function __gi() {
+  curl -L -s https://www.gitignore.io/api/"$@"
+}
+
+
+IFS=","
+selected_profiles=$(for item in $(__gi list); do echo $item; done | fzf --multi --ansi | paste -s -d "," -)
+if [ -n "$selected_profiles" ]; then
+  echo "$selected_profiles" | { read result && __gi "$result" > .gitignore; echo "Created .gitignore"; }
+fi
+
