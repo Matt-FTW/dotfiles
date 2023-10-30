@@ -75,7 +75,8 @@
     "plugins.extras.util.smooth-scrolling",
     "plugins.extras.util.suda",
     "plugins.extras.util.vim-be-good",
-    "plugins.extras.util.wakatime"
+    "plugins.extras.util.wakatime",
+    "plugins.extras.util.winshift"
   ],
   "news": {
     "NEWS.md": "2123"

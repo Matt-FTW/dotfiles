@@ -155,6 +155,7 @@
   "vim-wakatime": { "branch": "master", "commit": "cda81ada9a3bf8168e2381c33831e0dd7be9b828" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" },
   "windows.nvim": { "branch": "main", "commit": "c7492552b23d0ab30325e90b56066ec51242adc8" },
+  "winshift.nvim": { "branch": "main", "commit": "37468ed6f385dfb50402368669766504c0e15583" },
   "yanky.nvim": { "branch": "main", "commit": "c1211c6c6d983a72c74dde44df8575a64d50562f" },
   "zen-mode.nvim": { "branch": "main", "commit": "50e2e2a36cc97847d9ab3b1a3555ba2ef6839b50" }
 }
