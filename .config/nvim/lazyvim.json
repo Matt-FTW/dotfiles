@@ -48,7 +48,6 @@
     "plugins.extras.lang.markdown",
     "plugins.extras.lang.typescript",
     "plugins.extras.lang.web",
-    "plugins.extras.lsp.actions-preview",
     "plugins.extras.lsp.compiler",
     "plugins.extras.lsp.lightbulb",
     "plugins.extras.lsp.lsp",

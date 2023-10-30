@@ -1,3 +1,21 @@
+local function toggle_diag_virtext()
+  local virtual_text = { -- Default virtual_text opts from Lazy.Nvim
+    spacing = 4,
+    source = "if_many",
+    prefix = "●",
+  }
+  local config = vim.diagnostic.config()
+  if type(config.virtual_text) == "table" then
+    config.virtual_text = false
+    vim.diagnostic.config(config)
+    vim.notify("Disable diagnostics virtualtext", 5, { title = "Diagnostics" })
+  else
+    config.virtual_text = virtual_text
+    vim.diagnostic.config(config)
+    vim.notify("Enabled diagnostics virtualtext", 5, { title = "Diagnostics" })
+  end
+end
+
 return {
   {
     "neovim/nvim-lspconfig",
@@ -7,8 +25,12 @@ return {
       keys[#keys + 1] = { "gr", "<CMD>Glance references<CR>", desc = "References" }
       keys[#keys + 1] = { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" }
       keys[#keys + 1] = { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" }
+
+      keys[#keys + 1] = { "<leader>ca", require("actions-preview").code_actions, desc = "Code Action Preview" }
+
       keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cli", "<cmd>LspInfo<cr>", desc = "LspInfo" }
+      keys[#keys + 1] = { "<leader>uv", toggle_diag_virtext, desc = "Toggle Diagnostic VirtualText" }
 
       keys[#keys + 1] = {
         "<leader>cll",
@@ -133,6 +155,25 @@ return {
     },
   },
   {
+    "aznhe21/actions-preview.nvim",
+    event = "LspAttach",
+    opts = {
+      telescope = {
+        sorting_strategy = "ascending",
+        layout_strategy = "vertical",
+        layout_config = {
+          width = 0.8,
+          height = 0.9,
+          prompt_position = "top",
+          preview_cutoff = 20,
+          preview_height = function(_, _, max_lines)
+            return max_lines - 15
+          end,
+        },
+      },
+    },
+  },
+  {
     "dnlhc/glance.nvim",
     cmd = { "Glance" },
     opts = {
@@ -154,7 +195,7 @@ return {
   },
   {
     "hinell/lsp-timeout.nvim",
-    event = "BufRead",
+    event = "LspAttach",
     enabled = false,
     dependencies = { "neovim/nvim-lspconfig" },
     init = function()

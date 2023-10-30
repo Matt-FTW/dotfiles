@@ -1,19 +1,12 @@
 return {
   "kosayoda/nvim-lightbulb",
-  event = "BufReadPre",
+  event = "LspAttach",
   opts = {
-    sign = {
-      enabled = false,
-      priority = 10,
-    },
-    float = {
-      enabled = true,
-      text = "💡",
-      win_opts = {},
-    },
-    virtual_text = {
-      enabled = false,
-      text = "💡",
+    autocmd = { enabled = true },
+    sign = { enabled = true, text = "" },
+    action_kinds = { "quickfix", "refactor" },
+    ignore = {
+      actions_without_kind = true,
     },
   },
 }

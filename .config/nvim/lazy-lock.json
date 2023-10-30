@@ -117,7 +117,6 @@
   "rest.nvim": { "branch": "main", "commit": "b8d6c0a8762fd374e0204768a94241135ca3e311" },
   "rust-tools.nvim": { "branch": "master", "commit": "0cc8adab23117783a0292a0c8a2fbed1005dc645" },
   "satellite.nvim": { "branch": "main", "commit": "7911fa8137c77258ba509ba875ea52c6d59737e8" },
-  "scope.nvim": { "branch": "main", "commit": "cd27af77ad61a7199af5c28d27013fb956eb0e3e" },
   "semshi": { "branch": "master", "commit": "50f9d74ee160e539c5662cbde5c3b0ccd4e27fb3" },
   "smart-splits.nvim": { "branch": "master", "commit": "c8a9173d70cbbd1f6e4a414e49e31df2b32a1362" },
   "sniprun": { "branch": "master", "commit": "0ad935699a5e24ca3a0aa621c7425ac7029775b3" },
