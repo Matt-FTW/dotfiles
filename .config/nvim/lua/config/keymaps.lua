@@ -41,6 +41,8 @@ vim.keymap.set("n", "n", "nzzzv")
 
 vim.keymap.set("n", "N", "Nzzzv")
 
+vim.keymap.set("n", "H", "_", { desc = "First character of Line" })
+vim.keymap.set("n", "L", "$", { desc = "Last character of Line" })
 -- DEFAULT_KEYMAPS:
 
 -- Half-window movements:
