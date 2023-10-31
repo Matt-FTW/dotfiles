@@ -82,7 +82,7 @@ Here is some _small_ information about my setup:
   <summary><b>🖱️ GUI Apps</b></summary>
 
 - **Music Player**: [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) ([Config](../.config/spicetify/)) :gear:
-- **Web Browser**: [Librewolf](https://librewolf.net/) / [Thorium](https://thorium.rocks/) :sparkles: ([Config](../.config/librewolf/)) :gear:
+- **Web Browser**: [Librewolf](https://librewolf.net/) / [Thorium](https://thorium.rocks/) :sparkles: ([Config](../.config/browser/)) :gear:
 - **Messaging App**: [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) ([Config](../.config/BetterDiscord/)) :gear:
 - **Email Client**: [Thunderbird](https://www.thunderbird.net/)
 - **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) ([Config](../.config/zathura/)) :gear:
