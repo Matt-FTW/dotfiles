@@ -18,7 +18,7 @@ return {
           enable_ui = true, -- enable nvim-dap-ui
         },
         flash = true,
-        headlines = false,
+        headlines = true,
         gitsigns = true,
         illuminate = true,
         indent_blankline = {
@@ -61,11 +61,9 @@ return {
           enabled = true,
           -- style = "nvchad",
         },
-        lsp_trouble = false,
         symbols_outline = false,
-        lsp_trouble = true,
         treesitter = true,
-        treesitter_context = false,
+        treesitter_context = true,
         which_key = true,
       },
     },
