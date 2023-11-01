@@ -1,6 +1,6 @@
 {
     "BDFDB": true,
-    "ZeresPluginLibrary": false,
+    "ZeresPluginLibrary": true,
     "ActivityIcons": true,
     "BetterAnimations": true,
     "ChannelTabs": true,
@@ -10,7 +10,7 @@
     "Double Click To Edit": true,
     "ImageUtilities": true,
     "DoNotTrack": false,
-    "ShowAllActivities": true,
+    "ShowAllActivities": false,
     "HideDisabledEmojis": true,
     "Uncompressed Images": true
 }
