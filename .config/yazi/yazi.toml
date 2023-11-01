@@ -1,7 +1,7 @@
 [manager]
 layout = [1, 4, 3]
-sort_by = "modified"
-sort_reverse = true
+sort_by = "natural"
+sort_reverse = false
 sort_dir_first = true
 show_hidden = false
 show_symlink = true
@@ -17,18 +17,19 @@ folder = [
   { exec = 'open -R "$@"', desc = "Reveal in Finder" },
   { exec = '$EDITOR "$@"' },
 ]
-archive = [{ exec = 'unar "$1"', desc = "Extract here" }]
+archive = [{ exec = 'xarchiver "$1"', desc = "Extract here" }]
+pdf = [{ exec = 'zathura "$1"', desc = "Open" }]
 text = [{ exec = '$EDITOR "$@"', block = true }]
 image = [
-  { exec = 'open "$@"', desc = "Open" },
+  { exec = 'geeqie "$@"', desc = "Open" },
   { exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF" },
 ]
 video = [
-  { exec = 'mpv "$@"' },
+  { exec = 'celluloid "$@"' },
   { exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
 ]
 audio = [
-  { exec = 'mpv "$@"' },
+  { exec = 'celluloid "$@"' },
   { exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
 ]
 fallback = [
@@ -49,6 +50,7 @@ rules = [
   { mime = "application/json", use = "text" },
   { mime = "*/javascript", use = "text" },
 
+  { mime = "application/pdf", use = "pdf" },
   { mime = "application/zip", use = "archive" },
   { mime = "application/gzip", use = "archive" },
   { mime = "application/x-bzip", use = "archive" },
