@@ -44,6 +44,7 @@ return {
     dashboard.button("r", " " .. " Recent files",    "<cmd> Telescope oldfiles <cr>"),
     dashboard.button("p", " " .. " Projects", "<cmd>Telescope projects <CR>"),
     dashboard.button("g", " " .. " Find text",       "<cmd> Telescope live_grep <cr>"),
+    dashboard.button("G", "󰊢 " .. " Git",       "<cmd>FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>"),
     dashboard.button("c", " " .. " Config",          "<cmd> lua require('lazyvim.util').telescope.config_files()() <cr>"),
     dashboard.button("d", "󰉦 " .. " Dotfiles",          "<cmd>FloatermNew --disposable --name=dots --opener=edit --titleposition=center --height=0.85 --width=0.85 dots<CR>"),
     dashboard.button("s", " " .. " Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
