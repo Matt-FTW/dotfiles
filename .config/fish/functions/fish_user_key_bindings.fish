@@ -5,13 +5,13 @@ function fish_user_key_bindings
     bind -M visual -m default y 'fish_clipboard_copy; commandline -f end-selection repaint-mode'
     bind yy fish_clipboard_copy
     bind p fish_clipboard_paste
-    fzf_configure_bindings --directory=\e\cf
-    fzf_configure_bindings --history=\ch
+
+    fzf_configure_bindings --directory=\e\cf --history=\ch --variables=\e\cv
 
     bind \e\cg fgit
     bind \e\cw rga-fzf
     bind \e\z cdzi
-    bind \e\ci navi
+    bind \e\cn navi
     bind \e\cr zellij-runner
     bind \e\[Z switch_kitty_tab
 end
