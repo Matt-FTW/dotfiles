@@ -40,6 +40,7 @@ video=io.github.celluloid_player.Celluloid.desktop
 video/mp4=io.github.celluloid_player.Celluloid.desktop
 video/x-matroska=io.github.celluloid_player.Celluloid.desktop
 file=nvim.desktop
+application/xml=nvim.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-2BA7Q1.desktop;
@@ -54,7 +55,7 @@ image/png=pinta.desktop;krita_png.desktop;feh.desktop;librewolf.desktop;geeqie.d
 application/pdf=libreoffice-draw.desktop;librewolf.desktop;firefox.desktop;org.pwmt.zathura.desktop;
 application/x-ms-dos-executable=wineland.desktop;wine.desktop;protontricks-launch.desktop;vscodium-git.desktop;userapp-hexedit-GJZVR1.desktop;
 text/plain=nvim.desktop;wine.desktop;vscodium-git.desktop;obsidian.desktop;vim.desktop;wine-extension-txt.desktop;vscodium.desktop;userapp-lvim-PRB3S1.desktop;userapp-lvim-UB2GT1.desktop;userapp-lvim %F-4GDCT1.desktop;
-application/xml=librewolf.desktop;vim.desktop;vscodium.desktop;
+application/xml=librewolf.desktop;vim.desktop;vscodium.desktop;nvim.desktop;
 image/x-xcursor=userapp-vscodium-RA99R1.desktop;
 image/svg+xml=vscodium.desktop;geeqie.desktop;
 text/x-csrc=nvim.desktop;vscodium-git.desktop;vscodium.desktop;
