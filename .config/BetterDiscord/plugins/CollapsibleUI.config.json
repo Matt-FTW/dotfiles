@@ -1,9 +1,9 @@
 {
     "currentVersionInfo": {
-        "version": "7.4.1",
+        "version": "7.4.2",
         "hasShownChangelog": true
     },
-    "cuiSettingsVersion": "9",
+    "cuiSettingsVersion": "10",
     "disableTransitions": "false",
     "transitionSpeed": "250",
     "disableToolbarCollapse": "false",
@@ -26,7 +26,6 @@
     "keyStringList": "Alt+S,Alt+C,Alt+T,Alt+W,Alt+M,Alt+U,Alt+P,Alt+I",
     "settingsButtonsMaxWidth": "100",
     "toolbarIconMaxWidth": "300",
-    "membersListMaxWidth": "240",
     "profilePanelMaxWidth": "340",
     "toolbarMaxWidth": "800",
     "userAreaMaxHeight": "300",

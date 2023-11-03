@@ -1,6 +1,6 @@
 {
     "currentVersionInfo": {
-        "version": "1.1.14",
+        "version": "1.1.16",
         "hasShownChangelog": true
     },
     "settings": {
@@ -8,7 +8,7 @@
             "enabled": false,
             "type": "flipForwards",
             "easing": "easeInOutCubic",
-            "duration": 400
+            "duration": 700
         },
         "channel": {
             "enabled": false,
