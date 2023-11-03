@@ -21,7 +21,7 @@ archive = [{ exec = 'xarchiver "$1"', desc = "Extract here" }]
 pdf = [{ exec = 'zathura "$1"', desc = "Open" }]
 text = [{ exec = '$EDITOR "$@"', block = true }]
 image = [
-  { exec = 'geeqie "$@"', desc = "Open" },
+  { exec = 'geeqie --class yazi-geeqie "$@"', desc = "Open" },
   { exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF" },
 ]
 video = [
