@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = *
+
+[Action]
+Description = Create a backup list of all installed packages
+When = PostTransaction
+Exec = /bin/sh -c 'yay -Qqe > /home/matt/.config/pacman/packages.txt'

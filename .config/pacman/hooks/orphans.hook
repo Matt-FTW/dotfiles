@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Orphaned package notification
+When = PostTransaction
+Exec = /usr/bin/bash -c "/usr/bin/pacman -Qtd || /usr/bin/echo '=> No orphans found.'"
