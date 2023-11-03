@@ -31,6 +31,7 @@ Here is some _small_ information about my setup:
   <summary><b>🐧 System</b></summary>
 
 - **OS**: [Arch Linux](https://archlinux.org/) ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
+- **Package Manager**: [Pacman / Yay](https://github.com/Jguer/yay) ([Config](../.config/pacman/)) :gear:
 - **Window Manager**: [Hyprland](https://hyprland.org/) :sparkles: ([Config](../.config/hypr/)) :gear:
 - **Panel**: [Waybar](https://github.com/Alexays/Waybar) :sparkles: ([Config](../.config/waybar/)) :gear:
 - **Terminal Emulator**: [Kitty](https://sw.kovidgoyal.net/kitty/) :sparkles: ([Config](../.config/kitty/)) :gear:
@@ -88,7 +89,7 @@ Here is some _small_ information about my setup:
 - **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) ([Config](../.config/zathura/)) :gear:
 - **Note Taking**: [Obsidian](https://obsidian.md/) :sparkles:
 - **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) ([Config](../.config/mpv/)) :gear:
-- **Image Viewer**: [geeqie](https://www.geeqie.org/)
+- **Image Viewer**: [geeqie](https://www.geeqie.org/) ([Config](../.config/geeqie/)) :gear:
 - **File Manager**: [Nemo](https://community.linuxmint.com/software/view/nemo)
 - **Audio Effects**: [Easyeffects](https://github.com/wwmm/easyeffects)
 - **Image Editor**: [Gimp](https://www.gimp.org/)
