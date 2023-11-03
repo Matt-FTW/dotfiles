@@ -143,6 +143,7 @@ meld
 mono-basic
 mpv
 navi
+needrestart
 nemo
 nemo-fileroller
 nemo-image-converter

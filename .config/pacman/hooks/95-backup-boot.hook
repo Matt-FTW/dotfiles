@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = linux
+
+[Action]
+Description = Backing up /boot...
+When = PreTransaction
+Exec = /usr/bin/rsync -avzq --delete /boot /.bootbackup

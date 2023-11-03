@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Checking which daemons need to be restarted after library upgrades.
+When = PostTransaction
+Exec = /usr/bin/needrestart
+Depends = needrestart
