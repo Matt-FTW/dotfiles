@@ -59,6 +59,7 @@
     "plugins.extras.test.vitest-test",
     "plugins.extras.ui.alpha",
     "plugins.extras.ui.block",
+    "plugins.extras.ui.edgy",
     "plugins.extras.ui.highlight-undo",
     "plugins.extras.ui.modes",
     "plugins.extras.ui.number-toggle",
