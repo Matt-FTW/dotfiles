@@ -2,8 +2,8 @@ local macchiato = require("catppuccin.palettes").get_palette("macchiato")
 return {
   "akinsho/bufferline.nvim",
   keys = {
-    { "<leader>bH", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
-    { "<leader>bL", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
+    { "[B", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" },
+    { "]B", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
   },
   opts = {
     highlights = require("catppuccin.groups.integrations.bufferline").get({
