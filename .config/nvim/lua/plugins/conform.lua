@@ -3,7 +3,7 @@ return {
     "stevearc/conform.nvim",
     keys = {
       {
-        "<leader>cC",
+        "<leader>cic",
         "<cmd>ConformInfo<CR>",
         mode = { "n", "v" },
         desc = "Conform Info",

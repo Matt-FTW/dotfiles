@@ -12,7 +12,7 @@ return {
       },
     },
     keys = {
-      { "<leader>cM", ":CmpStatus<CR>", desc = "Cmp Status" },
+      { "<leader>ciC", ":CmpStatus<CR>", desc = "Cmp Status" },
     },
     opts = function(_, opts)
       -- TODO: Fix this comments

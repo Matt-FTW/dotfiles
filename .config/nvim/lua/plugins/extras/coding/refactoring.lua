@@ -14,6 +14,6 @@ return {
   end,
         -- stylua: ignore
     keys = {
-  {  "<leader>r", function() require('telescope').extensions.refactoring.refactors() end, mode = { "n", "x" }, desc = "Refactor" },
+  {  "<leader>cR", function() require('telescope').extensions.refactoring.refactors() end, mode = { "n", "x" }, desc = "Refactor" },
     },
 }

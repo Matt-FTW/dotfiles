@@ -16,7 +16,7 @@ return {
   { "<leader>Tp", "<cmd>FloatermNew --disposable --name=proc --opener=edit --titleposition=center --height=0.85 --width=0.85 proc<CR>", desc = "Systemd Processes" },
   { "<leader>TB", "<cmd>FloatermNew --disposable --name=bandwhich --opener=edit --titleposition=center --height=0.85 --width=0.85 bandwhich<CR>", desc = "Bandwidth" },
   { "<leader>gF", "<cmd>FloatermNew --disposable --name=forgit --opener=edit --titleposition=center --height=0.85 --width=0.85 fgit<CR>", desc = "Forgit" },
-  { "<leader>ci", "<cmd>FloatermNew! --disposable --name=scc --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> codeinfo<CR>", desc = "Code info/fetch" },
+  { "<leader>cif", "<cmd>FloatermNew! --disposable --name=scc --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> codeinfo<CR>", desc = "Code info/fetch" },
   { "<leader>gf", "<cmd>FloatermNew! --disposable --name=onefetch --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> gfetch<CR>", desc = "Gitfetch" },
   { "<leader>cen", "<cmd>FloatermNew --name=node --opener=edit --titleposition=center --wintype=split --height=0.35 node<CR>", desc = "Node" },
   { "<leader>cep", "<cmd>FloatermNew --name=python --opener=edit --titleposition=center --wintype=split --height=0.35 python<CR>", desc = "Python" },
@@ -38,7 +38,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>ce"] = { name = "+r[E]pl" },
+        ["<leader>ce"] = { name = "+r[e]pl" },
         ["<leader>ft"] = { name = "+terminals" },
         ["<leader>T"] = { name = "+tools" },
       },

@@ -27,8 +27,8 @@ return {
       { "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>", mode = { "n" } },
       { "<C-r>", "<cmd>AutolistRecalculate<cr>", mode = { "n" } },
 
-      { "].", "<cmd>AutolistCycleNext<cr>", mode = { "n" }, { desc = "Next List Type" } },
-      { "[.", "<cmd>AutolistCyclePrev<cr>", mode = { "n" }, { desc = "Prev List Type" } },
+      { "].", "<cmd>AutolistCycleNext<cr>", mode = { "n" }, desc = "Next List Type" },
+      { "[.", "<cmd>AutolistCyclePrev<cr>", mode = { "n" }, desc = "Prev List Type" },
 
       { ">>", ">><cmd>AutolistRecalculate<cr>", mode = { "n" } },
       { "<<", "<<<cmd>AutolistRecalculate<cr>", mode = { "n" } },

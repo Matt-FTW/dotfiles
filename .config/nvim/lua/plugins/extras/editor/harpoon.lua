@@ -6,7 +6,7 @@ return {
     --stylua: ignore
     keys = {
       { "<leader>'", function() require("harpoon.mark").add_file() end, desc = "Add File" },
-      { "<leader>0", "<cmd>Telescope harpoon marks<CR>", desc = "Harpoon" },
+      { "<leader>;", "<cmd>Telescope harpoon marks<CR>", desc = "Harpoon" },
       { "<leader>1", function() require("harpoon.ui").nav_file(1) end, desc = "File 1" },
       { "<leader>2", function() require("harpoon.ui").nav_file(2) end, desc = "File 2" },
       { "<leader>3", function() require("harpoon.ui").nav_file(3) end, desc = "File 3" },

@@ -20,7 +20,7 @@ return {
       return vim.fn["codeium#Clear"]()
     end, { expr = true })
 
-    vim.keymap.set("n", "<leader>cI", function()
+    vim.keymap.set("n", "<leader>cC", function()
       if vim.g.codeium_enabled == true then
         vim.cmd("CodeiumDisable")
       else

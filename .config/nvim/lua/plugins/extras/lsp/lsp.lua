@@ -29,7 +29,7 @@ return {
       keys[#keys + 1] = { "<leader>ca", require("actions-preview").code_actions, desc = "Code Action Preview" }
 
       keys[#keys + 1] = { "<leader>cl", false }
-      keys[#keys + 1] = { "<leader>cli", "<cmd>LspInfo<cr>", desc = "LspInfo" }
+      keys[#keys + 1] = { "<leader>cil", "<cmd>LspInfo<cr>", desc = "Lsp" }
       keys[#keys + 1] = { "<leader>uv", toggle_diag_virtext, desc = "Toggle Diagnostic VirtualText" }
 
       keys[#keys + 1] = {
@@ -43,9 +43,6 @@ return {
       keys[#keys + 1] = { "<leader>clr", "<cmd>LspRestart<cr>", desc = "Restart Lsp" }
       keys[#keys + 1] = { "<leader>cls", "<cmd>LspStart<cr>", desc = "Start Lsp" }
       keys[#keys + 1] = { "<leader>clS", "<cmd>LspStop<cr>", desc = "Stop Lsp" }
-      require("which-key").register({
-        ["<leader>cl"] = { name = "+lsp" },
-      })
       require("lazyvim.util").lsp.on_attach(function(client, buffer)
         if client.supports_method("textDocument/documentSymbol") then
           -- Enable inlay hints if the client supports it.
@@ -172,6 +169,11 @@ return {
         },
       },
     },
+  },
+  {
+    "smjonas/inc-rename.nvim",
+    cmd = "IncRename",
+    opts = {},
   },
   {
     "dnlhc/glance.nvim",
