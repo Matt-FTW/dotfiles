@@ -1,0 +1,44 @@
+#!/usr/bin/bash
+
+app=$1
+
+if [ "$app" = "" ]; then
+	exit 1
+fi
+
+FOCUSED_MONITOR=$(~/.config/hypr/scripts/focused_monitor)
+source ~/.config/hypr/scripts/monitors
+
+case $app in
+"nemo")
+	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
+		hyprctl dispatch exec [workspace 4] nemo
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
+		hyprctl dispatch exec [workspace 14] nemo
+	else
+		nemo
+	fi
+	;;
+"obsidian")
+	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
+		hyprctl dispatch exec [workspace 10] obsidian
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
+		hyprctl dispatch exec [workspace 20] obsidian
+	else
+		obsidian
+	fi
+	;;
+# I DONT KNOW WHY LIBREWOLF IS NOT WORKING ._.
+# "librewolf")
+# 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
+# 		hyprctl dispatch exec [workspace 1] librewolf
+# 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
+# 		hyprctl dispatch exec [workspace 11] librewolf
+# 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
+# 		hyprctl dispatch exec [workspace 25] librewolf
+# 	else
+# 		librewolf
+# 	fi
+# 	;;
+*) ;;
+esac

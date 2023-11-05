@@ -1,17 +1,4 @@
 #!/usr/bin/bash
 
-MONITOR_DATA=$(hyprctl monitors)
-readarray -t LINES <<<"$MONITOR_DATA"
-
-CURRENT_MONITOR=""
-
-for LINE in "${LINES[@]}"; do
-    if [[ $LINE == *"Monitor"* ]]; then
-        CURRENT_MONITOR=$(echo $LINE | awk '{print $2}')
-    fi
-
-    if [[ $LINE == *"focused: yes"* ]]; then
-        echo $CURRENT_MONITOR
-        break
-    fi
-done
+FOCUSED_MONITOR_NAME=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name')
+echo "$FOCUSED_MONITOR_NAME"
