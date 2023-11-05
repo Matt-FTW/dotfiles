@@ -4,9 +4,9 @@ return {
   opts = {
     colors = {
       copy = "#f5a97f",
-      delete = "#ee99a0",
-      insert = "#8bd5ca",
-      visual = "#8aadf4",
+      delete = "#ee9ba2",
+      insert = "#a6da95",
+      visual = "#c6a0f6",
     },
   },
 }
