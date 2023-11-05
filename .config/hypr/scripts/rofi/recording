@@ -1,13 +1,13 @@
 #!/usr/bin/bash
 
 wf-recorder_check() {
-    if pgrep -x "wf-recorder" >/dev/null; then
-        pkill -INT -x wf-recorder
-        pkill -RTMIN+8 waybar
-        notify-send "Saved recording at " "$(cat /tmp/recording.txt)"
-        wl-copy <"$(cat /tmp/recording.txt)"
-        exit 0
-    fi
+	if pgrep -x "wf-recorder" >/dev/null; then
+		pkill -INT -x wf-recorder
+		pkill -RTMIN+8 waybar
+		notify-send "Saved recording at " "$(cat /tmp/recording.txt)"
+		wl-copy <"$(cat /tmp/recording.txt)"
+		exit 0
+	fi
 }
 
 wf-recorder_check
@@ -19,18 +19,18 @@ AUDIO=$(echo "$(pactl list sources | grep Name | grep -v easyeffects | awk -F ":
 VID="$HOME/Videos/Escritorio/$(date +%Y-%m-%d-%s).mp4"
 
 if [ "$SCREEN" = "selection" ]; then
-    echo "$VID" >/tmp/recording.txt
-    sleep 1
-    wf-recorder -c hevc_vaapi --audio="$AUDIO" -d /dev/dri/renderD128 -g "$(slurp)" -f "$VID" &>/dev/null &
-    while pgrep -x slurp >/dev/null; do
-        sleep 1
-    done
-    notify-send "Recording started" "Selection\nAudio: $AUDIO"
-    pkill -RTMIN+8 waybar
-elif [ -n "$SCREEN" ]; then
-    echo "$VID" >/tmp/recording.txt
-    sleep 1
-    wf-recorder -c hevc_vaapi --audio="$AUDIO" -d /dev/dri/renderD128 -o "$SCREEN" -f "$VID" &>/dev/null &
-    notify-send "Recording started" "Screen: $SCREEN\nAudio: $AUDIO"
-    pkill -RTMIN+8 waybar
+	echo "$VID" >/tmp/recording.txt
+	sleep 1
+	wf-recorder -c hevc_vaapi --audio="$AUDIO" -d /dev/dri/renderD128 -g "$(slurp)" -f "$VID" &>/dev/null &
+	while pgrep -x slurp >/dev/null; do
+		sleep 1
+	done
+	notify-send "Recording started" "Selection\nAudio: $AUDIO"
+	pkill -RTMIN+8 waybar
+elif [ "$SCREEN" != "" ]; then
+	echo "$VID" >/tmp/recording.txt
+	sleep 1
+	wf-recorder -c hevc_vaapi --audio="$AUDIO" -d /dev/dri/renderD128 -o "$SCREEN" -f "$VID" &>/dev/null &
+	notify-send "Recording started" "Screen: $SCREEN\nAudio: $AUDIO"
+	pkill -RTMIN+8 waybar
 fi
