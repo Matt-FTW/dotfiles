@@ -12,7 +12,6 @@ atuin
 autoconf
 automake
 aw-watcher-window-wayland-git
-awesome-git
 bandwhich
 baobab
 base
@@ -38,7 +37,6 @@ clamtk
 cliphist
 cpupower
 dbeaver
-deno
 devify
 dex
 dialog
@@ -50,7 +48,6 @@ dnsperf
 docker
 docker-compose
 dolphin-emu
-dotnet-sdk
 downgrade
 dua-cli
 duckstation-git
@@ -63,7 +60,6 @@ eza
 fakeroot
 fd
 find-the-command
-firefox
 fish
 fisher
 flex
@@ -71,15 +67,11 @@ fmt
 fzf
 galculator
 gamemode
-gamescope
 gcc
 geeqie
 genact
 git
-git-nautilus-icons
 github-cli
-gitkraken
-glow
 gnome-disk-utility
 gnome-themes-extra
 go
@@ -89,8 +81,6 @@ groff
 grub
 grub-customizer
 gst-libav
-gufw
-gum
 gvfs
 gvfs-gphoto2
 gvfs-mtp
@@ -102,7 +92,6 @@ hyprpicker-git
 hyprshot
 i2c-tools
 imagemagick
-imhex
 imwheel
 inotify-tools
 iptables-nft
@@ -139,8 +128,6 @@ m4
 maim
 make
 mangal-bin
-meld
-mono-basic
 mpv
 navi
 needrestart
@@ -155,12 +142,10 @@ nerd-fonts-git
 net-tools
 network-manager-applet
 networkmanager
-networkmanager-openvpn
 nodejs
 noto-fonts-emoji
 npm
 ntfs-3g
-numlockx
 nvtop
 nwg-displays
 nwg-look
@@ -171,7 +156,6 @@ obsidian
 onefetch
 openbsd-netcat
 opencl-nvidia
-openvpn
 os-prober
 p7zip
 paccache-hook
@@ -179,12 +163,10 @@ pacgraph
 pacman-contrib
 pacseek
 pamixer
-papirus-icon-theme
 patch
 pavucontrol
 pcsx2-latest-bin
 phonon-qt5-gstreamer
-pico
 pika-backup
 pinta
 pinterest-downloader-git
@@ -197,12 +179,10 @@ plocate
 polkit-gnome
 prettierd
 proton-ge-custom-bin
-putty
 pyprland
 python-cairo
 python-pip
 python-pipx
-python-pylint
 python-spotdl
 qemu-base
 qemu-emulators-full
@@ -250,7 +230,6 @@ sysz
 tealdeer
 texinfo
 tgpt-bin
-the_silver_searcher
 thefuck
 thorium-browser-bin
 thunderbird
@@ -278,13 +257,11 @@ visual-studio-code-bin
 vivid
 vkbasalt
 vkd3d
-vlc
 vulkan-radeon
 w3m
 waybar-hyprland-cava-git
 waybar-module-pacman-updates-git
 wev
-wezterm
 wf-recorder
 which
 wine
@@ -294,7 +271,6 @@ wleave-git
 wlr-randr
 wlrobs-hg
 wmctrl
-wofi
 wpa_supplicant
 xarchiver
 xdg-desktop-portal-hyprland
@@ -303,7 +279,6 @@ xdotool
 xemu
 xf86-video-amdgpu
 xf86-video-vesa
-xfce4-settings
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
