@@ -1,4 +1,3 @@
-[1m[33m -> [0m[0mEvite ejecutar yay como root/sudo.
 activitywatch-bin
 adw-gtk3-git
 adwsteamgtk
