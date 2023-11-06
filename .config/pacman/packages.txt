@@ -132,6 +132,7 @@ linux-zen-headers
 localsend-bin
 logrotate
 lsp-plugins
+lua51
 luarocks
 ludusavi
 lxappearance
@@ -347,6 +348,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xplr
+xwaylandvideobridge-git
 yad
 yadm
 yapf
