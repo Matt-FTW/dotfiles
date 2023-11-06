@@ -30,8 +30,9 @@ Here is some _small_ information about my setup:
 <details>
   <summary><b>🐧 System</b></summary>
 
-- **OS**: [Arch Linux](https://archlinux.org/) ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
-- **Package Manager**: [Pacman / Yay](https://github.com/Jguer/yay) ([Config](../.config/pacman/)) :gear:
+- **OS**: [Arch Linux](https://archlinux.org/) :sparkles: ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
+- **Package Manager**: [Pacman](https://wiki.archlinux.org/title/Pacman) ([Config](../.config/pacman/)) :gear:
+- **AUR Helper**: [yay](https://github.com/Jguer/yay) :sparkles: ([Config](../.config/yay/)) :gear:
 - **Window Manager**: [Hyprland](https://hyprland.org/) :sparkles: ([Config](../.config/hypr/)) :gear:
 - **Panel**: [Waybar](https://github.com/Alexays/Waybar) :sparkles: ([Config](../.config/waybar/)) :gear:
 - **Terminal Emulator**: [Kitty](https://sw.kovidgoyal.net/kitty/) :sparkles: ([Config](../.config/kitty/)) :gear:
