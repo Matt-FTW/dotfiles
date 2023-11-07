@@ -98,7 +98,6 @@ inotify-tools
 iptables-nft
 jmtpfs
 kitty
-kooha
 kvantum
 lazydocker
 lazygit
