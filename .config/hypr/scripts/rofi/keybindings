@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-CONFIG=$(rofi -show file-browser-extended -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir $HOME/.config/keyb/bindings)
+CONFIG=$(rofi -show file-browser-extended -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir "$HOME"/.config/keyb/bindings)
 
-kitty --class keyb-kitty keyb -k $CONFIG
+kitty --class keyb-kitty keyb -k "$CONFIG"

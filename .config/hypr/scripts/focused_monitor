@@ -1,4 +1,3 @@
 #!/usr/bin/bash
 
-FOCUSED_MONITOR_NAME=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name')
-echo "$FOCUSED_MONITOR_NAME"
+hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name'
