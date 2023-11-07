@@ -1,6 +1,10 @@
 {
   "pyprland": {
-    "plugins": ["scratchpads", "expose", "magnify"]
+    "plugins": [
+      "scratchpads",
+      "expose",
+      "magnify"
+    ]
   },
   "scratchpads": {
     "volume": {
@@ -8,6 +12,15 @@
       "unfocus": "hide",
       "animation": "fromLeft",
       "margin": 20
+    },
+    "terminal": {
+      "command": "kitty --class scratchpad"
+    },
+    "yazi": {
+      "command": "kitty --class scratchpad yazi"
+    },
+    "btop": {
+      "command": "kitty --class scratchpad btop"
     }
   }
 }
