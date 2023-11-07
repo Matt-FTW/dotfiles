@@ -284,7 +284,8 @@
       "reverse": false,
       "source": "auto",
       "stereo": true,
-      "waves": false
+      "waves": false,
+      "on-click": "kitty --class center-float cava"
     },
     "custom/music": {
       "format": "{icon} {}",

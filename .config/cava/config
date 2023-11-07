@@ -22,7 +22,7 @@ framerate = 75
 # The number of bars (0-200). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
 ;bars = 0
-;bar_width = 6
+bar_width = 3
 ;bar_spacing = 1
 # bar_height is only used for output in "noritake" format
 ; bar_height = 32
