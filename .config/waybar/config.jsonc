@@ -53,7 +53,9 @@
         "updated": "󰂪"
       },
       "exec-if": "which waybar-module-pacman-updates",
-      "exec": "waybar-module-pacman-updates"
+      "exec": "waybar-module-pacman-updates",
+      "on-click": "kitty --class center-float yay -Syu",
+      "on-click-right": "kitty --class center-float topgrade"
     },
     "custom/arch": {
       "format": "  ",
