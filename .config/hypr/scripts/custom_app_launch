@@ -28,6 +28,15 @@ case $app in
 		obsidian
 	fi
 	;;
+"office")
+	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
+		hyprctl dispatch exec [workspace 10] libreoffice
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
+		hyprctl dispatch exec [workspace 20] libreoffice
+	else
+		libreoffice
+	fi
+	;;
 # I DONT KNOW WHY LIBREWOLF IS NOT WORKING ._.
 # "librewolf")
 # 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
