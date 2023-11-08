@@ -17,7 +17,7 @@ folder = [
   { exec = 'open -R "$@"', desc = "Reveal in Finder" },
   { exec = '$EDITOR "$@"' },
 ]
-archive = [{ exec = 'xarchiver "$1"', desc = "Extract here" }]
+archive = [{ exec = 'file-roller "$1"', desc = "Extract here" }]
 pdf = [{ exec = 'zathura "$1"', desc = "Open" }]
 text = [{ exec = '$EDITOR "$@"', block = true }]
 image = [

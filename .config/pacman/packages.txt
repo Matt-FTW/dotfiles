@@ -322,7 +322,6 @@ wlr-randr
 wlrobs-hg
 wmctrl
 wpa_supplicant
-xarchiver
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdotool
