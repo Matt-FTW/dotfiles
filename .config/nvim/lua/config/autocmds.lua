@@ -65,3 +65,9 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set("n", "<localleader>", "<nop>", { buffer = event.buf, desc = "" })
   end,
 })
+
+vim.api.nvim_create_autocmd("TermOpen", {
+  callback = function()
+    vim.cmd("setlocal listchars= nonumber norelativenumber")
+  end,
+})
