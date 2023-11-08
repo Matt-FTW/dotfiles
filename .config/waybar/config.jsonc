@@ -680,27 +680,27 @@
       "format-alt": "{:%A, %B %d, %Y}  "
     },
     "cpu": {
-      "on-click": "kitty --class btop-kitty btop",
+      "on-click": "kitty --class center-float btop",
       "format": "CPU: {usage}%",
       "tooltip": false,
       "interval": 2
     },
     "custom/gpu-usage": {
       "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
-      "on-click": "kitty --class nvtop-kitty nvtop",
+      "on-click": "kitty --class center-float nvtop",
       "format": "GPU: {}%",
       "return-type": "",
       "interval": 2
     },
     "memory": {
       "format": "{}%  ",
-      "on-click": "kitty --class btop-kitty btop",
+      "on-click": "kitty --class center-float btop",
       "tooltip": true,
       "interval": 2
     },
     "temperature": {
       "critical-threshold": 80,
-      "on-click": "kitty --class btop-kitty btop",
+      "on-click": "kitty --class center-float btop",
       "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
       "format-critical": "{icon} {temperatureC}°C",
       "format": "{icon} {temperatureC}°C",
@@ -714,7 +714,7 @@
     },
     "custom/gpu-temp": {
       "exec": "cat /sys/class/hwmon/hwmon1/temp1_input | cut -b 1-2",
-      "on-click": "kitty --class nvtop-kitty nvtop",
+      "on-click": "kitty --class center-float nvtop",
       "format": " {}°C",
       "return-type": "",
       "interval": 2
