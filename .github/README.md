@@ -40,7 +40,6 @@ Here is some _small_ information about my setup:
 - **Application Launcher**: [Rofi](https://github.com/lbonn/rofi) :sparkles: ([Config](../.config/rofi/)) :gear:
 - **Audio Daemon**: [Pipewire](https://pipewire.org/) ([Config](../.config/pipewire/)) :gear:
 - **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
-- **AUR Helper**: [yay](https://github.com/Jguer/yay)
 - **Clipboard Manager**: [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))
 - **Wallpaper Switcher**: [swww](https://github.com/Horus645/swww)
 - **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/sway/)) :gear:
