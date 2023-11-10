@@ -259,9 +259,10 @@
         ]
       },
       "tooltip-format": "{desc}, {volume}%",
-      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-      "on-click-middle": "easyeffects"
+      // "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+      // "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+      "on-click": "easyeffects",
+      "on-click-right": "qpwgraph"
     },
     "cava": {
       "autosens": 1,
