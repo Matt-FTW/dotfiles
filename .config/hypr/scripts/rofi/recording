@@ -6,6 +6,7 @@ wf-recorder_check() {
 		pkill -RTMIN+8 waybar
 		notify-send "Saved recording at " "$(cat /tmp/recording.txt)"
 		wl-copy <"$(cat /tmp/recording.txt)"
+		celluloid "$(cat /tmp/recording.txt)" &
 		exit 0
 	fi
 }
