@@ -11,7 +11,8 @@
       "command": "pavucontrol",
       "unfocus": "hide",
       "animation": "fromLeft",
-      "margin": 20
+      "margin": 20,
+      "lazy": true
     },
     "terminal": {
       "command": "kitty --class scratchpad"
@@ -20,7 +21,19 @@
       "command": "kitty --class scratchpad yazi"
     },
     "btop": {
-      "command": "kitty --class scratchpad btop"
+      "command": "kitty --class scratchpad btop",
+      "lazy": true
+    },
+    "galculator": {
+      "command": "galculator",
+      "lazy": true
+    },
+    "bluetooth": {
+      "command": "blueman-manager",
+      "animation": "fromRight",
+      "unfocus": "hide",
+      "margin": 20,
+      "lazy": true
     }
   }
 }
