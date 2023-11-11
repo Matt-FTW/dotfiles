@@ -130,7 +130,7 @@ Here is some _small_ information about my setup:
 ![overview-2](./assets/images/overview-2.png)
 ![overview-3](./assets/images/overview-3.png)
 
-> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders.
+> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP)
 
 ## :tada: <samp>Credits</samp>
 
