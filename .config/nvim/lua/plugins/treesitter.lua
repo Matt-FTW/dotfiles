@@ -4,7 +4,6 @@ return {
     ---@type TSConfig
     ---@diagnostic disable-next-line: missing-fields
     opts = {
-      autotag = { enable = true },
       endwise = { enable = true },
       ensure_installed = {
         "bash",
@@ -71,12 +70,6 @@ return {
   {
     "RRethy/nvim-treesitter-endwise",
     event = "BufRead",
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-context",
-    event = "LazyFile",
-    enabled = true,
-    opts = { mode = "cursor" },
   },
   {
     "chrisgrieser/nvim-puppeteer",
