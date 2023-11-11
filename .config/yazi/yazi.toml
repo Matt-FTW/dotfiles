@@ -14,7 +14,7 @@ cache_dir = ""
 
 [opener]
 folder = [
-  { exec = 'open -R "$@"', desc = "Reveal in Finder" },
+  { exec = 'nemo "$@"', desc = "Open in GUI File Manager" },
   { exec = '$EDITOR "$@"' },
 ]
 archive = [{ exec = 'file-roller "$1"', desc = "Extract here" }]
