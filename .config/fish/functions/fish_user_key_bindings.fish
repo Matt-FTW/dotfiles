@@ -14,4 +14,5 @@ function fish_user_key_bindings
     bind \e\cn navi
     bind \e\cr zellij-runner
     bind \e\[Z switch_kitty_tab
+    bind \e\ce fe
 end
