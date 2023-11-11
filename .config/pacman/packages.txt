@@ -1,6 +1,7 @@
 activitywatch-bin
 adw-gtk3-git
 adwsteamgtk
+amd-ucode
 android-file-transfer
 android-sdk-platform-tools
 android-tools
@@ -73,6 +74,7 @@ genact
 git
 github-cli
 gnome-disk-utility
+gnome-logs
 gnome-themes-extra
 go
 gparted
@@ -130,8 +132,12 @@ m4
 maim
 make
 mangal-bin
+mpc
+mpd
+mpdris2
 mpv
 navi
+ncmpcpp
 needrestart
 nemo
 nemo-fileroller
