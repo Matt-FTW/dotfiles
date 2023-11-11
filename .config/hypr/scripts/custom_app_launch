@@ -37,16 +37,6 @@ case $app in
 		libreoffice
 	fi
 	;;
-# THIS DOESNT WORK AS WELL SMH
-"code")
-	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 2] code
-	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 12] code
-	else
-		code
-	fi
-	;;
 # I DONT KNOW WHY LIBREWOLF IS NOT WORKING ._.
 "librewolf")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
