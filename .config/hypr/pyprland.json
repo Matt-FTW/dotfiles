@@ -20,12 +20,16 @@
     "yazi": {
       "command": "kitty --class scratchpad yazi"
     },
-    "btop": {
-      "command": "kitty --class scratchpad btop",
+    "gpt": {
+      "command": "kitty --class scratchpad tgpt -i",
       "lazy": true
     },
-    "galculator": {
-      "command": "galculator",
+    "dots": {
+      "command": "kitty --class scratchpad yadm enter lazygit",
+      "lazy": true
+    },
+    "btop": {
+      "command": "kitty --class scratchpad btop",
       "lazy": true
     },
     "bluetooth": {
