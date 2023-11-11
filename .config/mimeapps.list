@@ -45,6 +45,7 @@ text/html=librewolf.desktop
 x-scheme-handler/about=librewolf.desktop
 x-scheme-handler/unknown=librewolf.desktop
 application/x-compressed-tar=org.gnome.FileRoller.desktop
+audio/mpeg=io.github.celluloid_player.Celluloid.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-2BA7Q1.desktop;
@@ -88,7 +89,7 @@ text/x-python=wine-extension-txt.desktop;nvim.desktop;vscodium-git.desktop;
 text/css=vscodium-git.desktop;
 application/x-zerosize=vscodium-git.desktop;nvim.desktop;
 application/x-trash=nvim.desktop;
-audio/mpeg=vlc.desktop;
+audio/mpeg=vlc.desktop;io.github.celluloid_player.Celluloid.desktop;
 application/x-java-keystore=vscodium-git.desktop;
 application/x-theme=nvim.desktop;
 application/toml=nvim.desktop;
