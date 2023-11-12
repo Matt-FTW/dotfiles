@@ -61,15 +61,6 @@ case $app in
 		kitty nvim
 	fi
 	;;
-"repos")
-	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec "[workspace 2] kitty fish -c repos"
-	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec "[workspace 12] kitty fish -c repos"
-	else
-		kitty fish -c repos
-	fi
-	;;
 "librewolf")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
 		hyprctl dispatch workspace 1 && librewolf # Had to to this because it didnt work the other way
