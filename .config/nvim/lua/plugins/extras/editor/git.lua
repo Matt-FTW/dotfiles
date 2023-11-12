@@ -52,6 +52,7 @@ return {
     opts = {
       defaults = {
         ["<leader>gc"] = { name = "+conflicts" },
+        ["<leader>gw"] = { name = "+worktrees" },
       },
     },
   },

@@ -1,3 +1,5 @@
+local Util = require("lazyvim.util")
+
 return {
   {
     "aurum77/live-server.nvim",
@@ -14,5 +16,16 @@ return {
     build = "sh install.sh yarn",
     event = "BufReadPost",
     config = true,
+  },
+  {
+    "piersolenski/telescope-import.nvim",
+    config = function(_, opts)
+      Util.on_load("telescope.nvim", function()
+        require("telescope").load_extension("import")
+      end)
+    end,
+    keys = {
+      { "<leader>si", "<cmd>Telescope import<CR>", desc = "Imports" },
+    },
   },
 }

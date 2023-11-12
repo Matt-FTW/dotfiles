@@ -1,3 +1,5 @@
+local Util = require("lazyvim.util")
+
 return {
   {
     "voldikss/vim-floaterm",
@@ -33,6 +35,14 @@ return {
   { "<leader>ftv", "<cmd>FloatermNew --name=vsplitroot --opener=edit --titleposition=center --width=0.35 --wintype=vsplit --cwd=<root><cr>", desc = "Vsplit (root dir)" },
   { "<leader>ftV", "<cmd>FloatermNew --name=vsplitbuffer --opener=edit --titleposition=center --width=0.35 --wintype=vsplit --cwd=<buffer><cr>", desc = "Vsplit (cwd)" },
     },
+  },
+  {
+    "dawsers/telescope-floaterm.nvim",
+    config = function()
+      Util.on_load("telescope.nvim", function()
+        require("telescope").load_extension("floaterm")
+      end)
+    end,
   },
   {
     "folke/which-key.nvim",

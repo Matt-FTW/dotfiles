@@ -1,10 +1,6 @@
-local util = require("lazyvim.util")
+local Util = require("lazyvim.util")
 
 return {
-  {
-    "mbbill/undotree",
-    event = "BufReadPost",
-  },
   {
     "debugloop/telescope-undo.nvim",
     opts = {},
@@ -13,5 +9,8 @@ return {
         require("telescope").load_extension("undo")
       end)
     end,
+    keys = {
+      { "<leader>su", "<cmd>Telescope undo<cr>", desc = "Undos" },
+    },
   },
 }

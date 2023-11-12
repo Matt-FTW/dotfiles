@@ -139,7 +139,6 @@
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
   "tsc.nvim": { "branch": "main", "commit": "26d3c9010f3ef78fbecdfc69d901ab8ed89cff6c" },
   "twilight.nvim": { "branch": "main", "commit": "8b7b50c0cb2dc781b2f4262a5ddd57571556d1e4" },
-  "undotree": { "branch": "master", "commit": "36ff7abb6b60980338344982ad4cdf03f7961ecd" },
   "urlview.nvim": { "branch": "main", "commit": "7d622e11adbc2cac5bba62345ade9b6672d564a4" },
   "venv-selector.nvim": { "branch": "main", "commit": "d5f6602d2d3f4089116a7eb04475b6a295f72419" },
   "vim-be-good": { "branch": "master", "commit": "c290810728a4f75e334b07dc0f3a4cdea908d351" },

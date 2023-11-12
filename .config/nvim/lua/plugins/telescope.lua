@@ -23,23 +23,6 @@ return {
         end,
       },
       {
-        "dawsers/telescope-floaterm.nvim",
-        config = function()
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("floaterm")
-          end)
-        end,
-      },
-      {
-        "debugloop/telescope-undo.nvim",
-        opts = {},
-        config = function(_, opts)
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("undo")
-          end)
-        end,
-      },
-      {
         "prochri/telescope-all-recent.nvim",
         dependencies = {
           "kkharji/sqlite.lua",
@@ -76,14 +59,6 @@ return {
         config = function()
           Util.on_load("telescope.nvim", function()
             require("telescope").load_extension("luasnip")
-          end)
-        end,
-      },
-      {
-        "piersolenski/telescope-import.nvim",
-        config = function(_, opts)
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("import")
           end)
         end,
       },
@@ -130,14 +105,11 @@ return {
         "<cmd>Telescope dap variables<CR>",
         desc = "Variables",
       },
-      { "<leader>si", "<cmd>Telescope import<CR>", desc = "Imports" },
       { "<leader>sz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
       { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
       { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
       { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
       { "<leader>gC", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
-
-      { "<leader>cu", "<cmd>Telescope undo<cr>", desc = "Undotree" },
       {
         "<leader>ssa",
         Util.telescope("lsp_document_symbols", {
@@ -456,14 +428,13 @@ return {
       defaults = {
         ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
         ["<leader>ss"] = { name = "+Goto Symbols" },
-        ["<leader>gw"] = { name = "+worktrees" },
       },
     },
   },
   {
     "axieax/urlview.nvim",
     cmd = { "UrlView" },
-    keys = { { "<leader>su", "<cmd>UrlView<cr>", desc = "Search Urls" } },
+    keys = { { "<leader>sU", "<cmd>UrlView<cr>", desc = "Search Urls" } },
     opts = {
       default_picker = "telescope",
     },
