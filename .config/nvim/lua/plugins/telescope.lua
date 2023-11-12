@@ -64,8 +64,21 @@ return {
       },
       {
         "jvgrootveld/telescope-zoxide",
-        config = function()
+        config = function(_, opts)
           Util.on_load("telescope.nvim", function()
+            require("telescope").setup({
+              extensions = {
+                zoxide = {
+                  mappings = {
+                    default = {
+                      after_action = function(selection)
+                        require("telescope.builtin").find_files({ cwd = selection.path })
+                      end,
+                    },
+                  },
+                },
+              },
+            })
             require("telescope").load_extension("zoxide")
           end)
         end,
@@ -105,7 +118,7 @@ return {
         "<cmd>Telescope dap variables<CR>",
         desc = "Variables",
       },
-      { "<leader>sz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
+      { "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
       { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
       { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
       { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
@@ -401,17 +414,6 @@ return {
           },
         },
         extensions = {
-          undo = {
-            use_delta = true,
-            side_by_side = true,
-            layout_strategy = "vertical",
-            layout_config = {
-              preview_height = 0.8,
-            },
-          },
-          import = {
-            insert_at_top = true,
-          },
           fzf = {
             fuzzy = true,
             override_generic_sorter = true,
