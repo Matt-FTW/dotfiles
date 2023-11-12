@@ -3,7 +3,7 @@ function repos --description 'Open Git directories in ~/Repos with fzf in a new 
 
     if test -n "$selected_dir"
         set tab_title (basename "$selected_dir")
-        set new_tab_cmd "kitty @ launch --type=tab --tab-title \"$tab_title\" ~/Repos/$selected_category/$selected_dir"
+        set new_tab_cmd "kitty @ launch --type=tab --tab-title \"$tab_title\" ~/Repos/$selected_dir"
         eval $new_tab_cmd
     end
 
