@@ -24,6 +24,8 @@ case $app in
 		hyprctl dispatch exec [workspace 10] obsidian
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
 		hyprctl dispatch exec [workspace 20] obsidian
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
+		hyprctl dispatch exec [workspace 30] obsidian
 	else
 		obsidian
 	fi
@@ -33,8 +35,30 @@ case $app in
 		hyprctl dispatch exec [workspace 10] libreoffice
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
 		hyprctl dispatch exec [workspace 20] libreoffice
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
+		hyprctl dispatch exec [workspace 30] libreoffice
 	else
 		libreoffice
+	fi
+	;;
+"kitty")
+	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
+		hyprctl dispatch exec [workspace 3] kitty
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
+		hyprctl dispatch exec [workspace 13] kitty
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
+		hyprctl dispatch exec "[workspace 24] kitty --class center-float"
+	else
+		kitty
+	fi
+	;;
+"nvim")
+	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
+		hyprctl dispatch exec [workspace 2] kitty nvim
+	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
+		hyprctl dispatch exec [workspace 12] kitty nvim
+	else
+		kitty nvim
 	fi
 	;;
 # I DONT KNOW WHY LIBREWOLF IS NOT WORKING ._.
