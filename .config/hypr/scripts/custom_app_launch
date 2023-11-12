@@ -61,14 +61,13 @@ case $app in
 		kitty nvim
 	fi
 	;;
-# I DONT KNOW WHY LIBREWOLF IS NOT WORKING ._.
 "librewolf")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 1] librewolf
+		hyprctl dispatch workspace 1 && librewolf # Had to to this because it didnt work the other way
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 11] librewolf
+		hyprctl dispatch workspace 11 && librewolf
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec [workspace 25] librewolf
+		hyprctl dispatch workspace 25 && librewolf
 	else
 		librewolf
 	fi
