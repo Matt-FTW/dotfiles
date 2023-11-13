@@ -3,6 +3,9 @@
 -- Add any additional options here
 vim.loader.enable()
 
+vim.g["rooter_cd_cmd"] = "lcd"
+vim.g["rooter_silent_chdir"] = 1
+
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 vim.o.foldcolumn = "1"
 
