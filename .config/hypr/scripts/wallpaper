@@ -14,7 +14,7 @@ if [ "$mode" == "select" ]; then
 		exit 1
 	fi
 elif [ "$mode" == "random" ]; then
-	RANDOM_IMAGE=$(fd -e png -e jpg --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | shuf -n 1)
+	RANDOM_IMAGE=$(fd --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | shuf -n 1)
 	IMAGE="$HOME/.config/hypr/themes/luna/walls/$RANDOM_IMAGE"
 else
 	exit 1
