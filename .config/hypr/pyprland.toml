@@ -1,0 +1,37 @@
+[pyprland]
+plugins = ["scratchpads", "expose", "magnify"]
+
+[scratchpads.volume]
+command = "pavucontrol"
+unfocus = "hide"
+animation = "fromLeft"
+margin = 20
+lazy = true
+
+[scratchpads.terminal]
+command = "kitty --class scratchpad"
+excludes = ["dots"]
+
+[scratchpads.yazi]
+command = "kitty --class scratchpad yazi"
+lazy = true
+
+[scratchpads.gpt]
+command = "kitty --class scratchpad tgpt -i"
+lazy = true
+
+[scratchpads.dots]
+command = "kitty --class scratchpad yadm enter lazygit"
+excludes = ["terminal"]
+lazy = true
+
+[scratchpads.btop]
+command = "kitty --class scratchpad btop"
+lazy = true
+
+[scratchpads.bluetooth]
+command = "blueman-manager"
+animation = "fromRight"
+unfocus = "hide"
+margin = 20
+lazy = true
