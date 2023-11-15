@@ -69,3 +69,4 @@ set -xg RIPGREP_CONFIG_PATH $HOME/.config/rg/.ripgreprc
 set -xg STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 set -xg BAT_THEME Catppuccin-macchiato
+set fish_greeting ""
