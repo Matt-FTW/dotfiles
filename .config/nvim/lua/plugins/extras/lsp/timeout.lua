@@ -1,7 +1,6 @@
 return {
   "hinell/lsp-timeout.nvim",
   event = "LspAttach",
-  enabled = false,
   dependencies = { "neovim/nvim-lspconfig" },
   init = function()
     vim.g["lsp-timeout-config"] = {
