@@ -1,4 +1,5 @@
 local prefix = "<leader>G"
+
 return {
   {
     "almo7aya/openingh.nvim",

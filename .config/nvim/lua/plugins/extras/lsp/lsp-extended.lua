@@ -196,33 +196,12 @@ return {
     end,
   },
   {
-    "hinell/lsp-timeout.nvim",
-    event = "LspAttach",
-    enabled = false,
-    dependencies = { "neovim/nvim-lspconfig" },
-    init = function()
-      vim.g["lsp-timeout-config"] = {
-        startTimeout = 1000 * 1, -- ms before restart
-      }
-    end,
-  },
-  {
-    "VidocqH/lsp-lens.nvim",
-    event = "BufReadPost",
+    "folke/which-key.nvim",
+    event = "VeryLazy",
     opts = {
-      sections = {
-        definition = false,
-        references = function(count)
-          return " Ref: " .. count
-        end,
-        implements = function(count)
-          return "󱁤 Imp: " .. count
-        end,
-        git_authors = false,
+      defaults = {
+        ["<leader>cL"] = { name = "+lsp" },
       },
-    },
-    keys = {
-      { "<leader>ue", "<cmd>LspLensToggle<cr>", desc = "Toggle Lsp Lens" },
     },
   },
 }

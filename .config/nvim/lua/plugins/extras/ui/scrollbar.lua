@@ -1,14 +1,16 @@
-return {
-  {
+local version = vim.fn.has("nvim-0.10")
+
+if version then
+  return {
     "lewis6991/satellite.nvim",
     opts = {
       excluded_filetypes = { "neo-tree", "alpha", "symbols-outline" },
     },
     event = "BufRead",
-  },
-  {
+  }
+else
+  return {
     "dstein64/nvim-scrollview",
-    enabled = false,
     event = "BufReadPost",
     keys = { { "<leader>uS", "<cmd>ScrollViewToggle<CR>", desc = "Toggle Scrollview" } },
     config = function()
@@ -22,5 +24,5 @@ return {
         diagnostics_hint_symbol = "",
       })
     end,
-  },
-}
+  }
+end
