@@ -26,12 +26,6 @@ map("x", "<leader>?", function()
   google(vim.fn.getreg("g"), false)
 end, { desc = "Google" })
 
-if vim.lsp.inlay_hint then
-  map("n", "<leader>uh", function()
-    vim.lsp.inlay_hint(0, nil)
-  end, { desc = "Toggle Inlay Hints" })
-end
-
 map("n", "<leader>ft", "<Nop>")
 map("n", "<leader>fT", "<Nop>")
 
