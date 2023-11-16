@@ -22,11 +22,12 @@ return {
     init = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
 
-      keys[#keys + 1] = { "gr", "<CMD>Glance references<CR>", desc = "References" }
-      keys[#keys + 1] = { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" }
-      keys[#keys + 1] = { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" }
+      keys[#keys + 1] = { "gd", false }
+      keys[#keys + 1] = { "gr", false }
+      keys[#keys + 1] = { "gy", false }
+      keys[#keys + 1] = { "gI", false }
 
-      keys[#keys + 1] = { "<leader>ca", require("actions-preview").code_actions, desc = "Code Action Preview" }
+      keys[#keys + 1] = { "<leader>ca", false }
 
       keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cil", "<cmd>LspInfo<cr>", desc = "Lsp" }
@@ -169,6 +170,16 @@ return {
         },
       },
     },
+    keys = {
+      {
+        "<leader>ca",
+        function()
+          require("actions-preview").code_actions()
+        end,
+        mode = { "n", "v" },
+        desc = "Code Action Preview",
+      },
+    },
   },
   {
     "smjonas/inc-rename.nvim",
@@ -183,10 +194,15 @@ return {
         enable = true,
       },
     },
+    keys = {
+      { "gd", "<CMD>Glance definitions<CR>", desc = "Goto Definition" },
+      { "gr", "<CMD>Glance references<CR>", desc = "References" },
+      { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" },
+      { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" },
+    },
   },
   {
     "simrat39/rust-tools.nvim",
-    lazy = true,
     opts = function(_, opts)
       opts.tools = {
         inlay_hints = {
