@@ -71,7 +71,6 @@
     "plugins.extras.ui.edgy",
     "plugins.extras.ui.highlight-undo",
     "plugins.extras.ui.import-cost",
-    "plugins.extras.ui.modes",
     "plugins.extras.ui.number-toggle",
     "plugins.extras.ui.rainbow-delimeters",
     "plugins.extras.ui.scrollbar",
