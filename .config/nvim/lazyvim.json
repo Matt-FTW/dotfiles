@@ -51,7 +51,6 @@
     "plugins.extras.formatting.isort",
     "plugins.extras.formatting.rustfmt",
     "plugins.extras.formatting.rustywind",
-    "plugins.extras.formatting.shellharden",
     "plugins.extras.formatting.sqlfmt",
     "plugins.extras.lang.bash",
     "plugins.extras.lang.css",
@@ -63,6 +62,7 @@
     "plugins.extras.lang.tailwindcss-extended",
     "plugins.extras.lang.typescript-extended",
     "plugins.extras.linting.pylint",
+    "plugins.extras.linting.shellcheck",
     "plugins.extras.lsp.compiler",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
@@ -96,3 +96,4 @@
   },
   "version": 2
 }
+
