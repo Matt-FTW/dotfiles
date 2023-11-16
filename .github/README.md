@@ -129,6 +129,12 @@ Here is some _small_ information about my setup:
 ![overview-1](./assets/images/overview-1.png)
 ![overview-2](./assets/images/overview-2.png)
 ![overview-3](./assets/images/overview-3.png)
+![overview-4](./assets/images/overview-4.png)
+![overview-5](./assets/images/overview-5.png)
+![overview-6](./assets/images/overview-6.png)
+![overview-7](./assets/images/overview-7.png)
+![overview-8](./assets/images/overview-8.png)
+![overview-9](./assets/images/overview-9.png)
 
 > :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP)
 
