@@ -13,6 +13,12 @@ return {
       {
         "hrsh7th/cmp-emoji",
       },
+      {
+        "lukas-reineke/cmp-under-comparator",
+      },
+      {
+        "chrisgrieser/cmp-nerdfont",
+      },
     },
     keys = {
       { "<leader>ciC", ":CmpStatus<CR>", desc = "Cmp Status" },
@@ -21,7 +27,12 @@ return {
       opts.sources = cmp.config.sources(
         vim.list_extend(
           opts.sources,
-          { { name = "emoji" }, { name = "git" }, { name = "fonts", option = { space_filter = "-" } } }
+          {
+            { name = "emoji" },
+            { name = "git" },
+            { name = "fonts", option = { space_filter = "-" } },
+            { name = "nerdfont" },
+          }
         )
       )
       opts.mapping = cmp.mapping.preset.insert({
@@ -46,6 +57,18 @@ return {
       opts.window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
+      }
+      opts.sorting = {
+        comparators = {
+          cmp.config.compare.offset,
+          cmp.config.compare.exact,
+          cmp.config.compare.score,
+          require("cmp-under-comparator").under,
+          cmp.config.compare.kind,
+          cmp.config.compare.sort_text,
+          cmp.config.compare.length,
+          cmp.config.compare.order,
+        },
       }
     end,
   },

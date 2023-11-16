@@ -6,13 +6,6 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       {
-        "2kabhishek/nerdy.nvim",
-        dependencies = {
-          "stevearc/dressing.nvim",
-        },
-        cmd = "Nerdy",
-      },
-      {
         "piersolenski/telescope-import.nvim",
         config = function(_, opts)
           Util.on_load("telescope.nvim", function()
@@ -139,8 +132,8 @@ return {
       { "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
       { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
       { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
-      { "<leader>sN", "<cmd>Nerdy<cr>", desc = "Nerd Fonts" },
       { "<leader>gC", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
+      { "<leader>uS", Util.telescope("colorscheme", { enable_preview = true }), desc = "Colorscheme with preview" },
       {
         "<leader>ssa",
         Util.telescope("lsp_document_symbols", {
