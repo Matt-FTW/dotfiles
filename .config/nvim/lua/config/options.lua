@@ -47,8 +47,8 @@ end, opts)
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide here
   vim.g.neovide_padding_top = 5
-  --vim.g.neovide_padding_right = 5
-  --vim.g.neovide_padding_left = 5
+  vim.g.neovide_padding_right = 5
+  vim.g.neovide_padding_left = 5
 
   vim.g.neovide_floating_blur_amount_x = 5.0
   vim.g.neovide_floating_blur_amount_y = 5.0
