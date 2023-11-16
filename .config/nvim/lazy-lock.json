@@ -118,7 +118,6 @@
   "satellite.nvim": { "branch": "main", "commit": "7911fa8137c77258ba509ba875ea52c6d59737e8" },
   "semshi": { "branch": "master", "commit": "eddc5304d7aa99e140c89f40393c9f109f4e9115" },
   "smart-splits.nvim": { "branch": "master", "commit": "c8a9173d70cbbd1f6e4a414e49e31df2b32a1362" },
-  "sniprun": { "branch": "master", "commit": "7a8bc30fcf04fd4efec43be368f12eb4266fabf6" },
   "sqlite.lua": { "branch": "master", "commit": "b7e28c8463254c46a8e61c52d27d6a2040492fc3" },
   "suda.vim": { "branch": "master", "commit": "8b0fc3711760195aba104e2d190cff9af8267052" },
   "symbols-outline.nvim": { "branch": "master", "commit": "512791925d57a61c545bc303356e8a8f7869763c" },
