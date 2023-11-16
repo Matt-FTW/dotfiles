@@ -19,22 +19,21 @@ return {
       {
         "chrisgrieser/cmp-nerdfont",
       },
+      {
+        "lukas-reineke/cmp-rg",
+      },
     },
     keys = {
       { "<leader>ciC", ":CmpStatus<CR>", desc = "Cmp Status" },
     },
     opts = function(_, opts)
-      opts.sources = cmp.config.sources(
-        vim.list_extend(
-          opts.sources,
-          {
-            { name = "emoji" },
-            { name = "git" },
-            { name = "fonts", option = { space_filter = "-" } },
-            { name = "nerdfont" },
-          }
-        )
-      )
+      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, {
+        { name = "emoji" },
+        { name = "git" },
+        { name = "fonts", option = { space_filter = "-" } },
+        { name = "nerdfont" },
+        { name = "rg", keyword_length = 3 },
+      }))
       opts.mapping = cmp.mapping.preset.insert({
         ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
         ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
