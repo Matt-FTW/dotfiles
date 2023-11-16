@@ -1,7 +1,6 @@
 return {
   {
-    "edluffy/hologram.nvim",
-    lazy = true,
+    "edluffy/hologram.nvim", -- TODO: Need to investigate this
     enabled = false,
     opts = {
       auto_display = true, -- WIP automatic markdown image display, may be prone to breaking
