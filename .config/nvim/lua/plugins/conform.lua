@@ -1,39 +1,11 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    keys = {
-      {
-        "<leader>cic",
-        "<cmd>ConformInfo<CR>",
-        mode = { "n", "v" },
-        desc = "Conform Info",
-      },
-    },
-    opts = {
-      formatters_by_ft = {
-        lua = { "stylua" },
-        fish = { "fish_indent" },
-        sh = { "shfmt", "shellharden" },
-        python = { "isort", "black" },
-        bash = { "shfmt", "shellharden" },
-        javascript = { { "prettierd", "prettier", "rustywind" } },
-        javascriptreact = { { "prettierd", "prettier", "rustywind" } },
-        typescript = { { "prettierd", "prettier", "rustywind" } },
-        typescriptreact = { { "prettierd", "prettier", "rustywind" } },
-        vue = { { "prettierd", "prettier", "rustywind" } },
-        html = { { "prettierd", "prettier", "rustywind", "stylelint" } },
-        rust = { "rusfmt" },
-        go = { "gofumpt", "goimports" },
-        sass = { "stylelint" },
-        css = { { "prettierd", "prettier", "stylelint" } },
-        scss = { { "prettierd", "prettier", "stylelint" } },
-        less = { { "prettierd", "prettier", "stylelint" } },
-        markdown = { { "prettierd", "prettier" } },
-        toml = { "taplo" },
-        sql = { "sqlfmt" },
-        mysql = { "sqlfmt" },
-        plsql = { "sqlfmt" },
-      },
+  "stevearc/conform.nvim",
+  keys = {
+    {
+      "<leader>cic",
+      "<cmd>ConformInfo<CR>",
+      mode = { "n", "v" },
+      desc = "Conform Info",
     },
   },
 }
