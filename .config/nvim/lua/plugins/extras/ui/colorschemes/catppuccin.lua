@@ -3,7 +3,7 @@ local macchiato = require("catppuccin.palettes").get_palette("macchiato")
 return {
   {
     "catppuccin/nvim",
-    lazy = true,
+    lazy = false,
     name = "catppuccin",
     opts = {
       integrations = {
@@ -82,12 +82,6 @@ return {
           },
         },
       }),
-    },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin-macchiato",
     },
   },
 }

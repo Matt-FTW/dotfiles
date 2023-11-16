@@ -1,6 +1,6 @@
 return {
   "marko-cerovac/material.nvim",
-  lazy = true,
+  lazy = false,
   name = "material",
   opts = {},
 }

@@ -1,6 +1,7 @@
 return {
   "akinsho/horizon.nvim",
-  lazy = true,
+  lazy = false,
+  name = "horizon",
   opts = {
     plugins = {
       cmp = true,

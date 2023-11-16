@@ -1,6 +1,6 @@
 return {
   "shaunsingh/nord.nvim",
-  lazy = true,
+  lazy = false,
   name = "nord",
   opts = {},
 }

@@ -1,6 +1,6 @@
 return {
   "sainnhe/everforest",
-  lazy = true,
+  lazy = false,
   name = "everforest",
   opts = {},
 }

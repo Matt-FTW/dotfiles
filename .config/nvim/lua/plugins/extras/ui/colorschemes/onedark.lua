@@ -1,6 +1,7 @@
 return {
   "navarasu/onedark.nvim",
-  lazy = true,
+  lazy = false,
+  name = "onedark",
   opts = {
     -- Main options --
     style = "dark", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
