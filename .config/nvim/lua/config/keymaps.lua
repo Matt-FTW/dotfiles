@@ -145,5 +145,3 @@ map("n", "gd", "<Cmd>lua Scroll('definition')<CR>")
 
 -- LSP go-to-declaration:
 map("n", "gD", "<Cmd>lua Scroll('declaration')<CR>")
-
-map("n", "<M-BS>", "<Cmd>noh<CR>", { noremap = true, silent = true, desc = "Clear Search" })
