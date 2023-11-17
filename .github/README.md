@@ -11,6 +11,12 @@
 
 </div>
 
+<div align="center">
+
+<img src="./assets/images/big-showcase.png">
+
+</div>
+
 ## :herb: <samp>About</samp>
 
 Hey there! :wave:
