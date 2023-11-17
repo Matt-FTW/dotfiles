@@ -31,7 +31,7 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 Here is some _small_ information about my setup:
 
-> :information_source: INFO: Some of this apps have the config included in the repo (marked with :gear:), others dont because simply they dont have any or is not worth saving it because use of their defaults. Also, my favorite programs and tools are marked with :sparkles:
+> :information_source: INFO: Some of this apps have the config included in the repo (marked with :gear:), others don't because simply they don't have any or is not worth saving it because use of their defaults. Also, my favorite programs and tools are marked with :sparkles:
 
 <details>
   <summary><b>🐧 System</b></summary>
