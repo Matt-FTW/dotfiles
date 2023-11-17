@@ -41,8 +41,8 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 
 # Launch tui monitors for cpu and gpu
-hyprctl dispatch exec "[workspace 24 silent] kitty btop" &
-hyprctl dispatch exec "[workspace 24 silent] kitty nvtop" &
+hyprctl dispatch exec "[workspace 19 silent] kitty btop" &
+hyprctl dispatch exec "[workspace 19 silent] kitty nvtop" &
 
 # Activity Watch
 # aw-server-rust &
