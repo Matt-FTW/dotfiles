@@ -7,8 +7,17 @@ return {
       plugins = {
         scrollview = { enabled = false },
         satellite = { enabled = false },
-        gitsigns = { enabled = false },
+        gitsigns = { enabled = true },
+        dropbar = { enabled = false },
+        barbecue = { enabled = false },
       },
+      on_open = function(_)
+        vim.opt.laststatus = 0
+        vim.o.winbar = ""
+      end,
+      on_close = function()
+        vim.opt.laststatus = 3
+      end,
     },
   },
   {
