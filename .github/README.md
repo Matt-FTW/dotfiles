@@ -163,6 +163,18 @@ I wanna point out some resources that helped me the most with the setup:
 - [Folke](https://github.com/folke) for his amazing contributions to the Neovim community with some awesome plugins and with the distro that i use: **LazyVim**. Also, his READMEs and [dotfiles](https://github.com/folke/dot) are amazing!
 - [Yoru's README](https://github.com/rxyhn/yoru/tree/main) to help me with the distribution of the README
 - [Amadeus Dots](https://github.com/AmadeusWM/dotfiles-hyprland) for helping me with the startup setup of the Hyprland WM.
-- [Catppuccin](https://github.com/catppuccin/catppuccin) for making the **Best Colorscheme Ever** :paintbrush::heart:
+- [Catppuccin](https://github.com/catppuccin/catppuccin) for making the **Best Colorscheme Ever** 🖌️
 
 Those were the biggest inspiring factor for me, though you can find a lot more of setups that helped me in my List of Dotfiles from the **Stars** section of my Github Profile: [Check it out!](https://github.com/stars/Matt-FTW/lists/paintbrush-theming-dots)
+
+## ⭐ Star History
+
+Thanks to every one who gave a star to this project! ❤️
+
+<a href="https://star-history.com/#Matt-FTW/dotfiles&Timeline">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline" />
+  </picture>
+</a>
