@@ -7,7 +7,7 @@ return {
     keys = {
       { prefix .. "ro", "<cmd>OpenInGHRepo<CR>", desc = "Open git repo in web", mode = { "n" } },
       { prefix .. "rf", "<cmd>OpenInGHFile<CR>", desc = "Open git file in web", mode = { "n" } },
-      { prefix .. "rf", "<cmd>OpenInGHFileLines<CR>", desc = "Open git lines in web", mode = { "x", "v" } },
+      { prefix .. "rc", "<cmd>OpenInGHFileLines<CR>", desc = "Open current line in web", mode = { "n", "x", "v" } },
     },
   },
   {

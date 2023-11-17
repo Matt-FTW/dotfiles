@@ -133,7 +133,6 @@ return {
       { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
       { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
       { "<leader>gC", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
-      { "<leader>uS", Util.telescope("colorscheme", { enable_preview = true }), desc = "Colorscheme with preview" },
       {
         "<leader>ssa",
         Util.telescope("lsp_document_symbols", {
