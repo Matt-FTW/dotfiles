@@ -48,8 +48,8 @@ Here is some _small_ information about my setup:
 - **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
 - **Clipboard Manager**: [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))
 - **Wallpaper Switcher**: [swww](https://github.com/Horus645/swww)
-- **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/sway/)) :gear:
-- **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) ([Config](../.config/sway/)) :gear:
+- **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/swaylock/)) :gear:
+- **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) ([Config](../.config/swayidle/)) :gear:
 - **Color Picker**: [Hyprpicker](https://github.com/hyprwm/hyprpicker)
 - **Recording Tool**: [wf-recorder](https://github.com/ammen99/wf-recorder)
 - **Screenshot Tool**: [Hyprshot](https://github.com/Gustash/Hyprshot)
