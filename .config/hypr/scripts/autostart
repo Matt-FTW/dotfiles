@@ -27,7 +27,7 @@ udiskie &
 devify &
 
 # Idle daemon to screen lock
-/home/matt/.config/sway/idle.sh &
+swayidle &
 
 # Clipboard
 wl-clip-persist --clipboard regular &

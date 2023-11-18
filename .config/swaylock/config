@@ -1,0 +1,50 @@
+ignore-empty-password
+font=JetBrainsMono Nerd Font
+
+clock
+
+screenshots
+
+fade-in=0.5
+
+effect-blur=7x3
+effect-scale=2
+effect-vignette=0.6:0.5
+
+indicator-idle-visible
+indicator-radius=100
+indicator-thickness=12
+indicator-caps-lock
+
+key-hl-color=ed8796
+
+separator-color=00000000
+
+inside-color=24273a
+inside-clear-color=c6a0f6
+# inside-caps-lock-color=009ddc00
+inside-ver-color=8bd5ca
+inside-wrong-color=ed8796
+
+ring-color=494d64
+ring-clear-color=c6a0f6
+# ring-caps-lock-color=231f20D9
+ring-ver-color=8bd5ca
+ring-wrong-color=ed8796
+
+line-color=b7bdf8
+line-clear-color=c6a0f6
+# line-caps-lock-color=009ddcFF
+line-ver-color=8bd5ca
+line-wrong-color=ed8796
+
+text-color=b7bdf8
+text-clear-color=24273a
+text-ver-color=24273a
+text-wrong-color=24273a
+
+# bs-hl-color=ee2e24FF
+# caps-lock-key-hl-color=ffd204FF
+# caps-lock-bs-hl-color=ee2e24FF
+# disable-caps-lock-text
+text-caps-lock-color=f5a97f

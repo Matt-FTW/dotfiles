@@ -4,10 +4,10 @@
 
 <div align="center">
 
-[<img width="190px" src="./assets/images/dotfiles-about.png">](#about)
-[<img width="190px" src="./assets/images/dotfiles-setup.png">](#setup)
-[<img width="190px" src="./assets/images/dotfiles-gallery.png">](#gallery)
-[<img width="190px" src="./assets/images/dotfiles-credits.png">](#credits)
+<a href="#herb--about"><img width="190px" src="./assets/images/dotfiles-about.png"></a>
+<a href="#wrench--setup"><img width="190px" src="./assets/images/dotfiles-setup.png"></a>
+<a href="#camera--gallery"><img width="190px" src="./assets/images/dotfiles-gallery.png"></a>
+<a href="#tada--credits"><img width="190px" src="./assets/images/dotfiles-credits.png"></a>
 
 </div>
 
@@ -26,7 +26,7 @@ It has less dependencies and some specific configurations to work in a portable 
 
 I don't really recommend to use it on any other system as a default setup if your are gonna stick to the same hardware for a long time.
 
-## :herb: <samp>About</samp>
+## :herb: ‎ <samp>About</samp>
 
 Hey there! :wave:
 
@@ -57,8 +57,8 @@ Here is some _small_ information about my setup:
 - **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
 - **Clipboard Manager**: [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))
 - **Wallpaper Switcher**: [swww](https://github.com/Horus645/swww)
-- **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/sway/)) :gear:
-- **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) ([Config](../.config/sway/)) :gear:
+- **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/swaylock/)) :gear:
+- **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) ([Config](../.config/swayidle/)) :gear:
 - **Color Picker**: [Hyprpicker](https://github.com/hyprwm/hyprpicker)
 - **Recording Tool**: [wf-recorder](https://github.com/ammen99/wf-recorder)
 - **Screenshot Tool**: [Hyprshot](https://github.com/Gustash/Hyprshot)
@@ -125,7 +125,7 @@ Here is some _small_ information about my setup:
 
 </details>
 
-## :wrench: <samp>Setup</samp>
+## :wrench: ‎ <samp>Setup</samp>
 
 #### :package: <samp>Automatic Installation (Arch Linux)</samp>
 
@@ -139,7 +139,7 @@ Here is some _small_ information about my setup:
 
 ##### WIP
 
-## :camera: <samp>Gallery</samp>
+## :camera: ‎ <samp>Gallery</samp>
 
 ![overview-1](./assets/images/overview-1.png)
 ![overview-2](./assets/images/overview-2.png)
@@ -153,7 +153,7 @@ Here is some _small_ information about my setup:
 
 > :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP)
 
-## :tada: <samp>Credits</samp>
+## :tada: ‎ <samp>Credits</samp>
 
 Big thanks to everyone at r/unixporn for inspiring me to make this!
 
