@@ -169,7 +169,7 @@ Those were the biggest inspiring factor for me, though you can find a lot more o
 
 ## ⭐ Star History
 
-Thanks to every one who gave a star to this project! ❤️
+Thanks to everyone who gave a star to this project! ❤️
 
 <a href="https://star-history.com/#Matt-FTW/dotfiles&Timeline">
   <picture>
