@@ -1,7 +1,7 @@
 [user]
   name = Sergio Laín
 	email = sergiolain11@gmail.com
-	signingKey = E3BC677C07A2C7AC
+	signingKey = 14C9B8080681777B
 [safe]
 	directory = Repos/
 [credential "https://github.com"]
