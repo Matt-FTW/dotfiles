@@ -1,11 +1,9 @@
 activitywatch-bin
-adw-gtk3-git
 adwsteamgtk
 amd-ucode
 android-file-transfer
 android-sdk-platform-tools
 android-tools
-ani-cli
 ansible
 arronax
 atlauncher-bin
@@ -39,7 +37,6 @@ cliphist
 cpupower
 dbeaver
 devify
-dex
 dialog
 dictd
 diff-so-fancy
@@ -75,7 +72,6 @@ git
 github-cli
 gnome-disk-utility
 gnome-logs
-gnome-themes-extra
 go
 gparted
 grim
@@ -105,7 +101,6 @@ lazydocker
 lazygit
 lazynpm
 lib32-libnm
-lib32-opencl-nvidia
 lib32-vulkan-radeon
 libnma-gtk4
 libreoffice-still-es
@@ -131,10 +126,8 @@ lxappearance
 m4
 maim
 make
-mangal-bin
 mpc
 mpd
-mpdris2
 mpv
 navi
 ncmpcpp
@@ -160,6 +153,7 @@ obs-pipewire-audio-capture-bin
 obs-plugin-input-overlay
 obs-studio-amf
 obsidian
+ollama
 onefetch
 openbsd-netcat
 opencl-nvidia
@@ -193,7 +187,6 @@ pkgconf
 playerctl
 plocate
 polkit-gnome
-prettierd
 proton-ge-custom-bin
 pyprland
 python-cairo
@@ -234,7 +227,6 @@ starship
 steam
 sudo
 swappy
-swaybg
 swayidle
 swaylock-effects
 swaync
@@ -378,7 +370,6 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xplr
 xwaylandvideobridge-git
 yad
 yadm
