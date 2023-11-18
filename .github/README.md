@@ -4,10 +4,10 @@
 
 <div align="center">
 
-[<img width="190px" src="./assets/images/dotfiles-about.png">](#about)
-[<img width="190px" src="./assets/images/dotfiles-setup.png">](#setup)
-[<img width="190px" src="./assets/images/dotfiles-gallery.png">](#gallery)
-[<img width="190px" src="./assets/images/dotfiles-credits.png">](#credits)
+<a href="#herb--about"><img width="190px" src="./assets/images/dotfiles-about.png"></a>
+<a href="#wrench--setup"><img width="190px" src="./assets/images/dotfiles-setup.png"></a>
+<a href="#camera--gallery"><img width="190px" src="./assets/images/dotfiles-gallery.png"></a>
+<a href="#tada--credits"><img width="190px" src="./assets/images/dotfiles-credits.png"></a>
 
 </div>
 
@@ -17,7 +17,7 @@
 
 </div>
 
-## :herb: <samp>About</samp>
+## :herb: ‎ <samp>About</samp>
 
 Hey there! :wave:
 
@@ -116,7 +116,7 @@ Here is some _small_ information about my setup:
 
 </details>
 
-## :wrench: <samp>Setup</samp>
+## :wrench: ‎ <samp>Setup</samp>
 
 #### :package: <samp>Automatic Installation (Arch Linux)</samp>
 
@@ -130,7 +130,7 @@ Here is some _small_ information about my setup:
 
 ##### WIP
 
-## :camera: <samp>Gallery</samp>
+## :camera: ‎ <samp>Gallery</samp>
 
 ![overview-1](./assets/images/overview-1.png)
 ![overview-2](./assets/images/overview-2.png)
@@ -144,7 +144,7 @@ Here is some _small_ information about my setup:
 
 > :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP)
 
-## :tada: <samp>Credits</samp>
+## :tada: ‎ <samp>Credits</samp>
 
 Big thanks to everyone at r/unixporn for inspiring me to make this!
 
