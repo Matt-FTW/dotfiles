@@ -5,7 +5,7 @@ plugins = ["scratchpads", "expose", "magnify"]
 command = "pavucontrol"
 unfocus = "hide"
 animation = "fromLeft"
-margin = 20
+position = "1% 8%"
 lazy = true
 
 [scratchpads.terminal]
