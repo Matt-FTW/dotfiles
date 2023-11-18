@@ -12,7 +12,7 @@ function fish_user_key_bindings
     bind \e\cw rga-fzf
     bind \e\z cdzi
     bind \e\cn navi
-    bind \e\cr zellij-runner
+    bind \e\cr repos
     bind \e\[Z switch_kitty_tab
     bind \e\ce fe
 end
