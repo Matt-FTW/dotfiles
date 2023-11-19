@@ -23,6 +23,7 @@ bitwarden-cli-bin
 blender
 blueman
 bluez-utils
+bob
 brave-bin
 bridge-utils
 btop

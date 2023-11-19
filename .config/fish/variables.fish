@@ -30,10 +30,11 @@ fish_add_path /usr/bin
 fish_add_path /usr/sbin
 fish_add_path /bin
 fish_add_path /sbin
-fish_add_path /usr/lib/rustup/bin/
-fish_add_path /usr/lib/go/bin/
+fish_add_path /usr/lib/rustup/bin
+fish_add_path /usr/lib/go/bin
 fish_add_path $HOME/.dotnet/tools
 fish_add_path $BUN_INSTALL/bin
+fish_add_path $XDG_DATA_HOME/bob/nvim-bin
 
 # Editor
 set -xg EDITOR nvim
