@@ -68,7 +68,7 @@
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
     "plugins.extras.lsp.lsp-extended",
-    "plugins.extras.lsp.timeout",
+    "plugins.extras.lsp.garbage-day",
     "plugins.extras.ui.alpha",
     "plugins.extras.ui.block",
     "plugins.extras.ui.breadcrumbs",
@@ -93,3 +93,4 @@
   },
   "version": 2
 }
+

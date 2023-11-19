@@ -47,7 +47,7 @@ case $app in
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
 		hyprctl dispatch exec [workspace 13] kitty
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec "[workspace 24] kitty --class center-float"
+		hyprctl dispatch exec "[workspace 24] kitty --class center-float-large"
 	else
 		kitty
 	fi

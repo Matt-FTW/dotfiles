@@ -1,17 +1,31 @@
 #!/bin/sh
 
+function have {
+	command -v "$1" &>/dev/null
+}
+
 # Because Git submodule commands cannot operate without a work tree, they must
 # be run from within $HOME (assuming this is the root of your dotfiles)
-cd "$HOME"
-
+cd "$HOME" || exit
 echo "Init submodules"
 yadm submodule update --recursive --init
 
 system_type=$(lsb_release -s -d | tr -d '"')
 
 if [[ $system_type == "Arch Linux" ]]; then
-    # Install System Tools and Configurations
-    ansible-galaxy collection install kewlfft.aur
-    ansible-playbook -v -u $USER -K playbook_system_arch.yml
-    ansible-playbook -v -u $USER -K playbook_packages_arch.yml
+	have ansible || sudo pacman -S ansible
+
+  # Install requirements
+  ansible-galaxy install -r ~/.config/ansible/requirements.yml
+
+	# Install System Tools and Configurations
+  ansible-playbook -i ~/.config/ansible/inventory ~/.config/ansible/arch.yml --ask-become-pass
+elif [[ $system_type == "Debian" ]]; then
+  have ansible || sudo apt install ansible
+
+  # Install requirements
+  ansible-galaxy install -r ~/.config/yadm/requirements.yml
+
+  # Install System Tools and Configurations
+  ansible-playbook -i ./inventory ./debian.yml --ask-become-pass
 fi

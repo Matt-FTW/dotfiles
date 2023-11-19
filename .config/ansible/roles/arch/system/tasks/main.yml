@@ -1,0 +1,9 @@
+- name: System Tasks
+  hosts: all
+  become: true
+  block:
+    - name: System Tasks
+      include_tasks: system.yml
+
+    - name: System Services Tasks
+      include_tasks: services.yml

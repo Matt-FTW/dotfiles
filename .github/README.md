@@ -121,7 +121,7 @@ Here is some _small_ information about my setup:
 - **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) :sparkles:
 - **Font**: [Jetbrains Mono Nerd](https://www.jetbrains.com/es-es/lp/mono/)
 - **Dotfiles Manager**: [yadm](https://yadm.io/) :sparkles: ([Config](../.config/yadm/)) :gear:
-- **Automatic System Deployment**: [Ansible](https://www.ansible.com/)
+- **Automatic System Deployment**: [Ansible](https://www.ansible.com/) :sparkles: ([Config](../.config/ansible/)) :gear:
 
 </details>
 

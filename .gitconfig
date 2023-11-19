@@ -29,6 +29,8 @@
   blame = diff-so-fancy | less --tabs=4 -RFX
 [diff]
   colorMoved = default
+[pull]
+	rebase = false
 [commit]
 	gpgsign = true
 [gpg]

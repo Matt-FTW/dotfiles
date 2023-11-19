@@ -1,0 +1,17 @@
+- name: Ask user for type of install
+  hosts: all
+  become: true
+
+  vars_prompt:
+    - name: install_input
+      prompt: "What type of install do you want?"
+      choices:
+        - "minimal"
+        - "full"
+      default: "minimal"
+      private: no
+
+  block:
+    - name: Install packages for the system
+      include_tasks: "{{ install_input }}.yml"
+  when: install_input is defined
