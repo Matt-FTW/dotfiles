@@ -1,0 +1,50 @@
+# PACMAN
+- name: Install Pacman Packages
+  pacman:
+    name:
+      - dbeaver
+      - diff-so-fancy
+      - fzf
+      - lazygit
+      - neovide
+      - neovim
+      - npm
+      - bob
+      - onefetch
+      - ripgrep
+      - ripgrep-all
+      - sd
+      - yarn
+      - rustup
+      - python-pip
+      - python-pipx
+      - git
+      - github-cli
+      - luarocks
+      - nodejs
+
+# AUR
+- name: Install AUR Packages
+  become: true
+  become_user: aur_builder
+  aur:
+    use: yay
+    name:
+      - lazynpm
+      - scc-bin
+      - tgpt-bin
+      - visual-studio-code-bin
+
+# Cargo
+- name: Install Rust Packages
+  cargo:
+    name:
+      - cargo-update
+
+# Npm
+- name: Install Npm Packages
+  npm:
+    name:
+      - commitizen
+      - cz-git
+    global: true

@@ -1,0 +1,41 @@
+# PACMAN
+- name: Install Pacman Packages
+  pacman:
+    name:
+      # Launchers
+      - steam
+
+      # Emulators
+      - retroarch
+
+      # Tools
+      - gamemode
+
+# AUR
+- name: Install AUR Packages
+  become: true
+  become_user: aur_builder
+  aur:
+    use: yay
+    name:
+      # Launchers
+      - heroic-games-launcher
+      - atlauncher-bin
+
+      # Emulators
+      - dolphin-emu
+      - cemu-bin
+      - duckstation-git
+      - gzdoom
+      - rpcs3-bin
+      - ryujinx-bin
+      - pcsx2-latest-bin
+      - xemu-bin
+
+      # Tools
+      - proton-ge-custom-bin
+      - vkbasalt
+      - ludusavi
+
+      # Others
+      - adwsteamgtk
