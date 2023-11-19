@@ -141,7 +141,6 @@ nemo-image-converter
 nemo-python
 neofetch
 neovide
-neovim-nightly-bin
 net-tools
 network-manager-applet
 networkmanager
@@ -328,7 +327,7 @@ wpa_supplicant
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdotool
-xemu
+xemu-bin
 xf86-video-amdgpu
 xf86-video-vesa
 xorg-bdftopcf
@@ -385,6 +384,5 @@ ytdlp-gui
 zarchive-git
 zathura
 zathura-pdf-mupdf
-zellij
 zoxide
 zsh
