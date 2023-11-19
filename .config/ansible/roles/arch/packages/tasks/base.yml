@@ -1,7 +1,6 @@
 # PACMAN
 - name: Install Pacman Packages
   pacman:
-    update_cache: yes
     name:
       # Base / Core
       - amd-ucode
