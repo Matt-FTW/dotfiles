@@ -3,6 +3,7 @@
   pacman:
     update_cache: yes
     name:
+      # Open Source
       - xf86-video-amdgpu
       - vulkan-radeon
       - lib32-vulkan-radeon
@@ -11,3 +12,7 @@
       - mesa
       - mesa-vdpau
       - lib32-mesa-vdpau
+
+      # Propietary
+      - amf-amdgpu-pro
+      - xf86-video-amdgpu

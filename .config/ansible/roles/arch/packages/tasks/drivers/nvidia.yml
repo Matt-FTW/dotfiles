@@ -6,3 +6,4 @@
       - nvidia
       - nvidia-utils
       - nvidia-settings
+      - opencl-nvidia
