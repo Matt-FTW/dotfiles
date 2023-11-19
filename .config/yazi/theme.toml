@@ -36,8 +36,8 @@ syntect_theme = "~/.config/bat/themes/Catppuccin-macchiato.tmTheme"
 # : Status {{{
 
 [status]
-separator_open = ""
-separator_close = ""
+separator_open = ""
+separator_close = ""
 separator_style = { fg = "#494d64", bg = "#494d64" }
 
 # Mode
