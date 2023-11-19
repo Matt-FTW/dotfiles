@@ -54,6 +54,7 @@
     "plugins.extras.formatting.rustfmt",
     "plugins.extras.formatting.rustywind",
     "plugins.extras.formatting.sqlfmt",
+    "plugins.extras.lang.ansible",
     "plugins.extras.lang.bash",
     "plugins.extras.lang.git",
     "plugins.extras.lang.markdown-extended",
@@ -65,10 +66,10 @@
     "plugins.extras.linting.pylint",
     "plugins.extras.linting.shellcheck",
     "plugins.extras.lsp.compiler",
+    "plugins.extras.lsp.garbage-day",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
     "plugins.extras.lsp.lsp-extended",
-    "plugins.extras.lsp.garbage-day",
     "plugins.extras.ui.alpha",
     "plugins.extras.ui.block",
     "plugins.extras.ui.breadcrumbs",
@@ -93,4 +94,3 @@
   },
   "version": 2
 }
-

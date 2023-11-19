@@ -3,6 +3,10 @@
   pacman:
     update_cache: yes
     name:
+      # Base / Core
+      - amd-ucode
+      - intel-ucode
+
       - android-file-transfer
       - android-tools
       - baobab
@@ -68,8 +72,26 @@
       - zathura-pdf-mupdf
 
 # AUR
+- name: Create the `aur_builder` user
+  become: true
+  ansible.builtin.user:
+    name: aur_builder
+    create_home: yes
+    group: wheel
+
+- name: Allow the `aur_builder` user to run `sudo pacman` without a password
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/sudoers.d/11-install-aur_builder
+    line: "aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman"
+    create: yes
+    validate: "visudo -cf %s"
+
 - name: Install AUR Packages
-  kewlfft.aur.aur:
+  become: true
+  become_user: aur_builder
+  aur:
+    use: yay
     name:
       - amf-amdgpu-pro
       - activitywatch-bin
@@ -133,3 +155,17 @@
       - youtube-dl
       - ytdlp-gui
       - zarchive-git
+
+# Cargo
+- name: Install Rust Packages
+  cargo:
+    name:
+      - cargo-update
+
+# Npm
+- name: Install Npm Packages
+  npm:
+    name:
+      - commitizen
+      - cz-git
+    global: true
