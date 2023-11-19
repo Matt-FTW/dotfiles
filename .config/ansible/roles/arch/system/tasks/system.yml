@@ -1,0 +1,97 @@
+# First update the system
+- name: update arch
+  pacman:
+    update_cache: yes
+    upgrade: yes
+
+# YAY
+- name: disable need for password for pacman to allow yay install
+  lineinfile:
+    path: /etc/sudoers.d/temp_allow_no_pswd_pacman
+    state: present
+    line: "ALL ALL=NOPASSWD: /usr/bin/pacman"
+    validate: /usr/sbin/visudo -cf %s
+    create: yes
+
+- name: git clone yay-bin repo in to /tmp
+  become: false
+  git:
+    repo: "https://aur.archlinux.org/yay-bin.git"
+    dest: /tmp/yay-bin
+    clone: yes
+
+- name: install yay using makepkg
+  become: false
+  expect:
+    chdir: /tmp/yay-bin
+    command: makepkg -si
+    responses:
+      (?i)Proceed with installation: "y"
+
+- name: re-enable need for password for pacman
+  file:
+    path: /etc/sudoers.d/temp_allow_no_pswd_pacman
+    state: absent
+
+# PACMAN-PACKAGES
+- name: pacman - enable color
+  lineinfile:
+    path: /etc/pacman.conf
+    regexp: "^#Color$"
+    line: "Color"
+
+- name: pacman - enable ParallelDownloads = 5
+  lineinfile:
+    path: /etc/pacman.conf
+    regexp: "#ParallelDownloads = 5"
+    line: "ParallelDownloads = 5"
+
+- name: makepkg - disable compression
+  lineinfile:
+    path: /etc/makepkg.conf,
+    regexp: "PKGEXT='.pkg.tar.zst'"
+    line: "PKGEXT='.pkg.tar'"
+
+- name: makepkg - enable parallel compilation MAKEFLAGS="-j$(nproc)"
+  lineinfile:
+    path: /etc/makepkg.conf
+    regexp: '#MAKEFLAGS="-j2"'
+    line: 'MAKEFLAGS="-j$(nproc)"'
+
+# FISH
+- name: intall fish, fisher and other tools
+  pacman:
+    name:
+      - fish
+      - fisher
+      - atuin
+      - zoxide
+      - thefuck
+      - starship
+      - vivid
+
+- name: change default shell to fish for the local user
+  user:
+    name: "{{ ansible_user }}"
+    shell: /usr/bin/fish
+
+# OTHER
+- name: fstab change relatime to noatime
+  replace:
+    path: /etc/fstab
+    regexp: "relatime"
+    replace: "noatime"
+
+- name: change number of failed logins that triger 10min lockout
+  lineinfile:
+    path: /etc/security/faillock.conf
+    regexp: "^# deny = 3$"
+    line: "deny = 10"
+
+- name: enable members of wheel group to sudo
+  lineinfile:
+    path: /etc/sudoers.d/01_wheel_allow_sudo
+    state: present
+    line: "%wheel ALL=(ALL:ALL) ALL"
+    validate: /usr/sbin/visudo -cf %s
+    create: yes
