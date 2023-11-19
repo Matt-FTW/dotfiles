@@ -36,7 +36,6 @@
     "plugins.extras.editor.color",
     "plugins.extras.editor.docs.devdocs",
     "plugins.extras.editor.git.diffview",
-    "plugins.extras.editor.git.git-conflict",
     "plugins.extras.editor.git.github",
     "plugins.extras.editor.git.worktree",
     "plugins.extras.editor.harpoon",

@@ -132,7 +132,6 @@ return {
       { "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
       { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
       { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
-      { "<leader>gC", "<cmd>Telescope git_commits<CR>", desc = "Commits" },
       {
         "<leader>ssa",
         Util.telescope("lsp_document_symbols", {

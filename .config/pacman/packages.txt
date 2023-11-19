@@ -37,6 +37,7 @@ cliphist
 cpupower
 dbeaver
 devify
+dex
 dialog
 dictd
 diff-so-fancy
@@ -96,6 +97,7 @@ inotify-tools
 iptables-nft
 jmtpfs
 kitty
+krita
 kvantum
 lazydocker
 lazygit
