@@ -58,6 +58,15 @@
     regexp: '#MAKEFLAGS="-j2"'
     line: 'MAKEFLAGS="-j$(nproc)"'
 
+- name: add multilib repo
+  become: true
+  ini_file:
+    path: /etc/pacman.conf
+    section: "multilib"
+    option: "Include"
+    value: "/etc/pacman.d/mirrorlist"
+  notify: update_repos
+
 - name: Create hooks directory
   become: true
   file:
