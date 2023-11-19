@@ -62,6 +62,7 @@ Here is some _small_ information about my setup:
 - **Color Picker**: [Hyprpicker](https://github.com/hyprwm/hyprpicker)
 - **Recording Tool**: [wf-recorder](https://github.com/ammen99/wf-recorder)
 - **Screenshot Tool**: [Hyprshot](https://github.com/Gustash/Hyprshot)
+- **Screenshot Editor**: [Swappy](https://github.com/jtheoof/swappy) ([Config](../.config/swappy/)) :gear:
 - **Logout Menu**: [wleave](https://github.com/AMNatty/wleave) ([Config](../.config/wleave/)) :gear:
 
 </details>

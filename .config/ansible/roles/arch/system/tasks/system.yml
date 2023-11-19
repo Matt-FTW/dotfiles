@@ -58,6 +58,19 @@
     regexp: '#MAKEFLAGS="-j2"'
     line: 'MAKEFLAGS="-j$(nproc)"'
 
+- name: Create hooks directory
+  become: true
+  file:
+    path: /etc/pacman.d/hooks
+    state: directory
+
+- name: Move hooks
+  become: true
+  synchronize:
+    src: ~/.config/pacman/hooks/
+    dest: /etc/pacman.d/hooks/
+  delegate_to: localhost
+
 # FISH
 - name: intall fish, fisher and other tools
   pacman:

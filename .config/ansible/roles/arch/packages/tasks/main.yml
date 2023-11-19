@@ -1,9 +1,10 @@
-- name: Ask user for type of install
+- name: Ask user for type of install and GPU drivers
   hosts: all
   become: true
+  gather_facts: false
 
   vars_prompt:
-    - name: install_input
+    - name: install_choise
       prompt: "What type of install do you want?"
       choices:
         - "minimal"
@@ -11,7 +12,19 @@
       default: "minimal"
       private: no
 
+    - name: gpu_driver_choice
+      prompt: "What drivers do you want for your gpu?"
+      choices:
+        - "NVIDIA"
+        - "AMD"
+        - "Intel"
+      private: no
+
   block:
     - name: Install packages for the system
-      include_tasks: "{{ install_input }}.yml"
-  when: install_input is defined
+      include_tasks: "{{ install_choice }}.yml"
+      when: install_choice is defined
+
+    - name: Install GPU drivers
+      include_tasks: "drivers/{{ gpu_driver_choice | lower }}.yml"
+      when: gpu_driver_choice is defined

@@ -1,0 +1,13 @@
+- name: Install Intel Drivers
+  become: true
+  pacman:
+    update_cache: yes
+    name:
+      - xf86-video-intel
+      - vulkan-intel
+      - libva-intel-driver
+      - lib32-vulkan-intel
+      - lib32-libva-intel-driver
+      - mesa
+      - mesa-vdpau
+      - lib32-mesa-vdpau
