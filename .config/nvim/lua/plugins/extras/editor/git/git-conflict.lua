@@ -4,21 +4,22 @@ return {
     opts = {
       default_mappings = false,
     },
+    version = "v1.0.0",
+    cmd = { "GitConflictChooseTheirs", "GitConflictChooseOurs", "GitConflictChooseBoth", "GitConflictListQf" },
     keys = {
-      { "<leader>gct", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
-      { "<leader>gco", "<cmd>GitConflictChooseOurs<cr>", desc = "Choose Our Changes" },
-      { "<leader>gcb", "<cmd>GitConflictChooseBoth<cr>", desc = "Choose Both changes" },
-      { "<leader>gcl", "<cmd>GitConflictListQf<cr>", desc = "Git Conflict Quicklist" },
+      { "<leader>gCt", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
+      { "<leader>gCo", "<cmd>GitConflictChooseOurs<cr>", desc = "Choose Our Changes" },
+      { "<leader>gCb", "<cmd>GitConflictChooseBoth<cr>", desc = "Choose Both changes" },
+      { "<leader>gCl", "<cmd>GitConflictListQf<cr>", desc = "Git Conflict Quicklist" },
       { "[g", "<cmd>GitConflictPrevConflict<cr>", desc = "Prev Git Conflict" },
       { "]g", "<cmd>GitConflictPrevConflict<cr>", desc = "Next Git Conflict" },
     },
-
-    {
-      "folke/which-key.nvim",
-      opts = {
-        defaults = {
-          ["<leader>gc"] = { name = "+conflicts" },
-        },
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>gC"] = { name = "+conflicts" },
       },
     },
   },
