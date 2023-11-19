@@ -199,7 +199,7 @@
       "source": "auto",
       "stereo": true,
       "waves": false,
-      "on-click": "kitty --class center-float-large-mini cava",
+      "on-click": "kitty --class center-float-mini cava",
       "on-click-right": "qpwgraph"
     },
     "custom/music": {
