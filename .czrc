@@ -54,7 +54,8 @@
     {
       "value": "📁 files",
       "name": "📁 files:    Changes in files or directories"
-    }
+    },
+    { "value": "🔀 merge", "name": "🔀 merge:   Merge branch or pull request" }
   ],
   "allowCustomScopes": true,
   "allowBreakingChanges": ["✨ feat", "🐛 fix"]
