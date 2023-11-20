@@ -46,6 +46,7 @@ x-scheme-handler/about=librewolf.desktop
 x-scheme-handler/unknown=librewolf.desktop
 application/x-compressed-tar=org.gnome.FileRoller.desktop
 audio/mpeg=io.github.celluloid_player.Celluloid.desktop
+video/quicktime=io.github.celluloid_player.Celluloid.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-2BA7Q1.desktop;
@@ -100,3 +101,4 @@ application/x-pkcs12=gcr-viewer.desktop;nvim.desktop;
 application/x-asar=nvim.desktop;
 video/x-matroska=io.github.celluloid_player.Celluloid.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;
+video/quicktime=io.github.celluloid_player.Celluloid.desktop;

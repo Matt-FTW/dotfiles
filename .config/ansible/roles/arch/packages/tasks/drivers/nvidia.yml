@@ -7,3 +7,8 @@
       - nvidia-utils
       - nvidia-settings
       - opencl-nvidia
+      - lib32-nvidia-utils
+      - lib32-opencl-nvidia
+      - cuda
+      - vdpauinfo
+      - clinfo

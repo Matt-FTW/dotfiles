@@ -104,6 +104,7 @@ lazydocker
 lazygit
 lazynpm
 lib32-libnm
+lib32-opencl-clover-mesa
 lib32-vulkan-radeon
 libnma-gtk4
 libreoffice-still-es
@@ -158,6 +159,7 @@ obsidian
 ollama
 onefetch
 openbsd-netcat
+opencl-clover-mesa
 opencl-nvidia
 os-prober
 otf-aurulent-nerd
