@@ -2,8 +2,8 @@
   {
     "height": 50,
     "layer": "top",
-    "output": "DP-1",
     "mod": "dock",
+    "output": "HDMI-A-2",
     "exclusive": true,
     "passtrough": false,
     "margin-top": 10,
@@ -13,18 +13,27 @@
     "modules-left": [
       "custom/arch",
       "hyprland/workspaces",
-      "cava",
+      "custom/weather",
       "custom/wf-recorder"
     ],
-    "modules-center": ["custom/music"],
+    "modules-center": ["hyprland/window"],
     "modules-right": [
       "custom/updates",
       "hyprland/language",
-      "custom/weather",
       "clock",
       "pulseaudio",
       "custom/notifications"
     ],
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 80,
+      "rewrite": {
+        "(.*) — LibreWolf": "󰇧 $1",
+        "(.*) - Discord": "󰙯 $1",
+        "(.*) - fish": "> [$1]"
+      },
+      "separate-outputs": false
+    },
     "custom/wf-recorder": {
       "format": "{}",
       "interval": "once",
@@ -100,7 +109,7 @@
         "14": "",
         "15": "",
         "16": "🎜",
-        "17": "",
+        "17": "",
         "18": "",
         "19": "",
         "20": "",
@@ -174,60 +183,19 @@
       "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
       "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
       "on-click-middle": "easyeffects"
-    },
-    "cava": {
-      "autosens": 1,
-      "bar_delimiter": 0,
-      "bars": 18,
-      "format-icons": [
-        "<span foreground='#cba6f7'>▁</span>",
-        "<span foreground='#cba6f7'>▂</span>",
-        "<span foreground='#cba6f7'>▃</span>",
-        "<span foreground='#cba6f7'>▄</span>",
-        "<span foreground='#89b4fa'>▅</span>",
-        "<span foreground='#89b4fa'>▆</span>",
-        "<span foreground='#89b4fa'>▇</span>",
-        "<span foreground='#89b4fa'>█</span>"
-      ],
-      "framerate": 75,
-      "higher_cutoff_freq": 10000,
-      "input_delay": 5,
-      "lower_cutoff_freq": 50,
-      "method": "pipewire",
-      "monstercat": false,
-      "reverse": false,
-      "source": "auto",
-      "stereo": true,
-      "waves": false,
-      "on-click": "kitty --class center-float-mini cava",
-      "on-click-right": "qpwgraph"
-    },
-    "custom/music": {
-      "format": "{icon} {}",
-      "return-type": "json",
-      "max-length": 100,
-      "format-icons": {
-        "spotify": " ",
-        "default": " "
-      },
-      "escape": true,
-      "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
-      "on-click": "playerctl --player=spotify play-pause",
-      "on-scroll-up": "playerctl --player=spotify next",
-      "on-scroll-down": "playerctl --player=spotify previous"
     }
   },
   {
     "height": 50,
     "layer": "top",
-    "output": "HDMI-A-1",
+    "output": "DP-2",
     "margin-top": 10,
     "margin-left": 17,
     "margin-bottom": 0,
     "margin-right": 17,
     "modules-left": ["custom/arch", "hyprland/workspaces"],
     "modules-center": ["clock#cl2"],
-    "modules-right": ["tray", "custom/notifications"],
+    "modules-right": ["tray", "memory", "cpu", "custom/notifications"],
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
@@ -276,7 +244,7 @@
         "14": "",
         "15": "",
         "16": "🎜",
-        "17": "",
+        "17": "",
         "18": "",
         "19": "",
         "20": "",
@@ -324,105 +292,6 @@
         "on-scroll-up": "shift_up",
         "on-scroll-down": "shift_down"
       }
-    }
-  },
-  {
-    "height": 50,
-    "position": "bottom",
-    "layer": "top",
-    "output": "DP-3",
-    "margin-left": 17,
-    "margin-bottom": 10,
-    "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": [
-      "memory",
-      "cpu",
-      "temperature",
-      "custom/gpu-usage",
-      "custom/gpu-temp",
-      "custom/notifications"
-    ],
-    "hyprland/window": {
-      "format": "{}",
-      "max-length": 80,
-      "rewrite": {
-        "(.*) — LibreWolf": "󰇧 $1",
-        "(.*) - Discord": "󰙯 $1",
-        "(.*) - fish": "> [$1]"
-      },
-      "separate-outputs": false
-    },
-    "custom/arch": {
-      "format": "  ",
-      "tooltip": false,
-      "on-click": "wleave",
-      "on-click-right": "wleave"
-    },
-    "custom/notifications": {
-      "tooltip": false,
-      "format": "{} {icon}",
-      "format-icons": {
-        "notification": "<span foreground='red'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
-      },
-      "return-type": "json",
-      "exec-if": "which swaync-client",
-      "exec": "swaync-client -swb",
-      "on-click": "swaync-client -t -sw",
-      "on-click-right": "swaync-client -d -sw",
-      "escape": true
-    },
-    "hyprland/workspaces": {
-      "disable-scroll": true,
-      "active-only": false,
-      "all-outputs": false,
-      "enable-bar-scroll": true,
-      "format": "{icon}",
-      "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "🖵",
-        "4": "",
-        "5": "",
-        "6": "🎜",
-        "7": "",
-        "8": "",
-        "9": "",
-        "10": "",
-        "11": "",
-        "12": "",
-        "13": "🖵",
-        "14": "",
-        "15": "",
-        "16": "🎜",
-        "17": "",
-        "18": "",
-        "19": "",
-        "20": "",
-        "21": "",
-        "22": "󰍨",
-        "23": "✉",
-        "24": "🖵",
-        "25": "",
-        "26": "",
-        "27": "",
-        "28": "",
-        "29": "",
-        "30": "",
-        "default": "󰈙"
-      },
-      "on-scroll-up": "hyprctl dispatch workspace r-1",
-      "on-scroll-down": "hyprctl dispatch workspace r+1",
-      "on-click": "activate",
-      "sort-by-number": true
     },
     "cpu": {
       "on-click": "kitty --class center-float-large btop",
@@ -430,34 +299,10 @@
       "tooltip": false,
       "interval": 2
     },
-    "custom/gpu-usage": {
-      "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
-      "on-click": "kitty --class center-float-large nvtop",
-      "format": "GPU: {}%",
-      "return-type": "",
-      "interval": 2
-    },
     "memory": {
       "format": "{}%  ",
       "on-click": "kitty --class center-float-large btop",
       "tooltip": true,
-      "interval": 2
-    },
-    "temperature": {
-      "critical-threshold": 80,
-      "on-click": "kitty --class center-float-large btop",
-      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-      "format-critical": "{icon} {temperatureC}°C",
-      "format": "{icon} {temperatureC}°C",
-      "format-icons": ["", "", ""],
-      "tooltip": true,
-      "interval": 2
-    },
-    "custom/gpu-temp": {
-      "exec": "cat /sys/class/hwmon/hwmon1/temp1_input | cut -b 1-2",
-      "on-click": "kitty --class center-float-large nvtop",
-      "format": " {}°C",
-      "return-type": "",
       "interval": 2
     }
   }
