@@ -35,3 +35,10 @@ animation = "fromRight"
 unfocus = "hide"
 margin = 20
 lazy = true
+
+# [scratchpads.localsend]
+# command = "localsend"
+# animation = "fromRight"
+# unfocus = "hide"
+# margin = 20
+# lazy = true
