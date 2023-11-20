@@ -7,7 +7,9 @@
       - vulkan-intel
       - libva-intel-driver
       - lib32-vulkan-intel
+      - vulkan-tools
       - lib32-libva-intel-driver
       - mesa
+      - lib32-mesa
       - mesa-vdpau
       - lib32-mesa-vdpau
