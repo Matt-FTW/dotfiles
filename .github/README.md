@@ -159,7 +159,7 @@ I wanna point out some resources that helped me the most with the setup:
 
 Those were the biggest inspiring factor for me, though you can find a lot more of setups that helped me in my List of Dotfiles from the **Stars** section of my Github Profile: [Check it out!](https://github.com/stars/Matt-FTW/lists/paintbrush-theming-dots)
 
-## ⭐ Star History
+## :star: ‎ <samp>Star History</samp>
 
 Thanks to everyone who gave a star to this project! ❤️
 
