@@ -101,7 +101,7 @@
 	ls = ls-files
 	lsf = !git ls-files | grep -i
 	#############
-	m = merge
+	mm = merge --no-ff -m "🔀 merge: Merge branch '$(git symbolic-ref --short HEAD)' into '$(git branch --show-current)'"
 	ma = merge --abort
 	mc = merge --continue
 	ms = merge --skip
