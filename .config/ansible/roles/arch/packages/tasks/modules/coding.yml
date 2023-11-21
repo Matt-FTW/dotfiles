@@ -7,9 +7,8 @@
       - fzf
       - lazygit
       - neovide
-      - neovim
       - npm
-      - bob
+      - bob # Neovim version manager
       - onefetch
       - ripgrep
       - ripgrep-all

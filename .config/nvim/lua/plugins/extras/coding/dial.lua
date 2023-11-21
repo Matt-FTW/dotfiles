@@ -1,24 +1,9 @@
 return {
   "monaqa/dial.nvim",
-  event = "VeryLazy",
-  -- splutylua: ignore
+  -- stylua: ignore
   keys = {
-    {
-      "<C-a>",
-      function()
-        return require("dial.map").inc_normal()
-      end,
-      expr = true,
-      desc = "Increment",
-    },
-    {
-      "<C-x>",
-      function()
-        return require("dial.map").dec_normal()
-      end,
-      expr = true,
-      desc = "Decrement",
-    },
+    { "<A-a>", function() return require("dial.map").inc_normal() end, expr = true, desc = "Increment" },
+    { "<A-x>", function() return require("dial.map").dec_normal() end, expr = true, desc = "Decrement" },
   },
   config = function()
     local augend = require("dial.augend")

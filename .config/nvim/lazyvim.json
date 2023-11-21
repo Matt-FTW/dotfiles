@@ -24,6 +24,7 @@
     "plugins.extras.coding.ai.codeium",
     "plugins.extras.coding.ai.gpt",
     "plugins.extras.coding.annotation",
+    "plugins.extras.coding.boole",
     "plugins.extras.coding.debug.debugprint",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.multicursor",
@@ -45,6 +46,7 @@
     "plugins.extras.editor.rayso",
     "plugins.extras.editor.regex",
     "plugins.extras.editor.rest-client",
+    "plugins.extras.editor.search-replace",
     "plugins.extras.editor.smart-splits",
     "plugins.extras.editor.suda",
     "plugins.extras.editor.telescope.repo",
@@ -86,6 +88,7 @@
     "plugins.extras.ui.zen-mode",
     "plugins.extras.util.bigfile",
     "plugins.extras.util.discordrcp",
+    "plugins.extras.util.icon-picker",
     "plugins.extras.util.vim-be-good",
     "plugins.extras.util.wakatime"
   ],

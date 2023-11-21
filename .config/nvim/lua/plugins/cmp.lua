@@ -11,13 +11,7 @@ return {
         "amarakon/nvim-cmp-fonts",
       },
       {
-        "hrsh7th/cmp-emoji",
-      },
-      {
         "lukas-reineke/cmp-under-comparator",
-      },
-      {
-        "chrisgrieser/cmp-nerdfont",
       },
       {
         "lukas-reineke/cmp-rg",
