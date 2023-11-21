@@ -46,6 +46,7 @@
     "plugins.extras.editor.rayso",
     "plugins.extras.editor.regex",
     "plugins.extras.editor.rest-client",
+    "plugins.extras.editor.search-replace",
     "plugins.extras.editor.smart-splits",
     "plugins.extras.editor.suda",
     "plugins.extras.editor.telescope.repo",
