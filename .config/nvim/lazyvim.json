@@ -24,6 +24,7 @@
     "plugins.extras.coding.ai.codeium",
     "plugins.extras.coding.ai.gpt",
     "plugins.extras.coding.annotation",
+    "plugins.extras.coding.boole",
     "plugins.extras.coding.debug.debugprint",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.multicursor",
