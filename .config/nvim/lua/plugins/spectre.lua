@@ -6,8 +6,8 @@ return {
     -- stylua: ignore
     keys = {
       { "<leader>srg", function() require("spectre").toggle() end, desc = "Globally" },
-      { "<leader>srW", mode = { "n" }, function() require("spectre").open_visual({ select_word = true }) end, desc = "Word Globally" },
-      { "<leader>srW", mode = { "v" }, function() require("spectre").open_visual() end, desc = "Word Globally" },
+      { "<leader>srG", mode = { "n" }, function() require("spectre").open_visual({ select_word = true }) end, desc = "Word Globally" },
+      { "<leader>srG", mode = { "v" }, function() require("spectre").open_visual() end, desc = "Word Globally" },
     },
   },
   {

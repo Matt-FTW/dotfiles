@@ -10,8 +10,11 @@ return {
   { "<C-s>", "<CMD>SearchReplaceWithinVisualSelection<CR>", desc = "Search and Replace Within Visual Selection", mode = "v" },
   { "<C-b>", "<CMD>SearchReplaceWithinVisualSelectionCWord<CR>", desc = "Search and Replace Within Visual Selection (Current Word)", mode = "v" },
 
-  {  "<leader>srw", "<CMD>SearchReplaceSingleBufferSelections<CR>", desc = "Word on Buffer", mode = "n" },
   {  "<leader>srb", "<CMD>SearchReplaceSingleBufferOpen<CR>", desc = "Buffer", mode = "n" },
+  {  "<leader>srw", "<CMD>SearchReplaceSingleBufferCWord<CR>", desc = "Word on Buffer", mode = "n" },
+  {  "<leader>srW", "<CMD>SearchReplaceSingleBufferCWORD<CR>", desc = "WORD on Buffer", mode = "n" },
+  {  "<leader>sre", "<CMD>SearchReplaceSingleBufferCExpr<CR>", desc = "Expression on Buffer", mode = "n" },
+  {  "<leader>srf", "<CMD>SearchReplaceSingleBufferCFile<CR>", desc = "File on Buffer", mode = "n" },
 
   -- { "n", "<leader>rbs", "<CMD>SearchReplaceMultiBufferSelections<CR>", desc = "Search and Replace in Multi Buffer Selections" },
   -- { "n", "<leader>rbo", "<CMD>SearchReplaceMultiBufferOpen<CR>", desc = "Search and Replace in Multi Buffer, Open" },
