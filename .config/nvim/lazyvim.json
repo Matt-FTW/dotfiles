@@ -48,6 +48,7 @@
     "plugins.extras.editor.rest-client",
     "plugins.extras.editor.search-replace",
     "plugins.extras.editor.smart-splits",
+    "plugins.extras.editor.ssr",
     "plugins.extras.editor.suda",
     "plugins.extras.editor.telescope.repo",
     "plugins.extras.editor.telescope.undotree",
