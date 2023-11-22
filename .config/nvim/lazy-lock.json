@@ -124,7 +124,7 @@
   "ssr.nvim": { "branch": "main", "commit": "bb323ba621ac647b4ac5638b47666e3ef3c279e1" },
   "suda.vim": { "branch": "master", "commit": "8b0fc3711760195aba104e2d190cff9af8267052" },
   "symbols-outline.nvim": { "branch": "master", "commit": "512791925d57a61c545bc303356e8a8f7869763c" },
-  "tailwindcss-colorizer-cmp.nvim": { "branch": "main", "commit": "bc25c56083939f274edcfe395c6ff7de23b67c50" },
+  "tabscope.nvim": { "branch": "main", "commit": "cba52d18fbb1171cd92c7baf916e98fb720d6ae0" },
   "telescope-all-recent.nvim": { "branch": "main", "commit": "766d79bedf8dd59c2d0a944a7cf3c98795ab5f07" },
   "telescope-dap.nvim": { "branch": "master", "commit": "4e2d5efb92062f0b865fe59b200b5ed7793833bf" },
   "telescope-floaterm.nvim": { "branch": "main", "commit": "ccd3f40ae30dce5de0e5d0f5069e08e7d9ad6d23" },

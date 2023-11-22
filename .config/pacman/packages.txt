@@ -305,6 +305,7 @@ ttf-victor-mono-nerd
 tty-clock-git
 tumbler
 udiskie
+ueberzug
 ufw
 unimatrix-git
 universal-android-debloater-bin
