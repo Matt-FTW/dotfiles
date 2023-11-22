@@ -6,4 +6,11 @@ return {
       vim.list_extend(opts.ensure_installed, { "stylelint" })
     end,
   },
+  {
+    "MaximilianLloyd/tw-values.nvim",
+    keys = {
+      { "<leader>cT", "<cmd>TWValues<cr>", desc = "Tailwind CSS values" },
+    },
+    opts = {},
+  },
 }
