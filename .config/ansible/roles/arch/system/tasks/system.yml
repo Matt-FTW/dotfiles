@@ -117,3 +117,6 @@
     line: "%wheel ALL=(ALL:ALL) ALL"
     validate: /usr/sbin/visudo -cf %s
     create: yes
+# SDDM
+
+# GRUB
