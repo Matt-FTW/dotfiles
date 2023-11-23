@@ -10,11 +10,5 @@ return {
       "<cmd>IconPickerNormal<cr>",
       desc = "Icons",
     },
-    {
-      "<C-i>",
-      "<cmd>IconPickerInsert<cr>",
-      mode = { "i" },
-      desc = "Insert Icon",
-    },
   },
 }
