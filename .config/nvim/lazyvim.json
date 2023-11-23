@@ -76,7 +76,6 @@
     "plugins.extras.ui.alpha",
     "plugins.extras.ui.block",
     "plugins.extras.ui.breadcrumbs",
-    "plugins.extras.ui.colorschemes.catppuccin",
     "plugins.extras.ui.edgy",
     "plugins.extras.ui.highlight-undo",
     "plugins.extras.ui.import-cost",
@@ -98,3 +97,4 @@
   },
   "version": 2
 }
+
