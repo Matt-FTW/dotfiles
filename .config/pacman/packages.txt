@@ -125,7 +125,6 @@ lsp-plugins
 lua51
 luarocks
 ludusavi
-lxappearance
 m4
 maim
 make
@@ -178,6 +177,7 @@ pacgraph
 pacman-contrib
 pacseek
 pamixer
+parsec-bin
 patch
 pavucontrol
 pcsx2-latest-bin
