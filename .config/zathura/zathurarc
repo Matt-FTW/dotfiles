@@ -6,6 +6,7 @@ set pages-per-row 1
 
 # Stop at page boundries
 set scroll-page-aware "true"
+set smooth-scroll "true"
 set scroll-full-overlap 0.01
 set scroll-step 100
 
@@ -14,6 +15,7 @@ set zoom-min 10
 set guioptions ""
 
 set render-loading "false"
+set font "JetBrainsMono NF"
 unmap f
 map f toggle_fullscreen
 unmap a
@@ -22,6 +24,9 @@ map [fullscreen] f toggle_fullscreen
 
 # Colors
 set selection-clipboard clipboard
+set scroll-wrap true
+set scroll-page-aware true
+set window-title-page true
 
 set default-fg "#CAD3F5"
 set default-bg "#24273A"
