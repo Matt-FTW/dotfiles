@@ -52,7 +52,7 @@
       },
       "exec-if": "which waybar-module-pacman-updates",
       "exec": "waybar-module-pacman-updates",
-      "on-click": "kitty --class center-float-large yay -Syu",
+      "on-click": "kitty --class center-float-large topgrade -k --only system",
       "on-click-right": "kitty --class center-float-large topgrade -k --no-self-update"
     },
     "custom/arch": {
