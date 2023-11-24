@@ -11,7 +11,7 @@
     "customcss": {
         "customcss": true,
         "liveUpdate": true,
-        "openAction": "system"
+        "openAction": "detached"
     },
     "editor": {
         "lineNumbers": true,
