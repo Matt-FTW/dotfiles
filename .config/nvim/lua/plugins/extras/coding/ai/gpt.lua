@@ -96,7 +96,7 @@ return {
     keys = {
       {
         "<leader>CT",
-        "<cmd>FloatermNew --name=gpt --opener=edit --titleposition=center --width=0.85 --height=0.85 gpt<CR>",
+        "<cmd>FloatermNew --name=gpt --opener=edit --titleposition=center --width=0.85 --height=0.85 gpt -m<CR>",
         desc = "Terminal GPT",
       },
     },

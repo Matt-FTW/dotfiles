@@ -36,7 +36,7 @@
     "channelListButtonActive": "true",
     "msgBarButtonActive": "true",
     "membersListButtonActive": "true",
-    "userAreaButtonActive": "true",
+    "userAreaButtonActive": "false",
     "callContainerButtonActive": "true",
     "profilePanelButtonActive": "true",
     "disableMsgBarBtnCollapse": "false",
