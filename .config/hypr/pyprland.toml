@@ -17,7 +17,7 @@ command = "kitty --class scratchpad yazi"
 lazy = true
 
 [scratchpads.gpt]
-command = "kitty --class scratchpad tgpt -i"
+command = "kitty --class scratchpad tgpt -m"
 lazy = true
 
 [scratchpads.dots]
