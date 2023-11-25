@@ -40,7 +40,7 @@ return {
       desc = "Debug: Step out",
     },
     {
-      "<F9>",
+      "<F2>",
       function()
         require("dap").toggle_breakpoint()
       end,
