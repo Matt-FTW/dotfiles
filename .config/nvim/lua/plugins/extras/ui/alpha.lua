@@ -1,11 +1,9 @@
 return {
   "goolord/alpha-nvim",
-  event = "VimEnter",
   keys = {
     { "<leader>fa", "<cmd>Alpha<cr>", desc = "Dashboard (Alpha)" },
   },
-  opts = function()
-    local dashboard = require("alpha.themes.dashboard")
+  opts = function(_, dashboard)
     local logo = [[
                                                                    
       ████ ██████           █████      ██                    
@@ -16,53 +14,13 @@ return {
  ███████████ ███    ███ █████████ █████ █████ ████ █████ 
 ██████  █████████████████████ ████ █████ █████ ████ ██████
       ]]
-    --      local logo = [[
-    --                                              
-    --       ███████████           █████      ██
-    --      ███████████             █████ 
-    --      ████████████████ ███████████ ███   ███████
-    --     ████████████████ ████████████ █████ ██████████████
-    --    ██████████████    █████████████ █████ █████ ████ █████
-    --  ██████████████████████████████████ █████ █████ ████ █████
-    -- ██████  ███ █████████████████ ████ █████ █████ ████ ██████
-    --              ]]
-    --             local logo = [[
-    --            ▄ ▄
-    --        ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄
-    --        █ ▄ █▄█ ▄▄▄ █ █▄█ █ █
-    --     ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █
-    -- ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-    -- █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄
-    -- ▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █
-    -- █▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █
-    --     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█
-    --             ]]
 
     dashboard.section.header.val = vim.split(logo, "\n")
   -- stylua: ignore
-  dashboard.section.buttons.val = {
-    dashboard.button("f", " " .. " Find file",       "<cmd> Telescope find_files <cr>"),
-    dashboard.button("n", " " .. " New file",        "<cmd> ene <BAR> startinsert <cr>"),
-    dashboard.button("r", " " .. " Recent files",    "<cmd> Telescope oldfiles <cr>"),
-    dashboard.button("p", " " .. " Projects/Repos", "<cmd>Telescope repo list <CR>"),
-    dashboard.button("z", " " .. " Zoxide", "<cmd>Telescope zoxide list <CR>"),
-    dashboard.button("g", " " .. " Find text",       "<cmd> Telescope live_grep <cr>"),
-    dashboard.button("G", "󰊢 " .. " Git",       "<cmd>FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>"),
-    dashboard.button("c", " " .. " Config",          "<cmd> lua require('lazyvim.util').telescope.config_files()() <cr>"),
-    dashboard.button("d", "󰉦 " .. " Dotfiles",          "<cmd>FloatermNew --disposable --name=dots --opener=edit --titleposition=center --height=0.85 --width=0.85 dots<CR>"),
-    dashboard.button("s", " " .. " Restore Session", [[<cmd> lua require("persistence").load() <cr>]]),
-    dashboard.button("e", " " .. " Lazy Extras",     "<cmd> LazyExtras <cr>"),
-    dashboard.button("l", "󰒲 " .. " Lazy",            "<cmd> Lazy <cr>"),
-    dashboard.button("q", " " .. " Quit",            "<cmd> qa <cr>"),
-  }
-    for _, button in ipairs(dashboard.section.buttons.val) do
-      button.opts.hl = "AlphaButtons"
-      button.opts.hl_shortcut = "AlphaShortcut"
-    end
-    dashboard.section.header.opts.hl = "AlphaHeader"
-    dashboard.section.buttons.opts.hl = "AlphaButtons"
-    dashboard.section.footer.opts.hl = "AlphaFooter"
-    dashboard.opts.layout[1].val = 8
+    local button = dashboard.button("G", "󰊢 " .. " Git",       "<cmd>FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>")
+    button.opts.hl = "AlphaButtons"
+    button.opts.hl_shortcut = "AlphaShortcut"
+    table.insert(dashboard.section.buttons.val, 7, button)
     return dashboard
   end,
 }
