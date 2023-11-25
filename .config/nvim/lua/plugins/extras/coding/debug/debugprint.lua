@@ -8,30 +8,41 @@ return {
       {
         "<Leader>ddl",
         function()
-          require("debugprint").debugprint()
+          return require("debugprint").debugprint()
         end,
         desc = "Print under current line",
+        expr = true,
       },
       {
         "<Leader>ddL",
         function()
-          require("debugprint").debugprint({ above = true })
+          return require("debugprint").debugprint({ above = true })
         end,
         desc = "Print above current line",
+        expr = true,
       },
       {
         "<Leader>ddv",
         function()
-          require("debugprint").debugprint({ variable = true })
+          return require("debugprint").debugprint({ variable = true })
         end,
         desc = "Print variable under current line",
+        expr = true,
       },
       {
         "<Leader>ddV",
         function()
-          require("debugprint").debugprint({ above = true, variable = true })
+          return require("debugprint").debugprint({ above = true, variable = true })
         end,
         desc = "Print variable above current line",
+        expr = true,
+      },
+      {
+        "<Leader>ddd",
+        function()
+          return require("debugprint").deleteprints()
+        end,
+        desc = "Delete all prints",
       },
     },
   },
