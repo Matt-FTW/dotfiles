@@ -3,6 +3,9 @@
 # : Manager {{{
 
 [manager]
+folder_offset = [2, 0, 2, 0]
+preview_offset = [2, 1, 2, 1]
+
 cwd = { fg = "#8bd5ca" }
 
 # Hovered

@@ -71,4 +71,4 @@ bizarre_retry = 5
 enabled = false
 
 [plugins]
-preload = ["~/.config/yazi/ui.lua"]
+preload = ["~/.config/yazi/ui.lua", "~/.config/yazi/symlink.lua"]
