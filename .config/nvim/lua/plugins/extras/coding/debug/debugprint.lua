@@ -6,32 +6,32 @@ return {
     },
     keys = {
       {
-        "<Leader>dLl",
+        "<Leader>ddl",
         function()
           require("debugprint").debugprint()
         end,
-        desc = "Log under current line",
+        desc = "Print under current line",
       },
       {
-        "<Leader>dLL",
+        "<Leader>ddL",
         function()
           require("debugprint").debugprint({ above = true })
         end,
-        desc = "Log above current line",
+        desc = "Print above current line",
       },
       {
-        "<Leader>dLv",
+        "<Leader>ddv",
         function()
           require("debugprint").debugprint({ variable = true })
         end,
-        desc = "Log variable under current line",
+        desc = "Print variable under current line",
       },
       {
-        "<Leader>dLV",
+        "<Leader>ddV",
         function()
           require("debugprint").debugprint({ above = true, variable = true })
         end,
-        desc = "Log variable above current line",
+        desc = "Print variable above current line",
       },
     },
   },
@@ -39,7 +39,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>dL"] = { name = "+log" },
+        ["<leader>dd"] = { name = "+debugPrint" },
       },
     },
   },
