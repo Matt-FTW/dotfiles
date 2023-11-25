@@ -6,24 +6,6 @@ return {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       {
-        "piersolenski/telescope-import.nvim",
-        config = function(_, opts)
-          Util.on_load("telescope.nvim", function()
-            require("telescope").setup({
-              extensions = {
-                import = {
-                  insert_at_top = true,
-                },
-              },
-            })
-            require("telescope").load_extension("import")
-          end)
-        end,
-        keys = {
-          { "<leader>si", "<cmd>Telescope import<CR>", desc = "Imports" },
-        },
-      },
-      {
         "nvim-telescope/telescope-fzf-native.nvim",
         build = "make",
         enabled = vim.fn.executable("make") == 1,
@@ -33,105 +15,8 @@ return {
           end)
         end,
       },
-      {
-        "prochri/telescope-all-recent.nvim",
-        dependencies = {
-          "kkharji/sqlite.lua",
-        },
-        opts = {
-          pickers = {
-            ["workspaces.nvim#workspaces"] = {
-              disable = false,
-              sorting = "frecency",
-            },
-            ["project.nvim#projects"] = {
-              disable = false,
-              sorting = "frecency",
-            },
-            ["yanky.nvim#yank_history"] = {
-              disable = true,
-            },
-            ["zoxide.nvim#zoxide"] = {
-              disable = true,
-            },
-          },
-        },
-      },
-      {
-        "nvim-telescope/telescope-dap.nvim",
-        config = function()
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("dap")
-          end)
-        end,
-      },
-      {
-        "benfowler/telescope-luasnip.nvim",
-        config = function()
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("luasnip")
-          end)
-        end,
-      },
-      {
-        "jvgrootveld/telescope-zoxide",
-        config = function(_, opts)
-          Util.on_load("telescope.nvim", function()
-            require("telescope").setup({
-              extensions = {
-                zoxide = {
-                  mappings = {
-                    default = {
-                      after_action = function(selection)
-                        require("telescope.builtin").find_files({ cwd = selection.path })
-                      end,
-                    },
-                  },
-                },
-              },
-            })
-            require("telescope").load_extension("zoxide")
-          end)
-        end,
-      },
-      {
-        "tsakirist/telescope-lazy.nvim",
-        config = function()
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("lazy")
-          end)
-        end,
-      },
     },
     keys = {
-      {
-        "<leader>dm",
-        "<cmd>Telescope dap commands<CR>",
-        desc = "Commands",
-      },
-      {
-        "<leader>df",
-        "<cmd>Telescope dap frames<CR>",
-        desc = "Frames",
-      },
-      {
-        "<leader>dG",
-        "<cmd>Telescope dap configurations<CR>",
-        desc = "Configurations",
-      },
-      {
-        "<leader>dL",
-        "<cmd>Telescope dap list_breakpoints<CR>",
-        desc = "List Breakpoints",
-      },
-      {
-        "<leader>dv",
-        "<cmd>Telescope dap variables<CR>",
-        desc = "Variables",
-      },
-      { "<leader>fz", "<cmd>Telescope zoxide list<CR>", desc = "Zoxide" },
-      { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
-      { "<leader>sl", "<cmd>Telescope luasnip<CR>", desc = "Luasnip (Snippets)" },
       {
         "<leader>ssa",
         Util.telescope("lsp_document_symbols", {
@@ -440,14 +325,6 @@ return {
         ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
         ["<leader>ss"] = { name = "+Goto Symbols" },
       },
-    },
-  },
-  {
-    "axieax/urlview.nvim",
-    cmd = { "UrlView" },
-    keys = { { "<leader>sU", "<cmd>UrlView<cr>", desc = "Search Urls" } },
-    opts = {
-      default_picker = "telescope",
     },
   },
 }
