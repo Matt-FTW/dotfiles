@@ -69,3 +69,6 @@ bizarre_retry = 5
 
 [log]
 enabled = false
+
+[plugins]
+preload = ["~/.config/yazi/ui.lua"]
