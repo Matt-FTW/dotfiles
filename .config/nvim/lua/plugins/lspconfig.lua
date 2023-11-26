@@ -146,13 +146,8 @@ return {
     },
   },
   {
-    "smjonas/inc-rename.nvim",
-    cmd = "IncRename",
-    opts = {},
-  },
-
-  {
     "simrat39/rust-tools.nvim",
+    optional = true,
     opts = function(_, opts)
       opts.tools = {
         inlay_hints = {

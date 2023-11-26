@@ -83,6 +83,7 @@
     "plugins.extras.lsp.compiler",
     "plugins.extras.lsp.garbage-day",
     "plugins.extras.lsp.glance",
+    "plugins.extras.lsp.inc-rename",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
     "plugins.extras.ui.alpha",
