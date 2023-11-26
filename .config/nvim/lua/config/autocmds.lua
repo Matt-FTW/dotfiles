@@ -59,6 +59,7 @@ vim.api.nvim_create_autocmd("FileType", {
     "neo-tree-popup",
     "TelescopePrompt",
     "notify",
+    "floaterm",
   },
   callback = function(event)
     vim.keymap.set("n", "<leader>", "<nop>", { buffer = event.buf, desc = "" })
@@ -66,6 +67,7 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Delete number column on terminals
 vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
     vim.cmd("setlocal listchars= nonumber norelativenumber")

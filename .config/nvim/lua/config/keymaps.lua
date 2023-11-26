@@ -26,7 +26,6 @@ map("x", "<leader>?", function()
   google(vim.fn.getreg("g"), false)
 end, { desc = "Google" })
 
-map("n", "<leader>ft", "<Nop>")
 map("n", "<leader>fT", "<Nop>")
 
 map("n", "<C-d>", "<C-d>zz")

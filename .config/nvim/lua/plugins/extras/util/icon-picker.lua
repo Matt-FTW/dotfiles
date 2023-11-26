@@ -4,11 +4,8 @@ return {
   opts = {
     disable_legacy_commands = true,
   },
+  -- stylua: ignore
   keys = {
-    {
-      "<leader>sI",
-      "<cmd>IconPickerNormal<cr>",
-      desc = "Icons",
-    },
+    { "<leader>sI", "<cmd>IconPickerNormal<cr>", desc = "Icons" },
   },
 }

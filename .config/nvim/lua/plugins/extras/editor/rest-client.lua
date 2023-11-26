@@ -50,21 +50,10 @@ return {
       custom_dynamic_variables = {},
       yank_dry_run = true,
     },
+    -- stylua: ignore
     keys = {
-      {
-        "<leader>thp",
-        function()
-          require("rest-nvim").run(true)
-        end,
-        desc = "Preview Request",
-      },
-      {
-        "<leader>thr",
-        function()
-          require("rest-nvim").run()
-        end,
-        desc = "Run Request",
-      },
+      { "<leader>thp", function() require("rest-nvim").run(true) end, desc = "Preview Request" },
+      { "<leader>thr", function() require("rest-nvim").run() end, desc = "Run Request" },
     },
   },
   {

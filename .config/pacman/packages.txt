@@ -181,6 +181,7 @@ playerctl
 plocate
 polkit-gnome
 proton-ge-custom-bin
+protontricks
 pyprland
 python-cairo
 python-pip

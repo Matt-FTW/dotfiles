@@ -5,13 +5,9 @@ return {
     "smoka7/hydra.nvim",
   },
   cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
+  -- stylua: ignore
   keys = {
-    {
-      mode = { "v", "n" },
-      "<Leader>m",
-      "<cmd>MCstart<cr>",
-      desc = "Create a selection for selected text or word under the cursor",
-    },
+    { mode = { "v", "n" }, "<Leader>m", "<cmd>MCstart<cr>", desc = "Create a selection for selected text or word under the cursor" },
   },
   config = true,
 }

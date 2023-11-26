@@ -26,7 +26,6 @@ return {
       { "<S-Left>", "<Esc><Esc><cmd>FloatermPrev<CR>", mode = { "t" }, desc = "Prev Terminal" },
       { "<A-Right>", "<Esc><Esc><cmd>FloatermLast<CR>", mode = { "t" }, desc = "Last Terminal" },
       { "<A-Left>", "<Esc><Esc><cmd>FloatermFirst<CR>", mode = { "t" }, desc = "First Terminal" },
-  { "<leader>st", "<cmd>Telescope floaterm<cr>", desc = "Terminals" },
       { [[<c-\>]], "<cmd>FloatermToggle<cr>", mode = { "n", "t" }, desc = "Toggle Terminal" },
   { "<leader>ftf", "<cmd>FloatermNew --name=floatroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root><cr>", desc = "Floating (root dir)" },
   { "<leader>ftF", "<cmd>FloatermNew --name=floatbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer><cr>", desc = "Floating (cwd)" },
@@ -43,6 +42,9 @@ return {
         require("telescope").load_extension("floaterm")
       end)
     end,
+    keys = {
+      { "<leader>st", "<cmd>Telescope floaterm<cr>", desc = "Terminals" },
+    },
   },
   {
     "folke/which-key.nvim",
@@ -53,5 +55,30 @@ return {
         ["<leader>T"] = { name = "+tools" },
       },
     },
+  },
+  {
+    "folke/edgy.nvim",
+    optional = true,
+    opts = function(_, opts)
+      table.insert(opts.bottom, {
+        ft = "floaterm",
+        title = "Floaterm",
+        size = { height = 0.4 },
+        filter = function(buf, win)
+          return vim.api.nvim_win_get_config(win).relative == ""
+        end,
+      })
+    end,
+  },
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, dashboard)
+    -- stylua: ignore
+      local button = dashboard.button("G", "󰊢 " .. " Git",       "<cmd>FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>")
+      button.opts.hl = "AlphaButtons"
+      button.opts.hl_shortcut = "AlphaShortcut"
+      table.insert(dashboard.section.buttons.val, 7, button)
+      return dashboard
+    end,
   },
 }

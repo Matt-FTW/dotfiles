@@ -298,6 +298,8 @@ tab:not(:active) .tab-background {
      *  Setting it to 0 disables the Glow
      */
   --uc-identity-glow: 0 1px 10px 1px;
+
+  font-family: "JetBrainsMono NF";
 }
 
 :root:not([customizing]) :hover > .tabbrowser-tab:not(:hover) {

@@ -6,36 +6,18 @@ return {
       "BufRead package-lock.json",
     },
     opts = {},
+    -- stylua: ignore
     keys = {
-      {
-        "<leader>ps",
-        "<cmd>lua require('package-info').show({ force = true })<cr>",
-        desc = "Show Package Versions",
-      },
-      {
-        "<leader>pu",
-        "<cmd>lua require('package-info').update()<cr>",
-        desc = "Update Package",
-      },
-      {
-        "<leader>pr",
-        "<cmd>lua require('package-info').delete()<cr>",
-        desc = "Remove Package",
-      },
-      {
-        "<leader>pv",
-        "<cmd>lua require('package-info').change_version()<cr>",
-        desc = "Change Package Version",
-      },
-      {
-        "<leader>pn",
-        "<cmd>lua require('package-info').install()<cr>",
-        desc = "Install New Dependency",
-      },
+      { "<leader>ps", "<cmd>lua require('package-info').show({ force = true })<cr>", desc = "Show Package Versions" },
+      { "<leader>pu", "<cmd>lua require('package-info').update()<cr>", desc = "Update Package" },
+      { "<leader>pr", "<cmd>lua require('package-info').delete()<cr>", desc = "Remove Package" },
+      { "<leader>pv", "<cmd>lua require('package-info').change_version()<cr>", desc = "Change Package Version" },
+      { "<leader>pn", "<cmd>lua require('package-info').install()<cr>", desc = "Install New Dependency" },
     },
   },
   {
     "voldikss/vim-floaterm",
+    optional = true,
     keys = {
       {
         "<leader>pp",

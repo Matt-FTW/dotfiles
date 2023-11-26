@@ -24,8 +24,6 @@ map [fullscreen] f toggle_fullscreen
 
 # Colors
 set selection-clipboard clipboard
-set scroll-wrap true
-set scroll-page-aware true
 set window-title-page true
 
 set default-fg "#CAD3F5"

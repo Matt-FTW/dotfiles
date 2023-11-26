@@ -4,42 +4,30 @@ return {
     opts = {
       create_keymaps = false,
     },
+    -- stylua: ignore
     keys = {
+      { "<Leader>ddl", function() return require("debugprint").debugprint() end, desc = "Print under current line", expr = true },
+      { "<Leader>ddL", function() return require("debugprint").debugprint({ above = true }) end, desc = "Print above current line", expr = true },
       {
-        "<Leader>dLl",
-        function()
-          require("debugprint").debugprint()
-        end,
-        desc = "Log under current line",
+        "<Leader>ddv",
+        function() return require("debugprint").debugprint({ variable = true }) end,
+        desc = "Print variable under current line",
+        expr = true,
       },
       {
-        "<Leader>dLL",
-        function()
-          require("debugprint").debugprint({ above = true })
-        end,
-        desc = "Log above current line",
+        "<Leader>ddV",
+        function() return require("debugprint").debugprint({ above = true, variable = true }) end,
+        desc = "Print variable above current line",
+        expr = true,
       },
-      {
-        "<Leader>dLv",
-        function()
-          require("debugprint").debugprint({ variable = true })
-        end,
-        desc = "Log variable under current line",
-      },
-      {
-        "<Leader>dLV",
-        function()
-          require("debugprint").debugprint({ above = true, variable = true })
-        end,
-        desc = "Log variable above current line",
-      },
+      { "<Leader>ddd", function() return require("debugprint").deleteprints() end, desc = "Delete all prints" },
     },
   },
   {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>dL"] = { name = "+log" },
+        ["<leader>dd"] = { name = "+debugPrint" },
       },
     },
   },
