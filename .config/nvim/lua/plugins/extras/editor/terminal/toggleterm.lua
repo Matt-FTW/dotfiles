@@ -1,6 +1,13 @@
 return {
   "akinsho/toggleterm.nvim",
-  cmd = "ToggleTerm",
+  cmd = {
+    "ToggleTerm",
+    "ToggleTermSetName",
+    "ToggleTermToggleAll",
+    "ToggleTermSendVisualLines",
+    "ToggleTermSendCurrentLine",
+    "ToggleTermSendVisualSelection",
+  },
   opts = {
     size = function(term)
       if term.direction == "horizontal" then
