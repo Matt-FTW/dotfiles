@@ -93,6 +93,7 @@ return {
   },
   {
     "voldikss/vim-floaterm",
+    optional = true,
     keys = {
       {
         "<leader>CT",
