@@ -13,11 +13,12 @@ return {
     "folke/edgy.nvim",
     optional = true,
     opts = function(_, opts)
+      opts.right = opts.right or {}
       table.insert(opts.right, {
         title = "Symbols Outline",
-        ft = "outline",
+        ft = "Outline",
         pinned = true,
-        open = "Outline",
+        open = "OutlineOpen",
       })
     end,
   },
