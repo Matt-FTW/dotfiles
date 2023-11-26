@@ -1,5 +1,6 @@
 return {
   "nvim-neotest/neotest",
+  optional = true,
   -- stylua: ignore
   keys = {
     { "<leader>tl", function() require("neotest").run.run_last() end, desc = "Run Last Test" },

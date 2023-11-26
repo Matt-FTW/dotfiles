@@ -22,13 +22,6 @@ return {
     init = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
 
-      keys[#keys + 1] = { "gd", false }
-      keys[#keys + 1] = { "gr", false }
-      keys[#keys + 1] = { "gy", false }
-      keys[#keys + 1] = { "gI", false }
-
-      keys[#keys + 1] = { "<leader>ca", false }
-
       keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cil", "<cmd>LspInfo<cr>", desc = "Lsp" }
       keys[#keys + 1] = { "<leader>uv", toggle_diag_virtext, desc = "Toggle Diagnostic VirtualText" }
@@ -91,7 +84,7 @@ return {
         },
       },
       inlay_hints = {
-        enabled = false,
+        enabled = true,
       },
       servers = {
         lua_ls = {
@@ -153,60 +146,18 @@ return {
     },
   },
   {
-    "aznhe21/actions-preview.nvim",
-    event = "LspAttach",
-    opts = {
-      telescope = {
-        sorting_strategy = "ascending",
-        layout_strategy = "vertical",
-        layout_config = {
-          width = 0.8,
-          height = 0.9,
-          prompt_position = "top",
-          preview_cutoff = 20,
-          preview_height = function(_, _, max_lines)
-            return max_lines - 15
-          end,
-        },
-      },
-    },
-    keys = {
-      {
-        "<leader>ca",
-        function()
-          require("actions-preview").code_actions()
-        end,
-        mode = { "n", "v" },
-        desc = "Code Action Preview",
-      },
-    },
-  },
-  {
-    "smjonas/inc-rename.nvim",
-    cmd = "IncRename",
-    opts = {},
-  },
-  {
-    "dnlhc/glance.nvim",
-    cmd = { "Glance" },
-    opts = {
-      border = {
-        enable = true,
-      },
-    },
-    keys = {
-      { "gd", "<CMD>Glance definitions<CR>", desc = "Goto Definition" },
-      { "gr", "<CMD>Glance references<CR>", desc = "References" },
-      { "gy", "<CMD>Glance type_definitions<CR>", desc = "Goto t[y]pe definitions" },
-      { "gI", "<CMD>Glance implementations<CR>", desc = "Goto implementations" },
-    },
-  },
-  {
     "simrat39/rust-tools.nvim",
+    optional = true,
     opts = function(_, opts)
       opts.tools = {
         inlay_hints = {
-          auto = false,
+          auto = function()
+            if vim.fn.has("nvim-0.10") == 1 then
+              return false
+            else
+              return true
+            end
+          end,
         },
       }
     end,

@@ -1,5 +1,6 @@
 return {
   "mfussenegger/nvim-dap",
+  optional = true,
   opts = {
     defaults = {
       fallback = {

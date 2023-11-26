@@ -51,7 +51,13 @@ return {
   {
     "Wansmer/symbol-usage.nvim",
     enabled = false,
-    event = "BufReadPre", -- need run before LspAttach if you use nvim 0.9. On 0.10 use 'LspAttach'
+    event = function()
+      if vim.fn.has("nvim-0.10") == 1 then
+        return "LspAttach"
+      else
+        return "BufRead"
+      end
+    end,
     opts = {
       text_format = text_format,
     },

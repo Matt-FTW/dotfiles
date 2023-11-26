@@ -31,8 +31,6 @@ return {
   { "<leader>ftF", "<cmd>FloatermNew --name=floatbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer><cr>", desc = "Floating (cwd)" },
   { "<leader>fts", "<cmd>FloatermNew --name=splitroot --opener=edit --titleposition=center --height=0.35 --wintype=split --cwd=<root><cr>", desc = "Split (root dir)" },
   { "<leader>ftS", "<cmd>FloatermNew --name=splitbuffer --opener=edit --titleposition=center --height=0.35 --wintype=split --cwd=<buffer><cr>", desc = "Split (cwd)" },
-  { "<leader>ftv", "<cmd>FloatermNew --name=vsplitroot --opener=edit --titleposition=center --width=0.35 --wintype=vsplit --cwd=<root><cr>", desc = "Vsplit (root dir)" },
-  { "<leader>ftV", "<cmd>FloatermNew --name=vsplitbuffer --opener=edit --titleposition=center --width=0.35 --wintype=vsplit --cwd=<buffer><cr>", desc = "Vsplit (cwd)" },
     },
   },
   {
@@ -64,14 +62,12 @@ return {
         ft = "floaterm",
         title = "Floaterm",
         size = { height = 0.4 },
-        filter = function(buf, win)
-          return vim.api.nvim_win_get_config(win).relative == ""
-        end,
       })
     end,
   },
   {
     "goolord/alpha-nvim",
+    optional = true,
     opts = function(_, dashboard)
     -- stylua: ignore
       local button = dashboard.button("G", "󰊢 " .. " Git",       "<cmd>FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>")

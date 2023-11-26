@@ -62,6 +62,7 @@ return {
           includeInlayEnumMemberValueHints = true,
         },
       },
+      code_lens = "all",
     },
   },
 }

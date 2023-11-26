@@ -14,6 +14,7 @@ return {
   },
   {
     "mfussenegger/nvim-dap",
+    optional = true,
     keys = {
       { "<F2>", false },
     },
