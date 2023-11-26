@@ -59,7 +59,6 @@
     "plugins.extras.editor.telescope.import",
     "plugins.extras.editor.telescope.lazy",
     "plugins.extras.editor.telescope.luasnip",
-    "plugins.extras.editor.telescope.repo",
     "plugins.extras.editor.telescope.undotree",
     "plugins.extras.editor.telescope.urlview",
     "plugins.extras.editor.telescope.zoxide",

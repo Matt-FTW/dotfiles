@@ -31,8 +31,6 @@ return {
   { "<leader>ftF", "<cmd>FloatermNew --name=floatbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer><cr>", desc = "Floating (cwd)" },
   { "<leader>fts", "<cmd>FloatermNew --name=splitroot --opener=edit --titleposition=center --height=0.35 --wintype=split --cwd=<root><cr>", desc = "Split (root dir)" },
   { "<leader>ftS", "<cmd>FloatermNew --name=splitbuffer --opener=edit --titleposition=center --height=0.35 --wintype=split --cwd=<buffer><cr>", desc = "Split (cwd)" },
-  { "<leader>ftv", "<cmd>FloatermNew --name=vsplitroot --opener=edit --titleposition=center --width=0.35 --wintype=vsplit --cwd=<root><cr>", desc = "Vsplit (root dir)" },
-  { "<leader>ftV", "<cmd>FloatermNew --name=vsplitbuffer --opener=edit --titleposition=center --width=0.35 --wintype=vsplit --cwd=<buffer><cr>", desc = "Vsplit (cwd)" },
     },
   },
   {
