@@ -62,14 +62,12 @@ return {
         ft = "floaterm",
         title = "Floaterm",
         size = { height = 0.4 },
-        filter = function(buf, win)
-          return vim.api.nvim_win_get_config(win).relative == ""
-        end,
       })
     end,
   },
   {
     "goolord/alpha-nvim",
+    optional = true,
     opts = function(_, dashboard)
     -- stylua: ignore
       local button = dashboard.button("G", "󰊢 " .. " Git",       "<cmd>FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>")
