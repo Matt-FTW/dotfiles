@@ -70,6 +70,7 @@ return {
       "ChatGPTEditWithInstructions",
       "ChatGPTRun",
     },
+    -- stylua: ignore
     keys = {
       { "<leader>Cc", "<cmd>ChatGPT<CR>", desc = "ChatGPT" },
       { "<leader>Ce", "<cmd>ChatGPTEditWithInstruction<CR>", desc = "Edit with instruction", mode = { "n", "v" } },
@@ -94,12 +95,9 @@ return {
   {
     "voldikss/vim-floaterm",
     optional = true,
+    -- stylua: ignore
     keys = {
-      {
-        "<leader>CT",
-        "<cmd>FloatermNew --name=gpt --opener=edit --titleposition=center --width=0.85 --height=0.85 gpt -m<CR>",
-        desc = "Terminal GPT",
-      },
+      { "<leader>CT", "<cmd>FloatermNew --name=gpt --opener=edit --titleposition=center --width=0.85 --height=0.85 gpt -m<CR>", desc = "Terminal GPT" },
     },
   },
   {

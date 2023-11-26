@@ -23,13 +23,10 @@ return {
         require("telescope").load_extension("repo")
       end)
     end,
+    -- stylua: ignore
     keys = {
       { "<leader>fp", "<cmd>Telescope repo list<cr>", desc = "Projects (~/Repos)" },
-      {
-        "<leader>fP",
-        "<cmd>lua require'telescope'.extensions.repo.list{search_dirs = { '~/' }}<cr>",
-        desc = "Projects (System)",
-      },
+      { "<leader>fP", "<cmd>lua require'telescope'.extensions.repo.list{search_dirs = { '~/' }}<cr>", desc = "Projects (System)" },
     },
   },
   {
