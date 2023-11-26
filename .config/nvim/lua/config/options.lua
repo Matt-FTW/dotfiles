@@ -86,7 +86,3 @@ end
 vim.o.winwidth = 10
 vim.o.winminwidth = 10
 vim.o.equalalways = false
--- vim.opt.shiftwidth = 4
--- vim.opt.tabstop = 4
--- vim.opt.smartindent = true
--- vim.opt.expandtab = true
