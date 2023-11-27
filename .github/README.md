@@ -23,7 +23,7 @@
 	<a href="https://github.com/Matt-FTW/dotfiles/stargazers">
 		<img alt="Stargazers" src="https://img.shields.io/github/stars/Matt-FTW/dotfiles?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41">
   </a>
-	<a href="[https://github.com/Matt-FTW/dotfiles/issues]">
+	<a href="https://github.com/Matt-FTW/dotfiles/issues">
 		<img alt="Forks" src="https://img.shields.io/github/issues/Matt-FTW/dotfiles?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41">
   </a>
   <a href="https://github.com/Matt-FTW/dotfiles/commits/main/">
