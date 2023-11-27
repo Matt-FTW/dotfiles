@@ -10,6 +10,9 @@ return {
     keys = {
       { "<leader>ct", "<cmd>TSC<cr>", desc = "Type Check" },
     },
+    ft = {
+      "typescript",
+    },
   },
   {
     -- TODO: Need to look more into this plugin
