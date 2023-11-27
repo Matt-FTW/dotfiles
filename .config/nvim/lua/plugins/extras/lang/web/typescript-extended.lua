@@ -1,10 +1,17 @@
 return {
   {
     "dmmulroy/tsc.nvim",
-    config = true,
+    opts = {
+      flags = {
+        watch = true,
+      },
+    },
     cmd = "TSC",
     keys = {
       { "<leader>ct", "<cmd>TSC<cr>", desc = "Type Check" },
+    },
+    ft = {
+      "typescript",
     },
   },
   {

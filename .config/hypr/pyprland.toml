@@ -4,7 +4,6 @@ plugins = ["scratchpads", "expose", "magnify"]
 [scratchpads.volume]
 command = "pavucontrol"
 unfocus = "hide"
-animation = "fromLeft"
 position = "1% 8%"
 lazy = true
 

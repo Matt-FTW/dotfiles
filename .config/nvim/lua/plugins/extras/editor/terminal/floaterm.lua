@@ -41,7 +41,7 @@ return {
       end)
     end,
     keys = {
-      { "<leader>st", "<cmd>Telescope floaterm<cr>", desc = "Terminals" },
+      { "<c-/>", "<cmd>Telescope floaterm<cr>", desc = "Terminals" },
     },
   },
   {
@@ -62,6 +62,9 @@ return {
         ft = "floaterm",
         title = "Floaterm",
         size = { height = 0.4 },
+        filter = function(buf, win)
+          return vim.api.nvim_win_get_config(win).relative == ""
+        end,
       })
     end,
   },
