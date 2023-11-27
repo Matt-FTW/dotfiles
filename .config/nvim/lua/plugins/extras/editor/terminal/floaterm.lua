@@ -41,7 +41,7 @@ return {
       end)
     end,
     keys = {
-      { "<leader>st", "<cmd>Telescope floaterm<cr>", desc = "Terminals" },
+      { "<c-/>", "<cmd>Telescope floaterm<cr>", desc = "Terminals" },
     },
   },
   {
