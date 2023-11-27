@@ -1,8 +1,10 @@
+local excluded_filetypes = { "neo-tree", "alpha", "Outline", "edgy", "floaterm" }
+
 if vim.fn.has("nvim-0.10") == 1 then
   return {
     "lewis6991/satellite.nvim",
     opts = {
-      excluded_filetypes = { "neo-tree", "alpha", "symbols-outline" },
+      excluded_filetypes = excluded_filetypes,
     },
     event = "BufRead",
   }
@@ -13,7 +15,7 @@ else
     keys = { { "<leader>uS", "<cmd>ScrollViewToggle<CR>", desc = "Toggle Scrollview" } },
     config = function()
       require("scrollview").setup({
-        excluded_filetypes = { "neo-tree", "alpha", "symbols-outline" },
+        excluded_filetypes = excluded_filetypes,
         signs_column = 0,
         winblend = 25,
         diagnostics_error_symbol = "",
