@@ -1,15 +1,11 @@
 return {
-  {
+  "nvim-treesitter/nvim-treesitter",
+  dependencies = {
     "RRethy/nvim-treesitter-endwise",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    event = "VeryLazy",
   },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      endwise = {
-        enable = true,
-      },
+  opts = {
+    endwise = {
+      enable = true,
     },
   },
 }
