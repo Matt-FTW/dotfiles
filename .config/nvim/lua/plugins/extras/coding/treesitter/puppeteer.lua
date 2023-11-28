@@ -1,5 +1,4 @@
 return {
-  "chrisgrieser/nvim-puppeteer",
-  dependencies = "nvim-treesitter/nvim-treesitter",
-  lazy = false,
+  "nvim-treesitter/nvim-treesitter",
+  dependencies = { "chrisgrieser/nvim-puppeteer" },
 }
