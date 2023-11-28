@@ -144,7 +144,6 @@ net-tools
 network-manager-applet
 networkmanager
 nodejs
-noto-fonts-emoji
 npm
 ntfs-3g
 nvtop
