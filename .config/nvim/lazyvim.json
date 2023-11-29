@@ -13,6 +13,7 @@
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.alpha",
     "lazyvim.plugins.extras.ui.edgy",
+    "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
     "plugins.extras.coding.ai.gpt",
     "plugins.extras.coding.annotation",
@@ -29,6 +30,7 @@
     "plugins.extras.dap.persistent-breakpoints",
     "plugins.extras.editor.docs.devdocs",
     "plugins.extras.editor.git.diffview",
+    "plugins.extras.editor.git.github",
     "plugins.extras.editor.harpoon",
     "plugins.extras.editor.live-server",
     "plugins.extras.editor.outline",
@@ -74,4 +76,3 @@
   },
   "version": 2
 }
-
