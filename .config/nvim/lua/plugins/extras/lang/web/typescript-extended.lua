@@ -1,4 +1,5 @@
 return {
+  { import = "lazyvim.plugins.extras.lang.typescript" },
   {
     "dmmulroy/tsc.nvim",
     opts = {
