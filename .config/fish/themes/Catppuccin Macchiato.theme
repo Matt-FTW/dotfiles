@@ -14,6 +14,7 @@ fish_color_error ed8796
 fish_color_gray 6e738d
 fish_color_selection --background=363a4f
 fish_color_search_match --background=363a4f
+fish_color_option a6da95
 fish_color_operator f5bde6
 fish_color_escape ee99a0
 fish_color_autosuggestion 6e738d
