@@ -22,7 +22,7 @@
 <div align="center">
 	<a href="https://github.com/Matt-FTW/dotfiles/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/Matt-FTW/dotfiles?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
 	<a href="https://github.com/Matt-FTW/dotfiles/issues"><img alt="Forks" src="https://img.shields.io/github/issues/Matt-FTW/dotfiles?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
-  <a href="https://github.com/Matt-FTW/dotfiles/commits/main/"><img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/m/Matt-FTW/dotfiles?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D41"/></a>
+  <a href="https://github.com/Matt-FTW/dotfiles/commits/main/"><img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/m/Matt-FTW/dotfiles/portable?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D41"/></a>
 	<a href="https://github.com/Matt-FTW/dotfiles"><img alt="Size" src="https://img.shields.io/github/repo-size/Matt-FTW/dotfiles?style=for-the-badge&logo=discord&color=DDB6F2&logoColor=D9E0EE&labelColor=302D41"></a>
 </div>
 
