@@ -20,7 +20,6 @@ bc
 betterdiscord-installer-bin
 bison
 bitwarden-cli-bin
-blender
 blueman
 bluez-utils
 bob
@@ -151,7 +150,7 @@ nwg-displays
 nwg-look
 obs-pipewire-audio-capture-bin
 obs-plugin-input-overlay
-obs-studio-amf
+obs-studio
 obsidian
 ollama
 onefetch
@@ -192,6 +191,7 @@ qpwgraph
 qt5-graphicaleffects
 qt5-quickcontrols
 qt5-quickcontrols2
+qt5-styleplugins
 qt5ct
 rar
 reflector
