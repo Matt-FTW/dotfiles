@@ -3,7 +3,6 @@ return {
   run = "bash ./install.sh",
   cmd = { "SnipRun", "SnipInfo", "SnipLive", "SnipClose", "SnipReset", "SnipReplMemoryClean" },
   opts = {
-
     selected_interpreters = {}, --# use those instead of the default for the current filetype
     repl_enable = { "javascript", "typescript" }, --# enable REPL-like behavior for the given interpreters
     repl_disable = {}, --# disable REPL-like behavior for the given interpreters
