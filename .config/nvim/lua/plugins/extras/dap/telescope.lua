@@ -1,9 +1,7 @@
-local Util = require("lazyvim.util")
-
 return {
   "nvim-telescope/telescope-dap.nvim",
   config = function()
-    Util.on_load("telescope.nvim", function()
+    require("lazyvim.util").on_load("telescope.nvim", function()
       require("telescope").load_extension("dap")
     end)
   end,

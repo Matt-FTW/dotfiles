@@ -1,11 +1,9 @@
-local Util = require("lazyvim.util")
-
 return {
   {
     "ThePrimeagen/git-worktree.nvim",
     opts = {},
-    config = function(_, opts)
-      Util.on_load("telescope.nvim", function()
+    config = function()
+      require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").load_extension("git_worktree")
       end)
     end,

@@ -1,5 +1,3 @@
-local Util = require("lazyvim.util")
-
 return {
   {
     "voldikss/vim-floaterm",
@@ -36,7 +34,7 @@ return {
   {
     "dawsers/telescope-floaterm.nvim",
     config = function()
-      Util.on_load("telescope.nvim", function()
+      require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").load_extension("floaterm")
       end)
     end,

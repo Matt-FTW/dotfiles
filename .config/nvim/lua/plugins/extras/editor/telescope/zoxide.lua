@@ -1,10 +1,8 @@
-local Util = require("lazyvim.util")
-
 return {
   {
     "jvgrootveld/telescope-zoxide",
-    config = function(_, opts)
-      Util.on_load("telescope.nvim", function()
+    config = function()
+      require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").setup({
           extensions = {
             zoxide = {
