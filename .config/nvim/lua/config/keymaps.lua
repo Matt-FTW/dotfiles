@@ -39,6 +39,13 @@ map("n", "N", "Nzzzv")
 map("n", "<a-h>", "_", { desc = "First character of Line" })
 map("n", "<a-l>", "$", { desc = "Last character of Line" })
 
+-- Copy whole file content to clipboard with C-y
+map("n", "<C-c>", ":%y+<CR>")
+
+-- Better paste
+-- remap "p" in visual mode to delete the highlighted text without overwriting your yanked/copied text, and then paste the content from the unnamed register.
+map("v", "p", '"_dP')
+
 map("n", "dd", function()
   local is_empty_line = vim.api.nvim_get_current_line():match("^%s*$")
   if is_empty_line then
