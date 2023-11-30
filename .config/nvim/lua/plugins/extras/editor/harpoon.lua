@@ -26,4 +26,13 @@ return {
       end)
     end,
   },
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, dashboard)
+      local button = dashboard.button("m", " " .. " Marks", "<cmd>Telescope harpoon marks<CR>")
+      button.opts.hl = "AlphaButtons"
+      button.opts.hl_shortcut = "AlphaShortcut"
+      table.insert(dashboard.section.buttons.val, 5, button)
+    end,
+  },
 }
