@@ -37,33 +37,6 @@ return {
       keys[#keys + 1] = { "<leader>clr", "<cmd>LspRestart<cr>", desc = "Restart Lsp" }
       keys[#keys + 1] = { "<leader>cls", "<cmd>LspStart<cr>", desc = "Start Lsp" }
       keys[#keys + 1] = { "<leader>clS", "<cmd>LspStop<cr>", desc = "Stop Lsp" }
-      -- require("lazyvim.util").lsp.on_attach(function(client, buffer)
-      --   if client.supports_method("textDocument/documentSymbol") then
-      --     -- Enable inlay hints if the client supports it.
-      --     if client.server_capabilities.inlayHintProvider then
-      --       local inlay_hints_group = vim.api.nvim_create_augroup("InlayHints", { clear = true })
-      --
-      --       -- Initial inlay hint display.
-      --       local mode = vim.api.nvim_get_mode().mode
-      --       vim.lsp.inlay_hint(buffer, mode == "n" or mode == "v")
-      --
-      --       vim.api.nvim_create_autocmd("InsertEnter", {
-      --         group = inlay_hints_group,
-      --         buffer = buffer,
-      --         callback = function()
-      --           vim.lsp.inlay_hint(buffer, false)
-      --         end,
-      --       })
-      --       vim.api.nvim_create_autocmd("InsertLeave", {
-      --         group = inlay_hints_group,
-      --         buffer = buffer,
-      --         callback = function()
-      --           vim.lsp.inlay_hint(buffer, true)
-      --         end,
-      --       })
-      --     end
-      --   end
-      -- end)
     end,
     opts = {
       -- options for vim.diagnostic.config()
@@ -87,6 +60,11 @@ return {
         enabled = true,
       },
       servers = {
+        -- typos_lsp = {
+        --   settings = {
+        --     diagnosticSeverity = "Warning",
+        --   },
+        -- },
         lua_ls = {
           settings = {
             Lua = {
