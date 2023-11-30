@@ -6,6 +6,10 @@ return {
     lazy = false,
     name = "catppuccin",
     opts = {
+      background = {
+        light = "latte",
+        dark = "macchiato",
+      },
       integrations = {
         alpha = true,
         cmp = true,

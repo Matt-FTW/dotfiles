@@ -1,11 +1,9 @@
-local Util = require("lazyvim.util")
-
 return {
   {
     "cljoly/telescope-repo.nvim",
     opts = {},
-    config = function(_, opts)
-      Util.on_load("telescope.nvim", function()
+    config = function()
+      require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").setup({
           extensions = {
             repo = {

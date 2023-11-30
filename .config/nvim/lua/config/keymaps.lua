@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
+local Util = require("lazyvim.util")
 
 --  ╭───────────────────────────────────────────────────────────╮
 --  │ Credit: June Gunn <Leader>?/! | Google it / Feeling lucky │
@@ -26,6 +27,10 @@ map("x", "<leader>?", function()
   google(vim.fn.getreg("g"), false)
 end, { desc = "Google" })
 
+map("n", "<leader>uB", function()
+  Util.toggle("background", false, { "light", "dark" })
+end, { desc = "Toggle Background" })
+
 map("n", "<leader>fT", "<Nop>")
 
 map("n", "<C-d>", "<C-d>zz")
@@ -38,6 +43,13 @@ map("n", "N", "Nzzzv")
 
 map("n", "<a-h>", "_", { desc = "First character of Line" })
 map("n", "<a-l>", "$", { desc = "Last character of Line" })
+
+-- Copy whole file content to clipboard with C-y
+map("n", "<C-c>", ":%y+<CR>")
+
+-- Better paste
+-- remap "p" in visual mode to delete the highlighted text without overwriting your yanked/copied text, and then paste the content from the unnamed register.
+map("v", "p", '"_dP')
 
 map("n", "dd", function()
   local is_empty_line = vim.api.nvim_get_current_line():match("^%s*$")

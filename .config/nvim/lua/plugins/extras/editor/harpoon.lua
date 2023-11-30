@@ -1,5 +1,3 @@
-local Util = require("lazyvim.util")
-
 return {
   {
     "ThePrimeagen/harpoon",
@@ -21,9 +19,18 @@ return {
       },
     },
     config = function()
-      Util.on_load("telescope.nvim", function()
+      require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").load_extension("harpoon")
       end)
+    end,
+  },
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, dashboard)
+      local button = dashboard.button("m", " " .. " Marks", "<cmd>Telescope harpoon marks<CR>")
+      button.opts.hl = "AlphaButtons"
+      button.opts.hl_shortcut = "AlphaShortcut"
+      table.insert(dashboard.section.buttons.val, 5, button)
     end,
   },
 }

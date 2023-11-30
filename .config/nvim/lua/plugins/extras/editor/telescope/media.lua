@@ -1,9 +1,7 @@
-local Util = require("lazyvim.util")
-
 return {
   "dharmx/telescope-media.nvim",
-  config = function(_, opts)
-    Util.on_load("telescope.nvim", function()
+  config = function()
+    require("lazyvim.util").on_load("telescope.nvim", function()
       require("telescope").setup({
         extensions = {
           media = {

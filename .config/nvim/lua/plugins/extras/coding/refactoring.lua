@@ -1,5 +1,3 @@
-local Util = require("lazyvim.util")
-
 return {
   "ThePrimeagen/refactoring.nvim",
   requires = {
@@ -8,7 +6,7 @@ return {
   },
   opts = {},
   config = function(_, opts)
-    Util.on_load("telescope.nvim", function()
+    require("lazyvim.util").on_load("telescope.nvim", function()
       require("telescope").load_extension("refactoring")
     end)
   end,

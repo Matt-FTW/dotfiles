@@ -1,4 +1,5 @@
 return {
+  { import = "lazyvim.plugins.extras.lang.markdown" },
   {
     "lukas-reineke/headlines.nvim",
     opts = {

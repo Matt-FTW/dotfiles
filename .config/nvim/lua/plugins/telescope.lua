@@ -73,7 +73,6 @@ return {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-j>"] = actions.move_selection_next,
             ["<esc>"] = actions.close,
-            ["<C-u>"] = false,
             ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
           },
         },

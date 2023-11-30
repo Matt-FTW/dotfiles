@@ -14,6 +14,15 @@ vim.api.nvim_create_autocmd("BufRead", {
   end,
 })
 
+-- Fix telescope entering on insert mode
+vim.api.nvim_create_autocmd("WinLeave", {
+  callback = function()
+    if vim.bo.ft == "TelescopePrompt" and vim.fn.mode() == "i" then
+      vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "i", false)
+    end
+  end,
+})
+
 -- start git messages in insert mode
 vim.api.nvim_create_autocmd("BufRead", {
   pattern = { "gitcommit", "gitrebase" },

@@ -1,4 +1,5 @@
 return {
+  { import = "lazyvim.plugins.extras.lang.tailwind" },
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
