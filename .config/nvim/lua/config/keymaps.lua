@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
+local Util = require("lazyvim.util")
 
 --  ╭───────────────────────────────────────────────────────────╮
 --  │ Credit: June Gunn <Leader>?/! | Google it / Feeling lucky │
@@ -25,6 +26,10 @@ end, { desc = "Google" })
 map("x", "<leader>?", function()
   google(vim.fn.getreg("g"), false)
 end, { desc = "Google" })
+
+map("n", "<leader>uB", function()
+  Util.toggle("background", false, { "light", "dark" })
+end, { desc = "Toggle Background" })
 
 map("n", "<leader>fT", "<Nop>")
 
