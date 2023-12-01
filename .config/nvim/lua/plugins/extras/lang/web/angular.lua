@@ -3,7 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       if type(opts.ensure_installed) == "table" then
-        vim.list_extend(opts.ensure_installed, { "bash" })
+        vim.list_extend(opts.ensure_installed, { "angular" })
       end
     end,
   },
@@ -11,7 +11,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        bashls = {},
+        angularls = {},
       },
     },
   },
@@ -19,7 +19,7 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, { "bash-language-server" })
+      vim.list_extend(opts.ensure_installed, { "angular-language-server" })
     end,
   },
 }
