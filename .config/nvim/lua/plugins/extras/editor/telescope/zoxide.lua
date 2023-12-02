@@ -9,7 +9,7 @@ return {
               mappings = {
                 default = {
                   after_action = function(selection)
-                    require("telescope.builtin").find_files({ cwd = selection.path })
+                    -- require("telescope.builtin").find_files({ cwd = selection.path }) FIXME: this doesn't work
                   end,
                 },
               },
