@@ -66,6 +66,7 @@
     "plugins.extras.util.bigfile",
     "plugins.extras.util.discordrcp",
     "plugins.extras.util.icon-picker",
+    "plugins.extras.util.vscode",
     "plugins.extras.util.wakatime"
   ],
   "news": {
