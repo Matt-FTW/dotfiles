@@ -68,6 +68,7 @@
     "plugins.extras.ui.scrollbar",
     "plugins.extras.ui.smooth-scrolling",
     "plugins.extras.ui.windows",
+    "plugins.extras.ui.zen-mode",
     "plugins.extras.util.bigfile",
     "plugins.extras.util.discordrcp",
     "plugins.extras.util.icon-picker",
