@@ -1,6 +1,6 @@
 return {
   "andweeb/presence.nvim",
-  lazy = false,
+  event = "VeryLazy",
   opts = {
     -- General options
     auto_update = true, -- Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)

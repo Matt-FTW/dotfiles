@@ -9,7 +9,6 @@
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.test.core",
-    "lazyvim.plugins.extras.ui.alpha",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
@@ -59,7 +58,6 @@
     "plugins.extras.lsp.inc-rename",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
-    "plugins.extras.ui.alpha",
     "plugins.extras.ui.breadcrumbs",
     "plugins.extras.ui.context",
     "plugins.extras.ui.highlight-undo",
@@ -80,3 +78,4 @@
   },
   "version": 2
 }
+
