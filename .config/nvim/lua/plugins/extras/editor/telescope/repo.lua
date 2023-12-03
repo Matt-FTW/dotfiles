@@ -29,11 +29,29 @@ return {
   },
   {
     "goolord/alpha-nvim",
+    optional = true,
     opts = function(_, dashboard)
       local button = dashboard.button("p", " " .. " Projects/Repos", "<cmd>Telescope repo list <CR>")
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 4, button)
+    end,
+  },
+  {
+    "nvimdev/dashboard-nvim",
+    optional = true,
+    opts = function(_, opts)
+      local projects = {
+        action = "Telescope repo list",
+        desc = " Projects/Repos",
+        icon = " ",
+        key = "p",
+      }
+
+      projects.desc = projects.desc .. string.rep(" ", 43 - #projects.desc)
+      projects.key_format = "  %s"
+
+      table.insert(opts.config.center, 4, projects)
     end,
   },
   {

@@ -78,4 +78,21 @@ return {
       return dashboard
     end,
   },
+  {
+    "nvimdev/dashboard-nvim",
+    optional = true,
+    opts = function(_, opts)
+      local git = {
+        action = "FloatermNew --disposable --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit",
+        desc = " Git",
+        icon = " ",
+        key = "G",
+      }
+
+      git.desc = git.desc .. string.rep(" ", 43 - #git.desc)
+      git.key_format = "  %s"
+
+      table.insert(opts.config.center, 7, git)
+    end,
+  },
 }

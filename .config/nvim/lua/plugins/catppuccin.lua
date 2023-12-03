@@ -23,6 +23,7 @@ return {
           enabled = true,
           enable_ui = true, -- enable nvim-dap-ui
         },
+        dashboard = true,
         flash = true,
         headlines = true,
         gitsigns = true,

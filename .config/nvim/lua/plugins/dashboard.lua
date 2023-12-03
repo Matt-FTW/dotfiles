@@ -1,9 +1,6 @@
 return {
-  "goolord/alpha-nvim",
-  keys = {
-    { "<leader>fa", "<cmd>Alpha<cr>", desc = "Dashboard (Alpha)" },
-  },
-  opts = function(_, dashboard)
+  "nvimdev/dashboard-nvim",
+  opts = function(_, opts)
     local logo = [[
                                                                    
       ████ ██████           █████      ██                    
@@ -15,7 +12,8 @@ return {
 ██████  █████████████████████ ████ █████ █████ ████ ██████
       ]]
 
-    dashboard.section.header.val = vim.split(logo, "\n")
-    return dashboard
+    logo = string.rep("\n", 8) .. logo .. "\n\n"
+    opts.config.header = vim.split(logo, "\n")
+    return opts
   end,
 }
