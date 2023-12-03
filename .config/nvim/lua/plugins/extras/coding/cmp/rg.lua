@@ -4,6 +4,6 @@ return {
     "lukas-reineke/cmp-rg",
   },
   opts = function(_, opts)
-    table.insert(opts.sources, { name = "rg" })
+    table.insert(opts.sources, { name = "rg", keyword_length = 3 })
   end,
 }
