@@ -29,5 +29,11 @@ return {
       completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered(),
     }
+    cmp.setup.cmdline({ "/", "?" }, {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = "buffer" },
+      },
+    })
   end,
 }
