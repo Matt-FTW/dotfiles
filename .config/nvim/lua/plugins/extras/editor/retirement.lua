@@ -1,7 +1,8 @@
 return {
   "chrisgrieser/nvim-early-retirement",
-  event = "BufRead",
+  event = "VeryLazy",
   opts = {
     retirementAgeMins = 30,
+    ignoreUnsavedChangesBufs = false,
   },
 }

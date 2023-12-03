@@ -70,6 +70,7 @@ return {
             Lua = {
               hint = {
                 enable = true,
+                setType = true,
               },
             },
           },

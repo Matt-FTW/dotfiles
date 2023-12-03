@@ -1,8 +1,9 @@
 return {
   -- "Pocco81/auto-save.nvim",
   "zoriya/auto-save.nvim", -- HACK: use fork until PR is accepted
-  event = { "InsertEnter" },
+  event = { "InsertLeave", "TextChanged" },
   opts = {
+    debounce_delay = 1000,
     callbacks = {
       before_saving = function()
         -- save global autoformat status
