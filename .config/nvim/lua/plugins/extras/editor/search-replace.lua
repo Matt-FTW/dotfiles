@@ -6,9 +6,9 @@ return {
   },
   -- stylua: ignore
   keys = {
-  { "<C-r>", "<CMD>SearchReplaceSingleBufferVisualSelection<CR>", desc = "Search and Replace in Visual Selection", mode = "v" },
-  { "<C-s>", "<CMD>SearchReplaceWithinVisualSelection<CR>", desc = "Search and Replace Within Visual Selection", mode = "v" },
-  { "<C-b>", "<CMD>SearchReplaceWithinVisualSelectionCWord<CR>", desc = "Search and Replace Within Visual Selection (Current Word)", mode = "v" },
+  { "<leader>srb", "<CMD>SearchReplaceSingleBufferVisualSelection<CR>", desc = "Buffer", mode = "v" },
+  { "<leader>srv", "<CMD>SearchReplaceWithinVisualSelection<CR>", desc = "Visual Selection", mode = "v" },
+  { "<leader>srw", "<CMD>SearchReplaceWithinVisualSelectionCWord<CR>", desc = "Word on Buffer", mode = "v" },
 
   {  "<leader>srb", "<CMD>SearchReplaceSingleBufferOpen<CR>", desc = "Buffer", mode = "n" },
   {  "<leader>srw", "<CMD>SearchReplaceSingleBufferCWord<CR>", desc = "Word on Buffer", mode = "n" },
