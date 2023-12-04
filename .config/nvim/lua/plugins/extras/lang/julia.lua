@@ -25,10 +25,10 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
-      "kdheepak/cmp-latex-symbols",
+      "amarakon/nvim-cmp-lua-latex-symbols",
     },
     opts = function(_, opts)
-      table.insert(opts.sources, { name = "latex_symbols", priority = 700 })
+      table.insert(opts.sources, { name = "lua-latex-symbols", option = { cache = true } })
     end,
   },
 }

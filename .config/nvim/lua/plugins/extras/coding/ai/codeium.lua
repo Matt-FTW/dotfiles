@@ -1,17 +1,15 @@
 return {
   {
     "Exafunction/codeium.vim",
-    event = "BufEnter",
+    event = "InsertEnter",
     config = function()
-      vim.g.codeium_filetypes = {
-        ["TelescopePrompt"] = false,
-      }
+      vim.g.codeium_filetypes = { TelescopePrompt = false, DressingInput = false }
 
       vim.g.codeium_disable_bindings = 1
 
       vim.keymap.set("i", "<M-CR>", function()
         return vim.fn["codeium#Accept"]()
-      end, { expr = true })
+      end, { expr = true, silent = true })
 
       vim.keymap.set("i", "<M-]>", function()
         return vim.fn["codeium#CycleCompletions"](1)
@@ -36,8 +34,6 @@ return {
   },
   {
     "nvim-lualine/lualine.nvim",
-    optional = true,
-    event = "VeryLazy",
     opts = function(_, opts)
       local icon = require("lazyvim.config").icons.kinds.Codeium
       local function show_codeium_status()

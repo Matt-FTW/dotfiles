@@ -6,12 +6,12 @@ if vim.fn.has("nvim-0.10") == 1 then
     opts = {
       excluded_filetypes = excluded_filetypes,
     },
-    event = "BufRead",
+    event = "LazyFile",
   }
 else
   return {
     "dstein64/nvim-scrollview",
-    event = "BufReadPost",
+    event = "LazyFile",
     keys = { { "<leader>uS", "<cmd>ScrollViewToggle<CR>", desc = "Toggle Scrollview" } },
     config = function()
       require("scrollview").setup({

@@ -3,8 +3,8 @@ return {
     "ThePrimeagen/harpoon",
     --stylua: ignore
     keys = {
-      { "<leader>'", function() require("harpoon.mark").add_file() end, desc = "Add File" },
-      { "<leader>;", "<cmd>Telescope harpoon marks<CR>", desc = "Harpoon" },
+      { "<leader>>", function() require("harpoon.mark").add_file() end, desc = "Add File" },
+      { "<leader>.", "<cmd>Telescope harpoon marks<CR>", desc = "Harpoon" },
       { "<leader>1", function() require("harpoon.ui").nav_file(1) end, desc = "File 1" },
       { "<leader>2", function() require("harpoon.ui").nav_file(2) end, desc = "File 2" },
       { "<leader>3", function() require("harpoon.ui").nav_file(3) end, desc = "File 3" },
@@ -26,11 +26,29 @@ return {
   },
   {
     "goolord/alpha-nvim",
+    optional = true,
     opts = function(_, dashboard)
       local button = dashboard.button("m", " " .. " Marks", "<cmd>Telescope harpoon marks<CR>")
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 5, button)
+    end,
+  },
+  {
+    "nvimdev/dashboard-nvim",
+    optional = true,
+    opts = function(_, opts)
+      local harpoon = {
+        action = "Telescope harpoon marks",
+        desc = " Marks",
+        icon = " ",
+        key = "m",
+      }
+
+      harpoon.desc = harpoon.desc .. string.rep(" ", 43 - #harpoon.desc)
+      harpoon.key_format = "  %s"
+
+      table.insert(opts.config.center, 5, harpoon)
     end,
   },
 }

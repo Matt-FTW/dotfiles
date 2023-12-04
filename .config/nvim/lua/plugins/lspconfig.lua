@@ -70,6 +70,7 @@ return {
             Lua = {
               hint = {
                 enable = true,
+                setType = true,
               },
             },
           },
@@ -89,10 +90,10 @@ return {
               },
               inlayHints = {
                 includeInlayParameterNameHints = "all",
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
                 includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = false,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                includeInlayVariableTypeHints = true,
+                includeInlayVariableTypeHintsWhenTypeMatchesName = true,
                 includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayEnumMemberValueHints = true,
@@ -106,10 +107,10 @@ return {
               },
               inlayHints = {
                 includeInlayParameterNameHints = "all",
-                includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
                 includeInlayFunctionParameterTypeHints = true,
-                includeInlayVariableTypeHints = false,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                includeInlayVariableTypeHints = true,
+                includeInlayVariableTypeHintsWhenTypeMatchesName = true,
                 includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayEnumMemberValueHints = true,
@@ -142,7 +143,6 @@ return {
   },
   {
     "folke/which-key.nvim",
-    event = "VeryLazy",
     opts = {
       defaults = {
         ["<leader>cL"] = { name = "+lsp" },

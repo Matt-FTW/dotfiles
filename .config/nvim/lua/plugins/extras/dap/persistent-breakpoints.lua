@@ -1,7 +1,7 @@
 return {
   {
     "Weissle/persistent-breakpoints.nvim",
-    event = "BufReadPost",
+    event = "LazyFile",
     keys = {
       { "<leader>dbd", "<cmd>PBClearAllBreakpoints<cr>", desc = "Delete All Breakpoints" },
       { "<leader>dbB", "<cmd>PBSetConditionalBreakpoint<cr>", desc = "Breakpoint Condition" },

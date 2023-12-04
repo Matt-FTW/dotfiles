@@ -1,6 +1,6 @@
 return {
   "HiPhish/rainbow-delimiters.nvim",
-  event = "BufRead",
+  event = "LazyFile",
   opts = {
     highlight = {
       "RainbowDelimiterBlue",

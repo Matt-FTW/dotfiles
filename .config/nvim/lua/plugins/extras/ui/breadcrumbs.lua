@@ -1,7 +1,7 @@
 if vim.fn.has("nvim-0.10") == 1 then
   return {
     "Bekaboo/dropbar.nvim",
-    event = "BufWinEnter",
+    event = "LazyFile",
     opts = {
       sources = {
         terminal = {
@@ -19,7 +19,7 @@ else
       "SmiteshP/nvim-navic",
       "nvim-tree/nvim-web-devicons",
     },
-    event = "BufRead",
+    event = "LazyFile",
     opts = {},
   }
 end

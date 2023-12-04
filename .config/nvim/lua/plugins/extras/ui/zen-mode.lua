@@ -4,19 +4,23 @@ return {
     cmd = "ZenMode",
     keys = { { "<leader>uz", "<cmd>ZenMode<cr>", desc = "Toggle Zen Mode" } },
     opts = {
-      plugins = {
-        scrollview = { enabled = false },
-        satellite = { enabled = false },
-        gitsigns = { enabled = true },
-        dropbar = { enabled = false },
-        barbecue = { enabled = false },
-      },
       on_open = function(_)
         vim.opt.laststatus = 0
-        vim.o.winbar = ""
+        if vim.fn.exists(":SatelliteDisable") ~= 0 then
+          vim.cmd("SatelliteDisable")
+        end
+        if vim.fn.exists(":ScrollViewDisable") ~= 0 then
+          vim.cmd("ScrollViewDisable")
+        end
       end,
       on_close = function()
         vim.opt.laststatus = 3
+        if vim.fn.exists(":SatelliteEnable") ~= 0 then
+          vim.cmd("SatelliteEnable")
+        end
+        if vim.fn.exists(":ScrollViewEnable") ~= 0 then
+          vim.cmd("ScrollViewEnable")
+        end
       end,
     },
   },

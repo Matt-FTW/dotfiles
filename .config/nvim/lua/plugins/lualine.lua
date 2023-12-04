@@ -5,6 +5,8 @@ return {
       component_separators = { left = "", right = "" },
       section_separators = { left = "", right = "" },
     })
+
+    opts.sections.lualine_a = { { "mode", icon = "" } }
     opts.sections.lualine_y = { { "progress", separator = " ", padding = { left = 1, right = 1 } } }
     opts.sections.lualine_z = { { "location", padding = { left = 1, right = 1 } } }
   end,

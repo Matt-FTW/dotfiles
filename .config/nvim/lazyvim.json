@@ -9,7 +9,6 @@
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.test.core",
-    "lazyvim.plugins.extras.ui.alpha",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
@@ -17,6 +16,8 @@
     "plugins.extras.coding.annotation",
     "plugins.extras.coding.cmp.autopairs",
     "plugins.extras.coding.cmp.fonts",
+    "plugins.extras.coding.cmp.rg",
+    "plugins.extras.coding.cmp.yanky",
     "plugins.extras.coding.debugprint",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.multicursor",
@@ -24,7 +25,9 @@
     "plugins.extras.coding.treesitter.endwise",
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.treesitter.puppeteer",
+    "plugins.extras.coding.treesitter.text-case",
     "plugins.extras.dap.persistent-breakpoints",
+    "plugins.extras.editor.color",
     "plugins.extras.editor.docs.devdocs",
     "plugins.extras.editor.git.diffview",
     "plugins.extras.editor.git.github",
@@ -55,17 +58,19 @@
     "plugins.extras.lsp.inc-rename",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
-    "plugins.extras.ui.alpha",
     "plugins.extras.ui.breadcrumbs",
+    "plugins.extras.ui.context",
     "plugins.extras.ui.highlight-undo",
     "plugins.extras.ui.number-toggle",
     "plugins.extras.ui.rainbow-delimeters",
     "plugins.extras.ui.scrollbar",
     "plugins.extras.ui.smooth-scrolling",
     "plugins.extras.ui.windows",
+    "plugins.extras.ui.zen-mode",
     "plugins.extras.util.bigfile",
     "plugins.extras.util.discordrcp",
     "plugins.extras.util.icon-picker",
+    "plugins.extras.util.vscode",
     "plugins.extras.util.wakatime"
   ],
   "news": {
@@ -73,3 +78,4 @@
   },
   "version": 2
 }
+
