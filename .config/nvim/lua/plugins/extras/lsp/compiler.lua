@@ -9,6 +9,9 @@ return {
       { "<leader>ccc", "<cmd>CompilerOpen<cr>", desc = "Open Compiler" },
       { "<leader>ccR", function() vim.cmd("CompilerStop") vim.cmd("CompilerRedo") end, desc = "Redo Compiler" },
       { "<leader>ccr", "<cmd>CompilerToggleResults<cr>", desc = "Toggle Compiler Results" },
+      { "<F3>", "<cmd>CompilerOpen<cr>", desc = "Open Compiler" },
+      { "<S-F3>", function() vim.cmd("CompilerStop") vim.cmd("CompilerRedo") end, desc = "Redo Compiler" },
+      { "<F4>", "<cmd>CompilerToggleResults<cr>", desc = "Toggle Compiler Results" },
     },
   },
   {
@@ -26,7 +29,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>cc"] = { name = "+compile" },
+        ["<leader>cc"] = { name = "+compiler" },
       },
     },
   },
