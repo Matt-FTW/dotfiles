@@ -169,7 +169,6 @@ pavucontrol
 pcsx2-latest-bin
 phonon-qt5-gstreamer
 pika-backup
-pinta
 pinterest-downloader-git
 pipes.sh
 pipewire-alsa
