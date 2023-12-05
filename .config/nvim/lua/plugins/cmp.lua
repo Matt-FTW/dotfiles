@@ -3,7 +3,7 @@ local cmp = require("cmp")
 return {
   "hrsh7th/nvim-cmp",
   keys = {
-    { "<leader>ciC", "<cmd>CmpStatus<CR>", desc = "Cmp Status" },
+    { "<leader>cic", "<cmd>CmpStatus<CR>", desc = "Cmp Status" },
   },
   opts = function(_, opts)
     opts.mapping = cmp.mapping.preset.insert({
