@@ -41,6 +41,10 @@ map("n", "n", "nzzzv")
 
 map("n", "N", "Nzzzv")
 
+map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
+
+map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
+
 map("n", "<a-h>", "_", { desc = "First character of Line" })
 map("n", "<a-l>", "$", { desc = "Last character of Line" })
 
