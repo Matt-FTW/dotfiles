@@ -1,5 +1,5 @@
 return {
   "backdround/tabscope.nvim",
-  event = "BufRead",
+  event = "LazyFile",
   opts = {},
 }

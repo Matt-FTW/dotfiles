@@ -25,7 +25,7 @@ return {
   },
   { -- better statuscolumn
     "luukvbaal/statuscol.nvim",
-    event = { "BufRead", "BufNewFile" },
+    event = { "LazyFile" },
     opts = function()
       local builtin = require("statuscol.builtin")
       return {
@@ -47,7 +47,7 @@ return {
   },
   { -- better fold
     "kevinhwang91/nvim-ufo",
-    event = { "BufRead", "BufNewFile" },
+    event = { "LazyFile" },
     dependencies = { "kevinhwang91/promise-async" },
     init = function()
       vim.o.foldcolumn = "1"

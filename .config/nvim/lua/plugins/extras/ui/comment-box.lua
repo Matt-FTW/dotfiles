@@ -1,5 +1,5 @@
 return {
   "LudoPinelli/comment-box.nvim",
-  event = "BufReadPost",
+  event = "LazyFile",
   opts = {},
 }
