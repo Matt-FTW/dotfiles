@@ -1,8 +1,19 @@
 return {
   "bennypowers/nvim-regexplainer",
-  opts = {},
-  event = "BufReadPost",
-  requires = {
+  dependencies = {
     "MunifTanjim/nui.nvim",
+  },
+  opts = {
+    auto = "true",
+  },
+  -- stylua: ignore
+  keys = {
+    {
+      "gR",
+      function()
+        require("regexplainer").show()
+      end,
+      desc = "Regexplainer",
+    },
   },
 }
