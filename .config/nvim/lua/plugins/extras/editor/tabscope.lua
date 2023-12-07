@@ -1,5 +1,7 @@
 return {
-  "backdround/tabscope.nvim",
-  event = "LazyFile",
-  opts = {},
+  "akinsho/bufferline.nvim",
+  dependencies = {
+    "backdround/tabscope.nvim",
+    opts = {},
+  },
 }
