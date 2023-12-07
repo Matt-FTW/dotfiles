@@ -9,64 +9,68 @@
       - android-file-transfer
       - android-tools
       - baobab
+      - base
+      - base-devel
       - bat
-      - blender
       - bluez
       - blueman
       - btop
-      - celluloid
       - clamtk
-      - dbeaver
-      - diff-so-fancy
-      - discord
+      - celluloid
+      - cliphist
+      - dex
       - dua-cli
+      - duf
       - eza
-      - easyeffects
       - fd
       - fzf
       - galculator
-      - gamemode
       - geeqie
-      - gnome-disk-utility
-      - gst-plugins-base
+      - genact
+      - github-cli
+      - gnome-logs
+      - gparted
       - hyprland
+      - imagemagick
       - kitty
-      - kvantum
-      - lazygit
-      - libreoffice-still
-      - lsp-plugins
-      - lxappearance
-      - mesa
+      - libreoffice-fresh
       - mpv
-      - navi
       - nemo
       - nemo-fileroller
       - nemo-image-converter
       - neofetch
-      - neovide
-      - neovim
-      - npm
       - nm-connection-editor
       - nvtop
       - obsidian
-      - onefetch
       - pavucontrol
       - pinta
       - polkit-gnome
+      - playerctl
+      - qt5ct
+      - reflector
       - ripgrep
       - ripgrep-all
       - scrcpy
       - sd
       - swappy
-      - swaydile
+      - swayidle
       - thunderbird
+      - trash-cli
+      - ttf-font-awesome
+      - ttf-nerd-fonts-symbols
+      - ttf-nerd-fonts-symbols-mono
+      - ttf-jetbrains-mono-nerd
       - ufw
+      - udiskie
       - waybar
       - wine
+      - vim
+      - wev
+      - wf-recorder
       - wl-clipboard
       - yt-dlp
-      - yarn
-      - xplr
+      - xdf-desktop-portal-hyprland
+      - xdg-user-dirs
       - zathura
       - zathura-pdf-mupdf
 
@@ -92,79 +96,45 @@
   aur:
     use: yay
     name:
-      - amf-amdgpu-pro
-      - activitywatch-bin
-      - adwsteamgtk
       - android-sdk-platform-tools
-      - ani-cli
-      - arronax
-      - betterdiscord-installer-bin
       - brave-bin
-      - catppuccin-gtk-macchiato
+      - catppuccin-gtk-theme-macchiato
       - cava
-      - cemu-bin
+      - check-broken-packages-pacman-hook-git
       - devify
       - downgrade
       - find-the-command
-      - heroic-games-launcher
       - hyprpicker-git
       - hyprshot
-      - lazynpm
+      - hyprsome-git
       - librewolf-bin
-      - ludusavi
-      - mangal-bin
-      - nerd-fonts-git
+      - needrestart
       - nwg-displays
       - nwg-look
-      - obs-studio-amf
       - paccache-hook
+      - pacseek
       - pika-backup
-      - pinterest-downloader-git
-      - pipes.sh
-      - prettierd
-      - proton-ge-custom-bin
       - pyprland
-      - spotdl
+      - rar
       - reflector-pacman-hook-git
-      - rofi-lboon-wayland-git
+      - rofi-lboon-wayland
       - rofi-file-browser-extended-git
-      - scc-bin
       - sddm-git
       - shell-color-scripts
-      - spicetify-cli
-      - spotify
       - swaylock-effects
       - swaync
       - swayosd-git
       - swww
+      - sync-pacman-hook-git
       - sysz
       - tgpt-bin
+      - topgrade
       - ttf-ms-win11-auto
-      - tty-clock-git
-      - unimatrix-git
       - upscayl-bin
-      - vkbasalt
-      - vulkan-amdgpu-pro
-      - wev
       - wl-clip-persist-git
+      - waybar-hyprland-cava-git
+      - waybar-module-pacman-updates-git
       - wleave-git
       - wlr-randr
       - wlrobs-hg
-      - xdg-desktop-portal-hyprland-git
-      - youtube-dl
       - ytdlp-gui
-      - zarchive-git
-
-# Cargo
-- name: Install Rust Packages
-  cargo:
-    name:
-      - cargo-update
-
-# Npm
-- name: Install Npm Packages
-  npm:
-    name:
-      - commitizen
-      - cz-git
-    global: true

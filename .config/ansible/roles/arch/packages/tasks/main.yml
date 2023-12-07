@@ -38,7 +38,7 @@
 
   block:
     - name: Install base packages for the system
-      include_tasks: base.yml
+      include_tasks: "modules/base.yml"
 
     - name: Install GPU drivers
       include_tasks: "drivers/{{ gpu_driver_choice | lower }}.yml"

@@ -4,7 +4,6 @@
     name:
       - dbeaver
       - diff-so-fancy
-      - fzf
       - lazygit
       - neovide
       - npm
@@ -12,12 +11,11 @@
       - onefetch
       - ripgrep
       - ripgrep-all
-      - sd
       - yarn
       - rustup
       - python-pip
       - python-pipx
-      - git
+      - go
       - github-cli
       - luarocks
       - nodejs
