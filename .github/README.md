@@ -99,16 +99,16 @@ Here is some _small_ information about my setup:
   <summary><b>🖱️ GUI Apps</b></summary>
 
 - **Music Player**: [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) ([Config](../.config/spicetify/)) :gear:
-- **Web Browser**: [Librewolf](https://librewolf.net/) / [Thorium](https://thorium.rocks/) :sparkles: ([Config](../.config/browser/)) :gear:
+- **Web Browser**: [Librewolf](https://librewolf.net/) :sparkles: ([Config](../.config/browser/)) :gear:
 - **Messaging App**: [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) ([Config](../.config/BetterDiscord/)) :gear:
 - **Email Client**: [Thunderbird](https://www.thunderbird.net/)
 - **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) ([Config](../.config/zathura/)) :gear:
-- **Note Taking**: [Obsidian](https://obsidian.md/) :sparkles:
+- **Note Taking App**: [Obsidian](https://obsidian.md/) :sparkles:
 - **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) ([Config](../.config/mpv/)) :gear:
 - **Image Viewer**: [geeqie](https://www.geeqie.org/) ([Config](../.config/geeqie/)) :gear:
 - **File Manager**: [Nemo](https://community.linuxmint.com/software/view/nemo)
 - **Audio Effects**: [Easyeffects](https://github.com/wwmm/easyeffects)
-- **Image Editor**: [Gimp](https://www.gimp.org/)
+- **Image Editor**: [Krita](https://krita.org/)
 - **Paint Tool**: [Pinta](https://www.pinta-project.com/)
 - **VM Manager**: [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))
 - **Recording Program**: [OBS](https://obsproject.com/)
@@ -120,7 +120,7 @@ Here is some _small_ information about my setup:
   <summary><b>🔍 Other</b></summary>
 
 - **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) :sparkles:
-- **Font**: [Jetbrains Mono Nerd](https://www.jetbrains.com/es-es/lp/mono/)
+- **Font**: [JetBrainsMono Nerd Font](https://www.jetbrains.com/es-es/lp/mono/)
 - **Dotfiles Manager**: [yadm](https://yadm.io/) :sparkles: ([Config](../.config/yadm/)) :gear:
 - **Automatic System Deployment**: [Ansible](https://www.ansible.com/) :sparkles: ([Config](../.config/ansible/)) :gear:
 
