@@ -19,9 +19,7 @@ folder = [
 ]
 archive = [{ exec = 'file-roller "$1"', desc = "Extract here" }]
 pdf = [{ exec = 'zathura "$1"', desc = "Open" }]
-text = [
-  { exec = 'pypr toggle yazi & kitty --detach $EDITOR "$@"', block = true },
-]
+text = [{ exec = 'pypr hide yazi & kitty --detach $EDITOR "$@"', block = true }]
 image = [
   { exec = 'geeqie "$@"', desc = "Open" },
   { exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF" },
