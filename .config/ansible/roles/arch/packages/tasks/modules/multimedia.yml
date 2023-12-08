@@ -2,89 +2,20 @@
 - name: Install Pacman Packages
   pacman:
     name:
-      # Base / Core
-      - amd-ucode
-      - intel-ucode
-
-      - android-file-transfer
-      - android-tools
-      - baobab
-      - bat
-      - blender
-      - bluez
-      - blueman
-      - btop
-      - celluloid
-      - clamtk
-      - dbeaver
-      - diff-so-fancy
-      - discord
-      - dua-cli
-      - eza
+      # Audio
       - easyeffects
-      - fd
-      - fzf
-      - galculator
-      - gamemode
-      - geeqie
-      - gnome-disk-utility
       - gst-plugins-base
-      - hyprland
-      - kitty
-      - kvantum
-      - lazygit
-      - libreoffice-still
       - lsp-plugins
-      - lxappearance
-      - mesa
-      - mpv
-      - navi
-      - nemo
-      - nemo-fileroller
-      - nemo-image-converter
-      - neofetch
-      - neovide
-      - neovim
-      - npm
-      - nm-connection-editor
-      - nvtop
-      - obsidian
-      - onefetch
-      - pavucontrol
-      - pinta
-      - polkit-gnome
-      - ripgrep
-      - ripgrep-all
-      - scrcpy
-      - sd
-      - swappy
-      - swaydile
-      - thunderbird
-      - ufw
-      - waybar
-      - wine
-      - wl-clipboard
+      - qpwgraph
+
+      # Video
+      - obs-studio
+      - blender
       - yt-dlp
-      - yarn
-      - xplr
-      - zathura
-      - zathura-pdf-mupdf
 
-# AUR
-- name: Create the `aur_builder` user
-  become: true
-  ansible.builtin.user:
-    name: aur_builder
-    create_home: yes
-    group: wheel
-
-- name: Allow the `aur_builder` user to run `sudo pacman` without a password
-  become: true
-  ansible.builtin.lineinfile:
-    path: /etc/sudoers.d/11-install-aur_builder
-    line: "aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman"
-    create: yes
-    validate: "visudo -cf %s"
+      # Image
+      - pinta
+      - krita
 
 - name: Install AUR Packages
   become: true
@@ -92,79 +23,7 @@
   aur:
     use: yay
     name:
-      - amf-amdgpu-pro
-      - activitywatch-bin
-      - adwsteamgtk
-      - android-sdk-platform-tools
-      - ani-cli
-      - arronax
-      - betterdiscord-installer-bin
-      - brave-bin
-      - catppuccin-gtk-macchiato
-      - cava
-      - cemu-bin
-      - devify
-      - downgrade
-      - find-the-command
-      - heroic-games-launcher
-      - hyprpicker-git
-      - hyprshot
-      - lazynpm
-      - librewolf-bin
-      - ludusavi
-      - mangal-bin
-      - nerd-fonts-git
-      - nwg-displays
-      - nwg-look
-      - obs-studio-amf
-      - paccache-hook
-      - pika-backup
-      - pinterest-downloader-git
-      - pipes.sh
-      - prettierd
-      - proton-ge-custom-bin
-      - pyprland
-      - spotdl
-      - reflector-pacman-hook-git
-      - rofi-lboon-wayland-git
-      - rofi-file-browser-extended-git
-      - scc-bin
-      - sddm-git
-      - shell-color-scripts
+      # Audio
       - spicetify-cli
       - spotify
-      - swaylock-effects
-      - swaync
-      - swayosd-git
-      - swww
-      - sysz
-      - tgpt-bin
-      - ttf-ms-win11-auto
-      - tty-clock-git
-      - unimatrix-git
-      - upscayl-bin
-      - vkbasalt
-      - vulkan-amdgpu-pro
-      - wev
-      - wl-clip-persist-git
-      - wleave-git
-      - wlr-randr
-      - wlrobs-hg
-      - xdg-desktop-portal-hyprland-git
-      - youtube-dl
       - ytdlp-gui
-      - zarchive-git
-
-# Cargo
-- name: Install Rust Packages
-  cargo:
-    name:
-      - cargo-update
-
-# Npm
-- name: Install Npm Packages
-  npm:
-    name:
-      - commitizen
-      - cz-git
-    global: true

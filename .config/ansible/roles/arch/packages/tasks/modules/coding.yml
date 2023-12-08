@@ -2,23 +2,36 @@
 - name: Install Pacman Packages
   pacman:
     name:
+      # Web
+      - yarn
+      - npm
+      - nodejs
+
+      # Python
+      - python-pip
+      - python-pipx
+
+      # Rust
+      - rustup
+
+      # Go
+      - go
+
+      # Lua
+      - lua
+      - luarocks
+
+      # Tools
+      - github-cli
       - dbeaver
       - diff-so-fancy
       - lazygit
-      - neovide
-      - npm
-      - bob # Neovim version manager
       - onefetch
-      - ripgrep
-      - ripgrep-all
-      - yarn
-      - rustup
-      - python-pip
-      - python-pipx
-      - go
-      - github-cli
-      - luarocks
-      - nodejs
+
+      # Neovim
+      - neovide
+      - bob
+      - vim
 
 # AUR
 - name: Install AUR Packages

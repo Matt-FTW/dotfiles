@@ -2,77 +2,92 @@
 - name: Install Pacman Packages
   pacman:
     name:
-      # Base / Core
+      # Microcode
       - amd-ucode
       - intel-ucode
 
-      - android-file-transfer
-      - android-tools
-      - baobab
+      # System
       - base
       - base-devel
-      - bat
-      - bluez
-      - blueman
-      - btop
+      - polkit-gnome
       - clamtk
-      - celluloid
-      - cliphist
+      - qt5ct
       - dex
-      - dua-cli
-      - duf
-      - eza
-      - fd
-      - fzf
-      - galculator
-      - geeqie
-      - genact
-      - github-cli
-      - gnome-logs
-      - gparted
+      - reflector
+      - ufw
+      - xdg-user-dirs
+      - udiskie
+
+      # Android
+      - android-file-transfer
+      - android-tools
+      - scrcpy
+
+      # WM
       - hyprland
-      - imagemagick
+      - swappy
+      - swayidle
+      - wev
+      - wf-recorder
+      - wl-clipboard
+      - xdg-desktop-portal-hyprland
       - kitty
-      - libreoffice-fresh
-      - mpv
+
+      # File Manager
+      - yazi
       - nemo
       - nemo-fileroller
       - nemo-image-converter
-      - neofetch
-      - nm-connection-editor
-      - nvtop
-      - obsidian
-      - pavucontrol
-      - pinta
-      - polkit-gnome
-      - playerctl
-      - qt5ct
-      - reflector
-      - ripgrep
-      - ripgrep-all
-      - scrcpy
-      - sd
-      - swappy
-      - swayidle
-      - thunderbird
-      - trash-cli
+
+      # Fonts
       - ttf-font-awesome
       - ttf-nerd-fonts-symbols
       - ttf-nerd-fonts-symbols-mono
       - ttf-jetbrains-mono-nerd
-      - ufw
-      - udiskie
-      - waybar
-      - wine
-      - vim
-      - wev
-      - wf-recorder
-      - wl-clipboard
-      - yt-dlp
-      - xdf-desktop-portal-hyprland
-      - xdg-user-dirs
+
+      # Tools
+      - baobab
+      - cliphist
+      - galculator
+      - gnome-logs
+      - gparted
+      - playerctl
+      - nm-connection-editor
+
+      # Bluetooth
+      - bluez
+      - blueman
+
+      # CLI / TUI
+      - bat
+      - btop
+      - eza
+      - fd
+      - fzf
+      - nvtop
+      - duf
+      - dua-cli
+      - neofetch
+      - ripgrep
+      - ripgrep-all
+      - sd
+      - trash-cli
+
+      # Productivity
+      - libreoffice-fresh
+      - obsidian
+      - thunderbird
       - zathura
       - zathura-pdf-mupdf
+
+      # Multimedia
+      - celluloid
+      - discord
+      - geeqie
+      - imagemagick
+      - mpv
+      - pavucontrol
+      - wine
 
 # AUR
 - name: Create the `aur_builder` user
@@ -96,45 +111,58 @@
   aur:
     use: yay
     name:
-      - android-sdk-platform-tools
-      - brave-bin
-      - catppuccin-gtk-theme-macchiato
-      - cava
-      - check-broken-packages-pacman-hook-git
-      - devify
-      - downgrade
-      - find-the-command
-      - hyprpicker-git
-      - hyprshot
-      - hyprsome-git
-      - librewolf-bin
-      - needrestart
-      - nwg-displays
-      - nwg-look
-      - paccache-hook
-      - pacseek
-      - pika-backup
-      - pyprland
-      - rar
-      - reflector-pacman-hook-git
-      - rofi-lboon-wayland
-      - rofi-file-browser-extended-git
+      # System
       - sddm-git
-      - shell-color-scripts
+
+      # Browser
+      - brave-bin
+      - librewolf-bin
+
+      # WM
+      - waybar-hyprland-cava-git
+      - waybar-module-pacman-updates-git
+      - wleave-git
       - swaylock-effects
       - swaync
       - swayosd-git
       - swww
-      - sync-pacman-hook-git
-      - sysz
-      - tgpt-bin
-      - topgrade
-      - ttf-ms-win11-auto
-      - upscayl-bin
-      - wl-clip-persist-git
-      - waybar-hyprland-cava-git
-      - waybar-module-pacman-updates-git
-      - wleave-git
+      - hyprpicker-git
+      - hyprshot
+      - hyprsome-git
       - wlr-randr
       - wlrobs-hg
-      - ytdlp-gui
+      - nwg-displays
+      - nwg-look
+      - pyprland
+      - rofi-lboon-wayland
+      - rofi-file-browser-extended-git
+
+      # Hooks
+      - check-broken-packages-pacman-hook-git
+      - reflector-pacman-hook-git
+      - sync-pacman-hook-git
+      - needrestart
+      - paccache-hook
+
+      # CLI / TUI
+      - cava
+      - find-the-command
+      - pacseek
+      - sysz
+      - tgpt-bin
+      - shell-color-scripts
+
+      # Tools
+      - devify
+      - topgrade
+      - upscayl-bin
+      - downgrade
+      - betterdiscord-installer-bin
+      - android-sdk-platform-tools
+      - pika-backup
+      - rar
+      - wl-clip-persist-git
+
+      # Theme
+      - catppuccin-gtk-theme-macchiato
+      - ttf-ms-win11-auto
