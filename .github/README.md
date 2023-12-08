@@ -76,6 +76,7 @@ Here is some _small_ information about my setup:
 - **CD Replacement**: [zoxide](https://github.com/ajeetdsouza/zoxide) :sparkles:
 - **LS Replacement**: [eza](https://github.com/eza-community/eza)
 - **Cat Replacement**: [bat](https://github.com/sharkdp/bat) ([Config](../.config/bat/)) :gear:
+- **Find Replacement**: [fd](https://github.com/sharkdp/fd) ([Config](../.config/fd/)) :gear:
 - **Help Pages**: [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) ([Config](../.config/navi/)) :gear:
 - **Fuzzy File Finder**: [fzf](https://github.com/junegunn/fzf) :sparkles:
 - **Fuzzy Word Finder**: [Ripgrep](https://github.com/BurntSushi/ripgrep) ([Config](../.config/rg/)) :gear:
