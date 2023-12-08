@@ -65,7 +65,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>D"] = { name = "+database" },
+        ["<leader>D"] = { name = " database" },
       },
     },
   },

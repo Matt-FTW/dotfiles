@@ -48,7 +48,7 @@ return {
       defaults = {
         ["<leader>ce"] = { name = "+r[e]pl" },
         ["<leader>ft"] = { name = "+terminals" },
-        ["<leader>T"] = { name = "+tools" },
+        ["<leader>T"] = { name = " tools" },
       },
     },
   },
