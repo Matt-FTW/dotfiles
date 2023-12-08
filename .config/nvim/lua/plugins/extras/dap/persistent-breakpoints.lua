@@ -27,11 +27,4 @@ return {
       },
     },
   },
-  {
-    "nvim-telescope/telescope.nvim",
-    keys = {
-      { "<leader>dL", false },
-      { "<leader>dbl", "<cmd>Telescope dap list_breakpoints<CR>", desc = "List Breakpoints" },
-    },
-  },
 }
