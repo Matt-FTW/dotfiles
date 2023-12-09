@@ -27,6 +27,7 @@ return {
         ft = "Outline",
         pinned = true,
         open = "OutlineOpen",
+        size = { width = 0.15 },
       })
     end,
   },
