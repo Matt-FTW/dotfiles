@@ -8,10 +8,13 @@
 
 # Enable this to use italic text on the terminal. This is not supported on all
 # terminal emulators (like tmux, by default):
-#--italic-text=always
+--italic-text=always
+--style=full
+--color=always
+--decorations=always
 
 # Uncomment the following line to disable automatic paging:
-#--paging=never
+--paging=never
 
 # Uncomment the following line if you are using less version >= 551 and want to
 # enable mouse scrolling support in `bat` when running inside tmux. This might
@@ -21,5 +24,4 @@
 # Syntax mappings: map a certain filename pattern to a language.
 #   Example 1: use the C++ syntax for Arduino .ino files
 #   Example 2: Use ".gitignore"-style highlighting for ".ignore" files
-#--map-syntax "*.ino:C++"
-#--map-syntax ".ignore:Git Ignore"
+--map-syntax ".ignore:Git Ignore"
