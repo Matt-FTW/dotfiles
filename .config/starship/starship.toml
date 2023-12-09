@@ -20,6 +20,11 @@ style = "green"
 format = "[ $output ]($style)"
 shell = ["bash"]
 
+[custom.hypr]
+style = "blue"
+format = "[ ]($style)"
+detect_files = ["hyprland.conf"]
+
 [aws]
 symbol = "  "
 
@@ -37,6 +42,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
+home_symbol = " "
 
 [docker_context]
 symbol = " "
