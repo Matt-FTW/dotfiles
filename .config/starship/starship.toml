@@ -5,12 +5,17 @@
 add_newline = true
 
 [git_status]
+ahead = '[ $count](bold green) '
+conflicted = '[󱡂 ](bold red) '
 untracked = '[ $count](bold yellow) '
 staged = '[ $count](bold green) '
-stashed = "[ ](cyan) "
+stashed = '[ $count](cyan) '
 deleted = '[ $count](bold red) '
 modified = '[ $count](bold blue) '
-behind = '[ ](bold purple) '
+behind = '[ $count](bold purple) '
+renamed = '[󰬴 $count](bold blue) '
+up_to_date = '[ ](bold green) '
+diverged = '[ $ahead_count  $behind_count ](bold red) '
 format = '([$all_status$ahead_behind]($style))'
 
 [custom.neovim]
