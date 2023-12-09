@@ -3,7 +3,7 @@ function repos --description 'Open Git directories in ~/Repos with fzf in a new 
 
     if test -n "$selected_dir"
         set tab_title (basename "$selected_dir")
-        set new_tab_cmd "kitty @ set-tab-title \"$tab_title\"; and cd $selected_dir; and onefetch"
+        set new_tab_cmd "kitty @ set-tab-title \"$tab_title\"; and cd $selected_dir; and onefetch; and lh"
         eval $new_tab_cmd
     end
 
