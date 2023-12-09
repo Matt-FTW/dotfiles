@@ -21,10 +21,9 @@ else
 fi
 
 swww img "$IMAGE" \
-	--transition-bezier .2,1.19,.8,.4 \
-	--transition-type grow \
-	--transition-duration 1.5 \
-	--transition-fps 75 \
-	--transition-pos "$(hyprctl cursorpos)"
+	--transition-bezier 0.5,1.19,.8,.4 \
+	--transition-type wipe \
+	--transition-duration 2 \
+	--transition-fps 75
 
 notify-send "Wallpaper Changed" "Wallpaper changed to $IMAGE"
