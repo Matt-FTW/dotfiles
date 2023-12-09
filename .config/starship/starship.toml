@@ -41,8 +41,19 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " 󰌾"
+read_only = "󰌾 "
 home_symbol = " "
+truncation_length = 3
+
+[directory.substitutions]
+"Documentos" = "󰈙 "
+"Descargas" = " "
+"Musica" = " "
+"Imagenes" = " "
+"Repos" = " "
+"Videos" = " "
+"Obsidian" = "󰏪 "
+".config" = " "
 
 [docker_context]
 symbol = " "
