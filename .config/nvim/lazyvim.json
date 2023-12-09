@@ -41,6 +41,7 @@
     "plugins.extras.editor.telescope.zoxide",
     "plugins.extras.editor.terminal.floaterm",
     "plugins.extras.formatting.isort",
+    "plugins.extras.formatting.rustfmt",
     "plugins.extras.lang.ansible",
     "plugins.extras.lang.bash",
     "plugins.extras.lang.git",
