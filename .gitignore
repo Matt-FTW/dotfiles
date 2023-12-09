@@ -1,0 +1,80 @@
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor Files
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.swk
+*.bak
+*.backup
+*.orig
+*.ref
+*~
+.vscode
+.idea
+.iml
+*.sublime-workspace
+
+# Logs
+*.log
+*.sqlite
+log.txt
+
+# Generated files
+build/
+target/
+dist/
+
+# Sensitive files
+*.env
+*.key
+*.pem
+*.credentials
+*.password
+*.secret
+
+# Scratch files
+.scratch/
+
+# PhpStorm HTTP Requests
+.http/
+
+# Temp files
+tmp/
+
+# Web files
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+vendor/
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.msi
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Python
+*.pyc
+
+# Rust
+**/*.rs.bk
+**/*.rl.bk
