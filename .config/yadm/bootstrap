@@ -27,5 +27,5 @@ elif [[ $system_type == "Debian" ]]; then
   ansible-galaxy install -r ~/.config/yadm/requirements.yml
 
   # Install System Tools and Configurations
-  ansible-playbook -i ./inventory ./debian.yml --ask-become-pass
+  ansible-playbook -i ~/.config/ansible/inventory ~/.config/ansible/debian.yml --ask-become-pass
 fi
