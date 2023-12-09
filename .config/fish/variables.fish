@@ -55,7 +55,7 @@ set -xg LC_ALL es_ES.UTF-8
 
 # FZF
 set -xg FZF_DEFAULT_COMMAND fd
-set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border --margin=1 --padding=1 \
+set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border rounded --margin=1 --padding=1 \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
