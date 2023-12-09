@@ -1,4 +1,3 @@
 function f --wraps=fzf --description 'alias f=fzf'
-  fzf $argv
-        
+    fzf $argv
 end
