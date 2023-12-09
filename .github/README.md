@@ -137,7 +137,7 @@ Here is some _small_ information about my setup:
 
 #### :package: <samp>Manual Installation (Universal) </samp>
 
-> :information_source: INFORMATION: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
+> :information_source: INFO: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
 
 ##### WIP
 
@@ -153,7 +153,7 @@ Here is some _small_ information about my setup:
 ![overview-8](./assets/images/overview-8.png)
 ![overview-9](./assets/images/overview-9.png)
 
-> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP)
+> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
 
 ## :tada: ‎ <samp>Credits</samp>
 
