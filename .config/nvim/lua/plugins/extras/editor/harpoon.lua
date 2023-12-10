@@ -11,6 +11,9 @@ return {
       { "<leader>4", function() require("harpoon.ui").nav_file(4) end, desc = "File 4" },
       { "<leader>5", function() require("harpoon.ui").nav_file(5) end, desc = "File 5" },
       { "<leader>6", function() require("harpoon.ui").nav_file(6) end, desc = "File 6" },
+      { "<leader>7", function() require("harpoon.ui").nav_file(7) end, desc = "File 7" },
+      { "<leader>8", function() require("harpoon.ui").nav_file(8) end, desc = "File 8" },
+      { "<leader>9", function() require("harpoon.ui").nav_file(9) end, desc = "File 9" },
     },
     opts = {
       globalsettings = {
