@@ -5,7 +5,7 @@
 add_newline = true
 
 [cmd_duration]
-min_time = 2000
+min_time = 10000
 format = "[󰔟 $duration](bold cyan)"
 
 [git_metrics]
