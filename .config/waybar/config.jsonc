@@ -54,9 +54,11 @@
     },
     "custom/weather": {
       "exec": "python3 ~/.config/waybar/scripts/weather.py",
-      "restart-interval": 300,
+      "restart-interval": 100,
       "return-type": "json",
-      "on-click": "xdg-open https://www.eltiempo.es/alicante.html"
+      "on-click": "kitty --hold --class center-float wttr Alicante",
+      "on-click-right": "kitty --hold --class center-float wttr -v2 Alicante",
+      "on-click-middle": "xdg-open https://www.eltiempo.es/alicante.html"
     },
     "custom/notifications": {
       "tooltip": false,
@@ -145,14 +147,15 @@
       },
       "interval": 1,
       "format": "{:%H:%M:%OS}  ",
-      "format-alt": "{:%A, %B %d, %Y}  ",
+      "format-alt": "{:%A, %B %d, %Y}  ",
       "actions": {
         "on-click-right": "mode",
         "on-click-forward": "tz_up",
         "on-click-backward": "tz_down",
         "on-scroll-up": "shift_up",
         "on-scroll-down": "shift_down"
-      }
+      },
+      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23"
     },
     "pulseaudio": {
       "format": "{icon} {volume}% {format_source}",
@@ -323,7 +326,8 @@
         "on-click-backward": "tz_down",
         "on-scroll-up": "shift_up",
         "on-scroll-down": "shift_down"
-      }
+      },
+      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23"
     }
   },
   {
