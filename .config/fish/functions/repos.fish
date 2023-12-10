@@ -1,9 +1,10 @@
 function repos --description 'Open Git directories in ~/Repos with fzf in a new Kitty tab'
-    set selected_dir (find ~/Repos -type d -exec test -e '{}/.git' ';' -print -prune | fzf)
+    set gfetch "gfetch -d churn contributors --no-color-palette --no-title"
+    set selected_dir (find ~/Repos -type d -exec test -e '{}/.git' ';' -print -prune | fzf --preview "$gfetch {} && eza --long --header --icons --all --color=always --group-directories-first --hyperlink {}")
 
     if test -n "$selected_dir"
         set tab_title (basename "$selected_dir")
-        set new_tab_cmd "kitty @ set-tab-title \"$tab_title\"; and cd $selected_dir; and onefetch; and lh"
+        set new_tab_cmd "kitty @ set-tab-title \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
         eval $new_tab_cmd
     end
 
