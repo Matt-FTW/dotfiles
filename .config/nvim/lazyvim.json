@@ -14,7 +14,6 @@
     "plugins.extras.coding.annotation",
     "plugins.extras.coding.cmp.autopairs",
     "plugins.extras.coding.cmp.fonts",
-    "plugins.extras.coding.cmp.yanky",
     "plugins.extras.coding.debugprint",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.multicursor",
