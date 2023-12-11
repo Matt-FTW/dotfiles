@@ -6,6 +6,11 @@ return {
     { "<leader>cic", "<cmd>CmpStatus<CR>", desc = "Cmp Status" },
   },
   opts = function(_, opts)
+    local border = {
+      border = "rounded",
+      winhighlight = "Normal:Normal,FloatBorder:Normal,CursorLine:Visual,Search:None",
+    }
+
     opts.mapping = cmp.mapping.preset.insert({
       ["<C-j>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
       ["<C-k>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
@@ -25,9 +30,10 @@ return {
         fallback()
       end,
     })
+
     opts.window = {
-      completion = cmp.config.window.bordered(),
-      documentation = cmp.config.window.bordered(),
+      completion = cmp.config.window.bordered(border),
+      documentation = cmp.config.window.bordered(border),
     }
     cmp.setup.cmdline({ "/", "?" }, {
       mapping = cmp.mapping.preset.cmdline(),
