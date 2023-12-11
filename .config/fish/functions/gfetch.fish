@@ -1,4 +1,3 @@
 function gfetch --wraps=onefetch --description 'alias gfetch=onefetch'
-  onefetch $argv
-        
+    onefetch $argv
 end

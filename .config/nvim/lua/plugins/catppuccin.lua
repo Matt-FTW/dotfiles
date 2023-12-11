@@ -19,10 +19,8 @@ return {
           dim_context = false,
           alt_background = false,
         },
-        dap = {
-          enabled = true,
-          enable_ui = true, -- enable nvim-dap-ui
-        },
+        dap = true,
+        dap_ui = true,
         dashboard = true,
         flash = true,
         headlines = true,

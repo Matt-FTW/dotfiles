@@ -36,9 +36,17 @@
         - "No"
       private: no
 
+    - name: enable_vm_module
+      prompt: "Do you want to install the vm packages?"
+      type: list
+      choices:
+        - "Yes"
+        - "No"
+      private: no
+
   block:
     - name: Install base packages for the system
-      include_tasks: base.yml
+      include_tasks: "modules/base.yml"
 
     - name: Install GPU drivers
       include_tasks: "drivers/{{ gpu_driver_choice | lower }}.yml"
@@ -55,3 +63,7 @@
     - name: Install multimedia packages
       include_tasks: "modules/multimedia.yml"
       when: enable_multimedia_module == "Yes"
+
+    - name: Install vm packages
+      include_tasks: "modules/vm.yml"
+      when: enable_vm_module == "Yes"

@@ -1,3 +1,5 @@
+local Util = require("lazyvim.util")
+
 return {
   {
     "folke/zen-mode.nvim",
@@ -12,6 +14,14 @@ return {
         if vim.fn.exists(":ScrollViewDisable") ~= 0 then
           vim.cmd("ScrollViewDisable")
         end
+        if vim.fn.exists(":LspLensOff") ~= 0 then
+          vim.cmd("LspLensOff")
+        end
+        if vim.fn.exists(":NvimContextVtToggle") ~= 0 then
+          vim.cmd("NvimContextVtToggle")
+        end
+        Util.toggle.inlay_hints()
+        vim.cmd("Gitsigns toggle_current_line_blame")
       end,
       on_close = function()
         vim.opt.laststatus = 3
@@ -21,6 +31,14 @@ return {
         if vim.fn.exists(":ScrollViewEnable") ~= 0 then
           vim.cmd("ScrollViewEnable")
         end
+        if vim.fn.exists(":LspLensOn") ~= 0 then
+          vim.cmd("LspLensOn")
+        end
+        if vim.fn.exists(":NvimContextVtToggle") ~= 0 then
+          vim.cmd("NvimContextVtToggle")
+        end
+        Util.toggle.inlay_hints()
+        vim.cmd("Gitsigns toggle_current_line_blame")
       end,
     },
   },

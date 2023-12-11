@@ -1,4 +1,3 @@
 function nup --wraps='npm update' --description 'alias nup=npm update'
-  npm update $argv
-        
+    npm update $argv
 end

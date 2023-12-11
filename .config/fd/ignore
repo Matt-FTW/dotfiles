@@ -1,0 +1,40 @@
+# vim: filetype=gitignore
+#───────────────────────────────────────────────────────────────────────────────
+**/*.app/*
+**/*.pxd/*
+Juegos/**
+
+# git
+.gitignore
+.git
+
+# INFO files
+*INFO*
+
+# general
+LICENSE
+.editorconfig
+
+# node
+package.json
+.prettierrc
+.eslintrc
+.eslintrc.json
+package-lock.json
+versions.json
+manifest.json
+tsconfig.json
+jsconfig.json
+esbuild.config.mjs
+biome.json
+
+# python
+__init__.py
+pyproject.toml
+requirements.txt
+
+# nvim-plugins
+stylua.toml
+
+# vscode
+.vscode

@@ -49,7 +49,7 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 Here is some _small_ information about my setup:
 
-> :information_source: INFO: Some of this apps have the config included in the repo (marked with :gear:), others don't because simply they don't have any or is not worth saving it because use of their defaults. Also, my favorite programs and tools are marked with :sparkles:
+> ℹ️ INFO: Some of this apps have the config included in the repo (marked with ⚙️), others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with ✨.
 
 <details>
   <summary><b>🐧 System</b></summary>
@@ -66,7 +66,7 @@ Here is some _small_ information about my setup:
 - **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
 - **Clipboard Manager**: [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))
 - **Wallpaper Switcher**: [swww](https://github.com/Horus645/swww)
-- **Lock Screen**: [swaylock-effects](https://github.com/mortie/swaylock-effects) ([Config](../.config/swaylock/)) :gear:
+- **Lock Screen**: [swaylock-effects](https://github.com/jirutka/swaylock-effects) ([Config](../.config/swaylock/)) :gear:
 - **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) ([Config](../.config/swayidle/)) :gear:
 - **Color Picker**: [Hyprpicker](https://github.com/hyprwm/hyprpicker)
 - **Recording Tool**: [wf-recorder](https://github.com/ammen99/wf-recorder)
@@ -85,6 +85,7 @@ Here is some _small_ information about my setup:
 - **CD Replacement**: [zoxide](https://github.com/ajeetdsouza/zoxide) :sparkles:
 - **LS Replacement**: [eza](https://github.com/eza-community/eza)
 - **Cat Replacement**: [bat](https://github.com/sharkdp/bat) ([Config](../.config/bat/)) :gear:
+- **Find Replacement**: [fd](https://github.com/sharkdp/fd) ([Config](../.config/fd/)) :gear:
 - **Help Pages**: [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) ([Config](../.config/navi/)) :gear:
 - **Fuzzy File Finder**: [fzf](https://github.com/junegunn/fzf) :sparkles:
 - **Fuzzy Word Finder**: [Ripgrep](https://github.com/BurntSushi/ripgrep) ([Config](../.config/rg/)) :gear:
@@ -108,16 +109,16 @@ Here is some _small_ information about my setup:
   <summary><b>🖱️ GUI Apps</b></summary>
 
 - **Music Player**: [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) ([Config](../.config/spicetify/)) :gear:
-- **Web Browser**: [Librewolf](https://librewolf.net/) / [Thorium](https://thorium.rocks/) :sparkles: ([Config](../.config/browser/)) :gear:
+- **Web Browser**: [Librewolf](https://librewolf.net/) :sparkles: ([Config](../.config/browser/)) :gear:
 - **Messaging App**: [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) ([Config](../.config/BetterDiscord/)) :gear:
 - **Email Client**: [Thunderbird](https://www.thunderbird.net/)
 - **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) ([Config](../.config/zathura/)) :gear:
-- **Note Taking**: [Obsidian](https://obsidian.md/) :sparkles:
+- **Note Taking App**: [Obsidian](https://obsidian.md/) :sparkles:
 - **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) ([Config](../.config/mpv/)) :gear:
 - **Image Viewer**: [geeqie](https://www.geeqie.org/) ([Config](../.config/geeqie/)) :gear:
 - **File Manager**: [Nemo](https://community.linuxmint.com/software/view/nemo)
 - **Audio Effects**: [Easyeffects](https://github.com/wwmm/easyeffects)
-- **Image Editor**: [Gimp](https://www.gimp.org/)
+- **Image Editor**: [Krita](https://krita.org/)
 - **Paint Tool**: [Pinta](https://www.pinta-project.com/)
 - **VM Manager**: [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))
 - **Recording Program**: [OBS](https://obsproject.com/)
@@ -129,7 +130,7 @@ Here is some _small_ information about my setup:
   <summary><b>🔍 Other</b></summary>
 
 - **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) :sparkles:
-- **Font**: [Jetbrains Mono Nerd](https://www.jetbrains.com/es-es/lp/mono/)
+- **Font**: [JetBrainsMono Nerd Font](https://www.jetbrains.com/es-es/lp/mono/)
 - **Dotfiles Manager**: [yadm](https://yadm.io/) :sparkles: ([Config](../.config/yadm/)) :gear:
 - **Automatic System Deployment**: [Ansible](https://www.ansible.com/) :sparkles: ([Config](../.config/ansible/)) :gear:
 
@@ -145,7 +146,7 @@ Here is some _small_ information about my setup:
 
 #### :package: <samp>Manual Installation (Universal) </samp>
 
-> :information_source: INFORMATION: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
+> :information_source: INFO: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
 
 ##### WIP
 
@@ -161,7 +162,7 @@ Here is some _small_ information about my setup:
 ![overview-8](./assets/images/overview-8.png)
 ![overview-9](./assets/images/overview-9.png)
 
-> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP)
+> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
 
 ## :tada: ‎ <samp>Credits</samp>
 

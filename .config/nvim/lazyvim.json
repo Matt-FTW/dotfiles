@@ -1,14 +1,12 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.yanky",
-    "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.python-semshi",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.linting.eslint",
-    "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
@@ -16,8 +14,6 @@
     "plugins.extras.coding.annotation",
     "plugins.extras.coding.cmp.autopairs",
     "plugins.extras.coding.cmp.fonts",
-    "plugins.extras.coding.cmp.rg",
-    "plugins.extras.coding.cmp.yanky",
     "plugins.extras.coding.debugprint",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.multicursor",
@@ -26,6 +22,7 @@
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.treesitter.puppeteer",
     "plugins.extras.coding.treesitter.text-case",
+    "plugins.extras.dap.core",
     "plugins.extras.dap.persistent-breakpoints",
     "plugins.extras.editor.color",
     "plugins.extras.editor.docs.devdocs",
@@ -43,6 +40,7 @@
     "plugins.extras.editor.telescope.zoxide",
     "plugins.extras.editor.terminal.floaterm",
     "plugins.extras.formatting.isort",
+    "plugins.extras.formatting.rustfmt",
     "plugins.extras.lang.ansible",
     "plugins.extras.lang.bash",
     "plugins.extras.lang.git",
@@ -58,6 +56,7 @@
     "plugins.extras.lsp.inc-rename",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
+    "plugins.extras.test.core",
     "plugins.extras.ui.breadcrumbs",
     "plugins.extras.ui.context",
     "plugins.extras.ui.highlight-undo",
@@ -78,4 +77,3 @@
   },
   "version": 2
 }
-

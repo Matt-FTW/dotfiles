@@ -20,6 +20,7 @@
 [core]
   editor = nvim
   pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /home/matt/.gitignore
 [interactive]
   diffFilter = diff-so-fancy --patch
 [merge]

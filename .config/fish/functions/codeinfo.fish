@@ -1,4 +1,3 @@
 function codeinfo --wraps='scc ./' --description 'alias codeinfo=scc ./'
-  scc ./ $argv
-        
+    scc ./ $argv
 end

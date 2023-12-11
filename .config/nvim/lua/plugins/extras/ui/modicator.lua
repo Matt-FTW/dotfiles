@@ -1,6 +1,6 @@
 return {
   "mawkler/modicator.nvim",
-  event = "BufReadPost",
+  event = "LazyFile",
   init = function()
     -- These are required for Modicator to work
     vim.o.cursorline = true

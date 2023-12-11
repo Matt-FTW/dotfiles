@@ -4,13 +4,28 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
+[cmd_duration]
+min_time = 10000
+format = "[󰔟 $duration](bold cyan)"
+
+[git_metrics]
+disabled = false
+added_style = "green"
+deleted_style = "red"
+format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\)) '
+
 [git_status]
+ahead = '[ $count](bold green) '
+conflicted = '[󱡂 ](bold red) '
 untracked = '[ $count](bold yellow) '
 staged = '[ $count](bold green) '
-stashed = "[ ](cyan) "
+stashed = '[ $count](cyan) '
 deleted = '[ $count](bold red) '
-modified = '[ $count](bold blue) '
-behind = '[ ](bold purple) '
+modified = '[ $count](bold yellow) '
+behind = '[ $count](bold purple) '
+renamed = '[󰬴 $count](bold blue) '
+up_to_date = '[ ](bold green) '
+diverged = '[ $ahead_count  $behind_count ](bold red) '
 format = '([$all_status$ahead_behind]($style))'
 
 [custom.neovim]
@@ -19,6 +34,20 @@ detect_folders = ["lua"]
 style = "green"
 format = "[ $output ]($style)"
 shell = ["bash"]
+
+[custom.hypr]
+style = "blue"
+format = "[ ]($style)"
+detect_files = ["hyprland.conf"]
+
+[custom.folder_number]
+description = "Number of files (and folders) in the current working directory"
+command = "fd -H --min-depth 1 --max-depth 1 | wc -l"
+when = "true"
+require_repo = true
+symbol = " "
+style = "blue bold"
+format = '[$symbol$output]($style) '
 
 [aws]
 symbol = "  "
@@ -36,7 +65,19 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " 󰌾"
+read_only = " 󰌾 "
+home_symbol = " "
+truncation_length = 3
+
+[directory.substitutions]
+"Documentos" = "󰈙 "
+"Descargas" = " "
+"Musica" = " "
+"Imagenes" = " "
+"Repos" = " "
+"Videos" = " "
+"Obsidian" = "󰏪 "
+".config" = " "
 
 [docker_context]
 symbol = " "

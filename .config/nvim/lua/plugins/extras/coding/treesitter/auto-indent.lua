@@ -1,6 +1,6 @@
 return {
   "vidocqh/auto-indent.nvim",
-  event = "BufReadPost",
+  event = "LazyFile",
   opts = {
     ---@param lnum: number
     ---@return number

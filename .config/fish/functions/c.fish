@@ -1,3 +1,3 @@
-function c --wraps=clear --description 'alias c=clear'
-    clear $argv
+function c --wraps=clear --wraps=z --description 'alias c=z'
+    z $argv
 end

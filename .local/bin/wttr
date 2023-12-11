@@ -1,0 +1,235 @@
+#!/bin/bash
+#
+#Author : Amirreza Firoozi
+#Author : Carsten Brueggenolte
+#name : wttr
+#Update 1.30: change config dir to $HOME/.config/wttr to go in line with other configuration files
+#Update 1.30: changed default city filename to 'default-city.txt'
+#Update 1.40: add v2.wttr.in feature and did some clean up
+#Update 1.41: add spaces in between city and url
+#Update 1.42: reverse changes with the space between url and city
+#Update 1.50: add v3.wttr.in - thanks to dok-ock for the inspiration and the fixes
+#Update 1.51: update about section and add it to the help screen
+#Update 1.52: move help and about into their own variables for better maintanance
+#Update 1.53: add a parameters '-t' current forecast and '-n' current weather
+#Update 1.54: spell check and added some optional parameters for -help, -today, -now
+
+wttr_ver="1.54_2021-09-03" #define script version
+
+GITHUB_REPO_URL="https://github.com/cblte/bash-script-wttr"
+URL="https://wttr.in/"
+URLv2="https://v2.wttr.in/"
+URLv3="https://v3.wttr.in/"
+
+About()
+{
+echo -e ="
+About the
+
+██╗    ██╗████████╗████████╗██████╗    ██╗███╗   ██╗
+██║    ██║╚══██╔══╝╚══██╔══╝██╔══██╗   ██║████╗  ██║
+██║ █╗ ██║   ██║      ██║   ██████╔╝   ██║██╔██╗ ██║
+██║███╗██║   ██║      ██║   ██╔══██╗   ██║██║╚██╗██║
+╚███╔███╔╝   ██║      ██║   ██║  ██║██╗██║██║ ╚████║
+ ╚══╝╚══╝    ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═══╝
+                      script by Carsten Brueggenolte
+
+
+This is a simple bash script to check weather condition
+with the help of wttr.in. The script 'wttr' is under GPL3 License.
+
+Source is available on Github: $GITHUB_REPO_URL
+
+Big THANK YOU goes to
+    - 'Amirreza Firoozi' (https://github.com/AmirrezaFiroozi/wttr)
+      for creating the initial script
+    - 'doc-ock' (https://github.com/doc-ock/) for the idea to add
+      version 3 of wttr.in and some other useful parameters.
+"
+}
+
+Help()
+{
+echo -e "
+Write 'wttr {your+city+name}' to check the  weather condition of your city.
+Surround city name with single- or double-quotes if city name contains more than one word.
+You can also put a '+' (plus-sign) in beetween words when you do not want to surround with quotes.
+
+Examples:
+   wttr cologne
+   wttr \"Den Haag, Netherland\"
+   wttr Den+Haag
+   wttr \"Den Haag Street, South Africa\"
+   wttr New+York
+
+You can type 'wttr' only if you have defined a standard city.
+
+Parameters:
+    -a show some information about this script
+    -h for some help (this page)
+    -hh for the official wttr.in/:help page
+    -i to install curl which is necessary for script to run correctly
+    -m for photo of moon
+    -n show current weather only
+    -rm to remove the script :(
+    -sdef to define a city as your default city
+    -t show today's forecast
+    -v show script version
+    -v2 to fetch different weather report view for the standard city
+    -v2 {your city name} to fetch different weather report view for city mentioned
+    -v3 {your city name} to fetch an in-terminal graphic for the given region.
+
+Hint:
+     When using '-v3' you do not need to add the '.sxl' to the
+     end of the region/city name. The script will add it automatically.
+
+Any bugs? Any suggestions? Contact information at https://cbrueggenolte.de/impressum
+"
+}
+
+# ------------------------
+# ----- Script starts here
+# ------------------------
+
+# Check if a standard city has been set
+if [ -f "$HOME/.config/wttr/default-city.txt" ];then #check if user set default city or not . if user did load it to variable def
+    cd $HOME/.config/wttr
+    def=$(cat default-city.txt)
+elif [ ! -d $HOME/.config/wttr ];then #if he/she didn`t make a blank file
+    mkdir "$HOME/.config/wttr"  2>/dev/null
+    cd $HOME/.config/wttr
+    echo "" > default-city.txt
+    def=""
+fi
+
+# Print out some help if no arguments provided and no standard city been set
+if [ "$#" == "0" ] && [ "$def" == "" ];then
+    echo -e "You have not entered any parameters and no standard city set yet.\nNeed help? try 'wttr -h'"
+elif [ "$#" -gt "2" ];then
+    echo -e "too many parameters. \nNeed help? try 'wttr -h'"
+else
+    case $1 in
+    # currently doesn't work: upgrade. There is some permissions problem
+    # "-u" | "-upgrade")
+	# echo -e "Checking for upgrades..."
+    	# git clone $GITHUB_REPO_URL /tmp/wttr
+	# bash /tmp/wttr/installer.sh
+    # ;;
+    "-a") # about
+        About
+    ;;
+    "-h" | "-help") #showing help
+        Help
+    ;;
+    "-hh")
+        curl https://wttr.in/:help
+    ;;
+    "-i")
+        sudo apt install curl
+    ;;
+    "-m")
+        curl http://wttr.in/moon
+    ;;
+    "-n" | "-now")
+        echo -e "Fetching current weather"
+        if [ "$#" == "2" ];then
+            city="$2"
+            city=${city// /+}
+            city=${city//[^a-zA-Z0-9+]}
+            curl $URL"$city?0n"
+        else
+            curl $URL"$def?0n"
+        fi
+        cd $HOME
+    ;;
+    "-rm")
+        read -p "Do you really want to remove wttr? (y/n)" response
+        if [ "$response" == "y" ];then
+            cd /usr/bin
+            sudo rm -R "wttr"    2>/dev/null
+            if [ -d "$HOME/.config/wttr" ];then
+                sudo rm -d "$HOME/.config/wttr" 2>/dev/null
+            fi
+            echo -e "Script has deleted :("
+        else
+            echo -e "Opration canceled"
+        fi
+    ;;
+    "-sdef") # set the default city
+        if [ ! -d $HOME/.config/wttr ];then
+            cd $HOME
+            mkdir -p ".config/wttr" 2>/dev/null
+        fi
+        if [ "$#" == "2" ];then
+ 	        cd $HOME/.config/wttr
+            echo "$2" > default-city.txt
+	        echo -e ""
+            echo -e "Done. Set '$2' as your default city. You can check its weather condition by typing only 'wttr' now :)"
+        else
+            read -p "Enter your city name to set as the default city (example : cologne) : " def
+            # replacing spaces with + signes and removing non wanted chars
+            def=${def// /+}
+            def=${def//[^a-zA-Z0-9+]}
+            if [ "$def" == "" ] && [ "$#" -ne "2" ];then
+                echo "you did NOT enter anything ..."
+            else
+                cd $HOME/.config/wttr
+                echo $def > default-city.txt
+	            echo -e ""
+                echo -e "Done. Set '$def' as your default city. You can check its weather condition by typing only 'wttr' now :)"
+            fi
+        fi #end of the second if
+    ;;
+    "-t" | "-today")
+        echo -e "Fetching today's forecast"
+        if [ "$#" == "2" ];then
+            city="$2"
+            city=${city// /+}
+            city=${city//[^a-zA-Z0-9+]}
+            curl $URL"$city?1n"
+        else
+            curl $URL"$def?1n"
+        fi
+        cd $HOME
+    ;;
+    "-v")
+        echo -e "wttr_VERSION is: "$wttr_ver" "
+    ;;
+    "-v2")
+        echo -e "Fetching v2 of wttr.in"
+        if [ "$#" == "2" ];then
+            city="$2"
+            city=${city// /+}
+            city=${city//[^a-zA-Z0-9+]}
+            curl $URLv2"$city"
+        else
+            curl $URLv2"$def"
+        fi
+        cd $HOME
+    ;;
+    "-v3")
+        echo -e "Fetching v3 of wttr.in"
+        if [ "$#" == "2" ];then
+           city="$2"
+           city=${city// /+}
+           city=${city//[^a-zA-Z0-9+]}
+           curl $URLv3"$city".sxl
+        else
+           curl $URLv3"$def".sxl
+        fi
+            cd $HOME
+    ;;
+    "")
+        cd $HOME
+        curl $URL"$def"
+    ;;
+    *)
+
+    city=$1
+    city=${city// /+}
+    city=${city//[^a-zA-Z0-9+]}
+    curl $URL"$city"
+
+    ;;
+  esac
+fi

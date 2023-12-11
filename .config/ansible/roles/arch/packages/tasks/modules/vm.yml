@@ -1,0 +1,13 @@
+# PACMAN
+- name: Install Pacman Packages
+  pacman:
+    name:
+      - qemu-full
+      - virt-manager
+      - virt-viewer
+      - dnsmasq
+      - bridge-utils
+      - libguestfs
+      - ebtables
+      - vde2
+      - openbsd-netcat

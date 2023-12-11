@@ -14,7 +14,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>G"] = { name = "+github" },
+        ["<leader>G"] = { name = " github" },
         ["<leader>Gc"] = { name = "+comments" },
         ["<leader>Gt"] = { name = "+threads" },
         ["<leader>Gi"] = { name = "+issues" },

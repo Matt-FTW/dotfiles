@@ -1,4 +1,3 @@
 function q --wraps=exit --description 'alias q=exit'
-  exit $argv
-        
+    exit $argv
 end

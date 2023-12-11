@@ -42,14 +42,17 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
-
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
+map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 
 map("n", "<a-h>", "_", { desc = "First character of Line" })
 map("n", "<a-l>", "$", { desc = "Last character of Line" })
 
--- Copy whole file content to clipboard with C-y
+-- Copy whole text to clipboard
 map("n", "<C-c>", ":%y+<CR>")
+
+-- Select all text
+map("n", "<C-n>", "gg<S-V>G")
 
 -- Better paste
 -- remap "p" in visual mode to delete the highlighted text without overwriting your yanked/copied text, and then paste the content from the unnamed register.

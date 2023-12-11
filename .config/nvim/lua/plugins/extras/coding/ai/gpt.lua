@@ -1,8 +1,16 @@
 return {
   {
     "jackMort/ChatGPT.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    cond = function()
+      local api_key = os.getenv("OPENAI_API_KEY")
+      return api_key and api_key ~= "" and true or false
+    end,
     opts = {
-      api_key_cmd = nil, --TODO: manage the API key
       edit_with_instructions = {
         diff = false,
         keymaps = {
@@ -104,7 +112,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>C"] = { name = "+chatGPT" },
+        ["<leader>C"] = { name = "󰚩 chatGPT" },
       },
     },
   },

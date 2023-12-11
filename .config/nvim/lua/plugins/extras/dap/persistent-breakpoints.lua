@@ -7,6 +7,7 @@ return {
       { "<leader>dbB", "<cmd>PBSetConditionalBreakpoint<cr>", desc = "Breakpoint Condition" },
       { "<leader>dbb", "<cmd>PBToggleBreakpoint<cr>", desc = "Toggle Breakpoint" },
       { "<F2>", "<cmd>PBToggleBreakpoint<cr>", desc = "Toggle Breakpoint" },
+      { "<leader>dB", false },
     },
     opts = {
       load_breakpoints_event = { "BufReadPost" },
@@ -25,13 +26,6 @@ return {
       defaults = {
         ["<leader>db"] = { name = "+breakpoints" },
       },
-    },
-  },
-  {
-    "nvim-telescope/telescope.nvim",
-    keys = {
-      { "<leader>dL", false },
-      { "<leader>dbl", "<cmd>Telescope dap list_breakpoints<CR>", desc = "List Breakpoints" },
     },
   },
 }

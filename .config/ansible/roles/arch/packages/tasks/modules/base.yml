@@ -1,0 +1,168 @@
+# PACMAN
+- name: Install Pacman Packages
+  pacman:
+    name:
+      # Microcode
+      - amd-ucode
+      - intel-ucode
+
+      # System
+      - base
+      - base-devel
+      - polkit-gnome
+      - clamtk
+      - qt5ct
+      - dex
+      - reflector
+      - ufw
+      - xdg-user-dirs
+      - udiskie
+
+      # Android
+      - android-file-transfer
+      - android-tools
+      - scrcpy
+
+      # WM
+      - hyprland
+      - swappy
+      - swayidle
+      - wev
+      - wf-recorder
+      - wl-clipboard
+      - xdg-desktop-portal-hyprland
+      - kitty
+
+      # File Manager
+      - yazi
+      - nemo
+      - nemo-fileroller
+      - nemo-image-converter
+
+      # Fonts
+      - ttf-font-awesome
+      - ttf-nerd-fonts-symbols
+      - ttf-nerd-fonts-symbols-mono
+      - ttf-jetbrains-mono-nerd
+
+      # Tools
+      - baobab
+      - cliphist
+      - galculator
+      - gnome-logs
+      - gparted
+      - playerctl
+      - nm-connection-editor
+
+      # Bluetooth
+      - bluez
+      - blueman
+
+      # CLI / TUI
+      - bat
+      - btop
+      - eza
+      - fd
+      - fzf
+      - nvtop
+      - duf
+      - dua-cli
+      - neofetch
+      - ripgrep
+      - ripgrep-all
+      - sd
+      - trash-cli
+
+      # Productivity
+      - libreoffice-fresh
+      - obsidian
+      - thunderbird
+      - zathura
+      - zathura-pdf-mupdf
+
+      # Multimedia
+      - celluloid
+      - discord
+      - geeqie
+      - imagemagick
+      - mpv
+      - pavucontrol
+      - wine
+
+# AUR
+- name: Create the `aur_builder` user
+  become: true
+  ansible.builtin.user:
+    name: aur_builder
+    create_home: yes
+    group: wheel
+
+- name: Allow the `aur_builder` user to run `sudo pacman` without a password
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/sudoers.d/11-install-aur_builder
+    line: "aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman"
+    create: yes
+    validate: "visudo -cf %s"
+
+- name: Install AUR Packages
+  become: true
+  become_user: aur_builder
+  aur:
+    use: yay
+    name:
+      # System
+      - sddm-git
+
+      # Browser
+      - brave-bin
+      - librewolf-bin
+
+      # WM
+      - waybar-hyprland-cava-git
+      - waybar-module-pacman-updates-git
+      - wleave-git
+      - swaylock-effects
+      - swaync
+      - swayosd-git
+      - swww
+      - hyprpicker-git
+      - hyprshot
+      - hyprsome-git
+      - wlr-randr
+      - wlrobs-hg
+      - nwg-displays
+      - nwg-look
+      - pyprland
+      - rofi-lboon-wayland
+      - rofi-file-browser-extended-git
+
+      # Hooks
+      - check-broken-packages-pacman-hook-git
+      - reflector-pacman-hook-git
+      - sync-pacman-hook-git
+      - needrestart
+      - paccache-hook
+
+      # CLI / TUI
+      - cava
+      - find-the-command
+      - pacseek
+      - sysz
+      - tgpt-bin
+      - shell-color-scripts
+
+      # Tools
+      - devify
+      - topgrade
+      - upscayl-bin
+      - downgrade
+      - betterdiscord-installer-bin
+      - android-sdk-platform-tools
+      - pika-backup
+      - rar
+      - wl-clip-persist-git
+
+      # Theme
+      - catppuccin-gtk-theme-macchiato
+      - ttf-ms-win11-auto

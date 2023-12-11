@@ -1,4 +1,3 @@
 function dsize --wraps='dua i' --description 'alias dsize=dua i'
-  dua i $argv
-        
+    dua i $argv
 end
