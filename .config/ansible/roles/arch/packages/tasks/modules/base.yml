@@ -150,7 +150,6 @@
       - pacseek
       - sysz
       - tgpt-bin
-      - shell-color-scripts
 
       # Tools
       - devify

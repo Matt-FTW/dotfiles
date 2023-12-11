@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Author: HostGrady
+# Font used: https://patorjk.com/software/taag/#p=display&f=Cricket&t=suckless
+
+
+if [ -x "$(command -v tput)" ]; then
+    bold="$(tput bold)"
+    blue="$(tput setaf 4)" 
+    cyan="$(tput setaf 6)"  
+    reset="$(tput sgr0)"
+fi
+
+art="${bold}${blue}                  __    __                   
+.-----.--.--.----|  |--|  .-----.-----.-----.
+|__ --|  |  |  __|    <|  |  -__|__ --|__ --|
+|_____|_____|____|__|__|__|_____|_____|_____|
+${reset}${cyan}          software that sucks less${reset}            "                                                      
+
+# use this as a base if you want to redo this one
+#art="                  __    __                   
+#.-----.--.--.----|  |--|  .-----.-----.-----.
+#|__ --|  |  |  __|    <|  |  -__|__ --|__ --|
+#|_____|_____|____|__|__|__|_____|_____|_____|
+#        software that sucks less            "
+
+echo "$art"
