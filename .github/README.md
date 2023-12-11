@@ -1,6 +1,8 @@
 <div align="center">
-<a href=""><img src="./assets/images/dotfiles-title.png"></a>
+<a href="#"><img src="./assets/images/dotfiles-title.png"></a>
 </div>
+
+<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png"/><br>
 
 <div align="center">
 
