@@ -21,6 +21,7 @@ set -xg BUN_INSTALL $HOME/.bun
 # Path
 set -x fish_user_paths
 fish_add_path $XDG_BIN_HOME
+fish_add_path $XDG_BIN_HOME/color-scripts/
 fish_add_path $GOPATH/bin
 fish_add_path $CARGO_HOME/bin
 fish_add_path $XDG_SCRIPT_HOME
