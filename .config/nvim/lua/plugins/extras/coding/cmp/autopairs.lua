@@ -21,45 +21,6 @@ return {
       local cond = require("nvim-autopairs.conds")
       local brackets = { { "(", ")" }, { "[", "]" }, { "{", "}" } }
 
-      local get_closing_for_line = function(line)
-        local i = -1
-        local clo = ""
-
-        while true do
-          i, _ = string.find(line, "[%(%)%{%}%[%]]", i + 1)
-          if i == nil then
-            break
-          end
-          local ch = string.sub(line, i, i)
-          local st = string.sub(clo, 1, 1)
-
-          if ch == "{" then
-            clo = "}" .. clo
-          elseif ch == "}" then
-            if st ~= "}" then
-              return ""
-            end
-            clo = string.sub(clo, 2)
-          elseif ch == "(" then
-            clo = ")" .. clo
-          elseif ch == ")" then
-            if st ~= ")" then
-              return ""
-            end
-            clo = string.sub(clo, 2)
-          elseif ch == "[" then
-            clo = "]" .. clo
-          elseif ch == "]" then
-            if st ~= "]" then
-              return ""
-            end
-            clo = string.sub(clo, 2)
-          end
-        end
-
-        return clo
-      end
-
       local default_handler = cmp_autopairs.filetypes["*"]["("].handler
       cmp_autopairs.filetypes["*"]["("].handler = function(char, item, bufnr, rules, commit_character)
         local node_type = ts_utils.get_node_at_cursor():type()
