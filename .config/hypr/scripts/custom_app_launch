@@ -12,73 +12,73 @@ source ~/.config/hypr/scripts/monitors
 case $app in
 "nemo")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 4] nemo
+		hyprctl dispatch exec [workspace 4] nemo &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 14] nemo
+		hyprctl dispatch exec [workspace 14] nemo &
 	else
-		nemo
+		nemo &
 	fi
 	;;
 "obsidian")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 10] obsidian
+		hyprctl dispatch exec [workspace 10] obsidian &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 20] obsidian
+		hyprctl dispatch exec [workspace 20] obsidian &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec [workspace 30] obsidian
+		hyprctl dispatch exec [workspace 30] obsidian &
 	else
-		obsidian
+		obsidian &
 	fi
 	;;
 "office")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 10] libreoffice
+		hyprctl dispatch exec [workspace 10] libreoffice &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 20] libreoffice
+		hyprctl dispatch exec [workspace 20] libreoffice &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec [workspace 30] libreoffice
+		hyprctl dispatch exec [workspace 30] libreoffice &
 	else
-		libreoffice
+		libreoffice &
 	fi
 	;;
 "kitty")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 3] kitty
+		hyprctl dispatch exec [workspace 3] kitty &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 13] kitty
+		hyprctl dispatch exec [workspace 13] kitty &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec "[workspace 24] kitty --class center-float-large"
+		hyprctl dispatch exec "[workspace 24] kitty --class center-float-large" &
 	else
-		kitty
+		kitty &
 	fi
 	;;
 "nvim")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 2] kitty nvim
+		hyprctl dispatch exec [workspace 2] kitty nvim &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 12] kitty nvim
+		hyprctl dispatch exec [workspace 12] kitty nvim &
 	else
-		kitty nvim
+		kitty nvim &
 	fi
 	;;
 "neovide")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch workspace 2 && neovide
+		hyprctl dispatch workspace 2 && neovide &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch workspace 12 && neovide
+		hyprctl dispatch workspace 12 && neovide &
 	else
 		neovide
 	fi
 	;;
 "librewolf")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch workspace 1 && librewolf # Had to to this because it didnt work the other way
+		hyprctl dispatch workspace 1 && librewolf & # Had to to this because it didnt work the other way
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch workspace 11 && librewolf
+		hyprctl dispatch workspace 11 && librewolf &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch workspace 25 && librewolf
+		hyprctl dispatch workspace 25 && librewolf &
 	else
-		librewolf
+		librewolf &
 	fi
 	;;
 *) ;;
