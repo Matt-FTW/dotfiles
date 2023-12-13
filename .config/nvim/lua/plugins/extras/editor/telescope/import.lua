@@ -14,6 +14,6 @@ return {
     end)
   end,
   keys = {
-    { "<leader>si", "<cmd>Telescope import<CR>", desc = "Imports" },
+    { "<leader>sI", "<cmd>Telescope import<CR>", desc = "Imports" },
   },
 }
