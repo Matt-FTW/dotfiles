@@ -93,10 +93,6 @@ return {
     },
   },
   {
-    "stevearc/dressing.nvim",
-    opts = {},
-  },
-  {
     "folke/which-key.nvim",
     opts = {
       defaults = {
