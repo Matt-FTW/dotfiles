@@ -45,8 +45,8 @@ map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 
-map("n", "<a-h>", "_", { desc = "First character of Line" })
-map("n", "<a-l>", "$", { desc = "Last character of Line" })
+map("n", "<c-,>", "_", { desc = "First character of Line" })
+map("n", "<c-.>", "$", { desc = "Last character of Line" })
 
 -- Copy whole text to clipboard
 map("n", "<C-c>", ":%y+<CR>")

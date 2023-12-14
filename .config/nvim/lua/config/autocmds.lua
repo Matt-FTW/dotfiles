@@ -23,14 +23,6 @@ vim.api.nvim_create_autocmd("WinLeave", {
   end,
 })
 
--- start git messages in insert mode
-vim.api.nvim_create_autocmd("BufRead", {
-  pattern = { "gitcommit", "gitrebase" },
-  callback = function()
-    vim.cmd("startinsert")
-  end,
-})
-
 local auto_close_filetype = {
   "lazy",
   "mason",

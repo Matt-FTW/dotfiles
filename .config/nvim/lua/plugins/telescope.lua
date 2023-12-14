@@ -15,18 +15,6 @@ return {
           end)
         end,
       },
-      {
-        "nvim-telescope/telescope-ui-select.nvim",
-        dependencies = {
-          "stevearc/dressing.nvim",
-          enabled = false,
-        },
-        config = function()
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("ui-select")
-          end)
-        end,
-      },
     },
     -- stylua: ignore
     keys = {

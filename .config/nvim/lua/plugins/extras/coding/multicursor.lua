@@ -8,7 +8,7 @@ return {
     cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
   -- stylua: ignore
   keys = {
-    { mode = { "v", "n" }, "<Leader>m", "<cmd>MCstart<cr>", desc = "Create a selection for selected text or word under the cursor" },
+    { mode = { "v", "n" }, "<leader>m", "<cmd>MCstart<cr>", desc = "Multicursor" },
   },
     opts = {
       hint_config = {
