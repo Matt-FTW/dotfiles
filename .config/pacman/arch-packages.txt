@@ -164,6 +164,7 @@ thefuck 3.32-5
 thunderbird 115.5.2-1
 trash-cli 0.23.2.13.2-2
 tree-sitter-cli 0.20.8-4
+ttf-font-awesome 6.5.1-1
 ttf-jetbrains-mono-nerd 3.1.1-1
 ttf-nerd-fonts-symbols 3.1.1-1
 ttf-nerd-fonts-symbols-mono 3.1.1-1
