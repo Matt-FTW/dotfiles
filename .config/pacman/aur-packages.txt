@@ -44,6 +44,7 @@ rpcs3-bin 0.0.29-1
 ryujinx-bin 1.1.1098-1
 scc-bin 3.1.0-1
 sddm-git 0.19.0.205.g572b128-1
+selectdefaultapplication-fork-git r72.4e8501d-1
 spicetify-cli 2.28.1-1
 spotify 1:1.2.26.1187-1
 swaylock-effects-git r469.4f2234c-1
