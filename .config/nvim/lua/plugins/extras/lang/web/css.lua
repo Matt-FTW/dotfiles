@@ -42,4 +42,12 @@ return {
       vim.list_extend(opts.ensure_installed, { "cssmodules-language-server", "css-lsp" })
     end,
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "css",
+      "sass",
+    },
+  },
 }

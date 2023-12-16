@@ -37,4 +37,11 @@ return {
       { "d", "d<cmd>AutolistRecalculate<cr>", mode = { "v" } },
     },
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "markdown",
+    },
+  },
 }
