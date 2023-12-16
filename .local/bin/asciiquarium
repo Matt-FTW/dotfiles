@@ -1,0 +1,2457 @@
+#!/usr/bin/env perl
+#
+#############################################################################
+#
+# Asciiquarium - An aquarium/sea animation in ASCII art
+#
+# Enjoy the mysteries of the sea from the safety of your own terminal!
+#
+#############################################################################
+# Original Author:
+#   Kirk Baucom <kbaucom@schizoid.com>
+#
+# Contributors:
+#   Joan Stark: https://web.archive.org/web/20140722110449/http://www.geocities.com/SoHo/7373/
+#     most of the ASCII art
+#
+#   Claudio Matsuoka <cmatsuoka@gmail.com>
+#     improved marine biodiversity (backported from the Asciiquarium Live
+#     Wallpaper for Android)
+#     https://market.android.com/details?id=org.helllabs.android.asciiquarium
+#
+#   driechers: https://github.com/driechers
+#     contributed the yellow submarine and re-introduction of elements by
+#     Kirk Baucom that apparently were lost
+#     (https://github.com/cmatsuoka/asciiquarium/pull/6,
+#     https://github.com/cmatsuoka/asciiquarium/pull/5)
+#
+#   Carl Pilcher:
+#     ASCII art for the submarine https://ascii.co.uk/art/submarine
+#
+#   robert1003: https://github.com/robert1003
+#     contributed the swordfish implementation
+#     (https://github.com/cmatsuoka/asciiquarium/pull/12)
+#
+#   ctr: (?)
+#     ASCII art for the swordfish https://ascii.co.uk/art/fish
+#
+#   polettix: https://github.com/polettix
+#     assembling contributions
+#     (https://github.com/polettix/asciiquarium)
+#
+#   UndeadLeech: (?)
+#     background color and transparency patch
+#     (https://github.com/rwxrob/dot/blob/2c4b63f77dcb235be4e218cd8febc5533420ee54/scripts/fishies#L110)
+#
+#   kronos-chenchang: https://github.com/kronos-chenchang
+#     castle door can now open, swordfish fix
+#     (https://github.com/kronos-chenchang/asciiquarium)
+#
+#   Phani Rithvij: https://gist.github.com/phanirithvij
+#     screensaver mode
+#     (https://gist.github.com/nothub/91ff81bd945eb8f1e6af08492a13ff75?permalink_comment_id=4476043#gistcomment-4476043)
+#
+#############################################################################
+# License:
+#
+# Copyright (C) 2013 Kirk Baucom (kbaucom@schizoid.com)
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+#############################################################################
+
+use Term::Animation 2.0;
+use Term::Animation::Entity;
+use Data::Dumper;
+use Curses;
+use Getopt::Long qw(GetOptions);
+use strict;
+use warnings;
+
+my $version = "1.2";
+my $help_message = 'Asciiquarium is an aquarium/sea animation in ASCII art.
+Enjoy the mysteries of the sea from the safety of your own terminal!
+
+Options:
+  -c --classic      Only show species from Asciiquarium 1.0
+  -t --transparent  Transparent background
+  -s --screensaver  Exit on any keypress
+  -h --help         Print help and exit
+  -v --version      Print version and exit
+
+Hotkeys:
+  q  quit
+  r  redraw
+  p  pause
+';
+
+my $new_fish = 1;
+my $new_monster = 1;
+
+my $classic = 0;
+my $transparent = 0;
+my $screensaver = 0;
+my $print_help = 0;
+my $print_version = 0;
+
+GetOptions(
+    'classic'     => \$classic,
+    'transparent' => \$transparent,
+    'screensaver' => \$screensaver,
+    'help'        => \$print_help,
+    'version'     => \$print_version,
+) or die "$help_message";
+
+if ($print_help) {
+    print $help_message;
+    exit;
+}
+
+if ($print_version) {
+    print "Asciiquarium $version\n";
+    exit;
+}
+
+if ($classic) {
+    $new_fish = 0;
+    $new_monster = 0;
+}
+
+my @random_objects = init_random_objects();
+
+# the Z depth at which certain items occur
+my %depth = (
+    # no gui yet
+    guiText     => 0,
+    gui         => 1,
+
+    # under water
+    shark       => 2,
+    fish_start  => 3,
+    fish_end    => 20,
+    seaweed     => 21,
+    castle      => 22,
+
+    # waterline
+    water_line3 => 2,
+    water_gap3  => 3,
+    water_line2 => 4,
+    water_gap2  => 5,
+    water_line1 => 6,
+    water_gap1  => 7,
+    water_line0 => 8,
+    water_gap0  => 9,
+);
+
+main();
+
+####################### MAIN #######################
+
+sub main {
+
+    my $anim = Term::Animation->new();
+
+    # set the wait time for getch
+    halfdelay(1);
+    #nodelay(1);
+
+    $anim->color(1);
+    if ($transparent) {
+        use_default_colors();
+        my $cid = 1;
+        for my $f ('WHITE', 'RED', 'GREEN', 'BLUE', 'CYAN', 'MAGENTA', 'YELLOW', 'BLACK') {
+            init_pair($cid, eval "Curses::COLOR_$f", -1);
+            $cid++;
+        }
+    }
+
+    my $start_time = time;
+    my $paused = 0;
+    while (1) {
+
+        add_environment($anim);
+        add_castle($anim);
+        add_all_seaweed($anim);
+        add_all_fish($anim);
+        random_object(undef, $anim);
+
+        $anim->redraw_screen();
+
+        my $nexttime = 0;
+
+        while (1) {
+            my $in = lc(getch());
+
+            if    ($in eq 'q') {quit();}  # Exit
+            elsif ($in eq 'r' || $in eq KEY_RESIZE()) {last;}  # Redraw (will recreate all objects)
+            elsif ($in eq 'p') {$paused = !$paused;}
+            elsif ($screensaver && $in ne '-1') {quit();}      # Exit for any key (screensaver mode)
+
+            $anim->animate() unless ($paused);
+        }
+        $anim->update_term_size();
+        $anim->remove_all_entities();
+
+    }
+
+}
+
+sub add_environment {
+    my ($anim) = @_;
+
+    my @water_line_segment = (
+        q{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~},
+        q{^^^^ ^^^  ^^^   ^^^    ^^^^      },
+        q{^^^^      ^^^^     ^^^    ^^     },
+        q{^^      ^^^^      ^^^    ^^^^^^  }
+    );
+
+    # tile the segments so they stretch across the screen
+    my $segment_size = length($water_line_segment[0]);
+    my $segment_repeat = int($anim->width() / $segment_size) + 1;
+    foreach my $i (0 .. $#water_line_segment) {
+        $water_line_segment[$i] = $water_line_segment[$i] x $segment_repeat;
+    }
+
+    foreach my $i (0 .. $#water_line_segment) {
+        $anim->new_entity(
+            name          => "water_seg_$i",
+            type          => "waterline",
+            shape         => $water_line_segment[$i],
+            position      => [ 0, $i + 5, $depth{'water_line' . $i} ],
+            default_color => 'cyan',
+            depth         => 22,
+            physical      => 1,
+        );
+    }
+}
+
+sub add_castle {
+    my ($anim) = @_;
+    my @castle_image = (
+q{
+               T~~
+               |
+              /^\
+             /   \
+ _   _   _  /     \  _   _   _
+[ ]_[ ]_[ ]/ _   _ \[ ]_[ ]_[ ]
+|_=__-_ =_|_[ ]_[ ]_|_=-___-__|
+ | _- =  | =_ = _    |= _=   |
+ |= -[]  |- = _ =    |_-=_[] |
+ | =_    |= - ___    | =_ =  |
+ |=  []- |-  /| |\   |=_ =[] |
+ |- =_   | =| | | |  |- = -  |
+ |_______|__|_|_|_|__|_______|
+},q{
+               T~~
+               |
+              /^\
+             /   \
+ _   _   _  /     \  _   _   _
+[ ]_[ ]_[ ]/ _   _ \[ ]_[ ]_[ ]
+|_=__-_ =_|_[ ]_[ ]_|_=-___-__|
+ | _- =  | =_ = _    |= _=   |
+ |= -[]  |- = _ =    |_-=_[] |
+ | =_    |= - ___    | =_ =  |
+ |=  []- |-  /| |\   |=_ =[] |
+ |- =_   | =|_|_|_|  |- = -  |
+ |_______|__|     |__|_______|
+},q{
+               T~~
+               |
+              /^\
+             /   \
+ _   _   _  /     \  _   _   _
+[ ]_[ ]_[ ]/ _   _ \[ ]_[ ]_[ ]
+|_=__-_ =_|_[ ]_[ ]_|_=-___-__|
+ | _- =  | =_ = _    |= _=   |
+ |= -[]  |- = _ =    |_-=_[] |
+ | =_    |= - ___    | =_ =  |
+ |=  []- |-  /|_|\   |=_ =[] |
+ |- =_   | =|     |  |- = -  |
+ |_______|__|     |__|_______|
+},q{
+               T~~
+               |
+              /^\
+             /   \
+ _   _   _  /     \  _   _   _
+[ ]_[ ]_[ ]/ _   _ \[ ]_[ ]_[ ]
+|_=__-_ =_|_[ ]_[ ]_|_=-___-__|
+ | _- =  | =_ = _    |= _=   |
+ |= -[]  |- = _ =    |_-=_[] |
+ | =_    |= - ___    | =_ =  |
+ |=  []- |-  /   \   |=_ =[] |
+ |- =_   | =|     |  |- = -  |
+ |_______|__|     |__|_______|
+},q{
+               T~~
+               |
+              /^\
+             /   \
+ _   _   _  /     \  _   _   _
+[ ]_[ ]_[ ]/ _   _ \[ ]_[ ]_[ ]
+|_=__-_ =_|_[ ]_[ ]_|_=-___-__|
+ | _- =  | =_ = _    |= _=   |
+ |= -[]  |- = _ =    |_-=_[] |
+ | =_    |= - ___    | =_ =  |
+ |=  []- |-  /|_|\   |=_ =[] |
+ |- =_   | =|     |  |- = -  |
+ |_______|__|     |__|_______|
+},q{
+               T~~
+               |
+              /^\
+             /   \
+ _   _   _  /     \  _   _   _
+[ ]_[ ]_[ ]/ _   _ \[ ]_[ ]_[ ]
+|_=__-_ =_|_[ ]_[ ]_|_=-___-__|
+ | _- =  | =_ = _    |= _=   |
+ |= -[]  |- = _ =    |_-=_[] |
+ | =_    |= - ___    | =_ =  |
+ |=  []- |-  /| |\   |=_ =[] |
+ |- =_   | =|_|_|_|  |- = -  |
+ |_______|__|     |__|_______|
+}
+	);
+
+    my @castle_mask = (
+    q{
+                GG
+
+              rrr
+             r   r
+            r     r
+           r       r
+
+
+
+              yyy
+             yy yy
+            y y y y
+            yyyyyyy
+},q{
+                GG
+
+              rrr
+             r   r
+            r     r
+           r       r
+
+
+
+              yyy
+             yy yy
+            yyyyyyy
+            y     y
+},q{
+                GG
+
+              rrr
+             r   r
+            r     r
+           r       r
+
+
+
+              yyy
+             yyyyy
+            y     y
+            y     y
+},q{
+                GG
+
+              rrr
+             r   r
+            r     r
+           r       r
+
+
+
+              yyy
+             y   y
+            y     y
+            y     y
+},q{
+                GG
+
+              rrr
+             r   r
+            r     r
+           r       r
+
+
+
+              yyy
+             yyyyy
+            y     y
+            y     y
+},q{
+                GG
+
+              rrr
+             r   r
+            r     r
+           r       r
+
+
+
+              yyy
+             yy yy
+            yyyyyyy
+            y     y
+});
+
+    $anim->new_entity(
+        name          => "castle",
+        shape         => \@castle_image,
+        auto_trans    => 1,
+        color         => \@castle_mask,
+        position      => [ $anim->width() - 32, $anim->height() - 13, $depth{'castle'} ],
+        callback_args => [ 0, 0, 0, 0.1],
+        default_color => 'white',
+    );
+}
+
+sub add_all_seaweed {
+    my ($anim) = @_;
+    # figure out how many seaweed to add by the width of the screen
+    my $seaweed_count = int($anim->width() / 15);
+    for (1 .. $seaweed_count) {
+        add_seaweed(undef, $anim);
+    }
+}
+
+sub add_seaweed {
+    my ($old_seaweed, $anim) = @_;
+    my @seaweed_image = ('', '');
+    my $height = int(rand(4)) + 3;
+    for my $i (1 .. $height) {
+        my $left_side = $i % 2;
+        my $right_side = !$left_side;
+        $seaweed_image[$left_side] .= "(\n";
+        $seaweed_image[$right_side] .= " )\n";
+    }
+    my $x = int(rand($anim->width() - 2)) + 1;
+    my $y = $anim->height() - $height;
+    my $anim_speed = rand(.05) + .25;
+    $anim->new_entity(
+        name          => 'seaweed' . rand(1),
+        shape         => \@seaweed_image,
+        position      => [ $x, $y, $depth{'seaweed'} ],
+        callback_args => [ 0, 0, 0, $anim_speed ],
+        die_time      => time() + int(rand(4 * 60)) + (8 * 60), # seaweed lives for 8 to 12 minutes
+        death_cb      => \&add_seaweed,
+        default_color => 'green',
+    );
+}
+
+# add an air bubble to a fish
+sub add_bubble {
+    my ($fish, $anim) = @_;
+
+    my $cb_args = $fish->callback_args();
+    my @fish_size = $fish->size();
+    my @fish_pos = $fish->position();
+    my @bubble_pos = @fish_pos;
+
+    # moving right
+    if ($cb_args->[0] > 0) {
+        $bubble_pos[0] += $fish_size[0];
+    }
+    $bubble_pos[1] += int($fish_size[1] / 2);
+    # bubble always goes on top of the fish
+    $bubble_pos[2]--;
+
+    $anim->new_entity(
+        shape         => [ '.', 'o', 'O', 'O', 'O' ],
+        type          => 'bubble',
+        position      => \@bubble_pos,
+        callback_args => [ 0, -1, 0, .1 ],
+        die_offscreen => 1,
+        physical      => 1,
+        coll_handler  => \&bubble_collision,
+        default_color => 'CYAN',
+    );
+}
+
+sub bubble_collision {
+    my ($bubble, $anim) = @_;
+    my $collisions = $bubble->collisions();
+    foreach my $col_obj (@{$collisions}) {
+        if ($col_obj->type eq 'waterline') {
+            $bubble->kill();
+            last;
+        }
+    }
+
+}
+
+sub add_all_fish {
+    my ($anim) = @_;
+    # figure out how many fish to add by the size of the screen,
+    # minus the stuff above the water
+    my $screen_size = ($anim->height() - 9) * $anim->width();
+    my $fish_count = int($screen_size / 350);
+    for (1 .. $fish_count) {
+        add_fish(undef, $anim);
+    }
+}
+
+sub add_fish {
+    my @parm = @_;
+
+    if ($new_fish) {
+        if (int(rand(12)) > 8) {
+            add_new_fish(@parm);
+        }
+        else {
+            add_old_fish(@parm);
+        }
+    }
+    else {
+        add_old_fish(@parm);
+    }
+}
+
+sub add_new_fish {
+    my ($old_fish, $anim) = @_;
+    my @fish_image = (
+
+        q{
+   \\
+  / \\
+>=_('>
+  \\_/
+   /
+},
+        q{
+   1
+  1 1
+663745
+  111
+   3
+},
+        q{
+  /
+ / \\
+<')_=<
+ \\_/
+  \\
+},
+        q{
+  2
+ 111
+547366
+ 111
+  3
+},
+        q{
+     ,
+     \}\\
+\\  .'  `\\
+\}\}<   ( 6>
+/  `,  .'
+     \}/
+     '
+},
+        q{
+     2
+     22
+6  11  11
+661   7 45
+6  11  11
+     33
+     3
+},
+        q{
+    ,
+   /\{
+ /'  `.  /
+<6 )   >\{\{
+ `.  ,'  \\
+   \\\{
+    `
+},
+        q{
+    2
+   22
+ 11  11  6
+54 7   166
+ 11  11  6
+   33
+    3
+},
+        q{
+            \\'`.
+             )  \\
+(`.??????_.-`' ' '`-.
+ \\ `.??.`        (o) \\_
+  >  ><     (((       (
+ / .`??`._      /_|  /'
+(.`???????`-. _  _.-`
+            /__/'
+
+},
+        q{
+            1111
+             1  1
+111      11111 1 1111
+ 1 11  11        141 11
+  1  11     777       5
+ 1 11  111      333  11
+111       111 1  1111
+            11111
+
+},
+        q{
+       .'`/
+      /  (
+  .-'` ` `'-._??????.')
+_/ (o)        '.??.' /
+)       )))     ><  <
+`\\  |_\\      _.'??'. \\
+  '-._  _ .-'???????'.)
+      `\\__\\
+},
+        q{
+       1111
+      1  1
+  1111 1 11111      111
+11 141        11  11 1
+5       777     11  1
+11  333      111  11 1
+  1111  1 111       111
+      11111
+},
+        q{
+       ,--,_
+__    _\\.---'-.
+\\ '.-"     // o\\
+/_.'-._    \\\\  /
+       `"--(/"`
+},
+        q{
+       22222
+66    121111211
+6 6111     77 41
+6661111    77  1
+       11113311
+},
+        q{
+    _,--,
+ .-'---./_    __
+/o \\\\     "-.' /
+\\  //    _.-'._\\
+ `"\\)--"`
+},
+        q{
+    22222
+ 112111121    66
+14 77     1116 6
+1  77    1111666
+ 11331111
+},
+    );
+
+    add_fish_entity($anim, @fish_image);
+}
+
+sub add_old_fish {
+    my ($old_fish, $anim) = @_;
+    my @fish_image = (
+
+        q{
+       \
+     ...\..,
+\  /'       \
+ >=     (  ' >
+/  \      / /
+    `"'"'/''
+},
+        q{
+       2
+     1112111
+6  11       1
+ 66     7  4 5
+6  1      3 1
+    11111311
+},
+        q{
+      /
+  ,../...
+ /       '\  /
+< '  )     =<
+ \ \      /  \
+  `'\'"'"'
+},
+        q{
+      2
+  1112111
+ 1       11  6
+5 4  7     66
+ 1 3      1  6
+  11311111
+},
+        q{
+    \
+\ /--\
+>=  (o>
+/ \__/
+    /
+},
+        q{
+    2
+6 1111
+66  745
+6 1111
+    3
+},
+        q{
+  /
+ /--\ /
+<o)  =<
+ \__/ \
+  \
+},
+        q{
+  2
+ 1111 6
+547  66
+ 1111 6
+  3
+},
+        q{
+       \:.
+\;,   ,;\\\\\,,
+  \\\\\;;:::::::o
+  ///;;::::::::<
+ /;` ``/////``
+},
+        q{
+       222
+666   1122211
+  6661111111114
+  66611111111115
+ 666 113333311
+},
+        q{
+      .:/
+   ,,///;,   ,;/
+ o:::::::;;///
+>::::::::;;\\\\\
+  ''\\\\\\\\\'' ';\
+},
+        q{
+      222
+   1122211   666
+ 4111111111666
+51111111111666
+  113333311 666
+},
+        q{
+  __
+><_'>
+   '
+},
+        q{
+  11
+61145
+   3
+},
+        q{
+ __
+<'_><
+ `
+},
+        q{
+ 11
+54116
+ 3
+},
+        q{
+   ..\,
+>='   ('>
+  '''/''
+},
+        q{
+   1121
+661   745
+  111311
+},
+        q{
+  ,/..
+<')   `=<
+ ``\```
+},
+        q{
+  1211
+547   166
+ 113111
+},
+        q{
+   \
+  / \
+>=_('>
+  \_/
+   /
+},
+        q{
+   2
+  1 1
+661745
+  111
+   3
+},
+        q{
+  /
+ / \
+<')_=<
+ \_/
+  \
+},
+        q{
+  2
+ 1 1
+547166
+ 111
+  3
+},
+        q{
+  ,\
+>=('>
+  '/
+},
+        q{
+  12
+66745
+  13
+},
+        q{
+ /,
+<')=<
+ \`
+},
+        q{
+ 21
+54766
+ 31
+},
+        q{
+  __
+\/ o\
+/\__/
+},
+        q{
+  11
+61 41
+61111
+},
+        q{
+ __
+/o \/
+\__/\
+},
+        q{
+ 11
+14 16
+11116
+},
+    );
+
+    add_fish_entity($anim, @fish_image);
+}
+
+sub add_fish_entity {
+    my $anim = shift;
+    my @fish_image = @_;
+
+    # 1: body
+    # 2: dorsal fin
+    # 3: flippers
+    # 4: eye
+    # 5: mouth
+    # 6: tailfin
+    # 7: gills
+
+    my @colors = ('c', 'C', 'r', 'R', 'y', 'Y', 'b', 'B', 'g', 'G', 'm', 'M');
+    my $fish_num = int(rand($#fish_image / 2));
+    my $fish_index = $fish_num * 2;
+    my $speed = rand(2) + .25;
+    my $depth = int(rand($depth{'fish_end'} - $depth{'fish_start'})) + $depth{'fish_start'};
+    my $color_mask = $fish_image[$fish_index + 1];
+    $color_mask =~ s/4/W/gm;
+    $color_mask = rand_color($color_mask);
+
+    if ($fish_num % 2) {
+        $speed *= -1;
+    }
+    my $fish_object = Term::Animation::Entity->new(
+        type          => 'fish',
+        shape         => $fish_image[$fish_index],
+        auto_trans    => 1,
+        color         => $color_mask,
+        position      => [ 0, 0, $depth ],
+        callback      => \&fish_callback,
+        callback_args => [ $speed, 0, 0 ],
+        die_offscreen => 1,
+        death_cb      => \&add_fish,
+        physical      => 1,
+        coll_handler  => \&fish_collision,
+    );
+
+    my $max_height = 9;
+    my $min_height = $anim->height() - $fish_object->{'HEIGHT'};
+    $fish_object->{'Y'} = int(rand($min_height - $max_height)) + $max_height;
+    if ($fish_num % 2) {
+        $fish_object->{'X'} = $anim->width() - 2;
+    }
+    else {
+        $fish_object->{'X'} = 1 - $fish_object->{'WIDTH'};
+    }
+    $anim->add_entity($fish_object);
+}
+
+sub fish_callback {
+    my ($fish, $anim) = @_;
+    if (int(rand(100)) > 97) {
+        add_bubble($fish, $anim);
+    }
+    return $fish->move_entity($anim);
+}
+
+sub fish_collision {
+    my ($fish, $anim) = @_;
+    my $collisions = $fish->collisions();
+    foreach my $col_obj (@{$collisions}) {
+        if ($col_obj->type eq 'teeth') {
+            add_splat($anim, $col_obj->position());
+            $fish->kill();
+            last;
+        }
+        elsif ($col_obj->type eq 'hook_point') {
+            retract($col_obj);
+            retract($fish);
+            # get the hook and line
+            my $hook = $anim->get_entities_of_type('fishhook')->[0];
+            my $line = $anim->get_entities_of_type('fishline')->[0];
+            retract($anim->entity($hook));
+            retract($anim->entity($line));
+            last;
+        }
+    }
+}
+
+sub add_splat {
+    my ($anim, $x, $y, $z) = @_;
+    my @splat_image = (
+        q#
+
+   .
+  ***
+   '
+
+#,
+        q#
+
+ ",*;`
+ "*,**
+ *"'~'
+
+#,
+        q#
+  , ,
+ " ","'
+ *" *'"
+  " ; .
+
+#,
+        q#
+* ' , ' `
+' ` * . '
+ ' `' ",'
+* ' " * .
+" * ', '
+#,
+    );
+
+    $anim->new_entity(
+        shape         => \@splat_image,
+        position      => [ $x - 4, $y - 2, $z - 2 ],
+        default_color => 'RED',
+        callback_args => [ 0, 0, 0, .25 ],
+        transparent   => ' ',
+        die_frame     => 15,
+    );
+}
+
+sub add_shark {
+    my ($old_ent, $anim) = @_;
+    my @shark_image = (
+        q#
+                              __
+                             ( `\
+  ,??????????????????????????)   `\
+;' `.????????????????????????(     `\__
+ ;   `.?????????????__..---''          `~~~~-._
+  `.   `.____...--''                       (b  `--._
+    >                     _.-'      .((      ._     )
+  .`.-`--...__         .-'     -.___.....-(|/|/|/|/'
+ ;.'?????????`. ...----`.___.',,,_______......---'
+ '???????????'-'
+#,
+        q#
+                     __
+                    /' )
+                  /'   (??????????????????????????,
+              __/'     )????????????????????????.' `;
+      _.-~~~~'          ``---..__?????????????.'   ;
+ _.--'  b)                       ``--...____.'   .'
+(     _.      )).      `-._                     <
+ `\|\|\|\|)-.....___.-     `-.         __...--'-.'.
+   `---......_______,,,`.___.'----... .'?????????`.;
+                                     `-`???????????`
+#,
+    );
+
+    my @shark_mask = (
+        q#
+
+
+
+
+
+                                           cR
+
+                                          cWWWWWWWW
+
+
+#,
+        q#
+
+
+
+
+
+        Rc
+
+  WWWWWWWWc
+
+
+#,
+    );
+
+    my $dir = int(rand(2));
+    my $x = -53;
+    my $y = int(rand($anim->height() - (10 + 9))) + 9;
+    my $teeth_x = -9;
+    my $teeth_y = $y + 7;
+    my $speed = 2;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+        $teeth_x = $x + 9;
+    }
+
+    $anim->new_entity(
+        type          => 'teeth',
+        shape         => "*",
+        position      => [ $teeth_x, $teeth_y, $depth{'shark'} + 1 ],
+        depth         => $depth{'fish_end'} - $depth{'fish_start'},
+        callback_args => [ $speed, 0, 0 ],
+        physical      => 1,
+    );
+
+    $anim->new_entity(
+        type          => "shark",
+        color         => $shark_mask[$dir],
+        shape         => $shark_image[$dir],
+        auto_trans    => 1,
+        position      => [ $x, $y, $depth{'shark'} ],
+        default_color => 'WHITE',
+        callback_args => [ $speed, 0, 0 ],
+        die_offscreen => 1,
+        death_cb      => sub {group_death(@_, 'teeth')},
+        default_color => 'CYAN',
+    );
+
+}
+
+# when a shark dies, kill the "teeth" too, the associated
+# entity that does the actual collision
+sub group_death {
+    my ($entity, $anim, @bound_types) = @_;
+    foreach my $type (@bound_types) {
+        my $bound_entities = $anim->get_entities_of_type($type);
+        foreach my $obj (@{$bound_entities}) {
+            $anim->del_entity($obj);
+        }
+    }
+    random_object($entity, $anim);
+}
+
+# pull the fishhook, line and whatever got caught back
+# to the surface
+sub retract {
+    my ($entity) = @_;
+    $entity->physical(0);
+    if ($entity->type eq 'fish') {
+        my @pos = $entity->position();
+        $pos[2] = $depth{'water_gap2'};
+        $entity->position(@pos);
+        $entity->callback(\&fishhook_cb);
+    }
+    else {
+        $entity->callback_args('hooked');
+    }
+}
+
+# move the fishhook
+sub fishhook_cb {
+    my ($entity, $anim) = @_;
+
+    my @pos = $entity->position;
+
+    # this means we hooked something, reel it in
+    if (defined($entity->callback_args())) {
+        $pos[1]--;
+
+        # otherwise, just lower until we reach 1/4 from the bottom
+    }
+    else {
+        if (($pos[1] + $entity->height) < $anim->height * .75) {
+            $pos[1]++;
+        }
+    }
+
+    return @pos;
+}
+
+sub add_fishhook {
+    my ($old_ent, $anim) = @_;
+
+    my $hook_image =
+        q{
+       o
+      ||
+      ||
+/ \   ||
+  \__//
+  `--'
+};
+
+    my $point_image =
+        q{
+.
+
+\
+?
+};
+    my $line_image = "|\n" x 50 . " \n" x 6;
+
+    my $x = 10 + (int(rand($anim->width() - 20)));
+    my $y = -4;
+    my $point_x = $x + 1;
+    my $point_y = $y + 2;
+
+    $anim->new_entity(
+        type          => 'fishline',
+        shape         => $line_image,
+        position      => [ $x + 7, $y - 50, $depth{'water_line1'} ],
+        auto_trans    => 1,
+        callback_args => undef,
+        callback      => \&fishhook_cb,
+    );
+
+    $anim->new_entity(
+        type          => 'fishhook',
+        shape         => $hook_image,
+        trans_char    => ' ',
+        position      => [ $x, $y, $depth{'water_line1'} ],
+        auto_trans    => 1,
+        die_offscreen => 1,
+        death_cb      => sub {group_death(@_, 'teeth', 'fishline')},
+        default_color => 'GREEN',
+        callback_args => undef,
+        callback      => \&fishhook_cb,
+    );
+
+    $anim->new_entity(
+        type          => 'hook_point',
+        shape         => $point_image,
+        position      => [ $point_x, $point_y, $depth{'shark'} + 1 ],
+        depth         => $depth{'fish_end'} - $depth{'fish_start'},
+        callback_args => undef,
+        physical      => 1,
+        default_color => 'GREEN',
+        callback      => \&fishhook_cb,
+
+    );
+}
+
+sub add_ship {
+    my ($old_ent, $anim) = @_;
+
+    my @ship_image = (
+        q{
+     |    |    |
+    )_)  )_)  )_)
+   )___))___))___)\
+  )____)____)_____)\\\
+_____|____|____|____\\\\\__
+\                   /
+},
+        q{
+         |    |    |
+        (_(  (_(  (_(
+      /(___((___((___(
+    //(_____(____(____(
+__///____|____|____|_____
+    \                   /
+});
+
+    my @ship_mask = (
+        q{
+     y    y    y
+
+                  w
+                   ww
+yyyyyyyyyyyyyyyyyyyywwwyy
+y                   y
+},
+        q{
+         y    y    y
+
+      w
+    ww
+yywwwyyyyyyyyyyyyyyyyyyyy
+    y                   y
+});
+
+    my $dir = int(rand(2));
+    my $x = -24;
+    my $speed = 1;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+
+    $anim->new_entity(
+        color         => $ship_mask[$dir],
+        shape         => $ship_image[$dir],
+        auto_trans    => 1,
+        position      => [ $x, 0, $depth{'water_gap1'} ],
+        default_color => 'WHITE',
+        callback_args => [ $speed, 0, 0 ],
+        die_offscreen => 1,
+        death_cb      => \&random_object,
+    );
+}
+
+sub add_whale {
+    my ($old_ent, $anim) = @_;
+    my @whale_image = (
+        q{
+        .-----:
+      .'       `.
+,????/       (o) \
+\`._/          ,__)
+},
+        q{
+    :-----.
+  .'       `.
+ / (o)       \????,
+(__,          \_.'/
+});
+    my @whale_mask = (
+        q{
+             C C
+           CCCCCCC
+           C  C  C
+        BBBBBBB
+      BB       BB
+B    B       BWB B
+BBBBB          BBBB
+},
+        q{
+   C C
+ CCCCCCC
+ C  C  C
+    BBBBBBB
+  BB       BB
+ B BWB       B    B
+BBBB          BBBBB
+}
+    );
+
+    my @water_spout = (
+        q{
+
+
+   :
+}, q{
+
+   :
+   :
+}, q{
+  . .
+  -:-
+   :
+}, q{
+  . .
+ .-:-.
+   :
+}, q{
+  . .
+'.-:-.`
+'  :  '
+}, q{
+
+ .- -.
+;  :  ;
+}, q{
+
+
+;     ;
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 1;
+    my $spout_align;
+    my @whale_anim;
+    my @whale_anim_mask;
+
+    if ($dir) {
+        $spout_align = 1;
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+    else {
+        $spout_align = 11;
+        $x = -18;
+    }
+
+    # no water spout
+    for (1 .. 5) {
+        push(@whale_anim, "\n\n\n" . $whale_image[$dir]);
+        push(@whale_anim_mask, $whale_mask[$dir]);
+    }
+
+    # animate water spout
+    foreach my $spout_frame (@water_spout) {
+        my $whale_frame = $whale_image[$dir];
+        my $aligned_spout_frame;
+        $aligned_spout_frame = join("\n" . ' ' x $spout_align, split("\n", $spout_frame));
+        $whale_frame = $aligned_spout_frame . $whale_image[$dir];
+        push(@whale_anim, $whale_frame);
+        push(@whale_anim_mask, $whale_mask[$dir]);
+    }
+
+    $anim->new_entity(
+        color         => \@whale_anim_mask,
+        shape         => \@whale_anim,
+        auto_trans    => 1,
+        position      => [ $x, 0, $depth{'water_gap2'} ],
+        default_color => 'WHITE',
+        callback_args => [ $speed, 0, 0, 1 ],
+        die_offscreen => 1,
+        death_cb      => \&random_object,
+    );
+
+}
+
+sub add_monster {
+    my @parm = @_;
+
+    if ($new_monster) {
+        add_new_monster(@parm);
+    }
+    else {
+        add_old_monster(@parm);
+    }
+}
+
+sub add_new_monster {
+    my ($old_ent, $anim) = @_;
+    my @monster_image = (
+        [
+            "
+         _???_?????????????????????_???_???????_a_a
+       _{.`=`.}_??????_???_??????_{.`=`.}_????{/ ''\\_
+ _????{.'  _  '.}????{.`'`.}????{.'  _  '.}??{|  ._oo)
+{ \\??{/  .'?'.  \\}??{/ .-. \\}??{/  .'?'.  \\}?{/  |
+",
+            "
+                      _???_????????????????????_a_a
+  _??????_???_??????_{.`=`.}_??????_???_??????{/ ''\\_
+ { \\????{.`'`.}????{.'  _  '.}????{.`'`.}????{|  ._oo)
+  \\ \\??{/ .-. \\}??{/  .'?'.  \\}??{/ .-. \\}???{/  |
+"
+        ], [
+        "
+   a_a_???????_???_?????????????????????_???_
+ _/'' \\}????_{.`=`.}_??????_???_??????_{.`=`.}_
+(oo_.  |}??{.'  _  '.}????{.`'`.}????{.'  _  '.}????_
+    |  \\}?{/  .'?'.  \\}??{/ .-. \\}??{/  .'?'.  \\}??/ }
+",
+        "
+   a_a_????????????????????_   _
+ _/'' \\}??????_???_??????_{.`=`.}_??????_???_??????_
+(oo_.  |}????{.`'`.}????{.'  _  '.}????{.`'`.}????/ }
+    |  \\}???{/ .-. \\}??{/  .'?'.  \\}??{/ .-. \\}??/ /
+"
+    ]);
+
+    my @monster_mask = (
+        q{                                                W W
+
+
+
+}, q{
+   W W
+
+
+
+});
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 2;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+    else {
+        $x = -54
+    }
+    my @monster_anim_mask;
+    for (1 .. 2) {push(@monster_anim_mask, $monster_mask[$dir]);}
+
+    $anim->new_entity(
+        shape         => $monster_image[$dir],
+        auto_trans    => 1,
+        color         => \@monster_anim_mask,
+        position      => [ $x, 2, $depth{'water_gap2'} ],
+        callback_args => [ $speed, 0, 0, .25 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'GREEN',
+    );
+}
+
+sub add_old_monster {
+    my ($old_ent, $anim) = @_;
+    my @monster_image = (
+        [
+            q{
+                                                          ____
+            __??????????????????????????????????????????/   o  \
+          /    \????????_?????????????????????_???????/     ____ >
+  _??????|  __  |?????/   \????????_????????/   \????|     |
+ | \?????|  ||  |????|     |?????/   \?????|     |???|     |
+}, q{
+                                                          ____
+                                             __?????????/   o  \
+             _?????????????????????_???????/    \?????/     ____ >
+   _???????/   \????????_????????/   \????|  __  |???|     |
+  | \?????|     |?????/   \?????|     |???|  ||  |???|     |
+}, q{
+                                                          ____
+                                  __????????????????????/   o  \
+ _??????????????????????_???????/    \????????_???????/     ____ >
+| \??????????_????????/   \????|  __  |?????/   \????|     |
+ \ \???????/   \?????|     |???|  ||  |????|     |???|     |
+}, q{
+                                                          ____
+                       __???????????????????????????????/   o  \
+  _??????????_???????/    \????????_??????????????????/     ____ >
+ | \???????/   \????|  __  |?????/   \????????_??????|     |
+  \ \?????|     |???|  ||  |????|     |?????/   \????|     |
+}
+        ], [
+        q{
+    ____
+  /  o   \??????????????????????????????????????????__
+< ____     \???????_?????????????????????_????????/    \
+      |     |????/   \????????_????????/   \?????|  __  |??????_
+      |     |???|     |?????/   \?????|     |????|  ||  |?????/ |
+}, q{
+    ____
+  /  o   \?????????__
+< ____     \?????/    \???????_?????????????????????_
+      |     |???|  __  |????/   \????????_????????/   \???????_
+      |     |???|  ||  |???|     |?????/   \?????|     |?????/ |
+}, q{
+    ____
+  /  o   \????????????????????__
+< ____     \???????_????????/    \???????_??????????????????????_
+      |     |????/   \?????|  __  |????/   \????????_??????????/ |
+      |     |???|     |????|  ||  |???|     |?????/   \???????/ /
+}, q{
+    ____
+  /  o   \???????????????????????????????__
+< ____     \??????????????????_????????/    \???????_??????????_
+      |     |??????_????????/   \?????|  __  |????/   \???????/ |
+      |     |????/   \?????|     |????|  ||  |???|     |?????/ /
+}
+    ]);
+
+    my @monster_mask = (
+        q{
+
+                                                            W
+
+
+
+}, q{
+
+     W
+
+
+
+});
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 2;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+    else {
+        $x = -64
+    }
+    my @monster_anim_mask;
+    for (1 .. 4) {push(@monster_anim_mask, $monster_mask[$dir]);}
+
+    $anim->new_entity(
+        shape         => $monster_image[$dir],
+        auto_trans    => 1,
+        color         => \@monster_anim_mask,
+        position      => [ $x, 2, $depth{'water_gap2'} ],
+        callback_args => [ $speed, 0, 0, .25 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'GREEN',
+    );
+}
+
+sub add_big_fish {
+    my @parm = @_;
+
+    if ($new_fish) {
+        if (int(rand(3)) > 1) {
+            add_big_fish_2(@parm);
+        }
+        else {
+            add_big_fish_1(@parm);
+        }
+    }
+    else {
+        add_big_fish_1(@parm);
+    }
+}
+
+sub add_big_fish_1 {
+    my ($old_ent, $anim) = @_;
+
+    my @big_fish_image = (
+        q{
+ ______
+`""-.  `````-----.....__
+     `.  .      .       `-.
+       :     .     .       `.
+ ,?????:   .    .          _ :
+: `.???:                  (@) `._
+ `. `..'     .     =`-.       .__)
+   ;     .        =  ~  :     .-"
+ .' .'`.   .    .  =.-'  `._ .'
+: .'???:               .   .'
+ '???.'  .    .     .   .-'
+   .'____....----''.'=.'
+   ""?????????????.'.'
+               ''"'`
+}, q{
+                           ______
+          __.....-----'''''  .-""'
+       .-'       .      .  .'
+     .'       .     .     :
+    : _          .    .   :?????,
+ _.' (@)                  :???.' :
+(__.       .-'=     .     `..' .'
+ "-.     :  ~  =        .     ;
+   `. _.'  `-.=  .    .   .'`. `.
+     `.   .               :???`. :
+       `-.   .     .    .  `.???`
+          `.=`.``----....____`.
+            `.`.?????????????""
+              '`"``
+});
+
+    my @big_fish_mask = (
+        q{
+ 111111
+11111  11111111111111111
+     11  2      2       111
+       1     2     2       11
+ 1     1   2    2          1 1
+1 11   1                  1W1 111
+ 11 1111     2     1111       1111
+   1     2        1  1  1     111
+ 11 1111   2    2  1111  111 11
+1 11   1               2   11
+ 1   11  2    2     2   111
+   111111111111111111111
+   11             1111
+               11111
+}, q{
+                           111111
+          11111111111111111  11111
+       111       2      2  11
+     11       2     2     1
+    1 1          2    2   1     1
+ 111 1W1                  1   11 1
+1111       1111     2     1111 11
+ 111     1  1  1        2     1
+   11 111  1111  2    2   1111 11
+     11   2               1   11 1
+       111   2     2    2  11   1
+          111111111111111111111
+            1111             11
+              11111
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 3;
+    if ($dir) {
+        $x = $anim->width() - 1;
+        $speed *= -1;
+    }
+    else {
+        $x = -34;
+    }
+    my $max_height = 9;
+    my $min_height = $anim->height() - 15;
+    my $y = int(rand($min_height - $max_height)) + $max_height;
+    my $color_mask = rand_color($big_fish_mask[$dir]);
+    $anim->new_entity(
+        shape         => $big_fish_image[$dir],
+        auto_trans    => 1,
+        color         => $color_mask,
+        position      => [ $x, $y, $depth{'shark'} ],
+        callback_args => [ $speed, 0, 0 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'YELLOW',
+    );
+
+}
+
+sub add_big_fish_2 {
+    my ($old_ent, $anim) = @_;
+
+    my @big_fish_image = (
+        q{
+                _ _ _
+             .='\\ \\ \\`"=,
+           .'\\ \\ \\ \\ \\ \\ \\
+\\'=._?????/ \\ \\ \\_\\_\\_\\_\\_\\
+\\'=._'.??/\\ \\,-"`- _ - _ - '-.
+  \\`=._\\|'.\\/- _ - _ - _ - _- \\
+  ;"= ._\\=./_ -_ -_ \{`"=_    @ \\
+   ;="_-_=- _ -  _ - \{"=_"-     \\
+   ;_=_--_.,          \{_.='   .-/
+  ;.="` / ';\\        _.     _.-`
+  /_.='/ \\/ /;._ _ _\{.-;`/"`
+/._=_.'???'/ / / / /\{.= /
+/.=' ??????`'./_/_.=`\{_/
+}, q{
+            _ _ _
+        ,="`/ / /'=.
+       / / / / / / /'.
+      /_/_/_/_/_/ / / \\?????_.='/
+   .-' - _ - _ -`"-,/ /\\??.'_.='/
+  / -_ - _ - _ - _ -\\/.'|/_.=`/
+ / @    _="`\} _- _- _\\.=/_. =";
+/     -"_="\} - _  - _ -=_-_"=;
+\\-.   '=._\}          ,._--_=_;
+ `-._     ._        /;' \\ `"=.;
+     `"\\`;-.\}_ _ _.;\\ \\/ \\'=._\\
+        \\ =.\}\\ \\ \\ \\ \\'???'._=_.\\
+         \\_\}`=._\\_\\.'`???????'=.\\
+});
+
+    my @big_fish_mask = (
+        q{
+                1 1 1
+             1111 1 11111
+           111 1 1 1 1 1 1
+11111     1 1 1 11111111111
+1111111  11 111112 2 2 2 2 111
+  111111111112 2 2 2 2 2 2 22 1
+  111 1111 12 22 22 11111    W 1
+   11111112 2 2  2 2 111111     1
+   111111111          11111   111
+  11111 11111        11     1111
+  111111 11 1111 1 111111111
+1111111   11 1 1 1 1111 1
+1111       1111111111111
+}, q{
+            1 1 1
+        11111 1 1111
+       1 1 1 1 1 1 111
+      11111111111 1 1 1     11111
+   111 2 2 2 2 211111 11  1111111
+  1 22 2 2 2 2 2 2 211111111111
+ 1 W    11111 22 22 2111111 111
+1     111111 2 2  2 2 21111111
+111   11111          111111111
+ 1111     11        111 1 11111
+     111111111 1 1111 11 111111
+        1 1111 1 1 1 11   1111111
+         1111111111111       1111
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 2.5;
+    if ($dir) {
+        $x = $anim->width() - 1;
+        $speed *= -1;
+    }
+    else {
+        $x = -33;
+    }
+    my $max_height = 9;
+    my $min_height = $anim->height() - 14;
+    my $y = int(rand($min_height - $max_height)) + $max_height;
+    my $color_mask = rand_color($big_fish_mask[$dir]);
+    $anim->new_entity(
+        shape         => $big_fish_image[$dir],
+        auto_trans    => 1,
+        color         => $color_mask,
+        position      => [ $x, $y, $depth{'shark'} ],
+        callback_args => [ $speed, 0, 0 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'YELLOW',
+    );
+}
+
+sub add_ducks {
+    my ($old_ent, $anim) = @_;
+    my @duck_image = (
+        [
+            q{
+      _??????????_??????????_
+,____(')=??,____(')=??,____(')<
+ \~~= ')????\~~= ')????\~~= ')
+}, q{
+      _??????????_??????????_
+,____(')=??,____(')<??,____(')=
+ \~~= ')????\~~= ')????\~~= ')
+}, q{
+      _??????????_??????????_
+,____(')<??,____(')=??,____(')=
+ \~~= ')????\~~= ')????\~~= ')
+}
+        ], [
+        q{
+  _??????????_??????????_
+>(')____,??=(')____,??=(')____,
+ (` =~~/????(` =~~/????(` =~~/
+}, q{
+  _??????????_??????????_
+=(')____,??>(')____,??=(')____,
+ (` =~~/????(` =~~/????(` =~~/
+}, q{
+  _??????????_??????????_
+=(')____,??=(')____,??>(')____,
+ (` =~~/????(` =~~/????(` =~~/
+}
+    ]
+    );
+
+    my @duck_mask = (
+        q{
+      g          g          g
+wwwwwgcgy  wwwwwgcgy  wwwwwgcgy
+ wwww Ww    wwww Ww    wwww Ww
+}, q{
+  g          g          g
+ygcgwwwww  ygcgwwwww  ygcgwwwww
+ wW wwww    wW wwww    wW wwww
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 1;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+    else {
+        $x = -30
+    }
+
+    $anim->new_entity(
+        shape         => $duck_image[$dir],
+        auto_trans    => 1,
+        color         => $duck_mask[$dir],
+        position      => [ $x, 5, $depth{'water_gap3'} ],
+        callback_args => [ $speed, 0, 0, .25 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'WHITE',
+    );
+}
+
+sub add_dolphins {
+    my ($old_ent, $anim) = @_;
+    my @dolphin_image = (
+        [
+            q{
+        ,
+      __)\_
+(\_.-'    a`-.
+(/~~````(/~^^`
+}, q{
+        ,
+(\__  __)\_
+(/~.''    a`-.
+    ````\)~^^`
+}
+        ], [
+        q{
+     ,
+   _/(__
+.-'a    `-._/)
+'^^~\)''''~~\)
+}, q{
+     ,
+   _/(__  __/)
+.-'a    ``.~\)
+'^^~(/''''
+}
+    ]
+    );
+
+    my @dolphin_mask = (
+        q{
+
+
+          W
+}, q{
+
+
+   W
+});
+
+    my $dir = int(rand(2));
+
+    my $x;
+    my $speed = 1;
+    my $distance = 15; # how far apart the dolphins are
+
+    # right to left
+    if ($dir) {
+        $speed *= -1;
+        $distance *= -1;
+        $x = $anim->width() - 2;
+
+        # left to right
+    }
+    else {
+        $x = -13
+    }
+
+    my $up = [ $speed, -.5, 0, .5 ];
+    my $down = [ $speed, .5, 0, .5 ];
+    my $glide = [ $speed, 0, 0, .5 ];
+
+    my @path;
+
+    for (1 .. 14) {push(@path, $up);}
+    for (1 .. 2) {push(@path, $glide);}
+    for (1 .. 14) {push(@path, $down);}
+    for (1 .. 6) {push(@path, $glide);}
+
+    my $dolphin3 = $anim->new_entity(
+        shape         => $dolphin_image[$dir],
+        auto_trans    => 1,
+        color         => $dolphin_mask[$dir],
+        position      => [ $x - ($distance * 2), 8, $depth{'water_gap3'} ],
+        callback_args => [ 0, [ @path ] ],
+        death_cb      => \&random_object,
+        die_offscreen => 0,
+        default_color => 'blue',
+    );
+
+    my $dolphin2 = $anim->new_entity(
+        shape         => $dolphin_image[$dir],
+        auto_trans    => 1,
+        color         => $dolphin_mask[$dir],
+        position      => [ $x - $distance, 2, $depth{'water_gap3'} ],
+        callback_args => [ 12, [ @path ] ],
+        die_offscreen => 0,
+        default_color => 'BLUE',
+    );
+
+    my $dolphin1 = $anim->new_entity(
+        shape         => $dolphin_image[$dir],
+        auto_trans    => 1,
+        color         => $dolphin_mask[$dir],
+        position      => [ $x, 5, $depth{'water_gap3'} ],
+        callback_args => [ 24, [ @path ] ],
+        # have the lead dolphin tell the others to die offscreen, since they start offscreen
+        death_cb      => sub {
+            $dolphin2->die_offscreen(1);
+            $dolphin3->die_offscreen(1)
+        },
+        die_offscreen => 1,
+        default_color => 'CYAN',
+    );
+
+}
+
+sub add_swan {
+    my ($old_ent, $anim) = @_;
+    my @swan_image = (
+        [
+            q{
+       ___
+,_    / _,\
+| \   \( \|
+|  \_  \\\
+(_   \_) \
+(\_   `   \
+ \   -=~  /
+}
+        ], [
+        q{
+ ___
+/,_ \    _,
+|/ )/   / |
+  //  _/  |
+ / ( /   _)
+/   `   _/)
+\  ~=-   /
+}
+    ]
+    );
+
+    my @swan_mask = (
+        q{
+
+         g
+         yy
+}, q{
+
+ g
+yy
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 1;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+    else {
+        $x = -10
+    }
+
+    $anim->new_entity(
+        shape         => $swan_image[$dir],
+        auto_trans    => 1,
+        color         => $swan_mask[$dir],
+        position      => [ $x, 1, $depth{'water_gap3'} ],
+        callback_args => [ $speed, 0, 0, .25 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'WHITE',
+    );
+}
+
+sub submarine_callback {
+    my ($entity, $anim) = @_;
+
+    my @delta = $entity->callback_args();
+    my @pos = $entity->position();
+
+    my $x = $pos[0];
+    my $y = $pos[1];
+    my $z = $pos[2];
+    my $frame = $delta[0][3];
+    my $delay = $delta[0][4];
+    my @frame_delay = @{[ 1, 4, 4, 9, 9, 9, 4, 4, 1 ]};
+
+    my $maxFrame = scalar(@frame_delay);
+
+    # Move if not in center or skipping over the center
+    if (not (($x < $anim->width() / 2 - 20 and $x + $delta[0][0] > $anim->width() / 2 - 20) or
+        ($x > $anim->width() / 2 - 20 and $x + $delta[0][0] < $anim->width() / 2 - 20))
+        and $x != $anim->width() / 2 - 20) {
+        $x += $delta[0][0];
+    }
+    else {
+        if ($frame < $maxFrame - 1) {
+            if ($delay < $frame_delay[$frame]) {
+                $delay += 1;
+            }
+            else {
+                $delay = 0;
+                $frame += 1;
+            }
+        }
+        else {
+            $x += $delta[0][0];
+        }
+    }
+
+    my @args = [ $delta[0][0], $delta[0][1], $delta[0][2], $frame, $delay ];
+    $entity->callback_args(@args);
+    return ($x, $y, $z, $frame);
+}
+
+sub add_submarine {
+    my ($old_ent, $anim) = @_;
+    my @submarine_image = (
+        [
+            q{
+
+
+
+                       __
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+
+
+                       __
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+
+                       __
+                       |
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+                       __
+                       |
+                       |
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+                      __
+                       |
+                       |
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+                       __
+                       |
+                       |
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+
+                       __
+                       |
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+
+
+                       __
+                       |
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+            , q{
+
+
+
+                       __
+                      _|_
+                     /   |
+ _ ? _______________/____|_______________
+( )?/                                   /
+ (=<                      O   O   O    /
+(_)?\_________________________________/
+}
+        ], [
+        q{
+
+
+
+               __
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+
+
+               __
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+
+               __
+                |
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+               __
+                |
+                |
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+                __
+                |
+                |
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+               __
+                |
+                |
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+
+               __
+                |
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+
+
+               __
+                |
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+        , q{
+
+
+
+               __
+               _|_
+              |   \
+______________|____\_______________ ? _
+\                                  \?( )
+ \    O   O   O                     >=)
+  \________________________________/?(_)
+}
+    ]
+    );
+
+    my @submarine_mask = (
+        q{
+                      www
+                       ww
+                       ww
+                       ww
+                       w
+
+ w
+w w
+ www                      w   w   w
+www
+}, q{
+               www
+               ww
+               ww
+               ww
+                w
+
+                                      w
+                                     w w
+      w   w   w                     www
+                                     www
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 1;
+    if ($dir) {
+        $speed *= -1;
+        $x = $anim->width() - 2;
+    }
+    else {
+        $x = -40
+    }
+
+    $anim->new_entity(
+        shape         => $submarine_image[$dir],
+        auto_trans    => 1,
+        color         => $submarine_mask[$dir],
+        position      => [ $x, 6, $depth{'water_gap3'} ],
+        callback_args => [ $speed, 0, 0, 0, 0 ],
+        callback      => \&submarine_callback,
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'YELLOW',
+    );
+}
+
+sub add_sword_fish {
+    my ($old_end, $anim) = @_;
+
+  my @sword_fish_image = (
+q{
+                             )",
+_                           /\\\\\\\\
+ ",????????????_____,,,,,--\\\\\\\\\\\\)
+  \\\\????????,,;_______\\\\\\\\\\----""";_
+   )\\_.-'`"""""......-------------,o";__________
+   ==.-.,____           """;;;;,__._.=='""
+   )/????"???"\\""---;...,______:.-"
+  //???????????")_.-`      _.-'
+_.'????????????????????_.-'
+},
+q{
+                ,"(
+               ////\                           _
+              (//////--,,,,,_____????????????,"
+            _;"""----/////_______;,,????????//
+__________;"o,-------------......"""""`'-._/(
+      ""'==._.__,;;;;"""           ____,.-.==
+             "-.:______,...;---""/"???"????\\(
+                 '-._      `-._("???????????\\\
+                     '-._?????????????????????'._
+});
+
+    my @sword_fish_mask = (
+        q{
+                             222
+6                           22222
+ 66            2222222222222222222
+  66        111111111111111111111111
+   666111111111111111111111111111144455555555555
+   6661111111           111777711111155555
+   66   1   11111111111111111111111
+  66          3333333      3333
+666                    3333
+},
+        q{
+                222
+               22222                           6
+              2222222222222222222            66
+            111111111111111111111111        66
+555555555554441111111111111111111111111111666
+      555551111117777111           1111111666
+             11111111111111111111111   1   66
+                 3333      3333333          66
+                     3333                    666
+});
+
+    my $dir = int(rand(2));
+    my $x;
+    my $speed = 3.5;
+    if ($dir) {
+        $x = $anim->width() - 1;
+        $speed *= -1;
+    }
+    else {
+        $x = -33;
+    }
+    my $max_height = 9;
+    my $min_height = $anim->height() - 14;
+    my $y = int(rand($min_height - $max_height)) + $max_height;
+    my $color_mask = rand_color($sword_fish_mask[$dir]);
+    $anim->new_entity(
+        shape         => $sword_fish_image[$dir],
+        auto_trans    => 1,
+        color         => $color_mask,
+        position      => [ $x, $y, $depth{'shark'} ],
+        callback_args => [ $speed, 0, 0 ],
+        death_cb      => \&random_object,
+        die_offscreen => 1,
+        default_color => 'YELLOW',
+    );
+}
+
+sub init_random_objects {
+    return (
+        \&add_ship,
+        \&add_whale,
+        \&add_monster,
+        \&add_big_fish,
+        \&add_shark,
+        \&add_fishhook,
+        \&add_swan,
+        \&add_ducks,
+        \&add_dolphins,
+        \&add_submarine,
+        \&add_sword_fish,
+    );
+}
+
+# add one of the random objects to the screen
+sub random_object {
+    my ($dead_object, $anim) = @_;
+    my $sub = int(rand(scalar(@random_objects)));
+    $random_objects[$sub]->($dead_object, $anim);
+}
+
+sub dprint {
+    open(D, ">>", "debug");
+    print D @_, "\n";
+    close(D);
+}
+
+sub sighandler {
+    my ($sig) = @_;
+    if ($sig eq 'INT') {quit();}
+    elsif ($sig eq 'WINCH') {
+        # ignore SIGWINCH, only redraw when requested
+    }
+    else {quit("Exiting with SIG$sig");}
+}
+
+sub quit {
+    my ($mesg) = @_;
+    print STDERR $mesg, "\n" if (defined($mesg));
+    exit;
+}
+
+
+sub initialize {
+    # this may be paranoid, but i don't want to leave
+    # the user's terminal in a state that they might not
+    # know how to fix if we die badly
+    foreach my $sig (keys %SIG) {
+        $SIG{$sig} = 'sighandler' unless (defined($SIG{$sig}));
+    }
+}
+
+
+sub center {
+    my ($width, $mesg) = @_;
+    my $l = length($mesg);
+    if ($l < $width) {
+        return ' ' x (int(($width - length($mesg)) / 2)) . $mesg;
+    }
+    elsif ($l > $width) {
+        return (substr($mesg, 0, ($width - ($l + 3))) . "...");
+    }
+    else {
+        return $mesg;
+    }
+}
+
+sub rand_color {
+    my ($color_mask) = @_;
+    my @colors = ('c', 'C', 'r', 'R', 'y', 'Y', 'b', 'B', 'g', 'G', 'm', 'M');
+    foreach my $i (1 .. 9) {
+        my $color = $colors[int(rand($#colors))];
+        $color_mask =~ s/$i/$color/gm;
+    }
+    return $color_mask;
+}

@@ -123,6 +123,7 @@ pacman-contrib 1.9.1-1
 pamixer 1.6-2
 patch 2.7.6-10
 pavucontrol 1:5.0+r64+geba9ca6-1
+perl-term-animation 2.6-10
 phonon-qt5-gstreamer 4.10.0-4
 pipewire-alsa 1:1.0.0-2
 pipewire-pulse 1:1.0.0-2
