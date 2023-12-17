@@ -1,3 +1,5 @@
+local nvim_0_10 = vim.fn.has("nvim-0.10")
+
 local function toggle_diag_virtext()
   local virtual_text = { -- Default virtual_text opts from Lazy.Nvim
     spacing = 4,
@@ -65,7 +67,7 @@ return {
         },
       },
       inlay_hints = {
-        enabled = true,
+        enabled = nvim_0_10,
       },
       servers = {
         -- typos_lsp = {
@@ -138,13 +140,7 @@ return {
     opts = function(_, opts)
       opts.tools = {
         inlay_hints = {
-          auto = function()
-            if vim.fn.has("nvim-0.10") == 1 then
-              return false
-            else
-              return true
-            end
-          end,
+          auto = not nvim_0_10,
         },
       }
     end,
