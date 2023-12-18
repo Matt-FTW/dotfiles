@@ -1,3 +1,4 @@
+# PACMAN
 - name: Install AMD Drivers
   become: true
   pacman:
@@ -13,11 +14,19 @@
       - libva-mesa-driver
       - lib32-libva-mesa-driver
       - mesa
+      - lib32-mesa
       - mesa-vdpau
       - lib32-mesa-vdpau
       - vdpauinfo
       - clinfo
 
+# AUR
+- name: Install AUR Packages
+  become: true
+  become_user: aur_builder
+  aur:
+    use: yay
+    name:
       # Propietary
       - amf-amdgpu-pro
-      - xf86-video-amdgpu
+      - vulkan-amdgpu-pro
