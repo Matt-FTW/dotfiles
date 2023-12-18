@@ -20,17 +20,4 @@ return {
       "symbols-outline",
     }
   end,
-  keys = {
-    {
-      "<leader>uS",
-      function()
-        if vim.opt.laststatus:get() == 0 then
-          vim.opt.laststatus = 3
-        else
-          vim.opt.laststatus = 0
-        end
-      end,
-      desc = "Toggle Statusline",
-    },
-  },
 }

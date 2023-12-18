@@ -73,4 +73,12 @@ return {
       code_lens = "all",
     },
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "react",
+      "typescript",
+    },
+  },
 }

@@ -22,4 +22,11 @@ return {
       vim.list_extend(opts.ensure_installed, { "bash-language-server" })
     end,
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "bash",
+    },
+  },
 }

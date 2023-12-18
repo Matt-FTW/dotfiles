@@ -1,6 +1,8 @@
 return {
   "nvimdev/dashboard-nvim",
   opts = function(_, opts)
+    vim.api.nvim_create_autocmd("TabNewEntered", { command = "Dashboard" })
+
     local logo = [[
                                                                    
       ████ ██████           █████      ██                    

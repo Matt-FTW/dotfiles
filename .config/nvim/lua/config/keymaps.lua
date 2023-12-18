@@ -41,6 +41,14 @@ map("n", "n", "nzzzv")
 
 map("n", "N", "Nzzzv")
 
+map("n", "<leader>uS", function()
+  if vim.opt.laststatus:get() == 0 then
+    vim.opt.laststatus = 3
+  else
+    vim.opt.laststatus = 0
+  end
+end, { desc = "Toggle Statusline" })
+
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })

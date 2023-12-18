@@ -23,4 +23,11 @@ return {
       vim.list_extend(opts.ensure_installed, { "emmet-language-server", "html-lsp" })
     end,
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "html",
+    },
+  },
 }

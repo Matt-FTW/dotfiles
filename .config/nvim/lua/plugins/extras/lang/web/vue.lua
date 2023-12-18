@@ -22,4 +22,11 @@ return {
       vim.list_extend(opts.ensure_installed, { "vetur-vls" })
     end,
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "vue-3",
+    },
+  },
 }

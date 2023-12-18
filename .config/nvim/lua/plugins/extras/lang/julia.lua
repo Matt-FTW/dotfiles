@@ -31,4 +31,11 @@ return {
       table.insert(opts.sources, { name = "lua-latex-symbols", option = { cache = true } })
     end,
   },
+  {
+    "luckasRanarison/nvim-devdocs",
+    optional = true,
+    ensure_installed = {
+      "julia",
+    },
+  },
 }

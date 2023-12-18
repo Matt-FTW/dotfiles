@@ -11,10 +11,9 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {},
     opts = {
-      -- make sure mason installs the server
       servers = {
         graphql = {
-          filetypes = { "graphql", "typescript", "typescriptreact" },
+          filetypes = { "graphql", "javascript", "javascriptreact", "typescript", "typescriptreact" },
         },
       },
     },
