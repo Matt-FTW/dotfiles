@@ -75,6 +75,9 @@ kitty 0.31.0-1
 krita 5.2.2-1
 lazygit 0.40.2-1
 lib32-libnm 1.44.2-1
+lib32-libva-mesa-driver 1:23.2.1-2
+lib32-mesa-vdpau 1:23.2.1-2
+lib32-opencl-clover-mesa 1:23.2.1-2
 lib32-vulkan-radeon 1:23.2.1-2
 libnma-gtk4 1.10.6-2
 libreoffice-fresh 7.6.4-2
@@ -96,6 +99,7 @@ luarocks 3.9.2-1
 m4 1.4.19-3
 maim 5.7.4-7
 make 4.4.1-2
+mesa-vdpau 1:23.2.1-2
 mpc 0.34-3
 mpv 1:0.36.0-1
 nano 7.2-1
@@ -192,7 +196,6 @@ xdg-desktop-portal-hyprland 1.2.5-1
 xdg-user-dirs 0.18-1
 xdotool 3.20211022.1-1
 xf86-video-amdgpu 23.0.0-1
-xf86-video-vesa 2.6.0-1
 xorg-bdftopcf 1.1.1-1
 xorg-docs 1.7.2-2
 xorg-font-util 1.4.1-1
