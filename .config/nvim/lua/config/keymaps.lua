@@ -57,10 +57,10 @@ map("n", "<c-,>", "_", { desc = "First character of Line" })
 map("n", "<c-.>", "$", { desc = "Last character of Line" })
 
 -- Copy whole text to clipboard
-map("n", "<C-c>", ":%y+<CR>")
+map("n", "<C-c>", ":%y+<CR>", { desc = "Copy whole text to clipboard", silent = true })
 
 -- Select all text
-map("n", "<C-n>", "gg<S-V>G")
+map("n", "<C-n>", "gg<S-V>G", { desc = "Select all text", silent = true })
 
 -- Better paste
 -- remap "p" in visual mode to delete the highlighted text without overwriting your yanked/copied text, and then paste the content from the unnamed register.
