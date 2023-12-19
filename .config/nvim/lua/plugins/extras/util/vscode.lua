@@ -2,6 +2,8 @@ if not vim.g.vscode then
   return {}
 end
 
+vim.o.spell = false
+
 -- Add any additional plugins in vscode, you can set vscode=true on a plugin spec.
 local enabled = {
   "flash.nvim",
