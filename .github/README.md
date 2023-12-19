@@ -46,90 +46,98 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 Here is some _small_ information about my setup:
 
-> ℹ️ INFO: Some of this apps have the config included in the repo, which are marked with ⚙️), and others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with ✨.
+> ℹ️ Some of this apps have the config files included in the repo, which are marked with ⚙️,, and others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with 💖.
 
 <details>
   <summary><b>🐧 System</b></summary>
 
-- **OS**: [Arch Linux](https://archlinux.org/) :sparkles: ([btw](https://www.reddit.com/r/archlinux/comments/6hv94x/has_anyone_seen_arch/))
-- **Package Manager**: [Pacman](https://wiki.archlinux.org/title/Pacman) _([:gear: Conf](../.config/pacman/))_
-- **AUR Helper**: [yay](https://github.com/Jguer/yay) :sparkles: _([:gear: Conf](../.config/yay/))_
-- **Window Manager**: [Hyprland](https://hyprland.org/) :sparkles: _([:gear: Conf](../.config/hypr/))_
-- **Panel**: [Waybar](https://github.com/Alexays/Waybar) :sparkles: _([:gear: Conf](../.config/waybar/))_
-- **Terminal Emulator**: [Kitty](https://sw.kovidgoyal.net/kitty/) :sparkles: _([:gear: Conf](../.config/kitty/))_
-- **Notification Daemon/Center**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) _([:gear: Conf](../.config/swaync/))_
-- **Application Launcher**: [Rofi](https://github.com/lbonn/rofi) :sparkles: _([:gear: Conf](../.config/rofi/))_
-- **Audio Daemon**: [Pipewire](https://pipewire.org/) _([:gear: Conf](../.config/pipewire/))_
-- **Firewall**: [ufw](https://wiki.archlinux.org/title/ufw)
-- **Clipboard Manager**: [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))
-- **Wallpaper Switcher**: [swww](https://github.com/Horus645/swww)
-- **Lock Screen**: [swaylock-effects](https://github.com/jirutka/swaylock-effects) _([:gear: Conf](../.config/swaylock/))_
-- **Idle Timeout**: [swayidle](https://github.com/swaywm/swayidle) _([:gear: Conf](../.config/swayidle/))_
-- **Color Picker**: [Hyprpicker](https://github.com/hyprwm/hyprpicker)
-- **Recording Tool**: [wf-recorder](https://github.com/ammen99/wf-recorder)
-- **Screenshot Tool**: [Hyprshot](https://github.com/Gustash/Hyprshot)
-- **Screenshot Editor**: [Swappy](https://github.com/jtheoof/swappy) _([:gear: Conf](../.config/swappy/))_
-- **Logout Menu**: [wleave](https://github.com/AMNatty/wleave) _([:gear: Conf](../.config/wleave/))_
+| 📚 Entry                       | ✨ App                                                                                                         |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **OS**                         | 💖 [Arch Linux](https://archlinux.org/)                                                                        |
+| **Package Manager**            | [Pacman](https://wiki.archlinux.org/title/Pacman) [:gear:](../.config/pacman/)                                 |
+| **AUR Helper**                 | 💖 [yay](https://github.com/Jguer/yay) [:gear:](../.config/yay/)                                               |
+| **Window Manager**             | 💖 [Hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                |
+| **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                    |
+| **Panel**                      | 💖 [Waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
+| **Audio Daemon**               | [Pipewire](https://pipewire.org/) [:gear:](../.config/pipewire/)                                               |
+| **Application Launcher**       | 💖 [Rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
+| **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                    |
+| **Clipboard Manager**          | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist)) |
+| **Wallpaper Switcher**         | [swww](https://github.com/Horus645/swww)                                                                       |
+| **Lock Screen**                | [swaylock-effects](https://github.com/jirutka/swaylock-effects) [:gear:](../.config/swaylock/)                 |
+| **Idle Timeout**               | [swayidle](https://github.com/swaywm/swayidle) [:gear:](../.config/swayidle/)                                  |
+| **Color Picker**               | [Hyprpicker](https://github.com/hyprwm/hyprpicker)                                                             |
+| **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                          |
+| **Screenshot Tool**            | [Hyprshot](https://github.com/Gustash/Hyprshot)                                                                |
+| **Screenshot Editor**          | [Swappy](https://github.com/jtheoof/swappy)                                                                    |
+| **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                       |
 
 </details>
 
 <details>
   <summary><b>🖥️ CLI/TUI Apps</b></summary>
 
-- **Shell**: [Fish](https://fishshell.com/) :sparkles: _([:gear: Conf](../.config/fish/))_
-- **Shell Prompt**: [Starship](https://starship.rs/) _([:gear: Conf](../.config/starship/))_
-- **Shell History**: [Atuin](https://github.com/atuinsh/atuin) _([:gear: Conf](../.config/atuin/))_
-- **CD Replacement**: [zoxide](https://github.com/ajeetdsouza/zoxide) :sparkles:
-- **LS Replacement**: [eza](https://github.com/eza-community/eza)
-- **Cat Replacement**: [bat](https://github.com/sharkdp/bat) _([:gear: Conf](../.config/bat/))_
-- **Find Replacement**: [fd](https://github.com/sharkdp/fd) _([:gear: Conf](../.config/fd/))_
-- **Help Pages**: [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) _([:gear: Conf](../.config/navi/))_
-- **Fuzzy File Finder**: [fzf](https://github.com/junegunn/fzf) :sparkles:
-- **Fuzzy Word Finder**: [Ripgrep](https://github.com/BurntSushi/ripgrep) _([:gear: Conf](../.config/rg/))_
-- **Editor**: [Neovim](https://neovim.io/) :sparkles: _([:gear: Conf](../.config/nvim/))_
-- **File Manager**: [Yazi](https://yazi-rs.github.io/) :sparkles: _([:gear: Conf](../.config/yazi/))_
-- **Git UI**: [Lazygit](https://github.com/jesseduffield/lazygit) :sparkles: _([:gear: Conf](../.config/lazygit/))_
-- **Npm Manager UI**: [Lazynpm](https://github.com/jesseduffield/lazynpm)
-- **Docker UI**: [Lazydocker](https://github.com/jesseduffield/lazydocker)
-- **Arch Package Search UI**: [Pacseek](https://github.com/moson-mo/pacseek) _([:gear: Conf](../.config/pacseek/))_
-- **Update Tool**: [Topgrade](https://github.com/topgrade-rs/topgrade) _([:gear: Conf](../.config/topgrade/))_
-- **Audio Visualizer**: [Cava](https://github.com/karlstav/cava) _([:gear: Conf](../.config/cava/))_
-- **System Monitor**: [btop](https://github.com/aristocratos/btop) _([:gear: Conf](../.config/btop/))_
-- **GPU Monitor**: [nvtop](https://github.com/Syllo/nvtop)
-- **System Fetch**: [Neofetch](https://github.com/dylanaraps/neofetch) _([:gear: Conf](../.config/neofetch/))_
-- **Git Fetch**: [Onefetch](https://github.com/o2sh/onefetch)
-- **Keybindings TUI**: [Keyb](https://github.com/kencx/keyb) :sparkles: _([:gear: Conf](../.config/keyb/))_
+| 📚 Entry                   | ✨ App                                                                                           |
+| -------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Shell**                  | 💖 [Fish](https://fishshell.com/) [:gear:](../.config/fish/)                                     |
+| **Terminal Emulator**      | 💖 [Kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                         |
+| **Shell Prompt**           | [Starship](https://starship.rs/) [:gear:](../.config/starship/)                                  |
+| **Shell History**          | [Atuin](https://github.com/atuinsh/atuin) [:gear:](../.config/atuin/)                            |
+| **CD Replacement**         | 💖 [zoxide](https://github.com/ajeetdsouza/zoxide)                                               |
+| **LS Replacement**         | [eza](https://github.com/eza-community/eza)                                                      |
+| **Cat Replacement**        | [bat](https://github.com/sharkdp/bat) [:gear:](../.config/bat/)                                  |
+| **Find Replacement**       | [fd](https://github.com/sharkdp/fd) [:gear:](../.config/fd/)                                     |
+| **File Manager**           | 💖 [Yazi](https://yazi-rs.github.io/) [:gear:](../.config/yazi/)                                 |
+| **Help Pages**             | [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) [:gear:](../.config/navi/) |
+| **Fuzzy File Finder**      | 💖 [fzf](https://github.com/junegunn/fzf)                                                        |
+| **Fuzzy Word Finder**      | [Ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                        |
+| **Editor**                 | 💖 [Neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
+| **Git UI**                 | 💖 [Lazygit](https://github.com/jesseduffield/lazygit) [:gear:](../.config/lazygit/)             |
+| **Npm Manager UI**         | [Lazynpm](https://github.com/jesseduffield/lazynpm)                                              |
+| **Docker UI**              | [Lazydocker](https://github.com/jesseduffield/lazydocker)                                        |
+| **Arch Package Search UI** | [Pacseek](https://github.com/moson-mo/pacseek) [:gear:](../.config/pacseek/)                     |
+| **Update Tool**            | [Topgrade](https://github.com/topgrade-rs/topgrade) [:gear:](../.config/topgrade/)               |
+| **Audio Visualizer**       | [Cava](https://github.com/karlstav/cava) [:gear:](../.config/cava/)                              |
+| **System Monitor**         | [btop](https://github.com/aristocratos/btop) [:gear:](../.config/btop/)                          |
+| **GPU Monitor**            | [nvtop](https://github.com/Syllo/nvtop)                                                          |
+| **System Fetch**           | [Neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)                |
+| **Git Fetch**              | [Onefetch](https://github.com/o2sh/onefetch)                                                     |
+| **Keybindings TUI**        | [Keyb](https://github.com/kencx/keyb) [:gear:](../.config/keyb/)                                 |
 
 </details>
 
 <details>
   <summary><b>🖱️ GUI Apps</b></summary>
 
-- **Music Player**: [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) _([:gear: Conf](../.config/spicetify/))_
-- **Web Browser**: [Librewolf](https://librewolf.net/) :sparkles: _([:gear: Conf](../.config/browser/))_
-- **Messaging App**: [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) _([:gear: Conf](../.config/BetterDiscord/))_
-- **Email Client**: [Thunderbird](https://www.thunderbird.net/)
-- **PDF Viewer**: [Zathura](https://pwmt.org/projects/zathura/) _([:gear: Conf](../.config/zathura/))_
-- **Note Taking App**: [Obsidian](https://obsidian.md/) :sparkles:
-- **Video Player**: [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) _([:gear: Conf](../.config/mpv/))_
-- **Image Viewer**: [geeqie](https://www.geeqie.org/) _([:gear: Conf](../.config/geeqie/))_
-- **File Manager**: [Nemo](https://community.linuxmint.com/software/view/nemo)
-- **Audio Effects**: [Easyeffects](https://github.com/wwmm/easyeffects)
-- **Image Editor**: [Krita](https://krita.org/)
-- **Paint Tool**: [Pinta](https://www.pinta-project.com/)
-- **VM Manager**: [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))
-- **Recording Program**: [OBS](https://obsproject.com/)
-- **Office Apps**: [LibreOffice](https://www.libreoffice.org/) _([:gear: Conf](../.config/libreoffice/4/user/config/))_
+| 📚 Entry              | ✨ App                                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Music Player**      | [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) [:gear:](../.config/spicetify/)        |
+| **Web Browser**       | 💖 [Librewolf](https://librewolf.net/) [:gear:](../.config/browser/)                                                           |
+| **Messaging App**     | [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) [:gear:](../.config/BetterDiscord/) |
+| **Email Client**      | [Thunderbird](https://www.thunderbird.net/)                                                                                    |
+| **PDF Viewer**        | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                                    |
+| **Note Taking App**   | 💖 [Obsidian](https://obsidian.md/)                                                                                            |
+| **Video Player**      | [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) [:gear:](../.config/mpv/)                   |
+| **Image Viewer**      | [geeqie](https://www.geeqie.org/) [:gear:](../.config/geeqie/)                                                                 |
+| **File Manager**      | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                                     |
+| **Audio Effects**     | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                             |
+| **Image Editor**      | [Krita](https://krita.org/)                                                                                                    |
+| **Paint Tool**        | [Pinta](https://www.pinta-project.com/)                                                                                        |
+| **VM Manager**        | [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))                                                      |
+| **Recording Program** | [OBS](https://obsproject.com/)                                                                                                 |
+| **Office Apps**       | [LibreOffice](https://www.libreoffice.org/) [:gear:](../.config/libreoffice/4/user/config/)                                    |
 
 </details>
 
 <details>
   <summary><b>🔍 Other</b></summary>
 
-- **Colorscheme**: [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin) :sparkles:
-- **Font**: [JetBrainsMono Nerd Font](https://www.jetbrains.com/es-es/lp/mono/)
-- **Dotfiles Manager**: [yadm](https://yadm.io/) :sparkles: _([:gear: Conf](../.config/yadm/))_
-- **Automatic System Deployment**: [Ansible](https://www.ansible.com/) :sparkles: _([:gear: Conf](../.config/ansible/))_
+| 📚 Entry                        | ✨ App                                                               |
+| ------------------------------- | -------------------------------------------------------------------- |
+| **Colorscheme**                 | 💖 [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin)  |
+| **Font**                        | [JetBrainsMono Nerd Font](https://www.jetbrains.com/es-es/lp/mono/)  |
+| **Dotfiles Manager**            | 💖 [yadm](https://yadm.io/) [:gear:](../.config/yadm/)               |
+| **Automatic System Deployment** | 💖 [Ansible](https://www.ansible.com/) [:gear:](../.config/ansible/) |
 
 </details>
 
@@ -137,13 +145,13 @@ Here is some _small_ information about my setup:
 
 #### :package: <samp>Automatic Installation (Arch Linux)</samp>
 
-> :warning: WARNING: This installation is specifically designed for Arch Linux. If you're running other systems, install the packages with your OS's package manager.
+> :warning: This installation is specifically designed for Arch Linux. If you're running other systems, install the packages with your OS's package manager.
 
 ##### WIP
 
 #### :package: <samp>Manual Installation (Universal) </samp>
 
-> :information_source: INFO: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
+> :information_source: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
 
 ##### WIP
 
