@@ -1,38 +1,3 @@
-- name: Media
-  keybinds:
-    - name: Restart Waybar
-      key: Ctrl + Win + R
-    - name: Logout Hyprland
-      key: Ctrl + Win + M
-    - name: Play-Pause Music
-      key: Ctrl + Win + Middle Mouse Button
-    - name: Play Previous Song
-      key: Ctrl + Win + Mouse Wheel Down
-    - name: Play Next Song
-      key: Ctrl + Win + Mouse Wheel Up
-    - name: Toggle Pavucontrol
-      key: Win + V
-    - name: Restart Audio
-      key: Ctrl + Win + V
-    - name: Screenshoot Tool (Output)
-      key: Shift + Insert
-    - name: Screenshoot Tool (Selection)
-      key: Ctrl + Insert
-    - name: Screenshoot Tool (Window)
-      key: Win + Shift + Insert
-    - name: Screenshoot Picker
-      key: Alt + Insert
-    - name: Color Picker
-      key: Win + Insert
-    - name: Wallpaper Picker
-      key: Win + Shift + W
-    - name: Zoom
-      key: Win + Z
-    - name: Logout Menu
-      key: Win + Space
-    - name: Keybindings Cheatsheet
-      key: Win + I
-
 - name: Window Management
   keybinds:
     - name: Move Window
@@ -51,21 +16,34 @@
       key: Win + P
     - name: Toggle Fullscreen Window
       key: Win + F
+    - name: Toggle Window Split
+      key: Win + S
+    - name: Center Window
+      key: Win + C
+    - name: Resize Window
+      key: Win + M
+    - name: Minimize Window
+      key: Win + '
+    - name: Toggle Minimize Workspace
+      key: Win + Shift + '
+    - name: Toggle Listing Windows
+      key: Win + Shift + \
+
+- name: Group Management
+  keybinds:
     - name: Toggle Group
       key: Win + G
     - name: Change Active Group
       key: Alt + Tab
-    - name: Toggle Group Split
-      key: Win + S
 
 - name: Workspace Management
   keybinds:
     - name: Moving to a specific Workspace
-      key: Win + 1-2-3...
+      key: Win + 1-10
     - name: Moving Windows to other specific Worskpace
-      key: Shift + Win + 1-2-3...
+      key: Win + Shift + 1-10
     - name: Moving Windows to other specific Workspace (Silent)
-      key: Win + Alt + 1-2-3...
+      key: Win + Alt + 1-10
     - name: Moving to the next Workspace (Mouse)
       key: Win + Mouse Wheel Down / Up
     - name: Moving to the next Worskpace (Keyboard)
@@ -76,10 +54,87 @@
     - name: Launch Browser
       key: Win + W
     - name: Launch Editor / IDE
-      key: Win + Return
+      key: Win + Backspace / Win + Shift + Backspace
     - name: Launch File Manager
-      key: Win + M
+      key: Win + Shift + E
     - name: Launch Terminal
       key: Win + Enter
+    - name: Launch Floating Terminal
+      key: Win + Alt + Enter
+    - name: Launch Obsidian
+      key: Win + O
+    - name: Launch LibreOffice
+      key: Win + Shift + O
     - name: Open Launcher
       key: Win + TAB
+
+- name: Pickers
+  keybinds:
+    - name: Color Picker
+      key: Win + Insert
+    - name: Wallpaper Picker
+      key: Win + Shift + W
+    - name: Clipboard Picker
+      key: Win + Y
+    - name: Screenshoot Picker
+      key: Alt + Insert
+    - name: Recording Picker
+      key: Win + Shift + R
+    - name: Keybindings Picker
+      key: Win + F1
+
+- name: Scratchpads
+  keybinds:
+    - name: Toggle File Manager
+      key: Win + Enter
+    - name: Toggle Dotfiles Manager
+      key: Win + D
+    - name: Toggle Terminal
+      key: Win + \
+    - name: Toggle Btop
+      key: Win + B
+    - name: Toggle Blueman
+      key: Win + Shift + B
+    - name: Toggle GPT
+      key: Win + Shift + G
+    - name: Toggle Pavucontrol
+      key: Win + V
+
+- name: Audio
+  keybinds:
+    - name: Play-Pause Music
+      key: Ctrl + Win + Middle Mouse Button
+    - name: Play Previous Song
+      key: Ctrl + Win + Mouse Wheel Down
+    - name: Play Next Song
+      key: Ctrl + Win + Mouse Wheel Up
+    - name: Restart Audio
+      key: Ctrl + Win + V
+
+- name: Screenshots
+  keybinds:
+    - name: Screenshoot Tool (Output)
+      key: Shift + Insert
+    - name: Screenshoot Tool (Selection)
+      key: Ctrl + Insert
+    - name: Screenshoot Tool (Window)
+      key: Win + Shift + Insert
+
+- name: Misc
+  keybinds:
+    - name: Restart Waybar
+      key: Ctrl + Win + R
+    - name: Logout Hyprland
+      key: Ctrl + Win + M
+    - name: Random Wallpaper
+      key: Ctrl + Win + S
+    - name: Zoom
+      key: Win + Z
+    - name: Logout Menu
+      key: Win + Escape
+    - name: Toggle Fancy Stuff
+      key: Win + F12
+    - name: Open Hyprland Wiki
+      key: Win + Shift + F1
+    - name: Open Dotfiles Wiki
+      key: Ctrl + Win + F1
