@@ -347,7 +347,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - terraform_validate
 - vale
 
-## Formaters
+## Formatters
 
 - black
 - csharpier
