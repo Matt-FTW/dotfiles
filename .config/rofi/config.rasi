@@ -85,3 +85,4 @@ configuration {
       delay:  0;
     }
 }
+@theme "style"

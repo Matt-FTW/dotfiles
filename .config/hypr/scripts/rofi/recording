@@ -13,9 +13,9 @@ wf-recorder_check() {
 
 wf-recorder_check
 
-SCREEN=$(echo "$(hyprctl monitors | awk '/^Monitor/ {print $2} END { print "selection" }')" | rofi -dmenu -theme ~/.config/rofi/style.rasi)
+SCREEN=$(echo "$(hyprctl monitors | awk '/^Monitor/ {print $2} END { print "selection" }')" | rofi -dmenu)
 
-AUDIO=$(echo "$(pactl list sources | grep Name | grep -v easyeffects | awk -F ": " '{print $2}' | awk '{$1=$1};1')" | rofi -dmenu -theme ~/.config/rofi/style.rasi)
+AUDIO=$(echo "$(pactl list sources | grep Name | grep -v easyeffects | awk -F ": " '{print $2}' | awk '{$1=$1};1')" | rofi -dmenu)
 
 VID="$HOME/Videos/Escritorio/$(date +%Y-%m-%d-%s).mp4"
 

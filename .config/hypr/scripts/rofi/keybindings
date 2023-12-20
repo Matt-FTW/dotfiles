@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-CONFIG=$(rofi -show file-browser-extended -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir "$HOME"/.config/keyb/bindings)
+CONFIG=$(rofi -show file-browser-extended -file-browser-stdout -file-browser-dir "$HOME"/.config/keyb/bindings)
 
 hyprctl dispatch exec "[float;size 35% 80%;center 1] kitty keyb -k '$CONFIG'"

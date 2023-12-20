@@ -8,7 +8,7 @@ if [ "$mode" = "" ]; then
 fi
 
 if [ "$mode" == "select" ]; then
-	IMAGE=$(rofi -show file-browser-extended -theme ~/.config/rofi/style.rasi -file-browser-stdout -file-browser-dir "$HOME"/.config/hypr/themes/luna/walls/)
+	IMAGE=$(rofi -show file-browser-extended -file-browser-stdout -file-browser-dir "$HOME"/.config/hypr/themes/luna/walls/)
 
 	if [ "$IMAGE" = "" ]; then
 		exit 1
