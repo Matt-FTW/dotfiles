@@ -1,0 +1,31 @@
+- name: Movement
+  keybinds:
+    - name: Each Entry
+      key: Arrow Keys / Vim Navigation Keys
+    - name: Half Page Up
+      key: Ctrl + U
+    - name: Half Page Down
+      key: Ctrl + D
+    - name: Full Up
+      key: Ctrl + Shift + U
+    - name: Full Down
+      key: Ctrl + Shift + D
+    - name: First Entry
+      key: g
+    - name: Last Entry
+      key: G
+    - name: Top
+      key: Ctrl + B
+    - name: Bottom
+      key: Ctrl + F
+    - name: Middle
+      key: M
+
+- name: Search
+  keybinds:
+    - name: Search
+      key: Enter
+    - name: Focus Searchbox
+      key: I
+    - name: Clear Search
+      key: Q
