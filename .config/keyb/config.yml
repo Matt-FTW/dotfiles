@@ -4,7 +4,7 @@ settings:
   reverse: false
   mouse: true
   search_mode: false
-  sort_keys: true
+  sort_keys: false
   title: ""
   prompt: "> "
   prompt_location: top
