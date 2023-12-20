@@ -91,7 +91,7 @@ Here is some _small_ information about my setup:
 | **Help Pages**             | [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) [:gear:](../.config/navi/) |
 | **Fuzzy File Finder**      | 💖 [fzf](https://github.com/junegunn/fzf)                                                        |
 | **Fuzzy Word Finder**      | [Ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                        |
-| **Editor**                 | 💖 [Neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
+| **Text Editor**            | 💖 [Neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
 | **Git UI**                 | 💖 [Lazygit](https://github.com/jesseduffield/lazygit) [:gear:](../.config/lazygit/)             |
 | **Npm Manager UI**         | [Lazynpm](https://github.com/jesseduffield/lazynpm)                                              |
 | **Docker UI**              | [Lazydocker](https://github.com/jesseduffield/lazydocker)                                        |
