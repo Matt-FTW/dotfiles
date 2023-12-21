@@ -33,12 +33,10 @@ end, { desc = "Toggle Background" })
 
 map("n", "<leader>fT", "<Nop>")
 
+-- Center the screen automatically
 map("n", "<C-d>", "<C-d>zz")
-
 map("n", "<C-u>", "<C-u>zz")
-
 map("n", "n", "nzzzv")
-
 map("n", "N", "Nzzzv")
 
 map("n", "<leader>uS", function()
@@ -53,14 +51,14 @@ map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 
-map("n", "<c-,>", "_", { desc = "First character of Line" })
-map("n", "<c-.>", "$", { desc = "Last character of Line" })
+map("n", "<a-h>", "_", { desc = "First character of Line" })
+map("n", "<a-l>", "$", { desc = "Last character of Line" })
 
 -- Copy whole text to clipboard
 map("n", "<C-c>", ":%y+<CR>", { desc = "Copy whole text to clipboard", silent = true })
 
 -- Select all text
-map("n", "<C-n>", "gg<S-V>G", { desc = "Select all text", silent = true })
+map("n", "<C-a>", "gg<S-V>G", { desc = "Select all text", silent = true, noremap = true })
 
 -- Better paste
 -- remap "p" in visual mode to delete the highlighted text without overwriting your yanked/copied text, and then paste the content from the unnamed register.
