@@ -32,7 +32,7 @@
 	<a href="https://github.com/Matt-FTW/dotfiles"><img alt="Size" src="https://img.shields.io/github/repo-size/Matt-FTW/dotfiles?style=for-the-badge&logo=discord&color=DDB6F2&logoColor=D9E0EE&labelColor=302D41"></a>
 </div>
 
-## :herb: ‎ <samp>About</samp>
+# :herb: ‎ <samp>About</samp>
 
 Hey there! :wave:
 
@@ -44,7 +44,7 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 ---
 
-#### ✨ Features
+### ✨ Features
 
 - Scratchpads
 - Notification Center
@@ -68,7 +68,7 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 And many more!`:)`
 
-#### 🐧 System Info
+### 🐧 System Info
 
 Here is some _small_ information about my setup:
 
@@ -168,21 +168,21 @@ Here is some _small_ information about my setup:
 
 </details>
 
-## :wrench: ‎ <samp>Setup</samp>
+# :wrench: ‎ <samp>Setup</samp>
 
-#### :package: <samp>Automatic Installation (Arch Linux)</samp>
+### :package: <samp>Automatic Installation (Arch Linux)</samp>
 
 > :warning: This installation is specifically designed for Arch Linux. If you're running other systems, install the packages with your OS's package manager.
 
-##### WIP
+#### WIP
 
-#### :package: <samp>Manual Installation (Universal) </samp>
+### :package: <samp>Manual Installation (Universal) </samp>
 
 > :information_source: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
 
-##### WIP
+#### WIP
 
-## :camera: ‎ <samp>Gallery</samp>
+# :camera: ‎ <samp>Gallery</samp>
 
 ![overview-1](./assets/images/overview-1.png)
 ![overview-2](./assets/images/overview-2.png)
@@ -196,7 +196,7 @@ Here is some _small_ information about my setup:
 
 > :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
 
-## :tada: ‎ <samp>Credits</samp>
+# :tada: ‎ <samp>Credits</samp>
 
 Big thanks to everyone at r/unixporn for inspiring me to make this!
 
@@ -210,7 +210,7 @@ I wanna point out some resources that helped me the most with the setup:
 
 Those were the biggest inspiring factor for me, though you can find a lot more of setups that helped me in my List of Dotfiles from the **Stars** section of my Github Profile: [Check it out!](https://github.com/stars/Matt-FTW/lists/paintbrush-theming-dots)
 
-## :star: ‎ <samp>Star History</samp>
+# :star: ‎ <samp>Star History</samp>
 
 Thanks to everyone who gave a star to this project! ❤️
 
