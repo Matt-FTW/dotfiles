@@ -72,7 +72,7 @@ And many more!`:)`
 
 Here is some _small_ information about my setup:
 
-> ℹ️ Some of this apps have the config files included in the repo, which are marked with ⚙️,, and others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with 💖.
+> ℹ️ Some of this apps have the config files included in the repo, which are marked with ⚙️, and others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with 💖.
 
 <details>
   <summary><b>🐧 System</b></summary>
