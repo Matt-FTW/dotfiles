@@ -58,6 +58,7 @@ Here is some _small_ information about my setup:
 | **AUR Helper**                 | 💖 [yay](https://github.com/Jguer/yay) [:gear:](../.config/yay/)                                               |
 | **Window Manager**             | 💖 [Hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                |
 | **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                    |
+| **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                               |
 | **Panel**                      | 💖 [Waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
 | **Audio Daemon**               | [Pipewire](https://pipewire.org/) [:gear:](../.config/pipewire/)                                               |
 | **Application Launcher**       | 💖 [Rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
