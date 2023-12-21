@@ -49,7 +49,7 @@
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
-      "on-click": "rofi -show drun -theme ~/.config/rofi/style.rasi",
+      "on-click": "rofi -show drun",
       "on-click-right": "wleave"
     },
     "custom/weather": {
@@ -64,14 +64,14 @@
       "tooltip": false,
       "format": "{} {icon}",
       "format-icons": {
-        "notification": "<span foreground='red'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+        "notification": " <span foreground='red'><sup></sup></span>",
+        "none": " ",
+        "dnd-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-none": " ",
+        "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "inhibited-none": " ",
+        "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": " "
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
@@ -174,9 +174,11 @@
         "default": [" ", " ", " "]
       },
       "tooltip-format": "{desc}, {volume}%",
-      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-      "on-click-middle": "easyeffects"
+      "on-click": "swayosd-client --output-volume mute-toggle",
+      "on-click-right": "swayosd-client --input-volume mute-toggle",
+      "on-click-middle": "easyeffects",
+      "on-scroll-up": "swayosd-client --output-volume +1",
+      "on-scroll-down": "swayosd-client --output-volume -1"
     },
     "cava": {
       "autosens": 1,
@@ -234,21 +236,21 @@
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
-      "on-click": "wleave",
+      "on-click": "rofi -show drun",
       "on-click-right": "wleave"
     },
     "custom/notifications": {
       "tooltip": false,
       "format": "{} {icon}",
       "format-icons": {
-        "notification": "<span foreground='red'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+        "notification": " <span foreground='red'><sup></sup></span>",
+        "none": " ",
+        "dnd-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-none": " ",
+        "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "inhibited-none": " ",
+        "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": " "
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
@@ -361,21 +363,21 @@
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
-      "on-click": "wleave",
+      "on-click": "rofi -show drun",
       "on-click-right": "wleave"
     },
     "custom/notifications": {
       "tooltip": false,
       "format": "{} {icon}",
       "format-icons": {
-        "notification": "<span foreground='red'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+        "notification": " <span foreground='red'><sup></sup></span>",
+        "none": " ",
+        "dnd-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-none": " ",
+        "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "inhibited-none": " ",
+        "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": " "
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
