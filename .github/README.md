@@ -184,17 +184,43 @@ Here is some _small_ information about my setup:
 
 # :camera: ‎ <samp>Gallery</samp>
 
-![overview-1](./assets/images/overview-1.png)
-![overview-2](./assets/images/overview-2.png)
-![overview-3](./assets/images/overview-3.png)
-![overview-4](./assets/images/overview-4.png)
-![overview-5](./assets/images/overview-5.png)
-![overview-6](./assets/images/overview-6.png)
-![overview-7](./assets/images/overview-7.png)
-![overview-8](./assets/images/overview-8.png)
-![overview-9](./assets/images/overview-9.png)
-
 > :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
+
+| **System Fetch, Pacman Colorscript, App Launcher and Notif. Center** |
+| -------------------------------------------------------------------- |
+| ![overview-1](./assets/images/overview-1.png)                        |
+
+| **Audio Visualizer, Fuzzy Finder in a Git Directory and Image Viewer** |
+| ---------------------------------------------------------------------- |
+| ![overview-2](./assets/images/overview-2.png)                          |
+
+| **TUI File Manager, ls replacement and System Fetch** |
+| ----------------------------------------------------- |
+| ![overview-3](./assets/images/overview-3.png)         |
+
+| **Text Editor and Git UI Manager**            |
+| --------------------------------------------- |
+| ![overview-4](./assets/images/overview-4.png) |
+
+| **Text Editor**                               |
+| --------------------------------------------- |
+| ![overview-5](./assets/images/overview-5.png) |
+
+| **Browser with Main Page**                    |
+| --------------------------------------------- |
+| ![overview-6](./assets/images/overview-6.png) |
+
+| **System Fetch, Matrix Script and Browser on [r/unixporn](https://www.reddit.com/r/unixporn/)** |
+| ----------------------------------------------------------------------------------------------- |
+| ![overview-7](./assets/images/overview-7.png)                                                   |
+
+| **TUI System Monitor, Doom and Clock Script, ls replacement and Notif. Center** |
+| ------------------------------------------------------------------------------- |
+| ![overview-8](./assets/images/overview-8.png)                                   |
+
+| **Text Editor**                               |
+| --------------------------------------------- |
+| ![overview-9](./assets/images/overview-9.png) |
 
 # :tada: ‎ <samp>Credits</samp>
 
