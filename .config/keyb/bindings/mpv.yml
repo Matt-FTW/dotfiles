@@ -1,0 +1,47 @@
+- name: Progress
+  keybinds:
+    - name: Play/Pause
+      key: Space
+    - name: Forward 2s
+      key: Alt + L / Alt + Right
+    - name: Backward 2s
+      key: Alt + H / Alt + Left
+    - name: Forward 5s
+      key: L / Right
+    - name: Backward 5s
+      key: H / Left
+    - name: Forward 10s
+      key: Ctrl + L / Ctrl + Right
+    - name: Backward 10s
+      key: Ctrl + H / Ctrl + Left
+    - name: Forward 30s
+      key: Shift + L / Shift + Right
+    - name: Backward 30s
+      key: Shift + H / Shift + Left
+    - name: Forward 60s
+      key: Ctrl + Shift + L / Ctrl + Shift + Right
+    - name: Backward 60s
+      key: Ctrl + Shift + H / Ctrl + Shift + Left
+
+- name: Volume
+  keybinds:
+    - name: Increase (5%)
+      key: Alt + K / Alt + Up
+    - name: Decrease (5%)
+      key: Alt + J / Alt + Down
+    - name: Increase (10%)
+      key: K / Up
+    - name: Decrease (10%)
+      key: J / Down
+    - name: Increase (25%)
+      key: Ctrl + K / Ctrl + Up
+    - name: Decrease (25%)
+      key: Ctrl + J / Ctrl + Down
+    - name: Increase (50%)
+      key: Shift + K / Shift + Up
+    - name: Decrease (50%)
+      key: Shift + J / Shift + Down
+    - name: Increase (100%)
+      key: Ctrl + Shift + K / Ctrl + Shift + Up
+    - name: Decrease (100%)
+      key: Ctrl + Shift + J / Ctrl + Shift + Down

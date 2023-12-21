@@ -1,10 +1,10 @@
 settings:
-  keyb_path: /home/matt/.config/keyb/bindings/default.yml
+  keyb_path: /home/matt/.config/keyb/bindings/keyb.yml
   debug: false
   reverse: false
   mouse: true
   search_mode: false
-  sort_keys: true
+  sort_keys: false
   title: ""
   prompt: "> "
   prompt_location: top
@@ -31,8 +31,8 @@ keys:
   down: j, down
   half_up: ctrl+u
   half_down: ctrl+d
-  full_up: ctrl+up
-  full_bottom: ctrl+down
+  full_up: ctrl+k
+  full_bottom: ctrl+j
   first_line: g
   last_line: G
   top: ctrl+b

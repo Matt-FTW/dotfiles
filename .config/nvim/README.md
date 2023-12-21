@@ -39,6 +39,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 ### code-runner
 
 - [stevearc/overseer.nvim](https://dotfyle.com/plugins/stevearc/overseer.nvim)
+- [michaelb/sniprun](https://dotfyle.com/plugins/michaelb/sniprun)
 - [Zeioth/compiler.nvim](https://dotfyle.com/plugins/Zeioth/compiler.nvim)
 
 ### color
@@ -50,11 +51,15 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 ### colorscheme
 
+- [savq/melange-nvim](https://dotfyle.com/plugins/savq/melange-nvim)
 - [projekt0n/github-nvim-theme](https://dotfyle.com/plugins/projekt0n/github-nvim-theme)
 - [marko-cerovac/material.nvim](https://dotfyle.com/plugins/marko-cerovac/material.nvim)
 - [shaunsingh/nord.nvim](https://dotfyle.com/plugins/shaunsingh/nord.nvim)
+- [kaiuri/nvim-juliana](https://dotfyle.com/plugins/kaiuri/nvim-juliana)
+- [Tsuzat/NeoSolarized.nvim](https://dotfyle.com/plugins/Tsuzat/NeoSolarized.nvim)
 - [sainnhe/everforest](https://dotfyle.com/plugins/sainnhe/everforest)
 - [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
+- [NTBBloodbath/doom-one.nvim](https://dotfyle.com/plugins/NTBBloodbath/doom-one.nvim)
 - [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
 - [nyoom-engineering/oxocarbon.nvim](https://dotfyle.com/plugins/nyoom-engineering/oxocarbon.nvim)
 - [olimorris/onedarkpro.nvim](https://dotfyle.com/plugins/olimorris/onedarkpro.nvim)
@@ -63,15 +68,21 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)
 - [navarasu/onedark.nvim](https://dotfyle.com/plugins/navarasu/onedark.nvim)
 - [Mofiqul/dracula.nvim](https://dotfyle.com/plugins/Mofiqul/dracula.nvim)
+- [AlexvZyl/nordic.nvim](https://dotfyle.com/plugins/AlexvZyl/nordic.nvim)
+- [olivercederborg/poimandres.nvim](https://dotfyle.com/plugins/olivercederborg/poimandres.nvim)
+- [bluz71/vim-nightfly-colors](https://dotfyle.com/plugins/bluz71/vim-nightfly-colors)
 - [EdenEast/nightfox.nvim](https://dotfyle.com/plugins/EdenEast/nightfox.nvim)
 - [Mofiqul/vscode.nvim](https://dotfyle.com/plugins/Mofiqul/vscode.nvim)
+
+### colorscheme-creation
+
+- [echasnovski/mini.base16](https://dotfyle.com/plugins/echasnovski/mini.base16)
 
 ### comment
 
 - [LudoPinelli/comment-box.nvim](https://dotfyle.com/plugins/LudoPinelli/comment-box.nvim)
 - [Zeioth/dooku.nvim](https://dotfyle.com/plugins/Zeioth/dooku.nvim)
 - [danymat/neogen](https://dotfyle.com/plugins/danymat/neogen)
-- [folke/todo-comments.nvim](https://dotfyle.com/plugins/folke/todo-comments.nvim)
 
 ### completion
 
@@ -87,6 +98,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 - [Weissle/persistent-breakpoints.nvim](https://dotfyle.com/plugins/Weissle/persistent-breakpoints.nvim)
 - [mfussenegger/nvim-dap](https://dotfyle.com/plugins/mfussenegger/nvim-dap)
+- [andrewferrier/debugprint.nvim](https://dotfyle.com/plugins/andrewferrier/debugprint.nvim)
 
 ### dependency-management
 
@@ -96,16 +108,21 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 ### editing-support
 
 - [monaqa/dial.nvim](https://dotfyle.com/plugins/monaqa/dial.nvim)
+- [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
+- [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
 - [folke/zen-mode.nvim](https://dotfyle.com/plugins/folke/zen-mode.nvim)
 - [shortcuts/no-neck-pain.nvim](https://dotfyle.com/plugins/shortcuts/no-neck-pain.nvim)
 - [HiPhish/rainbow-delimiters.nvim](https://dotfyle.com/plugins/HiPhish/rainbow-delimiters.nvim)
 - [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
+- [Wansmer/sibling-swap.nvim](https://dotfyle.com/plugins/Wansmer/sibling-swap.nvim)
+- [altermo/ultimate-autopair.nvim](https://dotfyle.com/plugins/altermo/ultimate-autopair.nvim)
+- [haringsrob/nvim_context_vt](https://dotfyle.com/plugins/haringsrob/nvim_context_vt)
 - [nacro90/numb.nvim](https://dotfyle.com/plugins/nacro90/numb.nvim)
 - [gbprod/yanky.nvim](https://dotfyle.com/plugins/gbprod/yanky.nvim)
 - [bennypowers/nvim-regexplainer](https://dotfyle.com/plugins/bennypowers/nvim-regexplainer)
+- [cshuaimin/ssr.nvim](https://dotfyle.com/plugins/cshuaimin/ssr.nvim)
 - [chrisgrieser/nvim-puppeteer](https://dotfyle.com/plugins/chrisgrieser/nvim-puppeteer)
-- [Wansmer/treesj](https://dotfyle.com/plugins/Wansmer/treesj)
 
 ### file-explorer
 
@@ -124,6 +141,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 ### game
 
 - [ThePrimeagen/vim-be-good](https://dotfyle.com/plugins/ThePrimeagen/vim-be-good)
+- [NStefan002/speedtyper.nvim](https://dotfyle.com/plugins/NStefan002/speedtyper.nvim)
 
 ### git
 
@@ -139,6 +157,10 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 - [ray-x/go.nvim](https://dotfyle.com/plugins/ray-x/go.nvim)
 
+### icon
+
+- [ziontee113/icon-picker.nvim](https://dotfyle.com/plugins/ziontee113/icon-picker.nvim)
+
 ### keybinding
 
 - [max397574/better-escape.nvim](https://dotfyle.com/plugins/max397574/better-escape.nvim)
@@ -146,13 +168,16 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 ### lsp
 
+- [Wansmer/symbol-usage.nvim](https://dotfyle.com/plugins/Wansmer/symbol-usage.nvim)
 - [aznhe21/actions-preview.nvim](https://dotfyle.com/plugins/aznhe21/actions-preview.nvim)
 - [smjonas/inc-rename.nvim](https://dotfyle.com/plugins/smjonas/inc-rename.nvim)
+- [MaximilianLloyd/tw-values.nvim](https://dotfyle.com/plugins/MaximilianLloyd/tw-values.nvim)
 - [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
 - [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
 - [VidocqH/lsp-lens.nvim](https://dotfyle.com/plugins/VidocqH/lsp-lens.nvim)
 - [hedyhli/outline.nvim](https://dotfyle.com/plugins/hedyhli/outline.nvim)
 - [kosayoda/nvim-lightbulb](https://dotfyle.com/plugins/kosayoda/nvim-lightbulb)
+- [mrcjkb/haskell-tools.nvim](https://dotfyle.com/plugins/mrcjkb/haskell-tools.nvim)
 
 ### lsp-installer
 
@@ -212,9 +237,16 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 - [declancm/cinnamon.nvim](https://dotfyle.com/plugins/declancm/cinnamon.nvim)
 
+### search
+
+- [roobert/search-replace.nvim](https://dotfyle.com/plugins/roobert/search-replace.nvim)
+
 ### snippet
 
 - [TobinPalmer/rayso.nvim](https://dotfyle.com/plugins/TobinPalmer/rayso.nvim)
+- [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
+- [mrcjkb/haskell-snippets.nvim](https://dotfyle.com/plugins/mrcjkb/haskell-snippets.nvim)
+- [cvigilv/esqueleto.nvim](https://dotfyle.com/plugins/cvigilv/esqueleto.nvim)
 
 ### split-and-window
 
@@ -225,6 +257,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 ### startup
 
+- [nvimdev/dashboard-nvim](https://dotfyle.com/plugins/nvimdev/dashboard-nvim)
 - [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
 
 ### statusline
@@ -246,10 +279,14 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 ### utility
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
+- [kawre/leetcode.nvim](https://dotfyle.com/plugins/kawre/leetcode.nvim)
 - [sitiom/nvim-numbertoggle](https://dotfyle.com/plugins/sitiom/nvim-numbertoggle)
 - [axieax/urlview.nvim](https://dotfyle.com/plugins/axieax/urlview.nvim)
 - [3rd/image.nvim](https://dotfyle.com/plugins/3rd/image.nvim)
 - [luckasRanarison/nvim-devdocs](https://dotfyle.com/plugins/luckasRanarison/nvim-devdocs)
+- [chrisgrieser/nvim-early-retirement](https://dotfyle.com/plugins/chrisgrieser/nvim-early-retirement)
+- [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
 
 ### workflow
@@ -258,10 +295,69 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 ## Language Servers
 
+- ansible
 - astro
-- eslint
+- bash
+- clangd
+- css
+- cssmodules
+- docker
+- elixir
+- emmet
+- gopls
+- graphql
+- haskell
+- htmx
 - html
+- jdtls
+- json
+- julia
+- lemminx
+- lua
+- marksman
+- neocmake
+- omnisharp
 - phpactor
+- pyright
+- rnix
+- rust-analyzer
+- ruff
+- solargraph
 - sqlls
 - svelte
 - tailwindcss
+- terraform
+- texlab
+- tsserver
+- vue
+- yaml
+
+## Linters
+
+- biome
+- cmakelint
+- credo
+- eslint
+- fish
+- hadolint
+- markdownlint
+- pylint
+- shellcheck
+- stylelint
+- terraform_validate
+- vale
+
+## Formatters
+
+- black
+- csharpier
+- fish_indent
+- flake8
+- gofumpt
+- goimports
+- isort
+- prettier
+- rustfmt
+- shfmt
+- stylua
+- terraform_fmt

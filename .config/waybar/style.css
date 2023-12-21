@@ -263,6 +263,11 @@ window#waybar.hidden {
   color: #1e222a;
 }
 
+#pulseaudio.source-muted {
+  background-color: #f5a97f;
+  color: #1e222a;
+}
+
 #backlight {
   color: #61afef;
 }

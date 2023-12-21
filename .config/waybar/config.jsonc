@@ -58,7 +58,7 @@
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
-      "on-click": "rofi -show drun -theme ~/.config/rofi/style.rasi",
+      "on-click": "rofi -show drun",
       "on-click-right": "wleave"
     },
     "custom/weather": {
@@ -183,9 +183,11 @@
         "default": [" ", " ", " "]
       },
       "tooltip-format": "{desc}, {volume}%",
-      "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-      "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
-      "on-click-middle": "easyeffects"
+      "on-click": "swayosd-client --output-volume mute-toggle",
+      "on-click-right": "swayosd-client --input-volume mute-toggle",
+      "on-click-middle": "easyeffects",
+      "on-scroll-up": "swayosd-client --output-volume +1",
+      "on-scroll-down": "swayosd-client --output-volume -1"
     }
   },
   {
@@ -202,7 +204,7 @@
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
-      "on-click": "wleave",
+      "on-click": "rofi -show drun",
       "on-click-right": "wleave"
     },
     "custom/notifications": {

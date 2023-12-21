@@ -1,9 +1,9 @@
 {
     "currentVersionInfo": {
-        "version": "7.4.2",
+        "version": "8.0.0",
         "hasShownChangelog": true
     },
-    "cuiSettingsVersion": "10",
+    "cuiSettingsVersion": "11",
     "disableTransitions": "false",
     "transitionSpeed": "250",
     "disableToolbarCollapse": "false",
@@ -26,7 +26,6 @@
     "keyStringList": "Alt+S,Alt+C,Alt+T,Alt+W,Alt+M,Alt+U,Alt+P,Alt+I",
     "settingsButtonsMaxWidth": "100",
     "toolbarIconMaxWidth": "300",
-    "profilePanelMaxWidth": "340",
     "toolbarMaxWidth": "800",
     "userAreaMaxHeight": "300",
     "msgBarMaxHeight": "400",
@@ -43,5 +42,10 @@
     "messageBarButtonsMaxWidth": "200",
     "messageBarButtonsMinWidth": "40",
     "buttonCollapseFudgeFactor": "10",
-    "resizableMembersList": "true"
+    "resizableMembersList": "true",
+    "floatingDynamicUncollapse": "true",
+    "resizableUserProfile": "true",
+    "membersListWidth": "0",
+    "profilePanelWidth": "0",
+    "persistentUnreadBadge": "true"
 }
