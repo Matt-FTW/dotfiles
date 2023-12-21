@@ -102,14 +102,26 @@
 
 - name: Audio
   keybinds:
-    - name: Play-Pause Music
-      key: Ctrl + Win + Middle Mouse Button
+    - name: Play-Pause Song
+      key: Ctrl + Win + Mouse Extra Middle Button
     - name: Play Previous Song
-      key: Ctrl + Win + Mouse Wheel Down
+      key: Ctrl + Win + Mouse Backward Button
     - name: Play Next Song
-      key: Ctrl + Win + Mouse Wheel Up
+      key: Ctrl + Win + Mouse Forward Button
+    - name: Toggle Output Mute
+      key: Ctrl + Win + Mouse Extra Up Button
+    - name: Toggle Input Mute
+      key: Ctrl + Win + Mouse Extra Down Button
     - name: Restart Audio
       key: Ctrl + Win + V
+    - name: Output Volume Up
+      key: Ctrl + Win + Plus Sign
+    - name: Output Volume Down
+      key: Ctrl + Win + Minus Sign
+    - name: Input Volume Up
+      key: Win + Shift + Plus Sign
+    - name: Input Volume Down
+      key: Win + Shift + Minus Sign
 
 - name: Screenshots
   keybinds:
