@@ -46,25 +46,25 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 ### ✨ Features
 
-- Scratchpads
-- Notification Center
-- LazyVim powered Neovim with custom extras added
-- Dark Mode for the whole system (Catppuccin powered)
-- Various Wallpapers
-- Nerd Fonts for the Shell Prompt
-- Volume OSD
-- App Launcher
-- Multiple Keyboard Layouts
-- Color scripts for the terminal
-- Automatic mount of USB devices with notification
-- Idle and lock apps
-- Organized and cleaned up config files
-- Recording script
-- Screenshot, Clipboard, Color and Wallpaper Picker
-- Performance Mode
-- Window Animations
-- AwesomeWM workspace behavior
-- Various other tweaks
+- :scroll: Scratchpads
+- :bell: Notification Center
+- :zzz: LazyVim powered Neovim with custom extras added
+- :dark_sunglasses: Dark Mode for the whole system (Catppuccin powered)
+- :framed_picture: Various Wallpapers
+- :nerd_face: Nerd Fonts for the Shell Prompt
+- :loud_sound: Volume OSD
+- :iphone: App Launcher
+- :keyboard: Multiple Keyboard Layouts
+- :art: Color scripts for the terminal
+- :car: Automatic mount of USB devices with notification
+- :lock: Idle and lock apps
+- :broom: Organized and cleaned up config files
+- :film_projector: Recording script
+- :point_up: Screenshot, Clipboard, Color and Wallpaper Picker
+- :boom: Performance Mode
+- :window: Window Animations
+- :desktop_computer: AwesomeWM workspace behavior
+- :gear: Various other tweaks
 
 And many more!`:)`
 
