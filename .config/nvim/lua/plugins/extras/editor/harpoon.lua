@@ -17,6 +17,8 @@ return {
       { "<leader>h9", function() require("harpoon.ui").nav_file(9) end, desc = "File 9" },
       { "]H", function() require("harpoon.ui").nav_next() end, desc = "Next Harpoon File" },
       { "[H", function() require("harpoon.ui").nav_prev() end, desc = "Prev Harpoon File" },
+      { "<M-]>", function() require("harpoon.ui").nav_next() end, desc = "Next Harpoon File" },
+      { "<M-[>", function() require("harpoon.ui").nav_prev() end, desc = "Prev Harpoon File" },
     },
     opts = {
       globalsettings = {
