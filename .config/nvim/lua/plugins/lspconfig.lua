@@ -72,7 +72,7 @@ return {
       servers = {
         -- typos_lsp = {
         --   settings = {
-        --     diagnosticSeverity = "Warning",
+        --     diagnosticSeverity = "Warning", TODO: Look at this
         --   },
         -- },
         lua_ls = {
