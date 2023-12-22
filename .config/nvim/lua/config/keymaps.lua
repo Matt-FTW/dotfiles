@@ -46,6 +46,12 @@ map("n", "-", "<C-x>")
 -- Tabs
 map("n", "<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "<S-tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+map("n", "]<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+map("n", "[<tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+
+-- Buffers
+map("n", "<leader>bf", "<cmd>bfirst<cr>", { desc = "First Buffer" })
+map("n", "<leader>ba", "<cmd>blast<cr>", { desc = "Last Buffer" })
 
 -- Center the screen automatically
 map("n", "<C-d>", "<C-d>zz")
