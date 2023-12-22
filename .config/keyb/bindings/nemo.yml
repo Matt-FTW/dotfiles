@@ -1,4 +1,4 @@
-- name: General
+- name: General 󰪵
   keybinds:
     - name: New Window
       key: Ctrl + N
@@ -19,7 +19,7 @@
     - name: Pin/Unpin Selection
       key: Ctrl + Shift + D
 
-- name: Opening
+- name: Opening 
   keybinds:
     - name: Open
       key: Enter / Ctrl + D
@@ -28,7 +28,7 @@
     - name: Open in New Window
       key: Ctrl + Shift + O
 
-- name: Tabs
+- name: Tabs 󰓩
   keybinds:
     - name: New Tab
       key: Ctrl + T
@@ -45,7 +45,7 @@
     - name: Cycle Tabs
       key: Ctrl + Tab
 
-- name: Navigation
+- name: Navigation 󰎐
   keybinds:
     - name: Go Back
       key: Backspace
@@ -60,7 +60,7 @@
     - name: Toggle Location Entry
       key: Ctrl + L
 
-- name: View
+- name: View 󰹫
   keybinds:
     - name: Zoom In
       key: Ctrl + Plus
@@ -83,7 +83,7 @@
     - name: Compact View
       key: Ctrl + 3
 
-- name: Editing
+- name: Editing 
   keybinds:
     - name: Create Folder
       key: Ctrl + Shift + N
@@ -107,3 +107,4 @@
       key: Ctrl + Y
     - name: Show Item Properties
       key: Alt + Enter / Ctrl + I
+

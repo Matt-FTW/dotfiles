@@ -1,4 +1,4 @@
-- name: Movement/View
+- name: Movement/View 󰕮
   keybinds:
     - name: Next Page
       key: Shift + J / Down Arrow
@@ -23,17 +23,18 @@
     - name: Show Index
       key: Tab
     - name: Zoom Out
-      key: '-'
+      key: "-"
     - name: Zoom In
-      key: '+'
+      key: "+"
 
-- name: Points
+- name: Points 
   keybinds:
     - name: Search for Text
-      key: '?'
+      key: "?"
     - name: Search for the Next Result
       key: n
     - name: Search for the Previous Result
       key: N
     - name: Open Document
       key: o
+
