@@ -1,445 +1,556 @@
-- name: Windows, Buffers and Tabs
+- name: Windows 󱂬
   keybinds:
-    - name: (Nor, Term) Go to the Left Window
-      key: Ctrl + h
-    - name: (Nor, Term) Go to the Right Window
-      key: Ctrl + l
-    - name: (Nor, Term) Go to the Uppper Window
-      key: Ctrl + k
-    - name: (Nor, Term) Go to the Bottom Window
-      key: Ctrl + j
-    - name: (Nor) Increase Window Height
-      key: Ctrl + Up Arrow Key
-    - name: (Nor) Decrease Window Height
-      key: Ctrl + Down Arrow Key
-    - name: (Nor) Increase Window Width
-      key: Ctrl + Right Arrow Key
-    - name: (Nor) Decrease Window Width
-      key: Ctrl + Left Arrow Key
-    - name: (Nor) Previous Buffer
-      key: Shift + h / [ + b
-    - name: (Nor) Next Buffer
-      key: Shift + l / ] + b
-    - name: (Nor) Switch to Other Buffer
-      key: Space + b + b
-    - name: (Nor) Switch to Other Window
-      key: Space + w + w
-    - name: (Nor) Delete Buffer
-      key: Space + b + d
-    - name: (Nor) Delete Window
-      key: Space + w + d
-    - name: (Nor) Split Window Horizontally
-      key: Space + w + - / Space + -
-    - name: (Nor) Split Window Vertically
-      key: Space + w + | / Space + |
-    - name: (Nor) New Tab
-      key: Space + Tab + Tab
-    - name: (Nor) Previous Tab
-      key: Space + Tab + [
-    - name: (Nor) Next Tab
-      key: Space + Tab + ]
-    - name: (Nor) First Tab
-      key: Space + Tab + f
-    - name: (Nor) Last Tab
-      key: Space + Tab + l
-    - name: (Nor) Close Tab
-      key: Space + Tab + d
-    - name: (Nor) Pin Buffer
-      key: Space + b + p
-    - name: (Nor) Delete Non-Pinned Buffers
-      key: Space + b + D
-    - name: (Nor) Maximise Window Vertically
-      key: Space + w + v
-    - name: (Nor) Maximise Window Horizontally
+    - name: (N) Horizontal Zoom
       key: Space + w + h
-    - name: (Nor) Equilaze Window
+    - name: (N) Vertical Zoom
+      key: Space + w + v
+    - name: (N) Equalize Window
       key: Space + w + e
+    - name: (N) Split Window Below
+      key: Space + - / Space + w + -
+    - name: (N) Split Window Right
+      key: Space + | / Space + w + |
+    - name: (N) Delete Window
+      key: Space + w + d
+    - name: (N) Switch Window
+      key: Space + w + w
+    - name: (N) Swap/Move Window
+      key: Space + w + s
 
-- name: Debug
+- name: Buffers 󰖯
   keybinds:
-    - name: (Nor) Breakpoint Condition
-      key: Space + d + B
-    - name: (Nor) Toggle Breakpoint
-      key: Space + d + b
-    - name: (Nor) Continue
-      key: Space + d + c
-    - name: (Nor) Run to Cursor
+    - name: (N) Go to Specific Buffer
+      key: Space + b + 0-10
+    - name: (N) Previous Buffer
+      key: Shift + h
+    - name: (N) Next Buffer
+      key: Shift + l
+    - name: (N) First Buffer
+      key: Space + b + f
+    - name: (N) Last Buffer
+      key: Space + b + a
+    - name: (N) Switch to Other Buffer
+      key: Space + b + b
+    - name: (N) Delete Buffer
+      key: Space + b + d
+    - name: (N) Delete Buffer (Force)
+      key: Space + b + D
+    - name: (N) Delete buffers to the Right
+      key: Space + b + r
+    - name: (N) Delete buffers to the Left
+      key: Space + b + l
+    - name: (N) Delete non-pinned Buffers
+      key: Space + b + P
+    - name: (N) Toggle Pin
+      key: Space + b + p
+    - name: (N) Buffer Explorer
+      key: Space + b + e
+    - name: (N) Buffer List
+      key: Space + , / Space + f + b
+
+- name: Tabs 󰓩
+  keybinds:
+    - name: (N) Previous Tab
+      key: Space + Tab + [ / Shift + Tab
+    - name: (N) Next Tab
+      key: Space + Tab + ] / Tab
+    - name: (N) First Tab
+      key: Space + Tab + f
+    - name: (N) Last Tab
+      key: Space + Tab + l
+    - name: (N) New Tab
+      key: Space + Tab + Tab
+    - name: (N) Switch to Other Tab
+      key: Space + t + t
+    - name: (N) Close Tab
+      key: Space + Tab + d
+
+- name: Debug 
+  keybinds:
+    - name: (N) Run with args
+      key: Space + d + a
+    - name: (N) Breakpoint Condition
+      key: Space + d + b + B
+    - name: (N) Toggle Breakpoint
+      key: Space + d + b + b / F2
+    - name: (N) Continue
+      key: Space + d + c / F5
+    - name: (N) Run to Cursor
       key: Space + d + C
-    - name: (Nor) Go to line (no execute)
+    - name: (N) Go to line (no execute)
       key: Space + d + g
-    - name: (Nor) Step Into
-      key: Space + d + i
-    - name: (Nor) Down
+    - name: (N) Step Into
+      key: Space + d + i / F11
+    - name: (N) Down
       key: Space + d + j
-    - name: (Nor) Up
+    - name: (N) Up
       key: Space + d + k
-    - name: (Nor) Run Last
+    - name: (N) Run Last
       key: Space + d + l
-    - name: (Nor) Step Out
-      key: Space + d + o
-    - name: (Nor) Step Over
-      key: Space + d + O
-    - name: (Nor) Pause
+    - name: (N) Step Out
+      key: Space + d + o / F12
+    - name: (N) Step Over
+      key: Space + d + O / F10
+    - name: (N) Pause
       key: Space + d + p
-    - name: (Nor) Toggle REPL
+    - name: (N) Toggle REPL
       key: Space + d + r
-    - name: (Nor) Session
+    - name: (N) Session
       key: Space + d + s
-    - name: (Nor) Terminate
+    - name: (N) Terminate
       key: Space + d + t
-    - name: (Nor) Widgets
+    - name: (N) Widgets
       key: Space + d + w
-    - name: (Nor) Dap UI
+    - name: (N) Dap UI
       key: Space + d + u
-    - name: (Nor, Virt) Eval
+    - name: (N, Virt) Eval
       key: Space + d + e
-    - name: (Nor) Debug Method (Python)
+    - name: (N) Print under current line
+      key: Space + d + d + l
+    - name: (N) Print above current line
+      key: Space + d + d + L
+    - name: (N) Print variable under current line
+      key: Space + d + d + v
+    - name: (N) Print variable above current line
+      key: Space + d + d + V
+    - name: (N) Delete all prints
+      key: Space + d + d + d
+    - name: (N) Debug Method (Python)
       key: Space + d + P + t
-    - name: (Nor) Debug Class (Python)
+    - name: (N) Debug Class (Python)
       key: Space + d + P + c
 
-- name: Test
+- name: Test 󰙨
   keybinds:
-    - name: (Nor) Run File
+    - name: (N) Run File
       key: Space + t + t
-    - name: (Nor) Run All Test Files
+    - name: (N) Run All Test Files
       key: Space + t + T
-    - name: (Nor) Run Nearest
+    - name: (N) Run Nearest
       key: Space + t + r
-    - name: (Nor) Debug Nearest
+    - name: (N) Debug Nearest
       key: Space + t + d
-    - name: (Nor) Toggle Summary
+    - name: (N) Run Last Test
+      key: Space + t + l
+    - name: (N) Debug Last Test
+      key: Space + t + L
+    - name: (N) Toggle Summary
       key: Space + t + s
-    - name: (Nor) Show Output
+    - name: (N) Show Output
       key: Space + t + o
-    - name: (Nor) Toggle Output Panel
+    - name: (N) Toggle Output Panel
       key: Space + t + O
-    - name: (Nor) Stop
+    - name: (N) Stop
       key: Space + t + S
+    - name: (N) Run Ansible Playbook
+      key: Space + t + p
 
-- name: Git & File Version Control
+- name: Git 
   keybinds:
-    - name: (Nor) Lazygit (root)
+    - name: (N) Lazygit (root)
       key: Space + g + g
-    - name: (Nor) Lazygit (cwd)
+    - name: (N) Lazygit (cwd)
       key: Space + g + G
-    - name: (Nor) Commits
+    - name: (N) Commits
       key: Space + g + c
-    - name: (Nor) Status
+    - name: (N) Status
       key: Space + g + s
-    - name: (Nor) Blame Line
+    - name: (N) Blame Line
       key: Space + g + h + b
-    - name: (Nor) Diff This ~
+    - name: (N) Diff This ~
       key: Space + g + h + D
-    - name: (Nor) Diff This
+    - name: (N) Diff This
       key: Space + g + h + d
-    - name: (Nor) Preview Hunk
+    - name: (N) Preview Hunk
       key: Space + g + p
-    - name: (Nor) Reset Buffer
+    - name: (N) Reset Buffer
       key: Space + g + R
-    - name: (Nor) Reset Hunk
+    - name: (N) Reset Hunk
       key: Space + g + h + r
-    - name: (Nor) Stage Buffer
+    - name: (N) Stage Buffer
       key: Space + g + h + S
-    - name: (Nor) Stage Hunk
+    - name: (N) Stage Hunk
       key: Space + g + h + s
-    - name: (Nor) Undo Stage Hunk
+    - name: (N) Undo Stage Hunk
       key: Space + g + h + u
-    - name: (Nor) Toggle UndoTree
+    - name: (N) Toggle UndoTree
       key: Space + g + U
-    - name: (Nor) UndoTree (Telescope)
+    - name: (N) UndoTree (Telescope)
       key: Space + g + u
-    - name: (Nor) Undo Changes
+    - name: (N) Undo Changes
       key: u
-    - name: (Nor) Redo Changes
+    - name: (N) Redo Changes
       key: Ctrl + r
-    - name: (Nor) Save File
+    - name: (N) Save File
       key: Ctrl + s
 
-- name: Annotations & Comments
+- name: Annotations 
   keybinds:
-    - name: (Nor) Class
+    - name: (N) Class
       key: Space + a + c
-    - name: (Nor) Default
+    - name: (N) Default
       key: Space + a + d
-    - name: (Nor) File
+    - name: (N) File
       key: Space + a + F
-    - name: (Nor) Function
+    - name: (N) Function
       key: Space + a + f
-    - name: (Nor) Type
+    - name: (N) Type
       key: Space + a + t
-    - name: (Nor) Todo (Telescope)
-      key: Space + s + t
-    - name: (Nor) Todo/Fix/Fixme (Telescope)
-      key: Space + s + T
-    - name: (Nor) Todo (Trouble)
-      key: Space + x + t
-    - name: (Nor) Todo/Fix/Fixme (Trouble)
-      key: Space + x + T
+    - name: (N) Generate HTML Docs
+      key: Space + a + g
 
-- name: File Management
+- name: Harpoon 󱌧
   keybinds:
-    - name: (Nor) Buffers (Telescope)
+    - name: (N) Harpoon Menu
+      key: Space + h + h
+    - name: (N) Harpoon Files
+      key: Space + h + f
+    - name: (N) Add File
+      key: Space + h + a
+    - name: (N) Go to Specific File
+      key: Space + h + 1-9
+
+- name: Copilot/Codeium 
+  keybinds:
+    - name: (I) Accept Completion
+      key: Alt + Enter
+    - name: (I) Next Completion
+      key: Alt + ]
+    - name: (I) Previous Completion
+      key: Alt + [
+    - name: (I) Clear Completion
+      key: Alt + c
+    - name: (N) Toggle IA
+      key: Space + c +i
+
+- name: ChatGPT 󰘦
+  keybinds:
+    - name: (N,V) ChatGPT
+      key: Space + C + c
+    - name: (N,V) Edit with Instruction
+      key: Space + C + e
+    - name: (N,V) Grammar Correction
+      key: Space + C + g
+    - name: (N,V) Translate
+      key: Space + C + t
+    - name: (N,V) Summarize
+      key: Space + C + s
+    - name: (N,V) Keywords
+      key: Space + C + k
+    - name: (N,V) Docstring
+      key: Space + C + d
+    - name: (N,V) Add Tests
+      key: Space + C + T
+    - name: (N,V) Optimize Code
+      key: Space + C + o
+    - name: (N,V) Fix Bugs
+      key: Space + C + f
+    - name: (N,V) Explain Code
+      key: Space + C + x
+    - name: (N,V) Roxygen Edit
+      key: Space + C + r
+    - name: (N,V) Code Readability Analysis
+      key: Space + C + l
+
+- name: UI 
+  keybinds:
+    - name: (N) Toggle Line Blame
+      key: Space + u + b
+    - name: (N) Toggle Background
+      key: Space + u + B
+    - name: (N) Toggle Paint/Colorizer
+      key: Space + u + p
+    - name: (N) Toggle Conceal
+      key: Space + u + c
+    - name: (N) Colorscheme with preview
+      key: Space + u + C
+    - name: (N) Togglr Diagnostics
+      key: Space + u + d
+    - name: (N) Edgy Toggle
+      key: Space + u + e
+    - name: (N) Edgy select window
+      key: Space + u + E
+    - name: (N) Toggle auto format (global)
+      key: Space + u + f
+    - name: (N) Toggle auto format (buffer)
+      key: Space + u + F
+    - name: (N) Toggle Inlay Hints
+      key: Space + u + h
+    - name: (N) Inspect Pos
+      key: Space + u + i
+    - name: (N) Toggle Line Numbers
+      key: Space + u + l
+    - name: (N) Toggle Relative Numbers
+      key: Space + u + L
+    - name: (N) Dismiss all Notifications
+      key: Space + u + n
+    - name: (N) Redraw
+      key: Space + u + r
+    - name: (N) Toggle Spelling
+      key: Space + u + s
+    - name: (N) Toggle Statusline
+      key: Space + u + S
+    - name: (N) Toggle Treesitter Context
+      key: Space + u + t
+    - name: (N) Toggle Treesitter Highlight
+      key: Space + u + T
+    - name: (N) Toggle Word Wrap
+      key: Space + u + w
+    - name: (N) Toggle Context
+      key: Space + u + x
+    - name: (N) Toggle Zen Mode
+      key: Space + u + z
+    - name: (N) Toggle Twilight
+      key: Space + u + Z
+
+- name: File Management 󰈔
+  keybinds:
+    - name: (N) Buffers (Telescope)
       key: Space + f + b
-    - name: (Nor) Lazydocker
+    - name: (N) Lazydocker
       key: Space + f + d
-    - name: (Nor) File Explorer (cwd)
+    - name: (N) File Explorer (cwd)
       key: Space + f + e / Space + e
-    - name: (Nor) File Explorer (root)
+    - name: (N) File Explorer (root)
       key: Space + f + E / Space + E
-    - name: (Nor) Find Files (cwd) (Telescope)
+    - name: (N) Find Files (cwd) (Telescope)
       key: Space + f + F
-    - name: (Nor) Find Files (root) (Telescope)
+    - name: (N) Find Files (root) (Telescope)
       key: Space + f + f / Space + Space
-    - name: (Nor) New File
+    - name: (N) New File
       key: Space + f + n
-    - name: (Nor) Recent Files (cwd) (Telescope)
+    - name: (N) Recent Files (cwd) (Telescope)
       key: Space + f + R
-    - name: (Nor) Recent Files (Telescope)
+    - name: (N) Recent Files (Telescope)
       key: Space + f + r
-    - name: (Nor) Workspaces (Telescope)
+    - name: (N) Workspaces (Telescope)
       key: Space + f + w
-    - name: (Nor) Xplr (cwd)
+    - name: (N) Xplr (cwd)
       key: Space + f + X
-    - name: (Nor) Xplr
+    - name: (N) Xplr
       key: Space + f + x (root)
 
 - name: Terminal
   keybinds:
-    - name: (Nor) New Terminal (root)
+    - name: (N) New Terminal (root)
       key: Space + f + t
-    - name: (Nor) New Terminal (cwd)
+    - name: (N) New Terminal (cwd)
       key: Space + f + T
-    - name: (Nor) Toggle Terminal
+    - name: (N) Toggle Terminal
       key: Ctrl + / | Ctrl + Enter
 
 - name: Compile
   keybinds:
-    - name: (Nor) Compiler (Telescope)
+    - name: (N) Compiler (Telescope)
       key: Space + c + c + c
-    - name: (Nor) Redo Compiler
+    - name: (N) Redo Compiler
       key: Space + c + c + R
-    - name: (Nor) Compiler Result
+    - name: (N) Compiler Result
       key: Space + c + c + r
 
-- name: Misc
+- name: Diagnostics 󰁨
   keybinds:
-    - name: Directory Size (root) (Dua Cli)
-      key: Space + s + s
-    - name: Directory Size (cwd) (Dua Cli)
-      key: Space + s + S
-    - name: (Nor) Spell Suggestions
-      key: z=
-
-- name: Diagnostics
-  keybinds:
-    - name: (Nor) Document Diagnostics (Trouble)
+    - name: (N) Document Diagnostics (Trouble)
       key: Space + x + x
-    - name: (Nor) Workspace Diagnostics (Trouble)
+    - name: (N) Workspace Diagnostics (Trouble)
       key: Space + x + X
-    - name: (Nor) Location List
+    - name: (N) Location List
       key: Space + x + L
-    - name: (Nor) QuickFix List
+    - name: (N) QuickFix List
       key: Space + x + Q
-    - name: (Nor) Previous Diagnostic
-      key: '[q'
-    - name: (Nor) Next Diagnostic
-      key: ']q'
+    - name: (N) Previous Diagnostic
+      key: "[q"
+    - name: (N) Next Diagnostic
+      key: "]q"
 
 - name: LSP
   keybinds:
-    - name: (Nor) Toggle Line Diagnostics
+    - name: (N) Toggle Line Diagnostics
       key: Space + c + d
-    - name: (Nor) Toggle Lsp Info
+    - name: (N) Toggle Lsp Info
       key: Space + c + l
-    - name: (Nor) Goto Definition (Glance)
+    - name: (N) Goto Definition (Glance)
       key: g + d
-    - name: (Nor) References (Glance)
+    - name: (N) References (Glance)
       key: g + r
-    - name: (Nor) Goto Declaration
+    - name: (N) Goto Declaration
       key: g + D
-    - name: (Nor) Goto Implementation
+    - name: (N) Goto Implementation
       key: g + I
-    - name: (Nor) Goto Type Definition
+    - name: (N) Goto Type Definition
       key: g + y
-    - name: (Nor) Hover
+    - name: (N) Hover
       key: K
-    - name: (Nor) Signature Help
+    - name: (N) Signature Help
       key: g + K
     - name: (Ins) Signature Help
       key: Ctrl + k
-    - name: (Nor) Next Diagnostic
-      key: ']d'
-    - name: (Nor) Previous Diagnostic
-      key: '[d'
-    - name: (Nor) Next Error
-      key: ']e'
-    - name: (Nor) Previous Error
-      key: '[e'
-    - name: (Nor) Next Warning
-      key: ']w'
-    - name: (Nor) Previous Warning
-      key: '[w'
-    - name: (Nor) Format Document
+    - name: (N) Next Diagnostic
+      key: "]d"
+    - name: (N) Previous Diagnostic
+      key: "[d"
+    - name: (N) Next Error
+      key: "]e"
+    - name: (N) Previous Error
+      key: "[e"
+    - name: (N) Next Warning
+      key: "]w"
+    - name: (N) Previous Warning
+      key: "[w"
+    - name: (N) Format Document
       key: Space + c + f
     - name: (Visual) Format Range
       key: Space + c + f
-    - name: (Nor, Visual) Code Action
+    - name: (N, Visual) Code Action
       key: Space + c + a
-    - name: (Nor) Source Action
+    - name: (N) Source Action
       key: Space + c + A
-    - name: (Nor) Rename
+    - name: (N) Rename
       key: Space + c + r
-    - name: (Nor) Mason
+    - name: (N) Mason
       key: Space + c + m
-    - name: (Nor, Visual) Refactor
+    - name: (N, Visual) Refactor
       key: Space + c + R
 
 - name: Navigation / Moving Around (Vim Motions)
   keybinds:
-    - name: (Nor) Move to the Beginning of the Next Word
+    - name: (N) Move to the Beginning of the Next Word
       key: w
-    - name: (Nor) Move to the Beginning of the Previous Word
+    - name: (N) Move to the Beginning of the Previous Word
       key: b
-    - name: (Nor) Move to the End of the Next Word
+    - name: (N) Move to the End of the Next Word
       key: e
-    - name: (Nor) Move to the End of the Previous Word
+    - name: (N) Move to the End of the Previous Word
       key: ge
-    - name: (Nor) Move to the Beginning of the Next WORD
+    - name: (N) Move to the Beginning of the Next WORD
       key: W
-    - name: (Nor) Move to the Beginning of the Previous WORD
+    - name: (N) Move to the Beginning of the Previous WORD
       key: B
-    - name: (Nor) Move to the End of the Next WORD
+    - name: (N) Move to the End of the Next WORD
       key: E
-    - name: (Nor) Move to the End of the Previous WORD
+    - name: (N) Move to the End of the Previous WORD
       key: gE
-    - name: (Nor) Move to a Specific Character (Flash)
+    - name: (N) Move to a Specific Character (Flash)
       key: f
-    - name: (Nor) Move to a Specific Character (Flash) (Backwards)
+    - name: (N) Move to a Specific Character (Flash) (Backwards)
       key: F
-    - name: (Nor, Org) Flash
+    - name: (N, Org) Flash
       key: s
-    - name: (Nor, Org) Flash Treesitter
+    - name: (N, Org) Flash Treesitter
       key: S
     - name: (Org) Remote Flash
       key: r
-    - name: (Nor) Treesitter Backwards
+    - name: (N) Treesitter Backwards
       key: R
-    - name: (Nor) Search a Pattern Forwards
+    - name: (N) Search a Pattern Forwards
       key: /
-    - name: (Nor) Search a Pattern Backwards
-      key: '?'
-    - name: (Nor) Move to the First Character of the Line
+    - name: (N) Search a Pattern Backwards
+      key: "?"
+    - name: (N) Move to the First Character of the Line
       key: 0
-    - name: (Nor) Move to the Last Character of the Line
+    - name: (N) Move to the Last Character of the Line
       key: $
-    - name: (Nor) Move to the First Non-Blank Character of the Line
+    - name: (N) Move to the First Non-Blank Character of the Line
       key: ^
-    - name: (Nor) Move to the Last Non-Blank Character of the Line
+    - name: (N) Move to the Last Non-Blank Character of the Line
       key: g_
-    - name: (Nor) Jump to the Beginning of the Document
+    - name: (N) Jump to the Beginning of the Document
       key: gg
-    - name: (Nor) Jump Entire Paragraphs Downwards
-      key: '{'
-    - name: (Nor) Jump Entire Paragraphs Upwards
-      key: '}'
-    - name: (Nor) Jump to the End of the Document
+    - name: (N) Jump Entire Paragraphs Downwards
+      key: "{"
+    - name: (N) Jump Entire Paragraphs Upwards
+      key: "}"
+    - name: (N) Jump to the End of the Document
       key: G
-    - name: (Nor) Move Down Half a Page
+    - name: (N) Move Down Half a Page
       key: Ctrl + d
-    - name: (Nor) Move Up Half a Page
+    - name: (N) Move Up Half a Page
       key: Ctrl + u
 
-- name: Searching
+- name: Searching 
   keybinds:
-    - name: (Nor) Autocomands
+    - name: (N) Autocomands
       key: Space + s + a
-    - name: (Nor) Treesitter Symbols
+    - name: (N) Treesitter Symbols
       key: Space + s + A
-    - name: (Nor) Buffers
+    - name: (N) Buffers
       key: Space + s + b
-    - name: (Nor) Commands
+    - name: (N) Commands
       key: Space + s + c
-    - name: (Nor) Command History
+    - name: (N) Command History
       key: Space + s + C
-    - name: (Nor) Document Diagnostics
+    - name: (N) Document Diagnostics
       key: Space + s + d
-    - name: (Nor) Workspace Diagnostics
+    - name: (N) Workspace Diagnostics
       key: Space + s + D
-    - name: (Nor) Grep (cwd)
+    - name: (N) Grep (cwd)
       key: Space + s + g
-    - name: (Nor) Grep (root)
+    - name: (N) Grep (root)
       key: Space + s + G | Space + /
-    - name: (Nor) Help Pages
+    - name: (N) Help Pages
       key: Space + s + h
-    - name: (Nor) Highlight Groups
+    - name: (N) Highlight Groups
       key: Space + s + H
-    - name: (Nor) Imports
+    - name: (N) Imports
       key: Space + s + i
-    - name: (Nor) Keymaps
+    - name: (N) Keymaps
       key: Space + s + k
-    - name: (Nor) Lsp Symbols Outline
+    - name: (N) Lsp Symbols Outline
       key: Space + s + l
-    - name: (Nor) Jump to Mark
+    - name: (N) Jump to Mark
       key: Space + s + m
-    - name: (Nor) Man Pages
+    - name: (N) Man Pages
       key: Space + s + M
-    - name: (Nor) Options
+    - name: (N) Options
       key: Space + s + o
-    - name: (Nor) Replace in Files (Spectre)
+    - name: (N) Replace in Files (Spectre)
       key: Space + s + r
-    - name: (Nor) Resume
+    - name: (N) Resume
       key: Space + s + R
-    - name: (Nor) Goto Symbol
+    - name: (N) Goto Symbol
       key: Space + s + s
-    - name: (Nor) Goto Symbol (Workspace)
+    - name: (N) Goto Symbol (Workspace)
       key: Space + s + S
-    - name: (Nor) Todo
+    - name: (N) Todo
       key: Space + s + t
-    - name: (Nor) Todo/Fix/Fixme
+    - name: (N) Todo/Fix/Fixme
       key: Space + s + T
-    - name: (Nor) Variables
+    - name: (N) Variables
       key: Space + s + v
-    - name: (Nor) Variables (Workspace)
+    - name: (N) Variables (Workspace)
       key: Space + s + V
-    - name: (Nor) Word (cwd)
+    - name: (N) Word (cwd)
       key: Space + s + W
-    - name: (Nor) Word (root)
+    - name: (N) Word (root)
       key: Space + s + w
-    - name: (Nor) Word Under Cursor
-      key: '*'
-    - name: (Nor) Terminals
+    - name: (N) Word Under Cursor
+      key: "*"
+    - name: (N) Terminals
       key: Space + T
-    - name: (Nor) Yank History
+    - name: (N) Yank History
       key: Space + p
 
-- name: Quit & Sessions
+- name: Quit & Sessions 󰗼
   keybinds:
-    - name: (Nor) Quit All
+    - name: (N) Quit All
       key: Space + q + Q
-    - name: (Nor) Dont Save Current Session
+    - name: (N) Dont Save Current Session
       key: Space + q + d
-    - name: (Nor) Restore Session
+    - name: (N) Restore Session
       key: Space + q + s
-    - name: (Nor) Restore Last Session
+    - name: (N) Restore Last Session
       key: Space + q + l
 
-- name: Package Management
+- name: Package Management 
   keybinds:
-    - name: (Nor) Install New Package
+    - name: (N) Install New Package
       key: Space + c + p + n
-    - name: (Nor) Update Package
+    - name: (N) Update Package
       key: Space + c + p + u
-    - name: (Nor) Remove Package
+    - name: (N) Remove Package
       key: Space + c + p + r
-    - name: (Nor) Change Package Version
+    - name: (N) Change Package Version
       key: Space + c + p + v
-    - name: (Nor) Show Packages Versions
+    - name: (N) Show Packages Versions
       key: Space + c + p + s
 
-- name: Folds
-  keybinds:
-    - name: (Nor) Open All Folds (Ufo)
-      key: z + R
-    - name: (Nor) Close All Folds (Ufo)
-      key: z + M
