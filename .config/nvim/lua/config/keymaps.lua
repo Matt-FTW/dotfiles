@@ -4,6 +4,7 @@
 local map = vim.keymap.set
 local Util = require("lazyvim.util")
 
+-- Google current word
 --  ╭───────────────────────────────────────────────────────────╮
 --  │ Credit: June Gunn <Leader>?/! | Google it / Feeling lucky │
 --  ╰───────────────────────────────────────────────────────────╯
@@ -27,11 +28,24 @@ map("x", "<leader>?", function()
   google(vim.fn.getreg("g"), false)
 end, { desc = "Google" })
 
+-- Toggle background
 map("n", "<leader>uB", function()
   Util.toggle("background", false, { "light", "dark" })
 end, { desc = "Toggle Background" })
 
+-- Disable lazyterminal keymap
 map("n", "<leader>fT", "<Nop>")
+
+-- End of the word backwards
+map("n", "E", "ge")
+
+-- Increment/decrement
+map("n", "+", "<C-a>")
+map("n", "-", "<C-x>")
+
+-- Tabs
+map("n", "<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+map("n", "<S-tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
 -- Center the screen automatically
 map("n", "<C-d>", "<C-d>zz")
@@ -39,6 +53,7 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
+-- Toggle statusline
 map("n", "<leader>uS", function()
   if vim.opt.laststatus:get() == 0 then
     vim.opt.laststatus = 3
@@ -47,10 +62,13 @@ map("n", "<leader>uS", function()
   end
 end, { desc = "Toggle Statusline" })
 
+-- Plugin Info
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
+map("n", "<leader>cic", "<cmd>ConformInfo<cr>", { desc = "Conform" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 
+-- Move to beginning/end of line
 map("n", "<a-h>", "_", { desc = "First character of Line" })
 map("n", "<a-l>", "$", { desc = "Last character of Line" })
 
@@ -72,8 +90,6 @@ map("n", "dd", function()
     return "dd"
   end
 end, { noremap = true, expr = true, desc = "Don't yank empty line to clipboard" })
-
-map("n", "gV", '"`[" . strpart(getregtype(), 0, 1) . "`]"', { expr = true, desc = "Visually select changed text" })
 
 -- Search inside visually highlighted text. Use `silent = false` for it to
 -- make effect immediately.
