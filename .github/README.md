@@ -64,6 +64,7 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 - :boom: Performance Mode
 - :window: Window Animations
 - :desktop_computer: AwesomeWM workspace behavior
+- :crab: Rust Alternatives
 - :gear: Various other tweaks
 
 And many more!`:)`
