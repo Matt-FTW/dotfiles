@@ -95,28 +95,7 @@
         "7": "",
         "8": "",
         "9": "",
-        "10": "",
-        "11": "",
-        "12": "",
-        "13": "🖵",
-        "14": "",
-        "15": "",
-        "16": "🎜",
-        "17": "",
-        "18": "",
-        "19": "",
-        "20": "",
-        "21": "",
-        "22": "󰍨",
-        "23": "✉",
-        "24": "🖵",
-        "25": "",
-        "26": "",
-        "27": "",
-        "28": "",
-        "29": "",
-        "30": "󰈙",
-        "default": "󰈙"
+        "10": ""
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
@@ -224,116 +203,6 @@
   },
   {
     "height": 50,
-    "layer": "top",
-    "output": "HDMI-A-1",
-    "margin-top": 10,
-    "margin-left": 17,
-    "margin-bottom": 0,
-    "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["clock#cl2"],
-    "modules-right": ["tray", "custom/notifications"],
-    "custom/arch": {
-      "format": "  ",
-      "tooltip": false,
-      "on-click": "rofi -show drun",
-      "on-click-right": "wleave"
-    },
-    "custom/notifications": {
-      "tooltip": false,
-      "format": "{} {icon}",
-      "format-icons": {
-        "notification": "<span foreground='red'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
-      },
-      "return-type": "json",
-      "exec-if": "which swaync-client",
-      "exec": "swaync-client -swb",
-      "on-click": "swaync-client -t -sw",
-      "on-click-right": "swaync-client -d -sw",
-      "escape": true
-    },
-    "hyprland/workspaces": {
-      "disable-scroll": true,
-      "all-outputs": false,
-      "enable-bar-scroll": true,
-      "format": "{icon}",
-      "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "🖵",
-        "4": "",
-        "5": "",
-        "6": "🎜",
-        "7": "",
-        "8": "",
-        "9": "",
-        "10": "",
-        "11": "",
-        "12": "",
-        "13": "🖵",
-        "14": "",
-        "15": "",
-        "16": "🎜",
-        "17": "",
-        "18": "",
-        "19": "",
-        "20": "",
-        "21": "",
-        "22": "󰍨",
-        "23": "✉",
-        "24": "🖵",
-        "25": "",
-        "26": "",
-        "27": "",
-        "28": "",
-        "29": "",
-        "30": "",
-        "default": "󰈙"
-      },
-      "on-scroll-up": "hyprctl dispatch workspace r-1",
-      "on-scroll-down": "hyprctl dispatch workspace r+1",
-      "on-click": "activate",
-      "sort-by-number": true
-    },
-    "tray": {
-      "spacing": 10
-    },
-    "clock#cl2": {
-      "tooltip-format": "<tt><small>{calendar}</small></tt>",
-      "calendar": {
-        "mode": "year",
-        "mode-mon-col": 3,
-        "weeks-pos": "right",
-        "on-scroll": 1,
-        "on-click-right": "mode",
-        "format": {
-          "months": "<span color='#eed49f'><b>{}</b></span>",
-          "days": "<span color='#cad3f5'><b>{}</b></span>",
-          "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
-          "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
-          "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
-        }
-      },
-      "format": "{:%H:%M   - %A, %B %d, %Y  }",
-      "actions": {
-        "on-click-right": "mode",
-        "on-click-forward": "tz_up",
-        "on-click-backward": "tz_down",
-        "on-scroll-up": "shift_up",
-        "on-scroll-down": "shift_down"
-      },
-      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23"
-    }
-  },
-  {
-    "height": 50,
     "position": "bottom",
     "layer": "top",
     "output": "DP-3",
@@ -345,9 +214,9 @@
     "modules-right": [
       "memory",
       "cpu",
-      "temperature",
+      "temperature#cpu",
       "custom/gpu-usage",
-      "custom/gpu-temp",
+      "temperature#gpu",
       "custom/notifications"
     ],
     "hyprland/window": {
@@ -393,16 +262,6 @@
       "enable-bar-scroll": true,
       "format": "{icon}",
       "format-icons": {
-        "1": "",
-        "2": "",
-        "3": "🖵",
-        "4": "",
-        "5": "",
-        "6": "🎜",
-        "7": "",
-        "8": "",
-        "9": "",
-        "10": "",
         "11": "",
         "12": "",
         "13": "🖵",
@@ -412,18 +271,7 @@
         "17": "",
         "18": "",
         "19": "",
-        "20": "",
-        "21": "",
-        "22": "󰍨",
-        "23": "✉",
-        "24": "🖵",
-        "25": "",
-        "26": "",
-        "27": "",
-        "28": "",
-        "29": "",
-        "30": "",
-        "default": "󰈙"
+        "20": ""
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
@@ -449,8 +297,8 @@
       "tooltip": true,
       "interval": 2
     },
-    "temperature": {
-      "critical-threshold": 80,
+    "temperature#cpu": {
+      "critical-threshold": 90,
       "on-click": "kitty --class center-float-large btop",
       "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
       "format-critical": "{icon} {temperatureC}°C",
@@ -459,12 +307,104 @@
       "tooltip": true,
       "interval": 2
     },
-    "custom/gpu-temp": {
-      "exec": "cat /sys/class/hwmon/hwmon1/temp1_input | cut -b 1-2",
+    "temperature#gpu": {
+      "critical-threshold": 80,
       "on-click": "kitty --class center-float-large nvtop",
-      "format": " {}°C",
-      "return-type": "",
+      "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+      "format-critical": "{icon} {temperatureC}°C",
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""],
+      "tooltip": true,
       "interval": 2
+    }
+  },
+  {
+    "height": 50,
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "margin-top": 10,
+    "margin-left": 17,
+    "margin-bottom": 0,
+    "margin-right": 17,
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+    "modules-center": ["clock#cl2"],
+    "modules-right": ["tray", "custom/notifications"],
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "rofi -show drun",
+      "on-click-right": "wleave"
+    },
+    "custom/notifications": {
+      "tooltip": false,
+      "format": "{} {icon}",
+      "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+    },
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      "all-outputs": false,
+      "enable-bar-scroll": true,
+      "format": "{icon}",
+      "format-icons": {
+        "21": "",
+        "22": "󰍨",
+        "23": "✉",
+        "24": "🖵",
+        "25": "",
+        "26": "",
+        "27": "",
+        "28": "",
+        "29": "",
+        "30": ""
+      },
+      "on-scroll-up": "hyprctl dispatch workspace r-1",
+      "on-scroll-down": "hyprctl dispatch workspace r+1",
+      "on-click": "activate",
+      "sort-by-number": true
+    },
+    "tray": {
+      "spacing": 10
+    },
+    "clock#cl2": {
+      "tooltip-format": "<tt><small>{calendar}</small></tt>",
+      "calendar": {
+        "mode": "year",
+        "mode-mon-col": 3,
+        "weeks-pos": "right",
+        "on-scroll": 1,
+        "on-click-right": "mode",
+        "format": {
+          "months": "<span color='#eed49f'><b>{}</b></span>",
+          "days": "<span color='#cad3f5'><b>{}</b></span>",
+          "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
+          "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
+          "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
+        }
+      },
+      "format": "{:%H:%M   - %A, %B %d, %Y  }",
+      "actions": {
+        "on-click-right": "mode",
+        "on-click-forward": "tz_up",
+        "on-click-backward": "tz_down",
+        "on-scroll-up": "shift_up",
+        "on-scroll-down": "shift_down"
+      },
+      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23"
     }
   }
 ]
