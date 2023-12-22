@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Apps
+spotify &
+discord &
+thunderbird &
+
+# Terminal Apps
+kitty --class btop btop &
+kitty --class nvtop nvtop &

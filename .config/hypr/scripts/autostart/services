@@ -45,12 +45,5 @@ systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 "$scripts"/launch_portals &
 xwaylandvideobridge &
 
-# Apps
+# Audio
 easyeffects --gapplication-service &
-spotify &
-discord &
-thunderbird &
-
-# Terminal Apps
-kitty --class btop btop &
-kitty --class nvtop nvtop &
