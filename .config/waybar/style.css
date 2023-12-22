@@ -9,7 +9,6 @@
 #custom-clipboard,
 #custom-notifications,
 #custom-arch,
-#custom-gpu-temp,
 #custom-gpu-usage,
 #custom-updates,
 #mode,
@@ -76,8 +75,12 @@ window#waybar.hidden {
   font-weight: bolder;
 }
 
+#workspaces button.urgent {
+  background-color: #e06c75;
+}
+
 #workspaces button.urgent label {
-  color: #e06c75;
+  color: #24273a;
   font-weight: bolder;
 }
 
