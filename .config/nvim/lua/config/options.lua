@@ -4,49 +4,45 @@
 -- vim.o.spell = true
 vim.loader.enable()
 
-vim.g["rooter_cd_cmd"] = "lcd"
-vim.g["rooter_silent_chdir"] = 1
-
-vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-vim.o.foldcolumn = "1"
-
-vim.g.gui_font_default_size = 10
-vim.g.gui_font_size = vim.g.gui_font_default_size
-vim.g.gui_font_face = "JetBrainsMono Nerd Font"
-
-RefreshGuiFont = function()
-  vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
-end
-
-ResizeGuiFont = function(delta)
-  vim.g.gui_font_size = vim.g.gui_font_size + delta
-  RefreshGuiFont()
-end
-
-ResetGuiFont = function()
-  vim.g.gui_font_size = vim.g.gui_font_default_size
-  RefreshGuiFont()
-end
-
--- Call function on startup to set default value
-ResetGuiFont()
-
--- Keymaps
-
-local opts = { noremap = true, silent = true }
-
-vim.keymap.set({ "n", "i" }, "<C-+>", function()
-  ResizeGuiFont(1)
-end, opts)
-vim.keymap.set({ "n", "i" }, "<C-->", function()
-  ResizeGuiFont(-1)
-end, opts)
-vim.keymap.set({ "n", "i" }, "<C-BS>", function()
-  ResetGuiFont()
-end, opts)
+vim.g.mapleader = " "
 
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide here
+  RefreshGuiFont = function()
+    vim.opt.guifont = string.format("%s:h%s", vim.g.gui_font_face, vim.g.gui_font_size)
+  end
+
+  ResizeGuiFont = function(delta)
+    vim.g.gui_font_size = vim.g.gui_font_size + delta
+    RefreshGuiFont()
+  end
+
+  ResetGuiFont = function()
+    vim.g.gui_font_size = vim.g.gui_font_default_size
+    RefreshGuiFont()
+  end
+
+  -- Call function on startup to set default value
+  ResetGuiFont()
+
+  -- Keymaps
+
+  local opts = { noremap = true, silent = true }
+
+  vim.keymap.set({ "n", "i" }, "<C-+>", function()
+    ResizeGuiFont(1)
+  end, opts)
+  vim.keymap.set({ "n", "i" }, "<C-->", function()
+    ResizeGuiFont(-1)
+  end, opts)
+  vim.keymap.set({ "n", "i" }, "<C-BS>", function()
+    ResetGuiFont()
+  end, opts)
+
+  vim.g.gui_font_default_size = 10
+  vim.g.gui_font_size = vim.g.gui_font_default_size
+  vim.g.gui_font_face = "JetBrainsMono Nerd Font"
+
   vim.g.neovide_padding_top = 5
   vim.g.neovide_padding_right = 5
   vim.g.neovide_padding_left = 5
