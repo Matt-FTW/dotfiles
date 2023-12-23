@@ -44,11 +44,13 @@
 
 - [stevearc/overseer.nvim](https://dotfyle.com/plugins/stevearc/overseer.nvim)
 - [michaelb/sniprun](https://dotfyle.com/plugins/michaelb/sniprun)
+- [Civitasv/cmake-tools.nvim](https://dotfyle.com/plugins/Civitasv/cmake-tools.nvim)
 - [Zeioth/compiler.nvim](https://dotfyle.com/plugins/Zeioth/compiler.nvim)
 
 ### color
 
 - [folke/twilight.nvim](https://dotfyle.com/plugins/folke/twilight.nvim)
+- [echasnovski/mini.hipatterns](https://dotfyle.com/plugins/echasnovski/mini.hipatterns)
 - [miversen33/sunglasses.nvim](https://dotfyle.com/plugins/miversen33/sunglasses.nvim)
 - [xiyaowong/nvim-transparent](https://dotfyle.com/plugins/xiyaowong/nvim-transparent)
 - [uga-rosa/ccc.nvim](https://dotfyle.com/plugins/uga-rosa/ccc.nvim)
@@ -110,6 +112,7 @@
 
 ### dependency-management
 
+- [Saecki/crates.nvim](https://dotfyle.com/plugins/Saecki/crates.nvim)
 - [piersolenski/telescope-import.nvim](https://dotfyle.com/plugins/piersolenski/telescope-import.nvim)
 - [vuki656/package-info.nvim](https://dotfyle.com/plugins/vuki656/package-info.nvim)
 
@@ -142,6 +145,7 @@
 ### file-explorer
 
 - [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
+- [echasnovski/mini.files](https://dotfyle.com/plugins/echasnovski/mini.files)
 
 ### formatting
 
@@ -188,16 +192,21 @@
 
 ### lsp
 
+- [simrat39/symbols-outline.nvim](https://dotfyle.com/plugins/simrat39/symbols-outline.nvim)
 - [Wansmer/symbol-usage.nvim](https://dotfyle.com/plugins/Wansmer/symbol-usage.nvim)
 - [aznhe21/actions-preview.nvim](https://dotfyle.com/plugins/aznhe21/actions-preview.nvim)
 - [smjonas/inc-rename.nvim](https://dotfyle.com/plugins/smjonas/inc-rename.nvim)
 - [MaximilianLloyd/tw-values.nvim](https://dotfyle.com/plugins/MaximilianLloyd/tw-values.nvim)
+- [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
 - [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
+- [mfussenegger/nvim-jdtls](https://dotfyle.com/plugins/mfussenegger/nvim-jdtls)
 - [mfussenegger/nvim-lint](https://dotfyle.com/plugins/mfussenegger/nvim-lint)
 - [VidocqH/lsp-lens.nvim](https://dotfyle.com/plugins/VidocqH/lsp-lens.nvim)
 - [hedyhli/outline.nvim](https://dotfyle.com/plugins/hedyhli/outline.nvim)
 - [kosayoda/nvim-lightbulb](https://dotfyle.com/plugins/kosayoda/nvim-lightbulb)
+- [b0o/SchemaStore.nvim](https://dotfyle.com/plugins/b0o/SchemaStore.nvim)
 - [mrcjkb/haskell-tools.nvim](https://dotfyle.com/plugins/mrcjkb/haskell-tools.nvim)
+- [stevearc/aerial.nvim](https://dotfyle.com/plugins/stevearc/aerial.nvim)
 
 ### lsp-installer
 
@@ -210,6 +219,7 @@
 ### markdown-and-latex
 
 - [Zeioth/markmap.nvim](https://dotfyle.com/plugins/Zeioth/markmap.nvim)
+- [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
 
 ### marks
 
@@ -224,6 +234,8 @@
 
 - [folke/flash.nvim](https://dotfyle.com/plugins/folke/flash.nvim)
 - [chrisgrieser/nvim-spider](https://dotfyle.com/plugins/chrisgrieser/nvim-spider)
+- [ggandor/leap.nvim](https://dotfyle.com/plugins/ggandor/leap.nvim)
+- [ggandor/flit.nvim](https://dotfyle.com/plugins/ggandor/flit.nvim)
 
 ### note-taking
 
@@ -233,6 +245,7 @@
 ### nvim-dev
 
 - [anuvyklack/animation.nvim](https://dotfyle.com/plugins/anuvyklack/animation.nvim)
+- [jbyuki/one-small-step-for-vimkind](https://dotfyle.com/plugins/jbyuki/one-small-step-for-vimkind)
 - [ray-x/guihua.lua](https://dotfyle.com/plugins/ray-x/guihua.lua)
 - [kkharji/sqlite.lua](https://dotfyle.com/plugins/kkharji/sqlite.lua)
 - [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
@@ -251,6 +264,10 @@
 
 - [gennaro-tedesco/nvim-jqx](https://dotfyle.com/plugins/gennaro-tedesco/nvim-jqx)
 - [dmmulroy/tsc.nvim](https://dotfyle.com/plugins/dmmulroy/tsc.nvim)
+
+### project
+
+- [ahmedkhalf/project.nvim](https://dotfyle.com/plugins/ahmedkhalf/project.nvim)
 
 ### scrollbar
 
@@ -286,6 +303,7 @@
 
 - [nvimdev/dashboard-nvim](https://dotfyle.com/plugins/nvimdev/dashboard-nvim)
 - [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
+- [echasnovski/mini.starter](https://dotfyle.com/plugins/echasnovski/mini.starter)
 
 ### statusline
 
@@ -308,6 +326,7 @@
 ### utility
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [echasnovski/mini.animate](https://dotfyle.com/plugins/echasnovski/mini.animate)
 - [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 - [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
 - [kawre/leetcode.nvim](https://dotfyle.com/plugins/kawre/leetcode.nvim)
@@ -319,6 +338,10 @@
 - [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
 - [chrisgrieser/nvim-recorder](https://dotfyle.com/plugins/chrisgrieser/nvim-recorder)
+
+### web-development
+
+- [roobert/tailwindcss-colorizer-cmp.nvim](https://dotfyle.com/plugins/roobert/tailwindcss-colorizer-cmp.nvim)
 
 ### workflow
 
