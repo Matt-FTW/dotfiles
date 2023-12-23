@@ -33,13 +33,8 @@ swayidle &
 wl-clip-persist --clipboard regular &
 wl-paste --watch cliphist store &
 
-# Gnome polkit authentication
+# Polkit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-
-# umm is this unnecessary?
-dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
-dbus-update-activation-environment --systemd --all &
-systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 
 # Screen sharing and portals
 "$scripts"/launch_portals &
