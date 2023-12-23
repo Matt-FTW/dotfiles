@@ -3,6 +3,7 @@ android-sdk-platform-tools 34.0.5-2
 atlauncher-bin 3.4.35.4-1
 betterdiscord-installer-bin 1.3.0-2
 brave-bin 1:1.61.109-1
+catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.9.1-1
 cemu-bin 2.0.61-1
