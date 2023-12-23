@@ -1,6 +1,13 @@
 return {
   {
     "cljoly/telescope-repo.nvim",
+    dependencies = {
+      "airblade/vim-rooter",
+      init = function()
+        vim.g["rooter_cd_cmd"] = "lcd"
+        vim.g["rooter_silent_chdir"] = 1
+      end,
+    },
     opts = {},
     config = function()
       require("lazyvim.util").on_load("telescope.nvim", function()
@@ -53,9 +60,5 @@ return {
 
       table.insert(opts.config.center, 4, projects)
     end,
-  },
-  {
-    "airblade/vim-rooter",
-    event = "VeryLazy",
   },
 }
