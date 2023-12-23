@@ -1,0 +1,24 @@
+return {
+  "chrisgrieser/nvim-recorder",
+  dependencies = { "rcarriga/nvim-notify" },
+  keys = {
+    { "q", desc = "Start Recording" },
+    { "Q", desc = "Play Recording" },
+    { "<C-q>", desc = "Switch Slot" },
+    { "cq", desc = "Edit Macro" },
+    { "yq", desc = "Yank Macro" },
+    { "dq", desc = "Delete All Macros" },
+  },
+  opts = {
+    useNerdFontsIcons = false,
+    slots = { "a", "b", "c", "d" },
+    mapping = {
+      startStopRecording = "q",
+      playMacro = "Q",
+      editMacro = "cq",
+      switchSlot = "<C-q>",
+      deleteAllMacros = "dq",
+      yankMacro = "yq",
+    },
+  },
+}
