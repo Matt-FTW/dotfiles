@@ -1,7 +1,6 @@
 return {
   {
     "lewis6991/gitsigns.nvim",
-    optional = true,
     opts = {
       signs = {
         add = { text = "┃" },
@@ -17,7 +16,6 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    optional = true,
     init = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
       keys[#keys + 1] = { "K", false }
@@ -54,6 +52,7 @@ return {
       vim.o.foldlevel = 99
       vim.o.foldlevelstart = 99
       vim.o.foldenable = true
+      vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
     end,
     opts = function()
       local handler = function(virtText, lnum, endLnum, width, truncate)
