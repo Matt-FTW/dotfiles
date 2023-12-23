@@ -4,29 +4,10 @@
 local map = vim.keymap.set
 local Util = require("lazyvim.util")
 
--- Google current word
---  ╭───────────────────────────────────────────────────────────╮
---  │ Credit: June Gunn <Leader>?/! | Google it / Feeling lucky │
---  ╰───────────────────────────────────────────────────────────╯
-
-vim.g.open_command = vim.g.open_command or "xdg-open"
----@param pat string
----@param lucky boolean
-local function google(pat, lucky)
-  local query = '"' .. vim.fn.substitute(pat, '["\n]', " ", "g") .. '"'
-  query = vim.fn.substitute(query, "[[:punct:] ]", [[\=printf("%%%02X", char2nr(submatch(0)))]], "g")
-  vim.fn.system(
-    vim.fn.printf(vim.g.open_command .. ' "https://www.google.com/search?%sq=%s"', lucky and "btnI&" or "", query)
-  )
-end
-
-map("n", "<leader>?", function()
-  google(vim.fn.expand("<cWORD>"), false)
-end, { desc = "Google" })
-
-map("x", "<leader>?", function()
-  google(vim.fn.getreg("g"), false)
-end, { desc = "Google" })
+-- Search current word
+local searching_brave =
+  [[:lua vim.fn.system({'xdg-open', 'https://search.brave.com/search?q=' .. vim.fn.expand("<cword>")})<CR>]]
+map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search current word on brave search" })
 
 -- Toggle background
 map("n", "<leader>uB", function()
@@ -73,6 +54,9 @@ map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cic", "<cmd>ConformInfo<cr>", { desc = "Conform" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })
+
+-- U for redo
+map("n", "U", "<C-r>", { desc = "Redo" })
 
 -- Move to beginning/end of line
 map("n", "<a-h>", "_", { desc = "First character of Line" })
