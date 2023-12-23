@@ -13,7 +13,7 @@ downgrade 11.3.0-1
 duckstation-git r6121.39e62ae9-1
 find-the-command 2.0.1-1
 gzdoom 4.11.3-1
-heroic-games-launcher 2.10.0-1
+heroic-games-launcher 2.11.0-1
 hyprpicker-git 0.1.1.r2.0889bd5-2
 hyprshot 1.2.3-1
 hyprsome-git r24.9636be0-1
@@ -54,7 +54,7 @@ swayosd-git r44.1c7d2f5-1
 swww 0.8.1-0
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
-tgpt-bin 2.2.1-1
+tgpt-bin 2.2.3-1
 topgrade 13.0.0-1
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-symbola 14.00-1
