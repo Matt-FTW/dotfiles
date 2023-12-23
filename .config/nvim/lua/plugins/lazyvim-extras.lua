@@ -3,6 +3,7 @@
 return {
   -- Coding
   { "tzachar/cmp-tabnine", optional = true },
+  { "Exafunction/codeium.nvim", optional = true },
 
   -- DAP
   { "jbyuki/one-small-step-for-vimkind", optional = true },
