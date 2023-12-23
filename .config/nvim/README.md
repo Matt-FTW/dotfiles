@@ -83,6 +83,9 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [LudoPinelli/comment-box.nvim](https://dotfyle.com/plugins/LudoPinelli/comment-box.nvim)
 - [Zeioth/dooku.nvim](https://dotfyle.com/plugins/Zeioth/dooku.nvim)
 - [danymat/neogen](https://dotfyle.com/plugins/danymat/neogen)
+- [echasnovski/mini.comment](https://dotfyle.com/plugins/echasnovski/mini.comment)
+- [JoosepAlviste/nvim-ts-context-commentstring](https://dotfyle.com/plugins/JoosepAlviste/nvim-ts-context-commentstring)
+- [folke/todo-comments.nvim](https://dotfyle.com/plugins/folke/todo-comments.nvim)
 
 ### completion
 
@@ -93,6 +96,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 ### cursorline
 
 - [mawkler/modicator.nvim](https://dotfyle.com/plugins/mawkler/modicator.nvim)
+- [RRethy/vim-illuminate](https://dotfyle.com/plugins/RRethy/vim-illuminate)
 
 ### debugging
 
@@ -105,12 +109,17 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [piersolenski/telescope-import.nvim](https://dotfyle.com/plugins/piersolenski/telescope-import.nvim)
 - [vuki656/package-info.nvim](https://dotfyle.com/plugins/vuki656/package-info.nvim)
 
+### diagnostics
+
+- [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
+
 ### editing-support
 
 - [monaqa/dial.nvim](https://dotfyle.com/plugins/monaqa/dial.nvim)
 - [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
+- [nvim-treesitter/nvim-treesitter-context](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-context)
 - [folke/zen-mode.nvim](https://dotfyle.com/plugins/folke/zen-mode.nvim)
 - [shortcuts/no-neck-pain.nvim](https://dotfyle.com/plugins/shortcuts/no-neck-pain.nvim)
 - [HiPhish/rainbow-delimiters.nvim](https://dotfyle.com/plugins/HiPhish/rainbow-delimiters.nvim)
@@ -119,8 +128,10 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [altermo/ultimate-autopair.nvim](https://dotfyle.com/plugins/altermo/ultimate-autopair.nvim)
 - [haringsrob/nvim_context_vt](https://dotfyle.com/plugins/haringsrob/nvim_context_vt)
 - [nacro90/numb.nvim](https://dotfyle.com/plugins/nacro90/numb.nvim)
+- [windwp/nvim-ts-autotag](https://dotfyle.com/plugins/windwp/nvim-ts-autotag)
 - [gbprod/yanky.nvim](https://dotfyle.com/plugins/gbprod/yanky.nvim)
 - [bennypowers/nvim-regexplainer](https://dotfyle.com/plugins/bennypowers/nvim-regexplainer)
+- [echasnovski/mini.ai](https://dotfyle.com/plugins/echasnovski/mini.ai)
 - [cshuaimin/ssr.nvim](https://dotfyle.com/plugins/cshuaimin/ssr.nvim)
 - [chrisgrieser/nvim-puppeteer](https://dotfyle.com/plugins/chrisgrieser/nvim-puppeteer)
 
@@ -161,6 +172,11 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 - [ziontee113/icon-picker.nvim](https://dotfyle.com/plugins/ziontee113/icon-picker.nvim)
 
+### indent
+
+- [echasnovski/mini.indentscope](https://dotfyle.com/plugins/echasnovski/mini.indentscope)
+- [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
+
 ### keybinding
 
 - [max397574/better-escape.nvim](https://dotfyle.com/plugins/max397574/better-escape.nvim)
@@ -187,6 +203,10 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 - [ellisonleao/gruvbox.nvim](https://dotfyle.com/plugins/ellisonleao/gruvbox.nvim)
 
+### markdown-and-latex
+
+- [Zeioth/markmap.nvim](https://dotfyle.com/plugins/Zeioth/markmap.nvim)
+
 ### marks
 
 - [ThePrimeagen/harpoon](https://dotfyle.com/plugins/ThePrimeagen/harpoon)
@@ -211,6 +231,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [anuvyklack/animation.nvim](https://dotfyle.com/plugins/anuvyklack/animation.nvim)
 - [ray-x/guihua.lua](https://dotfyle.com/plugins/ray-x/guihua.lua)
 - [kkharji/sqlite.lua](https://dotfyle.com/plugins/kkharji/sqlite.lua)
+- [folke/neodev.nvim](https://dotfyle.com/plugins/folke/neodev.nvim)
 - [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
 - [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
 
@@ -247,6 +268,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 - [mrcjkb/haskell-snippets.nvim](https://dotfyle.com/plugins/mrcjkb/haskell-snippets.nvim)
 - [cvigilv/esqueleto.nvim](https://dotfyle.com/plugins/cvigilv/esqueleto.nvim)
+- [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
 
 ### split-and-window
 
@@ -254,6 +276,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [anuvyklack/windows.nvim](https://dotfyle.com/plugins/anuvyklack/windows.nvim)
 - [mrjones2014/smart-splits.nvim](https://dotfyle.com/plugins/mrjones2014/smart-splits.nvim)
 - [sindrets/winshift.nvim](https://dotfyle.com/plugins/sindrets/winshift.nvim)
+- [echasnovski/mini.bufremove](https://dotfyle.com/plugins/echasnovski/mini.bufremove)
 
 ### startup
 
@@ -266,6 +289,8 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 
 ### syntax
 
+- [echasnovski/mini.surround](https://dotfyle.com/plugins/echasnovski/mini.surround)
+- [nvim-treesitter/nvim-treesitter-textobjects](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-textobjects)
 - [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 
 ### tabline
@@ -279,6 +304,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 ### utility
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 - [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
 - [kawre/leetcode.nvim](https://dotfyle.com/plugins/kawre/leetcode.nvim)
 - [sitiom/nvim-numbertoggle](https://dotfyle.com/plugins/sitiom/nvim-numbertoggle)
@@ -288,6 +314,7 @@ NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
 - [chrisgrieser/nvim-early-retirement](https://dotfyle.com/plugins/chrisgrieser/nvim-early-retirement)
 - [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
+- [chrisgrieser/nvim-recorder](https://dotfyle.com/plugins/chrisgrieser/nvim-recorder)
 
 ### workflow
 
