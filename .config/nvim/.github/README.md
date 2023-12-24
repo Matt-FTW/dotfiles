@@ -519,4 +519,48 @@
 
 # :camera: ‎ <samp>Gallery</samp>
 
+| **Dashboard**                                 |
+| --------------------------------------------- |
+| ![dashboard](./overview-images/dashboard.png) |
+
+| **Telescope Find-files**                        |
+| ----------------------------------------------- |
+| ![find-files](./overview-images/find-files.png) |
+
+<div style="display: flex;">
+
+| **Neo-tree**                                |
+| ------------------------------------------- |
+| ![neo-tree](./overview-images/neo-tree.png) |
+
+| **Symbols Outline**                       |
+| ----------------------------------------- |
+| ![outline](./overview-images/outline.png) |
+
+</div>
+
+| **Bufferline**                                  |
+| ----------------------------------------------- |
+| ![bufferline](./overview-images/bufferline.png) |
+
+| **Lualine**                               |
+| ----------------------------------------- |
+| ![lualine](./overview-images/lualine.png) |
+
+| **Telescope Live-Grep**                       |
+| --------------------------------------------- |
+| ![live-grep](./overview-images/live-grep.png) |
+
+| **Breadcrumbs**                                   |
+| ------------------------------------------------- |
+| ![breadcrumbs](./overview-images/breadcrumbs.png) |
+
+| **Trouble**                               |
+| ----------------------------------------- |
+| ![trouble](./overview-images/trouble.png) |
+
+| **Diff-History**                                    |
+| --------------------------------------------------- |
+| ![diff-history](./overview-images/diff-history.png) |
+
 # :keyboard: ‎ <samp>Binds</samp>
