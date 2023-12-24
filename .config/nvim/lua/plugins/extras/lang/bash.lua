@@ -30,7 +30,7 @@ return {
     },
     opts = {
       adapters = {
-        ["neotest-haskell"] = {},
+        ["neotest-bash"] = {},
       },
     },
   },
