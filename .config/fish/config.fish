@@ -1,4 +1,4 @@
-source ~/.config/fish/variables.fish
+source ~/.config/fish/user_variables.fish
 source ~/.config/fish/abbreviations.fish
 
 if status is-interactive
