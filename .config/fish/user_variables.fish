@@ -29,8 +29,8 @@ set -xg MYSQL_HISTFILE $XDG_DATA_HOME/mysql_history
 set -xg OMNISHARPHOME $XDG_CONFIG_HOME/omnisharp
 set -xg PYENV_ROOT $XDG_DATA_HOME/pyenv
 set -xg WORKON_HOME $XDG_DATA_HOME/virtualenvs
-set -xg export XINITRC $XDG_CONFIG_HOME/X11/xinitrcexport
-set -xg export XSERVERRC $XDG_CONFIG_HOME/X11/xserverrc
+set -xg XINITRC $XDG_CONFIG_HOME/X11/xinitrcexport
+set -xg XSERVERRC $XDG_CONFIG_HOME/X11/xserverrc
 set -xg HISTFILE $XDG_STATE_HOME/bash/history
 set -xg ZSH $XDG_DATA_HOME/oh-my-zsh
 
