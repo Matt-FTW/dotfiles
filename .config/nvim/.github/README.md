@@ -27,6 +27,16 @@
 
 # :herb: ‎ <samp>About</samp>
 
+<!--toc:start-->
+
+- [Plugins](#plugins)
+- [Programming Language/Technology Support](#programming-languagetechnology-support)
+- [Language Servers](#language-servers)
+- [Linters](#linters)
+- [Formatters](#formatters)
+
+<!--toc:end-->
+
 ### Plugins
 
 <details>
@@ -161,6 +171,7 @@
 - [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
+- [smoka7/multicursors.nvim](https://github.com/smoka7/multicursors.nvim)
 - [nvim-treesitter/nvim-treesitter-context](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-context)
 - [folke/zen-mode.nvim](https://dotfyle.com/plugins/folke/zen-mode.nvim)
 - [shortcuts/no-neck-pain.nvim](https://dotfyle.com/plugins/shortcuts/no-neck-pain.nvim)
@@ -254,9 +265,11 @@
 <summary><b>📜 LSP</b></summary>
 
 - [simrat39/symbols-outline.nvim](https://dotfyle.com/plugins/simrat39/symbols-outline.nvim)
+- [antosha417/nvim-lsp-file-operations](https://github.com/antosha417/nvim-lsp-file-operations)
 - [Wansmer/symbol-usage.nvim](https://dotfyle.com/plugins/Wansmer/symbol-usage.nvim)
 - [aznhe21/actions-preview.nvim](https://dotfyle.com/plugins/aznhe21/actions-preview.nvim)
 - [smjonas/inc-rename.nvim](https://dotfyle.com/plugins/smjonas/inc-rename.nvim)
+- [ThePrimeagen/refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim)
 - [MaximilianLloyd/tw-values.nvim](https://dotfyle.com/plugins/MaximilianLloyd/tw-values.nvim)
 - [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
 - [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
@@ -417,6 +430,17 @@
 <summary><b>🧪 Test</b></summary>
 
 - [nvim-neotest/neotest](https://dotfyle.com/plugins/nvim-neotest/neotest)
+- [haydenmeade/neotest-jest](https://github.com/nvim-neotest/neotest-jest)
+- [adrigzr/neotest-mocha](https://github.com/adrigzr/neotest-mocha)
+- [marilari88/neotest-vitest](https://github.com/marilari88/neotest-vitest)
+- [rcasia/neotest-bash](https://github.com/rcasia/neotest-bash)
+- [mrcjkb/neotest-haskell](https://github.com/mrcjkb/neotest-haskell)
+- [Issafalcon/neotest-dotnet](https://github.com/Issafalcon/neotest-dotnet)
+- [jfpedroza/neotest-elixir](https://github.com/jfpedroza/neotest-elixir)
+- [nvim-neotest/neotest-go](https://github.com/nvim-neotest/neotest-go)
+- [nvim-neotest/neotest-python](https://github.com/nvim-neotest/neotest-python)
+- [olimorris/neotest-rspec](https://github.com/olimorris/neotest-rspec)
+- [rouge8/neotest-rust](https://github.com/rouge8/neotest-rust)
 
 </details>
 
@@ -424,6 +448,7 @@
 <summary><b>🔧 Utility</b></summary>
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [backdround/tabscope](https://dotfyle.com/plugins/backdround/tabscope.nvim)
 - [echasnovski/mini.animate](https://dotfyle.com/plugins/echasnovski/mini.animate)
 - [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 - [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
@@ -445,6 +470,46 @@
 - [m4xshen/hardtime.nvim](https://dotfyle.com/plugins/m4xshen/hardtime.nvim)
 
 </details>
+
+### Programming Language/Technology Support
+
+- ansible
+- angular
+- astro
+- bash
+- c
+- cmake
+- cpp
+- docker
+- elixir
+- fish
+- go
+- graphql
+- haskell
+- htmx
+- html
+- java
+- javascript
+- json
+- julia
+- lua
+- markdown
+- nix
+- omnisharp
+- php
+- python
+- react
+- ruby
+- rust
+- svelte
+- sql
+- terraform
+- tex
+- toml
+- typescript
+- vue
+- xml
+- yaml
 
 ### Language Servers
 
