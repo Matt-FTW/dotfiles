@@ -1,13 +1,13 @@
 # XDG Directories
-set -xg XDG_CONFIG_HOME ~/.config
-set -xg XDG_CACHE_HOME ~/.cache
-set -xg XDG_DATA_HOME ~/.local/share
-set -xg XDG_STATE_HOME ~/.local/state
-set -xg XDG_BIN_HOME ~/.local/bin
-set -xg XDG_SCRIPT_HOME ~/.local/script
-set -xg XDG_SCREENSHOTS_HOME ~/Imagenes/Capturas
+set -xg XDG_CONFIG_HOME $HOME/.config
+set -xg XDG_CACHE_HOME $HOME/.cache
+set -xg XDG_DATA_HOME $HOME/.local/share
+set -xg XDG_STATE_HOME $HOME/.local/state
+set -xg XDG_BIN_HOME $HOME/.local/bin
+set -xg XDG_SCRIPT_HOME $HOME/.local/script
+set -xg XDG_SCREENSHOTS_HOME $HOME/Imagenes/Capturas
 
-# Language/Framework Specific Directories
+# Respect XDG Specification
 set -xg CONAN_USER_HOME $XDG_CONFIG_HOME
 set -xg GOPATH $XDG_DATA_HOME/go
 set -xg GOMODCACHE $XDG_CACHE_HOME/go/mod
@@ -17,6 +17,12 @@ set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
 set -xg ANDROID_HOME $XDG_DATA_HOME/android
 set -xg BUN_INSTALL $HOME/.bun
+set -xg NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
+set -xg DOCKER_CONFIG $XDG_CONFIG_HOME/docker
+set -xg SQLITE_HISTORY $XDG_DATA_HOME/sqlite_history
+set -xg GRADLE_USER_HOME $XDG_DATA_HOME/gradle
+set -xg RIPGREP_CONFIG_PATH $HOME/.config/rg/.ripgreprc
+set -xg STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 
 # Path
 set -x fish_user_paths
@@ -66,7 +72,5 @@ set -xg fzf_fd_opts --hidden --color=always
 
 # Other
 set -x THEFUCK_OVERRIDDEN_ALIASES 'vi, yarn, eza, vim, neofetch, onefetch, cat, tty-clock, dua i'
-set -xg RIPGREP_CONFIG_PATH $HOME/.config/rg/.ripgreprc
-set -xg STARSHIP_CONFIG $HOME/.config/starship/starship.toml
 set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 set -xg BAT_THEME Catppuccin-macchiato
