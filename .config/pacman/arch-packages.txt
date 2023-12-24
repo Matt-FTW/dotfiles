@@ -72,7 +72,7 @@ imwheel 1.0.0pre12-6
 inotify-tools 4.23.9.0-1
 iptables-nft 1:1.8.10-1
 kitty 0.31.0-1
-krita 5.2.2-1
+krita 5.2.2-2
 lazygit 0.40.2-1
 lib32-libnm 1.44.2-1
 lib32-libva-mesa-driver 1:23.3.1-1
@@ -93,7 +93,7 @@ linux-lts-headers 6.1.69-1
 linux-zen 6.6.8.zen1-1
 linux-zen-headers 6.6.8.zen1-1
 logrotate 3.21.0-2
-lsp-plugins 1.2.13-1
+lsp-plugins 1.2.14-1
 lua51 5.1.5-11
 luarocks 3.9.2-1
 m4 1.4.19-3

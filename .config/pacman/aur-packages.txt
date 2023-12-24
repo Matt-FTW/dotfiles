@@ -29,7 +29,7 @@ obs-plugin-input-overlay 5.0.4-2
 paccache-hook 1.1.1-2
 pacgraph 20110629-7
 pacseek 1.8.2-1
-pcsx2-latest-bin 1.7.5308-1
+pcsx2-latest-bin 1.7.5332-1
 pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_25-1
@@ -69,6 +69,7 @@ wl-clip-persist-git r34.6ba11a2-1
 wleave-git 0.3.0.r1.ga3d2fbb-1
 wlr-randr 0.3.1-1
 wlrobs-hg r63.a48763b63f96-1
+xdg-ninja 0.2.0.1-1
 xemu-bin 0.7.118-1
 xwaylandvideobridge-git r180.ae0b96f-1
 yay 12.2.0-1
