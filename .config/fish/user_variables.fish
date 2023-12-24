@@ -16,13 +16,23 @@ set -xg CARGO_HOME $XDG_DATA_HOME/cargo
 set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
 set -xg ANDROID_HOME $XDG_DATA_HOME/android
-set -xg BUN_INSTALL $HOME/.bun
+set -xg BUN_INSTALL $XDG_DATA_HOME/bun
 set -xg NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
 set -xg DOCKER_CONFIG $XDG_CONFIG_HOME/docker
 set -xg SQLITE_HISTORY $XDG_DATA_HOME/sqlite_history
 set -xg GRADLE_USER_HOME $XDG_DATA_HOME/gradle
 set -xg RIPGREP_CONFIG_PATH $HOME/.config/rg/.ripgreprc
 set -xg STARSHIP_CONFIG $HOME/.config/starship/starship.toml
+set -xg ANSIBLE_HOME $XDG_CONFIG_HOME/ansible
+set -xg FFMPEG_DATADIR $XDG_CONFIG_HOME/ffmpeg
+set -xg MYSQL_HISTFILE $XDG_DATA_HOME/mysql_history
+set -xg OMNISHARPHOME $XDG_CONFIG_HOME/omnisharp
+set -xg PYENV_ROOT $XDG_DATA_HOME/pyenv
+set -xg WORKON_HOME $XDG_DATA_HOME/virtualenvs
+set -xg export XINITRC $XDG_CONFIG_HOME/X11/xinitrcexport
+set -xg export XSERVERRC $XDG_CONFIG_HOME/X11/xserverrc
+set -xg HISTFILE $XDG_STATE_HOME/bash/history
+set -xg ZSH $XDG_DATA_HOME/oh-my-zsh
 
 # Path
 set -x fish_user_paths
