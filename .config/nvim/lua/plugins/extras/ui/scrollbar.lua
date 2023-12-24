@@ -12,7 +12,7 @@ else
   return {
     "dstein64/nvim-scrollview",
     event = "LazyFile",
-    keys = { { "<leader>uS", "<cmd>ScrollViewToggle<CR>", desc = "Toggle Scrollview" } },
+    keys = { { "<leader>uV", "<cmd>ScrollViewToggle<CR>", desc = "Toggle Scrollview" } },
     config = function()
       require("scrollview").setup({
         excluded_filetypes = excluded_filetypes,
