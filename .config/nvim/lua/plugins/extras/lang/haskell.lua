@@ -15,10 +15,9 @@ return {
       { "nvim-telescope/telescope.nvim", optional = true },
     },
     config = function()
-      local ok, telescope = pcall(require, "telescope")
-      if ok then
-        telescope.load_extension("ht")
-      end
+      require("lazyvim.util").on_load("telescope.nvim", function()
+        require("telescope").load_extension("ht")
+      end)
     end,
   },
   {
@@ -44,9 +43,7 @@ return {
   {
     "nvim-neotest/neotest",
     optional = true,
-    dependencies = {
-      { "mrcjkb/neotest-haskell" },
-    },
+    dependencies = { "mrcjkb/neotest-haskell" },
     opts = {
       adapters = {
         ["neotest-haskell"] = {},
@@ -64,14 +61,11 @@ return {
   {
     "luc-tielen/telescope_hoogle",
     ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
-    dependencies = {
-      { "nvim-telescope/telescope.nvim" },
-    },
+    dependencies = { "nvim-telescope/telescope.nvim" },
     config = function()
-      local ok, telescope = pcall(require, "telescope")
-      if ok then
-        telescope.load_extension("hoogle")
-      end
+      require("lazyvim.util").on_load("telescope.nvim", function()
+        require("telescope").load_extension("hoogle")
+      end)
     end,
   },
   -- Make sure lspconfig doesn't start hls,
