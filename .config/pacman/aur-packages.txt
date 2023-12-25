@@ -19,7 +19,7 @@ hyprshot 1.2.3-1
 hyprsome-git r24.9636be0-1
 lazydocker 0.23.1-1
 lazynpm 0.1.4-1
-librewolf-bin 120.0.1-1
+librewolf-bin 121.0-1
 ludusavi 0.21.0-1
 needrestart 3.6-3
 nwg-displays 0.3.10-1
