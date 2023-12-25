@@ -33,6 +33,8 @@ set -xg XINITRC $XDG_CONFIG_HOME/X11/xinitrcexport
 set -xg XSERVERRC $XDG_CONFIG_HOME/X11/xserverrc
 set -xg HISTFILE $XDG_STATE_HOME/bash/history
 set -xg ZSH $XDG_DATA_HOME/oh-my-zsh
+set -xg PYTHONSTARTUP $XDG_CONFIG_HOME/python/pythonrc
+set -xg WINEPREFIX $XDG_DATA_HOME/wine
 
 # Path
 set -x fish_user_paths
