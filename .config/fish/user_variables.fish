@@ -38,7 +38,6 @@ set -xg WINEPREFIX $XDG_DATA_HOME/wine
 set -xg NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
 
 # Path
-set -x fish_user_paths
 fish_add_path $XDG_BIN_HOME
 fish_add_path $XDG_BIN_HOME/color-scripts/
 fish_add_path $GOPATH/bin
