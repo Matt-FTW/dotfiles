@@ -36,6 +36,8 @@
 	gpgsign = true
 [gpg]
   program = /sbin/gpg
+[includeIf "gitdir:~/Repos/Work/"]
+  path = ~/.config/git/config-work
 [alias]
   aliases = config --get-regexp alias
   #############
