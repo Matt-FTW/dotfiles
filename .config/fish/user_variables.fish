@@ -54,6 +54,7 @@ fish_add_path /usr/lib/go/bin
 fish_add_path $HOME/.dotnet/tools
 fish_add_path $BUN_INSTALL/bin
 fish_add_path $XDG_DATA_HOME/bob/nvim-bin
+fish_add_path $XDG_DATA_HOME/npm/bin
 
 # Editor
 set -xg EDITOR nvim
