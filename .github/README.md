@@ -58,6 +58,7 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 - :art: Color scripts for the terminal
 - :car: Automatic mount of USB devices with notification
 - :lock: Idle and lock apps
+- :open_file_folder: Following XDG Base Directory Standard
 - :broom: Organized and cleaned up config files
 - :film_projector: Recording script
 - :point_up: Screenshot, Clipboard, Color and Wallpaper Picker
