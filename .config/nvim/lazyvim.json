@@ -1,6 +1,5 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.lang.python-semshi",
     "lazyvim.plugins.extras.lang.yaml",
@@ -18,6 +17,7 @@
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.treesitter.puppeteer",
     "plugins.extras.coding.treesitter.text-case",
+    "plugins.extras.coding.yanky",
     "plugins.extras.dap.core",
     "plugins.extras.dap.persistent-breakpoints",
     "plugins.extras.editor.color",
