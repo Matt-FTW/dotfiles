@@ -612,6 +612,10 @@
 | ----------------------------------------- |
 | ![lualine](./overview-images/lualine.png) |
 
+| **Which-key**                                 |
+| --------------------------------------------- |
+| ![which-key](./overview-images/which-key.png) |
+
 | **Telescope Live-Grep**                       |
 | --------------------------------------------- |
 | ![live-grep](./overview-images/live-grep.png) |
