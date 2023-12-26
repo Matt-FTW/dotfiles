@@ -13,5 +13,6 @@ return {
   keys = {
     -- stylua: ignore
     { "<leader>ub", "<cmd>Gitsigns toggle_current_line_blame<CR>", desc = "Toggle Line Blame" },
+    { "<leader>uD", "<cmd>Gitsigns toggle_deleted<CR>", desc = "Toggle Deletions Inline" },
   },
 }
