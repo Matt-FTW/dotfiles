@@ -46,7 +46,7 @@ Here's the **core** info about my dots:
 
 ### 🌸 Core System Info
 
- <img src="assets/fetch.png" alt="fetch" align="right" width="570px">
+ <img src="assets/fetch.png" alt="fetch" align="right" width="550px">
 
 - **OS**: [Arch Linux](https://archlinux.org/) :boom:
 - **WM**: [hyprland](https://hyprland.org/) :window:
