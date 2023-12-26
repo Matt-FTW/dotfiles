@@ -9,7 +9,7 @@ return {
       },
     },
     keys = {
-      { "<leader>ct", "<cmd>TSC<cr>", desc = "Type Check" },
+      { "<leader>ct", ft = { "typescript", "typescriptreact" }, "<cmd>TSC<cr>", desc = "Type Check" },
     },
     ft = {
       "typescript",
