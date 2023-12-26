@@ -16,8 +16,12 @@ FOLDERS=(
 
 notify-send "Spotdl Sync" "Started syncing..."
 
-for folder in "${FOLDERS[@]}"; do
-	/home/matt/.local/bin/spotdlSync "$folder" # TODO: Change the path to relative without breaking the systemd service
+for FOLDER in "${FOLDERS[@]}"; do
+	cd "$HOME/Musica/Listen-To/$FOLDER" || continue
+
+	spotdl sync "${FOLDER,,}.sync.spotdl"
+
+	notify-send "Spotdl Sync" "$FOLDER synced"
 done
 
 notify-send "Spotdl Sync Complete"
