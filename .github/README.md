@@ -36,11 +36,33 @@
 
 Hey there! :wave:
 
-This is my personal repository for my Dotfiles.
+This is my personal dotfiles repository.
+
+The repo has also files exclusive to my personal use (programming, gaming, etc); it is not just a rice.
+
+If you wanna know how to install them, go to the [setup](#wrench--setup) section. It has a guided installation and an automatic one (Only for Arch Linux users)
+
+Here's the **core** info about my dots:
+
+### 🌸 Core System Info
+
+ <img src="assets/fetch.png" alt="fetch" align="right" width="475px">
+
+- **OS**: [Arch Linux](https://archlinux.org/) :boom:
+- **WM**: [hyprland](https://hyprland.org/) :window:
+- **Shell**: [fish](https://fishshell.com/) :shell:
+- **Terminal Emulator**: [kitty](https://sw.kovidgoyal.net/kitty/) :cat:
+- **Panel**: [waybar](https://github.com/Alexays/Waybar) :shaved_ice:
+- **Text Editor**: [neovim](https://neovim.io/) :keyboard:
+- **App Launcher**: [rofi](https://davatorium.github.io/rofi/) :rocket:
+- **File Manager**: [yazi](https://yazi-rs.github.io/) / [nemo](https://community.linuxmint.com/software/view/nemo) :open_file_folder:
+- **Browser**: [librewolf](https://librewolf.net/) :globe_with_meridians:
+- **Notification Manager**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) :bell:
+- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) :art:
+
+All the other apps can be seen over [here](#🐧-system-info)!
 
 I've been working on this for a long time so I hope you like it!
-
-This repo is always changing, so I may add new stuff in the future. If you encounter some issues or if you have any ideas to improve the setup, make sure to report them in the issue tracker over here at Github.
 
 ---
 
@@ -70,9 +92,11 @@ This repo is always changing, so I may add new stuff in the future. If you encou
 
 And many more!`:)`
 
-### 🐧 System Info
+---
 
-Here is some _small_ information about my setup:
+### 🐧 Whole System Info
+
+Here is all the information about my setup:
 
 > ℹ️ Some of this apps have the config files included in the repo, which are marked with ⚙️, and others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with 💖.
 
@@ -87,7 +111,7 @@ Here is some _small_ information about my setup:
 | **Window Manager**             | 💖 [Hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                |
 | **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                    |
 | **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                               |
-| **Panel**                      | 💖 [Waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
+| **Bar**                        | 💖 [Waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
 | **Audio Daemon**               | [Pipewire](https://pipewire.org/) [:gear:](../.config/pipewire/)                                               |
 | **Application Launcher**       | 💖 [Rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
 | **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                    |
@@ -246,10 +270,18 @@ Those were the biggest inspiring factor for me, though you can find a lot more o
 
 Thanks to everyone who gave a star to this project! ❤️
 
-<a href="https://star-history.com/#Matt-FTW/dotfiles&Timeline">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline" />
-  </picture>
-</a>
+<div>
+  <a href="https://star-history.com/#Matt-FTW/dotfiles&Timeline">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline" />
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Matt-FTW/dotfiles&type=Timeline" />
+    </picture>
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true"/>
+</div>
