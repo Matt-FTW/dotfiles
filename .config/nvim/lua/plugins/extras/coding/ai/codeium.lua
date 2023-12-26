@@ -25,13 +25,7 @@ return {
         return vim.fn["codeium#Clear"]()
       end, opts)
 
-      vim.keymap.set("n", "<leader>cI", function()
-        if vim.g.codeium_enabled == true then
-          vim.cmd("CodeiumDisable")
-        else
-          vim.cmd("CodeiumEnable")
-        end
-      end, { desc = "Toggle IA" })
+      vim.keymap.set("n", "<leader>cI", "<cmd>CodeiumToggle<cr>", { desc = "Toggle IA" })
     end,
   },
   {
