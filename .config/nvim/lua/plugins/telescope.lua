@@ -97,8 +97,8 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
-        ["<leader>ss"] = { name = "+Goto Symbols" },
+        ["<leader>sS"] = { name = "Goto Symbols (Workspace)" },
+        ["<leader>ss"] = { name = "Goto Symbols" },
       },
     },
   },

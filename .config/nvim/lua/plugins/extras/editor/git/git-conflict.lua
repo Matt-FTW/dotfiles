@@ -19,7 +19,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>gC"] = { name = "+conflicts" },
+        ["<leader>gC"] = { name = "conflicts" },
       },
     },
   },

@@ -1,8 +1,14 @@
 return {
   "folke/which-key.nvim",
   opts = {
+    icons = {
+      group = "",
+    },
+    layout = {
+      align = "center",
+    },
     defaults = {
-      ["<leader>ci"] = { name = "+info" },
+      ["<leader>ci"] = { name = "info" },
       ["<leader><tab>"] = { name = "󰓩 tabs" },
       ["<leader>b"] = { name = "󰖯 buffer" },
       ["<leader>c"] = { name = " code" },

@@ -45,8 +45,8 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>ce"] = { name = "+r[e]pl" },
-        ["<leader>ft"] = { name = "+terminals" },
+        ["<leader>ce"] = { name = "r[e]pl" },
+        ["<leader>ft"] = { name = "terminals" },
         ["<leader>T"] = { name = " tools" },
       },
     },

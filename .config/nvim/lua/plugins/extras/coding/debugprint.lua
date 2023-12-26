@@ -27,7 +27,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>dd"] = { name = "+debugPrint" },
+        ["<leader>dd"] = { name = "debugPrint" },
       },
     },
   },

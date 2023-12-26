@@ -149,7 +149,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>cL"] = { name = "+lsp" },
+        ["<leader>cL"] = { name = "lsp" },
       },
     },
   },
