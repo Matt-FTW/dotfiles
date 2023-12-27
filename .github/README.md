@@ -47,7 +47,9 @@ Here's the **core** info about my dots:
 ### 🌸 Core System Info
 
  <img src="assets/logo.png" alt="logo" style ="margin-right: 75px" align="right" width="275px">
+ <img src="assets/rice-logo.png" alt="logo" align="right" width="350px">
 
+The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt and the wild.
 - **OS**: [Arch Linux](https://archlinux.org/) :boom:
 - **WM**: [hyprland](https://hyprland.org/) :window:
 - **Shell**: [fish](https://fishshell.com/) :shell:
