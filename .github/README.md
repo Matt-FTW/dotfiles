@@ -50,7 +50,7 @@ Here's the core info about my dots:
 
 ### 🌸 Core System Info
 
- <img src="assets/rice-logo.png" alt="rice-logo" align="right" width="350px">
+ <img src="assets/rice-logo.png" alt="rice-logo" align="right" width="400px">
 
 The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt and the wild.
 
