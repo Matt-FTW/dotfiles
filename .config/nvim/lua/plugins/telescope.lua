@@ -61,7 +61,6 @@ return {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-r>"] = actions.delete_buffer,
             ["<C-j>"] = actions.move_selection_next,
-            ["<esc>"] = actions.close,
             ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
           },
         },
