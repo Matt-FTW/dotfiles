@@ -22,7 +22,7 @@ celluloid 0.26-1
 clamtk 6.14-1
 cliphist 1:0.4.0-2
 cpupower 6.6-1
-dbeaver 23.3.0-1
+dbeaver 23.3.1-1
 dialog 1:1.3_20231002-1
 dictd 1.13.1-5
 diff-so-fancy 1.4.4-2
@@ -68,7 +68,7 @@ gvfs-mtp 1.52.1-1
 highlight 4.10-1
 hyprland 0.33.1-2
 i2c-tools 4.3-4
-imagemagick 7.1.1.23-1
+imagemagick 7.1.1.24-1
 imwheel 1.0.0pre12-6
 inotify-tools 4.23.9.0-1
 iptables-nft 1:1.8.10-1
@@ -97,6 +97,7 @@ logrotate 3.21.0-2
 lsp-plugins 1.2.14-1
 lua51 5.1.5-11
 luarocks 3.9.2-1
+lxappearance 0.6.3-4
 m4 1.4.19-3
 maim 5.7.4-7
 make 4.4.1-2
@@ -118,7 +119,7 @@ npm 10.2.5-1
 ntfs-3g 2022.10.3-1
 nvtop 3.0.2-1
 obs-studio 30.0.2-1
-obsidian 1.4.16-1
+obsidian 1.5.3-1
 onefetch 2.19.0-1
 openbsd-netcat 1.226_1-2
 opencl-nvidia 545.29.06-1
@@ -188,12 +189,13 @@ vulkan-radeon 1:23.3.1-1
 w3m 0.5.3.git20230121_1-1
 wev 1.0.0-13
 wf-recorder 0.4.1-1
+wget 1.21.4-1
 which 2.21-6
 wine 8.21-2
 wl-clipboard 1:2.2.1-1
 wmctrl 1.07-6
 wpa_supplicant 2:2.10-8
-xdg-desktop-portal-hyprland 1.2.5-1
+xdg-desktop-portal-hyprland 1.2.6-1
 xdg-user-dirs 0.18-1
 xdotool 3.20211022.1-1
 xf86-video-amdgpu 23.0.0-1
