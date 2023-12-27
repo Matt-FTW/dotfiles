@@ -38,17 +38,22 @@ Hey there! :wave:
 
 This is my personal dotfiles repository.
 
-The repo has also files exclusive to my personal use (programming, gaming, etc); it is not just a rice.
+I created this repo to help me backup my config files and to easily **deploy** them in a new machine with the help of [Ansible](https://www.ansible.com/) and [yadm](https://yadm.io). It has some files exclusive to my personal use (programming, gaming, etc) so it's not just a rice.
 
-If you wanna know how to install them, go to the [setup](#wrench--setup) section. It has a guided installation and an automatic one (Only for Arch Linux users)
+At first i didn't think about ricing but more and more, my focus has got into creating a good and aesthetic rice, with a lot of customization, as well as maintaining the easy deploy and use for my multiple machines.
 
-Here's the **core** info about my dots:
+If you wanna know how to **install** them, go to the [setup](#wrench--setup) section. It has a guided installation and an automatic one (Only for Arch Linux users)
+
+I've been working on this for a long time so I hope you like it!
+
+Here's the core info about my dots:
 
 ### 🌸 Core System Info
 
  <img src="assets/rice-logo.png" alt="logo" align="right" width="350px">
 
 The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt and the wild.
+
 - **OS**: [Arch Linux](https://archlinux.org/) :boom:
 - **WM**: [hyprland](https://hyprland.org/) :window:
 - **Shell**: [fish](https://fishshell.com/) :shell:
@@ -62,8 +67,6 @@ The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt
 - **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) :art:
 
 All the other apps can be seen over [here](#🐧-system-info)!
-
-I've been working on this for a long time so I hope you like it!
 
 ---
 
