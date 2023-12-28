@@ -285,7 +285,7 @@ If you want to support my work, please consider donating.
 
 This is optional, but it's always appreciated.
 
-Thank you! :two_hearts:
+Thank you! :sparkling_heart:
 
 [![](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&i&color=5b6078&logoColor=D9E0EE&labelColor=302D41)](https://github.com/sponsors/Matt-FTW)
 [![](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&color=ed8796&logoColor=D9E0EE&labelColor=302D41)](https://ko-fi.com/matt_ftw)
