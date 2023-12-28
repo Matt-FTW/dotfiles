@@ -297,6 +297,7 @@
 <summary><b>🔖 Marks</b></summary>
 
 - [ThePrimeagen/harpoon](https://dotfyle.com/plugins/ThePrimeagen/harpoon)
+- [tomasky/bookmarks.nvim](https://dotfyle.com/plugins/tomasky/bookmarks.nvim)
 
 </details>
 
