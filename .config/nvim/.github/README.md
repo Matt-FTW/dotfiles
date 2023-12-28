@@ -107,6 +107,7 @@
 - [EdenEast/nightfox.nvim](https://dotfyle.com/plugins/EdenEast/nightfox.nvim)
 - [Mofiqul/vscode.nvim](https://dotfyle.com/plugins/Mofiqul/vscode.nvim)
 - [echasnovski/mini.base16](https://dotfyle.com/plugins/echasnovski/mini.base16)
+- [scottmckendry/cyberdream.nvim](https://dotfyle.com/plugins/scottmckendry/cyberdream.nvim)
 
 </details>
 
@@ -310,6 +311,7 @@
 <summary><b>🚶 Motion</b></summary>
 
 - [folke/flash.nvim](https://dotfyle.com/plugins/folke/flash.nvim)
+- [edluffy/specs.nvim](https://dotfyle.com/plugins/edluffy/specs.nvim)
 - [chrisgrieser/nvim-spider](https://dotfyle.com/plugins/chrisgrieser/nvim-spider)
 - [ggandor/leap.nvim](https://dotfyle.com/plugins/ggandor/leap.nvim)
 - [ggandor/flit.nvim](https://dotfyle.com/plugins/ggandor/flit.nvim)
