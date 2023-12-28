@@ -46,30 +46,6 @@ If you wanna know how to **install** them, go to the [setup](#wrench--setup) sec
 
 I've been working on this for a long time so I hope you like it!
 
-Here's the core info about my dots:
-
-### 🌸 Core System Info
-
- <img src="assets/rice-logo.png" alt="rice-logo" align="right" width="390px">
-
-The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt and the wild.
-
-- **OS**: [Arch Linux](https://archlinux.org/) :boom:
-- **WM**: [hyprland](https://hyprland.org/) :window:
-- **Shell**: [fish](https://fishshell.com/) :shell:
-- **Terminal Emulator**: [kitty](https://sw.kovidgoyal.net/kitty/) :cat:
-- **Panel**: [waybar](https://github.com/Alexays/Waybar) :shaved_ice:
-- **Text Editor**: [neovim](https://neovim.io/) :keyboard:
-- **App Launcher**: [rofi](https://davatorium.github.io/rofi/) :rocket:
-- **File Manager**: [yazi](https://yazi-rs.github.io/) / [nemo](https://community.linuxmint.com/software/view/nemo) :open_file_folder:
-- **Browser**: [librewolf](https://librewolf.net/) :globe_with_meridians:
-- **Notification Manager**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) :bell:
-- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) :art:
-
-All the other apps can be seen over [here](#🐧-system-info)!
-
----
-
 ### ✨ Features
 
 - :scroll: Scratchpads
@@ -95,6 +71,28 @@ All the other apps can be seen over [here](#🐧-system-info)!
 - :gear: Various other tweaks
 
 And many more!`:)`
+
+---
+
+### 🌸 Core System Info
+
+ <img src="assets/rice-logo.png" alt="rice-logo" align="right" width="390px">
+
+The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt and the wild.
+
+- **OS**: [Arch Linux](https://archlinux.org/) :boom:
+- **WM**: [hyprland](https://hyprland.org/) :window:
+- **Shell**: [fish](https://fishshell.com/) :shell:
+- **Terminal Emulator**: [kitty](https://sw.kovidgoyal.net/kitty/) :cat:
+- **Panel**: [waybar](https://github.com/Alexays/Waybar) :shaved_ice:
+- **Text Editor**: [neovim](https://neovim.io/) :keyboard:
+- **App Launcher**: [rofi](https://davatorium.github.io/rofi/) :rocket:
+- **File Manager**: [yazi](https://yazi-rs.github.io/) / [nemo](https://community.linuxmint.com/software/view/nemo) :open_file_folder:
+- **Browser**: [librewolf](https://librewolf.net/) :globe_with_meridians:
+- **Notification Manager**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) :bell:
+- **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) :art:
+
+All the other apps can be seen over [here](#🐧-system-info)!
 
 ---
 
