@@ -316,6 +316,7 @@
 - [chrisgrieser/nvim-spider](https://dotfyle.com/plugins/chrisgrieser/nvim-spider)
 - [ggandor/leap.nvim](https://dotfyle.com/plugins/ggandor/leap.nvim)
 - [ggandor/flit.nvim](https://dotfyle.com/plugins/ggandor/flit.nvim)
+- [ggandor/leap-spooky.nvim](https://dotfyle.com/plugins/ggandor/leap-spooky.nvim)
 
 </details>
 
