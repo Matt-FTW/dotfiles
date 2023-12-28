@@ -50,8 +50,8 @@ I've been working on this for a long time so I hope you like it!
 
 - :scroll: Scratchpads
 - :bell: Notification Center
-- :zzz: Neovim powerred by LazyVim with custom extras added
-- :dark_sunglasses: Dark Mode for the whole system (Catppuccin powered)
+- :zzz: Neovim powered by LazyVim with custom extras added
+- :dark_sunglasses: Dark Mode for the whole system
 - :framed_picture: Various Wallpapers
 - :nerd_face: Nerd Fonts for the Shell Prompt
 - :loud_sound: Volume OSD
@@ -69,8 +69,6 @@ I've been working on this for a long time so I hope you like it!
 - :desktop_computer: AwesomeWM workspace behavior
 - :crab: Rust Alternatives
 - :gear: Various other tweaks
-
-And many more!`:)`
 
 ---
 
