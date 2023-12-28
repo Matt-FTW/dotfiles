@@ -356,6 +356,8 @@
 <summary><b>📂 Project</b></summary>
 
 - [ahmedkhalf/project.nvim](https://dotfyle.com/plugins/ahmedkhalf/project.nvim)
+- [natecraddock/workspaces.nvim](https://dotfyle.com/plugins/natecraddock/workspaces.nvim)
+- [cljoly/telescope-repo.nvim](https://github.com/cljoly/telescope-repo.nvim)
 
 </details>
 
