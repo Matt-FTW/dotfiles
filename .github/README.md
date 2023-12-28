@@ -38,7 +38,7 @@ Hey there! :wave:
 
 This is my personal dotfiles repository.
 
-I created this repo to help me backup my config files and to easily **deploy** them in a new machine with the help of [Ansible](https://www.ansible.com/) and [yadm](https://yadm.io). It has some files exclusive to my personal use (programming, gaming, etc) so it's not just a rice.
+I created this repo to help me backup my config files and to easily **deploy** them in a new machine with the help of [Ansible](https://www.ansible.com/) and [yadm](https://yadm.io). It has some files exclusive to my personal use (programming, gaming, etc) so it's not just a rice (config files that change the visual stuff of the OS).
 
 At first I didn't think about ricing but more and more, my focus has got into creating a good and aesthetic rice, with a lot of customization, as well as maintaining the easy deploy and use for my multiple machines.
 
@@ -74,7 +74,7 @@ All the other apps can be seen over [here](#🐧-system-info)!
 
 - :scroll: Scratchpads
 - :bell: Notification Center
-- :zzz: LazyVim powered Neovim with custom extras added
+- :zzz: Neovim powerred by LazyVim with custom extras added
 - :dark_sunglasses: Dark Mode for the whole system (Catppuccin powered)
 - :framed_picture: Various Wallpapers
 - :nerd_face: Nerd Fonts for the Shell Prompt
@@ -193,6 +193,7 @@ Here is all the information about my setup:
 | ------------------------------- | -------------------------------------------------------------------- |
 | **Colorscheme**                 | 💖 [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin)  |
 | **Font**                        | [JetBrainsMono Nerd Font](https://www.jetbrains.com/es-es/lp/mono/)  |
+| **Icon Theme**                  | [Catppuccin-SE](https://github.com/ljmill/catppuccin-icons)          |
 | **Dotfiles Manager**            | 💖 [yadm](https://yadm.io/) [:gear:](../.config/yadm/)               |
 | **Automatic System Deployment** | 💖 [Ansible](https://www.ansible.com/) [:gear:](../.config/ansible/) |
 
