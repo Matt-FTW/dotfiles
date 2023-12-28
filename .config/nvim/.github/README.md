@@ -196,6 +196,7 @@
 
 - [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
 - [echasnovski/mini.files](https://dotfyle.com/plugins/echasnovski/mini.files)
+- [stevearc/oil.nvim](https://dotfyle.com/plugins/stevearc/oil.nvim)
 
 </details>
 
