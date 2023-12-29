@@ -156,7 +156,7 @@
       "tooltip-format": "{desc}, {volume}%",
       "on-click": "swayosd-client --output-volume mute-toggle",
       "on-click-right": "swayosd-client --input-volume mute-toggle",
-      "on-click-middle": "easyeffects",
+      "on-click-middle": "pypr toggle volume",
       "on-scroll-up": "swayosd-client --output-volume +1",
       "on-scroll-down": "swayosd-client --output-volume -1"
     },
@@ -185,7 +185,8 @@
       "stereo": true,
       "waves": false,
       "on-click": "kitty --class center-float-mini cava",
-      "on-click-right": "qpwgraph"
+      "on-click-right": "qpwgraph",
+      "on-click-middle": "easyeffects"
     },
     "custom/music": {
       "format": "{icon} {}",
