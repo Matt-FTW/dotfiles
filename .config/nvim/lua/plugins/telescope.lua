@@ -51,6 +51,8 @@ return {
             ["<C-j>"] = actions.move_selection_next,
             ["<S-esc>"] = actions.close,
             ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
+            ["<C-Down>"] = actions.cycle_history_next,
+            ["<C-Up>"] = actions.cycle_history_prev,
           },
         },
         file_ignore_patterns = {
