@@ -11,7 +11,7 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
-        "rnix-lsp",
+        "nil",
       })
     end,
   },
@@ -19,7 +19,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        rnix = {},
+        nil_ls = {},
       },
     },
   },
