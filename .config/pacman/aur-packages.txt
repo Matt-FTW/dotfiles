@@ -29,6 +29,7 @@ obs-plugin-input-overlay 5.0.4-2
 paccache-hook 1.1.1-2
 pacgraph 20110629-7
 pacseek 1.8.2-1
+parabolic 2023.11.1-1
 pcsx2-latest-bin 1.7.5345-1
 pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
@@ -73,4 +74,3 @@ xdg-ninja 0.2.0.1-1
 xemu-bin 0.7.118-1
 xwaylandvideobridge-git r180.ae0b96f-1
 yay 12.2.0-1
-ytdlp-gui 1.0.0-1
