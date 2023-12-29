@@ -11,7 +11,6 @@ return {
   { "<leader>gG", "<cmd>FloatermNew --disposable --name=lazygitbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> lazygit<CR>", desc = "Lazygit (cwd)" },
   { "<leader>Td", "<cmd>FloatermNew --disposable --name=lazydocker --opener=edit --titleposition=center --height=0.85 --width=0.85 lazydocker<CR>", desc = "Lazydocker" },
   { "<leader>Tb", "<cmd>FloatermNew --disposable --name=btop --opener=edit --titleposition=center --height=0.85 --width=0.85 btop<CR>", desc = "Btop" },
-  { "<leader>fd", "<cmd>FloatermNew --disposable --name=dots --opener=edit --titleposition=center --height=0.85 --width=0.85 dots<CR>", desc = "Dotfiles" },
   { "<leader>Tn", "<cmd>FloatermNew --disposable --name=navi --opener=edit --titleposition=center --height=0.85 --width=0.85 pages<CR>", desc = "Navi Pages" },
   { "<leader>Tp", "<cmd>FloatermNew --disposable --name=proc --opener=edit --titleposition=center --height=0.85 --width=0.85 proc<CR>", desc = "Systemd Processes" },
   { "<leader>TB", "<cmd>FloatermNew --disposable --name=bandwhich --opener=edit --titleposition=center --height=0.85 --width=0.85 bandwhich<CR>", desc = "Bandwidth" },
