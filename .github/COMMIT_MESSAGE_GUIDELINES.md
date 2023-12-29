@@ -2,6 +2,8 @@
 
 A good commit message should be descriptive and provide context about the changes made. This makes it easier to understand and review the changes in the future.
 
+The specification used to write human-readable commits is [Conventional Commits](https://conventionalcommits.org).
+
 Here are some guidelines for writing descriptive commit messages:
 
 - Start with a short summary of the changes made in the commit.
@@ -149,3 +151,9 @@ These are just some examples, and you can create your own custom commit types as
 Emojis are also allowed, always following the commit guidelines mention before.
 
 **Important:** If you are planning to use a custom commit message type other than the ones listed above, make sure to add it to this list so that others can understand it as well. Create a pull request to add it to this file.
+
+## Tools
+
+I recommend using [Commitizen](https://github.com/commitizen/cz-cli) in combination of an adapter such as [cz-git](https://github.com/Zhengqbbb/cz-git) for generating premade, customized and human-readable commit messages.
+
+If you wanna take a look, you have my config file for Commitizen [right here](../.czrc).
