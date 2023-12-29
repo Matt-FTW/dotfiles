@@ -169,6 +169,7 @@
 <summary><b>📝 Editing support</b></summary>
 
 - [monaqa/dial.nvim](https://dotfyle.com/plugins/monaqa/dial.nvim)
+- [chrisgrieser/nvim-various-textobjs](https://dotfyle.com/plugins/chrisgrieser/nvim-various-textobjs)
 - [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
@@ -260,6 +261,7 @@
 
 - [max397574/better-escape.nvim](https://dotfyle.com/plugins/max397574/better-escape.nvim)
 - [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
+- [tris203/hawtkeys.nvim](https://dotfyle.com/plugins/tris203/hawtkeys.nvim)
 
 </details>
 

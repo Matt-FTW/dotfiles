@@ -18,6 +18,7 @@
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.treesitter.puppeteer",
     "plugins.extras.coding.treesitter.text-case",
+    "plugins.extras.coding.treesitter.various-textobjs",
     "plugins.extras.coding.yanky",
     "plugins.extras.dap.core",
     "plugins.extras.dap.persistent-breakpoints",
