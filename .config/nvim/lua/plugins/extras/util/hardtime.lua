@@ -1,7 +1,7 @@
 return {
   "m4xshen/hardtime.nvim",
   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-  event = "VeryLazy",
+  event = "LazyFile",
   keys = {
     { "<leader>uH", "<cmd>Hardtime toggle<CR>", desc = "Toggle Hardtime" },
   },
@@ -16,6 +16,7 @@ return {
       "neo-tree",
       "symbols-outline",
       "vim-be-good",
+      "oil",
     },
     restriction_mode = "hint",
     restricted_keys = {
