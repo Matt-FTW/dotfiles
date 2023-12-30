@@ -1,6 +1,6 @@
 return {
   "epwalsh/obsidian.nvim",
-  event = { "BufReadPre" .. vim.fn.expand("~") .. "Documentos/Obsidian/obsidianVault/root/**.md" },
+  ft = "markdown",
   keys = {
     {
       "gf",
@@ -21,13 +21,23 @@ return {
     "nvim-telescope/telescope.nvim",
   },
   opts = {
-    dir = vim.env.HOME .. "Documentos/Obsidian/obsidianVault/root", -- specify the vault location. no need to call 'vim.fn.expand' here
-    use_advanced_uri = true,
-    finder = "telescope.nvim",
+    workspaces = {
+      {
+        name = "personal",
+        path = "~/Documentos/Obsidian/obsidianVault/root",
+      },
+    },
+    daily_notes = {
+      folder = "Journal/Entries/Daily",
+      date_format = "%Y-%m-%d",
+      alias_format = "%B %-d, %Y",
+      template = "_data_/templates/journal/daily_entry.md",
+    },
+
     mappings = {},
 
     templates = {
-      subdir = "templates",
+      subdir = "_data_/templates",
       date_format = "%Y-%m-%d-%a",
       time_format = "%H:%M",
     },
@@ -48,35 +58,12 @@ return {
     -- Optional, set to true to force ':ObsidianOpen' to bring the app to the foreground.
     open_app_foreground = false,
 
-    -- Optional, by default commands like `:ObsidianSearch` will attempt to use
-    -- telescope.nvim, fzf-lua, and fzf.nvim (in that order), and use the
-    -- first one they find. By setting this option to your preferred
-    -- finder you can attempt it first. Note that if the specified finder
-    -- is not installed, or if it the command does not support it, the
-    -- remaining finders will be attempted in the original order.
     finder = "telescope.nvim",
 
-    -- Optional, determines whether to open notes in a horizontal split, a vertical split,
-    -- or replacing the current buffer (default)
-    -- Accepted values are "current", "hsplit" and "vsplit"
     open_notes_in = "current",
 
-    daily_notes = {
-      folder = "journal/daily",
-      date_format = "%Y-%m-%d",
-    },
-
-    completion = {
-      nvim_cmp = true,
-      min_chars = 2,
-      -- Where to put new notes created from completion. Valid options are
-      --  * "current_dir" - put new notes in same directory as the current buffer.
-      --  * "notes_subdir" - put new notes in the default notes subdirectory.
-      new_notes_location = "current_dir",
-
-      -- Whether to add the output of the node_id_func to new notes in autocompletion.
-      -- E.g. "[[Foo" completes to "[[foo|Foo]]" assuming "foo" is the ID of the note.
-      prepend_note_id = false,
+    attachments = {
+      img_folder = "_data_/media",
     },
 
     note_frontmatter_func = function(note)
