@@ -241,6 +241,7 @@
 - [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
 - [akinsho/git-conflict.nvim](https://dotfyle.com/plugins/akinsho/git-conflict.nvim)
 - [sindrets/diffview.nvim](https://dotfyle.com/plugins/sindrets/diffview.nvim)
+- [NeogitOrg/neogit](https://dotfyle.com/plugins/NeogitOrg/neogit)
 
 </details>
 
@@ -302,6 +303,7 @@
 
 - [Zeioth/markmap.nvim](https://dotfyle.com/plugins/Zeioth/markmap.nvim)
 - [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
+- [toppair/peek.nvim](https://dotfyle.com/plugins/toppair/peek.nvim)
 
 </details>
 
@@ -467,6 +469,7 @@
 <summary><b>🔧 Utility</b></summary>
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [jghauser/mkdir.nvim](https://dotfyle.com/plugins/jghauser/mkdir.nvim)
 - [backdround/tabscope](https://dotfyle.com/plugins/backdround/tabscope.nvim)
 - [echasnovski/mini.animate](https://dotfyle.com/plugins/echasnovski/mini.animate)
 - [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)

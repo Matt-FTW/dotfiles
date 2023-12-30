@@ -56,6 +56,7 @@ return {
         lsp_trouble = false,
         navic = { enabled = false, custom_bg = "lualine" },
         neotest = true,
+        neogit = true,
         neotree = true,
         notify = true,
         noice = true,
