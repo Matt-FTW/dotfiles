@@ -27,7 +27,6 @@ return {
   },
   {
     "nvim-lualine/lualine.nvim",
-    optional = true,
     opts = function(_, opts)
       local function is_active()
         local ok, hydra = pcall(require, "hydra.statusline")
