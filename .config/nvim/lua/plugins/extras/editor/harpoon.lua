@@ -22,14 +22,25 @@ return {
       { "<M-]>", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" },
       { "<M-[>", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" },
     },
-    opts = {
-      globalsettings = {
-        save_on_toggle = true,
-        enter_on_sendcmd = true,
-      },
-    },
-    config = function(_, opts)
-      require("harpoon").setup(opts)
+    config = function()
+      local harpoon = require("harpoon")
+      harpoon:setup({})
+
+      harpoon:extend({
+        UI_CREATE = function(cx)
+          vim.keymap.set("n", "<C-v>", function()
+            harpoon.ui:select_menu_item({ vsplit = true })
+          end, { buffer = cx.bufnr })
+
+          vim.keymap.set("n", "<C-x>", function()
+            harpoon.ui:select_menu_item({ split = true })
+          end, { buffer = cx.bufnr })
+
+          vim.keymap.set("n", "<C-t>", function()
+            harpoon.ui:select_menu_item({ tabedit = true })
+          end, { buffer = cx.bufnr })
+        end,
+      })
 
       require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").load_extension("harpoon")
