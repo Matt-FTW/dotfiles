@@ -1,5 +1,3 @@
 #!/usr/bin/bash
 
 --smart-case
---hidden
---glob=!.git/

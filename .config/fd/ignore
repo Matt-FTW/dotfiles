@@ -27,6 +27,7 @@ tsconfig.json
 jsconfig.json
 esbuild.config.mjs
 biome.json
+node_modules/*
 
 # python
 __init__.py
