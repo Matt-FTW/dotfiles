@@ -12,6 +12,7 @@
     "plugins.extras.coding.debugprint",
     "plugins.extras.coding.dial",
     "plugins.extras.coding.multicursor",
+    "plugins.extras.coding.recorder",
     "plugins.extras.coding.refactoring",
     "plugins.extras.coding.sniprun",
     "plugins.extras.coding.treesitter.endwise",
