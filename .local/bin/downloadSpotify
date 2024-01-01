@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if ! command -v spotdl &>/dev/null; then
-	notify-send "Spotdl Sync" "Error: spotdl is not installed"
+	notify-send "Spotdl Sync" "Error: spotdl is not installed" --icon=spotify --app-name=spotify
 	exit 1
 fi
 
@@ -14,7 +14,7 @@ FOLDERS=(
 	"Cyberpunk-Darksynth"
 )
 
-notify-send "Spotdl Sync" "Started syncing..."
+notify-send "Spotdl Sync" "Started syncing..." --icon=spotify --app-name=spotify
 
 for FOLDER in "${FOLDERS[@]}"; do
 	cd "$HOME/Musica/Listen-To/$FOLDER" || continue
