@@ -55,7 +55,7 @@
     },
     "custom/weather": {
       "exec": "python3 ~/.config/waybar/scripts/weather.py",
-      "restart-interval": 100,
+      "restart-interval": 300,
       "return-type": "json",
       "on-click": "kitty --hold --class center-float wttr Alicante",
       "on-click-right": "kitty --hold --class center-float wttr -v2 Alicante",

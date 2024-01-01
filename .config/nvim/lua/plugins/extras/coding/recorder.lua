@@ -12,7 +12,7 @@ return {
       { "dq", desc = "Delete All Macros" },
     },
     opts = {
-      useNerdFontsIcons = true,
+      useNerdFontsIcons = false,
       slots = { "a", "b", "c", "d" },
       mapping = {
         startStopRecording = "q",
