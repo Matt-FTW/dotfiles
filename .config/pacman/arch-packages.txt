@@ -1,7 +1,7 @@
 amd-ucode 20231211.f2e52a1c-1
 android-file-transfer 4.2-3
 android-tools 34.0.4-3
-ansible 9.1.0-1
+ansible 9.1.0-2
 atuin 17.1.0-1
 autoconf 2.71-4
 automake 1.16.5-2
@@ -40,7 +40,6 @@ efibootmgr 18-2
 ethtool 1:6.5-1
 eza 0.17.0-1
 fakeroot 1.32.2-1
-fastfetch 2.4.0-1
 fd 9.0.0-1
 fish 3.6.4-1
 fisher 4.4.4-1
@@ -76,14 +75,14 @@ kitty 0.31.0-1
 krita 5.2.2-2
 lazygit 0.40.2-1
 lib32-libnm 1.44.2-1
-lib32-libva-mesa-driver 1:23.3.1-1
-lib32-mesa-vdpau 1:23.3.1-1
-lib32-opencl-clover-mesa 1:23.3.1-1
-lib32-vulkan-radeon 1:23.3.1-1
+lib32-libva-mesa-driver 1:23.3.2-1
+lib32-mesa-vdpau 1:23.3.2-1
+lib32-opencl-clover-mesa 1:23.3.2-1
+lib32-vulkan-radeon 1:23.3.2-1
 libnma-gtk4 1.10.6-2
 libreoffice-fresh 7.6.4-2
 libtool 2.4.7+4+g1ec8fa28-6
-libva-mesa-driver 1:23.3.1-1
+libva-mesa-driver 1:23.3.2-1
 libwnck3 43.0-3
 light 1.2.2-3
 linux 6.6.8.arch1-1
@@ -101,7 +100,7 @@ lxappearance 0.6.3-4
 m4 1.4.19-3
 maim 5.7.4-7
 make 4.4.1-2
-mesa-vdpau 1:23.3.1-1
+mesa-vdpau 1:23.3.2-1
 mpc 0.35-1
 mpv 1:0.36.0-1
 nano 7.2-1
@@ -110,7 +109,6 @@ nemo 6.0.1-1
 nemo-fileroller 6.0.1-1
 nemo-image-converter 6.0.1-1
 nemo-python 6.0.1-1
-neovide 0.12.0-1
 net-tools 2.10-2
 network-manager-applet 1.34.0-1
 networkmanager 1.44.2-3
@@ -185,7 +183,7 @@ vim 9.0.2167-1
 virt-manager 4.1.0-2
 vivid 0.9.0-1
 vkd3d 1.10-1
-vulkan-radeon 1:23.3.1-1
+vulkan-radeon 1:23.3.2-1
 w3m 0.5.3.git20230121_1-1
 wev 1.0.0-13
 wf-recorder 0.4.1-1
