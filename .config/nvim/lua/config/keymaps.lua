@@ -25,8 +25,6 @@ map("n", "+", "<C-a>")
 map("n", "-", "<C-x>")
 
 -- Tabs
-map("n", "<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
-map("n", "<S-tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 map("n", "]<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "[<tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
