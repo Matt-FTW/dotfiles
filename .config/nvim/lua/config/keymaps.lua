@@ -66,13 +66,11 @@ map("n", "<C-c>", ":%y+<CR>", { desc = "Copy whole text to clipboard", silent = 
 -- Select all text
 map("n", "<C-a>", "gg<S-V>G", { desc = "Select all text", silent = true, noremap = true })
 
+-- Paste options
+map("i", "<C-v>", '<C-r>"', { desc = "Paste on insert mode" })
 map("v", "p", '"_dP', { desc = "Paste without overwriting" })
 
-map("n", "c", '"_c', { desc = "Change without yanking" })
-map("n", "C", '"_C', { desc = "Change without yanking" })
-map("x", "c", '"_c', { desc = "Change without yanking" })
-map("x", "C", '"_C', { desc = "Change without yanking" })
-
+-- Deleting without yanking empty line
 map("n", "dd", function()
   local is_empty_line = vim.api.nvim_get_current_line():match("^%s*$")
   if is_empty_line then
