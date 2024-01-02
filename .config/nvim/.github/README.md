@@ -454,6 +454,13 @@
 </details>
 
 <details>
+<summary><b>💻 Terminal Integration</b></summary>
+
+- [mikesmithgh/kitty-scrollback.nvim](https://dotfyle.com/plugins/mikesmithgh/kitty-scrollback.nvim)
+
+</details>
+
+<details>
 <summary><b>🧪 Test</b></summary>
 
 - [nvim-neotest/neotest](https://dotfyle.com/plugins/nvim-neotest/neotest)

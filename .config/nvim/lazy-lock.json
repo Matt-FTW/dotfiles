@@ -39,6 +39,7 @@
   "icon-picker.nvim": { "branch": "master", "commit": "172717e16ef9fe8bf289a75eca8372962726c8c8" },
   "inc-rename.nvim": { "branch": "main", "commit": "6f9b5f9cb237e12935144cdc535322b8c93c1b25" },
   "indent-blankline.nvim": { "branch": "master", "commit": "3c8a185da4b8ab7aef487219f5e001b11d4b6aaf" },
+  "kitty-scrollback.nvim": { "branch": "main", "commit": "7f33ae83bbcccc15022a9b9b5802b5796b73fea7" },
   "lazy.nvim": { "branch": "main", "commit": "96584866b9c5e998cbae300594d0ccfd0c464627" },
   "live-server.nvim": { "branch": "main", "commit": "f6f00a3f541251f0320910bb0d03c4ae14ee6d10" },
   "lsp-lens.nvim": { "branch": "main", "commit": "48bb1a7e271424c15f3d588d54adc9b7c319d977" },
