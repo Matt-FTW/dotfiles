@@ -48,7 +48,7 @@ api.unmap("<ctrl-i>");
 
 // set theme
 Hints.style(
-  "border: solid 2px #6e738d; color:#c6a0f6; font-size: 12px; background: initial; background-color: #1e2030;",
+  "border: solid 2px #6e738d; color:#8aadf4; font-size: 12px; font-weight: bold; background: initial; background-color: #1e2030;",
 );
 Hints.style(
   "border: solid 2px #6e738d !important; padding: 1px !important; color: #939ab7 !important; background: #181926 !important;",
