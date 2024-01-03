@@ -366,7 +366,7 @@
 <summary><b>🔡 Programming Language Support</b></summary>
 
 - [gennaro-tedesco/nvim-jqx](https://dotfyle.com/plugins/gennaro-tedesco/nvim-jqx)
-- [simrat39/rust-tools.nvim](https://dotfyle.com/plugins/simrat39/rust-tools.nvim)
+- [mrcjkb/rustaceanvim](https://dotfyle.com/plugins/mrcjkb/rustaceanvim)
 - [dmmulroy/tsc.nvim](https://dotfyle.com/plugins/dmmulroy/tsc.nvim)
 - [mfussenegger/nvim-jdtls](https://dotfyle.com/plugins/mfussenegger/nvim-jdtls)
 - [ray-x/go.nvim](https://dotfyle.com/plugins/ray-x/go.nvim)
