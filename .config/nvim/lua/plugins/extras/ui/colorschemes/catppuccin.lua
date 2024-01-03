@@ -10,6 +10,7 @@ return {
         light = "latte",
         dark = "macchiato",
       },
+      term_colors = true,
       integrations = {
         alpha = true,
         cmp = true,
