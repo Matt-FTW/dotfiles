@@ -66,7 +66,7 @@ def format_time(time):
     return time.replace("00", "").zfill(2)
 
 
-def format_temp(temp):
+def format_temp():
     return (hour["FeelsLikeC"] + "°").ljust(3)
 
 
