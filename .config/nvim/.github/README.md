@@ -466,6 +466,7 @@
 - [nvim-neotest/neotest](https://dotfyle.com/plugins/nvim-neotest/neotest)
 - [haydenmeade/neotest-jest](https://github.com/nvim-neotest/neotest-jest)
 - [adrigzr/neotest-mocha](https://github.com/adrigzr/neotest-mocha)
+- [rcasia/neotest-java](https://github.com/rcasia/neotest-java)
 - [marilari88/neotest-vitest](https://github.com/marilari88/neotest-vitest)
 - [rcasia/neotest-bash](https://github.com/rcasia/neotest-bash)
 - [mrcjkb/neotest-haskell](https://github.com/mrcjkb/neotest-haskell)
