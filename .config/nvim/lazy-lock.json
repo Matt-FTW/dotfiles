@@ -106,7 +106,7 @@
   "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "4a90ac83c7c8e0ba8a1b6af38bed6d5ee1b04e08" },
   "refactoring.nvim": { "branch": "master", "commit": "156532476deb10b1b2a32cb38e1078b3f9951c42" },
-  "rust-tools.nvim": { "branch": "master", "commit": "676187908a1ce35ffcd727c654ed68d851299d3e" },
+  "rustaceanvim": { "branch": "master", "commit": "3a439b5c76f0e54bd8bf3b498a849079015fc20f" },
   "satellite.nvim": { "branch": "main", "commit": "1a20861227eba8bf2d8282ab4ec5fc071e8b20e2" },
   "search-replace.nvim": { "branch": "main", "commit": "d92290a02d97f4e9b8cd60d28b56b403432158d5" },
   "semshi": { "branch": "master", "commit": "0182447e2ff4dfa04cd2dfe5f189e012c581ca45" },
