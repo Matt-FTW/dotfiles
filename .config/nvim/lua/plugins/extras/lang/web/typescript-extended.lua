@@ -2,6 +2,15 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   { import = "lazyvim.plugins.extras.lang.json" },
   {
+    "nvim-treesitter/nvim-treesitter",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
+        "javascript",
+        "jsdoc",
+      })
+    end,
+  },
+  {
     "dmmulroy/tsc.nvim",
     opts = {
       flags = {
@@ -95,7 +104,7 @@ return {
         ["neotest-mocha"] = {
           command = "npm test --",
           env = { CI = true },
-          cwd = function(path)
+          cwd = function()
             return vim.fn.getcwd()
           end,
         },
