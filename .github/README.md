@@ -90,8 +90,6 @@ The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt
 - **Notification Manager**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) :bell:
 - **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) :art:
 
-All the other apps can be seen over [here](#🐧-system-info)!
-
 ---
 
 ### 🐧 Whole System Info
