@@ -54,8 +54,7 @@
     "plugins.extras.lang.python-extended",
     "plugins.extras.lang.rust-extended",
     "plugins.extras.lang.sql",
-    "plugins.extras.lang.web.css",
-    "plugins.extras.lang.web.html",
+    "plugins.extras.lang.web.html-css",
     "plugins.extras.lang.web.typescript-extended",
     "plugins.extras.linting.eslint-extended",
     "plugins.extras.linting.shellcheck",
@@ -89,3 +88,4 @@
   },
   "version": 2
 }
+
