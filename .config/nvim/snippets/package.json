@@ -18,9 +18,7 @@
         "path": "./languages/global.json"
       },
       {
-        "language": [
-          "markdown"
-        ],
+        "language": "markdown",
         "path": "./languages/markdown.json"
       },
       {

@@ -8,7 +8,7 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
     opts = {},
-    event = { "CmdlineEnter" },
+    event = { "LazyFile" },
     ft = { "go", "gomod" },
     build = ':lua require("go.install").update_all_sync()',
   },
