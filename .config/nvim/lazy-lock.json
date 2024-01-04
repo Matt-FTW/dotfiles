@@ -123,7 +123,7 @@
   "telescope-luasnip.nvim": { "branch": "master", "commit": "2ef7da3a363890686dbaad18ddbf59177cfe4f78" },
   "telescope-undo.nvim": { "branch": "main", "commit": "d3afc1c105535a90caec092ce27a113f77ba7b84" },
   "telescope-zoxide": { "branch": "main", "commit": "68966349aa1b8e9ade403e18479ecf79447389a7" },
-  "telescope.nvim": { "branch": "master", "commit": "8b56e9bb2d0b8750c2f8cd4efe9738e3c066889b" },
+  "telescope.nvim": { "branch": "master", "commit": "87e92ea31b2b61d45ad044cf7b2d9b66dad2a618" },
   "text-case.nvim": { "branch": "main", "commit": "51fba4b76ff39e2a3264a7201be3c9310cfcdb58" },
   "theme-loader.nvim": { "branch": "master", "commit": "ad8774ec8267a447d469b4e6603b43f49b946e53" },
   "todo-comments.nvim": { "branch": "main", "commit": "4a6737a8d70fe1ac55c64dfa47fcb189ca431872" },
