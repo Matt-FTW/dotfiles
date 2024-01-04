@@ -1,0 +1,7 @@
+{
+  "image": {
+    "body": "<img src=\"${1:image_path}\" alt=\"${2:alt text}\" width=\"${3:50%}\">",
+    "description": "HTML syntax for images used to display images with reduced size",
+    "prefix": "image"
+  }
+}

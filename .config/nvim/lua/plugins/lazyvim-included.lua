@@ -2,8 +2,6 @@
 
 return {
   -- Coding
-  { "L3MON4D3/LuaSnip" },
-  { "rafamadriz/friendly-snippets" },
   { "echasnovski/mini.surround" },
   { "JoosepAlviste/nvim-ts-context-commentstring" },
   { "echasnovski/mini.comment" },

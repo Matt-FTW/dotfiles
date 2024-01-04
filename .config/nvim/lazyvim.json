@@ -13,6 +13,7 @@
     "plugins.extras.coding.multicursor",
     "plugins.extras.coding.recorder",
     "plugins.extras.coding.refactoring",
+    "plugins.extras.coding.snippets",
     "plugins.extras.coding.sniprun",
     "plugins.extras.coding.treesitter.endwise",
     "plugins.extras.coding.treesitter.mini-align",
@@ -88,3 +89,4 @@
   },
   "version": 2
 }
+

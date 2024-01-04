@@ -74,7 +74,6 @@ return {
   { "echasnovski/mini.starter", optional = true },
 
   -- Util
-  { "luckasRanarison/tree-sitter-hypr", optional = true },
   { "echasnovski/mini.hipatterns", optional = true },
   { "ahmedkhalf/project.nvim", optional = true },
 }
