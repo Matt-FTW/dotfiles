@@ -484,6 +484,7 @@
 <summary><b>🔧 Utility</b></summary>
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [chrisgrieser/nvim-origami](https://dotfyle.com/plugins/chrisgrieser/nvim-origami)
 - [jghauser/mkdir.nvim](https://dotfyle.com/plugins/jghauser/mkdir.nvim)
 - [backdround/tabscope](https://dotfyle.com/plugins/backdround/tabscope.nvim)
 - [echasnovski/mini.animate](https://dotfyle.com/plugins/echasnovski/mini.animate)
