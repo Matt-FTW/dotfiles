@@ -96,7 +96,9 @@ The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt
 
 Here is all the information about my setup:
 
-> ℹ️ Some of this apps have the config files included in the repo, which are marked with ⚙️, and others don't because simply they don't have any or is not worth saving it because of their defaults. Also, my favorite are programs and tools are marked with 💖.
+> [!NOTE]
+> Some of this apps have the config files included in the repo, which are marked with ⚙️.
+> Also, my favorite are programs and tools are marked with 💖.
 
 <details>
   <summary><b>🐧 System</b></summary>
@@ -197,19 +199,22 @@ Here is all the information about my setup:
 
 ### :package: <samp>Automatic Installation (Arch Linux)</samp>
 
-> :warning: This installation is specifically designed for Arch Linux. If you're running other systems, install the packages with your OS's package manager.
+> [!WARNING]
+> This installation is specifically designed for Arch Linux. If you're running other systems, install the packages with your OS's package manager.
 
 #### WIP
 
 ### :package: <samp>Manual Installation (Universal) </samp>
 
-> :information_source: This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
+> [!WARNING]
+> This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
 
 #### WIP
 
 # :camera: ‎ <samp>Gallery</samp>
 
-> :information_source: For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
+> [!NOTE]
+> For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
 
 | **System Fetch, Pacman Colorscript, App Launcher and Notif. Center** |
 | -------------------------------------------------------------------- |
