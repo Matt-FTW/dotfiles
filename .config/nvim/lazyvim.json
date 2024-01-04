@@ -4,7 +4,6 @@
     "lazyvim.plugins.extras.lang.python-semshi",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.ui.edgy",
-    "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
     "plugins.extras.coding.ai.gpt",
     "plugins.extras.coding.annotation",
@@ -78,6 +77,7 @@
     "plugins.extras.ui.zen-mode",
     "plugins.extras.util.bigfile",
     "plugins.extras.util.discordrcp",
+    "plugins.extras.util.dot-extended",
     "plugins.extras.util.icon-picker",
     "plugins.extras.util.kitty-scrollback",
     "plugins.extras.util.vscode",
@@ -88,4 +88,3 @@
   },
   "version": 2
 }
-
