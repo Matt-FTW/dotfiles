@@ -2,10 +2,18 @@ return {
   "cvigilv/esqueleto.nvim",
   event = "VeryLazy",
   opts = {
-    directories = { vim.fn.stdpath("config") .. "/templates" },
+    directories = {
+      vim.fn.stdpath("config") .. "/templates",
+    },
     patterns = {
-      "LICENSE",
+      -- File
       "README",
+      "LICENSE",
+      -- Filetype
+      "sh",
+      "markdown",
+      "python",
+      "lua",
     },
   },
 }
