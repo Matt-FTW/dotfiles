@@ -1,5 +1,5 @@
 if not vim.g.neovide then
-  return
+  return {}
 end
 
 RefreshGuiFont = function()
@@ -35,3 +35,5 @@ vim.g.neovide_cursor_antialiasing = false
 vim.g.neovide_cursor_vfx_mode = "pixiedust"
 
 vim.opt.winblend = 20
+
+return {}

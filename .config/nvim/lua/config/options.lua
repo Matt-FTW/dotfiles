@@ -3,9 +3,6 @@
 -- Add any additional options here
 local opt = vim.g
 
--- Neovide options
-require("config.neovide")
-
 -- Optimizations on startup
 vim.loader.enable()
 
