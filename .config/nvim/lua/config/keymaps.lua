@@ -64,12 +64,21 @@ map("n", "<a-l>", "$", { desc = "Last character of Line" })
 -- Copy whole text to clipboard
 map("n", "<C-c>", ":%y+<CR>", { desc = "Copy whole text to clipboard", silent = true })
 
+-- Motion
+map("c", "<C-a>", "<C-b>", { desc = "Start Of Line" })
+map("i", "<C-a>", "<Home>", { desc = "Start Of Line" })
+map("i", "<C-e>", "<End>", { desc = "End Of Line" })
+
 -- Select all text
 map("n", "<C-a>", "gg<S-V>G", { desc = "Select all text", silent = true, noremap = true })
 
 -- Paste options
 map("i", "<C-v>", '<C-r>"', { desc = "Paste on insert mode" })
 map("v", "p", '"_dP', { desc = "Paste without overwriting" })
+
+-- Delete and change without yanking
+map({ "n", "x" }, "<A-d>", '"_d', { desc = "Delete without yanking" })
+map({ "n", "x" }, "<A-c>", '"_c', { desc = "Change without yanking" })
 
 -- Deleting without yanking empty line
 map("n", "dd", function()
@@ -162,12 +171,4 @@ if package.loaded["cinnamon"] then
   map({ "n", "x" }, "l", "<Cmd>lua Scroll('l', 0, 1)<CR>")
   map({ "n", "x" }, "<Left>", "<Cmd>lua Scroll('h', 0, 1)<CR>")
   map({ "n", "x" }, "<Right>", "<Cmd>lua Scroll('l', 0, 1)<CR>")
-
-  -- LSP_KEYMAPS:
-
-  -- LSP go-to-definition:
-  map("n", "gd", "<Cmd>lua Scroll('definition')<CR>")
-
-  -- LSP go-to-declaration:
-  map("n", "gD", "<Cmd>lua Scroll('declaration')<CR>")
 end
