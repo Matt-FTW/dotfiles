@@ -276,7 +276,7 @@ Those were the biggest inspiring factor for me, though you can find a lot more o
 
 Part of what makes the open source community special are the contributions. Any contributions will be **highly appreciated!**
 
-If you have any ideas or suggestions to make, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new) or [submit a PR](https://github.com/Matt-FTW/dotfiles/pulls)
+If you have any ideas or suggestions to make, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or [submit a PR](https://github.com/Matt-FTW/dotfiles/pulls)
 
 Please, before submitting a PR or opening an issue, be sure to follow the [contributing guidelines](./CONTRIBUTING.md), as well as the [issues](./ISSUE_TEMPLATE/) and [pull requests](./PULL_REQUEST_TEMPLATE.md) formatting rules.
 
