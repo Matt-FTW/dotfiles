@@ -6,6 +6,8 @@ local Config = require("lazy.core.config")
 local Plugin = require("lazy.core.plugin")
 local vscode = require("vscode-neovim")
 
+local map = vim.keymap.set
+
 -- Add any additional plugins in vscode, you can set vscode=true on a plugin spec.
 local enabled = {
   "flash.nvim",
@@ -19,9 +21,7 @@ local enabled = {
   "nvim-various-textobjs",
   "nvim-ts-context-commentstring",
   "vim-repeat",
-  "yanky.nvim",
   "highlight-undo.nvim",
-  "multicursors.nvim",
   "LazyVim",
 }
 
@@ -46,19 +46,23 @@ vim.api.nvim_create_autocmd("User", {
   pattern = "LazyVimKeymaps",
   callback = function()
     -- find file
-    vim.keymap.set("n", "<leader><space>", "<cmd>Find<cr>")
+    map("n", "<leader><space>", "<cmd>Find<cr>")
     -- find in files
-    vim.keymap.set("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
+    map("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
     -- open symbol
-    vim.keymap.set("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
+    map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
     -- view problems
-    vim.keymap.set("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
+    map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer in left sidebar
-    vim.keymap.set("n", "<leader>e", vscode_action("workbench.view.explorer"))
+    map("n", "<leader>e", vscode_action("workbench.view.explorer"))
     -- Code Action
-    vim.keymap.set("n", "<leader>ca", vscode_action("editor.action.codeAction"))
+    map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     -- Open terminal
-    vim.keymap.set("n", "<leader>ft", vscode_action("workbench.action.terminal.focus"))
+    map("n", "<leader>ft", vscode_action("workbench.action.terminal.focus"))
+    -- LSP actions
+    map("n", "gy", vscode_action("editor.action.goToTypeDefinition"))
+    map("n", "gr", vscode_action("editor.action.goToReferences"))
+    map("n", "gi", vscode_action("editor.action.goToImplementation"))
   end,
 })
 
