@@ -6,7 +6,7 @@ return {
     },
     linters = {
       cspell = {
-        condition = function(ctx)
+        condition = function(self, ctx)
           return vim.fs.find({ "cspell.json" }, { path = ctx.filename, upward = true })[1]
         end,
       },
