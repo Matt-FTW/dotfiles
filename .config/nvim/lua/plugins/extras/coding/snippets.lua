@@ -2,7 +2,6 @@ return {
   {
     "chrisgrieser/nvim-scissors",
     dependencies = {
-      "stevearc/dressing.nvim",
       "rcarriga/nvim-notify",
     },
     opts = {
