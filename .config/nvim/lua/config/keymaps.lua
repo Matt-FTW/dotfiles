@@ -28,6 +28,15 @@ map("n", "-", "<C-x>")
 -- Tabs
 map("n", "]<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "[<tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+map("n", "<leader><tab>1", "<cmd>tabn 1<cr>", { desc = "Tab 1" })
+map("n", "<leader><tab>2", "<cmd>tabn 2<cr>", { desc = "Tab 2" })
+map("n", "<leader><tab>3", "<cmd>tabn 3<cr>", { desc = "Tab 3" })
+map("n", "<leader><tab>4", "<cmd>tabn 4<cr>", { desc = "Tab 4" })
+map("n", "<leader><tab>5", "<cmd>tabn 5<cr>", { desc = "Tab 5" })
+map("n", "<leader><tab>6", "<cmd>tabn 6<cr>", { desc = "Tab 6" })
+map("n", "<leader><tab>7", "<cmd>tabn 7<cr>", { desc = "Tab 7" })
+map("n", "<leader><tab>8", "<cmd>tabn 8<cr>", { desc = "Tab 8" })
+map("n", "<leader><tab>9", "<cmd>tabn 9<cr>", { desc = "Tab 9" })
 
 -- Buffers
 map("n", "<leader>bf", "<cmd>bfirst<cr>", { desc = "First Buffer" })
