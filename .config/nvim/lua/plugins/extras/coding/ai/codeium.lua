@@ -5,7 +5,12 @@ return {
     config = function()
       local opts = { expr = true, silent = true }
 
-      vim.g.codeium_filetypes = { TelescopePrompt = false, DressingInput = false }
+      vim.g.codeium_filetypes = {
+        TelescopePrompt = false,
+        DressingInput = false,
+        ["neo-tree-popup"] = false,
+        ["dap-repl"] = false,
+      }
 
       vim.g.codeium_disable_bindings = 1
 
