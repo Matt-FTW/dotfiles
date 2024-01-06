@@ -38,6 +38,10 @@
       {
         "language": "lua",
         "path": "./languages/lua.json"
+      },
+      {
+        "language": "lua",
+        "path": "./projects/nvim.json"
       }
     ]
   }
