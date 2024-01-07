@@ -26,8 +26,13 @@
     "prefix": "check if file exists"
   },
   "keymap": {
-    "body": "keymap(\"n\", \"${1:lhs}\", \"${2:rhs}\", { desc = \"${3:description}\" })",
+    "body": "map(\"n\", \"${1:lhs}\", \"${2:rhs}\", { desc = \"${3:description}\" })",
     "filetype": "lua",
     "prefix": "keymap"
+  },
+  "notify": {
+    "body": "vim.notify(${1:message}, ${2:level}, { title = \"${3:title}\" })",
+    "filetype": "lua",
+    "prefix": "notify"
   }
 }
