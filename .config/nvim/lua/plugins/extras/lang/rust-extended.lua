@@ -63,6 +63,14 @@ return {
     },
   },
   {
+    "stevearc/conform.nvim",
+    opts = function(_, opts)
+      opts.formatters_by_ft.toml = opts.formatters_by_ft.toml or {}
+      table.insert(opts.formatters_by_ft.toml, "taplo")
+      return opts
+    end,
+  },
+  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     ensure_installed = {
