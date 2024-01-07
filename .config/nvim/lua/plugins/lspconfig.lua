@@ -28,11 +28,12 @@ return {
       keys[#keys + 1] = { "<leader>cil", "<cmd>LspInfo<cr>", desc = "Lsp" }
       keys[#keys + 1] = { "<leader>uv", toggle_diag_virtext, desc = "Toggle Diagnostic VirtualText" }
 
-      keys[#keys + 1] = {
-        "<leader>cll",
-        "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<cr>",
-        desc = "List Folders",
-      }
+      -- stylua: ignore
+      keys[#keys + 1] = { "<leader>cll", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<cr>", desc = "List Workspace" }
+
+      -- stylua: ignore
+      keys[#keys + 1] = { "<leader>clr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", desc = "Remove workspace" }
+      keys[#keys + 1] = { "<leader>cla", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", desc = "Add workspace" }
 
       keys[#keys + 1] = { "<leader>clh", vim.lsp.codelens.run, desc = "Run Code Lens" }
       keys[#keys + 1] = { "<leader>cld", vim.lsp.codelens.refresh, desc = "Refresh Code Lens" }
