@@ -1,6 +1,39 @@
+local inlayHints = {
+  includeInlayParameterNameHints = "all",
+  includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+  includeInlayFunctionParameterTypeHints = true,
+  includeInlayVariableTypeHints = true,
+  includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+  includeInlayPropertyDeclarationTypeHints = true,
+  includeInlayFunctionLikeReturnTypeHints = true,
+  includeInlayEnumMemberValueHints = true,
+}
+
 return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   { import = "lazyvim.plugins.extras.lang.json" },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tsserver = {
+          init_options = {
+            preferences = {
+              disableSuggestions = true,
+            },
+          },
+          settings = {
+            typescript = {
+              inlayHints = inlayHints,
+            },
+            javascript = {
+              inlayHints = inlayHints,
+            },
+          },
+        },
+      },
+    },
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
