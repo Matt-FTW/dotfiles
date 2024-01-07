@@ -593,18 +593,22 @@
 - biome
 - cmakelint
 - credo
+- cspell
 - eslint
 - fish
+- golangcil-lint
 - hadolint
 - markdownlint
 - pylint
 - shellcheck
 - stylelint
 - terraform_validate
+- typos
 - vale
 
 ### Formatters
 
+- biome
 - black
 - csharpier
 - fish_indent
@@ -617,6 +621,8 @@
 - shfmt
 - stylua
 - terraform_fmt
+- trim_newlines
+- trim_whitespace
 
 # :gear: ‎ <samp>Config</samp>
 

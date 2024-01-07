@@ -14,6 +14,7 @@ return {
       "markdown",
       "python",
       "lua",
+      "html",
     },
   },
 }
