@@ -4,19 +4,14 @@
     "enabled": true
   },
   "formatter": {
+    "enabled": true,
     "lineWidth": 120,
     "indentStyle": "space",
     "indentWidth": 2,
     "formatWithErrors": true
   },
   "javascript": {
-    "globals": [
-      "ObjC",
-      "Application",
-      "delay",
-      "Path",
-      "$"
-    ]
+    "globals": ["ObjC", "Application", "delay", "Path", "$"]
   },
   "linter": {
     "enabled": true,
