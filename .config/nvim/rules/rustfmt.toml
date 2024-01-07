@@ -1,0 +1,8 @@
+imports_granularity = "Crate"
+group_imports = "One"
+imports_layout = "Horizontal"
+
+max_width = 120
+
+struct_lit_style = "Block"
+enum_style = "Block"

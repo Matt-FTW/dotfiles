@@ -2,7 +2,7 @@ local M = {}
 
 function M.addWordToDictionary()
   local word = vim.fn.expand("<cword>")
-  local dictionary_path = require("lazyvim.util.root").get() .. "/cspell-tool.txt"
+  local dictionary_path = require("lazyvim.util.root").get() .. "/cspell-dictionary.txt"
 
   -- Append the word to the dictionary file
   local file = io.open(dictionary_path, "a")
