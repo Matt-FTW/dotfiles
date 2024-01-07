@@ -47,6 +47,7 @@
     "plugins.extras.formatting.isort",
     "plugins.extras.formatting.prettier",
     "plugins.extras.formatting.rustfmt",
+    "plugins.extras.formatting.trim_newlines",
     "plugins.extras.formatting.trim_whitespace",
     "plugins.extras.lang.ansible",
     "plugins.extras.lang.bash",
