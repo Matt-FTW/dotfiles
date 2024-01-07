@@ -11,9 +11,8 @@ local searching_brave = [[:lua vim.fn.system({'xdg-open', 'https://search.brave.
 map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search current word on brave search" })
 
 -- Toggle background
-map("n", "<leader>uB", function()
-  Util.toggle("background", false, { "light", "dark" })
-end, { desc = "Toggle Background" })
+-- stylua: ignore
+map("n", "<leader>uB", function() Util.toggle("background", false, { "light", "dark" }) end, { desc = "Toggle Background" })
 
 -- Disable lazyterminal keymap
 map("n", "<leader>fT", "<Nop>")
