@@ -13,7 +13,7 @@ downgrade 11.3.0-1
 duckstation-git r6121.39e62ae9-1
 find-the-command 2.0.1-1
 gzdoom 4.11.3-1
-heroic-games-launcher 2.11.0-1
+heroic-games-launcher 2.12.0-1
 hyprpicker-git 0.1.1.r2.0889bd5-2
 hyprshot 1.2.3-1
 hyprsome-git r24.9636be0-1
