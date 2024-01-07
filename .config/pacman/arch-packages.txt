@@ -23,7 +23,7 @@ clamtk 6.14-1
 cliphist 1:0.4.0-2
 cpupower 6.6-1
 dbeaver 23.3.1-1
-deno 1.39.1-1
+deno 1.39.2-1
 dialog 1:1.3_20231002-1
 dictd 1.13.1-5
 diff-so-fancy 1.4.4-2
@@ -137,9 +137,9 @@ plocate 1.1.20-1
 polkit-gnome 0.105-10
 python-cairo 1.25.1-1
 python-pip 23.3.2-1
-python-pipx 1.3.3-2
-qemu-base 8.2.0-1
-qemu-emulators-full 8.2.0-1
+python-pipx 1.4.1-1
+qemu-base 8.2.0-2
+qemu-emulators-full 8.2.0-2
 qpwgraph 0.6.1-1
 qt5-graphicaleffects 5.15.12-1
 qt5-quickcontrols 5.15.12-1
