@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json",
+  "blanks-around-headings": {
+    "lines_below": 0
+  },
+  "ul-style": {
+    "style": "sublist"
+  },
+  "ol-prefix": {
+    "style": "ordered"
+  },
+  "line-length": {
+    "tables": false,
+    "code_blocks": false
+  },
+  "no-inline-html": {
+    "allowed_elements": ["div", "img", "details", "summary", "kbd", "a", "br"]
+  },
+  "ul-indent": false,
+  "no-hard-tabs": false,
+  "blanks-around-lists": false,
+  "first-line-heading": false
+}
