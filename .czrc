@@ -31,32 +31,27 @@
     { "name": "webpack", "description": "Webpack configuration" }
   ],
   "types": [
-    { "value": "✨ feat", "name": "✨ feat:     Add a new feature" },
-    { "value": "🐛 fix", "name": "🐛 fix:      Fix a bug" },
-    { "value": "📚 docs", "name": "📚 docs:     Documentation changes" },
-    { "value": "💄 style", "name": "💄 style:    Code style changes" },
-    { "value": "♻️ refactor", "name": "♻️ refactor: Code refactoring" },
-    { "value": "🧪 test", "name": "🧪 test:     Add or modify tests" },
-    {
-      "value": "🔧 chore",
-      "name": "🔧 chore:    Maintenance tasks or non-code changes"
-    },
-    { "value": "🚀 perf", "name": "🚀 perf:     Performance improvements" },
-    { "value": "⬆️ deps", "name": "⬆️ deps:     Update dependencies" },
-    { "value": "🗑️ remove", "name": "🗑️ remove:   Remove obsolete code" },
-    { "value": "💬 comments", "name": "💬 comments: Add comments to the code" },
-    { "value": "🚨 error", "name": "🚨 error:    Handle errors or warnings" },
-    { "value": "🎨 ux", "name": "🎨 ux:       Improve user experience" },
-    {
-      "value": "⚙️ config",
-      "name": "⚙️ config:   Changes in project configuration"
-    },
-    {
-      "value": "📁 files",
-      "name": "📁 files:    Changes in files or directories"
-    },
-    { "value": "🔀 merge", "name": "🔀 merge:   Merge branch or pull request" }
+    { "value": "feat", "name": "✨ feat:     Add a new feature", "emoji": "✨" },
+    { "value": "fix", "name": "🐛 fix:      Fix a bug", "emoji": "🐛" },
+    { "value": "docs", "name": "📚 docs:     Documentation changes", "emoji": "📚" },
+    { "value": "style", "name": "💄 style:    Code style changes", "emoji": "💄" },
+    { "value": "refactor", "name": "♻️ refactor: Code refactoring", "emoji": "♻️" },
+    { "value": "test", "name": "🧪 test:     Add or modify tests", "emoji": "🧪" },
+    { "value": "chore", "name": "🔧 chore:    Maintenance tasks or non-code changes", "emoji": "🔧" },
+    { "value": "perf", "name": "🚀 perf:     Performance improvements", "emoji": "🚀" },
+    { "value": "deps", "name": "📦️ deps:     Update dependencies", "emoji": "📦️" },
+    { "value": "security", "name": "🛡 security:     Address security vulnerabilities", "emoji": "🛡" },
+    { "value": "remove", "name": "🗑️ remove:   Remove obsolete code", "emoji": "🗑️" },
+    { "value": "comments", "name": "💬 comments: Add comments to the code", "emoji": "💬" },
+    { "value": "error", "name": "🚨 error:    Handle errors or warnings", "emoji": "🚨" },
+    { "value": "ux", "name": "🎨 ux:       Improve user experience", "emoji": "🎨" },
+    { "value": "config", "name": "⚙️ config:   Changes in project configuration", "emoji": "⚙️" },
+    { "value": "files", "name": "📁 files:    Changes in files or directories", "emoji": "📁" },
+    { "value": "merge", "name": "🔀 merge:   Merge branch or pull request", "emoji": "🔀" },
+    { "value": "revert", "name": "⏪️ revert:     Reverts a previous commit", "emoji": "⏪️" },
+    { "value": "init", "name": "⭐ init:     Initialize project", "emoji": "⭐" }
+
   ],
-  "allowCustomScopes": true,
-  "allowBreakingChanges": ["✨ feat", "🐛 fix"]
+  "useEmoji": true,
+  "emojiAlign": "left"
 }

@@ -1,6 +1,18 @@
 return {
   {
     "cljoly/telescope-repo.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      {
+        "airblade/vim-rooter",
+        init = function()
+          vim.g["rooter_cd_cmd"] = "lcd"
+          vim.g["rooter_silent_chdir"] = 1
+        end,
+      },
+      { "nvim-telescope/telescope.nvim" },
+      { "nvim-lua/plenary.nvim" },
+    },
     opts = {},
     config = function()
       require("lazyvim.util").on_load("telescope.nvim", function()
@@ -12,7 +24,7 @@ return {
                   "--no-ignore-vcs",
                 },
                 search_dirs = {
-                  "~/Repos",
+                  "~/Repos/",
                 },
               },
             },
@@ -31,7 +43,7 @@ return {
     "goolord/alpha-nvim",
     optional = true,
     opts = function(_, dashboard)
-      local button = dashboard.button("p", " " .. " Projects/Repos", "<cmd>Telescope repo list <CR>")
+      local button = dashboard.button("r", " " .. " Repos", "<cmd>Telescope repo list<CR>")
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 4, button)
@@ -43,9 +55,9 @@ return {
     opts = function(_, opts)
       local projects = {
         action = "Telescope repo list",
-        desc = " Projects/Repos",
+        desc = " Repos",
         icon = " ",
-        key = "p",
+        key = "r",
       }
 
       projects.desc = projects.desc .. string.rep(" ", 43 - #projects.desc)
@@ -53,9 +65,5 @@ return {
 
       table.insert(opts.config.center, 4, projects)
     end,
-  },
-  {
-    "airblade/vim-rooter",
-    event = "VeryLazy",
   },
 }

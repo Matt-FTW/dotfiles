@@ -1,4 +1,4 @@
-- name: Progress
+- name: Progress 󰦖
   keybinds:
     - name: Play/Pause
       key: Space
@@ -23,7 +23,7 @@
     - name: Backward 60s
       key: Ctrl + Shift + H / Ctrl + Shift + Left
 
-- name: Volume
+- name: Volume 
   keybinds:
     - name: Increase (5%)
       key: Alt + K / Alt + Up

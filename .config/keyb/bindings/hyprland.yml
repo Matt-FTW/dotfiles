@@ -1,4 +1,4 @@
-- name: Window Management
+- name: Window Management 
   keybinds:
     - name: Move Window
       key: Win + Mouse Left Button
@@ -29,14 +29,14 @@
     - name: Toggle Listing Windows
       key: Win + Shift + \
 
-- name: Group Management
+- name: Group Management 
   keybinds:
     - name: Toggle Group
       key: Win + G
     - name: Change Active Group
       key: Alt + Tab
 
-- name: Workspace Management
+- name: Workspace Management 󱁐
   keybinds:
     - name: Moving to a specific Workspace
       key: Win + 1-10
@@ -49,7 +49,7 @@
     - name: Moving to the next Worskpace (Keyboard)
       key: Ctrl + Win + Left Key / Right Key
 
-- name: Apps
+- name: Apps 󰙵
   keybinds:
     - name: Launch Browser
       key: Win + W
@@ -68,7 +68,7 @@
     - name: Open Launcher
       key: Win + TAB
 
-- name: Pickers
+- name: Pickers 󰒉
   keybinds:
     - name: Color Picker
       key: Win + Insert
@@ -83,7 +83,7 @@
     - name: Keybindings Picker
       key: Win + F1
 
-- name: Scratchpads
+- name: Scratchpads 󰓩
   keybinds:
     - name: Toggle File Manager
       key: Win + Enter
@@ -100,7 +100,7 @@
     - name: Toggle Pavucontrol
       key: Win + V
 
-- name: Audio
+- name: Audio 
   keybinds:
     - name: Play-Pause Song
       key: Ctrl + Win + Mouse Extra Middle Button
@@ -123,7 +123,7 @@
     - name: Input Volume Down
       key: Win + Shift + Minus Sign
 
-- name: Screenshots
+- name: Screenshots 󰹑
   keybinds:
     - name: Screenshoot Tool (Output)
       key: Shift + Insert
@@ -132,7 +132,7 @@
     - name: Screenshoot Tool (Window)
       key: Win + Shift + Insert
 
-- name: Misc
+- name: Misc 
   keybinds:
     - name: Restart Waybar
       key: Ctrl + Win + R

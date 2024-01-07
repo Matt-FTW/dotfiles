@@ -1,0 +1,38 @@
+{
+  "autocmd": {
+    "body": [
+      "vim.api.nvim_create_autocmd(\"${1:event}\", {",
+      "\tcallback = function()",
+      "\t\t$0",
+      "\tend,",
+      "})"
+    ],
+    "prefix": "autocmd"
+  },
+  "autocmd (Filetype)": {
+    "body": [
+      "vim.api.nvim_create_autocmd(\"FileType\", {",
+      "\tpattern = \"${1:ft}\",",
+      "\tcallback = function()",
+      "\t\t$0",
+      "\tend,",
+      "})"
+    ],
+    "filetype": "lua",
+    "prefix": "autocmd (Filetype)"
+  },
+  "check if file exists": {
+    "body": "local fileExists = vim.loop.fs_stat(\"${1:filepath}\") ~= nil",
+    "prefix": "check if file exists"
+  },
+  "keymap": {
+    "body": "map(\"n\", \"${1:lhs}\", \"${2:rhs}\", { desc = \"${3:description}\" })",
+    "filetype": "lua",
+    "prefix": "keymap"
+  },
+  "notify": {
+    "body": "vim.notify(${1:message}, ${2:level}, { title = \"${3:title}\" })",
+    "filetype": "lua",
+    "prefix": "notify"
+  }
+}

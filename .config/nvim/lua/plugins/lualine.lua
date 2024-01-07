@@ -4,6 +4,7 @@ return {
     opts.options.component_separators = { left = "", right = "" }
     opts.options.section_separators = { left = "", right = "" }
 
+    table.remove(opts.sections.lualine_x, 1)
     opts.sections.lualine_a = { { "mode", icon = "" } }
     opts.sections.lualine_y = { { "progress", icon = "", separator = " ", padding = { left = 1, right = 1 } } }
     opts.sections.lualine_z = { { "location", icon = "", padding = { left = 1, right = 1 } } }

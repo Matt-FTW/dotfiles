@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Spotdl Sync Weekly
+
+[Timer]
+OnCalendar=Sun 18:00:00
+Persistent=true
+Unit=downloadSpotify.service
+
+[Install]
+WantedBy=timers.target

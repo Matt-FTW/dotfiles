@@ -1,0 +1,10 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 2,
+    "selector-pseudo-element-colon-notation": "double",
+    "declaration-block-trailing-semicolon": "always",
+    "no-empty-source": null,
+    "color-hex-case": "lower"
+  }
+}

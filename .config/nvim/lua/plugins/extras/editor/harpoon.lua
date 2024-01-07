@@ -1,27 +1,49 @@
 return {
   {
     "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
     --stylua: ignore
     keys = {
-      { "<leader>fa", function() require("harpoon.mark").add_file() end, desc = "Add File to Harpoon" },
-      { "<leader>fm", "<cmd>Telescope harpoon marks<CR>", desc = "Marks" },
-      { "<leader>1", function() require("harpoon.ui").nav_file(1) end, desc = "File 1" },
-      { "<leader>2", function() require("harpoon.ui").nav_file(2) end, desc = "File 2" },
-      { "<leader>3", function() require("harpoon.ui").nav_file(3) end, desc = "File 3" },
-      { "<leader>4", function() require("harpoon.ui").nav_file(4) end, desc = "File 4" },
-      { "<leader>5", function() require("harpoon.ui").nav_file(5) end, desc = "File 5" },
-      { "<leader>6", function() require("harpoon.ui").nav_file(6) end, desc = "File 6" },
-      { "<leader>7", function() require("harpoon.ui").nav_file(7) end, desc = "File 7" },
-      { "<leader>8", function() require("harpoon.ui").nav_file(8) end, desc = "File 8" },
-      { "<leader>9", function() require("harpoon.ui").nav_file(9) end, desc = "File 9" },
-    },
-    opts = {
-      globalsettings = {
-        save_on_toggle = true,
-        enter_on_sendcmd = true,
-      },
+      { "<leader>ha", function() require("harpoon"):list():append() end, desc = "Add Mark" },
+      { "<leader>hh", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Menu" },
+      { "<leader>hf", "<cmd>Telescope harpoon marks<CR>", desc = "Files" },
+      { "<leader>h1", function() require("harpoon"):list():select(1) end, desc = "File 1" },
+      { "<leader>h2", function() require("harpoon"):list():select(2) end, desc = "File 2" },
+      { "<leader>h3", function() require("harpoon"):list():select(3) end, desc = "File 3" },
+      { "<leader>h4", function() require("harpoon"):list():select(4) end, desc = "File 4" },
+      { "<leader>h5", function() require("harpoon"):list():select(5) end, desc = "File 5" },
+      { "<leader>h6", function() require("harpoon"):list():select(6) end, desc = "File 6" },
+      { "<leader>h7", function() require("harpoon"):list():select(7) end, desc = "File 7" },
+      { "<leader>h8", function() require("harpoon"):list():select(8) end, desc = "File 8" },
+      { "<leader>h9", function() require("harpoon"):list():select(9) end, desc = "File 9" },
+      { "]H", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" },
+      { "[H", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" },
+      { "<M-]>", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" },
+      { "<M-[>", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" },
     },
     config = function()
+      local harpoon = require("harpoon")
+      harpoon:setup({})
+
+      harpoon:extend({
+        UI_CREATE = function(cx)
+          vim.keymap.set("n", "<C-v>", function()
+            harpoon.ui:select_menu_item({ vsplit = true })
+          end, { buffer = cx.bufnr })
+
+          vim.keymap.set("n", "<C-x>", function()
+            harpoon.ui:select_menu_item({ split = true })
+          end, { buffer = cx.bufnr })
+
+          vim.keymap.set("n", "<C-t>", function()
+            harpoon.ui:select_menu_item({ tabedit = true })
+          end, { buffer = cx.bufnr })
+        end,
+      })
+
       require("lazyvim.util").on_load("telescope.nvim", function()
         require("telescope").load_extension("harpoon")
       end)
@@ -31,7 +53,7 @@ return {
     "goolord/alpha-nvim",
     optional = true,
     opts = function(_, dashboard)
-      local button = dashboard.button("m", " " .. " Marks", "<cmd>Telescope harpoon marks<CR>")
+      local button = dashboard.button("h", "󱌧 " .. " Harpoon", "<cmd>Telescope harpoon marks<CR>")
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 5, button)
@@ -43,9 +65,9 @@ return {
     opts = function(_, opts)
       local harpoon = {
         action = "Telescope harpoon marks",
-        desc = " Marks",
-        icon = " ",
-        key = "m",
+        desc = " Harpoon",
+        icon = "󱌧 ",
+        key = "h",
       }
 
       harpoon.desc = harpoon.desc .. string.rep(" ", 43 - #harpoon.desc)
@@ -53,5 +75,13 @@ return {
 
       table.insert(opts.config.center, 5, harpoon)
     end,
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>h"] = { name = "󱌧 harpoon" },
+      },
+    },
   },
 }

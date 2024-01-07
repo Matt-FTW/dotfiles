@@ -12,7 +12,6 @@
       - polkit-gnome
       - clamtk
       - qt5ct
-      - dex
       - reflector
       - ufw
       - xdg-user-dirs
@@ -67,7 +66,6 @@
       - nvtop
       - duf
       - dua-cli
-      - neofetch
       - ripgrep
       - ripgrep-all
       - sd
@@ -164,4 +162,5 @@
 
       # Theme
       - catppuccin-gtk-theme-macchiato
+      - catppuccin-cursors-macchiato
       - ttf-ms-win11-auto

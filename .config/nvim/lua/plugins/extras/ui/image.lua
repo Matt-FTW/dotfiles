@@ -1,6 +1,3 @@
-package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
-package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
-
 return {
   {
     "edluffy/hologram.nvim", -- TODO: Need to investigate this
@@ -12,6 +9,10 @@ return {
   {
     "3rd/image.nvim",
     event = "LazyFile",
+    init = function()
+      package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
+      package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
+    end,
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     opts = {
       backend = "kitty",

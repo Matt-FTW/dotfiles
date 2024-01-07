@@ -6,5 +6,6 @@ return {
     extra_keymaps = true,
     extended_keymaps = true,
     override_keymaps = true,
+    default_delay = 3,
   },
 }

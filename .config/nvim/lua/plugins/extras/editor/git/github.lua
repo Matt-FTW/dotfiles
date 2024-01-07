@@ -2,6 +2,13 @@ local prefix = "<leader>G"
 
 return {
   {
+    "williamboman/mason.nvim",
+    opts = function(_, opts)
+      opts.ensure_installed = opts.ensure_installed or {}
+      vim.list_extend(opts.ensure_installed, { "gh" })
+    end,
+  },
+  {
     "almo7aya/openingh.nvim",
     cmd = { "OpenInGHRepo", "OpenInGHFile", "OpenInGHFileLines" },
     keys = {
@@ -15,16 +22,16 @@ return {
     opts = {
       defaults = {
         ["<leader>G"] = { name = " github" },
-        ["<leader>Gc"] = { name = "+comments" },
-        ["<leader>Gt"] = { name = "+threads" },
-        ["<leader>Gi"] = { name = "+issues" },
-        ["<leader>Gp"] = { name = "+pull requests" },
-        ["<leader>Gpm"] = { name = "+merge current PR" },
-        ["<leader>Gr"] = { name = "+repo" },
-        ["<leader>Ga"] = { name = "+assignee/reviewer" },
-        ["<leader>Gl"] = { name = "+label" },
-        ["<leader>Ge"] = { name = "+reaction" },
-        ["<leader>GR"] = { name = "+review" },
+        ["<leader>Gc"] = { name = "comments" },
+        ["<leader>Gt"] = { name = "threads" },
+        ["<leader>Gi"] = { name = "issues" },
+        ["<leader>Gp"] = { name = "pull requests" },
+        ["<leader>Gpm"] = { name = "merge current PR" },
+        ["<leader>Gr"] = { name = "repo" },
+        ["<leader>Ga"] = { name = "assignee/reviewer" },
+        ["<leader>Gl"] = { name = "label" },
+        ["<leader>Ge"] = { name = "reaction" },
+        ["<leader>GR"] = { name = "review" },
       },
     },
   },

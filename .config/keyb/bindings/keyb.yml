@@ -1,4 +1,4 @@
-- name: Movement
+- name: Movement 󰆾
   keybinds:
     - name: Each Entry
       key: Arrow Keys / Vim Navigation Keys
@@ -21,7 +21,7 @@
     - name: Middle
       key: M
 
-- name: Search
+- name: Search 
   keybinds:
     - name: Search
       key: Enter

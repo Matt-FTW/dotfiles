@@ -18,4 +18,7 @@ return {
     opts.config.header = vim.split(logo, "\n")
     return opts
   end,
+  keys = {
+    { "<leader>fd", "<cmd>Dash<cr>", desc = "Dashboard" },
+  },
 }

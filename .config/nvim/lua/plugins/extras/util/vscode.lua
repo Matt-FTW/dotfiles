@@ -2,7 +2,11 @@ if not vim.g.vscode then
   return {}
 end
 
-vim.o.spell = false
+local Config = require("lazy.core.config")
+local Plugin = require("lazy.core.plugin")
+local vscode = require("vscode-neovim")
+
+local map = vim.keymap.set
 
 -- Add any additional plugins in vscode, you can set vscode=true on a plugin spec.
 local enabled = {
@@ -14,17 +18,27 @@ local enabled = {
   "mini.surround",
   "nvim-treesitter",
   "nvim-treesitter-textobjects",
+  "nvim-various-textobjs",
   "nvim-ts-context-commentstring",
   "vim-repeat",
+  "highlight-undo.nvim",
   "LazyVim",
 }
 
-local Config = require("lazy.core.config")
-local Plugin = require("lazy.core.plugin")
 Config.options.checker.enabled = false
 Config.options.change_detection.enabled = false
 Config.options.defaults.cond = function(plugin)
   return vim.tbl_contains(enabled, plugin.name) or plugin.vscode
+end
+
+vim.o.spell = false
+vim.notify = vscode.notify
+vim.g.clipboard = vim.g.vscode_clipboard
+
+local function vscode_action(cmd)
+  return function()
+    vscode.action(cmd)
+  end
 end
 
 -- Add some vscode specific keymaps
@@ -32,19 +46,23 @@ vim.api.nvim_create_autocmd("User", {
   pattern = "LazyVimKeymaps",
   callback = function()
     -- find file
-    vim.keymap.set("n", "<leader><space>", "<cmd>Find<cr>")
+    map("n", "<leader><space>", "<cmd>Find<cr>")
     -- find in files
-    vim.keymap.set("n", "<leader>/", [[<cmd>call VSCodeNotify('workbench.action.findInFiles')<cr>]])
+    map("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
     -- open symbol
-    vim.keymap.set("n", "<leader>ss", [[<cmd>call VSCodeNotify('workbench.action.gotoSymbol')<cr>]])
-    -- view problem
-    vim.keymap.set("n", "<leader>xx", [[<cmd>call VSCodeNotify('workbench.actions.view.problems')<cr>]])
+    map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
+    -- view problems
+    map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer in left sidebar
-    vim.keymap.set("n", "<leader>e", [[<cmd>call VSCodeNotify('workbench.view.explorer')<cr>]])
+    map("n", "<leader>e", vscode_action("workbench.view.explorer"))
     -- Code Action
-    vim.keymap.set("n", "<leader>ca", [[<cmd>call VSCodeNotify('editor.action.codeAction')<cr>]])
+    map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     -- Open terminal
-    vim.keymap.set("n", "<leader>ft", [[<cmd>call VSCodeNotify('workbench.action.terminal.focus')<cr>]])
+    map("n", "<leader>ft", vscode_action("workbench.action.terminal.focus"))
+    -- LSP actions
+    map("n", "gy", vscode_action("editor.action.goToTypeDefinition"))
+    map("n", "gr", vscode_action("editor.action.goToReferences"))
+    map("n", "gi", vscode_action("editor.action.goToImplementation"))
   end,
 })
 
@@ -60,6 +78,10 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = { highlight = { enable = false } },
+    opts = {
+      highlight = {
+        enable = false,
+      },
+    },
   },
 }

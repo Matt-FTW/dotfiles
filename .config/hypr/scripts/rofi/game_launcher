@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+# Script taken out from here: https://github.com/prasanthrangan/hyprdots/blob/main/Configs/.config/hypr/scripts/gamelauncher.sh
+
+STEAM_LIB="$XDG_DATA_HOME/Steam/config/libraryfolders.vdf"
+STEAM_THUMB="$XDG_DATA_HOME/Steam/appcache/librarycache"
+
+if [ ! -f $STEAM_LIB ] || [ ! -d $STEAM_THUMB ]; then
+	notify-send "Steam Library Not Found!"
+fi
+
+# Check steam mount paths
+STEAM_PATHS=$(grep '"path"' "$STEAM_LIB" | awk -F '"' '{print $4}')
+MANIFEST_LIST=$(fd -t f -e acf appmanifest_ $STEAM_PATHS/steamapps/ 2>/dev/null)
+
+# Read intalled games
+GAME_LIST=$(echo "$MANIFEST_LIST" | while read acf; do
+	appid=$(grep '"appid"' $acf | cut -d '"' -f 4)
+	if [ -f ${STEAM_THUMB}/${appid}_library_600x900.jpg ]; then
+		game=$(grep '"name"' $acf | cut -d '"' -f 4)
+		echo "$game|$appid"
+	else
+		continue
+	fi
+done | sort)
+
+echo "$GAME_LIST"
+
+# Launch rofi menu
+ROFI_SEL=$(echo "$GAME_LIST" | while read acf; do
+	appid=$(echo $acf | cut -d '|' -f 2)
+	game=$(echo $acf | cut -d '|' -f 1)
+	echo -en "$game\x00icon\x1f${STEAM_THUMB}/${appid}_library_600x900.jpg\n"
+done | rofi -dmenu)
+
+# Launch game
+if [ ! -z "$ROFI_SEL" ]; then
+	LAUNCHID=$(echo "$GAME_LIST" | grep "$ROFI_SEL" | cut -d '|' -f 2)
+	steam -applaunch "${LAUNCHID}" &
+	notify-send "Launching ${ROFI_SEL}..." -i ${STEAM_THUMB}/${LAUNCHID}_library_600x900.jpg
+fi

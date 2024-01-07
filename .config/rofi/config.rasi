@@ -2,9 +2,9 @@ configuration {
 	/*---------- General setting ----------*/
 	modi: "drun,run,file-browser-extended";
 	case-sensitive: false;
-	cycle: true;
+	cycle: false;
 	filter: "";
-	scroll-method: 0;
+	scroll-method: 1;
 	normalize-match: true;
 	show-icons: true;
 	icon-theme: "Catppuccin-SE";
@@ -68,7 +68,6 @@ configuration {
 
 	/*---------- Misc setting ----------*/
 	terminal: "rofi-sensible-terminal";
-	font: "Mono 12";
 	sort: false;
 	threads: 0;
 	click-to-exit: true;

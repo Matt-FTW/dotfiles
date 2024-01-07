@@ -1,6 +1,5 @@
 return {
   "folke/flash.nvim",
-  optional = true,
   keys = {
     -- stylua: ignore
     {

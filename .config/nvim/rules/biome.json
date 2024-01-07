@@ -1,0 +1,22 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "enabled": true,
+    "lineWidth": 120,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "formatWithErrors": true
+  },
+  "javascript": {
+    "globals": ["ObjC", "Application", "delay", "Path", "$"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true
+    }
+  }
+}

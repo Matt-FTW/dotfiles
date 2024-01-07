@@ -23,6 +23,18 @@ return {
     end,
   },
   {
+    "nvim-neotest/neotest",
+    optional = true,
+    dependencies = {
+      "rcasia/neotest-bash",
+    },
+    opts = {
+      adapters = {
+        ["neotest-bash"] = {},
+      },
+    },
+  },
+  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     ensure_installed = {

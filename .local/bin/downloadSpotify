@@ -1,0 +1,31 @@
+#!/bin/bash
+
+notify() {
+	notify-send "Spotdl Sync" "$1" --icon=spotify --app-name=spotify
+}
+
+if ! command -v spotdl &>/dev/null; then
+	notify "Error: spotdl is not installed"
+	exit 1
+fi
+
+FOLDERS=(
+	"EDM-House"
+	"Metal-Rock"
+	"Synth-Chill"
+	"Lofi-Sleppy"
+	"Space-Cyberpunk"
+	"Cyberpunk-Darksynth"
+)
+
+notify "Started syncing..."
+
+for FOLDER in "${FOLDERS[@]}"; do
+	cd "$HOME/Musica/Listen-To/$FOLDER" || continue
+
+	spotdl sync "${FOLDER,,}.sync.spotdl"
+
+	notify "$FOLDER synced"
+done
+
+notify "Spotdl Sync Complete"

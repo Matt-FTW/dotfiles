@@ -1,4 +1,4 @@
-- name: Basic
+- name: Basic 󰪵
   keybinds:
     - name: New Playlist
       key: Ctrl + N
@@ -11,7 +11,7 @@
     - name: Search on Library
       key: Ctrl + Alt + F
 
-- name: Reproduction
+- name: Reproduction 󰐎
   keybinds:
     - name: Play-Pause
       key: Space
@@ -26,7 +26,7 @@
     - name: Next Song
       key: Ctrl + Right Arrow
 
-- name: Navigation
+- name: Navigation 󰎐
   keybinds:
     - name: Home
       key: Alt + Shift + H
@@ -46,3 +46,4 @@
       key: Alt + Shift + 3
     - name: My Albums
       key: Alt + Shift + 4
+

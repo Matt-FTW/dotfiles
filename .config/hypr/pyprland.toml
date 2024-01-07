@@ -10,6 +10,7 @@ lazy = true
 [scratchpads.terminal]
 command = "kitty --class scratchpad"
 excludes = ["dots"]
+lazy = true
 
 [scratchpads.yazi]
 command = "kitty --class scratchpad yazi"

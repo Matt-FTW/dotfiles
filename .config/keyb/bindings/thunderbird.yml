@@ -1,4 +1,4 @@
-- name: Message Functions
+- name: Message Functions 󰍡
   keybinds:
     - name: New Message
       key: Ctrl + N
@@ -23,7 +23,7 @@
     - name: Collapse Thread
       key: Left Arrow Key
     - name: Expand All Threads
-      key: '*'
+      key: "*"
     - name: Collapse All Threads
       key: '\'
     - name: Save Message
@@ -43,7 +43,7 @@
     - name: Toggle Star
       key: S
 
-- name: Search and Filter
+- name: Search and Filter 
   keybinds:
     - name: Search all Messages
       key: Ctrl + K
@@ -52,7 +52,7 @@
     - name: Find Text in Message
       key: Ctrl + F
 
-- name: Moving
+- name: Moving 
   keybinds:
     - name: Startpage
       key: Alt + Home
@@ -75,7 +75,7 @@
     - name: Close Window or Tab
       key: Ctrl + W
 
-- name: Calendar
+- name: Calendar 
   keybinds:
     - name: Toggle Today Pane
       key: F11
@@ -84,6 +84,7 @@
     - name: Go to Today
       key: Alt + End
     - name: Go to Next Day
-      key: ']'
+      key: "]"
     - name: Go to Previous Day
-      key: '['
+      key: "["
+

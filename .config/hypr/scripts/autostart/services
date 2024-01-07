@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Variables
+config=$HOME/.config/hypr
+scripts=$config/scripts
+
+# Plugins
+pypr &
+
+# Notification Daemon
+swaync &
+
+# Wallpaper Backend
+swww init
+"$scripts"/wallpaper random &
+
+# Bar
+waybar &
+
+# OSD Window
+swayosd-server &
+
+# Automounter for removable media
+udiskie &
+
+# Notify about devices connecting and disconnecting
+devify &
+
+# Idle daemon to screen lock
+swayidle &
+
+# Clipboard
+wl-clip-persist --clipboard regular &
+wl-paste --watch cliphist store &
+
+# Polkit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Screen sharing and portals
+"$scripts"/launch_portals &
+xwaylandvideobridge &
+
+# Audio
+easyeffects --gapplication-service &

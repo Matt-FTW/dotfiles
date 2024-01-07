@@ -1,0 +1,36 @@
+name: "💡 Feature Request"
+description: Suggest a new feature request
+title: "💡 [REQUEST] - <title>"
+labels: ["enhancement"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Did you check existing feature request?
+      description: Make sure you checked all of the below before submitting a request to avoid duplicates
+      options:
+        - label: I have searched the existing requests of the repo
+          required: true
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear description of what the problem is.
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear description of what you want to happen.
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear description of any alternative solutions or features you've considered. Here you can include pull request links if needed.
+  - type: textarea
+    validations:
+      required: false
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here. Here you can include issue links if needed.

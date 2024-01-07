@@ -1,4 +1,6 @@
 return {
+  { import = "pugins.extras.lang.web.typescript-extended" },
+  { import = "plugins.extras.lang.web.html-css" },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)

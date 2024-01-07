@@ -1,4 +1,4 @@
-- name: General
+- name: General 󰪵
   keybinds:
     - name: New Note
       key: Ctrl + N
@@ -9,7 +9,7 @@
     - name: Open Command Palette
       key: Ctrl + Shift + P
 
-- name: Tabs and Views
+- name: Tabs and Views 󰓩
   keybinds:
     - name: New Tab
       key: Ctrl + T
@@ -36,7 +36,7 @@
     - name: Toggle Right Sidebar
       key: Ctrl + Shift + ç
 
-- name: Searching
+- name: Searching 
   keybinds:
     - name: Search Text in Current Note
       key: Ctrl + F
@@ -45,7 +45,7 @@
     - name: Search Notes
       key: Ctrl + P
 
-- name: Formatting
+- name: Formatting 󰛖
   keybinds:
     - name: Toggle Bold
       key: Control + B
@@ -63,3 +63,4 @@
       key: Control + C
     - name: Paste
       key: Control + V
+

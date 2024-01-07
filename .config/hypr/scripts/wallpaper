@@ -26,4 +26,4 @@ swww img "$IMAGE" \
 	--transition-duration 2 \
 	--transition-fps 75
 
-notify-send "Wallpaper Changed" "Wallpaper changed to $IMAGE"
+notify-send "Wallpaper Changed" -i "$IMAGE"

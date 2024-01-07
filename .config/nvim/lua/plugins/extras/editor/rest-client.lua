@@ -60,7 +60,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>th"] = { name = "+http" },
+        ["<leader>th"] = { name = "http" },
       },
     },
   },

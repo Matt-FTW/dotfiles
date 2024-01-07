@@ -2,7 +2,6 @@
 Description=Timer to change the wallpaper each 1 hours
 
 [Timer]
-OnBootSec=0min
 OnCalendar=0/1:00:00
 Unit=change_wallpaper.service
 

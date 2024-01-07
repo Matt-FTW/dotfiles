@@ -86,26 +86,13 @@ return {
       { "<leader>Ct", "<cmd>ChatGPTRun translate<CR>", desc = "Translate", mode = { "n", "v" } },
       { "<leader>Ck", "<cmd>ChatGPTRun keywords<CR>", desc = "Keywords", mode = { "n", "v" } },
       { "<leader>Cd", "<cmd>ChatGPTRun docstring<CR>", desc = "Docstring", mode = { "n", "v" } },
-      { "<leader>Ca", "<cmd>ChatGPTRun add_tests<CR>", desc = "Add Tests", mode = { "n", "v" } },
+      { "<leader>CT", "<cmd>ChatGPTRun add_tests<CR>", desc = "Add Tests", mode = { "n", "v" } },
       { "<leader>Co", "<cmd>ChatGPTRun optimize_code<CR>", desc = "Optimize Code", mode = { "n", "v" } },
       { "<leader>Cs", "<cmd>ChatGPTRun summarize<CR>", desc = "Summarize", mode = { "n", "v" } },
       { "<leader>Cf", "<cmd>ChatGPTRun fix_bugs<CR>", desc = "Fix Bugs", mode = { "n", "v" } },
       { "<leader>Cx", "<cmd>ChatGPTRun explain_code<CR>", desc = "Explain Code", mode = { "n", "v" } },
       { "<leader>Cr", "<cmd>ChatGPTRun roxygen_edit<CR>", desc = "Roxygen Edit", mode = { "n", "v" } },
-      {
-        "<leader>Cl",
-        "<cmd>ChatGPTRun code_readability_analysis<CR>",
-        desc = "Code Readability Analysis",
-        mode = { "n", "v" },
-      },
-    },
-  },
-  {
-    "voldikss/vim-floaterm",
-    optional = true,
-    -- stylua: ignore
-    keys = {
-      { "<leader>CT", "<cmd>FloatermNew --name=gpt --opener=edit --titleposition=center --width=0.85 --height=0.85 gpt -m<CR>", desc = "Terminal GPT" },
+      { "<leader>Cl", "<cmd>ChatGPTRun code_readability_analysis<CR>", desc = "Code Readability Analysis", mode = { "n", "v" },  },
     },
   },
   {

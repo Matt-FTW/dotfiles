@@ -8,7 +8,7 @@ return {
     -- stylua: ignore
     keys = {
       { "<leader>ad", function() require("neogen").generate() end, desc = "Default Annotation" },
-      { "<leader>ac", function() require("neogen").generate({ type = "class" }) end, desc = "Class" },
+      { "<leader>aC", function() require("neogen").generate({ type = "class" }) end, desc = "Class" },
       { "<leader>af", function() require("neogen").generate({ type = "func" }) end, desc = "Function" },
       { "<leader>at", function() require("neogen").generate({ type = "type" }) end, desc = "Type" },
       { "<leader>aF", function() require("neogen").generate({ type = "file" }) end, desc = "File" },
@@ -18,7 +18,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>a"] = { name = " annotation" },
+        ["<leader>a"] = { name = " annotation/snippets" },
       },
     },
   },

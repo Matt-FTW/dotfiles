@@ -1,4 +1,4 @@
-- name: Navigation
+- name: Navigation 󰎐
   keybinds:
     - name: Go Back
       key: Alt + Left Arrow
@@ -11,7 +11,7 @@
     - name: Open File
       key: Ctrl + O
 
-- name: Current Page
+- name: Current Page 󰗚
   keybinds:
     - name: Print
       key: Ctrl + P
@@ -24,7 +24,7 @@
     - name: Save Page As
       key: Ctrl + S
 
-- name: Editing
+- name: Editing 
   keybinds:
     - name: Copy
       key: Ctrl + C
@@ -41,7 +41,7 @@
     - name: Redo
       key: Ctrl + Y
 
-- name: Search
+- name: Search 
   keybinds:
     - name: Find in this Page
       key: Ctrl + F
@@ -52,7 +52,7 @@
     - name: Focus Search Bar
       key: F6 / Ctrl + K / Ctrl + J
 
-- name: Windows & Tabs
+- name: Windows & Tabs 󰓩
   keybinds:
     - name: New Window
       key: Ctrl + N
@@ -77,7 +77,7 @@
     - name: Cycle Tabs
       key: Ctrl + Tab
 
-- name: Other
+- name: Other 
   keybinds:
     - name: Downloads
       key: Ctrl + Shift + Y
@@ -101,3 +101,4 @@
       key: Ctrl + H
     - name: Bitwarden Menu
       key: Ctrl + Alt + P
+

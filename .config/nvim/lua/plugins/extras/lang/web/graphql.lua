@@ -1,4 +1,5 @@
 return {
+  { import = "plugins.extras.lang.web.typescript-extended" },
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)

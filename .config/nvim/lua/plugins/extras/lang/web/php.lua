@@ -45,6 +45,18 @@ return {
     end,
   },
   {
+    "nvim-neotest/neotest",
+    optional = true,
+    dependencies = {
+      "olimorris/neotest-phpunit",
+    },
+    opts = {
+      adapters = {
+        ["neotest-phpunit"] = {},
+      },
+    },
+  },
+  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     ensure_installed = {

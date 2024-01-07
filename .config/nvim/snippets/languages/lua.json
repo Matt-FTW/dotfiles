@@ -1,0 +1,50 @@
+{
+  "@class (LuaDoc)": {
+    "body": [
+      "---@class (exact) ${1:class_name}",
+      "---@field ${2:field_name} string",
+      "---@field ${3:field_name} string"
+    ],
+    "description": "https://github.com/LuaLS/lua-language-server/wiki/Annotations#class",
+    "prefix": "@class (LuaDoc)"
+  },
+  "@type (LuaDoc)": {
+    "body": "---@type ${1:string}",
+    "prefix": "@type (LuaDoc)"
+  },
+  "export module": {
+    "body": [
+      "local M = {}",
+      "--------------------------------------------------------------------------------",
+      "",
+      "$0--------------------------------------------------------------------------------",
+      "return M"
+    ],
+    "prefix": "export module"
+  },
+  "find all in string": {
+    "body": [
+      "local ${1:matches} = {}",
+      "for match in ${2:str}:gmatch(${3:pattern}) do",
+      "\ttable.insert(${1:matches}, match)",
+      "end"
+    ],
+    "prefix": "find all in string"
+  },
+  "home": {
+    "body": "os.getenv(\"HOME\")",
+    "prefix": "home"
+  },
+  "ignore (stylua)": {
+    "body": "-- stylua: ignore",
+    "prefix": "ignore (stylua)"
+  },
+  "ignore start/end (stylua)": {
+    "body": ["-- stylua: ignore start", "-- stylua: ignore end"],
+    "prefix": "ignore start/end (stylua)"
+  },
+  "import module": {
+    "body": "local ${1:name} = require(\"${2:module}.${1:name}\")",
+    "prefix": "import module"
+  }
+}

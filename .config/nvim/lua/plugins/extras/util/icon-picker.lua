@@ -19,7 +19,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>si"] = { name = "+icons" },
+        ["<leader>si"] = { name = "icons" },
       },
     },
   },

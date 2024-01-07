@@ -4,18 +4,6 @@ local actions = require("telescope.actions")
 return {
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = {
-      {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        build = "make",
-        enabled = vim.fn.executable("make") == 1,
-        config = function()
-          Util.on_load("telescope.nvim", function()
-            require("telescope").load_extension("fzf")
-          end)
-        end,
-      },
-    },
     -- stylua: ignore
     keys = {
       {
@@ -61,8 +49,10 @@ return {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-r>"] = actions.delete_buffer,
             ["<C-j>"] = actions.move_selection_next,
-            ["<esc>"] = actions.close,
+            ["<S-esc>"] = actions.close,
             ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
+            ["<C-Down>"] = actions.cycle_history_next,
+            ["<C-Up>"] = actions.cycle_history_prev,
           },
         },
         file_ignore_patterns = {
@@ -76,7 +66,7 @@ return {
         },
         pickers = {
           find_files = {
-            hidden = true,
+            hidden = false,
           },
         },
         extensions = {
@@ -97,8 +87,8 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>sS"] = { name = "+Goto Symbols (Workspace)" },
-        ["<leader>ss"] = { name = "+Goto Symbols" },
+        ["<leader>sS"] = { name = "Goto Symbols (Workspace)" },
+        ["<leader>ss"] = { name = "Goto Symbols" },
       },
     },
   },

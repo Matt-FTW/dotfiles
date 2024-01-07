@@ -1,0 +1,69 @@
+name: "🐛 Bug Report"
+description: Create a bug/issue report
+title: "🐛 [BUG] - <title>"
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Did you check existing issues?
+      description: Make sure you checked all of the below before submitting an issue to avoid duplicates
+      options:
+        - label: I have searched the existing issues of the repo
+          required: true
+        - label: I have searched the existing issues of used programs related to this issue
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description of the bug"
+      description: A clear and concise description of what the bug is.
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction steps"
+      description: Please enter an explicit description of your issue
+      value: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. And so on...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If needed, add screenshots to help explain your problem.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: Please add any relevant information about your environment.
+      value: |
+        Linux Distro, Linux Version, Hyprland Version...
+      render: bash
+    validations:
+      required: false

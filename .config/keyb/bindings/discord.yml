@@ -1,62 +1,61 @@
-- name: Server & Channel Navigation
+- name: Server & Channel Navigation 󰒋
   keybinds:
-  - name: Move Between Servers
-    key: Ctrl + Alt + Up / Down
-  - name: Move Between Channels
-    key: Alt + Up
+    - name: Move Between Servers
+      key: Ctrl + Alt + Up / Down
+    - name: Move Between Channels
+      key: Alt + Up
 
-- name: Menu Management
+- name: Menu Management 󰍜
   keybinds:
-  - name: Toggle Emoji Picker
-    key: Ctrl + E
-  - name: Toggle GIF Picker
-    key: Ctrl + G
-  - name: Toggle Pins Popout
-    key: Ctrl + P
-  - name: Toggle Members List
-    key: Alt + M
-  - name: Toggle Server List
-    key: Alt + S
-  - name: Toggle Channel List
-    key: Alt + C
-  - name: Toggle User Area
-    key: Alt + U
-  - name: Toggle Message Bar
-    key: Alt + T
-  - name: Toggle Call Container
-    key: Alt + P
-  - name: Toggle Window Bar
-    key: Alt + W
-  - name: Toggle User Profile
-    key: Alt + I
+    - name: Toggle Emoji Picker
+      key: Ctrl + E
+    - name: Toggle GIF Picker
+      key: Ctrl + G
+    - name: Toggle Pins Popout
+      key: Ctrl + P
+    - name: Toggle Members List
+      key: Alt + M
+    - name: Toggle Server List
+      key: Alt + S
+    - name: Toggle Channel List
+      key: Alt + C
+    - name: Toggle User Area
+      key: Alt + U
+    - name: Toggle Message Bar
+      key: Alt + T
+    - name: Toggle Call Container
+      key: Alt + P
+    - name: Toggle Window Bar
+      key: Alt + W
+    - name: Toggle User Profile
+      key: Alt + I
 
-- name: Text Formatting
+- name: Text Formatting 󰛖
   keybinds:
-  - name: Bold Text
-    key: Ctrl + B
-  - name: Italic Text
-    key: Ctrl + I
-  - name: Underline Text
-    key: Ctrl + U
+    - name: Bold Text
+      key: Ctrl + B
+    - name: Italic Text
+      key: Ctrl + I
+    - name: Underline Text
+      key: Ctrl + U
 
-- name: Voice and Messages Management
+- name: Voice and Messages Management 󱥁
   keybinds:
-  - name: Toggle Mute
-    key: Ctrl + Shift + M
-  - name: Toggle Deafen
-    key: Ctrl + Shift + D
-  - name: Answer Incoming Call
-    key: Ctrl + Enter
-  - name: Decline Incoming Call
-    key: Esc
-  - name: Mark Channel as Read
-    key: Esc
-  - name: Mark Server as Read
-    key: Shift + Esc
-  - name: Search for a Message in a Server
-    key: Ctrl + F
-  - name: Search for Servers, Channels or DMs
-    key: Ctrl + K
-  - name: Upload a File
-    key: Ctrl + Shift + U
-
+    - name: Toggle Mute
+      key: Ctrl + Shift + M
+    - name: Toggle Deafen
+      key: Ctrl + Shift + D
+    - name: Answer Incoming Call
+      key: Ctrl + Enter
+    - name: Decline Incoming Call
+      key: Esc
+    - name: Mark Channel as Read
+      key: Esc
+    - name: Mark Server as Read
+      key: Shift + Esc
+    - name: Search for a Message in a Server
+      key: Ctrl + F
+    - name: Search for Servers, Channels or DMs
+      key: Ctrl + K
+    - name: Upload a File
+      key: Ctrl + Shift + U
