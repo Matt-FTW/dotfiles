@@ -35,7 +35,6 @@
     "plugins.extras.editor.outline",
     "plugins.extras.editor.package-info",
     "plugins.extras.editor.search-replace",
-    "plugins.extras.editor.smart-splits",
     "plugins.extras.editor.suda",
     "plugins.extras.editor.telescope.all-recent",
     "plugins.extras.editor.telescope.import",
@@ -86,6 +85,7 @@
     "plugins.extras.util.dot-extended",
     "plugins.extras.util.icon-picker",
     "plugins.extras.util.kitty-scrollback",
+    "plugins.extras.util.smart-splits",
     "plugins.extras.util.vscode",
     "plugins.extras.util.wakatime"
   ],
