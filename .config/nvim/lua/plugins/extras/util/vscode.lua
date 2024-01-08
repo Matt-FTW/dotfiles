@@ -22,6 +22,7 @@ local enabled = {
   "nvim-ts-context-commentstring",
   "vim-repeat",
   "highlight-undo.nvim",
+  "ts-node-action",
   "LazyVim",
 }
 
