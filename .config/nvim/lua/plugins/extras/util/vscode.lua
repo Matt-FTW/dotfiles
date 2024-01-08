@@ -12,6 +12,10 @@ local map = vim.keymap.set
 local enabled = {
   "flash.nvim",
   "lazy.nvim",
+  "dial.nvim",
+  "mini.align",
+  "comment-box.nvim",
+  "text-case.nvim",
   "mini.ai",
   "mini.comment",
   "mini.pairs",
