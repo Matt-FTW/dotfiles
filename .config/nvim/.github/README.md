@@ -417,6 +417,7 @@
 - [folke/edgy.nvim](https://dotfyle.com/plugins/folke/edgy.nvim)
 - [anuvyklack/windows.nvim](https://dotfyle.com/plugins/anuvyklack/windows.nvim)
 - [mrjones2014/smart-splits.nvim](https://dotfyle.com/plugins/mrjones2014/smart-splits.nvim)
+- [aserowy/tmux.nvim](https://dotfyle.com/plugins/aserowy/tmux.nvim)
 - [sindrets/winshift.nvim](https://dotfyle.com/plugins/sindrets/winshift.nvim)
 - [echasnovski/mini.bufremove](https://dotfyle.com/plugins/echasnovski/mini.bufremove)
 
