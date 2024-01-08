@@ -50,7 +50,7 @@ I've been working on this for a long time so I hope you like it!
 
 - :scroll: Scratchpads
 - :bell: Notification Center
-- :zzz: Neovim powered by LazyVim with custom extras added
+- :zzz: Neovim powered by LazyVim with custom extras added (More than 200!)
 - :dark_sunglasses: Dark Mode for the whole system
 - :framed_picture: Various Wallpapers
 - :nerd_face: Nerd Fonts for the Shell Prompt
