@@ -47,14 +47,14 @@ return {
       },
     }
 
-    opts.performance = {
-      debounce = 20,
-      throttle = 20,
-      fetching_timeout = 20,
-      confirm_resolve_timeout = 20,
-      async_budget = 1,
-      max_view_entries = 50,
-    }
+    -- opts.performance = {
+    --   debounce = 20,
+    --   throttle = 20,
+    --   fetching_timeout = 20,
+    --   confirm_resolve_timeout = 20,
+    --   async_budget = 1,
+    --   max_view_entries = 50,
+    -- }
 
     cmp.setup.cmdline({ "/", "?" }, {
       mapping = cmp.mapping.preset.cmdline(),
