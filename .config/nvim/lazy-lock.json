@@ -129,7 +129,7 @@
   "theme-loader.nvim": { "branch": "master", "commit": "ad8774ec8267a447d469b4e6603b43f49b946e53" },
   "todo-comments.nvim": { "branch": "main", "commit": "4a6737a8d70fe1ac55c64dfa47fcb189ca431872" },
   "tokyonight.nvim": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
-  "tree-sitter-hyprlang": { "branch": "master", "commit": "9bd008f08ffbfb94146ce9d4f31002de66f0e627" },
+  "tree-sitter-hyprlang": { "branch": "master", "commit": "43100f854cd5cf4e664a0dab7bf027263ca7cff2" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
   "ts-node-action": { "branch": "master", "commit": "e37eb458378de5d994df459a53711b2546abef0f" },
   "tsc.nvim": { "branch": "main", "commit": "a8f26d3d6a0faf533afb840816a6d9ac6a1fcbea" },
