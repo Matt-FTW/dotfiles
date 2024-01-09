@@ -199,7 +199,6 @@
 ; (gtk_accel_path "<Actions>/MenuActions/ResetMark5" "")
 ; (gtk_accel_path "<Actions>/MenuActions/Preferences" "<Primary>o")
 ; (gtk_accel_path "<Actions>/MenuActions/HistogramModeLog" "")
-; (gtk_accel_path "<Actions>/MenuActionsExternal/pinta.desktop" "")
 ; (gtk_accel_path "<Actions>/MenuActions/ResetMark4" "")
 ; (gtk_accel_path "<Actions>/MenuActions/HelpNotes" "")
 ; (gtk_accel_path "<Actions>/MenuActions/ToggleMark9" "9")
