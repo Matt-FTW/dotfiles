@@ -43,7 +43,6 @@
     "plugins.extras.editor.telescope.undotree",
     "plugins.extras.editor.telescope.zoxide",
     "plugins.extras.editor.terminal.floaterm",
-    "plugins.extras.formatting.isort",
     "plugins.extras.formatting.prettier-extended",
     "plugins.extras.formatting.rustfmt",
     "plugins.extras.formatting.trim_newlines",
@@ -94,4 +93,3 @@
   },
   "version": 2
 }
-

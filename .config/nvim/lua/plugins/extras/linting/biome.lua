@@ -40,6 +40,7 @@ return {
         ["typescriptreact"] = { "biome" },
         ["javascriptreact"] = { "biome" },
       })
+
       opts.formatters = {
         biome = {
           condition = function(self, ctx)
@@ -52,6 +53,8 @@ return {
           end,
         },
       }
+
+      return opts
     end,
   },
 }
