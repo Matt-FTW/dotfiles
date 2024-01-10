@@ -1,12 +1,12 @@
 settings:
-  keyb_path: /home/matt/.config/keyb/bindings/keyb.yml
+  keyb_path: /home/matt/.config/keyb/bindings/default.yml
   debug: false
   reverse: false
   mouse: true
   search_mode: false
   sort_keys: false
   title: ""
-  prompt: "> "
+  prompt: "❯ "
   prompt_location: top
   placeholder: ""
   prefix_sep: ;
