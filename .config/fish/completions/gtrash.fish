@@ -1,0 +1,1 @@
+gtrash completion fish | source
