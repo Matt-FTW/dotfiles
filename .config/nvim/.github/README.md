@@ -601,6 +601,7 @@
 - hadolint
 - markdownlint
 - pylint
+- ruff
 - shellcheck
 - stylelint
 - terraform_validate
@@ -613,11 +614,10 @@
 - black
 - csharpier
 - fish_indent
-- flake8
 - gofumpt
 - goimports
-- isort
 - prettier
+- ruff
 - rustfmt
 - shfmt
 - stylua
