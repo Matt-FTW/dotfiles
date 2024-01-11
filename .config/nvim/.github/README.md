@@ -478,6 +478,7 @@
 - [nvim-neotest/neotest-python](https://github.com/nvim-neotest/neotest-python)
 - [olimorris/neotest-rspec](https://github.com/olimorris/neotest-rspec)
 - [rouge8/neotest-rust](https://github.com/rouge8/neotest-rust)
+- [lawrence-laz/neotest-zig](https://github.com/lawrence-laz/neotest-zig)
 
 </details>
 
@@ -558,6 +559,7 @@
 - clangd
 - css
 - cssmodules
+- deno
 - docker
 - elixir
 - emmet
@@ -586,8 +588,9 @@
 - terraform
 - texlab
 - tsserver
-- vue
+- volar
 - yaml
+- zig
 
 ### Linters
 
@@ -625,6 +628,7 @@
 - terraform_fmt
 - trim_newlines
 - trim_whitespace
+- zigfmt
 
 # :gear: ‎ <samp>Config</samp>
 
