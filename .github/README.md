@@ -169,16 +169,15 @@ Here is all the information about my setup:
 | **Messaging App**     | [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) [:gear:](../.config/BetterDiscord/) |
 | **Email Client**      | [Thunderbird](https://www.thunderbird.net/)                                                                                    |
 | **PDF Viewer**        | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                                    |
-| **Note Taking App**   | 💖 [Obsidian](https://obsidian.md/)                                                                                            |
+| **Note Taking App**   | 💖 [Obsidian](https://obsidian.md/) [:gear:](../.config/obsidian/)                                                             |
 | **Video Player**      | [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) [:gear:](../.config/mpv/)                   |
 | **Image Viewer**      | [geeqie](https://www.geeqie.org/) [:gear:](../.config/geeqie/)                                                                 |
 | **File Manager**      | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                                     |
 | **Audio Effects**     | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                             |
 | **Image Editor**      | [Krita](https://krita.org/)                                                                                                    |
-| **Paint Tool**        | [Pinta](https://www.pinta-project.com/)                                                                                        |
 | **VM Manager**        | [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))                                                      |
 | **Recording Program** | [OBS](https://obsproject.com/)                                                                                                 |
-| **Office Apps**       | [LibreOffice](https://www.libreoffice.org/) [:gear:](../.config/libreoffice/4/user/config/)                                    |
+| **Office Apps**       | [LibreOffice](https://www.libreoffice.org/)                                                                                    |
 
 </details>
 
