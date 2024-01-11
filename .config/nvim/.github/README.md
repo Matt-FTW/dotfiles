@@ -550,6 +550,7 @@
 - vue
 - xml
 - yaml
+- zig
 
 ### Language Servers
 
