@@ -603,6 +603,7 @@
 - pylint
 - ruff
 - shellcheck
+- sqlfluff
 - stylelint
 - terraform_validate
 - typos
