@@ -6,8 +6,9 @@ local map = vim.keymap.set
 local Util = require("lazyvim.util")
 
 -- Search current word
--- stylua: ignore
-local searching_brave = [[:lua vim.fn.system({'xdg-open', 'https://search.brave.com/search?q=' .. vim.fn.expand("<cword>")})<CR>]]
+local searching_brave = function()
+  vim.fn.system({ "xdg-open", "https://search.brave.com/search?q=" .. vim.fn.expand("<cword>") })
+end
 map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search current word on brave search" })
 
 -- Toggle background
