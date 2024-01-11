@@ -9,19 +9,17 @@ return {
   {
     "mfussenegger/nvim-lint",
     opts = function(_, opts)
-      --- Extend the conform plugin config and add given formatters
-      ---@param tbl table<string, conform.FormatterUnit[]> Table of filetype to formatters mappings
-      local function add_formatters(tbl)
-        for ft, formatters in pairs(tbl) do
-          if opts.formatters_by_ft[ft] == nil then
-            opts.formatters_by_ft[ft] = formatters
+      local function add_linters(tbl)
+        for ft, linters in pairs(tbl) do
+          if opts.linters_by_ft[ft] == nil then
+            opts.linters_by_ft[ft] = linters
           else
-            vim.list_extend(opts.formatters_by_ft[ft], formatters)
+            vim.list_extend(opts.linters_by_ft[ft], linters)
           end
         end
       end
 
-      add_formatters({
+      add_linters({
         ["go"] = { "golangcilint" },
         ["gomod"] = { "golangcilint" },
         ["gowork"] = { "golangcilint" },
