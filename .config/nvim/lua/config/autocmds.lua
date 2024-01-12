@@ -74,3 +74,11 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.cmd("setlocal listchars= nonumber norelativenumber")
   end,
 })
+
+-- Disable next line comments
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    vim.cmd("set formatoptions-=cro")
+    vim.cmd("setlocal formatoptions-=cro")
+  end,
+})
