@@ -186,6 +186,7 @@
 
 - [monaqa/dial.nvim](https://dotfyle.com/plugins/monaqa/dial.nvim)
 - [chrisgrieser/nvim-various-textobjs](https://dotfyle.com/plugins/chrisgrieser/nvim-various-textobjs)
+  - [johmsalas/text-case.nvim](https://dotfyle.com/plugins/johmsalas/text-case.nvim)
 - [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
