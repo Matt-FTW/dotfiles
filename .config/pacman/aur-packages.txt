@@ -2,7 +2,7 @@ adwsteamgtk 0.6.9-1
 android-sdk-platform-tools 34.0.5-2
 atlauncher-bin 3.4.35.4-1
 betterdiscord-installer-bin 1.3.0-2
-brave-bin 1:1.61.114-1
+brave-bin 1:1.61.116-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.9.1-1
@@ -47,7 +47,7 @@ ryujinx-bin 1.1.1104-1
 scc-bin 3.1.0-1
 sddm-git 0.19.0.205.g572b128-1
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.29.1-1
+spicetify-cli 2.30.0-1
 spotify 1:1.2.26.1187-1
 swaylock-effects-git r469.4f2234c-1
 swaync 0.9.0-2
@@ -55,7 +55,7 @@ swayosd-git r44.1c7d2f5-1
 swww 0.8.1-0
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
-tgpt-bin 2.4.2-1
+tgpt-bin 2.4.3-1
 topgrade 13.0.0-1
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-symbola 14.00-1
