@@ -186,6 +186,7 @@
 
 - [monaqa/dial.nvim](https://dotfyle.com/plugins/monaqa/dial.nvim)
 - [chrisgrieser/nvim-various-textobjs](https://dotfyle.com/plugins/chrisgrieser/nvim-various-textobjs)
+  - [johmsalas/text-case.nvim](https://dotfyle.com/plugins/johmsalas/text-case.nvim)
 - [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
@@ -478,6 +479,7 @@
 - [nvim-neotest/neotest-python](https://github.com/nvim-neotest/neotest-python)
 - [olimorris/neotest-rspec](https://github.com/olimorris/neotest-rspec)
 - [rouge8/neotest-rust](https://github.com/rouge8/neotest-rust)
+- [lawrence-laz/neotest-zig](https://github.com/lawrence-laz/neotest-zig)
 
 </details>
 
@@ -549,6 +551,7 @@
 - vue
 - xml
 - yaml
+- zig
 
 ### Language Servers
 
@@ -558,6 +561,7 @@
 - clangd
 - css
 - cssmodules
+- deno
 - docker
 - elixir
 - emmet
@@ -586,8 +590,9 @@
 - terraform
 - texlab
 - tsserver
-- vue
+- volar
 - yaml
+- zig
 
 ### Linters
 
@@ -603,6 +608,7 @@
 - pylint
 - ruff
 - shellcheck
+- sqlfluff
 - stylelint
 - terraform_validate
 - typos
@@ -624,6 +630,7 @@
 - terraform_fmt
 - trim_newlines
 - trim_whitespace
+- zigfmt
 
 # :gear: ‎ <samp>Config</samp>
 

@@ -11,7 +11,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        vuels = {},
+        volar = {},
       },
     },
   },
@@ -19,7 +19,7 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, { "vetur-vls" })
+      vim.list_extend(opts.ensure_installed, { "vue-language-server" })
     end,
   },
   {

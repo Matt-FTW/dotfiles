@@ -60,6 +60,18 @@ return {
     config = function(_, opts)
       require("ufo").setup(opts)
     end,
+    keys = {
+      {
+        "zp",
+        function()
+          local winid = require("ufo").peekFoldedLinesUnderCursor()
+          if not winid then
+            vim.lsp.buf.hover()
+          end
+        end,
+        desc = "Peek folded line",
+      },
+    },
   },
   {
     "chrisgrieser/nvim-origami",
