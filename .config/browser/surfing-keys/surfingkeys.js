@@ -24,13 +24,6 @@ const {
   vunmap,
 } = api;
 
-// an example to create a new mapping `ctrl-y`
-api.mapkey("<ctrl-y>", "Show me the money", function () {
-  Front.showPopup(
-    "a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).",
-  );
-});
-
 // toggle fullscreen, mainly because of YouTube
 mapkey("F", "Fullscreen", function () {
   if (window.fullScreen) {
@@ -40,11 +33,44 @@ mapkey("F", "Fullscreen", function () {
   }
 });
 
-// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
-api.map("gt", "T");
+// Copy URL
+map("yu", "ya");
 
-// an example to remove mapkey `Ctrl-i`
-api.unmap("<ctrl-i>");
+// Buffers/Tabs
+map("b", "T");
+
+// History Back/Forward
+map("H", "S");
+map("L", "D");
+
+// Next/Prev Page
+map("K", "[[");
+map("J", "]]");
+
+// Scroll Page Down/Up
+mapkey("<Ctrl-d>", "Scroll down", () => {
+  Normal.scroll("pageDown");
+});
+mapkey("<Ctrl-u>", "Scroll up", () => {
+  Normal.scroll("pageUp");
+});
+
+// --- Tabs ---
+// Tab Delete/Undo
+mapkey("d", "#3Close current tab", () => {
+  RUNTIME("closeTab");
+});
+mapkey("u", "#3Restore closed tab", () => {
+  RUNTIME("openLast");
+});
+
+// Move Tab Left/Right w/ one press
+map(">", ">>");
+map("<", "<<");
+
+// Tab Next/Prev
+map("<Ctrl-l>", "R");
+map("<Ctrl-h>", "E");
 
 // set theme
 Hints.style(
