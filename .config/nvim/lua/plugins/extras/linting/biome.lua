@@ -20,8 +20,6 @@ return {
   {
     "stevearc/conform.nvim",
     opts = function(_, opts)
-      --- Extend the conform plugin config and add given formatters
-      ---@param tbl table<string, conform.FormatterUnit[]> Table of filetype to formatters mappings
       local function add_formatters(tbl)
         for ft, formatters in pairs(tbl) do
           if opts.formatters_by_ft[ft] == nil then
@@ -42,6 +40,7 @@ return {
       })
 
       opts.formatters = {
+        cwd = require("conform.util").root_file({ "biome.json" }),
         biome = {
           condition = function(self, ctx)
             return vim.fs.find({ "biome.json" }, { path = ctx.filename, upward = true })[1]
