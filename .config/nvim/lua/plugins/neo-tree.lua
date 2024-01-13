@@ -7,7 +7,8 @@ return {
     },
     window = {
       mappings = {
-        ["e"] = "open",
+        ["l"] = "open",
+        ["h"] = "close_node",
       },
     },
   },

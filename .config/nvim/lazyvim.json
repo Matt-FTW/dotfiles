@@ -54,6 +54,7 @@
     "plugins.extras.lang.sql",
     "plugins.extras.lang.web.html-css",
     "plugins.extras.lang.web.typescript-extended",
+    "plugins.extras.lang.web.vue",
     "plugins.extras.linting.biome",
     "plugins.extras.linting.cspell",
     "plugins.extras.linting.eslint-extended",
@@ -90,4 +91,3 @@
   },
   "version": 2
 }
-
