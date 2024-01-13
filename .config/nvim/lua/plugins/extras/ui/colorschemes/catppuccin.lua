@@ -6,6 +6,9 @@ return {
     lazy = false,
     name = "catppuccin",
     opts = {
+      styles = {
+        comments = { "italic" },
+      },
       background = {
         light = "latte",
         dark = "macchiato",
