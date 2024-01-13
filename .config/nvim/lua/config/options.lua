@@ -6,6 +6,13 @@ local opt = vim.g
 -- Optimizations on startup
 vim.loader.enable()
 
+-- Autoformat on save (Global)
+opt.autoformat = true
+
+-- Disable netrw
+opt.loaded_netrw = 1
+opt.loaded_netrwPlugin = 1
+
 -- Font
 opt.gui_font_default_size = 10
 opt.gui_font_size = opt.gui_font_default_size
