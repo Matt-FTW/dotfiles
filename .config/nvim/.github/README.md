@@ -84,6 +84,7 @@
 <summary><b>🎨 Colorscheme</b></summary>
 
 - [rockerBOO/boo-colorscheme-nvim](https://dotfyle.com/plugins/rockerBOO/boo-colorscheme-nvim)
+- [craftzdog/solarized-osaka.nvim](https://dotfyle.com/plugins/craftzdog/solarized-osaka.nvim)
 - [shaunsingh/moonlight.nvim](https://dotfyle.com/plugins/shaunsingh/moonlight.nvim)
 - [savq/melange-nvim](https://dotfyle.com/plugins/savq/melange-nvim)
 - [projekt0n/github-nvim-theme](https://dotfyle.com/plugins/projekt0n/github-nvim-theme)
@@ -186,7 +187,7 @@
 
 - [monaqa/dial.nvim](https://dotfyle.com/plugins/monaqa/dial.nvim)
 - [chrisgrieser/nvim-various-textobjs](https://dotfyle.com/plugins/chrisgrieser/nvim-various-textobjs)
-  - [johmsalas/text-case.nvim](https://dotfyle.com/plugins/johmsalas/text-case.nvim)
+- [johmsalas/text-case.nvim](https://dotfyle.com/plugins/johmsalas/text-case.nvim)
 - [ckolkey/ts-node-action](https://dotfyle.com/plugins/ckolkey/ts-node-action)
 - [debugloop/telescope-undo.nvim](https://dotfyle.com/plugins/debugloop/telescope-undo.nvim)
 - [echasnovski/mini.pairs](https://dotfyle.com/plugins/echasnovski/mini.pairs)
