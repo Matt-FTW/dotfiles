@@ -15,6 +15,7 @@ return {
       "python",
       "lua",
       "html",
+      "vue",
     },
   },
 }
