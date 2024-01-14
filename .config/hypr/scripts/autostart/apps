@@ -4,6 +4,7 @@
 spotify &
 discord &
 thunderbird &
+obsidian &
 
 # Terminal Apps
 kitty --class btop btop &
