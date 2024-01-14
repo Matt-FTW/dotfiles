@@ -385,6 +385,13 @@
 </details>
 
 <details>
+<summary><b>🏠 Remote-development</b>></summary>
+
+- [esensar/nvim-dev-container](https://dotfyle.com/plugins/esensar/nvim-dev-container)
+
+</details>
+
+<details>
 <summary><b>📜 Scrollbar-Scrolling</b></summary>
 
 - [lewis6991/satellite.nvim](https://dotfyle.com/plugins/lewis6991/satellite.nvim)

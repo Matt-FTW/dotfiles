@@ -78,6 +78,7 @@
   "nvim-dap-python": { "branch": "master", "commit": "091e4ae00a12085f9ed4200a3cd04af7179b8a23" },
   "nvim-dap-ui": { "branch": "master", "commit": "7e5e16427aaf814dc2d58e1b219def9ef2fa2435" },
   "nvim-dap-virtual-text": { "branch": "master", "commit": "d4542ac257d3c7ee4131350db6179ae6340ce40b" },
+  "nvim-dev-container": { "branch": "main", "commit": "47927e2df27503debf3bfbfe90afefbac73e002f" },
   "nvim-devdocs": { "branch": "master", "commit": "521d24661ffe6d1ba025debea2675c765a9c1ee1" },
   "nvim-lightbulb": { "branch": "master", "commit": "8f00b89dd1b1dbde16872bee5fbcee2e58c9b8e9" },
   "nvim-lint": { "branch": "master", "commit": "8df53b5dde8ea80f0a039775777eae6648a10229" },
