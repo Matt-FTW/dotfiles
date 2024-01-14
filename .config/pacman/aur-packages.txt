@@ -6,7 +6,7 @@ brave-bin 1:1.61.116-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.9.1-1
-cemu-bin 2.0.61-1
+cemu-bin 2.0.62-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
@@ -43,7 +43,7 @@ reflector-pacman-hook-git r87.eec94bd-1
 rofi-file-browser-extended-git 1.3.1.r5.g44e5f0a-1
 rofi-lbonn-wayland 1.7.5+wayland2-1
 rpcs3-bin 0.0.30-1
-ryujinx-bin 1.1.1104-1
+ryujinx-bin 1.1.1109-1
 scc-bin 3.1.0-1
 sddm-git 0.19.0.205.g572b128-1
 selectdefaultapplication-fork-git r72.4e8501d-1
@@ -55,7 +55,7 @@ swayosd-git r44.1c7d2f5-1
 swww 0.8.1-0
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
-tgpt-bin 2.4.3-1
+tgpt-bin 2.4.4-1
 topgrade 13.0.0-1
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-symbola 14.00-1
