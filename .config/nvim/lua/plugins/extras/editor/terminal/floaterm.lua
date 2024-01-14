@@ -4,18 +4,9 @@ return {
     cmd = { "FloatermNew", "FloatermToggle", "FloatermNext", "FloatermPrev", "FloatermLast", "FloatermFirst" },
     --stylua: ignore
     keys = {
-      { "<leader>Ts", "<cmd>FloatermNew --disposable --name=duaroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> dua i<CR>", desc = "Workspace Size (root dir)" },
-      { "<leader>TS", "<cmd>FloatermNew --disposable --name=duabuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> dua i<CR>", desc = "Workspace Size (cwd)" },
-      { "<A-e>", "<cmd>FloatermNew --disposable --name=yaziroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> yazi<CR>", desc = "File Explorer (root dir)" },
+      { "<A-e>", "<cmd>FloatermNew --disposable --name=yaziroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> yazi<CR>", desc = "Yazi" },
       { "<leader>gg", "<cmd>FloatermNew --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazygit<CR>", desc = "Lazygit (root dir)" },
       { "<leader>gG", "<cmd>FloatermNew --name=lazygitbuffer --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<buffer> lazygit<CR>", desc = "Lazygit (cwd)" },
-      { "<leader>Td", "<cmd>FloatermNew --disposable --name=lazydocker --opener=edit --titleposition=center --height=0.85 --width=0.85 lazydocker<CR>", desc = "Lazydocker" },
-      { "<leader>Tb", "<cmd>FloatermNew --disposable --name=btop --opener=edit --titleposition=center --height=0.85 --width=0.85 btop<CR>", desc = "Btop" },
-      { "<leader>Tn", "<cmd>FloatermNew --disposable --name=navi --opener=edit --titleposition=center --height=0.85 --width=0.85 pages<CR>", desc = "Navi Pages" },
-      { "<leader>Tp", "<cmd>FloatermNew --disposable --name=proc --opener=edit --titleposition=center --height=0.85 --width=0.85 proc<CR>", desc = "Systemd Processes" },
-      { "<leader>TB", "<cmd>FloatermNew --disposable --name=bandwhich --opener=edit --titleposition=center --height=0.85 --width=0.85 bandwhich<CR>", desc = "Bandwidth" },
-      { "<leader>gF", "<cmd>FloatermNew --disposable --name=forgit --opener=edit --titleposition=center --height=0.85 --width=0.85 fgit<CR>", desc = "Forgit" },
-      { "<leader>gf", "<cmd>FloatermNew! --disposable --name=onefetch --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> gfetch<CR>", desc = "Gitfetch" },
       { "<leader>cen", "<cmd>FloatermNew --name=node --opener=edit --titleposition=center --wintype=split --height=0.35 node<CR>", desc = "Node" },
       { "<leader>cep", "<cmd>FloatermNew --name=python --opener=edit --titleposition=center --wintype=split --height=0.35 python<CR>", desc = "Python" },
       { "<S-Right>", "<Esc><Esc><cmd>FloatermNext<CR>", mode = { "t" }, desc = "Next Terminal" },
@@ -46,7 +37,6 @@ return {
       defaults = {
         ["<leader>ce"] = { name = "r[e]pl" },
         ["<leader>ft"] = { name = "terminals" },
-        ["<leader>T"] = { name = " tools" },
       },
     },
   },
