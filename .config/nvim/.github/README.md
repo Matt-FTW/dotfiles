@@ -652,17 +652,9 @@
 | ----------------------------------------------- |
 | ![find-files](./overview-images/find-files.png) |
 
-<div style="display: flex;">
-
-| **Neo-tree**                                |
-| ------------------------------------------- |
-| ![neo-tree](./overview-images/neo-tree.png) |
-
-| **Symbols Outline**                       |
-| ----------------------------------------- |
-| ![outline](./overview-images/outline.png) |
-
-</div>
+| **Neo-tree**                                | **Symbols Outline**                       |
+| ------------------------------------------- | ----------------------------------------- |
+| ![neo-tree](./overview-images/neo-tree.png) | ![outline](./overview-images/outline.png) |
 
 | **Bufferline**                                  |
 | ----------------------------------------------- |
