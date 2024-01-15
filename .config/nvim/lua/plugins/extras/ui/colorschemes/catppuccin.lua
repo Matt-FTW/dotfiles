@@ -1,4 +1,4 @@
-local macchiato = require("catppuccin.palettes").get_palette("macchiato")
+local palette = require("catppuccin.palettes").get_palette("macchiato") -- Import your favorite catppuccin colors
 
 return {
   {
@@ -14,6 +14,23 @@ return {
         dark = "macchiato",
       },
       term_colors = true,
+      custom_highlights = function()
+        return {
+          FloatermBorder = { fg = palette.base },
+          TelescopeMatching = { fg = palette.blue },
+          TelescopeSelection = { fg = palette.text, bg = palette.surface0, bold = true },
+          TelescopePromptPrefix = { bg = palette.surface0 },
+          TelescopePromptNormal = { bg = palette.surface0 },
+          TelescopeResultsNormal = { bg = palette.mantle },
+          TelescopePreviewNormal = { bg = palette.mantle },
+          TelescopePromptBorder = { bg = palette.surface0, fg = palette.surface0 },
+          TelescopeResultsBorder = { bg = palette.mantle, fg = palette.mantle },
+          TelescopePreviewBorder = { bg = palette.mantle, fg = palette.mantle },
+          TelescopePromptTitle = { bg = palette.red, fg = palette.mantle },
+          TelescopeResultsTitle = { fg = palette.mantle },
+          TelescopePreviewTitle = { bg = palette.green, fg = palette.mantle },
+        }
+      end,
       integrations = {
         alpha = true,
         cmp = true,
@@ -71,7 +88,6 @@ return {
         semantic_tokens = true,
         telescope = {
           enabled = true,
-          style = "nvchad",
         },
         symbols_outline = false,
         treesitter = true,
@@ -87,8 +103,8 @@ return {
         styles = { "italic", "bold" },
         custom = {
           all = {
-            fill = { bg = macchiato.mantle },
-            background = { bg = macchiato.mantle },
+            fill = { bg = palette.mantle },
+            background = { bg = palette.mantle },
           },
         },
       }),
