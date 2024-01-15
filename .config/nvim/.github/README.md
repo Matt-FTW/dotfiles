@@ -46,6 +46,7 @@
 - [tzachar/cmp-tabnine](https://github.com/tzachar/cmp-tabnine)
 - [jackMort/ChatGPT.nvim](https://dotfyle.com/plugins/jackMort/ChatGPT.nvim)
 - [zbirenbaum/copilot.lua](https://dotfyle.com/plugins/zbirenbaum/copilot.lua)
+- [David-Kunz/gen.nvim](https://dotfyle.com/plugins/David-Kunz/gen.nvim)
 
 </details>
 
