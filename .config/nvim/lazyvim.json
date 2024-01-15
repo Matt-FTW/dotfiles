@@ -88,7 +88,6 @@
     "plugins.extras.util.bigfile",
     "plugins.extras.util.discordrcp",
     "plugins.extras.util.dot-extended",
-    "plugins.extras.util.esqueleto",
     "plugins.extras.util.icon-picker",
     "plugins.extras.util.kitty-scrollback",
     "plugins.extras.util.smart-splits",

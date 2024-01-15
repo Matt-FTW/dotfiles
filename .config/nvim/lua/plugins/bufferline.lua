@@ -9,7 +9,7 @@ table.insert(keys, { "[B", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer pr
 table.insert(keys, { "]B", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" })
 table.insert(keys, { "<leader>.", "<Cmd>BufferLinePick<CR>", desc = "Pick Buffer" })
 
-table.insert(keys, { "<leader>bd", "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort By Directory" })
+table.insert(keys, { "<leader>bS", "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort By Directory" })
 table.insert(keys, { "<leader>bs", "<Cmd>BufferLineSortByExtension<CR>", desc = "Sort By Extensions" })
 -- stylua: ignore end
 

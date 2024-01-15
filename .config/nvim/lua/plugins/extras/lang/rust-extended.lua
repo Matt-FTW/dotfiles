@@ -4,6 +4,18 @@ return {
     "simrat39/rust-tools.nvim",
     enabled = false,
   },
+  -- TODO: Look at crates lsp
+  -- {
+  --   "Saecki/crates.nvim",
+  --   opts = {
+  --     lsp = {
+  --       enabled = true,
+  --       on_attach = function(client, bufnr) end,
+  --       actions = true,
+  --       completion = true,
+  --     },
+  --   },
+  -- },
   {
     "mrcjkb/rustaceanvim",
     version = "^3", -- Recommended

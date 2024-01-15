@@ -28,7 +28,6 @@
   "dressing.nvim": { "branch": "master", "commit": "b2c644abfaae7523bb393b0c452adf3ebdaf53dc" },
   "dropbar.nvim": { "branch": "master", "commit": "982d728f948ce768475454a0cf16bebc12674e28" },
   "edgy.nvim": { "branch": "main", "commit": "8355be45610afdf79a0bab32b91ee297997455b4" },
-  "esqueleto.nvim": { "branch": "main", "commit": "4a363d3bbc513507ba89f2ab3bcbc8a34280970e" },
   "flash.nvim": { "branch": "main", "commit": "48817af25f51c0590653bbc290866e4890fe1cbe" },
   "friendly-snippets": { "branch": "main", "commit": "69a2c1675b66e002799f5eef803b87a12f593049" },
   "garbage-day.nvim": { "branch": "main", "commit": "957499b8a493974bd7002b68b1f15f7d285e0dd1" },
