@@ -4,7 +4,7 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, { "golangcil-lint" })
+      vim.list_extend(opts.ensure_installed, { "golangci-lint" })
     end,
   },
   {
@@ -15,7 +15,6 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
     opts = {},
-    event = { "LazyFile" },
     ft = { "go", "gomod" },
     build = function()
       require("go.install").update_all_sync()

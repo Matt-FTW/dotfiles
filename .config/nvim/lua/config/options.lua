@@ -6,6 +6,9 @@ local opt = vim.g
 -- Optimizations on startup
 vim.loader.enable()
 
+-- Autoformat on save (Global)
+opt.autoformat = true
+
 -- Font
 opt.gui_font_default_size = 10
 opt.gui_font_size = opt.gui_font_default_size

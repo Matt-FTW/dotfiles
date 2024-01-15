@@ -1,3 +1,18 @@
+local keys = {}
+
+-- stylua: ignore start
+for i = 1, 9 do
+  table.insert(keys, { "<leader>h" .. i, function() require("harpoon"):list():select(i) end, desc = "File " .. i })
+end
+
+table.insert(keys, { "<leader>ha", function() require("harpoon"):list():append() end, desc = "Add Mark" })
+table.insert(keys, { "<leader>hh", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Menu" })
+table.insert(keys, { "<leader>hf", "<cmd>Telescope harpoon marks<CR>", desc = "Files" })
+
+table.insert(keys, { "]H", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" })
+table.insert(keys, { "[H", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" })
+-- stylua: ignore end
+
 return {
   {
     "ThePrimeagen/harpoon",
@@ -6,24 +21,7 @@ return {
       "nvim-lua/plenary.nvim",
     },
     --stylua: ignore
-    keys = {
-      { "<leader>ha", function() require("harpoon"):list():append() end, desc = "Add Mark" },
-      { "<leader>hh", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Menu" },
-      { "<leader>hf", "<cmd>Telescope harpoon marks<CR>", desc = "Files" },
-      { "<leader>h1", function() require("harpoon"):list():select(1) end, desc = "File 1" },
-      { "<leader>h2", function() require("harpoon"):list():select(2) end, desc = "File 2" },
-      { "<leader>h3", function() require("harpoon"):list():select(3) end, desc = "File 3" },
-      { "<leader>h4", function() require("harpoon"):list():select(4) end, desc = "File 4" },
-      { "<leader>h5", function() require("harpoon"):list():select(5) end, desc = "File 5" },
-      { "<leader>h6", function() require("harpoon"):list():select(6) end, desc = "File 6" },
-      { "<leader>h7", function() require("harpoon"):list():select(7) end, desc = "File 7" },
-      { "<leader>h8", function() require("harpoon"):list():select(8) end, desc = "File 8" },
-      { "<leader>h9", function() require("harpoon"):list():select(9) end, desc = "File 9" },
-      { "]H", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" },
-      { "[H", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" },
-      { "<M-]>", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" },
-      { "<M-[>", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" },
-    },
+    keys = keys,
     config = function()
       local harpoon = require("harpoon")
       harpoon:setup({})
