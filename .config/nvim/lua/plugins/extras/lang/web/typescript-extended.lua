@@ -1,3 +1,15 @@
+local source_action = function(name)
+  return function()
+    vim.lsp.buf.code_action({
+      apply = true,
+      context = {
+        only = { string.format("source.%s.ts", name) },
+        diagnostics = {},
+      },
+    })
+  end
+end
+
 local inlayHints = {
   includeInlayParameterNameHints = "all",
   includeInlayParameterNameHintsWhenArgumentMatchesName = true,
@@ -45,6 +57,23 @@ return {
             },
             javascript = {
               inlayHints = inlayHints,
+            },
+          },
+          keys = {
+            {
+              "<leader>co",
+              source_action("organizeImports"),
+              desc = "Organize Imports",
+            },
+            {
+              "<leader>cM",
+              source_action("addMissingImports"),
+              desc = "Add Missing Imports",
+            },
+            {
+              "<leader>cR",
+              source_action("removeUnused"),
+              desc = "Remove Unused Imports",
             },
           },
         },
