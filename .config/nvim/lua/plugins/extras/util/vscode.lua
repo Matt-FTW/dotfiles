@@ -60,14 +60,17 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer in left sidebar
     map("n", "<leader>e", vscode_action("workbench.view.explorer"))
-    -- Code Action
-    map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     -- Open terminal
     map("n", "<leader>ft", vscode_action("workbench.action.terminal.focus"))
     -- LSP actions
+    map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     map("n", "gy", vscode_action("editor.action.goToTypeDefinition"))
     map("n", "gr", vscode_action("editor.action.goToReferences"))
     map("n", "gi", vscode_action("editor.action.goToImplementation"))
+    map("n", "K", vscode_action("editor.action.showHover"))
+    map("n", "<leader>cr", vscode_action("editor.action.rename"))
+    map("n", "<leader>co", vscode_action("editor.action.organizeImport"))
+    map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
   end,
 })
 
