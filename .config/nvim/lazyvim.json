@@ -30,7 +30,6 @@
     "plugins.extras.editor.compiler",
     "plugins.extras.editor.dev-container",
     "plugins.extras.editor.docs.devdocs",
-    "plugins.extras.editor.docs.obsidian",
     "plugins.extras.editor.fold",
     "plugins.extras.editor.git.diffview",
     "plugins.extras.editor.git.github",
