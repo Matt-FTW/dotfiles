@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat ~/.config/VSCodium/User/extensions.txt | while read extension || [[ -n $extension ]]; do
+	vscodium --install-extension "$extension" --force
+done
