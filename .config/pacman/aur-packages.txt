@@ -62,8 +62,9 @@ ttf-symbola 14.00-1
 universal-android-debloater 0.6.2-1
 upscayl-bin 2.9.5-1
 ventoy-bin 1.0.96-1
-visual-studio-code-bin 1.85.1-1
 vkbasalt 0.3.2.10-1
+vscodium-bin 1.85.1.23348-1
+vscodium-bin-marketplace 1.76.0-1
 waybar-hyprland-cava-git 0.9.22.r90.g58e506a6-1
 waybar-module-pacman-updates-git 0.2.2-1
 wl-clip-persist-git r34.6ba11a2-1
