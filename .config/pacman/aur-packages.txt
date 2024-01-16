@@ -22,7 +22,7 @@ lazynpm 0.1.4-1
 librewolf-bin 121.0-1
 ludusavi 0.22.0-1
 needrestart 3.6-3
-nwg-displays 0.3.10-1
+nwg-displays 0.3.11-1
 nwg-look 0.2.5-1
 obs-pipewire-audio-capture-bin 1.1.2-1
 obs-plugin-input-overlay 5.0.4-2
@@ -52,7 +52,7 @@ spotify 1:1.2.26.1187-1
 swaylock-effects 1.7.0.0-2
 swaync 0.9.0-2
 swayosd-git r44.1c7d2f5-1
-swww 0.8.1-0
+swww 0.8.2-0
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
 tgpt-bin 2.4.4-1
