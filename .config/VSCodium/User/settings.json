@@ -1,0 +1,249 @@
+{
+  // open json editor for settings
+  "workbench.settings.editor": "json",
+
+  // Theme
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-perfect-mocha",
+  "workbench.preferredHighContrastColorTheme": "Catppuccin Macchiato",
+  "catppuccin.accentColor": "lavender",
+  "catppuccin.extraBordersEnabled": true,
+  "catppuccin.italicKeywords": true,
+
+  // Font
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "scm.inputFontFamily": "JetBrainsMono Nerd Font",
+  "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
+  "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
+  "markdown.preview.fontFamily": "JetBrainsMono Nerd Font",
+  "errorLens.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+
+  // UI
+  "window.commandCenter": false,
+  "editor.lineNumbers": "relative",
+  "window.menuBarVisibility": "toggle",
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.startupEditor": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.hideCursorInOverviewRuler": true,
+  "workbench.statusBar.visible": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "markdown-preview-github-styles.lightTheme": "dark",
+  "markdown-preview-github-styles.colorTheme": "dark",
+  "editor.matchBrackets": "never",
+  "files.trimTrailingWhitespace": true,
+  "editor.foldingImportsByDefault": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "cSpell.language": "en, es",
+  "search.followSymlinks": false,
+  "workbench.editor.showTabs": "multiple",
+  "explorer.compactFolders": false,
+  "breadcrumbs.filePath": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.wordWrap": "off",
+
+  // Misc
+  "codeium.enableCodeLens": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.linkedEditing": true,
+  "git.closeDiffOnOperation": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.autoClosingBrackets": "always",
+  "diffEditor.codeLens": true,
+  "editor.suggest.preview": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.suggest.matchOnWordStartOnly": false,
+  "editor.mouseWheelZoom": true,
+  "codeium.enableSearch": true,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "update.mode": "manual",
+
+  // APC
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 28
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 12,
+      "y": 10
+    }
+  },
+  "apc.font.family": "JetBrainsMono Nerd Font",
+  "apc.monospace.font.family": "JetBrainsMono Nerd Font",
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 28,
+    "fontSize": 12
+  },
+
+  // Custom css
+  "apc.stylesheet": {
+    ".title-actions": "display: none !important",
+    ".tabs-and-actions-container > .editor-actions": "display: none !important",
+    ".titlebar-center": "display: none !important",
+    ".titlebar-right": "display: none !important",
+    ".inline-tabs-placeholder": "display: none !important"
+  },
+
+  // Toggle excluded files
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.husky": true,
+    "**/drizzle": true,
+    "**/dist": true,
+    "**/.todo.md": true,
+    "**/.vscode": true,
+    "**/.eslintrc.cjs": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/.lintstagedrc.mjs": true,
+    "**/.markdownlint.json": true,
+    "**/.markdownlintignore": true,
+    "**/.prettierignore": true,
+    "**/bun.lockb": true,
+    "**/cspell.json": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/next-env.d.ts": true,
+    "**/postcss.config.cjs": true,
+    "**/prettier.config.js": true,
+    "**/README.md": true,
+    "**/next.config.js": true,
+    "**/tailwind.config.ts": true,
+    "**/drizzle.config.ts": true,
+    "**/migrate.ts": true,
+    "**/.env.example": true
+  },
+
+  // Neovim
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  // Project Manager
+  "projectManager.git.baseFolders": [
+    "/home/matt/Repos/Work",
+    "/home/matt/Repos/Personal",
+    "/home/matt/Repos/Community",
+    "/home/matt/Repos/Class"
+  ],
+
+  // Smooth movement
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+
+  // Animations
+  "animations.Enabled": true,
+  "animations.Active": "Indent",
+  "animations.Scrolling": "Slide",
+  "animations.Durations": {
+    "Command-Palette": 400,
+    "Scrolling": 300,
+    "Active": 200,
+    "Smooth-Mode": 300,
+    "Tabs": 300
+  },
+  "animations.Smooth-Mode": true,
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file:///home/matt/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+  ],
+
+  // Language specific
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "Lua.codeLens.enable": true,
+  "html.format.enable": true,
+  "json.format.enable": true,
+  "javascript.format.enable": true,
+  "redhat.telemetry.enabled": false,
+
+  // Terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.external.linuxExec": "kitty",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.shellIntegration.suggestEnabled": true,
+  "terminal.integrated.enableImages": true,
+  "terminal.explorerKind": "external",
+  "terminal.integrated.env.linux": {},
+
+  // Zen mode
+  "zenMode.showTabs": "none",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.silentNotifications": false,
+  "zenMode.fullScreen": false,
+
+  // Error lens
+  "errorLens.errorGutterIconColor": "#ED8796",
+  "errorLens.searchForProblemQuery": "https://search.brave.com/search?q=$message",
+  "errorLens.warningGutterIconColor": "#EED49F",
+
+  // Colorize
+  "colorize.include": [
+    "**/*.lua",
+    "**/*.cs",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "**/*.styl",
+    "**/*.xml",
+    "**/*.svg",
+    "**/*.json",
+    "**/*.js",
+    "**/*.java",
+    "**/*.kt",
+    "**/*.cpp",
+    "**/*.rasi"
+  ],
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "json",
+    "javascript",
+    "java",
+    "c",
+    "rasi",
+    "markdown"
+  ],
+}
