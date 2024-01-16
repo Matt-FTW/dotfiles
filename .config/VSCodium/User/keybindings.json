@@ -275,4 +275,9 @@
         "when": "editorTextFocus && neovim.init && neovim.mode != insert || neovim.recording",
         "args": "<C-B>"
     },
+    {
+        "key": "h",
+        "command": "toggleexcludedfiles.toggle",
+        "when": "filesExplorerFocus"
+    }
 ]
