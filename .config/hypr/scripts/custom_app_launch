@@ -61,13 +61,13 @@ case $app in
 		kitty nvim &
 	fi
 	;;
-"neovide")
+"codium")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch workspace 2 && neovide &
+		hyprctl dispatch workspace 2 && codium &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch workspace 12 && neovide &
+		hyprctl dispatch workspace 12 && codium &
 	else
-		neovide
+		codium
 	fi
 	;;
 "librewolf")
