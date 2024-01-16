@@ -36,7 +36,6 @@
   "workbench.startupEditor": "none",
   "editor.scrollbar.horizontal": "hidden",
   "editor.hideCursorInOverviewRuler": true,
-  "workbench.statusBar.visible": false,
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "markdown-preview-github-styles.lightTheme": "dark",
@@ -77,23 +76,20 @@
   "update.mode": "manual",
 
   // APC
+  "apc.electron": {
+    "titleBarStyle": "hidden",
+  },
+  "window.titleBarStyle": "native",
   "apc.activityBar": {
     "position": "bottom",
     "hideSettings": true,
-    "size": 28
-  },
-  "apc.electron": {
-    "titleBarStyle": "hiddenInset",
-    "trafficLightPosition": {
-      "x": 12,
-      "y": 10
-    }
+    "size": 26
   },
   "apc.font.family": "JetBrainsMono Nerd Font",
   "apc.monospace.font.family": "JetBrainsMono Nerd Font",
   "apc.statusBar": {
     "position": "editor-bottom",
-    "height": 28,
+    "height": 23,
     "fontSize": 12
   },
 
