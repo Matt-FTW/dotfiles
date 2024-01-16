@@ -30,7 +30,7 @@ return {
         return vim.fn["codeium#Clear"]()
       end, opts)
 
-      vim.keymap.set("n", "<leader>cI", "<cmd>CodeiumToggle<cr>", { desc = "Toggle IA" })
+      vim.keymap.set("n", "<leader>cI", "<cmd>CodeiumToggle<cr>", { desc = "Toggle IA (Codeium)" })
     end,
   },
   {

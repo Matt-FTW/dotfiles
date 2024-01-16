@@ -1,0 +1,15 @@
+alefragnani.project-manager
+amodio.toggle-excluded-files
+asvetliakov.vscode-neovim
+BrandonKirbyson.vscode-animations
+Catppuccin.catppuccin-vsc
+Codeium.codeium
+drcika.apc-extension
+golang.go
+jrebocho.vscode-random
+rafamel.subtle-brackets
+rust-lang.rust-analyzer
+streetsidesoftware.code-spell-checker
+thang-nm.catppuccin-perfect-icons
+usernamehw.errorlens
+yandeu.five-server

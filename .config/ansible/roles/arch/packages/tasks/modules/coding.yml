@@ -43,7 +43,8 @@
       - lazynpm
       - scc-bin
       - tgpt-bin
-      - visual-studio-code-bin
+      - vscodium-bin
+      - vscodium-marketplace-bin
 
 # Cargo
 - name: Install Rust Packages
