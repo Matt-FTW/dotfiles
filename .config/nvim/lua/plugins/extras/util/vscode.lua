@@ -69,6 +69,8 @@ vim.api.nvim_create_autocmd("User", {
     -- windows
     map("n", "<leader>|", vscode_action("workbench.action.splitEditorRight"))
     map("n", "<leader>-", vscode_action("workbench.action.splitEditorDown"))
+    -- explorer
+    map("n", "h", vscode_action("toggleexcludedfiles.toggle"))
     -- LSP actions
     map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     map("n", "gy", vscode_action("editor.action.goToTypeDefinition"))
@@ -78,6 +80,10 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>cr", vscode_action("editor.action.rename"))
     map("n", "<leader>co", vscode_action("editor.action.organizeImport"))
     map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
+    -- refactor
+    map("n", "<leader>cR", vscode_action("editor.action.refactor"))
+    -- markdown preview
+    map("n", "<leader>cp", vscode_action("markdown.showPreviewToSide"))
   end,
 })
 

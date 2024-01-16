@@ -73,7 +73,7 @@
   "neotest-mocha": { "branch": "main", "commit": "68f0e9768a94c3ebd4d5e67b2765e6a5df017d99" },
   "neotest-python": { "branch": "master", "commit": "2e83d2bc00acbcc1fd529dbf0a0e677cabfe6b50" },
   "neotest-rust": { "branch": "main", "commit": "3c06f239ad260f02c8678141e08b57d20fbe2c55" },
-  "neotest-vitest": { "branch": "main", "commit": "15972c4791b3d47df82311047835803a072c1da6" },
+  "neotest-vitest": { "branch": "main", "commit": "87e91bfd9419a8c74bf0d105e2ae31b9692daf0b" },
   "noice.nvim": { "branch": "main", "commit": "92433164e2f7118d4122c7674c3834d9511722ba" },
   "nui.nvim": { "branch": "main", "commit": "35da9ca1de0fc4dda96c2e214d93d363c145f418" },
   "nvim-ansible": { "branch": "main", "commit": "d115cb9bb3680c990e2684f58cf333663fff03b8" },
