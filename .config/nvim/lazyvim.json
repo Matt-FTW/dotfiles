@@ -26,6 +26,7 @@
     "plugins.extras.dap.core",
     "plugins.extras.dap.persistent-breakpoints",
     "plugins.extras.dap.telescope",
+    "plugins.extras.editor.carbon-now",
     "plugins.extras.editor.color",
     "plugins.extras.editor.compiler",
     "plugins.extras.editor.dev-container",
@@ -108,4 +109,3 @@
   },
   "version": 2
 }
-
