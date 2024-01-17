@@ -1,7 +1,6 @@
 {
   // open json editor for settings
   "workbench.settings.editor": "json",
-
   // Theme
   "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
@@ -9,8 +8,9 @@
   "workbench.preferredHighContrastColorTheme": "Catppuccin Macchiato",
   "catppuccin.accentColor": "lavender",
   "catppuccin.extraBordersEnabled": true,
-  "catppuccin.italicKeywords": true,
-
+  "catppuccin.italicComments": true,
+  "catppuccin.boldKeywords": true,
+  "catppuccin.italicKeywords": false,
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
@@ -22,10 +22,11 @@
   "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
   "markdown.preview.fontFamily": "JetBrainsMono Nerd Font",
   "errorLens.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
-
   // UI
+  "editor.stickyScroll.enabled": true,
   "window.commandCenter": false,
   "editor.lineNumbers": "relative",
   "window.menuBarVisibility": "toggle",
@@ -54,7 +55,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.scrollbar.vertical": "hidden",
   "editor.wordWrap": "off",
-
+  "errorLens.fontStyleItalic": true,
   // Misc
   "codeium.enableCodeLens": false,
   "git.openRepositoryInParentFolders": "never",
@@ -74,7 +75,11 @@
     ".env*": "dotenv"
   },
   "update.mode": "manual",
-
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.formatOnSave": true,
   // APC
   "apc.electron": {
     "titleBarStyle": "hidden",
@@ -92,7 +97,6 @@
     "height": 23,
     "fontSize": 12
   },
-
   // Custom css
   "apc.stylesheet": {
     ".title-actions": "display: none !important",
@@ -101,7 +105,6 @@
     ".titlebar-right": "display: none !important",
     ".inline-tabs-placeholder": "display: none !important"
   },
-
   // Toggle excluded files
   "files.exclude": {
     "**/.git": true,
@@ -138,12 +141,10 @@
     "**/migrate.ts": true,
     "**/.env.example": true
   },
-
   // Neovim
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-
   // Project Manager
   "projectManager.git.baseFolders": [
     "/home/matt/Repos/Work",
@@ -151,14 +152,13 @@
     "/home/matt/Repos/Community",
     "/home/matt/Repos/Class"
   ],
-
+  "projectManager.sortList": "Recent",
   // Smooth movement
   "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
-
   // Animations
   "animations.Enabled": true,
   "animations.Active": "Indent",
@@ -175,7 +175,6 @@
   "apc.imports": [
     "file:///home/matt/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
   ],
-
   // Language specific
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
@@ -184,7 +183,8 @@
   "json.format.enable": true,
   "javascript.format.enable": true,
   "redhat.telemetry.enabled": false,
-
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // Terminal
   "terminal.integrated.cursorBlinking": true,
   "terminal.external.linuxExec": "kitty",
@@ -195,18 +195,15 @@
   "terminal.integrated.enableImages": true,
   "terminal.explorerKind": "external",
   "terminal.integrated.env.linux": {},
-
   // Zen mode
   "zenMode.showTabs": "none",
   "zenMode.hideLineNumbers": false,
   "zenMode.silentNotifications": false,
   "zenMode.fullScreen": false,
-
   // Error lens
   "errorLens.errorGutterIconColor": "#ED8796",
   "errorLens.searchForProblemQuery": "https://search.brave.com/search?q=$message",
   "errorLens.warningGutterIconColor": "#EED49F",
-
   // Colorize
   "colorize.include": [
     "**/*.lua",
