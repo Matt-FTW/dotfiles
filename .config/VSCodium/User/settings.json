@@ -82,7 +82,7 @@
   "editor.formatOnSave": true,
   // APC
   "apc.electron": {
-    "titleBarStyle": "hidden",
+    "titleBarStyle": "hidden"
   },
   "window.titleBarStyle": "native",
   "apc.activityBar": {
@@ -104,42 +104,6 @@
     ".titlebar-center": "display: none !important",
     ".titlebar-right": "display: none !important",
     ".inline-tabs-placeholder": "display: none !important"
-  },
-  // Toggle excluded files
-  "files.exclude": {
-    "**/.git": false,
-    "**/.svn": false,
-    "**/.hg": false,
-    "**/CVS": false,
-    "**/.DS_Store": false,
-    "**/Thumbs.db": false,
-    "**/node_modules": false,
-    "**/.next": false,
-    "**/.husky": false,
-    "**/drizzle": false,
-    "**/dist": false,
-    "**/.todo.md": false,
-    "**/.vscode": false,
-    "**/.eslintrc.cjs": false,
-    "**/.editorconfig": false,
-    "**/.gitignore": false,
-    "**/.lintstagedrc.mjs": false,
-    "**/.markdownlint.json": false,
-    "**/.markdownlintignore": false,
-    "**/.prettierignore": false,
-    "**/bun.lockb": false,
-    "**/cspell.json": false,
-    "**/package-lock.json": false,
-    "**/pnpm-lock.yaml": false,
-    "**/next-env.d.ts": false,
-    "**/postcss.config.cjs": false,
-    "**/prettier.config.js": false,
-    "**/README.md": false,
-    "**/next.config.js": false,
-    "**/tailwind.config.ts": false,
-    "**/drizzle.config.ts": false,
-    "**/migrate.ts": false,
-    "**/.env.example": false
   },
   // Neovim
   "extensions.experimental.affinity": {
@@ -185,6 +149,52 @@
   "redhat.telemetry.enabled": false,
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // File explorer
   // Terminal
   "terminal.integrated.cursorBlinking": true,
   "terminal.external.linuxExec": "kitty",
@@ -239,4 +249,40 @@
     "rasi",
     "markdown"
   ],
+  // Toggle excluded files
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.husky": true,
+    "**/drizzle": true,
+    "**/dist": true,
+    "**/.todo.md": true,
+    "**/.vscode": true,
+    "**/.eslintrc.cjs": true,
+    "**/.editorconfig": true,
+    "**/.gitignore": true,
+    "**/.lintstagedrc.mjs": true,
+    "**/.markdownlint.json": true,
+    "**/.markdownlintignore": true,
+    "**/.prettierignore": true,
+    "**/bun.lockb": true,
+    "**/cspell.json": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/next-env.d.ts": true,
+    "**/postcss.config.cjs": true,
+    "**/prettier.config.js": true,
+    "**/README.md": true,
+    "**/next.config.js": true,
+    "**/tailwind.config.ts": true,
+    "**/drizzle.config.ts": true,
+    "**/migrate.ts": true,
+    "**/.env.example": true
+  }
 }
