@@ -84,7 +84,7 @@
         "command": "-workbench.action.showAllSymbols"
     },
     {
-        "key": "ctrl+t",
+        "key": "ctrl+\\",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
     },
@@ -276,8 +276,28 @@
         "args": "<C-B>"
     },
     {
-        "key": "h",
+        "key": "shift+h",
         "command": "toggleexcludedfiles.toggle",
         "when": "filesExplorerFocus"
-    }
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-toggleexcludedfiles.toggle",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-notebook.cell.executeAndInsertBelow",
+        "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.inlineSuggest.commit",
+        "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
 ]

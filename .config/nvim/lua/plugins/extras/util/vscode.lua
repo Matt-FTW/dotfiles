@@ -40,9 +40,9 @@ vim.o.spell = false
 vim.notify = vscode.notify
 vim.g.clipboard = vim.g.vscode_clipboard
 
-local function vscode_action(cmd)
+local function vscode_action(cmd, opts)
   return function()
-    vscode.action(cmd)
+    vscode.action(cmd, opts)
   end
 end
 
@@ -60,8 +60,9 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer in left sidebar
     map("n", "<leader>e", vscode_action("workbench.view.explorer"))
-    -- Open terminal
-    map("n", "<leader>ft", vscode_action("workbench.action.terminal.focus"))
+    -- terminal
+    map("n", [[<c-\>]], vscode_action("workbench.action.terminal.toggleTerminal"))
+    map("n", "<leader>fts", vscode_action("workbench.action.terminal.newWithCwd"))
     -- close editor
     map("n", "<leader>bd", vscode_action("workbench.action.closeActiveEditor"))
     -- breakpoints
@@ -70,7 +71,7 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>|", vscode_action("workbench.action.splitEditorRight"))
     map("n", "<leader>-", vscode_action("workbench.action.splitEditorDown"))
     -- explorer
-    map("n", "h", vscode_action("toggleexcludedfiles.toggle"))
+    map("n", "<S-h>", vscode_action("toggleexcludedfiles.toggle"))
     -- LSP actions
     map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     map("n", "gy", vscode_action("editor.action.goToTypeDefinition"))
@@ -84,6 +85,18 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>cR", vscode_action("editor.action.refactor"))
     -- markdown preview
     map("n", "<leader>cp", vscode_action("markdown.showPreviewToSide"))
+    -- project manager
+    map("n", "<leader>fp", vscode_action("projectManager.listProjects"))
+    -- zoxide
+    -- stylua: ignore
+    map("n", "<leader>fz", vscode_action("terminalCommandKeys.run",
+      { args = { cmd = "cdzc", newTerminal = false, saveAllFiles = false, showTerminal = true, focus = true } }
+    ))
+    -- zen mode
+    map("n", "<leader>z", vscode_action("workbench.action.toggleZenMode"))
+    -- cspell
+    map("n", "<leader>!", vscode_action("cSpell.addWordToDictionary"))
+    map("n", "<leader>us", vscode_action("cSpell.toggleEnableSpellChecker"))
   end,
 })
 

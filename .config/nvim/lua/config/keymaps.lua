@@ -15,8 +15,17 @@ map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "
 -- stylua: ignore
 map("n", "<leader>uB", function() Util.toggle("background", false, { "light", "dark" }) end, { desc = "Toggle Background" })
 
+-- Save without formatting
+map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save without formatting" })
+
 -- Disable lazyterminal keymap
 map("n", "<leader>fT", "<Nop>")
+
+-- Cursor navigation on insert mode
+map("i", "<M-h>", "<left>", { desc = "Move cursor left" })
+map("i", "<M-l>", "<right>", { desc = "Move cursor left" })
+map("i", "<M-j>", "<down>", { desc = "Move cursor left" })
+map("i", "<M-k>", "<up>", { desc = "Move cursor left" })
 
 -- End of the word backwards
 map("n", "E", "ge")

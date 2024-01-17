@@ -329,6 +329,7 @@
 
 - [andweeb/presence.nvim](https://dotfyle.com/plugins/andweeb/presence.nvim)
 - [edluffy/hologram.nvim](https://dotfyle.com/plugins/edluffy/hologram.nvim)
+- [ellisonleao/carbon-now.nvim](https://dotfyle.com/plugins/ellisonleao/carbon-now.nvim)
 
 </details>
 
@@ -412,7 +413,6 @@
 <details>
 <summary><b>🐌 Snippet</b></summary>
 
-- [TobinPalmer/rayso.nvim](https://dotfyle.com/plugins/TobinPalmer/rayso.nvim)
 - [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 - [chrisgrieser/nvim-scissors](https://dotfyle.com/plugins/chrisgrieser/nvim-scissors)
 - [mrcjkb/haskell-snippets.nvim](https://dotfyle.com/plugins/mrcjkb/haskell-snippets.nvim)

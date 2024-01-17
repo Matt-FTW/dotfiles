@@ -2,12 +2,11 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
-local function augroup(name)
-  return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
-end
+local au = vim.api.nvim_create_autocmd
+local ag = vim.api.nvim_create_augroup
 
 -- Disable diagnostics in a .env file
-vim.api.nvim_create_autocmd("BufRead", {
+au("BufRead", {
   pattern = ".env",
   callback = function()
     vim.diagnostic.disable(0)
@@ -15,7 +14,7 @@ vim.api.nvim_create_autocmd("BufRead", {
 })
 
 -- Fix telescope entering on insert mode
-vim.api.nvim_create_autocmd("WinLeave", {
+au("WinLeave", {
   callback = function()
     if vim.bo.ft == "TelescopePrompt" and vim.fn.mode() == "i" then
       vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "i", false)
@@ -34,8 +33,8 @@ local auto_close_filetype = {
 }
 
 -- Auto close window when leaving
-vim.api.nvim_create_autocmd("BufLeave", {
-  group = augroup("auto_close_win"),
+au("BufLeave", {
+  group = ag("lazyvim_auto_close_win", { clear = true }),
   callback = function(event)
     local ft = vim.api.nvim_buf_get_option(event.buf, "filetype")
 
@@ -49,8 +48,8 @@ vim.api.nvim_create_autocmd("BufLeave", {
 })
 
 -- Disable leader and localleader for some filetypes
-vim.api.nvim_create_autocmd("FileType", {
-  group = augroup("unbind_leader_key"),
+au("FileType", {
+  group = ag("lazyvim_unbind_leader_key", { clear = true }),
   pattern = {
     "lazy",
     "mason",
@@ -69,16 +68,25 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Delete number column on terminals
-vim.api.nvim_create_autocmd("TermOpen", {
+au("TermOpen", {
   callback = function()
     vim.cmd("setlocal listchars= nonumber norelativenumber")
   end,
 })
 
 -- Disable next line comments
-vim.api.nvim_create_autocmd("BufEnter", {
+au("BufEnter", {
   callback = function()
     vim.cmd("set formatoptions-=cro")
     vim.cmd("setlocal formatoptions-=cro")
+  end,
+})
+
+-- Disable eslint on node_modules
+au({ "BufNewFile", "BufRead" }, {
+  group = ag("DisableEslintOnNodeModules", { clear = true }),
+  pattern = { "**/node_modules/**", "node_modules", "/node_modules/*" },
+  callback = function()
+    vim.diagnostic.disable(0)
   end,
 })
