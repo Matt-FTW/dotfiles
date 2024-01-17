@@ -88,14 +88,15 @@ vim.api.nvim_create_autocmd("User", {
     -- project manager
     map("n", "<leader>fp", vscode_action("projectManager.listProjects"))
     -- zoxide
-    map(
-      "n",
-      "<leader>fz",
-      vscode_action(
-        "terminalCommandKeys.run",
-        { args = { cmd = "cdzc", newTerminal = false, saveAllFiles = false, showTerminal = true, focus = true } }
-      )
-    )
+    -- stylua: ignore
+    map("n", "<leader>fz", vscode_action("terminalCommandKeys.run",
+      { args = { cmd = "cdzc", newTerminal = false, saveAllFiles = false, showTerminal = true, focus = true } }
+    ))
+    -- zen mode
+    map("n", "<leader>z", vscode_action("workbench.action.toggleZenMode"))
+    -- cspell
+    map("n", "<leader>!", vscode_action("cSpell.addWordToDictionary"))
+    map("n", "<leader>us", vscode_action("cSpell.toggleEnableSpellChecker"))
   end,
 })
 
