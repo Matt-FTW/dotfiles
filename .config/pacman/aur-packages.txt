@@ -60,7 +60,7 @@ topgrade 13.0.0-1
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-symbola 14.00-1
 universal-android-debloater 0.6.2-1
-upscayl-bin 2.9.5-1
+upscayl-bin 2.9.8-1
 ventoy-bin 1.0.96-1
 vkbasalt 0.3.2.10-1
 vscodium-bin 1.85.1.23348-1
