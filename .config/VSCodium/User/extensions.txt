@@ -28,13 +28,16 @@ rafamel.subtle-brackets
 redhat.ansible
 redhat.vscode-yaml
 rust-lang.rust-analyzer
+stivo.tailwind-fold
 streetsidesoftware.code-spell-checker
 sumneko.lua
 svelte.svelte-vscode
 thang-nm.catppuccin-perfect-icons
 timonwong.shellcheck
 usernamehw.errorlens
+vadimcn.vscode-lldb
 VSpaceCode.whichkey
 Vue.volar
 yandeu.five-server
+YoavBls.pretty-ts-errors
 ziglang.vscode-zig
