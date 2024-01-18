@@ -82,6 +82,8 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>cr", vscode_action("editor.action.rename"))
     map("n", "<leader>co", vscode_action("editor.action.organizeImport"))
     map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
+    map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
+    map("n", "<leader>sS", vscode_action("workbench.action.showAllSymbols"))
     -- refactor
     map("n", "<leader>cR", vscode_action("editor.action.refactor"))
     -- markdown preview
