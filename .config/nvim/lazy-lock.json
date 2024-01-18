@@ -64,7 +64,7 @@
   "multicursors.nvim": { "branch": "main", "commit": "8e876fe9db46c1b76c151202b418df21eca07bad" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "2f2d08894bbc679d4d181604c16bb7079f646384" },
   "neoconf.nvim": { "branch": "main", "commit": "64437787dba70fce50dad7bfbb97d184c5bc340f" },
-  "neodev.nvim": { "branch": "main", "commit": "627912767e31631e282c9724f32057cb62b4ebf7" },
+  "neodev.nvim": { "branch": "main", "commit": "505860e0277611434f4e8d61d3c0d373045e57e1" },
   "neogen": { "branch": "main", "commit": "70127baaff25611deaf1a29d801fc054ad9d2dc1" },
   "neotest": { "branch": "master", "commit": "dcdb40ea48f9c7b67a5576f6bb2e5f63ec15f2c0" },
   "neotest-bash": { "branch": "main", "commit": "2eaad2ae4577fadf4af1eec32ec169d0fb2698bb" },
