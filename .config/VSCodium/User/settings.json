@@ -284,5 +284,200 @@
     "**/drizzle.config.ts": true,
     "**/migrate.ts": true,
     "**/.env.example": true
+  },
+  "commentAnchors.workspace.lazyLoad": false,
+  "commentAnchors.tags.anchors": {
+    // General Anchors
+    "ANCHOR": {
+      "iconColor": "default",
+      "highlightColor": "#A8C023",
+      "scope": "file",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+    "TODO": {
+      "iconColor": "#91d7e3",
+      "highlightColor": "#91d7e3",
+      "scope": "workspace",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+
+    // FIX Anchors
+    "FIXME": {
+      "iconColor": "#ed8796",
+      "highlightColor": "#ed8796",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "FIX": {
+      "iconColor": "#ed8796",
+      "highlightColor": "#ed8796",
+      "scope": "workspace",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+    "BUG": {
+      "iconColor": "#ed8796",
+      "highlightColor": "#ed8796",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "FIXIT": {
+      "iconColor": "#ed8796",
+      "highlightColor": "#ed8796",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "ISSUE": {
+      "iconColor": "#ed8796",
+      "highlightColor": "#ed8796",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+
+    // NOTE Anchors
+    "INFO": {
+      "iconColor": "#8bd5ca",
+      "highlightColor": "#8bd5ca",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "NOTE": {
+      "iconColor": "#8bd5ca",
+      "highlightColor": "#8bd5ca",
+      "scope": "workspace",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+
+    // Other Anchors
+    "HACK": {
+      "iconColor": "#eed49f",
+      "highlightColor": "#eed49f",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+
+    // Warning Anchors
+    "XXX": {
+      "iconColor": "#eed49f",
+      "highlightColor": "#eed49f",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "WARNING": {
+      "iconColor": "#eed49f",
+      "highlightColor": "#eed49f",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "WARN": {
+      "iconColor": "#eed49f",
+      "highlightColor": "#eed49f",
+      "scope": "workspace",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+
+    // Performance Anchors
+    "OPTIM": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "PERFORMANCE": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "OPTIMIZE": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "PERF": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+
+    // Testing Anchors
+    "PASSED": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "FAILED": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "TESTING": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "TEST": {
+      "iconColor": "#f0c6c6",
+      "highlightColor": "#f0c6c6",
+      "scope": "workspace",
+      "isItalic": true,
+      "isBold": true,
+      "styleMode": "full"
+    },
+    "REVIEW": {
+      "iconColor": "#a6da95",
+      "highlightColor": "#a6da95",
+      "scope": "workspace",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+
+    // Dividing Anchors
+    "SECTION": {
+      "iconColor": "#f5bde6",
+      "highlightColor": "#f5bde6",
+      "scope": "workspace",
+      "behavior": "region",
+      "isItalic": true,
+      "styleMode": "full"
+    },
+    "LINK": {
+      "iconColor": "#f5a97f",
+      "highlightColor": "#f5a97f",
+      "scope": "workspace",
+      "behavior": "link",
+      "isItalic": true,
+      "styleMode": "full"
+    }
   }
 }
