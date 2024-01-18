@@ -131,32 +131,33 @@ Here is all the information about my setup:
 <details>
   <summary><b>🖥️ CLI/TUI Apps</b></summary>
 
-| 📚 Entry                   | ✨ App                                                                                           |
-| -------------------------- | ------------------------------------------------------------------------------------------------ |
-| **Shell**                  | 💖 [Fish](https://fishshell.com/) [:gear:](../.config/fish/)                                     |
-| **Terminal Emulator**      | 💖 [Kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                         |
-| **Shell Prompt**           | [Starship](https://starship.rs/) [:gear:](../.config/starship/)                                  |
-| **Shell History**          | [Atuin](https://github.com/atuinsh/atuin) [:gear:](../.config/atuin/)                            |
-| **CD Replacement**         | 💖 [zoxide](https://github.com/ajeetdsouza/zoxide)                                               |
-| **LS Replacement**         | [eza](https://github.com/eza-community/eza)                                                      |
-| **Cat Replacement**        | [bat](https://github.com/sharkdp/bat) [:gear:](../.config/bat/)                                  |
-| **Find Replacement**       | [fd](https://github.com/sharkdp/fd) [:gear:](../.config/fd/)                                     |
-| **File Manager**           | 💖 [Yazi](https://yazi-rs.github.io/) [:gear:](../.config/yazi/)                                 |
-| **Help Pages**             | [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) [:gear:](../.config/navi/) |
-| **Fuzzy File Finder**      | 💖 [fzf](https://github.com/junegunn/fzf)                                                        |
-| **Fuzzy Word Finder**      | [Ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                        |
-| **Text Editor**            | 💖 [Neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
-| **Git UI**                 | 💖 [Lazygit](https://github.com/jesseduffield/lazygit) [:gear:](../.config/lazygit/)             |
-| **Npm Manager UI**         | [Lazynpm](https://github.com/jesseduffield/lazynpm)                                              |
-| **Docker UI**              | [Lazydocker](https://github.com/jesseduffield/lazydocker)                                        |
-| **Arch Package Search UI** | [Pacseek](https://github.com/moson-mo/pacseek) [:gear:](../.config/pacseek/)                     |
-| **Update Tool**            | [Topgrade](https://github.com/topgrade-rs/topgrade) [:gear:](../.config/topgrade/)               |
-| **Audio Visualizer**       | [Cava](https://github.com/karlstav/cava) [:gear:](../.config/cava/)                              |
-| **System Monitor**         | [btop](https://github.com/aristocratos/btop) [:gear:](../.config/btop/)                          |
-| **GPU Monitor**            | [nvtop](https://github.com/Syllo/nvtop)                                                          |
-| **System Fetch**           | [Neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)                |
-| **Git Fetch**              | [Onefetch](https://github.com/o2sh/onefetch)                                                     |
-| **Keybindings TUI**        | [Keyb](https://github.com/kencx/keyb) [:gear:](../.config/keyb/)                                 |
+| 📚 Entry                    | ✨ App                                                                                           |
+| --------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Shell**                   | 💖 [Fish](https://fishshell.com/) [:gear:](../.config/fish/)                                     |
+| **Terminal Emulator**       | 💖 [Kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                         |
+| **Shell Prompt**            | [Starship](https://starship.rs/) [:gear:](../.config/starship/)                                  |
+| **Text Editor**             | 💖 [Neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
+| **Shell History**           | [Atuin](https://github.com/atuinsh/atuin) [:gear:](../.config/atuin/)                            |
+| **CD Replacement**          | 💖 [zoxide](https://github.com/ajeetdsouza/zoxide)                                               |
+| **LS Replacement**          | [eza](https://github.com/eza-community/eza)                                                      |
+| **Cat Replacement**         | [bat](https://github.com/sharkdp/bat) [:gear:](../.config/bat/)                                  |
+| **Find Replacement**        | [fd](https://github.com/sharkdp/fd) [:gear:](../.config/fd/)                                     |
+| **File Manager**            | 💖 [Yazi](https://yazi-rs.github.io/) [:gear:](../.config/yazi/)                                 |
+| **Help Pages**              | [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) [:gear:](../.config/navi/) |
+| **Fuzzy File Finder**       | 💖 [fzf](https://github.com/junegunn/fzf)                                                        |
+| **Fuzzy Word Finder**       | [Ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                        |
+| **Git TUI**                 | 💖 [Lazygit](https://github.com/jesseduffield/lazygit) [:gear:](../.config/lazygit/)             |
+| **Npm Manager TUI**         | [Lazynpm](https://github.com/jesseduffield/lazynpm)                                              |
+| **Docker TUI**              | [Lazydocker](https://github.com/jesseduffield/lazydocker)                                        |
+| **Arch Package Search TUI** | [Pacseek](https://github.com/moson-mo/pacseek) [:gear:](../.config/pacseek/)                     |
+| **Trash CLI**               | [Gtrash](https://github.com/umlx5h/gtrash)                                                       |
+| **Update Tool**             | [Topgrade](https://github.com/topgrade-rs/topgrade) [:gear:](../.config/topgrade/)               |
+| **Audio Visualizer**        | [Cava](https://github.com/karlstav/cava) [:gear:](../.config/cava/)                              |
+| **System Monitor**          | [btop](https://github.com/aristocratos/btop) [:gear:](../.config/btop/)                          |
+| **GPU Monitor**             | [nvtop](https://github.com/Syllo/nvtop)                                                          |
+| **System Fetch**            | [Neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)                |
+| **Git Fetch**               | [Onefetch](https://github.com/o2sh/onefetch)                                                     |
+| **Keybindings TUI**         | [Keyb](https://github.com/kencx/keyb) [:gear:](../.config/keyb/)                                 |
 
 </details>
 
