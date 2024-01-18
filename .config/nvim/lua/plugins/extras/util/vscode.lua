@@ -109,6 +109,14 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>uS", vscode_action("workbench.action.toggleStatusbarVisibility"))
     -- markdown preview
     map("n", "<leader>cp", vscode_action("markdown.showPreviewToSide"))
+    -- codeium
+    map("n", "<leader>cI", vscode_action("codeium.toggleEnable"))
+    map({ "n", "v" }, "<leader>id", vscode_action("codeium.generateFunctionDocstring"))
+    map("n", "<leader>ic", vscode_action("codeium.openChatView"))
+    map("n", "<leader>is", vscode_action("codeium.openSearchView"))
+    map({ "n", "v" }, "<leader>ie", vscode_action("codeium.explainCodeBlock"))
+    map({ "n", "v" }, "<leader>iE", vscode_action("codeium.explainProblem"))
+    map({ "n", "v" }, "<leader>ii", vscode_action("codeium.openCodeiumCommand"))
   end,
 })
 
