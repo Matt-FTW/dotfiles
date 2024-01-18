@@ -25,6 +25,7 @@ local enabled = {
   "nvim-various-textobjs",
   "nvim-ts-context-commentstring",
   "vim-repeat",
+  "vim-carbon-now-sh",
   "highlight-undo.nvim",
   "ts-node-action",
   "LazyVim",
@@ -58,8 +59,10 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
     -- view problems
     map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
-    -- open file explorer in left sidebar
+    -- open file explorer
     map("n", "<leader>e", vscode_action("workbench.view.explorer"))
+    -- toggle side bar
+    map("n", "<leader>ue", vscode_action("workbench.action.toggleSidebarVisibility"))
     -- terminal
     map("n", [[<c-\>]], vscode_action("workbench.action.terminal.toggleTerminal"))
     map("n", "<leader>fts", vscode_action("workbench.action.terminal.newWithCwd"))
@@ -70,8 +73,6 @@ vim.api.nvim_create_autocmd("User", {
     -- windows
     map("n", "<leader>|", vscode_action("workbench.action.splitEditorRight"))
     map("n", "<leader>-", vscode_action("workbench.action.splitEditorDown"))
-    -- explorer
-    map("n", "<S-h>", vscode_action("toggleexcludedfiles.toggle"))
     -- LSP actions
     map("n", "<leader>ca", vscode_action("editor.action.codeAction"))
     map("n", "gy", vscode_action("editor.action.goToTypeDefinition"))
@@ -81,6 +82,8 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>cr", vscode_action("editor.action.rename"))
     map("n", "<leader>co", vscode_action("editor.action.organizeImport"))
     map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
+    map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
+    map("n", "<leader>sS", vscode_action("workbench.action.showAllSymbols"))
     -- refactor
     map("n", "<leader>cR", vscode_action("editor.action.refactor"))
     -- markdown preview
@@ -97,6 +100,23 @@ vim.api.nvim_create_autocmd("User", {
     -- cspell
     map("n", "<leader>!", vscode_action("cSpell.addWordToDictionary"))
     map("n", "<leader>us", vscode_action("cSpell.toggleEnableSpellChecker"))
+    -- comments
+    map("n", "<leader>xt", vscode_action("workspaceAnchors.focus"))
+    -- git
+    map("n", "<leader>gg", vscode_action("gitlens.views.home.focus"))
+    map("n", "<leader>ub", vscode_action("gitlens.toggleFileBlame"))
+    -- statusline
+    map("n", "<leader>uS", vscode_action("workbench.action.toggleStatusbarVisibility"))
+    -- markdown preview
+    map("n", "<leader>cp", vscode_action("markdown.showPreviewToSide"))
+    -- codeium
+    map("n", "<leader>cI", vscode_action("codeium.toggleEnable"))
+    map({ "n", "v" }, "<leader>id", vscode_action("codeium.generateFunctionDocstring"))
+    map("n", "<leader>ic", vscode_action("codeium.openChatView"))
+    map("n", "<leader>is", vscode_action("codeium.openSearchView"))
+    map({ "n", "v" }, "<leader>ie", vscode_action("codeium.explainCodeBlock"))
+    map({ "n", "v" }, "<leader>iE", vscode_action("codeium.explainProblem"))
+    map({ "n", "v" }, "<leader>ii", vscode_action("codeium.openCodeiumCommand"))
   end,
 })
 

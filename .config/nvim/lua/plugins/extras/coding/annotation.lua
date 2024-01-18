@@ -29,6 +29,7 @@ return {
     -- stylua: ignore
     keys = {
       { "<leader>ag", "<Cmd>DookuGenerate<CR>", desc = "Generate HTML Docs" },
+      { "<leader>ao", "<Cmd>DookuOpen<CR>", desc = "Open HTML Docs" },
     },
   },
 }
