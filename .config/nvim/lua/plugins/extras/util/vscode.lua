@@ -68,7 +68,15 @@ vim.api.nvim_create_autocmd("User", {
     -- terminal
     map("n", [[<c-\>]], vscode_action("workbench.action.terminal.toggleTerminal"))
     map("n", "<leader>fts", vscode_action("workbench.action.terminal.newWithCwd"))
-    -- close editor
+    -- working with editors (buffers)
+    map("n", "<leader>bo", vscode_action("workbench.action.closeOtherEditors"))
+    map("n", "<leader>bA", vscode_action("workbench.action.closeAllEditors"))
+    map("n", "<leader>ba", vscode_action("workbench.action.lastEditorInGroup"))
+    map("n", "<leader>bf", vscode_action("workbench.action.firstEditorInGroup"))
+    map("n", "<Leader>bl", vscode_action("workbench.action.closeEditorsToTheLeft"))
+    map("n", "<Leader>br", vscode_action("workbench.action.closeEditorsToTheRight"))
+    map("n", "H", vscode_action("workbench.action.previousEditorInGroup"))
+    map("n", "L", vscode_action("workbench.action.nextEditorInGroup"))
     map("n", "<leader>bd", vscode_action("workbench.action.closeActiveEditor"))
     -- breakpoints
     map("n", "<F2>", vscode_action("editor.debug.action.toggleBreakpoint"))
@@ -107,6 +115,14 @@ vim.api.nvim_create_autocmd("User", {
     -- git
     map("n", "<leader>gg", vscode_action("gitlens.views.home.focus"))
     map("n", "<leader>ub", vscode_action("gitlens.toggleFileBlame"))
+    map("n", "]h", function()
+      vscode.action("workbench.action.editor.nextChange")
+      vscode.action("workbench.action.compareEditor.nextChange")
+    end)
+    map("n", "[h", function()
+      vscode.action("workbench.action.editor.previousChange")
+      vscode.action("workbench.action.compareEditor.previousChange")
+    end)
     -- statusline
     map("n", "<leader>uS", vscode_action("workbench.action.toggleStatusbarVisibility"))
     -- markdown preview
@@ -119,6 +135,9 @@ vim.api.nvim_create_autocmd("User", {
     map({ "n", "v" }, "<leader>ie", vscode_action("codeium.explainCodeBlock"))
     map({ "n", "v" }, "<leader>iE", vscode_action("codeium.explainProblem"))
     map({ "n", "v" }, "<leader>ii", vscode_action("codeium.openCodeiumCommand"))
+    -- diagnostics
+    map("n", "]d", vscode_action("editor.action.marker.next"))
+    map("n", "[d", vscode_action("editor.action.marker.prev"))
   end,
 })
 
