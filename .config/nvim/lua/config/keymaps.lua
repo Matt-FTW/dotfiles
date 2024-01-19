@@ -11,9 +11,23 @@ local searching_brave = function()
 end
 map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search current word on brave search" })
 
+-- Lazy options
+map("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy" })
+-- stylua: ignore start
+map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "Docs" })
+map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end, { desc = "Repo" })
+map("n", "<leader>le", "<cmd>LazyExtras<cr>", { desc = "Extras" })
+map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
+-- stylua: ignore end
+map("n", "<leader>L", "<Nop>")
+
 -- Toggle background
 -- stylua: ignore
 map("n", "<leader>uB", function() Util.toggle("background", false, { "light", "dark" }) end, { desc = "Toggle Background" })
+
+-- Identation
+map("n", "<", "<<", { desc = "Deindent" })
+map("n", ">", ">>", { desc = "Indent" })
 
 -- Save without formatting
 map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save without formatting" })
@@ -62,7 +76,6 @@ end, { desc = "Toggle Statusline" })
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cic", "<cmd>ConformInfo<cr>", { desc = "Conform" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
-map("n", "<leader>cie", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 
 -- U for redo
 map("n", "U", "<C-r>", { desc = "Redo" })

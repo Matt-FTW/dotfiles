@@ -39,6 +39,7 @@ return {
 
   -- Markdown
   { "iamcco/markdown-preview.nvim", optional = true },
+  { "lukas-reineke/headlines.nvim", optional = true },
 
   -- C#
   { "Hoffs/omnisharp-extended-lsp.nvim", optional = true },
