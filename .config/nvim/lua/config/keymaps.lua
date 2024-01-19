@@ -25,6 +25,10 @@ map("n", "<leader>L", "<Nop>")
 -- stylua: ignore
 map("n", "<leader>uB", function() Util.toggle("background", false, { "light", "dark" }) end, { desc = "Toggle Background" })
 
+-- Identation
+map("n", "<", "<<", { desc = "Deindent" })
+map("n", ">", ">>", { desc = "Indent" })
+
 -- Save without formatting
 map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save without formatting" })
 
