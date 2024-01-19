@@ -146,6 +146,18 @@
 <summary><b>🔥 Completion</b></summary>
 
 - [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
+- [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [lukas-reineke/cmp-rg](https://dotfyle.com/plugins/lukas-reineke/cmp-rg)
+- [lukas-reineke/cmp-under-comparator](https://dotfyle.com/plugins/lukas-reineke/cmp-under-comparator)
+- [petertriho/cmp-git](https://github.com/petertriho/cmp-git)
+- [amarakon/nvim-cmp-fonts](https://github.com/amarakon/nvim-cmp-fonts)
+- [hrsh7th/cmp-emoji](https://github.com/hrsh7th/cmp-emoji)
+- [chrisgrieser/cmp_yanky](https://github.com/chrisgrieser/cmp_yanky)
+- [chrisgrieser/cmp-nerdfont](https://github.com/chrisgrieser/cmp-nerdfont)
+- [SergioRibera/cmp-dotenv](https://github.com/SergioRibera/cmp-dotenv)
 - [roobert/tailwindcss-colorizer-cmp.nvim](https://dotfyle.com/plugins/roobert/tailwindcss-colorizer-cmp.nvim)
 
 </details>
@@ -314,6 +326,7 @@
 - [Zeioth/markmap.nvim](https://dotfyle.com/plugins/Zeioth/markmap.nvim)
 - [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
 - [toppair/peek.nvim](https://dotfyle.com/plugins/toppair/peek.nvim)
+- [lukas-reineke/headlines.nvim](https://dotfyle.com/plugins/lukas-reineke/headlines.nvim)
 
 </details>
 
