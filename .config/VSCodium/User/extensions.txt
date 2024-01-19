@@ -34,6 +34,7 @@ sumneko.lua
 svelte.svelte-vscode
 thang-nm.catppuccin-perfect-icons
 timonwong.shellcheck
+tobias-z.vscode-harpoon
 usernamehw.errorlens
 vadimcn.vscode-lldb
 VSpaceCode.whichkey
