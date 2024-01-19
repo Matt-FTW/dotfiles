@@ -679,6 +679,10 @@
 | ----------------------------------------- |
 | ![lualine](./overview-images/lualine.png) |
 
+| **Notify Info**                            | **Notify Warning**                               | **Notify Error**                             |
+| ------------------------------------------ | ------------------------------------------------ | -------------------------------------------- |
+| ![info](./overview-images/notify-info.png) | ![warning](./overview-images/notify-warning.png) | ![error](./overview-images/notify-error.png) |
+
 | **Which-key**                                 |
 | --------------------------------------------- |
 | ![which-key](./overview-images/which-key.png) |
@@ -687,9 +691,18 @@
 | --------------------------------------------- |
 | ![live-grep](./overview-images/live-grep.png) |
 
+| **Cmp**                               |
+| ------------------------------------- |
+| ![cmp](./overview-images/cmp.png)     |
+| ![cmp-2](./overview-images/cmp-2.png) |
+
 | **Breadcrumbs**                                   |
 | ------------------------------------------------- |
 | ![breadcrumbs](./overview-images/breadcrumbs.png) |
+
+| **Actions Preview**                                       |
+| --------------------------------------------------------- |
+| ![actions-preview](./overview-images/actions-preview.png) |
 
 | **Trouble**                               |
 | ----------------------------------------- |
@@ -698,5 +711,13 @@
 | **Diff-History**                                    |
 | --------------------------------------------------- |
 | ![diff-history](./overview-images/diff-history.png) |
+
+| **Floaterm**                                      |
+| ------------------------------------------------- |
+| ![floating](./overview-images/floaterm-float.png) |
+
+| **Dressing Menu**                           |
+| ------------------------------------------- |
+| ![dressing](./overview-images/dressing.png) |
 
 # :keyboard: ‎ <samp>Binds</samp>
