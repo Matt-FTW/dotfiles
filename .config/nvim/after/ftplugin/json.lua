@@ -1,5 +1,3 @@
-vim.opt.conceallevel = 0
-
 -- When creating a new line with o, make sure there is a trailing comma on the current line
 vim.keymap.set("n", "o", function()
   local line = vim.api.nvim_get_current_line()
