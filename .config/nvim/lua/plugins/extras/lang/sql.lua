@@ -32,6 +32,19 @@ return {
     end,
   },
   {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      local autocomplete_group = vim.api.nvim_create_augroup("vimrc_autocompletion", { clear = true })
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = sql_ft,
+        callback = function()
+          table.insert(opts.sources, { name = "vim-dadbod-completion" })
+        end,
+        group = autocomplete_group,
+      })
+    end,
+  },
+  {
     "tpope/vim-dadbod",
     cmd = { "DBUI", "DBUIToggle", "DBUIAddConnection", "DBUIFindBuffer" },
     dependencies = {
@@ -39,19 +52,11 @@ return {
       { "kristijanhusak/vim-dadbod-completion", ft = sql_ft },
       { "jsborjesson/vim-uppercase-sql", ft = sql_ft },
     },
-    init = function()
+    config = function()
       vim.g.db_ui_save_location = vim.fn.stdpath("data") .. "/db_ui"
       vim.g.db_ui_use_nerd_fonts = true
       vim.g.db_ui_execute_on_save = false
       vim.g.db_ui_use_nvim_notify = true
-
-      vim.api.nvim_create_autocmd("FileType", {
-        pattern = sql_ft,
-        callback = function()
-          ---@diagnostic disable-next-line: missing-fields
-          require("cmp").setup.buffer({ sources = { { name = "vim-dadbod-completion" } } })
-        end,
-      })
     end,
     keys = {
       { "<leader>Da", "<cmd>DBUIAddConnection<cr>", desc = "Add Connection" },
