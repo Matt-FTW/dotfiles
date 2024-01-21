@@ -56,8 +56,10 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.wordWrap": "off",
   "errorLens.fontStyleItalic": true,
+  "terminal.integrated.tabs.enabled": false,
   // Misc
   "codeium.enableCodeLens": false,
+  "workbench.tips.enabled": false,
   "git.openRepositoryInParentFolders": "never",
   "editor.linkedEditing": true,
   "git.closeDiffOnOperation": true,
@@ -82,7 +84,8 @@
   "editor.formatOnSave": true,
   // APC
   "apc.electron": {
-    "titleBarStyle": "hidden"
+    "titleBarStyle": "hidden",
+    "opacity": 0.95
   },
   "window.titleBarStyle": "native",
   "apc.activityBar": {
@@ -90,11 +93,16 @@
     "hideSettings": true,
     "size": 26
   },
+  "apc.listRow": {
+    "lists": ["explorer-folders-view", "quick-input-list", "results"],
+    "height": 23,
+    "fontSize": 12
+  },
   "apc.font.family": "JetBrainsMono Nerd Font",
   "apc.monospace.font.family": "JetBrainsMono Nerd Font",
   "apc.statusBar": {
     "position": "editor-bottom",
-    "height": 23,
+    "height": 26,
     "fontSize": 12
   },
   // Custom css
@@ -103,7 +111,18 @@
     ".tabs-and-actions-container > .editor-actions": "display: none !important",
     ".titlebar-center": "display: none !important",
     ".titlebar-right": "display: none !important",
-    ".inline-tabs-placeholder": "display: none !important"
+    ".inline-tabs-placeholder": "display: none !important",
+    ".decorationsOverviewRuler": "display: none !important",
+    ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #c6a0f6 10%, #8aadf4 100%)",
+    ".quick-input-list-row div": "display: flex !important; align-items: center !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
+    ".monaco-editor .scroll-decoration": "display: none !important",
+    ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
+    ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
+    ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
+    ".composite": "border: none !important"
   },
   // Neovim
   "extensions.experimental.affinity": {
@@ -125,6 +144,12 @@
   "editor.smoothScrolling": true,
   // Animations
   "animations.Enabled": true,
+  "animations.CursorAnimation": true,
+  "animations.CursorAnimationOptions": {
+    "Color": "#b7bdf8",
+    "CursorStyle": "block",
+    "TrailLength": 3
+  },
   "animations.Active": "Indent",
   "animations.Scrolling": "Slide",
   "animations.Durations": {
@@ -150,6 +175,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vue.updateImportsOnFileMove.enabled": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
