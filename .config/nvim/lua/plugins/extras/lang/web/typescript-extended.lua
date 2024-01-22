@@ -141,6 +141,10 @@ return {
         ["neotest-vitest"] = {},
       },
     },
+    -- stylua: ignore
+    keys = {
+      { "<leader>tw", function() require('neotest').run.run({ jestCommand = 'jest --watch ' }) end, desc = "Run Watch" },
+    },
   },
   {
     "luckasRanarison/nvim-devdocs",
