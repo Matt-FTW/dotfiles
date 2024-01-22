@@ -57,8 +57,6 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader><space>", "<cmd>Find<cr>")
     -- find in files
     map("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
-    -- open symbol
-    map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
     -- view problems
     map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer
@@ -138,6 +136,8 @@ vim.api.nvim_create_autocmd("User", {
     -- diagnostics
     map("n", "]d", vscode_action("editor.action.marker.next"))
     map("n", "[d", vscode_action("editor.action.marker.prev"))
+    -- whichkey
+    map("n", "<leader>", vscode_action("whichkey.show"))
   end,
 })
 
@@ -158,5 +158,16 @@ return {
         enable = false,
       },
     },
+  },
+  {
+    "folke/flash.nvim",
+    init = function()
+      local palette = require("catppuccin.palettes").get_palette("macchiato")
+      local bg = palette.none
+      vim.api.nvim_set_hl(0, "FlashBackdrop", { fg = bg })
+      vim.api.nvim_set_hl(0, "FlashLabel", { fg = palette.green, bg = bg, bold = true })
+      vim.api.nvim_set_hl(0, "FlashMatch", { fg = palette.lavender, bg = bg })
+      vim.api.nvim_set_hl(0, "FlashCurrent", { fg = palette.peach, bg = bg })
+    end,
   },
 }
