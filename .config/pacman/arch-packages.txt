@@ -72,6 +72,7 @@ imagemagick 7.1.1.26-2
 imwheel 1.0.0pre12-6
 inotify-tools 4.23.9.0-1
 iptables-nft 1:1.8.10-1
+kdenlive 23.08.4-1
 kitty 0.31.0-1
 krita 5.2.2-4
 lazygit 0.40.2-1
