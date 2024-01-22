@@ -23,6 +23,14 @@ return {
     },
   },
   {
+    "nvim-neotest/neotest",
+    optional = true,
+    -- stylua: ignore
+    keys = {
+      { "<leader>tL", function() require("neotest").run.run_last({ strategy = "dap" }) end, desc = "Debug Last Test" },
+    },
+  },
+  {
     "folke/which-key.nvim",
     opts = {
       defaults = {
