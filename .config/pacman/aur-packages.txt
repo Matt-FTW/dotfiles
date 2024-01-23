@@ -10,7 +10,7 @@ cemu-bin 2.0.65-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
-duckstation-git r6799.572ea80e-1
+duckstation-git 0.1.r6331.gbcf7f55-1
 find-the-command 2.0.1-1
 gzdoom 4.11.3-1
 heroic-games-launcher 2.12.0-1
@@ -23,7 +23,6 @@ librewolf-bin 121.0-1
 ludusavi 0.22.0-1
 needrestart 3.6-3
 nwg-displays 0.3.12-1
-nwg-look 0.2.5-1
 obs-pipewire-audio-capture-bin 1.1.2-1
 obs-plugin-input-overlay 5.0.4-2
 paccache-hook 1.1.1-2
@@ -35,14 +34,14 @@ pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_27-1
 protontricks 1.11.0-1
-pyprland 1.7.0-1
+pyprland 1.7.1-1
 python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 6.24.0-1
 reflector-pacman-hook-git r87.eec94bd-1
 rofi-file-browser-extended-git 1.3.1.r5.g44e5f0a-1
 rofi-lbonn-wayland 1.7.5+wayland2-1
-rpcs3-bin 0.0.30-1
+rpcs3-bin 0.0.30-2
 ryujinx-bin 1.1.1112-1
 scc-bin 3.1.0-1
 sddm-git 0.19.0.205.g572b128-1
@@ -56,7 +55,7 @@ swww 0.8.2-0
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
 tgpt-bin 2.4.4-1
-topgrade 13.0.0-1
+topgrade 14.0.0-1
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-symbola 14.00-1
 universal-android-debloater 0.6.2-1

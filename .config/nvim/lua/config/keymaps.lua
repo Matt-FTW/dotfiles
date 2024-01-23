@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 local map = vim.keymap.set
+local o = vim.opt
 
 local Util = require("lazyvim.util")
 
@@ -20,10 +21,6 @@ map("n", "<leader>le", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
 -- stylua: ignore end
 map("n", "<leader>L", "<Nop>")
-
--- Toggle background
--- stylua: ignore
-map("n", "<leader>uB", function() Util.toggle("background", false, { "light", "dark" }) end, { desc = "Toggle Background" })
 
 -- Identation
 map("n", "<", "<<", { desc = "Deindent" })
@@ -65,12 +62,21 @@ map("n", "N", "Nzzzv")
 
 -- Toggle statusline
 map("n", "<leader>uS", function()
-  if vim.opt.laststatus:get() == 0 then
-    vim.opt.laststatus = 3
+  if o.laststatus:get() == 0 then
+    o.laststatus = 3
   else
-    vim.opt.laststatus = 0
+    o.laststatus = 0
   end
 end, { desc = "Toggle Statusline" })
+
+-- Toggle tabline
+map("n", "<leader>u<tab>", function()
+  if o.showtabline:get() == 0 then
+    o.showtabline = 2
+  else
+    o.showtabline = 0
+  end
+end, { desc = "Toggle Tabline" })
 
 -- Plugin Info
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })

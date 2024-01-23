@@ -34,7 +34,22 @@ return {
       template = "_data_/templates/journal/daily_entry.md",
     },
 
-    mappings = {},
+    mappings = {
+      -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
+      ["gf"] = {
+        action = function()
+          return require("obsidian").util.gf_passthrough()
+        end,
+        opts = { noremap = false, expr = true, buffer = true },
+      },
+      -- Toggle check-boxes.
+      ["<C-c>"] = {
+        action = function()
+          return require("obsidian").util.toggle_checkbox()
+        end,
+        opts = { buffer = true },
+      },
+    },
 
     templates = {
       subdir = "_data_/templates",
