@@ -54,10 +54,6 @@ end
 vim.api.nvim_create_autocmd("User", {
   pattern = "LazyVimKeymaps",
   callback = function()
-    -- find file
-    map("n", "<leader><space>", "<cmd>Find<cr>")
-    -- find in files
-    map("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
     -- view problems
     map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer
@@ -141,6 +137,16 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "[d", vscode_action("editor.action.marker.prev"))
     -- whichkey
     map("n", "<leader>", vscode_action("whichkey.show"))
+    -- search
+    map("n", "<leader><space>", "<cmd>Find<cr>")
+    map("n", "<leader>ff", "<cmd>Find<cr>")
+    map("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
+    map("n", "<leader>sg", vscode_action("workbench.action.findInFiles"))
+    map("n", "<leader>sc", vscode_action("workbench.action.showCommands"))
+    -- format
+    map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
+    -- ui
+    map("n", "<leader>uC", vscode_action("workbench.action.selectTheme"))
   end,
 })
 
