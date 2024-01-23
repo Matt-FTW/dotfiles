@@ -76,6 +76,8 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "H", vscode_action("workbench.action.previousEditorInGroup"))
     map("n", "L", vscode_action("workbench.action.nextEditorInGroup"))
     map("n", "<leader>bd", vscode_action("workbench.action.closeActiveEditor"))
+    map("n", "<leader><tab>", vscode_action("workbench.action.showMultipleEditorTabs"))
+    map("n", "<leader><s-tab>", vscode_action("workbench.action.showEditorTab"))
     -- breakpoints
     map("n", "<F2>", vscode_action("editor.debug.action.toggleBreakpoint"))
     -- windows
