@@ -69,6 +69,15 @@ map("n", "<leader>uS", function()
   end
 end, { desc = "Toggle Statusline" })
 
+-- Toggle tabline
+map("n", "<leader>u<tab>", function()
+  if o.showtabline:get() == 0 then
+    o.showtabline = 2
+  else
+    o.showtabline = 0
+  end
+end, { desc = "Toggle Tabline" })
+
 -- Plugin Info
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cic", "<cmd>ConformInfo<cr>", { desc = "Conform" })
