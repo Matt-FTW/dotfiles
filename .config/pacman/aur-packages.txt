@@ -29,7 +29,7 @@ paccache-hook 1.1.1-2
 pacgraph 20110629-7
 pacseek 1.8.2-1
 parabolic 2023.11.1-1
-pcsx2-latest-bin 1.7.5474-1
+pcsx2-latest-bin 1.7.5506-1
 pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_27-1
