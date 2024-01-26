@@ -89,7 +89,6 @@
     "plugins.extras.ui.import-cost",
     "plugins.extras.ui.number-toggle",
     "plugins.extras.ui.rainbow-delimeters",
-    "plugins.extras.ui.scrollbar",
     "plugins.extras.ui.smooth-scrolling",
     "plugins.extras.ui.windows",
     "plugins.extras.ui.zen-mode",
