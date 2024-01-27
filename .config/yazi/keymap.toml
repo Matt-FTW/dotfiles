@@ -1,0 +1,42 @@
+"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
+
+[manager]
+
+prepend_keymap = [
+  { on = [
+    "<C-s>",
+  ], exec = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
+]
+
+append_keymap = [
+  { on = [
+    "e",
+  ], exec = "open", desc = "Open the selected files" },
+  { on = [
+    "E",
+  ], exec = "open --interactive", desc = "Open the selected files interactively" },
+  { on = [
+    "g",
+    "n",
+  ], exec = "cd ~/.config/nvim", desc = "Go to the nvim directory" },
+  { on = [
+    "g",
+    "v",
+  ], exec = "cd ~/Videos", desc = "Go to the videos directory" },
+  { on = [
+    "g",
+    "i",
+  ], exec = "cd ~/Imagenes", desc = "Go to the images directory" },
+  { on = [
+    "g",
+    "D",
+  ], exec = "cd ~/Documentos", desc = "Go to the docs directory" },
+  { on = [
+    "g",
+    "o",
+  ], exec = "cd ~/Documentos/Obsidian/obsidianVault/", desc = "Go to the obsidian directory" },
+]
+
+[input]
+
+prepend_keymap = [{ on = ["<Esc>"], exec = "close", desc = "Cancel input" }]
