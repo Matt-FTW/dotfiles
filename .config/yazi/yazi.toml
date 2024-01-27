@@ -1,5 +1,7 @@
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
 [manager]
-layout = [1, 4, 3]
+ratio = [1, 4, 3]
 sort_by = "natural"
 sort_reverse = false
 sort_dir_first = true
@@ -73,6 +75,3 @@ bizarre_retry = 5
 
 [log]
 enabled = false
-
-[plugins]
-preload = ["~/.config/yazi/ui.lua", "~/.config/yazi/symlink.lua"]
