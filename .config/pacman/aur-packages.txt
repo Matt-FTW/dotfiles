@@ -22,7 +22,7 @@ lazynpm 0.1.4-1
 librewolf-bin 122.0-1
 ludusavi 0.22.0-1
 needrestart 3.6-3
-nwg-displays 0.3.12-1
+nwg-displays 0.3.13-1
 obs-pipewire-audio-capture-bin 1.1.3-1
 obs-plugin-input-overlay 5.0.4-2
 paccache-hook 1.1.1-2
@@ -32,7 +32,7 @@ parabolic 2023.11.1-1
 pcsx2-latest-bin 1.7.5506-1
 pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
-proton-ge-custom-bin 1:GE_Proton8_27-1
+proton-ge-custom-bin 1:GE_Proton8_28-1
 protontricks 1.11.0-1
 pyprland 1.7.1-1
 python-spotdl 4.2.4-1
