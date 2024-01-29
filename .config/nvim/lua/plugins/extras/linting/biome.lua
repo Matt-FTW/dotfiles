@@ -10,10 +10,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        biome = {
-          root_dir = require("lspconfig").util.root_pattern("biome.json"),
-          single_file_support = false,
-        },
+        biome = {},
       },
     },
   },
@@ -40,7 +37,6 @@ return {
       })
 
       opts.formatters = {
-        cwd = require("conform.util").root_file({ "biome.json" }),
         biome = {
           condition = function(self, ctx)
             return vim.fs.find({ "biome.json" }, { path = ctx.filename, upward = true })[1]
