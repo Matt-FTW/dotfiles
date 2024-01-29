@@ -41,7 +41,6 @@
     "plugins.extras.editor.oil",
     "plugins.extras.editor.outline",
     "plugins.extras.editor.package-info",
-    "plugins.extras.editor.py-requirements",
     "plugins.extras.editor.regex",
     "plugins.extras.editor.rest-client",
     "plugins.extras.editor.search-replace",
@@ -109,3 +108,4 @@
   },
   "version": 2
 }
+
