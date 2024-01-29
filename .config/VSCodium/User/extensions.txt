@@ -42,6 +42,7 @@ usernamehw.errorlens
 vadimcn.vscode-lldb
 VSpaceCode.whichkey
 Vue.volar
+webxmsj.autojump
 yandeu.five-server
 YoavBls.pretty-ts-errors
 YuTengjing.vscode-colorize-plus
