@@ -17,6 +17,7 @@ return {
         executeCommandIfExists(":ScrollViewDisable")
         executeCommandIfExists(":LspLensOff")
         executeCommandIfExists(":NvimContextVtDisable")
+        executeCommandIfExists(":IBLDisable")
         Util.toggle.inlay_hints()
         executeCommandIfExists(":Gitsigns toggle_current_line_blame")
       end,
@@ -26,6 +27,7 @@ return {
         executeCommandIfExists(":ScrollViewEnable")
         executeCommandIfExists(":LspLensOn")
         executeCommandIfExists(":NvimContextVtEnable")
+        executeCommandIfExists(":IBLEnable")
         Util.toggle.inlay_hints()
         executeCommandIfExists(":Gitsigns toggle_current_line_blame")
       end,

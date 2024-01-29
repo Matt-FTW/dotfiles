@@ -4,6 +4,7 @@ return {
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "php",
+        "phpdoc",
       })
     end,
   },
@@ -12,6 +13,8 @@ return {
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "phpactor",
+        "php-cs-fixer",
+        "phpcs",
       })
     end,
   },
@@ -22,6 +25,14 @@ return {
         phpactor = {},
       },
     },
+  },
+  {
+    "mfussenegger/nvim-lint",
+    opts = function(_, opts)
+      opts.linters_by_ft.php = opts.linters_by_ft.php or {}
+      table.insert(opts.linters_by_ft.php, "phpcs")
+      return opts
+    end,
   },
   {
     "mfussenegger/nvim-dap",
@@ -55,6 +66,14 @@ return {
         ["neotest-phpunit"] = {},
       },
     },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = function(_, opts)
+      opts.formatters_by_ft.php = opts.formatters_by_ft.php or {}
+      table.insert(opts.formatters_by_ft.php, "php_cs_fixer")
+      return opts
+    end,
   },
   {
     "luckasRanarison/nvim-devdocs",

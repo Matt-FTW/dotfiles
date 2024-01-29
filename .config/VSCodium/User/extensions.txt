@@ -19,11 +19,14 @@ formulahendry.code-runner
 golang.go
 humao.rest-client
 jrebocho.vscode-random
+kisstkondoros.vscode-gutter-preview
 mads-hartmann.bash-ide-vscode
 ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
-petekinnecom.terminal-command-keys
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode.remote-explorer
 rafamel.subtle-brackets
 redhat.ansible
 redhat.vscode-yaml
@@ -39,6 +42,8 @@ usernamehw.errorlens
 vadimcn.vscode-lldb
 VSpaceCode.whichkey
 Vue.volar
+webxmsj.autojump
 yandeu.five-server
 YoavBls.pretty-ts-errors
+YuTengjing.vscode-colorize-plus
 ziglang.vscode-zig

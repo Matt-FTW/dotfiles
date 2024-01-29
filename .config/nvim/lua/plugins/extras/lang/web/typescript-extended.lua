@@ -22,10 +22,13 @@ local inlayHints = {
 }
 
 local function denoConfigExists()
-  local root = require("lazyvim.util.root").get() .. "/deno.json"
+  local configs = { "deno.json", "deno.jsonc" }
+  local root = require("lazyvim.util.root").get()
 
-  if vim.fn.filereadable(root) == 1 then
-    return true
+  for _, config in ipairs(configs) do
+    if vim.fn.filereadable(root .. "/" .. config) == 1 then
+      return true
+    end
   end
 
   return false
@@ -77,9 +80,7 @@ return {
             },
           },
         },
-        denols = {
-          root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc", "deno.lock"),
-        },
+        denols = {},
       },
       setup = {
         tsserver = function(_, opts)

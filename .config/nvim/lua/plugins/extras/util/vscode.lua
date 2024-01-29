@@ -65,11 +65,22 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>fts", vscode_action("workbench.action.terminal.newWithCwd"))
     -- working with editors (buffers)
     map("n", "<leader>bo", vscode_action("workbench.action.closeOtherEditors"))
+    map("n", "<leader>bb", function()
+      vscode_action("workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup")
+      vscode_action("list.select")
+    end)
+    map("n", "<leader>bn", vscode_action("workbench.action.nextEditor"))
+    map("n", "<leader>bu", vscode_action("workbench.action.reopenClosedEditor"))
+    map("n", "<leader>bh", vscode_action("workbench.action.moveEditorToLeftGroup"))
+    map("n", "<leader>bj", vscode_action("workbench.action.moveEditorToBelowGroup"))
+    map("n", "<leader>bk", vscode_action("workbench.action.moveEditorToAboveGroup"))
+    map("n", "<leader>bl", vscode_action("workbench.action.moveEditorToRightGroup"))
+    map("n", "<leader>,", vscode_action("workbench.action.showAllEditors"))
     map("n", "<leader>bA", vscode_action("workbench.action.closeAllEditors"))
     map("n", "<leader>ba", vscode_action("workbench.action.lastEditorInGroup"))
     map("n", "<leader>bf", vscode_action("workbench.action.firstEditorInGroup"))
-    map("n", "<Leader>bl", vscode_action("workbench.action.closeEditorsToTheLeft"))
-    map("n", "<Leader>br", vscode_action("workbench.action.closeEditorsToTheRight"))
+    map("n", "<Leader>bL", vscode_action("workbench.action.closeEditorsToTheLeft"))
+    map("n", "<Leader>bR", vscode_action("workbench.action.closeEditorsToTheRight"))
     map("n", "H", vscode_action("workbench.action.previousEditorInGroup"))
     map("n", "L", vscode_action("workbench.action.nextEditorInGroup"))
     map("n", "<leader>bd", vscode_action("workbench.action.closeActiveEditor"))
@@ -87,7 +98,7 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "gi", vscode_action("editor.action.goToImplementation"))
     map("n", "K", vscode_action("editor.action.showHover"))
     map("n", "<leader>cr", vscode_action("editor.action.rename"))
-    map("n", "<leader>co", vscode_action("editor.action.organizeImport"))
+    map("n", "<leader>co", vscode_action("editor.action.organizeImports"))
     map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
     map("n", "<leader>ss", vscode_action("workbench.action.gotoSymbol"))
     map("n", "<leader>sS", vscode_action("workbench.action.showAllSymbols"))
@@ -97,11 +108,6 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>cp", vscode_action("markdown.showPreviewToSide"))
     -- project manager
     map("n", "<leader>fp", vscode_action("projectManager.listProjects"))
-    -- zoxide
-    -- stylua: ignore
-    map("n", "<leader>fz", vscode_action("terminalCommandKeys.run",
-      { args = { cmd = "cdzc", newTerminal = false, saveAllFiles = false, showTerminal = true, focus = true } }
-    ))
     -- zen mode
     map("n", "<leader>z", vscode_action("workbench.action.toggleZenMode"))
     -- cspell
@@ -113,17 +119,15 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>gg", vscode_action("gitlens.views.home.focus"))
     map("n", "<leader>ub", vscode_action("gitlens.toggleFileBlame"))
     map("n", "]h", function()
-      vscode.action("workbench.action.editor.nextChange")
-      vscode.action("workbench.action.compareEditor.nextChange")
+      vscode_action("workbench.action.editor.nextChange")
+      vscode_action("workbench.action.compareEditor.nextChange")
     end)
     map("n", "[h", function()
-      vscode.action("workbench.action.editor.previousChange")
-      vscode.action("workbench.action.compareEditor.previousChange")
+      vscode_action("workbench.action.editor.previousChange")
+      vscode_action("workbench.action.compareEditor.previousChange")
     end)
     -- statusline
     map("n", "<leader>uS", vscode_action("workbench.action.toggleStatusbarVisibility"))
-    -- markdown preview
-    map("n", "<leader>cp", vscode_action("markdown.showPreviewToSide"))
     -- codeium
     map("n", "<leader>cI", vscode_action("codeium.toggleEnable"))
     map({ "n", "v" }, "<leader>id", vscode_action("codeium.generateFunctionDocstring"))
@@ -135,6 +139,8 @@ vim.api.nvim_create_autocmd("User", {
     -- diagnostics
     map("n", "]d", vscode_action("editor.action.marker.next"))
     map("n", "[d", vscode_action("editor.action.marker.prev"))
+    -- zoxide
+    map("n", "<leader>fz", vscode_action("autojump.openFolder"))
     -- whichkey
     map("n", "<leader>", vscode_action("whichkey.show"))
     -- search
@@ -143,8 +149,6 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>/", vscode_action("workbench.action.findInFiles"))
     map("n", "<leader>sg", vscode_action("workbench.action.findInFiles"))
     map("n", "<leader>sc", vscode_action("workbench.action.showCommands"))
-    -- format
-    map("n", "<leader>cf", vscode_action("editor.action.formatDocument"))
     -- ui
     map("n", "<leader>uC", vscode_action("workbench.action.selectTheme"))
   end,

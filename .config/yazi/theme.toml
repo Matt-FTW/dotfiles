@@ -1,11 +1,6 @@
-# vim:fileencoding=utf-8:foldmethod=marker
-
-# : Manager {{{
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
 [manager]
-folder_offset = [2, 0, 2, 0]
-preview_offset = [2, 1, 2, 1]
-
 cwd = { fg = "#8bd5ca" }
 
 # Hovered
@@ -33,10 +28,6 @@ border_style = { fg = "#8087a2" }
 # Highlighting
 syntect_theme = "~/.config/bat/themes/Catppuccin-macchiato.tmTheme"
 
-# : }}}
-
-
-# : Status {{{
 
 [status]
 separator_open = ""
@@ -60,10 +51,6 @@ permissions_w = { fg = "#ed8796" }
 permissions_x = { fg = "#a6da95" }
 permissions_s = { fg = "#8087a2" }
 
-# : }}}
-
-
-# : Input {{{
 
 [input]
 border = { fg = "#8aadf4" }
@@ -71,30 +58,18 @@ title = {}
 value = {}
 selected = { reversed = true }
 
-# : }}}
-
-
-# : Select {{{
 
 [select]
 border = { fg = "#8aadf4" }
 active = { fg = "#f5bde6" }
 inactive = {}
 
-# : }}}
-
-
-# : Tasks {{{
 
 [tasks]
 border = { fg = "#8aadf4" }
 title = {}
 hovered = { underline = true }
 
-# : }}}
-
-
-# : Which {{{
 
 [which]
 mask = { bg = "#363a4f" }
@@ -116,10 +91,6 @@ desc = { fg = "#939ab7" }
 hovered = { bg = "#5b6078", bold = true }
 footer = { fg = "#494d64", bg = "#cad3f5" }
 
-# : }}}
-
-
-# : File-specific styles {{{
 
 [filetype]
 
@@ -144,5 +115,3 @@ rules = [
   { name = "*", fg = "#cad3f5" },
   { name = "*/", fg = "#8aadf4" },
 ]
-
-# : }}}
