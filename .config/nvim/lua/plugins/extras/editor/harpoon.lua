@@ -11,6 +11,9 @@ table.insert(keys, { "<leader>hf", "<cmd>Telescope harpoon marks<CR>", desc = "F
 
 table.insert(keys, { "]H", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" })
 table.insert(keys, { "[H", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" })
+
+table.insert(keys, { "<C-A-l>", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" })
+table.insert(keys, { "<C-A-h>", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" })
 -- stylua: ignore end
 
 return {
