@@ -11,6 +11,9 @@
   "catppuccin.italicComments": true,
   "catppuccin.boldKeywords": true,
   "catppuccin.italicKeywords": false,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "editor.semanticHighlighting.enabled": true,
+  "catppuccin.workbenchMode": "minimal",
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
@@ -124,11 +127,7 @@
     ".composite": "border: none !important",
     ".global-actions": "display: none !important"
   },
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#1e2030",
-    "activityBar.activeBorder": "#1e2030",
-    "editorGroupHeader.tabsBackground": "#1e2030"
-  },
+
   // Neovim
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
