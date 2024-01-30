@@ -11,6 +11,9 @@
   "catppuccin.italicComments": true,
   "catppuccin.boldKeywords": true,
   "catppuccin.italicKeywords": false,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "editor.semanticHighlighting.enabled": true,
+  "catppuccin.workbenchMode": "minimal",
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
@@ -124,11 +127,7 @@
     ".composite": "border: none !important",
     ".global-actions": "display: none !important"
   },
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#1e2030",
-    "activityBar.activeBorder": "#1e2030",
-    "editorGroupHeader.tabsBackground": "#1e2030"
-  },
+
   // Neovim
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -232,6 +231,9 @@
   },
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "gopls": {
+    "ui.semanticTokens": true
   },
   // File explorer
   // Terminal
@@ -815,7 +817,89 @@
           "command": "workbench.action.editor.changeLanguageMode"
         }
       ]
+    },
+    {
+      "key": "s",
+      "name": " Search",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "b",
+          "name": "Buffers/Editors",
+          "type": "command",
+          "command": "workbench.action.showAllEditors"
+        },
+        {
+          "key": "e",
+          "name": "Extensions",
+          "type": "command",
+          "command": "workbench.view.extensions"
+        },
+        {
+          "key": "c",
+          "name": "Commands",
+          "type": "command",
+          "command": "workbench.action.showCommands"
+        },
+        {
+          "key": "s",
+          "name": "Goto Symbol",
+          "type": "command",
+          "command": "workbench.action.gotoSymbol"
+        },
+        {
+          "key": "S",
+          "name": "Goto Symbol (Workspace)",
+          "type": "command",
+          "command": "workbench.action.showAllSymbols"
+        },
+        {
+          "key": "k",
+          "name": "Keymaps",
+          "type": "command",
+          "command": "workbench.action.openGlobalKeybindings"
+        }
+      ]
+    },
+    {
+      "key": "u",
+      "name": " ui",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "b",
+          "name": "Toggle sidebar",
+          "type": "command",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "key": "p",
+          "name": "Toggle panel",
+          "type": "command",
+          "command": "workbench.action.togglePanel"
+        },
+        {
+          "key": "c",
+          "name": "Colorscheme",
+          "type": "command",
+          "command": "workbench.action.selectTheme"
+        },
+        {
+          "key": "m",
+          "name": "Toggle maximized panel",
+          "type": "command",
+          "command": "workbench.action.toggleMaximizedPanel"
+        },
+        {
+          "key": "a",
+          "name": "Toggle activitybar",
+          "type": "command",
+          "command": "workbench.action.toggleActivityBarVisibility"
+        }
+      ]
     }
   ],
-  "workbench.statusBar.visible": false
+  // Generated automatically
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden"
 }

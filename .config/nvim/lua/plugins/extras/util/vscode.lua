@@ -58,8 +58,6 @@ vim.api.nvim_create_autocmd("User", {
     map("n", "<leader>xx", vscode_action("workbench.actions.view.problems"))
     -- open file explorer
     map("n", "<leader>e", vscode_action("workbench.view.explorer"))
-    -- toggle side bar
-    map("n", "<leader>ue", vscode_action("workbench.action.toggleSidebarVisibility"))
     -- terminal
     map("n", [[<c-\>]], vscode_action("workbench.action.terminal.toggleTerminal"))
     map("n", "<leader>fts", vscode_action("workbench.action.terminal.newWithCwd"))
