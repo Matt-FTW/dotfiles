@@ -510,6 +510,7 @@
 <summary><b>🔧 Utility</b></summary>
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [rasulomaroff/reactive.nvim](https://dotfyle.com/plugins/rasulomaroff/reactive.nvim)
 - [chrisgrieser/nvim-origami](https://dotfyle.com/plugins/chrisgrieser/nvim-origami)
 - [jghauser/mkdir.nvim](https://dotfyle.com/plugins/jghauser/mkdir.nvim)
 - [backdround/tabscope](https://dotfyle.com/plugins/backdround/tabscope.nvim)

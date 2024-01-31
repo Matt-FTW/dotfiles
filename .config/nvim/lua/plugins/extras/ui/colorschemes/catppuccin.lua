@@ -110,4 +110,11 @@ return {
       }),
     },
   },
+  {
+    "rasulomaroff/reactive.nvim",
+    optional = true,
+    opts = {
+      load = { "catppuccin-macchiato-cursor", "catppuccin-macchiato-cursorline" },
+    },
+  },
 }
