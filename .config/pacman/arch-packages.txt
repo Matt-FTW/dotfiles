@@ -190,7 +190,7 @@ wev 1.0.0-13
 wf-recorder 0.4.1-1
 wget 1.21.4-1
 which 2.21-6
-wine 9.1-1
+wine 9.1-2
 wl-clipboard 1:2.2.1-1
 wmctrl 1.07-6
 wpa_supplicant 2:2.10-8
