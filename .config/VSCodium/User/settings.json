@@ -14,6 +14,16 @@
   "terminal.integrated.minimumContrastRatio": 1,
   "editor.semanticHighlighting.enabled": true,
   "catppuccin.workbenchMode": "minimal",
+  /*
+  "catppuccin.customUIColors": {
+    "all": {
+      "activityBar.background": "mantle",
+      "activityBar.activeBorder": "mantle",
+      "editorGroupHeader.tabsBackground": "mantle"
+    }
+  },
+  */
+
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
@@ -900,6 +910,5 @@
     }
   ],
   // Generated automatically
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden"
+  "workbench.statusBar.visible": false
 }
