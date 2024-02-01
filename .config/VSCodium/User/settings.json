@@ -14,6 +14,16 @@
   "terminal.integrated.minimumContrastRatio": 1,
   "editor.semanticHighlighting.enabled": true,
   "catppuccin.workbenchMode": "minimal",
+  /*
+  "catppuccin.customUIColors": {
+    "all": {
+      "activityBar.background": "mantle",
+      "activityBar.activeBorder": "mantle",
+      "editorGroupHeader.tabsBackground": "mantle"
+    }
+  },
+  */
+
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
@@ -895,11 +905,40 @@
           "name": "Toggle activitybar",
           "type": "command",
           "command": "workbench.action.toggleActivityBarVisibility"
+        },
+        {
+          "key": "S",
+          "name": "Toggle statusline",
+          "type": "command",
+          "command": "workbench.action.toggleStatusbarVisibility"
+        }
+      ]
+    },
+    {
+      "key": "x",
+      "name": "󰁨 diagnostics/quickfix",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "x",
+          "name": "Workspace Diagnostics",
+          "type": "command",
+          "command": "workbench.actions.view.toggleProblems"
+        },
+        {
+          "key": "t",
+          "name": "TODO (cwd)",
+          "type": "command",
+          "command": "fileAnchors.focus"
+        },
+        {
+          "key": "T",
+          "name": "TODO (root)",
+          "type": "command",
+          "command": "workspaceAnchors.focus"
         }
       ]
     }
   ],
-  // Generated automatically
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden"
+  "workbench.statusBar.visible": false
 }

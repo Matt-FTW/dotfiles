@@ -40,7 +40,7 @@ Config.options.defaults.cond = function(plugin)
 end
 
 vim.o.spell = false
-vim.opt.timeoutlen = 0 -- To show whichkey without delay
+vim.opt.timeoutlen = 150 -- To show whichkey without delay
 vim.notify = vscode.notify
 vim.g.clipboard = vim.g.vscode_clipboard
 

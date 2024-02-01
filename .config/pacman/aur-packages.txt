@@ -32,7 +32,7 @@ parabolic 2023.11.1-1
 pcsx2-latest-bin 1.7.5506-1
 pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
-proton-ge-custom-bin 1:GE_Proton8_28-1
+proton-ge-custom-bin 1:GE_Proton8_30-1
 protontricks 1.11.0-1
 pyprland 1.7.1-1
 python-spotdl 4.2.4-1
@@ -54,13 +54,14 @@ swayosd-git r44.1c7d2f5-1
 swww 0.8.2-1
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
-tgpt-bin 2.5.0-1
+tgpt-bin 2.5.1-1
 topgrade 14.0.1-1
 ttf-ms-win11-auto 10.0.22621.525-1
 ttf-symbola 14.00-1
 universal-android-debloater 0.6.2-1
 upscayl-bin 2.9.8-1
 ventoy-bin 1.0.97-1
+vesktop-bin 1.5.0-1
 vkbasalt 0.3.2.10-1
 vscodium-bin 1.85.2.24019-1
 vscodium-bin-marketplace 1.76.0-1
