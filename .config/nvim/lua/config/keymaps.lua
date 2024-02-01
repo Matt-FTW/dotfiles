@@ -48,6 +48,8 @@ map("n", "-", "<C-x>")
 -- Tabs
 map("n", "]<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "[<tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+map("n", "<tab>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+map("n", "<s-tab>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 for i = 1, 9 do
   map("n", "<leader><tab>" .. i, "<cmd>tabn " .. i .. "<cr>", { desc = "Tab " .. i })
 end
