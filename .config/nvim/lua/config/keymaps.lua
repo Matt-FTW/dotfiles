@@ -80,6 +80,10 @@ map("n", "<leader>u<tab>", function()
   end
 end, { desc = "Toggle Tabline" })
 
+-- Comment box
+map("n", "]/", "/\\S\\zs\\s*╭<CR>zt", { desc = "Next block comment" })
+map("n", "[/", "?\\S\\zs\\s*╭<CR>zt", { desc = "Prev block comment" })
+
 -- Plugin Info
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cic", "<cmd>ConformInfo<cr>", { desc = "Conform" })

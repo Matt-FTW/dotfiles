@@ -32,7 +32,7 @@ return {
 
     -- Start/end of line:
     map({ "n", "x" }, "0", "<Cmd>lua Scroll('0')<CR>")
-    map({ "n", "x" }, "^", "<Cmd>lua Scroll('^')<CR>")
+    map({ "n", "x" }, "_", "<Cmd>lua Scroll('_')<CR>")
     map({ "n", "x" }, "$", "<Cmd>lua Scroll('$', 0, 1)<CR>")
 
     -- Paragraph movements:
