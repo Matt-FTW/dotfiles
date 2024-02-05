@@ -34,16 +34,17 @@ return {
     opts = {},
     -- stylua: ignore
     keys = {
-      { "<leader>pU", function() require("py-requirements").upgrade() end, desc = "Update Package (Python)" },
-      { "<leader>pi", function() require("py-requirements").show_description() end, desc = "Package Info (Python)" },
-      { "<leader>pa", function() require("py-requirements").upgrade_all() end, desc = "Update All Packages (Python)" },
+      { "<leader>ppu", function() require("py-requirements").upgrade() end, desc = "Update Package" },
+      { "<leader>ppi", function() require("py-requirements").show_description() end, desc = "Package Info" },
+      { "<leader>ppa", function() require("py-requirements").upgrade_all() end, desc = "Update All Packages" },
     },
   },
   {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>p"] = { name = " packages" },
+        ["<leader>p"] = { name = " packages/dependencies" },
+        ["<leader>pp"] = { name = "python" },
       },
     },
   },

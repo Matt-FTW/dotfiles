@@ -10,7 +10,7 @@ return {
     -- stylua: ignore
     keys = {
       { "<leader>aS", function() require("scissors").editSnippet() end, desc = "Edit Snippets" },
-      { "<leader>as", function() require("scissors").addNewSnippet() end, desc = "Add Snippets" },
+      { "<leader>as", mode = { "n", "v" }, function() require("scissors").addNewSnippet() end, desc = "Add Snippets" },
     },
   },
   {

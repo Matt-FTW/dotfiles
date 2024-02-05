@@ -846,6 +846,12 @@
           "command": "workbench.view.extensions"
         },
         {
+          "key": "g",
+          "name": "Grep",
+          "type": "command",
+          "command": "workbench.action.findInFiles"
+        },
+        {
           "key": "c",
           "name": "Commands",
           "type": "command",
