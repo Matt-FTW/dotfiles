@@ -20,7 +20,10 @@ map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.co
 map("n", "<leader>le", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
 -- stylua: ignore end
+
+-- Disable LazyVim bindings
 map("n", "<leader>L", "<Nop>")
+map("n", "<leader>fT", "<Nop>")
 
 -- Identation
 map("n", "<", "<<", { desc = "Deindent" })
@@ -28,9 +31,6 @@ map("n", ">", ">>", { desc = "Indent" })
 
 -- Save without formatting
 map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save without formatting" })
-
--- Disable lazyterminal keymap
-map("n", "<leader>fT", "<Nop>")
 
 -- Cursor navigation on insert mode
 map("i", "<M-h>", "<left>", { desc = "Move cursor left" })

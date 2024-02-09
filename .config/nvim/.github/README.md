@@ -518,7 +518,6 @@
 - [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
 - [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
 - [kawre/leetcode.nvim](https://dotfyle.com/plugins/kawre/leetcode.nvim)
-- [sitiom/nvim-numbertoggle](https://dotfyle.com/plugins/sitiom/nvim-numbertoggle)
 - [axieax/urlview.nvim](https://dotfyle.com/plugins/axieax/urlview.nvim)
 - [3rd/image.nvim](https://dotfyle.com/plugins/3rd/image.nvim)
 - [luckasRanarison/nvim-devdocs](https://dotfyle.com/plugins/luckasRanarison/nvim-devdocs)
