@@ -128,3 +128,15 @@ au({ "BufLeave", "FocusLost", "InsertEnter", "CmdlineEnter", "WinLeave" }, {
     end
   end,
 })
+
+-- Create a dir when saving a file if it doesnt exist
+au("BufWritePre", {
+  group = ag("auto_create_dir", { clear = true }),
+  callback = function(args)
+    if args.match:match("^%w%w+://") then
+      return
+    end
+    local file = vim.loop.fs_realpath(args.match) or args.match
+    vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
+  end,
+})
