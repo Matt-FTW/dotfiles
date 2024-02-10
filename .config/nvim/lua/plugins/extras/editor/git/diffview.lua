@@ -8,6 +8,17 @@ return {
     opts = function(_, opts)
       local actions = require("diffview.actions")
 
+      opts.enhanced_diff_hl = true
+      opts.view = {
+        default = { winbar_info = true },
+        file_history = { winbar_info = true },
+      }
+      opts.hooks = {
+        diff_buf_read = function(bufnr)
+          vim.b[bufnr].view_activated = false
+        end,
+      }
+
       opts.keymaps = {
         --stylua: ignore
         view = {
