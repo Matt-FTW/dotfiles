@@ -92,3 +92,10 @@ inline_height = 40
 # ]
 
 enter_accept = true
+
+## vim-mode
+keymap_mode = "vim-insert"
+
+## faster sync
+[sync]
+records = true
