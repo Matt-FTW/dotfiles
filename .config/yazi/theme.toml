@@ -115,3 +115,149 @@ rules = [
   { name = "*", fg = "#cad3f5" },
   { name = "*/", fg = "#8aadf4" },
 ]
+
+[icon]
+
+rules = [
+  # Programming
+  { name = "*.c", text = "" },
+  { name = "*.cpp", text = "" },
+  { name = "*.css", text = "" },
+  { name = "*.fish", text = "" },
+  { name = "*.go", text = "" },
+  { name = "*.h", text = "" },
+  { name = "*.hpp", text = "" },
+  { name = "*.html", text = "" },
+  { name = "*.java", text = "" },
+  { name = "*.js", text = "" },
+  { name = "*.jsx", text = "" },
+  { name = "*.lua", text = "" },
+  { name = "*.nix", text = "" },
+  { name = "*.php", text = "" },
+  { name = "*.py", text = "" },
+  { name = "*.rb", text = "" },
+  { name = "*.rs", text = "" },
+  { name = "*.scss", text = "" },
+  { name = "*.sh", text = "" },
+  { name = "*.swift", text = "" },
+  { name = "*.ts", text = "" },
+  { name = "*.tsx", text = "" },
+  { name = "*.vim", text = "" },
+  { name = "*.vue", text = "󰡄" },
+
+  # Text
+  { name = "*.conf", text = "" },
+  { name = "*.ini", text = "" },
+  { name = "*.json", text = "" },
+  { name = "*.md", text = "" },
+  { name = "*.toml", text = "" },
+  { name = "*.txt", text = "" },
+  { name = "*.yaml", text = "" },
+  { name = "*.yml", text = "" },
+
+  # Archives
+  { name = "*.7z", text = "" },
+  { name = "*.bz2", text = "" },
+  { name = "*.gz", text = "" },
+  { name = "*.rar", text = "" },
+  { name = "*.tar", text = "" },
+  { name = "*.xz", text = "" },
+  { name = "*.zip", text = "" },
+
+  # Images
+  { name = "*.HEIC", text = "" },
+  { name = "*.avif", text = "" },
+  { name = "*.bmp", text = "" },
+  { name = "*.gif", text = "" },
+  { name = "*.ico", text = "" },
+  { name = "*.jpeg", text = "" },
+  { name = "*.jpg", text = "" },
+  { name = "*.png", text = "" },
+  { name = "*.svg", text = "" },
+  { name = "*.webp", text = "" },
+
+  # Movies
+  { name = "*.avi", text = "" },
+  { name = "*.mkv", text = "" },
+  { name = "*.mov", text = "" },
+  { name = "*.mp4", text = "" },
+  { name = "*.webm", text = "" },
+
+  # Audio
+  { name = "*.aac", text = "" },
+  { name = "*.flac", text = "" },
+  { name = "*.m4a", text = "" },
+  { name = "*.mp3", text = "" },
+  { name = "*.ogg", text = "" },
+  { name = "*.wav", text = "" },
+
+  # Documents
+  { name = "*.csv", text = "" },
+  { name = "*.doc", text = "" },
+  { name = "*.doct", text = "" },
+  { name = "*.docx", text = "" },
+  { name = "*.dot", text = "" },
+  { name = "*.ods", text = "" },
+  { name = "*.ots", text = "" },
+  { name = "*.pdf", text = "" },
+  { name = "*.pom", text = "" },
+  { name = "*.pot", text = "" },
+  { name = "*.potx", text = "" },
+  { name = "*.ppm", text = "" },
+  { name = "*.ppmx", text = "" },
+  { name = "*.pps", text = "" },
+  { name = "*.ppsx", text = "" },
+  { name = "*.ppt", text = "" },
+  { name = "*.pptx", text = "" },
+  { name = "*.xlc", text = "" },
+  { name = "*.xlm", text = "" },
+  { name = "*.xls", text = "" },
+  { name = "*.xlsm", text = "" },
+  { name = "*.xlsx", text = "" },
+  { name = "*.xlt", text = "" },
+
+  # Lockfiles
+  { name = "*.lock", text = "" },
+
+  # Misc
+  { name = "*.bin", text = "" },
+  { name = "*.exe", text = "" },
+  { name = "*.pkg", text = "" },
+
+  # Dotfiles
+  { name = ".DS_Store", text = "" },
+  { name = ".bashprofile", text = "" },
+  { name = ".bashrc", text = "" },
+  { name = ".gitattributes", text = "" },
+  { name = ".gitignore", text = "" },
+  { name = ".gitmodules", text = "" },
+  { name = ".vimrc", text = "" },
+  { name = ".zprofile", text = "" },
+  { name = ".zshenv", text = "" },
+  { name = ".zshrc", text = "" },
+
+  # Named files
+  { name = "COPYING", text = "󰿃" },
+  { name = "Containerfile", text = "󰡨" },
+  { name = "Dockerfile", text = "󰡨" },
+  { name = "LICENSE", text = "󰿃" },
+
+  # Directories
+  { name = ".config/", text = "" },
+  { name = ".git/", text = "" },
+  { name = "Escritorio/", text = "" },
+  { name = "Repos/", text = "" },
+  { name = "Documentos/", text = "" },
+  { name = "Descargas/", text = "" },
+  { name = "Peliculas/", text = "" },
+  { name = "Musica/", text = "" },
+  { name = "Imagenes/", text = "" },
+  { name = "Publico/", text = "" },
+  { name = "Videos/", text = "" },
+  { name = "Plantillas/", text = "" },
+  { name = "Juegos/", text = "" },
+
+  # Default
+  { name = "*", text = "" },
+  { name = "*/", text = "" },
+]
