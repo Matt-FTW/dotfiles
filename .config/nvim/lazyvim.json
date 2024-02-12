@@ -80,6 +80,7 @@
     "plugins.extras.lsp.inc-rename",
     "plugins.extras.lsp.lens",
     "plugins.extras.lsp.lightbulb",
+    "plugins.extras.lsp.workspace-diagnostics",
     "plugins.extras.test.core",
     "plugins.extras.ui.breadcrumbs",
     "plugins.extras.ui.colorschemes.catppuccin",
@@ -107,4 +108,3 @@
   },
   "version": 2
 }
-
