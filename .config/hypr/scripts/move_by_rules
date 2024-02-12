@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+# Script created by: https://github.com/moguay
+
+# Retrieve the active class of the window
+active_class=$(hyprctl -j activewindow | jq '.class')
+active_class=$(echo "$active_class" | tr -d \")
+
+# Read the file and store lines containing 'workspace' in an array
+grep 'workspace' ~/.config/hypr/themes/luna/rules.conf | while IFS= read -r line; do
+	workspace_value=$(echo "$line" | sed -n -e 's/^.*workspace \([0-9]*\)[ ,].*$/\1/p')
+	class_value=$(echo "$line" | sed -n -e 's/^.*class:\s*\(.*\)$/\1/p')
+	regex=$class_value
+
+	if [ -n "$workspace_value" ] && [ -n "$class_value" ]; then
+
+		# Compare the retrieved value with the active class of the window
+		if echo "$active_class" | grep -E "$regex"; then
+			#echo "The class matches the active class of the window. Workspace value to apply: $workspace_value"
+			hyprctl dispatch movetoworkspace "$workspace_value"
+		fi
+	fi
+done
+exit 1
