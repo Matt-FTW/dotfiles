@@ -193,6 +193,7 @@
 <summary><b>🔬 Diagnostics</b></summary>
 
 - [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
+- [artemave/workspace-diagnostics.nvim](https://dotfyle.com/plugins/artemave/workspace-diagnostics.nvim)
 
 </details>
 
