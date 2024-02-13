@@ -15,10 +15,13 @@ map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "
 -- Lazy options
 map("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy" })
 -- stylua: ignore start
-map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "Docs" })
-map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end, { desc = "Repo" })
-map("n", "<leader>le", "<cmd>LazyExtras<cr>", { desc = "Extras" })
+map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "LazyVim Docs" })
+map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end, { desc = "LazyVim Repo" })
+map("n", "<leader>lx", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
+map("n", "<leader>lu", function() require("lazy").update() end, { desc = "Lazy Update" })
+map("n", "<leader>lC", function() require("lazy").check() end, { desc = "Lazy Check" })
+map("n", "<leader>ls", function() require("lazy").sync() end, { desc = "Lazy Sync" })
 -- stylua: ignore end
 
 -- Disable LazyVim bindings

@@ -19,6 +19,7 @@
   background: linear-gradient(to right, #363a4f, rgba(183, 189, 248, 0.3));
 
   padding: 10px;
+  margin-top: 10px;
   border-radius: 10px;
 }
 
@@ -362,6 +363,16 @@
   color: #cad3f5;
 }
 
-.control-center .widget-mpris {
-  margin-top: 10px;
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .image {
+  /* Notification Primary Image */
+  -gtk-icon-effect: none;
+  border-radius: 10px;
+  /* Size in px */
+  margin: 4px;
+  margin-right: 20px;
 }
