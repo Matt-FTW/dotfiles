@@ -137,9 +137,6 @@
         "Decor": {
             "enabled": false
         },
-        "DisableDMCallIdle": {
-            "enabled": false
-        },
         "EmoteCloner": {
             "enabled": false
         },
@@ -509,6 +506,9 @@
         },
         "ChatInputButtonAPI": {
             "enabled": true
+        },
+        "DisableCallIdle": {
+            "enabled": false
         }
     },
     "notifications": {
