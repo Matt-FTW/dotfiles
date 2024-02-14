@@ -80,7 +80,7 @@
 
       # Multimedia
       - celluloid
-      - discord
+      # - discord
       - geeqie
       - imagemagick
       - mpv
@@ -154,7 +154,7 @@
       - topgrade
       - upscayl-bin
       - downgrade
-      - betterdiscord-installer-bin
+      # - betterdiscord-installer-bin
       - android-sdk-platform-tools
       - pika-backup
       - rar
@@ -164,3 +164,6 @@
       - catppuccin-gtk-theme-macchiato
       - catppuccin-cursors-macchiato
       - ttf-ms-win11-auto
+
+      # Multimedia
+      - vesktop-bin
