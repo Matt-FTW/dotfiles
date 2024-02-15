@@ -24,6 +24,22 @@ return {
     },
   },
   {
+    "stevearc/conform.nvim",
+    opts = function(_, opts)
+      opts.formatters_by_ft.nix = opts.formatters_by_ft.nix or {}
+      table.insert(opts.formatters_by_ft.nix, "alejandra")
+      return opts
+    end,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    opts = function(_, opts)
+      opts.linters_by_ft.nix = opts.linters_by_ft.nix or {}
+      table.insert(opts.linters_by_ft.nix, "statix")
+      return opts
+    end,
+  },
+  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     ensure_installed = {

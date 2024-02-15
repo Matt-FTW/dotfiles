@@ -64,12 +64,6 @@ return {
     },
   },
   {
-    "nvim-lualine/lualine.nvim",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, 2, "rest")
-    end,
-  },
-  {
     "folke/which-key.nvim",
     opts = {
       defaults = {
