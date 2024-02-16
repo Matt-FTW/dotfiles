@@ -39,7 +39,7 @@ easyeffects 7.1.4-1
 edk2-ovmf 202311-1
 efibootmgr 18-2
 ethtool 1:6.5-1
-eza 0.18.2-1
+eza 0.18.3-1
 fakeroot 1.33-2
 fd 9.0.0-1
 fish 3.7.0-1
@@ -61,7 +61,7 @@ gparted 1.5.0-1
 grim 1.4.1-1
 groff 1.23.0-5
 grub 2:2.12-1
-gst-libav 1.22.9-2
+gst-libav 1.22.10-1
 gvfs 1.52.2-2
 gvfs-gphoto2 1.52.2-2
 gvfs-mtp 1.52.2-2
@@ -121,7 +121,7 @@ obs-studio 30.0.2-3
 obsidian 1.5.3-4
 onefetch 2.19.0-1
 openbsd-netcat 1.226_1-2
-opencl-nvidia 545.29.06-3
+opencl-nvidia 545.29.06-4
 os-prober 1.81-1
 p7zip 1:17.05-2
 pacman-contrib 1.10.4-1
