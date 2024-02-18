@@ -8,7 +8,7 @@ end
 table.insert(keys, { "<leader>ha", function() require("harpoon"):list():append() end, desc = "Add Mark" })
 table.insert(keys, { "<leader>hh", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Menu" })
 table.insert(keys, { "<leader>hf", "<cmd>Telescope harpoon marks<CR>", desc = "Files (Telescope)" })
-table.insert(keys, { "hc", function() require("harpoon"):list():clear() end, desc = "Clear all Files" })
+table.insert(keys, { "<leader>hc", function() require("harpoon"):list():clear() end, desc = "Clear all Files" })
 
 table.insert(keys, { "]H", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" })
 table.insert(keys, { "[H", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" })
