@@ -13,6 +13,7 @@ end
 map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search current word on brave search" })
 
 -- Lazy options
+map("n", "<leader>l", "<Nop>")
 map("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy" })
 -- stylua: ignore start
 map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "LazyVim Docs" })

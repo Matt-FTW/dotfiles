@@ -20,3 +20,8 @@ o.gui_font_face = "JetBrainsMono Nerd Font"
 
 -- Enable EditorConfig integration
 o.editorconfig = true
+
+-- Disable some repl providers
+for _, provider in ipairs({ "node", "perl", "python3", "ruby" }) do
+  vim.g["loaded_" .. provider .. "_provider"] = 0
+end

@@ -20,7 +20,7 @@ return {
     optional = true,
     -- stylua: ignore
     keys = {
-      { "<leader>pp", "<cmd>FloatermNew --disposable --name=lazynpm --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazynpm<CR>", desc = "Lazynpm",  },
+      { "<leader>pwp", "<cmd>FloatermNew --disposable --name=lazynpm --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazynpm<CR>", desc = "Lazynpm" },
     },
   },
   {

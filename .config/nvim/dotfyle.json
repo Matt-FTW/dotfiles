@@ -1,4 +1,5 @@
 {
+  "distribution": "LazyVim",
   "masonTools": [
     "ansible-language-server",
     "ansible-lint",
@@ -66,6 +67,118 @@
     "vue-language-server",
     "yaml-language-server"
   ],
+  "plugins": [
+    "Exafunction/codeium.vim",
+    "HiPhish/rainbow-delimiters.nvim",
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    "L3MON4D3/LuaSnip",
+    "LazyVim/LazyVim",
+    "LunarVim/bigfile.nvim",
+    "MunifTanjim/nui.nvim",
+    "RRethy/nvim-treesitter-endwise",
+    "RRethy/vim-illuminate",
+    "ThePrimeagen/harpoon",
+    "ThePrimeagen/refactoring.nvim",
+    "VidocqH/lsp-lens.nvim",
+    "Weissle/persistent-breakpoints.nvim",
+    "Zeioth/compiler.nvim",
+    "Zeioth/dooku.nvim",
+    "akinsho/bufferline.nvim",
+    "antosha417/nvim-lsp-file-operations",
+    "aurum77/live-server.nvim",
+    "aznhe21/actions-preview.nvim",
+    "b0o/SchemaStore.nvim",
+    "catppuccin/nvim",
+    "chrisgrieser/nvim-origami",
+    "chrisgrieser/nvim-puppeteer",
+    "chrisgrieser/nvim-recorder",
+    "chrisgrieser/nvim-various-textobjs",
+    "ckolkey/ts-node-action",
+    "creativenull/dotfyle-metadata.nvim",
+    "danymat/neogen",
+    "dawsers/telescope-floaterm.nvim",
+    "debugloop/telescope-undo.nvim",
+    "declancm/cinnamon.nvim",
+    "dmmulroy/tsc.nvim",
+    "dnlhc/glance.nvim",
+    "dstein64/vim-startuptime",
+    "echasnovski/mini.ai",
+    "echasnovski/mini.bufremove",
+    "echasnovski/mini.comment",
+    "echasnovski/mini.indentscope",
+    "echasnovski/mini.pairs",
+    "echasnovski/mini.surround",
+    "folke/edgy.nvim",
+    "folke/flash.nvim",
+    "folke/lazy.nvim",
+    "folke/neoconf.nvim",
+    "folke/neodev.nvim",
+    "folke/noice.nvim",
+    "folke/persistence.nvim",
+    "folke/todo-comments.nvim",
+    "folke/tokyonight.nvim",
+    "folke/trouble.nvim",
+    "folke/which-key.nvim",
+    "gaoDean/autolist.nvim",
+    "gbprod/yanky.nvim",
+    "haringsrob/nvim_context_vt",
+    "hedyhli/outline.nvim",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-path",
+    "hrsh7th/nvim-cmp",
+    "iamcco/markdown-preview.nvim",
+    "jay-babu/mason-nvim-dap.nvim",
+    "jvgrootveld/telescope-zoxide",
+    "kevinhwang91/nvim-ufo",
+    "kevinhwang91/promise-async",
+    "kkharji/sqlite.lua",
+    "lambdalisue/suda.vim",
+    "lewis6991/gitsigns.nvim",
+    "luckasRanarison/nvim-devdocs",
+    "luckasRanarison/tree-sitter-hyprlang",
+    "lukas-reineke/headlines.nvim",
+    "lukas-reineke/indent-blankline.nvim",
+    "mfussenegger/nvim-dap",
+    "mfussenegger/nvim-lint",
+    "mikesmithgh/kitty-scrollback.nvim",
+    "monaqa/dial.nvim",
+    "neovim/nvim-lspconfig",
+    "nvim-lua/plenary.nvim",
+    "nvim-lualine/lualine.nvim",
+    "nvim-neo-tree/neo-tree.nvim",
+    "nvim-pack/nvim-spectre",
+    "nvim-telescope/telescope-fzf-native.nvim",
+    "nvim-telescope/telescope.nvim",
+    "nvim-tree/nvim-web-devicons",
+    "nvim-treesitter/nvim-treesitter",
+    "nvim-treesitter/nvim-treesitter-context",
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    "nvimdev/dashboard-nvim",
+    "rafamadriz/friendly-snippets",
+    "rafi/theme-loader.nvim",
+    "rcarriga/nvim-dap-ui",
+    "rcarriga/nvim-notify",
+    "roobert/search-replace.nvim",
+    "saadparwaiz1/cmp_luasnip",
+    "sindrets/diffview.nvim",
+    "smoka7/hydra.nvim",
+    "smoka7/multicursors.nvim",
+    "stevearc/conform.nvim",
+    "stevearc/dressing.nvim",
+    "stevearc/overseer.nvim",
+    "theHamsta/nvim-dap-virtual-text",
+    "tsakirist/telescope-lazy.nvim",
+    "uga-rosa/ccc.nvim",
+    "voldikss/vim-floaterm",
+    "wakatime/vim-wakatime",
+    "williamboman/mason-lspconfig.nvim",
+    "williamboman/mason.nvim",
+    "windwp/nvim-ts-autotag",
+    "wookayin/semshi",
+    "zeioth/garbage-day.nvim",
+    "ziontee113/icon-picker.nvim"
+  ],
   "keymaps": [
     {
       "desc": "Next Tab",
@@ -87,839 +200,6 @@
       "lhs": "<Esc>",
       "mode": "n",
       "rhs": "<Cmd>noh<CR><Esc>"
-    },
-    {
-      "desc": "Toggle Lsp Lens",
-      "noremap": true,
-      "lhs": "<Space>ue",
-      "mode": "n",
-      "rhs": "<Cmd>LspLensToggle<CR>"
-    },
-    {
-      "desc": "Code Action Preview",
-      "noremap": true,
-      "lhs": "<Space>ca",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Code Action Preview",
-      "noremap": true,
-      "lhs": "<Space>ca",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Treesitter Context",
-      "noremap": true,
-      "lhs": "<Space>ut",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Eval",
-      "noremap": true,
-      "lhs": "<Space>de",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Eval",
-      "noremap": true,
-      "lhs": "<Space>de",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Dap UI",
-      "noremap": true,
-      "lhs": "<Space>du",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Down",
-      "noremap": true,
-      "lhs": "<Space>dj",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Step Into",
-      "noremap": true,
-      "lhs": "<Space>di",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Go to line (no execute)",
-      "noremap": true,
-      "lhs": "<Space>dg",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Terminate",
-      "noremap": true,
-      "lhs": "<Space>dt",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Session",
-      "noremap": true,
-      "lhs": "<Space>ds",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle REPL",
-      "noremap": true,
-      "lhs": "<Space>dr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Breakpoint",
-      "noremap": true,
-      "lhs": "<Space>db",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run to Cursor",
-      "noremap": true,
-      "lhs": "<Space>dC",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run with Args",
-      "noremap": true,
-      "lhs": "<Space>da",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Continue",
-      "noremap": true,
-      "lhs": "<Space>dc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Widgets",
-      "noremap": true,
-      "lhs": "<Space>dw",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Debug Nearest",
-      "noremap": true,
-      "lhs": "<Space>td",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Pause",
-      "noremap": true,
-      "lhs": "<Space>dp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Step Over",
-      "noremap": true,
-      "lhs": "<Space>dO",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Step Out",
-      "noremap": true,
-      "lhs": "<Space>do",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run Last",
-      "noremap": true,
-      "lhs": "<Space>dl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Up",
-      "noremap": true,
-      "lhs": "<Space>dk",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Breakpoint",
-      "noremap": true,
-      "lhs": "<Space>dbb",
-      "mode": "n",
-      "rhs": "<Cmd>PBToggleBreakpoint<CR>"
-    },
-    {
-      "desc": "Breakpoint Condition",
-      "noremap": true,
-      "lhs": "<Space>dbB",
-      "mode": "n",
-      "rhs": "<Cmd>PBSetConditionalBreakpoint<CR>"
-    },
-    {
-      "desc": "Delete All Breakpoints",
-      "noremap": true,
-      "lhs": "<Space>dbd",
-      "mode": "n",
-      "rhs": "<Cmd>PBClearAllBreakpoints<CR>"
-    },
-    {
-      "desc": "Toggle Line Blame",
-      "noremap": true,
-      "lhs": "<Space>uB",
-      "mode": "n",
-      "rhs": "<Cmd>Gitsigns toggle_current_line_blame<CR>"
-    },
-    {
-      "desc": "Deletions Inline",
-      "noremap": true,
-      "lhs": "<Space>ghe",
-      "mode": "n",
-      "rhs": "<Cmd>Gitsigns toggle_deleted<CR>"
-    },
-    {
-      "desc": "Toggle Context",
-      "noremap": true,
-      "lhs": "<Space>ux",
-      "mode": "n",
-      "rhs": "<Cmd>NvimContextVtToggle<CR>"
-    },
-    {
-      "desc": "Todo (Trouble)",
-      "noremap": true,
-      "lhs": "<Space>xt",
-      "mode": "n",
-      "rhs": "<Cmd>TodoTrouble<CR>"
-    },
-    {
-      "desc": "Todo/Fix/Fixme",
-      "noremap": true,
-      "lhs": "<Space>sT",
-      "mode": "n",
-      "rhs": "<Cmd>TodoTelescope keywords=TODO,FIX,FIXME<CR>"
-    },
-    {
-      "desc": "Todo",
-      "noremap": true,
-      "lhs": "<Space>st",
-      "mode": "n",
-      "rhs": "<Cmd>TodoTelescope<CR>"
-    },
-    {
-      "desc": "Todo/Fix/Fixme (Trouble)",
-      "noremap": true,
-      "lhs": "<Space>xT",
-      "mode": "n",
-      "rhs": "<Cmd>TodoTrouble keywords=TODO,FIX,FIXME<CR>"
-    },
-    {
-      "desc": "Toggle Current Session Recording",
-      "noremap": true,
-      "lhs": "<Space>qt",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Restore Last Session",
-      "noremap": true,
-      "lhs": "<Space>qr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Don't Save Current Session",
-      "noremap": true,
-      "lhs": "<Space>qd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Restore Last Session",
-      "noremap": true,
-      "lhs": "<Space>ql",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Save Session",
-      "noremap": true,
-      "lhs": "<Space>qs",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Upgrade All Crates",
-      "noremap": true,
-      "lhs": "<Space>prA",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Upgrade Crates",
-      "noremap": true,
-      "lhs": "<Space>prU",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Upgrade Crate",
-      "noremap": true,
-      "lhs": "<Space>prU",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update All Crates",
-      "noremap": true,
-      "lhs": "<Space>pra",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update Crates",
-      "noremap": true,
-      "lhs": "<Space>pru",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update Crate",
-      "noremap": true,
-      "lhs": "<Space>pru",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Reload",
-      "noremap": true,
-      "lhs": "<Space>prR",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Crates.io",
-      "noremap": true,
-      "lhs": "<Space>prc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Documentation",
-      "noremap": true,
-      "lhs": "<Space>prd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Repo",
-      "noremap": true,
-      "lhs": "<Space>prr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Homepage",
-      "noremap": true,
-      "lhs": "<Space>prh",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Extract into Table",
-      "noremap": true,
-      "lhs": "<Space>prT",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Extract into Inline Table",
-      "noremap": true,
-      "lhs": "<Space>prt",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Cmp Status",
-      "noremap": true,
-      "lhs": "<Space>ciC",
-      "mode": "n",
-      "rhs": "<Cmd>CmpStatus<CR>"
-    },
-    {
-      "desc": "Toggle IA (Codeium)",
-      "noremap": true,
-      "lhs": "<Space>cI",
-      "mode": "n",
-      "rhs": "<Cmd>CodeiumToggle<CR>"
-    },
-    {
-      "desc": "Equalize Zoom",
-      "noremap": true,
-      "lhs": "<Space>we",
-      "mode": "n",
-      "rhs": "<Cmd>WindowsEqualize<CR>"
-    },
-    {
-      "desc": "Horizontal Zoom",
-      "noremap": true,
-      "lhs": "<Space>wh",
-      "mode": "n",
-      "rhs": "<Cmd>WindowsMaximizeHorizontally<CR>"
-    },
-    {
-      "desc": "Vertical Zoom",
-      "noremap": true,
-      "lhs": "<Space>wv",
-      "mode": "n",
-      "rhs": "<Cmd>WindowsMaximizeVertically<CR>"
-    },
-    {
-      "desc": "Options",
-      "noremap": true,
-      "lhs": "<Space>so",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope vim_options<CR>"
-    },
-    {
-      "desc": "Jump to Mark",
-      "noremap": true,
-      "lhs": "<Space>sm",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope marks<CR>"
-    },
-    {
-      "desc": "Man Pages",
-      "noremap": true,
-      "lhs": "<Space>sM",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope man_pages<CR>"
-    },
-    {
-      "desc": "Key Maps",
-      "noremap": true,
-      "lhs": "<Space>sk",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope keymaps<CR>"
-    },
-    {
-      "desc": "Search Highlight Groups",
-      "noremap": true,
-      "lhs": "<Space>sH",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope highlights<CR>"
-    },
-    {
-      "desc": "Help Pages",
-      "noremap": true,
-      "lhs": "<Space>sh",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope help_tags<CR>"
-    },
-    {
-      "desc": "Grep (cwd)",
-      "noremap": true,
-      "lhs": "<Space>sG",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Grep (root dir)",
-      "noremap": true,
-      "lhs": "<Space>sg",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Workspace diagnostics",
-      "noremap": true,
-      "lhs": "<Space>sD",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope diagnostics<CR>"
-    },
-    {
-      "desc": "Document diagnostics",
-      "noremap": true,
-      "lhs": "<Space>sd",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope diagnostics bufnr=0<CR>"
-    },
-    {
-      "desc": "Commands",
-      "noremap": true,
-      "lhs": "<Space>sC",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope commands<CR>"
-    },
-    {
-      "desc": "Command History",
-      "noremap": true,
-      "lhs": "<Space>sc",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope command_history<CR>"
-    },
-    {
-      "desc": "Buffer",
-      "noremap": true,
-      "lhs": "<Space>sb",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope current_buffer_fuzzy_find<CR>"
-    },
-    {
-      "desc": "Auto Commands",
-      "noremap": true,
-      "lhs": "<Space>sa",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope autocommands<CR>"
-    },
-    {
-      "desc": "Registers",
-      "noremap": true,
-      "lhs": "<Space>s\"",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope registers<CR>"
-    },
-    {
-      "desc": "status",
-      "noremap": true,
-      "lhs": "<Space>gs",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope git_status<CR>"
-    },
-    {
-      "desc": "commits",
-      "noremap": true,
-      "lhs": "<Space>gc",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope git_commits<CR>"
-    },
-    {
-      "desc": "Recent (cwd)",
-      "noremap": true,
-      "lhs": "<Space>fR",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Recent",
-      "noremap": true,
-      "lhs": "<Space>fr",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope oldfiles<CR>"
-    },
-    {
-      "desc": "Find Files (cwd)",
-      "noremap": true,
-      "lhs": "<Space>fF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Find Files (root dir)",
-      "noremap": true,
-      "lhs": "<Space>ff",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Find Config File",
-      "noremap": true,
-      "lhs": "<Space>fc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Buffers",
-      "noremap": true,
-      "lhs": "<Space>fb",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope buffers sort_mru=true sort_lastused=true<CR>"
-    },
-    {
-      "desc": "Command History",
-      "noremap": true,
-      "lhs": "<Space>:",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope command_history<CR>"
-    },
-    {
-      "desc": "Grep (root dir)",
-      "noremap": true,
-      "lhs": "<Space>/",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Switch Buffer",
-      "noremap": true,
-      "lhs": "<Space>,",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope buffers sort_mru=true sort_lastused=true<CR>"
-    },
-    {
-      "desc": "Struct",
-      "noremap": true,
-      "lhs": "<Space>sss",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Treesitter Symbols",
-      "noremap": true,
-      "lhs": "<Space>sA",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Variable",
-      "noremap": true,
-      "lhs": "<Space>sSv",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Property",
-      "noremap": true,
-      "lhs": "<Space>sSp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Field",
-      "noremap": true,
-      "lhs": "<Space>sSF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Trait",
-      "noremap": true,
-      "lhs": "<Space>sSt",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Struct",
-      "noremap": true,
-      "lhs": "<Space>sSs",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Module",
-      "noremap": true,
-      "lhs": "<Space>sSM",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Interface",
-      "noremap": true,
-      "lhs": "<Space>sSi",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Enum",
-      "noremap": true,
-      "lhs": "<Space>sSe",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Constructor",
-      "noremap": true,
-      "lhs": "<Space>sSC",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Method",
-      "noremap": true,
-      "lhs": "<Space>sSm",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Function",
-      "noremap": true,
-      "lhs": "<Space>sSf",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Class",
-      "noremap": true,
-      "lhs": "<Space>sSc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "All",
-      "noremap": true,
-      "lhs": "<Space>sSa",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Variable",
-      "noremap": true,
-      "lhs": "<Space>ssv",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Property",
-      "noremap": true,
-      "lhs": "<Space>ssp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Field",
-      "noremap": true,
-      "lhs": "<Space>ssF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Trait",
-      "noremap": true,
-      "lhs": "<Space>sst",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Find Files (root dir)",
-      "noremap": true,
-      "lhs": "<Space><Space>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Module",
-      "noremap": true,
-      "lhs": "<Space>ssM",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Interface",
-      "noremap": true,
-      "lhs": "<Space>ssi",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Enum",
-      "noremap": true,
-      "lhs": "<Space>sse",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Constructor",
-      "noremap": true,
-      "lhs": "<Space>ssC",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Method",
-      "noremap": true,
-      "lhs": "<Space>ssm",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Function",
-      "noremap": true,
-      "lhs": "<Space>ssf",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Class",
-      "noremap": true,
-      "lhs": "<Space>ssc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "All",
-      "noremap": true,
-      "lhs": "<Space>ssa",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Goto Symbol (Workspace)",
-      "noremap": true,
-      "lhs": "<Space>sS",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Goto Symbol",
-      "noremap": true,
-      "lhs": "<Space>ss",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Colorscheme with preview",
-      "noremap": true,
-      "lhs": "<Space>uC",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Selection (cwd)",
-      "noremap": true,
-      "lhs": "<Space>sW",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Selection (root dir)",
-      "noremap": true,
-      "lhs": "<Space>sw",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Word (cwd)",
-      "noremap": true,
-      "lhs": "<Space>sW",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Word (root dir)",
-      "noremap": true,
-      "lhs": "<Space>sw",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Resume",
-      "noremap": true,
-      "lhs": "<Space>sR",
-      "mode": "n",
-      "rhs": "<Cmd>Telescope resume<CR>"
     },
     {
       "desc": "Root",
@@ -1034,6 +314,27 @@
       "rhs": "<Cmd>tabn 1<CR>"
     },
     {
+      "desc": "Lazy Sync",
+      "noremap": true,
+      "lhs": "<Space>ls",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Lazy Check",
+      "noremap": true,
+      "lhs": "<Space>lC",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Lazy Update",
+      "noremap": true,
+      "lhs": "<Space>lu",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
       "desc": "LazyVim Changelog",
       "noremap": true,
       "lhs": "<Space>lc",
@@ -1043,19 +344,19 @@
     {
       "desc": "Extras",
       "noremap": true,
-      "lhs": "<Space>le",
+      "lhs": "<Space>lx",
       "mode": "n",
       "rhs": "<Cmd>LazyExtras<CR>"
     },
     {
-      "desc": "Repo",
+      "desc": "LazyVim Repo",
       "noremap": true,
       "lhs": "<Space>lr",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Docs",
+      "desc": "LazyVim Docs",
       "noremap": true,
       "lhs": "<Space>ld",
       "mode": "n",
@@ -1314,11 +615,11 @@
       "rhs": "<Cmd>enew<CR>"
     },
     {
-      "desc": "Lazy",
+      "desc": "",
       "noremap": true,
       "lhs": "<Space>l",
       "mode": "n",
-      "rhs": "<Cmd>Lazy<CR>"
+      "rhs": "<Nop>"
     },
     {
       "desc": "Keywordprg",
@@ -1349,11 +650,417 @@
       "rhs": "<Cmd>e #<CR>"
     },
     {
-      "desc": "Sort By Extensions",
+      "desc": "",
       "noremap": true,
-      "lhs": "<Space>bs",
+      "lhs": "<Space>gCÞ",
       "mode": "n",
-      "rhs": "<Cmd>BufferLineSortByExtension<CR>"
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>wÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>lÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>cLÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space><Tab>Þ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>xÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ghÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>gCÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>gÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>wÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ftÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>fÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>qÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>cLÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ceÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ciÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space><Tab>Þ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ssÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>siÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>sSÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>snÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>aÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>lÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>bÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>hÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>dbÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>uÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ghÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>gÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>bÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ftÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>fÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>hÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>dÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>uÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>xÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ceÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>ciÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>cÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>qÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>snÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>siÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>sÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>aÞ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>Þ",
+      "mode": "n",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>",
+      "mode": "n",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\" \", {mode = \"n\", auto = true})<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>cÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>srÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>sÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>dÞ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>Þ",
+      "mode": "x",
+      "rhs": "<Nop>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<Space>",
+      "mode": "x",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\" \", {mode = \"v\", auto = true})<CR>"
+    },
+    {
+      "desc": "Noice History",
+      "noremap": true,
+      "lhs": "<Space>snh",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Noice Last Message",
+      "noremap": true,
+      "lhs": "<Space>snl",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Dismiss All",
+      "noremap": true,
+      "lhs": "<Space>snd",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Noice All",
+      "noremap": true,
+      "lhs": "<Space>sna",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Edgy Select Window",
+      "noremap": true,
+      "lhs": "<Space>uE",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Mason",
+      "noremap": true,
+      "lhs": "<Space>cim",
+      "mode": "n",
+      "rhs": "<Cmd>Mason<CR>"
+    },
+    {
+      "desc": "Dismiss all Notifications",
+      "noremap": true,
+      "lhs": "<Space>un",
+      "mode": "n",
+      "rhs": "<function>"
     },
     {
       "desc": "Sort By Directory",
@@ -1391,13 +1098,6 @@
       "rhs": "<Cmd>BufferLineGoToBuffer 7<CR>"
     },
     {
-      "desc": "Buffer 6",
-      "noremap": true,
-      "lhs": "<Space>b6",
-      "mode": "n",
-      "rhs": "<Cmd>BufferLineGoToBuffer 6<CR>"
-    },
-    {
       "desc": "Buffer 5",
       "noremap": true,
       "lhs": "<Space>b5",
@@ -1410,13 +1110,6 @@
       "lhs": "<Space>b4",
       "mode": "n",
       "rhs": "<Cmd>BufferLineGoToBuffer 4<CR>"
-    },
-    {
-      "desc": "Buffer 3",
-      "noremap": true,
-      "lhs": "<Space>b3",
-      "mode": "n",
-      "rhs": "<Cmd>BufferLineGoToBuffer 3<CR>"
     },
     {
       "desc": "Buffer 2",
@@ -1468,746 +1161,25 @@
       "rhs": "<Cmd>BufferLineTogglePin<CR>"
     },
     {
-      "desc": "",
+      "desc": "Buffer 3",
       "noremap": true,
-      "lhs": "<Space>CÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ftÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>fÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>bÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GcÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GiÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GlÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GtÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GaÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GpmÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GpÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GRÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GeÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>hÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space><Tab>Þ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>lÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>uÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ceÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ciÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>cLÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>dbÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ddÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>xÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>siÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>snÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>sSÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ssÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>thÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>tÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>gCÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>gwÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ghÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>gÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>qÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>wÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>pwÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ppÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>oÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>DÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GRÞ",
+      "lhs": "<Space>b3",
       "mode": "n",
-      "rhs": "<Nop>"
+      "rhs": "<Cmd>BufferLineGoToBuffer 3<CR>"
     },
     {
-      "desc": "",
+      "desc": "Buffer 6",
       "noremap": true,
-      "lhs": "<Space>CÞ",
+      "lhs": "<Space>b6",
       "mode": "n",
-      "rhs": "<Nop>"
+      "rhs": "<Cmd>BufferLineGoToBuffer 6<CR>"
     },
     {
-      "desc": "",
+      "desc": "Sort By Extensions",
       "noremap": true,
-      "lhs": "<Space><Tab>Þ",
+      "lhs": "<Space>bs",
       "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>cLÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>lÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>gCÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>cuÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>cÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>acÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>aÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>dÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>prÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>pÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>srÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>sÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GrÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GÞ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>Þ",
-      "mode": "x",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>",
-      "mode": "x",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\" \", {mode = \"v\", auto = true})<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ddÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>dÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ftÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>fÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>bÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GcÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GiÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GrÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GlÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GsÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GtÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GaÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GpmÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GpÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GeÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>GÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>uÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>acÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>aÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>DÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ceÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ciÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>cuÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>cÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>hÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>xÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>siÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>snÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>sÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>thÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>tÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>ghÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>gwÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>gÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>qÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>wÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>pwÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>prÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>oÞ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>Þ",
-      "mode": "n",
-      "rhs": "<Nop>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Space>",
-      "mode": "n",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\" \", {mode = \"n\", auto = true})<CR>"
-    },
-    {
-      "desc": "Mason",
-      "noremap": true,
-      "lhs": "<Space>cim",
-      "mode": "n",
-      "rhs": "<Cmd>Mason<CR>"
-    },
-    {
-      "desc": "Edgy Select Window",
-      "noremap": true,
-      "lhs": "<Space>uE",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Noice All",
-      "noremap": true,
-      "lhs": "<Space>sna",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Noice History",
-      "noremap": true,
-      "lhs": "<Space>snh",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Noice Last Message",
-      "noremap": true,
-      "lhs": "<Space>snl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Dismiss All",
-      "noremap": true,
-      "lhs": "<Space>snd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Dismiss all Notifications",
-      "noremap": true,
-      "lhs": "<Space>un",
-      "mode": "n",
-      "rhs": "<function>"
+      "rhs": "<Cmd>BufferLineSortByExtension<CR>"
     },
     {
       "desc": "Dashboard",
@@ -2217,58 +1189,72 @@
       "rhs": "<Cmd>Dash<CR>"
     },
     {
-      "desc": "Globally",
+      "desc": "Python",
       "noremap": true,
-      "lhs": "<Space>srg",
+      "lhs": "<Space>cep",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Replace in files (Spectre)",
+      "desc": "Node",
       "noremap": true,
-      "lhs": "<Space>sr",
+      "lhs": "<Space>cen",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Word Globally",
+      "desc": "Lazygit (cwd)",
       "noremap": true,
-      "lhs": "<Space>srG",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Word Globally",
-      "noremap": true,
-      "lhs": "<Space>srG",
+      "lhs": "<Space>gG",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Imports",
+      "desc": "Lazygit (root dir)",
       "noremap": true,
-      "lhs": "<Space>sI",
+      "lhs": "<Space>gg",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Diff View Open",
+      "desc": "Floating (cwd)",
       "noremap": true,
-      "lhs": "<Space>gD",
+      "lhs": "<Space>ftF",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Diff File History",
+      "desc": "Floating (root dir)",
       "noremap": true,
-      "lhs": "<Space>gd",
+      "lhs": "<Space>ftf",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Symbols Outline",
+      "desc": "Split (root dir)",
       "noremap": true,
-      "lhs": "<Space>cs",
+      "lhs": "<Space>fts",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Split (cwd)",
+      "noremap": true,
+      "lhs": "<Space>ftS",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Buffer explorer",
+      "noremap": true,
+      "lhs": "<Space>be",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Git explorer",
+      "noremap": true,
+      "lhs": "<Space>ge",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -2301,205 +1287,23 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Buffer explorer",
+      "desc": "Diff View Open",
       "noremap": true,
-      "lhs": "<Space>be",
+      "lhs": "<Space>gD",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Git explorer",
+      "desc": "Diff File History",
       "noremap": true,
-      "lhs": "<Space>ge",
+      "lhs": "<Space>gd",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Yank History",
+      "desc": "Zoxide",
       "noremap": true,
-      "lhs": "<Space>sy",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open Yank History",
-      "noremap": true,
-      "lhs": "<Space>p",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Yank History",
-      "noremap": true,
-      "lhs": "<Space>sy",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Luasnip (Snippets)",
-      "noremap": true,
-      "lhs": "<Space>sl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Node",
-      "noremap": true,
-      "lhs": "<Space>cen",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Lazygit (cwd)",
-      "noremap": true,
-      "lhs": "<Space>gG",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Lazygit (root dir)",
-      "noremap": true,
-      "lhs": "<Space>gg",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Lazynpm",
-      "noremap": true,
-      "lhs": "<Space>pp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Floating (root dir)",
-      "noremap": true,
-      "lhs": "<Space>ftf",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Floating (cwd)",
-      "noremap": true,
-      "lhs": "<Space>ftF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Split (root dir)",
-      "noremap": true,
-      "lhs": "<Space>fts",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Split (cwd)",
-      "noremap": true,
-      "lhs": "<Space>ftS",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Python",
-      "noremap": true,
-      "lhs": "<Space>cep",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Refactor",
-      "noremap": true,
-      "lhs": "<Space>cR",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Refactor",
-      "noremap": true,
-      "lhs": "<Space>cR",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Multicursor",
-      "noremap": true,
-      "lhs": "<Space>m",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Multicursor",
-      "noremap": true,
-      "lhs": "<Space>m",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Screenshot Code",
-      "noremap": true,
-      "lhs": "<Space>cS",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Screenshot Code",
-      "noremap": true,
-      "lhs": "<Space>cS",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Default Annotation",
-      "noremap": true,
-      "lhs": "<Space>ad",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File",
-      "noremap": true,
-      "lhs": "<Space>aF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Type",
-      "noremap": true,
-      "lhs": "<Space>at",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Function",
-      "noremap": true,
-      "lhs": "<Space>af",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Class",
-      "noremap": true,
-      "lhs": "<Space>aC",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update All Packages",
-      "noremap": true,
-      "lhs": "<Space>ppa",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Package Info",
-      "noremap": true,
-      "lhs": "<Space>ppi",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update Package",
-      "noremap": true,
-      "lhs": "<Space>ppu",
+      "lhs": "<Space>fz",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -2518,30 +1322,149 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Select VirtualEnv",
+      "desc": "Toggle Context",
       "noremap": true,
-      "lhs": "<Space>cv",
+      "lhs": "<Space>ux",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Format Injected Langs",
+      "desc": "Document Diagnostics (Trouble)",
       "noremap": true,
-      "lhs": "<Space>cF",
+      "lhs": "<Space>xx",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Format Injected Langs",
+      "desc": "Quickfix List (Trouble)",
       "noremap": true,
-      "lhs": "<Space>cF",
-      "mode": "v",
+      "lhs": "<Space>xQ",
+      "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Delete Buffer (Force)",
+      "desc": "Location List (Trouble)",
       "noremap": true,
-      "lhs": "<Space>bD",
+      "lhs": "<Space>xL",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Workspace Diagnostics (Trouble)",
+      "noremap": true,
+      "lhs": "<Space>xX",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Widgets",
+      "noremap": true,
+      "lhs": "<Space>dw",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Terminate",
+      "noremap": true,
+      "lhs": "<Space>dt",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Session",
+      "noremap": true,
+      "lhs": "<Space>ds",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle REPL",
+      "noremap": true,
+      "lhs": "<Space>dr",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Pause",
+      "noremap": true,
+      "lhs": "<Space>dp",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Step Over",
+      "noremap": true,
+      "lhs": "<Space>dO",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Step Out",
+      "noremap": true,
+      "lhs": "<Space>do",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Run Last",
+      "noremap": true,
+      "lhs": "<Space>dl",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Up",
+      "noremap": true,
+      "lhs": "<Space>dk",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Down",
+      "noremap": true,
+      "lhs": "<Space>dj",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Step Into",
+      "noremap": true,
+      "lhs": "<Space>di",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Go to line (no execute)",
+      "noremap": true,
+      "lhs": "<Space>dg",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Run to Cursor",
+      "noremap": true,
+      "lhs": "<Space>dC",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Run with Args",
+      "noremap": true,
+      "lhs": "<Space>da",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Continue",
+      "noremap": true,
+      "lhs": "<Space>dc",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle Breakpoint",
+      "noremap": true,
+      "lhs": "<Space>db",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -2553,436 +1476,443 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Config",
+      "desc": "Delete Buffer (Force)",
       "noremap": true,
-      "lhs": "<Space>oc",
+      "lhs": "<Space>bD",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Log",
+      "desc": "status",
       "noremap": true,
-      "lhs": "<Space>ol",
+      "lhs": "<Space>gs",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Stop",
+      "desc": "commits",
       "noremap": true,
-      "lhs": "<Space>oS",
+      "lhs": "<Space>gc",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Start",
+      "desc": "Recent (cwd)",
       "noremap": true,
-      "lhs": "<Space>os",
+      "lhs": "<Space>fR",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Attach",
+      "desc": "Recent",
       "noremap": true,
-      "lhs": "<Space>oa",
+      "lhs": "<Space>fr",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Tailwind CSS values",
+      "desc": "Find Files (cwd)",
       "noremap": true,
-      "lhs": "<Space>cT",
+      "lhs": "<Space>fF",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Variables",
+      "desc": "Find Files (root dir)",
       "noremap": true,
-      "lhs": "<Space>dv",
+      "lhs": "<Space>ff",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "List Breakpoints",
+      "desc": "Find Config File",
       "noremap": true,
-      "lhs": "<Space>dbL",
+      "lhs": "<Space>fc",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Configurations",
+      "desc": "Buffers",
       "noremap": true,
-      "lhs": "<Space>dG",
+      "lhs": "<Space>fb",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Frames",
+      "desc": "Command History",
       "noremap": true,
-      "lhs": "<Space>df",
+      "lhs": "<Space>:",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Grep (root dir)",
+      "noremap": true,
+      "lhs": "<Space>/",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Switch Buffer",
+      "noremap": true,
+      "lhs": "<Space>,",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Struct",
+      "noremap": true,
+      "lhs": "<Space>sss",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Treesitter Symbols",
+      "noremap": true,
+      "lhs": "<Space>sA",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Variable",
+      "noremap": true,
+      "lhs": "<Space>sSv",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Property",
+      "noremap": true,
+      "lhs": "<Space>sSp",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Field",
+      "noremap": true,
+      "lhs": "<Space>sSF",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Trait",
+      "noremap": true,
+      "lhs": "<Space>sSt",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Struct",
+      "noremap": true,
+      "lhs": "<Space>sSs",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Module",
+      "noremap": true,
+      "lhs": "<Space>sSM",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Interface",
+      "noremap": true,
+      "lhs": "<Space>sSi",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Enum",
+      "noremap": true,
+      "lhs": "<Space>sSe",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Constructor",
+      "noremap": true,
+      "lhs": "<Space>sSC",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Method",
+      "noremap": true,
+      "lhs": "<Space>sSm",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Function",
+      "noremap": true,
+      "lhs": "<Space>sSf",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Class",
+      "noremap": true,
+      "lhs": "<Space>sSc",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "All",
+      "noremap": true,
+      "lhs": "<Space>sSa",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Variable",
+      "noremap": true,
+      "lhs": "<Space>ssv",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Property",
+      "noremap": true,
+      "lhs": "<Space>ssp",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Field",
+      "noremap": true,
+      "lhs": "<Space>ssF",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Trait",
+      "noremap": true,
+      "lhs": "<Space>sst",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Find Files (root dir)",
+      "noremap": true,
+      "lhs": "<Space><Space>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Module",
+      "noremap": true,
+      "lhs": "<Space>ssM",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Interface",
+      "noremap": true,
+      "lhs": "<Space>ssi",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Enum",
+      "noremap": true,
+      "lhs": "<Space>sse",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Constructor",
+      "noremap": true,
+      "lhs": "<Space>ssC",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Method",
+      "noremap": true,
+      "lhs": "<Space>ssm",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Function",
+      "noremap": true,
+      "lhs": "<Space>ssf",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Class",
+      "noremap": true,
+      "lhs": "<Space>ssc",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "All",
+      "noremap": true,
+      "lhs": "<Space>ssa",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Goto Symbol (Workspace)",
+      "noremap": true,
+      "lhs": "<Space>sS",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Goto Symbol",
+      "noremap": true,
+      "lhs": "<Space>ss",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Colorscheme with preview",
+      "noremap": true,
+      "lhs": "<Space>uC",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Selection (cwd)",
+      "noremap": true,
+      "lhs": "<Space>sW",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Selection (root dir)",
+      "noremap": true,
+      "lhs": "<Space>sw",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Word (cwd)",
+      "noremap": true,
+      "lhs": "<Space>sW",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Word (root dir)",
+      "noremap": true,
+      "lhs": "<Space>sw",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Resume",
+      "noremap": true,
+      "lhs": "<Space>sR",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Options",
+      "noremap": true,
+      "lhs": "<Space>so",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Jump to Mark",
+      "noremap": true,
+      "lhs": "<Space>sm",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Man Pages",
+      "noremap": true,
+      "lhs": "<Space>sM",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Key Maps",
+      "noremap": true,
+      "lhs": "<Space>sk",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Search Highlight Groups",
+      "noremap": true,
+      "lhs": "<Space>sH",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Help Pages",
+      "noremap": true,
+      "lhs": "<Space>sh",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Grep (cwd)",
+      "noremap": true,
+      "lhs": "<Space>sG",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Grep (root dir)",
+      "noremap": true,
+      "lhs": "<Space>sg",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Workspace diagnostics",
+      "noremap": true,
+      "lhs": "<Space>sD",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Document diagnostics",
+      "noremap": true,
+      "lhs": "<Space>sd",
       "mode": "n",
       "rhs": "<function>"
     },
     {
       "desc": "Commands",
       "noremap": true,
-      "lhs": "<Space>dm",
+      "lhs": "<Space>sC",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "File 2",
+      "desc": "Command History",
       "noremap": true,
-      "lhs": "<Space>h2",
+      "lhs": "<Space>sc",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "File 1",
+      "desc": "Buffer",
       "noremap": true,
-      "lhs": "<Space>h1",
+      "lhs": "<Space>sb",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Files",
+      "desc": "Auto Commands",
       "noremap": true,
-      "lhs": "<Space>hf",
+      "lhs": "<Space>sa",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Menu",
+      "desc": "Registers",
       "noremap": true,
-      "lhs": "<Space>hh",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add Mark",
-      "noremap": true,
-      "lhs": "<Space>ha",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 9",
-      "noremap": true,
-      "lhs": "<Space>h9",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 8",
-      "noremap": true,
-      "lhs": "<Space>h8",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 7",
-      "noremap": true,
-      "lhs": "<Space>h7",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 6",
-      "noremap": true,
-      "lhs": "<Space>h6",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 5",
-      "noremap": true,
-      "lhs": "<Space>h5",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 4",
-      "noremap": true,
-      "lhs": "<Space>h4",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File 3",
-      "noremap": true,
-      "lhs": "<Space>h3",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Delete Comment Style",
-      "noremap": true,
-      "lhs": "<Space>acd",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Delete Comment Style",
-      "noremap": true,
-      "lhs": "<Space>acd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Catalog",
-      "noremap": true,
-      "lhs": "<Space>acc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Marked",
-      "noremap": true,
-      "lhs": "<Space>acm",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Marked",
-      "noremap": true,
-      "lhs": "<Space>acm",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Line",
-      "noremap": true,
-      "lhs": "<Space>acl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Tiled Line",
-      "noremap": true,
-      "lhs": "<Space>act",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Tiled Line",
-      "noremap": true,
-      "lhs": "<Space>act",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Comment Box",
-      "noremap": true,
-      "lhs": "<Space>acb",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Comment Box",
-      "noremap": true,
-      "lhs": "<Space>acb",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run",
-      "noremap": true,
-      "lhs": "<Space>cur",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run",
-      "noremap": true,
-      "lhs": "<Space>cur",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Live",
-      "noremap": true,
-      "lhs": "<Space>cul",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Reset",
-      "noremap": true,
-      "lhs": "<Space>cuR",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Info",
-      "noremap": true,
-      "lhs": "<Space>cui",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Manage Worktrees",
-      "noremap": true,
-      "lhs": "<Space>gwm",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Create Worktree",
-      "noremap": true,
-      "lhs": "<Space>gwc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Install New Dependency",
-      "noremap": true,
-      "lhs": "<Space>pwi",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Change Package Version",
-      "noremap": true,
-      "lhs": "<Space>pwc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Remove Package",
-      "noremap": true,
-      "lhs": "<Space>pwr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update Package",
-      "noremap": true,
-      "lhs": "<Space>pwu",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Show Package Versions",
-      "noremap": true,
-      "lhs": "<Space>pwv",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Zen Twilight",
-      "noremap": true,
-      "lhs": "<Space>Z",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Suda Write",
-      "noremap": true,
-      "lhs": "<Space>W",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Zen Mode",
-      "noremap": true,
-      "lhs": "<Space>z",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add Snippets",
-      "noremap": true,
-      "lhs": "<Space>as",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add Snippets",
-      "noremap": true,
-      "lhs": "<Space>as",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Edit Snippets",
-      "noremap": true,
-      "lhs": "<Space>aS",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Undos",
-      "noremap": true,
-      "lhs": "<Space>su",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Zoxide",
-      "noremap": true,
-      "lhs": "<Space>fz",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Structural",
-      "noremap": true,
-      "lhs": "<Space>srs",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Paint/Colorizer",
-      "noremap": true,
-      "lhs": "<Space>up",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Print under current line",
-      "noremap": true,
-      "lhs": "<Space>ddl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Delete all prints",
-      "noremap": true,
-      "lhs": "<Space>ddd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Print variable above current line",
-      "noremap": true,
-      "lhs": "<Space>ddV",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Print variable under current line",
-      "noremap": true,
-      "lhs": "<Space>ddv",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Print above current line",
-      "noremap": true,
-      "lhs": "<Space>ddL",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Search Urls",
-      "noremap": true,
-      "lhs": "<Space>sU",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "File on Buffer",
-      "noremap": true,
-      "lhs": "<Space>srf",
+      "lhs": "<Space>s\"",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -3036,506 +1966,72 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Select commit to review",
+      "desc": "File on Buffer",
       "noremap": true,
-      "lhs": "<Space>Gsp",
+      "lhs": "<Space>srf",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Rebase merge PR",
+      "desc": "Suda Write",
       "noremap": true,
-      "lhs": "<Space>Gpmr",
+      "lhs": "<Space>W",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Delete merge PR",
+      "desc": "File",
       "noremap": true,
-      "lhs": "<Space>Gpmd",
+      "lhs": "<Space>aF",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Squash merge PR",
+      "desc": "Type",
       "noremap": true,
-      "lhs": "<Space>Gpms",
+      "lhs": "<Space>at",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Merge commit PR",
+      "desc": "Function",
       "noremap": true,
-      "lhs": "<Space>Gpmm",
+      "lhs": "<Space>af",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Checkout PR",
+      "desc": "Class",
       "noremap": true,
-      "lhs": "<Space>Gpp",
+      "lhs": "<Space>aC",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Open current issue in browser",
+      "desc": "Default Annotation",
       "noremap": true,
-      "lhs": "<Space>Gio",
+      "lhs": "<Space>ad",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Copies URL of current issue",
+      "desc": "Toggle Lsp Lens",
       "noremap": true,
-      "lhs": "<Space>Giu",
+      "lhs": "<Space>ue",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "List open issues",
+      "desc": "Refactor",
       "noremap": true,
-      "lhs": "<Space>Gil",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Reopen current issue",
-      "noremap": true,
-      "lhs": "<Space>Gir",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Close current issue",
-      "noremap": true,
-      "lhs": "<Space>Gic",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Mark thread as unresolved",
-      "noremap": true,
-      "lhs": "<Space>Gtd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Mark thread as resolved",
-      "noremap": true,
-      "lhs": "<Space>Gta",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Delete a comment",
-      "noremap": true,
-      "lhs": "<Space>Gcd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add a new comment",
-      "noremap": true,
-      "lhs": "<Space>Gca",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Return to PR",
-      "noremap": true,
-      "lhs": "<Space>Gsc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Delete pending review",
-      "noremap": true,
-      "lhs": "<Space>Gsd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Submit resume",
-      "noremap": true,
-      "lhs": "<Space>Gsr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Submit review",
-      "noremap": true,
-      "lhs": "<Space>Gsf",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Start review",
-      "noremap": true,
-      "lhs": "<Space>Gss",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run an action",
-      "noremap": true,
-      "lhs": "<Space>Gx",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 🎉 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge8",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add ❤️ reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge7",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 🚀 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge6",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 😕 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge5",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 😄 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge4",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 👀 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge3",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 👎 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge2",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add 👍 reaction",
-      "noremap": true,
-      "lhs": "<Space>Ge1",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Create a label",
-      "noremap": true,
-      "lhs": "<Space>Glc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Remove a label",
-      "noremap": true,
-      "lhs": "<Space>Glr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Assign a label",
-      "noremap": true,
-      "lhs": "<Space>Gla",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Assign a PR reviewer",
-      "noremap": true,
-      "lhs": "<Space>Gap",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Remove a user",
-      "noremap": true,
-      "lhs": "<Space>Gar",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Assign a user",
-      "noremap": true,
-      "lhs": "<Space>Gaa",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Copies URL of current repo",
-      "noremap": true,
-      "lhs": "<Space>Gru",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Fork repo",
-      "noremap": true,
-      "lhs": "<Space>GrF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "List repo user stats",
-      "noremap": true,
-      "lhs": "<Space>Grl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "List changed files in PR",
-      "noremap": true,
-      "lhs": "<Space>Gpl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "List PR commits",
-      "noremap": true,
-      "lhs": "<Space>Gpt",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Copies URL of current PR",
-      "noremap": true,
-      "lhs": "<Space>Gpu",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open current PR in browser",
-      "noremap": true,
-      "lhs": "<Space>Gpo",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Mark draft as ready for review",
-      "noremap": true,
-      "lhs": "<Space>Gpr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "List open PRs",
-      "noremap": true,
-      "lhs": "<Space>Gps",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Show PR diff",
-      "noremap": true,
-      "lhs": "<Space>Gpd",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Create PR for current branch",
-      "noremap": true,
-      "lhs": "<Space>Gpn",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Close current PR",
-      "noremap": true,
-      "lhs": "<Space>Gpc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle oil",
-      "noremap": true,
-      "lhs": "<Space>;",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open current line in web",
-      "noremap": true,
-      "lhs": "<Space>Grc",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open current line in web",
-      "noremap": true,
-      "lhs": "<Space>Grc",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open git file in web",
-      "noremap": true,
-      "lhs": "<Space>Grf",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open git repo in web",
-      "noremap": true,
-      "lhs": "<Space>Gro",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Last Query Info",
-      "noremap": true,
-      "lhs": "<Space>Dq",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Rename Buffer",
-      "noremap": true,
-      "lhs": "<Space>Dr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Find Buffer",
-      "noremap": true,
-      "lhs": "<Space>Df",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle UI",
-      "noremap": true,
-      "lhs": "<Space>Du",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Add Connection",
-      "noremap": true,
-      "lhs": "<Space>Da",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Stop",
-      "noremap": true,
-      "lhs": "<Space>tS",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Output Panel",
-      "noremap": true,
-      "lhs": "<Space>tO",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Show Output",
-      "noremap": true,
-      "lhs": "<Space>to",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Summary",
-      "noremap": true,
-      "lhs": "<Space>ts",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run Last",
-      "noremap": true,
-      "lhs": "<Space>tl",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run Nearest",
-      "noremap": true,
-      "lhs": "<Space>tr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run All Test Files",
-      "noremap": true,
-      "lhs": "<Space>tT",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run File",
-      "noremap": true,
-      "lhs": "<Space>tt",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Run Watch",
-      "noremap": true,
-      "lhs": "<Space>tw",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Debug Last Test",
-      "noremap": true,
-      "lhs": "<Space>tL",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Plugins (Lazy)",
-      "noremap": true,
-      "lhs": "<Space>sp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Workspace Diagnostics (Trouble)",
-      "noremap": true,
-      "lhs": "<Space>xX",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Document Diagnostics (Trouble)",
-      "noremap": true,
-      "lhs": "<Space>xx",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Quickfix List (Trouble)",
-      "noremap": true,
-      "lhs": "<Space>xQ",
-      "mode": "n",
+      "lhs": "<Space>cR",
+      "mode": "x",
       "rhs": "<function>"
     },
     {
-      "desc": "Location List (Trouble)",
+      "desc": "Refactor",
       "noremap": true,
-      "lhs": "<Space>xL",
+      "lhs": "<Space>cR",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -3568,24 +2064,66 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Run Ansible Playbooks",
+      "desc": "Open Yank History",
       "noremap": true,
-      "lhs": "<Space>tp",
+      "lhs": "<Space>p",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Run Request",
+      "desc": "Yank History",
       "noremap": true,
-      "lhs": "<Space>thr",
+      "lhs": "<Space>sy",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Preview Request",
+      "desc": "Yank History",
       "noremap": true,
-      "lhs": "<Space>thp",
+      "lhs": "<Space>sy",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Cmp Status",
+      "noremap": true,
+      "lhs": "<Space>ciC",
       "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Undos",
+      "noremap": true,
+      "lhs": "<Space>su",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Format Injected Langs",
+      "noremap": true,
+      "lhs": "<Space>cF",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Format Injected Langs",
+      "noremap": true,
+      "lhs": "<Space>cF",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Code Action Preview",
+      "noremap": true,
+      "lhs": "<Space>ca",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Code Action Preview",
+      "noremap": true,
+      "lhs": "<Space>ca",
+      "mode": "v",
       "rhs": "<function>"
     },
     {
@@ -3602,8 +2140,288 @@
       "mode": "n",
       "rhs": "<function>"
     },
-    { "desc": "", "noremap": true, "lhs": "!iÞ", "mode": "n", "rhs": "<Nop>" },
+    {
+      "desc": "Todo/Fix/Fixme",
+      "noremap": true,
+      "lhs": "<Space>sT",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Todo",
+      "noremap": true,
+      "lhs": "<Space>st",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Todo/Fix/Fixme (Trouble)",
+      "noremap": true,
+      "lhs": "<Space>xT",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Todo (Trouble)",
+      "noremap": true,
+      "lhs": "<Space>xt",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Plugins (Lazy)",
+      "noremap": true,
+      "lhs": "<Space>sp",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle Line Blame",
+      "noremap": true,
+      "lhs": "<Space>uB",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Deletions Inline",
+      "noremap": true,
+      "lhs": "<Space>ghe",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle Treesitter Context",
+      "noremap": true,
+      "lhs": "<Space>ut",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Eval",
+      "noremap": true,
+      "lhs": "<Space>de",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Eval",
+      "noremap": true,
+      "lhs": "<Space>de",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Dap UI",
+      "noremap": true,
+      "lhs": "<Space>du",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Multicursor",
+      "noremap": true,
+      "lhs": "<Space>m",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Multicursor",
+      "noremap": true,
+      "lhs": "<Space>m",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle Paint/Colorizer",
+      "noremap": true,
+      "lhs": "<Space>up",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Word Globally",
+      "noremap": true,
+      "lhs": "<Space>srG",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Word Globally",
+      "noremap": true,
+      "lhs": "<Space>srG",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Globally",
+      "noremap": true,
+      "lhs": "<Space>srg",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Replace in files (Spectre)",
+      "noremap": true,
+      "lhs": "<Space>sr",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle Current Session Recording",
+      "noremap": true,
+      "lhs": "<Space>qt",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Restore Last Session",
+      "noremap": true,
+      "lhs": "<Space>qr",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Don't Save Current Session",
+      "noremap": true,
+      "lhs": "<Space>qd",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Restore Last Session",
+      "noremap": true,
+      "lhs": "<Space>ql",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Save Session",
+      "noremap": true,
+      "lhs": "<Space>qs",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Toggle Breakpoint",
+      "noremap": true,
+      "lhs": "<Space>dbb",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Breakpoint Condition",
+      "noremap": true,
+      "lhs": "<Space>dbB",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Delete All Breakpoints",
+      "noremap": true,
+      "lhs": "<Space>dbd",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 2",
+      "noremap": true,
+      "lhs": "<Space>h2",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 4",
+      "noremap": true,
+      "lhs": "<Space>h4",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Menu",
+      "noremap": true,
+      "lhs": "<Space>hh",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Clear all Files",
+      "noremap": true,
+      "lhs": "<Space>hc",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 7",
+      "noremap": true,
+      "lhs": "<Space>h7",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 6",
+      "noremap": true,
+      "lhs": "<Space>h6",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 5",
+      "noremap": true,
+      "lhs": "<Space>h5",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 3",
+      "noremap": true,
+      "lhs": "<Space>h3",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Files (Telescope)",
+      "noremap": true,
+      "lhs": "<Space>hf",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 1",
+      "noremap": true,
+      "lhs": "<Space>h1",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Add Mark",
+      "noremap": true,
+      "lhs": "<Space>ha",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 9",
+      "noremap": true,
+      "lhs": "<Space>h9",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "File 8",
+      "noremap": true,
+      "lhs": "<Space>h8",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Symbols Outline",
+      "noremap": true,
+      "lhs": "<Space>cs",
+      "mode": "n",
+      "rhs": "<function>"
+    },
     { "desc": "", "noremap": true, "lhs": "!aÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "!iÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "!Þ", "mode": "n", "rhs": "<Nop>" },
     {
       "desc": "",
@@ -3616,15 +2434,15 @@
       "desc": "",
       "noremap": true,
       "lhs": "\"",
-      "mode": "x",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"\\\"\", {mode = \"v\", auto = true})<CR>"
+      "mode": "n",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"\\\"\", {mode = \"n\", auto = true})<CR>"
     },
     {
       "desc": "",
       "noremap": true,
       "lhs": "\"",
-      "mode": "n",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"\\\"\", {mode = \"n\", auto = true})<CR>"
+      "mode": "x",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"\\\"\", {mode = \"v\", auto = true})<CR>"
     },
     { "desc": "", "noremap": true, "lhs": "#Þ", "mode": "n", "rhs": "<Nop>" },
     {
@@ -3632,7 +2450,7 @@
       "noremap": true,
       "lhs": "#",
       "mode": "n",
-      "rhs": "<Cmd>lua Scroll('#', 1)<CR>"
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"#\", {mode = \"n\", auto = true})<CR>"
     },
     {
       "desc": " Insert Macro Breakpoint.",
@@ -3647,20 +2465,6 @@
       "lhs": "#",
       "mode": "x",
       "rhs": "y?\\V<C-R>=escape(@\", '?\\')<CR><CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "$",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('$', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "$",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('$', 0, 1)<CR>"
     },
     {
       "desc": "",
@@ -3694,13 +2498,6 @@
       "desc": "",
       "noremap": true,
       "lhs": "*",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('*', 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "*",
       "mode": "x",
       "rhs": "y/\\V<C-R>=escape(@\", '/\\')<CR><CR>"
     },
@@ -3723,20 +2520,6 @@
     {
       "desc": "",
       "noremap": true,
-      "lhs": "0",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('0')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "0",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('0')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
       "lhs": ";",
       "mode": "x",
       "rhs": "<function>"
@@ -3749,8 +2532,8 @@
       "rhs": "<function>"
     },
     { "desc": "", "noremap": true, "lhs": "<", "mode": "v", "rhs": "<lt>gv" },
-    { "desc": "", "noremap": true, "lhs": "<iÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "<aÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "<iÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "<Þ", "mode": "n", "rhs": "<Nop>" },
     {
       "desc": "Deindent",
@@ -3758,6 +2541,13 @@
       "lhs": "<",
       "mode": "n",
       "rhs": "<lt><lt>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<<",
+      "mode": "n",
+      "rhs": "<function>"
     },
     {
       "desc": "Put and indent left",
@@ -3770,13 +2560,6 @@
       "desc": "Put before and indent left",
       "noremap": true,
       "lhs": "<P",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<<",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -3803,10 +2586,17 @@
       "rhs": "<function>"
     },
     { "desc": "", "noremap": true, "lhs": ">", "mode": "v", "rhs": ">gv" },
-    { "desc": "", "noremap": true, "lhs": ">iÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": ">aÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": ">iÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": ">Þ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "Indent", "noremap": true, "lhs": ">", "mode": "n", "rhs": ">>" },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": ">>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
     {
       "desc": "Put and indent right",
       "noremap": true,
@@ -3818,13 +2608,6 @@
       "desc": "Put before and indent right",
       "noremap": true,
       "lhs": ">P",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": ">>",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -3856,20 +2639,6 @@
       "lhs": "F",
       "mode": "n",
       "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "G",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('G', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "G",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('G', 0, 1)<CR>"
     },
     {
       "desc": "Prev buffer",
@@ -3992,34 +2761,6 @@
       "rhs": "y$"
     },
     {
-      "desc": "Prev Reference",
-      "noremap": true,
-      "lhs": "[[",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Previous todo comment",
-      "noremap": true,
-      "lhs": "[t",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Go to indent scope top",
-      "noremap": true,
-      "lhs": "[i",
-      "mode": "x",
-      "rhs": "<Cmd>lua MiniIndentscope.operator('top')<CR>"
-    },
-    {
-      "desc": "Go to indent scope top",
-      "noremap": true,
-      "lhs": "[i",
-      "mode": "n",
-      "rhs": "<Cmd>lua MiniIndentscope.operator('top', true)<CR>"
-    },
-    {
       "desc": "Prev block comment",
       "noremap": true,
       "lhs": "[/",
@@ -4054,6 +2795,22 @@
       "mode": "n",
       "rhs": "<function>"
     },
+    { "desc": "", "noremap": true, "lhs": "[Þ", "mode": "n", "rhs": "<Nop>" },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "[",
+      "mode": "n",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"[\", {mode = \"n\", auto = true})<CR>"
+    },
+    { "desc": "", "noremap": true, "lhs": "[Þ", "mode": "x", "rhs": "<Nop>" },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "[",
+      "mode": "x",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"[\", {mode = \"v\", auto = true})<CR>"
+    },
     {
       "desc": "Prev buffer",
       "noremap": true,
@@ -4067,22 +2824,6 @@
       "lhs": "[B",
       "mode": "n",
       "rhs": "<Cmd>BufferLineMovePrev<CR>"
-    },
-    { "desc": "", "noremap": true, "lhs": "[Þ", "mode": "x", "rhs": "<Nop>" },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "[",
-      "mode": "x",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"[\", {mode = \"v\", auto = true})<CR>"
-    },
-    { "desc": "", "noremap": true, "lhs": "[Þ", "mode": "n", "rhs": "<Nop>" },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "[",
-      "mode": "n",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"[\", {mode = \"n\", auto = true})<CR>"
     },
     {
       "desc": "",
@@ -4099,9 +2840,16 @@
       "rhs": "<Plug>(MatchitNormalMultiBackward)"
     },
     {
-      "desc": "Put indented before cursor (linewise)",
+      "desc": "Prev List Type",
       "noremap": true,
-      "lhs": "[p",
+      "lhs": "[.",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Previous trouble/quickfix item",
+      "noremap": true,
+      "lhs": "[q",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -4115,14 +2863,28 @@
     {
       "desc": "Put indented before cursor (linewise)",
       "noremap": true,
+      "lhs": "[p",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Put indented before cursor (linewise)",
+      "noremap": true,
       "lhs": "[P",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Prev List Type",
+      "desc": "Previous todo comment",
       "noremap": true,
-      "lhs": "[.",
+      "lhs": "[t",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Prev Reference",
+      "noremap": true,
+      "lhs": "[[",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -4132,41 +2894,6 @@
       "lhs": "[H",
       "mode": "n",
       "rhs": "<function>"
-    },
-    {
-      "desc": "Previous trouble/quickfix item",
-      "noremap": true,
-      "lhs": "[q",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Next Reference",
-      "noremap": true,
-      "lhs": "]]",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Next todo comment",
-      "noremap": true,
-      "lhs": "]t",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Go to indent scope bottom",
-      "noremap": true,
-      "lhs": "]i",
-      "mode": "x",
-      "rhs": "<Cmd>lua MiniIndentscope.operator('bottom')<CR>"
-    },
-    {
-      "desc": "Go to indent scope bottom",
-      "noremap": true,
-      "lhs": "]i",
-      "mode": "n",
-      "rhs": "<Cmd>lua MiniIndentscope.operator('bottom', true)<CR>"
     },
     {
       "desc": "Next block comment",
@@ -4203,19 +2930,13 @@
       "mode": "n",
       "rhs": "<function>"
     },
+    { "desc": "", "noremap": true, "lhs": "]Þ", "mode": "n", "rhs": "<Nop>" },
     {
-      "desc": "Move buffer next",
+      "desc": "",
       "noremap": true,
-      "lhs": "]B",
+      "lhs": "]",
       "mode": "n",
-      "rhs": "<Cmd>BufferLineMoveNext<CR>"
-    },
-    {
-      "desc": "Next buffer",
-      "noremap": true,
-      "lhs": "]b",
-      "mode": "n",
-      "rhs": "<Cmd>BufferLineCycleNext<CR>"
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"]\", {mode = \"n\", auto = true})<CR>"
     },
     { "desc": "", "noremap": true, "lhs": "]Þ", "mode": "x", "rhs": "<Nop>" },
     {
@@ -4225,13 +2946,19 @@
       "mode": "x",
       "rhs": "<Cmd>lua require(\"which-key\").show(\"]\", {mode = \"v\", auto = true})<CR>"
     },
-    { "desc": "", "noremap": true, "lhs": "]Þ", "mode": "n", "rhs": "<Nop>" },
     {
-      "desc": "",
+      "desc": "Next buffer",
       "noremap": true,
-      "lhs": "]",
+      "lhs": "]b",
       "mode": "n",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"]\", {mode = \"n\", auto = true})<CR>"
+      "rhs": "<Cmd>BufferLineCycleNext<CR>"
+    },
+    {
+      "desc": "Move buffer next",
+      "noremap": true,
+      "lhs": "]B",
+      "mode": "n",
+      "rhs": "<Cmd>BufferLineMoveNext<CR>"
     },
     {
       "desc": "",
@@ -4248,9 +2975,16 @@
       "rhs": "<Plug>(MatchitNormalMultiForward)"
     },
     {
-      "desc": "Put indented after cursor (linewise)",
+      "desc": "Next List Type",
       "noremap": true,
-      "lhs": "]p",
+      "lhs": "].",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Next trouble/quickfix item",
+      "noremap": true,
+      "lhs": "]q",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -4264,14 +2998,28 @@
     {
       "desc": "Put indented after cursor (linewise)",
       "noremap": true,
+      "lhs": "]p",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Put indented after cursor (linewise)",
+      "noremap": true,
       "lhs": "]P",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Next List Type",
+      "desc": "Next todo comment",
       "noremap": true,
-      "lhs": "].",
+      "lhs": "]t",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Next Reference",
+      "noremap": true,
+      "lhs": "]]",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -4283,53 +3031,11 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Next trouble/quickfix item",
-      "noremap": true,
-      "lhs": "]q",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "^",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('^')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "^",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('^')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "_",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('_')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "_",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('_')<CR>"
-    },
-    {
       "desc": "",
       "noremap": true,
       "lhs": "`",
       "mode": "n",
       "rhs": "<Cmd>lua require(\"which-key\").show(\"`\", {mode = \"n\", auto = true})<CR>"
-    },
-    {
-      "desc": "Object scope with border",
-      "noremap": true,
-      "lhs": "ai",
-      "mode": "x",
-      "rhs": "<Cmd>lua MiniIndentscope.textobject(true)<CR>"
     },
     {
       "desc": "Around last textobject",
@@ -4367,21 +3073,21 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Key",
-      "noremap": true,
-      "lhs": "ak",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
       "desc": "Number",
       "noremap": true,
       "lhs": "aN",
       "mode": "x",
       "rhs": "<function>"
     },
-    { "desc": "", "noremap": true, "lhs": "ciÞ", "mode": "n", "rhs": "<Nop>" },
+    {
+      "desc": "Key",
+      "noremap": true,
+      "lhs": "ak",
+      "mode": "x",
+      "rhs": "<function>"
+    },
     { "desc": "", "noremap": true, "lhs": "caÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "ciÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "cÞ", "mode": "n", "rhs": "<Nop>" },
     {
       "desc": "",
@@ -4397,8 +3103,8 @@
       "mode": "n",
       "rhs": "<function>"
     },
-    { "desc": "", "noremap": true, "lhs": "diÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "daÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "diÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "dÞ", "mode": "n", "rhs": "<Nop>" },
     {
       "desc": "",
@@ -4449,6 +3155,61 @@
       "mode": "x",
       "rhs": "<Esc>/\\%V"
     },
+    { "desc": "", "noremap": true, "lhs": "g~aÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "g~iÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "g~Þ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "gUaÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "gUiÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "gUÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "guaÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "guiÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "guÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "gsÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "gÞ", "mode": "n", "rhs": "<Nop>" },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "g",
+      "mode": "n",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"g\", {mode = \"n\", auto = true})<CR>"
+    },
+    { "desc": "", "noremap": true, "lhs": "gsÞ", "mode": "x", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "gÞ", "mode": "x", "rhs": "<Nop>" },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "g",
+      "mode": "x",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"g\", {mode = \"v\", auto = true})<CR>"
+    },
+    {
+      "desc": "Move to right \"around\"",
+      "noremap": false,
+      "lhs": "g]",
+      "mode": "x",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Move to right \"around\"",
+      "noremap": false,
+      "lhs": "g]",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Move to left \"around\"",
+      "noremap": false,
+      "lhs": "g[",
+      "mode": "x",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Move to left \"around\"",
+      "noremap": false,
+      "lhs": "g[",
+      "mode": "n",
+      "rhs": "<function>"
+    },
     {
       "desc": "Comment line",
       "noremap": true,
@@ -4472,89 +3233,6 @@
     },
     {
       "desc": "",
-      "noremap": true,
-      "lhs": "g#",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('g#', 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g*",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('g*', 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "gg",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('gg')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "gg",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('gg')<CR>"
-    },
-    { "desc": "", "noremap": true, "lhs": "gsÞ", "mode": "x", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "gÞ", "mode": "x", "rhs": "<Nop>" },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g",
-      "mode": "x",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"g\", {mode = \"v\", auto = true})<CR>"
-    },
-    { "desc": "", "noremap": true, "lhs": "gUiÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "gUaÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "gUÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "guiÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "guaÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "guÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "gsÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "g~iÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "g~aÞ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "g~Þ", "mode": "n", "rhs": "<Nop>" },
-    { "desc": "", "noremap": true, "lhs": "gÞ", "mode": "n", "rhs": "<Nop>" },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g",
-      "mode": "n",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"g\", {mode = \"n\", auto = true})<CR>"
-    },
-    {
-      "desc": "Move to right \"around\"",
-      "noremap": false,
-      "lhs": "g]",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Move to right \"around\"",
-      "noremap": false,
-      "lhs": "g]",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Move to left \"around\"",
-      "noremap": false,
-      "lhs": "g[",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Move to left \"around\"",
-      "noremap": false,
-      "lhs": "g[",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
       "noremap": false,
       "lhs": "g%",
       "mode": "x",
@@ -4566,34 +3244,6 @@
       "lhs": "g%",
       "mode": "n",
       "rhs": "<Plug>(MatchitNormalBackward)"
-    },
-    {
-      "desc": "Replace surrounding",
-      "noremap": true,
-      "lhs": "gsr",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Update `MiniSurround.config.n_lines`",
-      "noremap": true,
-      "lhs": "gsn",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Find left surrounding",
-      "noremap": true,
-      "lhs": "gsF",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Find right surrounding",
-      "noremap": true,
-      "lhs": "gsf",
-      "mode": "n",
-      "rhs": "<function>"
     },
     {
       "desc": "Highlight surrounding",
@@ -4613,132 +3263,41 @@
       "desc": "Add surrounding",
       "noremap": true,
       "lhs": "gsa",
-      "mode": "v",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Find left surrounding",
+      "noremap": true,
+      "lhs": "gsF",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Replace surrounding",
+      "noremap": true,
+      "lhs": "gsr",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Update `MiniSurround.config.n_lines`",
+      "noremap": true,
+      "lhs": "gsn",
+      "mode": "n",
       "rhs": "<function>"
     },
     {
       "desc": "Add surrounding",
       "noremap": true,
       "lhs": "gsa",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Put yanked text before selection",
-      "noremap": true,
-      "lhs": "gP",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Put yanked text after selection",
-      "noremap": true,
-      "lhs": "gp",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Put yanked text after selection",
-      "noremap": true,
-      "lhs": "gp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Put yanked text before selection",
-      "noremap": true,
-      "lhs": "gP",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Diagnostics",
-      "noremap": true,
-      "lhs": "gd",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Align Preview",
-      "noremap": true,
-      "lhs": "gA",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Align Preview",
-      "noremap": true,
-      "lhs": "gA",
       "mode": "v",
       "rhs": "<function>"
     },
     {
-      "desc": "Align",
+      "desc": "Find right surrounding",
       "noremap": true,
-      "lhs": "ga",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Align",
-      "noremap": true,
-      "lhs": "ga",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Text Case",
-      "noremap": true,
-      "lhs": "gC",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Text Case",
-      "noremap": true,
-      "lhs": "gC",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g<C-X>",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g<C-A>",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g<C-X>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "g<C-A>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Regexplainer",
-      "noremap": true,
-      "lhs": "gR",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Goto t[y]pe definitions",
-      "noremap": true,
-      "lhs": "gy",
+      "lhs": "gsf",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -4764,39 +3323,88 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)",
+      "desc": "Goto t[y]pe definitions",
       "noremap": true,
-      "lhs": "gx",
+      "lhs": "gy",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Put yanked text after selection",
+      "noremap": true,
+      "lhs": "gp",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Put yanked text before selection",
+      "noremap": true,
+      "lhs": "gP",
       "mode": "x",
       "rhs": "<function>"
     },
     {
-      "desc": "Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)",
+      "desc": "Put yanked text after selection",
       "noremap": true,
-      "lhs": "gx",
+      "lhs": "gp",
+      "mode": "x",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Put yanked text before selection",
+      "noremap": true,
+      "lhs": "gP",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Diagnostics",
+      "noremap": true,
+      "lhs": "gd",
+      "mode": "x",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "g<C-A>",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "g<C-X>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
       "desc": "",
       "noremap": true,
-      "lhs": "h",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('h', 0, 1)<CR>"
-    },
-    {
-      "desc": "Origami h",
-      "noremap": true,
-      "lhs": "h",
+      "lhs": "g<C-A>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Object scope",
+      "desc": "",
       "noremap": true,
-      "lhs": "ii",
+      "lhs": "g<C-X>",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)",
+      "noremap": true,
+      "lhs": "gx",
       "mode": "x",
-      "rhs": "<Cmd>lua MiniIndentscope.textobject(false)<CR>"
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)",
+      "noremap": true,
+      "lhs": "gx",
+      "mode": "n",
+      "rhs": "<function>"
     },
     {
       "desc": "Inside last textobject",
@@ -4820,16 +3428,16 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Number",
+      "desc": "Value",
       "noremap": true,
-      "lhs": "iN",
+      "lhs": "iv",
       "mode": "x",
       "rhs": "<function>"
     },
     {
-      "desc": "Value",
+      "desc": "Number",
       "noremap": true,
-      "lhs": "iv",
+      "lhs": "iN",
       "mode": "x",
       "rhs": "<function>"
     },
@@ -4867,20 +3475,6 @@
       "lhs": "k",
       "mode": "n",
       "rhs": "v:count == 0 ? 'gk' : 'k'"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "l",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('l', 0, 1)<CR>"
-    },
-    {
-      "desc": "Origami l",
-      "noremap": true,
-      "lhs": "l",
-      "mode": "n",
-      "rhs": "<function>"
     },
     {
       "desc": "Next search result",
@@ -4922,14 +3516,14 @@
       "desc": "Flash",
       "noremap": true,
       "lhs": "s",
-      "mode": "n",
+      "mode": "x",
       "rhs": "<function>"
     },
     {
       "desc": "Flash",
       "noremap": true,
       "lhs": "s",
-      "mode": "x",
+      "mode": "n",
       "rhs": "<function>"
     },
     {
@@ -4946,15 +3540,8 @@
       "mode": "n",
       "rhs": "<function>"
     },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "u",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    { "desc": "", "noremap": true, "lhs": "viÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "vaÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "viÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "vÞ", "mode": "n", "rhs": "<Nop>" },
     {
       "desc": "",
@@ -4963,14 +3550,6 @@
       "mode": "n",
       "rhs": "<Cmd>lua require(\"which-key\").show(\"v\", {mode = \"n\", auto = true})<CR>"
     },
-    { "desc": "", "noremap": true, "lhs": "yiÞ", "mode": "n", "rhs": "<Nop>" },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "yi",
-      "mode": "n",
-      "rhs": "<Cmd>lua require(\"which-key\").show(\"yi\", {mode = \"n\", auto = true})<CR>"
-    },
     { "desc": "", "noremap": true, "lhs": "yaÞ", "mode": "n", "rhs": "<Nop>" },
     {
       "desc": "",
@@ -4978,6 +3557,14 @@
       "lhs": "ya",
       "mode": "n",
       "rhs": "<Cmd>lua require(\"which-key\").show(\"ya\", {mode = \"n\", auto = true})<CR>"
+    },
+    { "desc": "", "noremap": true, "lhs": "yiÞ", "mode": "n", "rhs": "<Nop>" },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "yi",
+      "mode": "n",
+      "rhs": "<Cmd>lua require(\"which-key\").show(\"yi\", {mode = \"n\", auto = true})<CR>"
     },
     {
       "desc": " Yank Macro",
@@ -5000,113 +3587,8 @@
       "mode": "n",
       "rhs": "<function>"
     },
-    {
-      "desc": "Peek folded line",
-      "noremap": true,
-      "lhs": "zp",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "ze",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('ze')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zs",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zs')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zL",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zL')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zH",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zH')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zl",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zl', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zh",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zh', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "z+",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('z+', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "z^",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('z^', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "z-",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('z-', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "z<CR>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zt^', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "z.",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('z.', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zb",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zb', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zt",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zt', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "zz",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('zz', 0, 1)<CR>"
-    },
-    { "desc": "", "noremap": true, "lhs": "zfiÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "zfaÞ", "mode": "n", "rhs": "<Nop>" },
+    { "desc": "", "noremap": true, "lhs": "zfiÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "zfÞ", "mode": "n", "rhs": "<Nop>" },
     { "desc": "", "noremap": true, "lhs": "zÞ", "mode": "n", "rhs": "<Nop>" },
     {
@@ -5117,95 +3599,11 @@
       "rhs": "<Cmd>lua require(\"which-key\").show(\"z\", {mode = \"n\", auto = true})<CR>"
     },
     {
-      "desc": "",
+      "desc": "Peek folded line",
       "noremap": true,
-      "lhs": "{",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('{')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "{",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('{')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "}",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('}')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "}",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('}')<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<M-i>",
-      "mode": "x",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Move to previous reference",
-      "noremap": true,
-      "lhs": "<M-p>",
+      "lhs": "zp",
       "mode": "n",
       "rhs": "<function>"
-    },
-    {
-      "desc": "Move to next reference",
-      "noremap": true,
-      "lhs": "<M-n>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Debug: Continue",
-      "noremap": true,
-      "lhs": "<F5>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Debug: Step over",
-      "noremap": true,
-      "lhs": "<F10>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Debug: Step into",
-      "noremap": true,
-      "lhs": "<F11>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Debug: Step out",
-      "noremap": true,
-      "lhs": "<F12>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Breakpoint Condition",
-      "noremap": true,
-      "lhs": "<S-F2>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Toggle Breakpoint",
-      "noremap": true,
-      "lhs": "<F2>",
-      "mode": "n",
-      "rhs": "<Cmd>PBToggleBreakpoint<CR>"
     },
     {
       "desc": "Change without yanking",
@@ -5355,46 +3753,25 @@
       "rhs": "<Cmd>resize +2<CR>"
     },
     {
-      "desc": "",
+      "desc": "Go to upper window",
       "noremap": true,
-      "lhs": "<Right>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('l', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Right>",
+      "lhs": "<C-K>",
       "mode": "n",
-      "rhs": "<Cmd>lua Scroll('l', 0, 1)<CR>"
+      "rhs": "<C-W>k"
     },
     {
-      "desc": "",
+      "desc": "Go to lower window",
       "noremap": true,
-      "lhs": "<Left>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('h', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Left>",
+      "lhs": "<C-J>",
       "mode": "n",
-      "rhs": "<Cmd>lua Scroll('h', 0, 1)<CR>"
+      "rhs": "<C-W>j"
     },
     {
-      "desc": "",
+      "desc": "Go to left window",
       "noremap": true,
-      "lhs": "<Down>",
-      "mode": "x",
-      "rhs": "v:count == 0 ? 'gj' : 'j'"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<Down>",
+      "lhs": "<C-H>",
       "mode": "n",
-      "rhs": "v:count == 0 ? 'gj' : 'j'"
+      "rhs": "<C-W>h"
     },
     {
       "desc": "",
@@ -5413,100 +3790,16 @@
     {
       "desc": "",
       "noremap": true,
-      "lhs": "<C-E>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-E>', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-Y>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-Y>', 0, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-I>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('1<Tab>', 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-O>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-O>', 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<PageDown>",
+      "lhs": "<Down>",
       "mode": "x",
-      "rhs": "<Cmd>lua Scroll('<C-F>', 1, 1)<CR>"
+      "rhs": "v:count == 0 ? 'gj' : 'j'"
     },
     {
       "desc": "",
       "noremap": true,
-      "lhs": "<PageDown>",
+      "lhs": "<Down>",
       "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-F>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<PageUp>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('<C-B>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<PageUp>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-B>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-F>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('<C-F>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-B>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('<C-B>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-D>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('<C-D>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-D>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-D>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-U>",
-      "mode": "x",
-      "rhs": "<Cmd>lua Scroll('<C-U>', 1, 1)<CR>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-U>",
-      "mode": "n",
-      "rhs": "<Cmd>lua Scroll('<C-U>', 1, 1)<CR>"
+      "rhs": "v:count == 0 ? 'gj' : 'j'"
     },
     {
       "desc": "",
@@ -5523,9 +3816,44 @@
       "rhs": "<Cmd>lua require(\"which-key\").show(\"\\23\", {mode = \"n\", auto = true})<CR>"
     },
     {
-      "desc": "",
+      "desc": "Scroll forward",
+      "noremap": true,
+      "lhs": "<C-F>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Scroll backward",
       "noremap": true,
       "lhs": "<C-B>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<PageDown>",
+      "mode": "x",
+      "rhs": "<Cmd>lua Scroll('<C-F>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<PageDown>",
+      "mode": "n",
+      "rhs": "<Cmd>lua Scroll('<C-F>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<PageUp>",
+      "mode": "x",
+      "rhs": "<Cmd>lua Scroll('<C-B>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<PageUp>",
       "mode": "n",
       "rhs": "<Cmd>lua Scroll('<C-B>', 1, 1)<CR>"
     },
@@ -5533,20 +3861,48 @@
       "desc": "",
       "noremap": true,
       "lhs": "<C-F>",
-      "mode": "n",
+      "mode": "x",
       "rhs": "<Cmd>lua Scroll('<C-F>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-B>",
+      "mode": "x",
+      "rhs": "<Cmd>lua Scroll('<C-B>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-D>",
+      "mode": "x",
+      "rhs": "<Cmd>lua Scroll('<C-D>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-D>",
+      "mode": "n",
+      "rhs": "<Cmd>lua Scroll('<C-D>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-U>",
+      "mode": "x",
+      "rhs": "<Cmd>lua Scroll('<C-U>', 1, 1)<CR>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-U>",
+      "mode": "n",
+      "rhs": "<Cmd>lua Scroll('<C-U>', 1, 1)<CR>"
     },
     {
       "desc": " Switch Macro Slot",
       "noremap": true,
       "lhs": "<C-Q>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Yazi",
-      "noremap": true,
-      "lhs": "<M-e>",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -5558,6 +3914,13 @@
       "rhs": "<function>"
     },
     {
+      "desc": "Yazi",
+      "noremap": true,
+      "lhs": "<M-e>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
       "desc": "",
       "noremap": true,
       "lhs": "<C-R>",
@@ -5565,72 +3928,44 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Prev Harpoon File",
+      "desc": "Breakpoint Condition",
       "noremap": true,
-      "lhs": "<M-C-H>",
+      "lhs": "<S-F2>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Next Harpoon File",
+      "desc": "Debug: Step out",
       "noremap": true,
-      "lhs": "<M-C-L>",
+      "lhs": "<F12>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Run",
+      "desc": "Debug: Step into",
       "noremap": true,
-      "lhs": "<F6>",
+      "lhs": "<F11>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Reset",
+      "desc": "Debug: Step over",
       "noremap": true,
-      "lhs": "<S-F6>",
+      "lhs": "<F10>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Run",
+      "desc": "Debug: Continue",
       "noremap": true,
-      "lhs": "<F6>",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-X>",
+      "lhs": "<F5>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Select all text",
+      "desc": "Terminals",
       "noremap": true,
-      "lhs": "<C-A>",
-      "mode": "n",
-      "rhs": "ggVG"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-X>",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "",
-      "noremap": true,
-      "lhs": "<C-A>",
-      "mode": "v",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Open Compiler",
-      "noremap": true,
-      "lhs": "<F3>",
+      "lhs": "<M-Bslash>",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -5649,51 +3984,9 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Move cursor down",
+      "desc": "Open Compiler",
       "noremap": true,
-      "lhs": "<C-J>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Resize right",
-      "noremap": true,
-      "lhs": "<M-C-Right>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Resize up",
-      "noremap": true,
-      "lhs": "<M-C-Up>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Resize down",
-      "noremap": true,
-      "lhs": "<M-C-Down>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Resize left",
-      "noremap": true,
-      "lhs": "<M-C-Left>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Move cursor up",
-      "noremap": true,
-      "lhs": "<C-K>",
-      "mode": "n",
-      "rhs": "<function>"
-    },
-    {
-      "desc": "Move cursor left",
-      "noremap": true,
-      "lhs": "<C-H>",
+      "lhs": "<F3>",
       "mode": "n",
       "rhs": "<function>"
     },
@@ -5705,201 +3998,74 @@
       "rhs": "<function>"
     },
     {
-      "desc": "Terminals",
+      "desc": "",
       "noremap": true,
-      "lhs": "<M-Bslash>",
+      "lhs": "<C-X>",
       "mode": "n",
       "rhs": "<function>"
     },
     {
-      "desc": "Move cursor right",
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-A>",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "",
+      "noremap": true,
+      "lhs": "<C-X>",
+      "mode": "v",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Select all text",
+      "noremap": true,
+      "lhs": "<C-A>",
+      "mode": "n",
+      "rhs": "ggVG"
+    },
+    {
+      "desc": "Toggle Breakpoint",
+      "noremap": true,
+      "lhs": "<F2>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Next Harpoon File",
+      "noremap": true,
+      "lhs": "<M-C-L>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Prev Harpoon File",
+      "noremap": true,
+      "lhs": "<M-C-H>",
+      "mode": "n",
+      "rhs": "<function>"
+    },
+    {
+      "desc": "Go to right window",
       "noremap": true,
       "lhs": "<C-L>",
       "mode": "n",
-      "rhs": "<function>"
+      "rhs": "<C-W>l"
     }
   ],
-  "plugins": [
-    "rcasia/neotest-bash",
-    "nvim-telescope/telescope-fzf-native.nvim",
-    "dnlhc/glance.nvim",
-    "luckasRanarison/nvim-devdocs",
-    "lukas-reineke/cmp-under-comparator",
-    "JoosepAlviste/nvim-ts-context-commentstring",
-    "barrett-ruth/import-cost.nvim",
-    "rest-nvim/rest.nvim",
-    "echasnovski/mini.comment",
-    "kristijanhusak/vim-dadbod-completion",
-    "anuvyklack/windows.nvim",
-    "gennaro-tedesco/nvim-jqx",
-    "anuvyklack/middleclass",
-    "RRethy/vim-illuminate",
-    "aurum77/live-server.nvim",
-    "mfussenegger/nvim-ansible",
-    "bennypowers/nvim-regexplainer",
-    "ziontee113/icon-picker.nvim",
-    "folke/trouble.nvim",
-    "smjonas/inc-rename.nvim",
-    "folke/todo-comments.nvim",
-    "folke/neoconf.nvim",
-    "folke/which-key.nvim",
-    "tsakirist/telescope-lazy.nvim",
-    "HiPhish/rainbow-delimiters.nvim",
-    "nvim-neotest/neotest",
-    "tpope/vim-dadbod",
-    "almo7aya/openingh.nvim",
-    "stevearc/oil.nvim",
-    "pwntester/octo.nvim",
-    "roobert/search-replace.nvim",
-    "catppuccin/nvim",
-    "VidocqH/lsp-lens.nvim",
-    "rcarriga/nvim-notify",
-    "jsborjesson/vim-uppercase-sql",
-    "folke/tokyonight.nvim",
-    "axieax/urlview.nvim",
-    "L3MON4D3/LuaSnip",
-    "dawsers/telescope-floaterm.nvim",
-    "nvim-treesitter/nvim-treesitter",
-    "akinsho/bufferline.nvim",
-    "andrewferrier/debugprint.nvim",
-    "uga-rosa/ccc.nvim",
-    "nvim-lualine/lualine.nvim",
-    "hrsh7th/nvim-cmp",
-    "nvim-neotest/neotest-go",
-    "hrsh7th/cmp-nvim-lsp",
-    "rcarriga/nvim-dap-ui",
-    "hrsh7th/cmp-buffer",
-    "cshuaimin/ssr.nvim",
-    "theHamsta/nvim-dap-virtual-text",
-    "hrsh7th/cmp-path",
-    "jay-babu/mason-nvim-dap.nvim",
-    "marilari88/neotest-vitest",
-    "nvim-tree/nvim-web-devicons",
-    "nvim-neotest/neotest-jest",
-    "jvgrootveld/telescope-zoxide",
-    "nvim-telescope/telescope.nvim",
-    "MunifTanjim/nui.nvim",
-    "rafi/theme-loader.nvim",
-    "debugloop/telescope-undo.nvim",
-    "mfussenegger/nvim-lint",
-    "chrisgrieser/nvim-scissors",
-    "folke/zen-mode.nvim",
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    "nvimdev/dashboard-nvim",
-    "mrjones2014/smart-splits.nvim",
-    "nvim-treesitter/nvim-treesitter-context",
-    "lambdalisue/suda.vim",
-    "leoluz/nvim-dap-go",
-    "folke/twilight.nvim",
-    "windwp/nvim-ts-autotag",
-    "ray-x/go.nvim",
-    "luckasRanarison/tree-sitter-hyprlang",
-    "Zeioth/compiler.nvim",
-    "Bekaboo/dropbar.nvim",
-    "ray-x/guihua.lua",
-    "saadparwaiz1/cmp_luasnip",
-    "stevearc/overseer.nvim",
-    "Weissle/persistent-breakpoints.nvim",
-    "vuki656/package-info.nvim",
-    "neovim/nvim-lspconfig",
-    "folke/persistence.nvim",
-    "mfussenegger/nvim-dap",
-    "folke/flash.nvim",
-    "stevearc/dressing.nvim",
-    "wakatime/vim-wakatime",
-    "monaqa/dial.nvim",
-    "johmsalas/text-case.nvim",
-    "anuvyklack/animation.nvim",
-    "prochri/telescope-all-recent.nvim",
-    "ThePrimeagen/git-worktree.nvim",
-    "folke/lazy.nvim",
-    "michaelb/sniprun",
-    "kevinhwang91/nvim-ufo",
-    "mikesmithgh/kitty-scrollback.nvim",
-    "b0o/SchemaStore.nvim",
-    "creativenull/dotfyle-metadata.nvim",
-    "Exafunction/codeium.vim",
-    "kevinhwang91/promise-async",
-    "LunarVim/bigfile.nvim",
-    "NStefan002/speedtyper.nvim",
-    "roobert/tailwindcss-colorizer-cmp.nvim",
-    "chrisgrieser/nvim-origami",
-    "wookayin/semshi",
-    "haringsrob/nvim_context_vt",
-    "LudoPinelli/comment-box.nvim",
-    "kosayoda/nvim-lightbulb",
-    "ThePrimeagen/harpoon",
-    "antosha417/nvim-lsp-file-operations",
-    "folke/neodev.nvim",
-    "dstein64/vim-startuptime",
-    "echasnovski/mini.align",
-    "aznhe21/actions-preview.nvim",
-    "chrisgrieser/nvim-recorder",
-    "nvim-telescope/telescope-dap.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "adrigzr/neotest-mocha",
-    "nvim-neotest/neotest-python",
-    "windwp/nvim-autopairs",
-    "dmmulroy/tsc.nvim",
-    "nvim-lua/plenary.nvim",
-    "MaximilianLloyd/tw-values.nvim",
-    "kristijanhusak/vim-dadbod-ui",
-    "https://codeberg.org/esensar/nvim-dev-container",
-    "echasnovski/mini.bufremove",
-    "ThePrimeagen/vim-be-good",
-    "stevearc/conform.nvim",
-    "gaoDean/autolist.nvim",
-    "Saecki/crates.nvim",
-    "smoka7/hydra.nvim",
-    "mfussenegger/nvim-dap-python",
-    "linux-cultist/venv-selector.nvim",
-    "Zeioth/dooku.nvim",
-    "andweeb/presence.nvim",
-    "RRethy/nvim-treesitter-endwise",
-    "zeioth/garbage-day.nvim",
-    "MeanderingProgrammer/py-requirements.nvim",
-    "ckolkey/ts-node-action",
-    "danymat/neogen",
-    "williamboman/mason.nvim",
-    "echasnovski/mini.ai",
-    "LazyVim/LazyVim",
-    "kristijanhusak/vim-carbon-now-sh",
-    "lewis6991/gitsigns.nvim",
-    "rafamadriz/friendly-snippets",
-    "chrisgrieser/nvim-various-textobjs",
-    "lukas-reineke/indent-blankline.nvim",
-    "echasnovski/mini.indentscope",
-    "declancm/cinnamon.nvim",
-    "smoka7/multicursors.nvim",
-    "ThePrimeagen/refactoring.nvim",
-    "tzachar/highlight-undo.nvim",
-    "iamcco/markdown-preview.nvim",
-    "voldikss/vim-floaterm",
-    "SergioRibera/cmp-dotenv",
-    "folke/edgy.nvim",
-    "benfowler/telescope-luasnip.nvim",
-    "gbprod/yanky.nvim",
-    "lukas-reineke/headlines.nvim",
-    "chrisgrieser/nvim-puppeteer",
-    "echasnovski/mini.surround",
-    "nvim-neo-tree/neo-tree.nvim",
-    "hedyhli/outline.nvim",
-    "kkharji/sqlite.lua",
-    "sindrets/diffview.nvim",
-    "piersolenski/telescope-import.nvim",
-    "nvim-pack/nvim-spectre",
-    "folke/noice.nvim",
-    "mrcjkb/rustaceanvim"
-  ],
-  "pluginManager": "lazy.nvim",
   "treesitterParsers": [
     "bash",
     "c",
+    "css",
     "diff",
+    "fish",
+    "git_config",
     "html",
     "javascript",
     "jsdoc",
     "json",
+    "json5",
     "jsonc",
     "lua",
     "luadoc",
@@ -5908,68 +4074,50 @@
     "markdown_inline",
     "python",
     "query",
+    "rasi",
     "regex",
+    "scss",
     "toml",
     "tsx",
     "typescript",
     "vim",
     "vimdoc",
-    "yaml",
-    "git_config",
-    "fish",
-    "rasi",
-    "http",
-    "dockerfile",
-    "git_rebase",
-    "gitattributes",
-    "gitcommit",
-    "gitignore",
-    "go",
-    "gomod",
-    "gowork",
-    "gosum",
-    "ninja",
-    "rst",
-    "requirements",
-    "ron",
-    "rust",
-    "sql",
-    "css",
-    "scss",
-    "json5",
-    "vue"
+    "vue",
+    "yaml"
   ],
+  "pluginManager": "lazy.nvim",
+  "leaderKey": "<Space>",
   "lspServers": [
-    "taplo",
-    "jdtls",
-    "svelte",
-    "biome",
-    "bashls",
-    "omnisharp",
-    "clangd",
-    "pyright",
-    "cssls",
-    "yamlls",
     "angularls",
-    "denols",
-    "tailwindcss",
-    "volar",
-    "ruff_lsp",
     "ansiblels",
-    "docker_compose_language_service",
-    "lua_ls",
-    "neocmake",
-    "jsonls",
-    "sqlls",
-    "eslint",
+    "bashls",
+    "biome",
+    "clangd",
+    "cssls",
     "cssmodules_ls",
-    "emmet_language_server",
-    "marksman",
+    "denols",
+    "docker_compose_language_service",
     "dockerls",
-    "tsserver",
+    "emmet_language_server",
+    "eslint",
+    "gopls",
     "html",
-    "gopls"
-  ],
-  "leaderKey": "<Space>"
+    "jdtls",
+    "jsonls",
+    "lua_ls",
+    "marksman",
+    "neocmake",
+    "omnisharp",
+    "pyright",
+    "ruff_lsp",
+    "rust_analyzer",
+    "sqlls",
+    "svelte",
+    "tailwindcss",
+    "taplo",
+    "tsserver",
+    "volar",
+    "yamlls"
+  ]
 }
 

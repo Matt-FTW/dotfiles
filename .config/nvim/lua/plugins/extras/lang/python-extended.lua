@@ -9,6 +9,18 @@ return {
     end,
   },
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        ruff_lsp = {
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function() end,
+          },
+        },
+      },
+    },
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       if type(opts.ensure_installed) == "table" then

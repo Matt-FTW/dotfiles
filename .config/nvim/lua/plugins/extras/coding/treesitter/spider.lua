@@ -1,10 +1,11 @@
 return {
   "chrisgrieser/nvim-spider",
   opts = {},
+  -- stylua: ignore
   keys = {
-    { "w", "<cmd>lua require('spider').motion('w')<CR>", mode = { "n", "o", "x" }, desc = "Spider-w" },
-    { "e", "<cmd>lua require('spider').motion('e')<CR>", mode = { "n", "o", "x" }, desc = "Spider-e" },
-    { "b", "<cmd>lua require('spider').motion('b')<CR>", mode = { "n", "o", "x" }, desc = "Spider-b" },
-    { "E", "<cmd>lua require('spider').motion('ge')<CR>", mode = { "n", "o", "x" }, desc = "Spider-E" },
+    { "e", mode = { "n", "o", "x" }, function() require("spider").motion("e") end, desc = "Spider-e" },
+    { "w", mode = { "n", "o", "x" }, function() require("spider").motion("w") end, desc = "Spider-w" },
+    { "b", mode = { "n", "o", "x" }, function() require("spider").motion("b") end, desc = "Spider-b" },
+    { "E", mode = { "n", "x", "o" }, function() require("spider").motion("ge") end, desc = "Spider-E" },
   },
 }

@@ -19,7 +19,7 @@ hyprshot 1.2.3-1
 hyprsome-git r24.9636be0-1
 lazydocker 0.23.1-1
 lazynpm 0.1.4-1
-librewolf-bin 122.0-1
+librewolf-bin 122.0.1-2
 ludusavi 0.22.0-1
 needrestart 3.6-3
 nwg-displays 0.3.13-1
@@ -34,7 +34,7 @@ pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_32-1
 protontricks 1.11.0-1
-pyprland 2.0.1-1
+pyprland 2.0.2-1
 python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 6.24.0-1
