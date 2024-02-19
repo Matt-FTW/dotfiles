@@ -37,6 +37,7 @@
     "plugins.extras.lang.bash",
     "plugins.extras.lang.markdown-extended",
     "plugins.extras.lang.web.html-css",
+    "plugins.extras.lang.web.typescript-extended",
     "plugins.extras.lang.web.vue",
     "plugins.extras.linting.eslint-extended",
     "plugins.extras.lsp.actions-preview",
