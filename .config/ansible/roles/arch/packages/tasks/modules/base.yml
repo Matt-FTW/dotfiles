@@ -125,8 +125,6 @@
       - swayosd-git
       - swww
       - hyprpicker-git
-      - hyprshot
-      - hyprsome-git
       - wlr-randr
       - wlrobs-hg
       - nwg-displays
