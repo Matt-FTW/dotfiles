@@ -2,11 +2,11 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
-local au = vim.api.nvim_create_autocmd
+local ac = vim.api.nvim_create_autocmd
 local ag = vim.api.nvim_create_augroup
 
 -- Disable diagnostics in a .env file
-au("BufRead", {
+ac("BufRead", {
   pattern = ".env",
   callback = function()
     vim.diagnostic.disable(0)
@@ -14,7 +14,7 @@ au("BufRead", {
 })
 
 -- Fix telescope entering on insert mode
-au("WinLeave", {
+ac("WinLeave", {
   callback = function()
     if vim.bo.ft == "TelescopePrompt" and vim.fn.mode() == "i" then
       vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "i", false)
@@ -33,7 +33,7 @@ local auto_close_filetype = {
 }
 
 -- Auto close window when leaving
-au("BufLeave", {
+ac("BufLeave", {
   group = ag("lazyvim_auto_close_win", { clear = true }),
   callback = function(event)
     local ft = vim.api.nvim_buf_get_option(event.buf, "filetype")
@@ -48,7 +48,7 @@ au("BufLeave", {
 })
 
 -- Disable leader and localleader for some filetypes
-au("FileType", {
+ac("FileType", {
   group = ag("lazyvim_unbind_leader_key", { clear = true }),
   pattern = {
     "lazy",
@@ -68,14 +68,14 @@ au("FileType", {
 })
 
 -- Delete number column on terminals
-au("TermOpen", {
+ac("TermOpen", {
   callback = function()
     vim.cmd("setlocal listchars= nonumber norelativenumber")
   end,
 })
 
 -- Disable next line comments
-au("BufEnter", {
+ac("BufEnter", {
   callback = function()
     vim.cmd("set formatoptions-=cro")
     vim.cmd("setlocal formatoptions-=cro")
@@ -83,7 +83,7 @@ au("BufEnter", {
 })
 
 -- Disable eslint on node_modules
-au({ "BufNewFile", "BufRead" }, {
+ac({ "BufNewFile", "BufRead" }, {
   group = ag("DisableEslintOnNodeModules", { clear = true }),
   pattern = { "**/node_modules/**", "node_modules", "/node_modules/*" },
   callback = function()
@@ -93,7 +93,7 @@ au({ "BufNewFile", "BufRead" }, {
 
 -- Use the more sane snippet session leave logic. Copied from:
 -- https://github.com/L3MON4D3/LuaSnip/issues/258#issuecomment-1429989436
-au("ModeChanged", {
+ac("ModeChanged", {
   pattern = "*",
   callback = function()
     if
@@ -108,7 +108,7 @@ au("ModeChanged", {
 
 local numbertoggle = ag("numbertoggle", { clear = true })
 -- Toggle between relative/absolute line numbers
-au({ "BufEnter", "FocusGained", "InsertLeave", "CmdlineLeave", "WinEnter" }, {
+ac({ "BufEnter", "FocusGained", "InsertLeave", "CmdlineLeave", "WinEnter" }, {
   pattern = "*",
   group = numbertoggle,
   callback = function()
@@ -118,7 +118,7 @@ au({ "BufEnter", "FocusGained", "InsertLeave", "CmdlineLeave", "WinEnter" }, {
   end,
 })
 
-au({ "BufLeave", "FocusLost", "InsertEnter", "CmdlineEnter", "WinLeave" }, {
+ac({ "BufLeave", "FocusLost", "InsertEnter", "CmdlineEnter", "WinLeave" }, {
   pattern = "*",
   group = numbertoggle,
   callback = function()
@@ -130,7 +130,7 @@ au({ "BufLeave", "FocusLost", "InsertEnter", "CmdlineEnter", "WinLeave" }, {
 })
 
 -- Create a dir when saving a file if it doesnt exist
-au("BufWritePre", {
+ac("BufWritePre", {
   group = ag("auto_create_dir", { clear = true }),
   callback = function(args)
     if args.match:match("^%w%w+://") then
