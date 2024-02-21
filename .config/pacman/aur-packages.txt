@@ -1,5 +1,5 @@
 adwsteamgtk 0.6.9-1
-android-sdk-platform-tools 34.0.5-2
+android-sdk-platform-tools 35.0.0-1
 atlauncher-bin 3.4.35.7-1
 betterdiscord-installer-bin 1.3.0-2
 brave-bin 1:1.62.165-1
@@ -12,10 +12,10 @@ devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6383.gd984609-1
 find-the-command 2.0.1-1
+floorp-bin 11.9.0-1
 gzdoom 4.11.3-2
 heroic-games-launcher 2.12.0-1
 hyprpicker-git 0.1.1.r2.0889bd5-2
-hyprshot 1.2.3-1
 hyprsome-git r24.9636be0-1
 lazydocker 0.23.1-1
 lazynpm 0.1.4-1
@@ -46,8 +46,8 @@ ryujinx-bin 1.1.1112-1
 scc-bin 3.2.0-1
 sddm-git 0.19.0.205.g572b128-1
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.31.3-1
-spotify 1:1.2.26.1187-1
+spicetify-cli 2.32.1-1
+spotify 1:1.2.26.1187-2
 swaylock-effects 1.7.0.0-4
 swaync 0.10.0-1
 swayosd-git r55.a0709bc-1
@@ -74,4 +74,4 @@ wlrobs-hg r63.a48763b63f96-1
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 xwaylandvideobridge-git r180.ae0b96f-1
-yay 12.2.0-1
+yay 12.3.0-1
