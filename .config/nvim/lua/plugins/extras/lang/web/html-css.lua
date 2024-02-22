@@ -48,7 +48,16 @@ return {
         "html-lsp",
         "cssmodules-language-server",
         "css-lsp",
+        "htmlhint",
       })
+    end,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    opts = function(_, opts)
+      opts.linters_by_ft.html = opts.linters_by_ft.html or {}
+      table.insert(opts.linters_by_ft.html, "htmlhint")
+      return opts
     end,
   },
   {
