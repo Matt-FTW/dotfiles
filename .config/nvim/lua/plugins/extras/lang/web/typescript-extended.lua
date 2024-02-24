@@ -1,4 +1,4 @@
-local ts_server_activated = true
+local ts_server_activated = true -- Change this variable to false if you want to use typescript-tools instead of lspconfig tsserver implementation
 local ft = { "typescript", "typescriptreact", "javascript", "javascriptreact" }
 
 local inlayHints = {
