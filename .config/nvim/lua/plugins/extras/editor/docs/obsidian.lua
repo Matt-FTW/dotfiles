@@ -1,6 +1,8 @@
 return {
   "epwalsh/obsidian.nvim",
-  ft = "markdown",
+  event = {
+    "BufReadPre " .. vim.fn.expand("~") .. "/Documentos/Obsidian/obsidianVault/**.md",
+  },
   keys = {
     {
       "gf",
@@ -19,6 +21,7 @@ return {
     "nvim-lua/plenary.nvim",
     "hrsh7th/nvim-cmp",
     "nvim-telescope/telescope.nvim",
+    "nvim-treesitter/nvim-treesitter",
   },
   opts = {
     workspaces = {
