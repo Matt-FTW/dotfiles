@@ -53,6 +53,7 @@
     "plugins.extras.util.bigfile",
     "plugins.extras.util.icon-picker",
     "plugins.extras.util.kitty-scrollback",
+    "plugins.extras.util.smart-splits",
     "plugins.extras.util.vscode",
     "plugins.extras.util.wakatime"
   ],

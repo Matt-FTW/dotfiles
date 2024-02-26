@@ -48,7 +48,40 @@ return {
         "html-lsp",
         "cssmodules-language-server",
         "css-lsp",
+        "htmlhint",
+        "stylelint",
       })
+    end,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    opts = function(_, opts)
+      local stylelint = "stylelint"
+
+      local function add_linters(tbl)
+        for ft, linters in pairs(tbl) do
+          if opts.linters_by_ft[ft] == nil then
+            opts.linters_by_ft[ft] = linters
+          else
+            vim.list_extend(opts.linters_by_ft[ft], linters)
+          end
+        end
+      end
+
+      add_linters({
+        ["html"] = { "htmlhint" },
+        ["css"] = { stylelint },
+        ["scss"] = { stylelint },
+        ["less"] = { stylelint },
+        ["sugarss"] = { stylelint },
+        ["vue"] = { stylelint },
+        ["wxss"] = { stylelint },
+        ["javascript"] = { stylelint },
+        ["javascriptreact"] = { stylelint },
+        ["typescript"] = { stylelint },
+        ["typescriptreact"] = { stylelint },
+      })
+      return opts
     end,
   },
   {

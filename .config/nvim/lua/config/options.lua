@@ -25,3 +25,10 @@ o.editorconfig = true
 for _, provider in ipairs({ "node", "perl", "python3", "ruby" }) do
   vim.g["loaded_" .. provider .. "_provider"] = 0
 end
+
+-- Root dir detection
+vim.g.root_spec = {
+  "lsp",
+  { ".git", "lua", ".obsidian", "package.json", "Makefile", "go.mod", "cargo.toml", "pyproject.toml", "src" },
+  "cwd",
+}

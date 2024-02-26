@@ -1,14 +1,5 @@
-local source_action = function(name)
-  return function()
-    vim.lsp.buf.code_action({
-      apply = true,
-      context = {
-        only = { string.format("source.%s.ts", name) },
-        diagnostics = {},
-      },
-    })
-  end
-end
+local ts_server_activated = true -- Change this variable to false if you want to use typescript-tools instead of lspconfig tsserver implementation
+local ft = { "typescript", "typescriptreact", "javascript", "javascriptreact" }
 
 local inlayHints = {
   includeInlayParameterNameHints = "all",
@@ -21,17 +12,16 @@ local inlayHints = {
   includeInlayEnumMemberValueHints = true,
 }
 
-local function denoConfigExists()
-  local configs = { "deno.json", "deno.jsonc" }
-  local root = require("lazyvim.util.root").get()
-
-  for _, config in ipairs(configs) do
-    if vim.fn.filereadable(root .. "/" .. config) == 1 then
-      return true
-    end
+local source_action = function(name)
+  return function()
+    vim.lsp.buf.code_action({
+      apply = true,
+      context = {
+        only = { string.format("source.%s.ts", name) },
+        diagnostics = {},
+      },
+    })
   end
-
-  return false
 end
 
 return {
@@ -49,6 +39,7 @@ return {
     opts = {
       servers = {
         tsserver = {
+          enabled = ts_server_activated,
           init_options = {
             preferences = {
               disableSuggestions = true,
@@ -82,12 +73,43 @@ return {
         },
         denols = {},
       },
-      setup = {
-        tsserver = function(_, opts)
-          -- Disable tsserver if denols is present
-          return denoConfigExists()
-        end,
+    },
+  },
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    enabled = not ts_server_activated,
+    ft = ft,
+    opts = {
+      cmd = { "typescript-language-server", "--stdio" },
+      settings = {
+        code_lens = "all",
+        expose_as_code_action = "all",
+        tsserver_plugins = {
+          "@styled/typescript-styled-plugin",
+        },
+        tsserver_file_preferences = {
+          completions = {
+            completeFunctionCalls = true,
+          },
+          init_options = {
+            preferences = {
+              disableSuggestions = true,
+            },
+          },
+          includeInlayParameterNameHints = "all",
+          includeInlayEnumMemberValueHints = true,
+          includeInlayFunctionLikeReturnTypeHints = true,
+          includeInlayFunctionParameterTypeHints = true,
+          includeInlayPropertyDeclarationTypeHints = true,
+          includeInlayVariableTypeHints = true,
+        },
       },
+    },
+    keys = {
+      { "<leader>co", ft = ft, "<cmd>TSToolsOrganizeImports<cr>", desc = "Organize Imports" },
+      { "<leader>cR", ft = ft, "<cmd>TSToolsRemoveUnusedImports<cr>", desc = "Remove Unused Imports" },
+      { "<leader>cM", ft = ft, "<cmd>TSToolsAddMissingImports<cr>", desc = "Add Missing Imports" },
     },
   },
   {

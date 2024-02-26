@@ -17,7 +17,8 @@ map("n", "<leader>l", "<Nop>")
 map("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy" })
 -- stylua: ignore start
 map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "LazyVim Docs" })
-map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end, { desc = "LazyVim Repo" })
+map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end,
+  { desc = "LazyVim Repo" })
 map("n", "<leader>lx", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
 map("n", "<leader>lu", function() require("lazy").update() end, { desc = "Lazy Update" })
@@ -91,6 +92,25 @@ map("n", "[/", "?\\S\\zs\\s*╭<CR>zt", { desc = "Prev block comment" })
 -- Plugin Info
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
 map("n", "<leader>cic", "<cmd>ConformInfo<cr>", { desc = "Conform" })
+local linters = function()
+  local linters_attached = require("lint").linters_by_ft[vim.bo.filetype]
+  local buf_linters = {}
+
+  if not linters_attached then
+    vim.notify("No linters attached", vim.log.levels.WARN, { title = "Linter" })
+    return
+  end
+
+  for _, linter in pairs(linters_attached) do
+    table.insert(buf_linters, linter)
+  end
+
+  local unique_client_names = table.concat(buf_linters, ", ")
+  local linters = string.format("%s", unique_client_names)
+
+  vim.notify(linters, vim.log.levels.INFO, { title = "Linter" })
+end
+map("n", "<leader>ciL", linters, { desc = "Lint" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 
 -- U for redo
