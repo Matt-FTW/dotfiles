@@ -18,6 +18,10 @@ return {
         return vim.fn["codeium#Accept"]()
       end, opts)
 
+      vim.keymap.set("n", "<leader>ch", function()
+        return vim.fn["codeium#Chat"]()
+      end, { desc = "Chat with IA (Codeium)" })
+
       vim.keymap.set("i", "<M-]>", function()
         return vim.fn["codeium#CycleCompletions"](1)
       end, opts)
