@@ -2,7 +2,7 @@ amd-ucode 20240220.97b693d2-1
 android-file-transfer 4.2-3
 android-tools 34.0.4-3
 ansible 9.2.0-1
-atuin 18.0.1-1
+atuin 18.0.2-1
 autoconf 2.72-1
 automake 1.16.5-2
 bandwhich 0.22.2-1
@@ -22,7 +22,7 @@ celluloid 0.26-1
 clamtk 6.14-1
 cliphist 1:0.5.0-1
 cpupower 6.7-1
-dbeaver 23.3.4-1
+dbeaver 23.3.5-1
 deno 1.40.4-1
 dialog 1:1.3_20240101-1
 dictd 1.13.1-5
@@ -50,7 +50,7 @@ fzf 0.46.1-1
 galculator 2.1.4-8
 gamemode 1.8.1-2
 gcc 13.2.1-5
-geeqie 2.2-1
+geeqie 2.2-2
 git 2.44.0-1
 github-cli 2.43.1-1
 glow 1.5.1-1
@@ -68,12 +68,12 @@ gvfs-mtp 1.52.2-2
 highlight 4.10-1
 hyprland 0.35.0-2
 i2c-tools 4.3-4
-imagemagick 7.1.1.28-1
+imagemagick 7.1.1.29-2
 imwheel 1.0.0pre12-6
 inotify-tools 4.23.9.0-1
 iptables-nft 1:1.8.10-1
 kitty 0.31.0-1
-krita 5.2.2-4
+krita 5.2.2-5
 lazygit 0.40.2-1
 lib32-libnm 1.46.0-1
 lib32-libva-mesa-driver 1:24.0.1-1
@@ -111,7 +111,7 @@ nemo-image-converter 6.0.1-1
 nemo-python 6.0.1-1
 net-tools 2.10-2
 network-manager-applet 1.36.0-1
-networkmanager 1.46.0-1
+networkmanager 1.46.0-2
 nodejs 21.6.2-1
 npm 10.4.0-2
 ntfs-3g 2022.10.3-1
