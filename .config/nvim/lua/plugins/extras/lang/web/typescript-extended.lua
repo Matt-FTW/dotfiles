@@ -124,8 +124,9 @@ return {
   {
     "dmmulroy/tsc.nvim",
     opts = {
+      auto_start_watch_mode = false,
       flags = {
-        watch = true,
+        watch = false,
       },
     },
     keys = {
@@ -135,6 +136,11 @@ return {
       "typescript",
       "typescriptreact",
     },
+  },
+  {
+    "dmmulroy/ts-error-translator.nvim",
+    ft = { "typescript", "typescriptreact" },
+    opts = {},
   },
   {
     "nvim-neotest/neotest",
