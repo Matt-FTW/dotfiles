@@ -20,7 +20,6 @@
     "plugins.extras.editor.color",
     "plugins.extras.editor.compiler",
     "plugins.extras.editor.docs.devdocs",
-    "plugins.extras.editor.fold",
     "plugins.extras.editor.git.diffview",
     "plugins.extras.editor.harpoon",
     "plugins.extras.editor.live-server",
