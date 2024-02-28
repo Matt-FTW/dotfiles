@@ -33,3 +33,6 @@ go.root_spec = {
   { ".git", "lua", ".obsidian", "package.json", "Makefile", "go.mod", "cargo.toml", "pyproject.toml", "src" },
   "cwd",
 }
+
+-- Show last command in the status line
+o.showcmd = false
