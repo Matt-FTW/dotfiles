@@ -1,8 +1,6 @@
 return {
   "epwalsh/obsidian.nvim",
-  event = {
-    "BufReadPre " .. vim.fn.expand("~") .. "/Documentos/Obsidian/obsidianVault/**.md",
-  },
+  event = { "BufReadPre /docs/Documentos/Obsidian/**.md" },
   keys = {
     {
       "gf",
