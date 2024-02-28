@@ -1,33 +1,34 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
-local o = vim.g
+local go = vim.g
+local o = vim.opt
 
 -- Optimizations on startup
 vim.loader.enable()
 
 -- Define leader key
-o.mapleader = " "
-o.maplocalleader = "\\"
+go.mapleader = " "
+go.maplocalleader = "\\"
 
 -- Autoformat on save (Global)
-o.autoformat = true
+go.autoformat = true
 
 -- Font
-o.gui_font_default_size = 10
-o.gui_font_size = o.gui_font_default_size
-o.gui_font_face = "JetBrainsMono Nerd Font"
+go.gui_font_default_size = 10
+go.gui_font_size = go.gui_font_default_size
+go.gui_font_face = "JetBrainsMono Nerd Font"
 
 -- Enable EditorConfig integration
-o.editorconfig = true
+go.editorconfig = true
 
 -- Disable some repl providers
 for _, provider in ipairs({ "node", "perl", "python3", "ruby" }) do
-  vim.g["loaded_" .. provider .. "_provider"] = 0
+  go["loaded_" .. provider .. "_provider"] = 0
 end
 
 -- Root dir detection
-vim.g.root_spec = {
+go.root_spec = {
   "lsp",
   { ".git", "lua", ".obsidian", "package.json", "Makefile", "go.mod", "cargo.toml", "pyproject.toml", "src" },
   "cwd",
