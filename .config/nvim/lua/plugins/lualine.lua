@@ -31,7 +31,6 @@ return {
     opts.options.component_separators = { left = "", right = "" }
     opts.options.section_separators = { left = "", right = "" }
 
-    table.remove(opts.sections.lualine_x, 1)
     table.insert(opts.sections.lualine_x, 2, lsp)
     table.insert(opts.sections.lualine_x, 2, formatter)
     table.insert(opts.sections.lualine_x, 2, linter)
