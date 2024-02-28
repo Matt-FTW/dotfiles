@@ -511,6 +511,7 @@
 <summary><b>🔧 Utility</b></summary>
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [dmmulroy/ts-error-translator.nvim](https://dotfyle.com/plugins/dmmulroy/ts-error-translator.nvim)
 - [creativenull/dotfyle-metadata.nvim](https://dotfyle.com/plugins/creativenull/dotfyle-metadata.nvim)
 - [rasulomaroff/reactive.nvim](https://dotfyle.com/plugins/rasulomaroff/reactive.nvim)
 - [chrisgrieser/nvim-origami](https://dotfyle.com/plugins/chrisgrieser/nvim-origami)
