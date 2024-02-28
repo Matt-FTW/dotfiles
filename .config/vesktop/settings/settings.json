@@ -247,12 +247,6 @@
             "ignoreBots": true,
             "ignoreBlocked": true
         },
-        "MuteNewGuild": {
-            "enabled": true,
-            "guild": true,
-            "everyone": true,
-            "role": true
-        },
         "MutualGroupDMs": {
             "enabled": false
         },
@@ -509,6 +503,12 @@
         },
         "DisableCallIdle": {
             "enabled": false
+        },
+        "NewGuildSettings": {
+            "enabled": true,
+            "guild": true,
+            "everyone": true,
+            "role": true
         }
     },
     "notifications": {
