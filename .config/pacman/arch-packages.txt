@@ -1,7 +1,7 @@
 amd-ucode 20240220.97b693d2-1
 android-file-transfer 4.2-3
-android-tools 34.0.4-3
-ansible 9.2.0-1
+android-tools 34.0.4-4
+ansible 9.3.0-1
 atuin 18.0.2-1
 autoconf 2.72-1
 automake 1.16.5-2
@@ -23,7 +23,7 @@ clamtk 6.14-1
 cliphist 1:0.5.0-1
 cpupower 6.7-1
 dbeaver 23.3.5-1
-deno 1.40.4-1
+deno 1.40.5-1
 dialog 1:1.3_20240101-1
 dictd 1.13.1-5
 diff-so-fancy 1.4.4-2
@@ -38,8 +38,8 @@ duf 0.8.1-2
 easyeffects 7.1.4-1
 edk2-ovmf 202311-1
 efibootmgr 18-2
-ethtool 1:6.5-1
-eza 0.18.4-1
+ethtool 1:6.7-1
+eza 0.18.5-1
 fakeroot 1.33-2
 fd 9.0.0-1
 fish 3.7.0-1
@@ -57,7 +57,7 @@ glow 1.5.1-1
 gnome-disk-utility 45.1-1
 gnome-logs 45beta-1
 go 2:1.22.0-1
-gparted 1.5.0-1
+gparted 1.6.0-1
 grim 1.4.1-1
 groff 1.23.0-5
 grub 2:2.12-1
@@ -95,7 +95,7 @@ linux-zen-headers 6.7.6.zen1-1
 logrotate 3.21.0-2
 lsp-plugins 1.2.14-1
 lua51 5.1.5-11
-luarocks 3.9.2-1
+luarocks 3.10.0-1
 lxappearance 0.6.3-4
 m4 1.4.19-3
 maim 5.7.4-7
@@ -113,15 +113,15 @@ net-tools 2.10-2
 network-manager-applet 1.36.0-1
 networkmanager 1.46.0-2
 nodejs 21.6.2-1
-npm 10.4.0-2
+npm 10.5.0-1
 ntfs-3g 2022.10.3-1
-nvtop 3.0.2-1
+nvtop 3.1.0-1
 nwg-look 0.2.7-1
 obs-studio 30.0.2-4
 obsidian 1.5.8-2
 onefetch 2.19.0-1
 openbsd-netcat 1.226_1-2
-opencl-nvidia 545.29.06-4
+opencl-nvidia 550.54.14-2
 os-prober 1.81-1
 p7zip 1:17.05-2
 pacman-contrib 1.10.4-1
@@ -189,7 +189,7 @@ wev 1.0.0-13
 wf-recorder 0.4.1-1
 wget 1.21.4-1
 which 2.21-6
-wine 9.2-1
+wine 9.3-1
 wl-clipboard 1:2.2.1-1
 wmctrl 1.07-6
 wpa_supplicant 2:2.10-8
@@ -245,6 +245,6 @@ yapf 0.40.2-1
 yarn 1.22.21-1
 yazi 0.2.3-3
 zathura 0.5.4-2
-zathura-pdf-mupdf 0.4.1-15
+zathura-pdf-mupdf 0.4.1-16
 zoxide 0.9.4-1
 zsh 5.9-4

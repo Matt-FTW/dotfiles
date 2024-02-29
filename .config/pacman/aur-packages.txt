@@ -1,8 +1,8 @@
 adwsteamgtk 0.6.9-1
 android-sdk-platform-tools 35.0.0-1
-atlauncher-bin 3.4.35.8-1
+atlauncher-bin 3.4.35.9-1
 betterdiscord-installer-bin 1.3.0-2
-brave-bin 1:1.63.162-1
+brave-bin 1:1.63.165-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.10.1-1
@@ -37,7 +37,7 @@ protontricks 1.11.1-1
 pyprland 2.0.4-1
 python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
-rar 6.24.0-1
+rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
 rofi-file-browser-extended-git 1.3.1.r5.g44e5f0a-1
 rofi-lbonn-wayland 1.7.5+wayland2-1
@@ -46,7 +46,7 @@ ryujinx-bin 1.1.1112-1
 scc-bin 3.2.0-1
 sddm-git 0.21.0.0.g63780fc-2
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.32.1-1
+spicetify-cli 2.33.1-1
 spotify 1:1.2.31.1205-2
 swaylock-effects 1.7.0.0-4
 swaync 0.10.0-1
