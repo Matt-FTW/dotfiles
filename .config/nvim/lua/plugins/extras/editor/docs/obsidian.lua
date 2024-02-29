@@ -1,98 +1,84 @@
 return {
-  "epwalsh/obsidian.nvim",
-  event = { "BufReadPre /docs/Documentos/Obsidian/**.md" },
-  keys = {
-    {
-      "gf",
-      function()
-        if require("obsidian").util.cursor_on_markdown_link() then
-          return "<cmd>ObsidianFollowLink<CR>"
-        else
-          return "gf"
-        end
+  {
+    "epwalsh/obsidian.nvim",
+    event = { "BufReadPre /docs/Documentos/Obsidian/**.md" },
+    keys = {
+      { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Open on App" },
+      { "<leader>og", "<cmd>ObsidianSearch<CR>", desc = "Grep" },
+      { "<leader>sO", "<cmd>ObsidianSearch<CR>", desc = "Obsidian Grep" },
+      { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "New Note" },
+      { "<leader>o<space>", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find Files" },
+      { "<leader>fo", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find Obsidian Files" },
+      { "<leader>ob", "<cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
+      { "<leader>ot", "<cmd>ObsidianTags<CR>", desc = "Tags" },
+      { "<leader>ot", "<cmd>ObsidianTemplate<CR>", desc = "Template" },
+      { "<leader>ol", "<cmd>ObsidianLink<CR>", desc = "Link" },
+      { "<leader>oL", "<cmd>ObsidianLinks<CR>", desc = "Links" },
+      { "<leader>oN", "<cmd>ObsidianLinkNew<CR>", desc = "New Link" },
+      { "<leader>oe", "<cmd>ObsidianExtractNote<CR>", desc = "Extract Note" },
+      { "<leader>ow", "<cmd>ObsidianWorkspace<CR>", desc = "Workspace" },
+      { "<leader>or", "<cmd>ObsidianRename<CR>", desc = "Rename" },
+      { "<leader>oi", "<cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
+    },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+      "nvim-telescope/telescope.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    opts = {
+      workspaces = {
+        {
+          name = "personal",
+          path = "~/Documentos/Obsidian/obsidianVault/root",
+        },
+      },
+
+      notes_subdir = "Notes",
+
+      daily_notes = {
+        folder = "Journal/Entries/Daily",
+        date_format = "%Y-%m-%d",
+        alias_format = "%B %-d, %Y",
+        template = "_data_/templates/journal/daily_entry.md",
+      },
+
+      mappings = {
+        ["gf"] = {
+          action = function()
+            return require("obsidian").util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
+        ["<C-c>"] = {
+          action = function()
+            return require("obsidian").util.toggle_checkbox()
+          end,
+          opts = { buffer = true },
+        },
+      },
+
+      templates = {
+        subdir = "_data_/templates",
+        date_format = "%Y-%m-%d-%a",
+        time_format = "%H:%M",
+      },
+
+      follow_url_func = function(url)
+        vim.fn.jobstart({ "xdg-open", url })
       end,
-      noremap = false,
-      expr = true,
+
+      attachments = {
+        img_folder = "_data_/media",
+      },
     },
   },
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "hrsh7th/nvim-cmp",
-    "nvim-telescope/telescope.nvim",
-    "nvim-treesitter/nvim-treesitter",
-  },
-  opts = {
-    workspaces = {
-      {
-        name = "personal",
-        path = "~/Documentos/Obsidian/obsidianVault/root",
+  {
+    "folke/which-key.nvim",
+    opts = {
+      defaults = {
+        ["<leader>o"] = { name = " obsidian" },
       },
     },
-    daily_notes = {
-      folder = "Journal/Entries/Daily",
-      date_format = "%Y-%m-%d",
-      alias_format = "%B %-d, %Y",
-      template = "_data_/templates/journal/daily_entry.md",
-    },
-
-    mappings = {
-      -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
-      ["gf"] = {
-        action = function()
-          return require("obsidian").util.gf_passthrough()
-        end,
-        opts = { noremap = false, expr = true, buffer = true },
-      },
-      -- Toggle check-boxes.
-      ["<C-c>"] = {
-        action = function()
-          return require("obsidian").util.toggle_checkbox()
-        end,
-        opts = { buffer = true },
-      },
-    },
-
-    templates = {
-      subdir = "_data_/templates",
-      date_format = "%Y-%m-%d-%a",
-      time_format = "%H:%M",
-    },
-
-    backlinks = { height = 10, wrap = true },
-
-    -- Optional, by default when you use `:ObsidianFollowLink` on a link to an external
-    -- URL it will be ignored but you can customize this behavior here.
-    follow_url_func = function(url)
-      -- Open the URL in the default web browser.
-      vim.fn.jobstart({ "xdg-open", url }) -- linux
-    end,
-
-    -- Optional, set to true if you use the Obsidian Advanced URI plugin.
-    -- https://github.com/Vinzent03/obsidian-advanced-uri
-    use_advanced_uri = false,
-
-    -- Optional, set to true to force ':ObsidianOpen' to bring the app to the foreground.
-    open_app_foreground = false,
-
-    finder = "telescope.nvim",
-
-    open_notes_in = "current",
-
-    attachments = {
-      img_folder = "_data_/media",
-    },
-
-    note_frontmatter_func = function(note)
-      -- This is equivalent to the default frontmatter function.
-      local out = { id = note.id, aliases = note.aliases, tags = note.tags }
-      -- `note.metadata` contains any manually added fields in the frontmatter.
-      -- So here we just make sure those fields are kept in the frontmatter.
-      if note.metadata ~= nil and require("obsidian").util.table_length(note.metadata) > 0 then
-        for k, v in pairs(note.metadata) do
-          out[k] = v
-        end
-      end
-      return out
-    end,
   },
 }
