@@ -37,8 +37,7 @@ wl-paste --watch cliphist store &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Screen sharing and portals
-/usr/lib/xdg-desktop-portal-hyprland &
-/usr/lib/xdg-desktop-portal &
+"$scripts"/portal &
 # xwaylandvideobridge &
 
 # Audio
