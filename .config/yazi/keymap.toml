@@ -35,6 +35,10 @@ append_keymap = [
     "g",
     "o",
   ], exec = "cd ~/Documentos/Obsidian/obsidianVault/", desc = "Go to the obsidian directory" },
+  { on = [
+    "g",
+    "r",
+  ], exec = "cd ~/Repos", desc = "Go to the repos directory" },
 ]
 
 [input]
