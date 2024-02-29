@@ -2,7 +2,7 @@ return {
   "nvim-neorg/neorg",
   build = ":Neorg sync-parsers",
   dependencies = { "nvim-lua/plenary.nvim" },
-  event = "VeryLazy",
+  ft = "norg",
   opts = {
     load = {
       ["core.defaults"] = {}, -- Loads default behaviour
