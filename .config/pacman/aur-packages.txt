@@ -34,7 +34,7 @@ pika-backup 1:0.6.2-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_32-1
 protontricks 1.11.1-1
-pyprland 2.0.4-1
+pyprland 2.0.5-1
 python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
@@ -59,11 +59,11 @@ topgrade 14.0.1-1
 ttf-ms-win11-auto 10.0.22631.2428-1
 ttf-symbola 14.00-1
 universal-android-debloater 1.0.2-1
-upscayl-bin 2.9.9-4
+upscayl-bin 2.10.0-1
 ventoy-bin 1.0.97-1
 vesktop-bin 1.5.0-2
 vkbasalt 0.3.2.10-1
-vscodium-bin 1.86.2.24057-1
+vscodium-bin 1.87.0.24060-1
 vscodium-bin-marketplace 1.76.0-1
 waybar-hyprland-cava-git 0.9.22.r90.g58e506a6-1
 waybar-module-pacman-updates-git 0.2.3-1
