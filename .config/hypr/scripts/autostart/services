@@ -27,7 +27,7 @@ udiskie &
 devify &
 
 # Idle daemon to screen lock
-swayidle &
+hypridle &
 
 # Clipboard
 wl-clip-persist --clipboard regular &

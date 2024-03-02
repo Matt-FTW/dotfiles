@@ -14,7 +14,7 @@ if [[ "$?" == 0 ]]; then
 	elif [[ "$1" == 'lock' ]]; then
 		pkill wleave
 		sleep 0.5s
-		swaylock
+		hyprlock
 	elif [[ "$1" == 'suspend' ]]; then
 		playerctl --all-players stop
 		pkill wleave

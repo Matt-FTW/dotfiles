@@ -25,7 +25,6 @@
       # WM
       - hyprland
       - swappy
-      - swayidle
       - wev
       - wf-recorder
       - wl-clipboard
@@ -120,7 +119,8 @@
       - waybar-hyprland-cava-git
       - waybar-module-pacman-updates-git
       - wleave-git
-      - swaylock-effects
+      - hyprlock-git
+      - hypridle-git
       - swaync
       - swayosd-git
       - swww

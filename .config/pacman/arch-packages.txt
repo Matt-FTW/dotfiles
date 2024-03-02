@@ -162,7 +162,6 @@ starship 1.17.1-1
 steam 1.0.0.78-2
 sudo 1.9.15.p5-1
 swappy 1.5.1-1
-swayidle 1.8.0-1
 syncthing 1.27.3-2
 tealdeer 1.6.1-1
 texinfo 7.1-2

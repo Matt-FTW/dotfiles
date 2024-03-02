@@ -1,3 +1,0 @@
-timeout 600 'swaylock -f --grace 12 --fade-in 10'
-
-before-sleep 'pgrep swaylock || swaylock -f --fade-in 0 && true'

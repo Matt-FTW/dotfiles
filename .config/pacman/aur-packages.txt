@@ -15,6 +15,8 @@ find-the-command 2.0.1-1
 floorp-bin 11.10.5-1
 gzdoom 4.11.3-2
 heroic-games-launcher 2.12.0-1
+hypridle-git 0.1.1.r2.g029f0880-1
+hyprlock-git 0.1.0.r16.gfa2a875e-1
 hyprpicker-git 0.1.1.r2.0889bd5-2
 hyprsome-git r24.9636be0-1
 lazydocker 0.23.1-1
@@ -48,7 +50,6 @@ sddm-git 0.21.0.0.g63780fc-2
 selectdefaultapplication-fork-git r72.4e8501d-1
 spicetify-cli 2.33.1-1
 spotify 1:1.2.31.1205-2
-swaylock-effects 1.7.0.0-4
 swaync 0.10.0-1
 swayosd-git r55.a0709bc-1
 swww 0.8.2-2
