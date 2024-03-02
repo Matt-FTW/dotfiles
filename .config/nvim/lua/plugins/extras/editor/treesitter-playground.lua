@@ -1,19 +1,19 @@
 if vim.fn.has("nvim-0.10") == 1 then
   return {
     {
-      "nvim-treesitter/nvim-treesitter",
+      "nvim-treesitter/playground",
       dependencies = {
-        "nvim-treesitter/playground",
-      },
-      build = ":TSInstall query",
-      opts = {
-        playground = {
-          enable = true,
-        },
-        query_linter = {
-          enable = true,
-          use_virtual_text = true,
-          lint_events = { "BufWrite", "CursorHold" },
+        "nvim-treesitter/nvim-treesitter",
+        build = ":TSInstall query",
+        opts = {
+          playground = {
+            enable = true,
+          },
+          query_linter = {
+            enable = true,
+            use_virtual_text = true,
+            lint_events = { "BufWrite", "CursorHold" },
+          },
         },
       },
       keys = {
