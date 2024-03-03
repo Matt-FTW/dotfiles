@@ -1116,5 +1116,6 @@
     }
   ],
   "workbench.statusBar.visible": false,
-  "editor.matchBrackets": "never"
+  "editor.matchBrackets": "never",
+  "workbench.editor.showTabs": "single"
 }
