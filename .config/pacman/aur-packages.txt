@@ -10,15 +10,14 @@ cemu-bin 2.0.66-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
-duckstation-git 0.1.r6383.gd984609-1
+duckstation-git 0.1.r6442.g403ee01-1
 find-the-command 2.0.1-1
 floorp-bin 11.10.5-1
 gzdoom 4.11.3-2
 heroic-games-launcher 2.12.0-1
 hypridle-git 0.1.1.r2.g029f0880-1
-hyprlock-git 0.1.0.r16.gfa2a875e-1
+hyprlock-git 0.1.0.r20.gf9fe60c7-1
 hyprpicker-git 0.1.1.r2.0889bd5-2
-hyprsome-git r24.9636be0-1
 lazydocker 0.23.1-1
 lazynpm 0.1.4-1
 librewolf-bin 123.0-1
@@ -32,7 +31,7 @@ pacgraph 20110629-7
 pacseek 1.8.2-1
 parabolic 2023.11.1-1
 pcsx2-latest-bin 1.7.5557-1
-pika-backup 1:0.6.2-1
+pika-backup 1:0.7.0-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_32-1
 protontricks 1.11.1-1
@@ -47,7 +46,7 @@ rpcs3-bin 0.0.30-2
 ryujinx-bin 1.1.1112-1
 scc-bin 3.2.0-1
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.33.1-1
+spicetify-cli 2.33.2-1
 spotify 1:1.2.31.1205-2
 swaync 0.10.0-1
 swayosd-git r55.a0709bc-1
