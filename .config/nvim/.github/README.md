@@ -86,6 +86,7 @@
 <summary><b>🎨 Colorscheme</b></summary>
 
 - [rockerBOO/boo-colorscheme-nvim](https://dotfyle.com/plugins/rockerBOO/boo-colorscheme-nvim)
+- [samharju/synthweave.nvim](https://dotfyle.com/plugins/samharju/synthweave.nvim)
 - [HoNamDuong/hybrid.nvim](https://dotfyle.com/plugins/HoNamDuong/hybrid.nvim)
 - [craftzdog/solarized-osaka.nvim](https://dotfyle.com/plugins/craftzdog/solarized-osaka.nvim)
 - [shaunsingh/moonlight.nvim](https://dotfyle.com/plugins/shaunsingh/moonlight.nvim)
