@@ -46,7 +46,6 @@ rofi-lbonn-wayland 1.7.5+wayland2-1
 rpcs3-bin 0.0.30-2
 ryujinx-bin 1.1.1112-1
 scc-bin 3.2.0-1
-sddm-git 0.21.0.0.g63780fc-2
 selectdefaultapplication-fork-git r72.4e8501d-1
 spicetify-cli 2.33.1-1
 spotify 1:1.2.31.1205-2

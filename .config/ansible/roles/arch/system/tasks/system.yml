@@ -117,6 +117,17 @@
     line: "%wheel ALL=(ALL:ALL) ALL"
     validate: /usr/sbin/visudo -cf %s
     create: yes
-# SDDM
 
+# Greeter
+- name: intall greeter
+  pacman:
+    name:
+      - greetd
+      - greetd-tui
+
+- name: enable and start greeter
+  systemd:
+    name: greetd
+    enabled: yes
+    state: restarted
 # GRUB
