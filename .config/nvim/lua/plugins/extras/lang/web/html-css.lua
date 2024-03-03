@@ -16,6 +16,7 @@ return {
         emmet_language_server = {},
         html = {},
         cssmodules_ls = {},
+        css_variables = {},
         cssls = {
           lint = {
             compatibleVendorPrefixes = "ignore",
