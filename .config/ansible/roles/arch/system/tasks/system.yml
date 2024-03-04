@@ -119,11 +119,10 @@
     create: yes
 
 # Greeter
-- name: intall greeter
+- name: install greeter
   pacman:
     name:
       - greetd
-      - greetd-tui
 
 - name: enable and start greeter
   systemd:
