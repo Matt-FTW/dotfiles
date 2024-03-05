@@ -1,16 +1,6 @@
 return {
   "uga-rosa/ccc.nvim",
-  init = function()
-    vim.api.nvim_create_autocmd("BufReadPost", {
-      callback = function()
-        local firstline = vim.api.nvim_buf_get_lines(0, 0, 1, false)[1]
-        if vim.endswith(firstline, "vim-pseudo-modeline: buffer_has_colors") then
-          vim.cmd.CccHighlighterEnable()
-        end
-      end,
-    })
-  end,
-  ft = { "css", "scss", "sh" },
+  ft = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact", "css", "scss", "sh" },
   cmd = { "CccPick", "CccConvert", "CccHighlighterEnable", "CccHighlighterDisable", "CccHighlighterToggle" },
   keys = {
     { "<leader>up", "<cmd>CccHighlighterToggle<cr>", desc = "Toggle Paint/Colorizer" },
