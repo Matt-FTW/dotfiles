@@ -20,6 +20,7 @@ return {
         executeCommandIfExists(":IBLDisable")
         Util.toggle.inlay_hints()
         executeCommandIfExists(":Gitsigns toggle_current_line_blame")
+        executeCommandIfExists(":CccHighlighterDisable")
       end,
       on_close = function()
         vim.opt.laststatus = 3
@@ -30,6 +31,7 @@ return {
         executeCommandIfExists(":IBLEnable")
         Util.toggle.inlay_hints()
         executeCommandIfExists(":Gitsigns toggle_current_line_blame")
+        executeCommandIfExists(":CccHighlighterEnable")
       end,
     },
   },
