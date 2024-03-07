@@ -1,6 +1,6 @@
 configuration {
 	/*---------- General setting ----------*/
-	modi: "drun,run,file-browser-extended";
+	modi: "drun,run,filebrowser";
 	case-sensitive: false;
 	cycle: false;
 	filter: "";

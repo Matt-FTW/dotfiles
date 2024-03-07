@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-IMAGE_DIR="$HOME/Imagenes/Capturas/PC/"
+IMAGE_DIR="$HOME/Imagenes/Capturas/PC"
 
-SELECTION=$(ls -t "$IMAGE_DIR" | rofi -show file-browser-extended -file-browser-stdin -file-browser-stdout -file-browser-dir "$IMAGE_DIR")
+SELECTION=$(find "$IMAGE_DIR" -type f -exec ls -t {} + | awk -F/ '{print $NF}' | rofi -dmenu)
 
-swappy -f "$SELECTION"
+swappy -f "$IMAGE_DIR/$SELECTION"

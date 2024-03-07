@@ -1,6 +1,6 @@
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,file-browser-extended";
+	modi:                       "drun,filebrowser";
     show-icons:                 true;
     display-drun:               "Apps";
     display-run:                "Run";

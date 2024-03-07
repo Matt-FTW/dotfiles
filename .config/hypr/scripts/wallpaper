@@ -8,22 +8,21 @@ if [ "$mode" = "" ]; then
 fi
 
 if [ "$mode" == "select" ]; then
-	IMAGE=$(rofi -show file-browser-extended -file-browser-stdout -file-browser-dir "$HOME"/.config/hypr/themes/luna/walls/)
+	IMAGE=$(fd --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | rofi -dmenu)
 
 	if [ "$IMAGE" = "" ]; then
 		exit 1
 	fi
 elif [ "$mode" == "random" ]; then
-	RANDOM_IMAGE=$(fd --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | shuf -n 1)
-	IMAGE="$HOME/.config/hypr/themes/luna/walls/$RANDOM_IMAGE"
+	IMAGE=$(fd --base-directory "$HOME/.config/hypr/themes/luna/walls/" --type f . | shuf -n 1)
 else
 	exit 1
 fi
 
-swww img "$IMAGE" \
+swww img "$HOME/.config/hypr/themes/luna/walls/$IMAGE" \
 	--transition-bezier 0.5,1.19,.8,.4 \
 	--transition-type wipe \
 	--transition-duration 2 \
 	--transition-fps 75
 
-notify-send "Wallpaper Changed" -i "$IMAGE"
+notify-send "Wallpaper Changed" -i "$HOME/.config/hypr/themes/luna/walls/$IMAGE"

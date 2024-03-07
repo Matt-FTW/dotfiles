@@ -128,7 +128,6 @@
       - nwg-look
       - pyprland
       - rofi-lboon-wayland
-      - rofi-file-browser-extended-git
 
       # Hooks
       - check-broken-packages-pacman-hook-git

@@ -40,7 +40,6 @@ python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
-rofi-file-browser-extended-git 1.3.1.r5.g44e5f0a-1
 rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1211-1
