@@ -40,6 +40,9 @@ return {
       inlay_hints = {
         enabled = nvim_0_10,
       },
+      codelens = {
+        enabled = nvim_0_10,
+      },
       servers = {
         lua_ls = {
           settings = {
