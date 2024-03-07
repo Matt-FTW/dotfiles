@@ -2,7 +2,7 @@ adwsteamgtk 0.6.9-1
 android-sdk-platform-tools 35.0.0-1
 atlauncher-bin 3.4.35.9-1
 betterdiscord-installer-bin 1.3.0-2
-brave-bin 1:1.63.165-1
+brave-bin 1:1.63.169-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.10.1-1
@@ -35,14 +35,14 @@ pika-backup 1:0.7.0-1
 pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton8_32-1
 protontricks 1.11.1-1
-pyprland 2.0.5-1
+pyprland 2.0.8-1
 python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
 rofi-file-browser-extended-git 1.3.1.r5.g44e5f0a-1
-rofi-lbonn-wayland 1.7.5+wayland2-1
-rpcs3-bin 0.0.30-2
+rofi-lbonn-wayland 1.7.5+wayland3-1
+rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1211-1
 scc-bin 3.2.0-1
 selectdefaultapplication-fork-git r72.4e8501d-1
@@ -73,4 +73,4 @@ wlrobs-hg r63.a48763b63f96-1
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 xwaylandvideobridge-git r180.ae0b96f-1
-yay 12.3.0-1
+yay 12.3.1-1
