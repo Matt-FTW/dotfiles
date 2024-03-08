@@ -19,7 +19,7 @@
     use: yay
     name:
       # Launchers
-      - heroic-games-launcher
+      - heroic-games-launcher-bin
       - atlauncher-bin
 
       # Emulators
