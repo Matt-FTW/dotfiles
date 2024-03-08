@@ -635,6 +635,7 @@
 - markdownlint
 - pylint
 - ruff
+- selene
 - shellcheck
 - sqlfluff
 - stylelint
