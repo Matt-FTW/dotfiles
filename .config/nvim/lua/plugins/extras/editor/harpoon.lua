@@ -2,19 +2,19 @@ local keys = {}
 
 -- stylua: ignore start
 for i = 1, 9 do
-  table.insert(keys, { "<leader>h" .. i, function() require("harpoon"):list():select(i) end, desc = "File " .. i })
+  table.insert(keys, { "<leader><cr>" .. i, function() require("harpoon"):list():select(i) end, desc = "File " .. i })
 end
 
-table.insert(keys, { "<leader>ha", function() require("harpoon"):list():append() end, desc = "Add Mark" })
-table.insert(keys, { "<leader>hh", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Menu" })
-table.insert(keys, { "<leader>hf", "<cmd>Telescope harpoon marks<CR>", desc = "Files (Telescope)" })
-table.insert(keys, { "<leader>hc", function() require("harpoon"):list():clear() end, desc = "Clear all Files" })
+table.insert(keys, { "<leader><cr>a", function() require("harpoon"):list():append() end, desc = "Add Mark" })
+table.insert(keys, { "<leader><cr><cr>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
+table.insert(keys, { "<leader><cr>t", "<cmd>Telescope harpoon marks<CR>", desc = "Files (Telescope)" })
+table.insert(keys, { "<leader><cr>c", function() require("harpoon"):list():clear() end, desc = "Clear all Files" })
 
-table.insert(keys, { "]H", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" })
-table.insert(keys, { "[H", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" })
+table.insert(keys, { "]<cr>", function() require("harpoon"):list():next() end, desc = "Next Mark File" })
+table.insert(keys, { "[<cr>", function() require("harpoon"):list():prev() end, desc = "Prev Mark File" })
 
-table.insert(keys, { "<C-A-l>", function() require("harpoon"):list():next() end, desc = "Next Harpoon File" })
-table.insert(keys, { "<C-A-h>", function() require("harpoon"):list():prev() end, desc = "Prev Harpoon File" })
+table.insert(keys, { "<C-A-l>", function() require("harpoon"):list():next() end, desc = "Next Mark File" })
+table.insert(keys, { "<C-A-h>", function() require("harpoon"):list():prev() end, desc = "Prev Mark File" })
 -- stylua: ignore end
 
 return {
@@ -55,7 +55,7 @@ return {
     "goolord/alpha-nvim",
     optional = true,
     opts = function(_, dashboard)
-      local button = dashboard.button("h", "󱌧 " .. " Harpoon", "<cmd>Telescope harpoon marks<CR>")
+      local button = dashboard.button("m", "󱌧 " .. " Marks", "<cmd>Telescope harpoon marks<CR>")
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 5, button)
@@ -67,9 +67,9 @@ return {
     opts = function(_, opts)
       local harpoon = {
         action = "Telescope harpoon marks",
-        desc = " Harpoon",
+        desc = " Marks",
         icon = "󱌧 ",
-        key = "h",
+        key = "m",
       }
 
       harpoon.desc = harpoon.desc .. string.rep(" ", 43 - #harpoon.desc)
@@ -82,7 +82,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>h"] = { name = "󱌧 harpoon" },
+        ["<leader><cr>"] = { name = "󱌧 marks" },
       },
     },
   },
