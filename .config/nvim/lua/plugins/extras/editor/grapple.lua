@@ -70,7 +70,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader><cr>"] = { name = "󰛢 grapple" },
+        ["<leader><cr>"] = { name = "󰛢 marks" },
       },
     },
   },
