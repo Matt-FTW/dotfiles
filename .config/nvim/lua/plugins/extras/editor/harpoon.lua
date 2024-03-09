@@ -7,14 +7,14 @@ end
 
 table.insert(keys, { "<leader><cr>a", function() require("harpoon"):list():append() end, desc = "Add Mark" })
 table.insert(keys, { "<leader><cr><cr>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
-table.insert(keys, { "<leader><cr>t", "<cmd>Telescope harpoon marks<CR>", desc = "Files (Telescope)" })
-table.insert(keys, { "<leader><cr>c", function() require("harpoon"):list():clear() end, desc = "Clear all Files" })
+table.insert(keys, { "<leader><cr>t", "<cmd>Telescope harpoon marks<CR>", desc = "Marks (Telescope)" })
+table.insert(keys, { "<leader><cr>c", function() require("harpoon"):list():clear() end, desc = "Clear all Marks" })
 
-table.insert(keys, { "]<cr>", function() require("harpoon"):list():next() end, desc = "Next Mark File" })
-table.insert(keys, { "[<cr>", function() require("harpoon"):list():prev() end, desc = "Prev Mark File" })
+table.insert(keys, { "]<cr>", function() require("harpoon"):list():next() end, desc = "Next Mark" })
+table.insert(keys, { "[<cr>", function() require("harpoon"):list():prev() end, desc = "Prev Mark" })
 
-table.insert(keys, { "<C-A-l>", function() require("harpoon"):list():next() end, desc = "Next Mark File" })
-table.insert(keys, { "<C-A-h>", function() require("harpoon"):list():prev() end, desc = "Prev Mark File" })
+table.insert(keys, { "<C-A-l>", function() require("harpoon"):list():next() end, desc = "Next Mark" })
+table.insert(keys, { "<C-A-h>", function() require("harpoon"):list():prev() end, desc = "Prev Mark" })
 -- stylua: ignore end
 
 return {
@@ -55,7 +55,8 @@ return {
     "goolord/alpha-nvim",
     optional = true,
     opts = function(_, dashboard)
-      local button = dashboard.button("m", "󱌧 " .. " Marks", "<cmd>Telescope harpoon marks<CR>")
+      -- stylua: ignore
+      local button = dashboard.button("m", "󰛢 " .. " Marks", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end)
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 5, button)
@@ -66,9 +67,10 @@ return {
     optional = true,
     opts = function(_, opts)
       local harpoon = {
-        action = "Telescope harpoon marks",
+        -- stylua: ignore
+        action = function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end,
         desc = " Marks",
-        icon = "󱌧 ",
+        icon = "󰛢 ",
         key = "m",
       }
 
@@ -82,7 +84,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader><cr>"] = { name = "󱌧 marks" },
+        ["<leader><cr>"] = { name = "󰛢 marks" },
       },
     },
   },

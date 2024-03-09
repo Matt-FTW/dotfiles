@@ -26,7 +26,7 @@ return {
     optional = true,
     opts = function(_, dashboard)
       -- stylua: ignore
-      local button = dashboard.button("m", "󱌧 " .. " Marks", function() require("arrow.ui").openMenu() end)
+      local button = dashboard.button("m", "󰛢 " .. " Marks", function() require("arrow.ui").openMenu() end)
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
       table.insert(dashboard.section.buttons.val, 5, button)
@@ -40,7 +40,7 @@ return {
       local arrow = {
         action = function() require("arrow.ui").openMenu() end,
         desc = " Marks",
-        icon = "󱌧 ",
+        icon = "󰛢 ",
         key = "m",
       }
 
