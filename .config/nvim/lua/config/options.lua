@@ -33,3 +33,6 @@ go.root_spec = {
 
 -- Show last command in the status line
 o.showcmd = false
+
+-- Enable spell checking
+o.spell = true
