@@ -31,8 +31,14 @@ go.root_spec = {
   "cwd",
 }
 
--- Show last command in the status line
+-- Disable annoying cmd line stuff
 o.showcmd = false
+o.laststatus = 0
+o.cmdheight = 0
 
 -- Enable spell checking
 o.spell = true
+
+-- Backspacing and indentation when wrapping
+o.backspace = { "start", "eol", "indent" }
+o.breakindent = true
