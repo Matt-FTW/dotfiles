@@ -22,7 +22,7 @@
     "plugins.extras.editor.docs.devdocs",
     "plugins.extras.editor.docs.obsidian",
     "plugins.extras.editor.git.diffview",
-    "plugins.extras.editor.harpoon",
+    "plugins.extras.editor.grapple",
     "plugins.extras.editor.live-server",
     "plugins.extras.editor.outline-extended",
     "plugins.extras.editor.package-info",

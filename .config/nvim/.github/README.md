@@ -337,6 +337,8 @@
 <summary><b>🔖 Marks</b></summary>
 
 - [ThePrimeagen/harpoon](https://dotfyle.com/plugins/ThePrimeagen/harpoon)
+- [otavioschwanck/arrow.nvim](https://dotfyle.com/plugins/otavioschwanck/arrow.nvim)
+- [cbochs/grapple.nvim](https://dotfyle.com/plugins/cbochs/grapple.nvim)
 - [tomasky/bookmarks.nvim](https://dotfyle.com/plugins/tomasky/bookmarks.nvim)
 
 </details>
