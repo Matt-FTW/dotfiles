@@ -67,6 +67,7 @@ ac("FileType", {
 ac("TermOpen", {
   callback = function()
     vim.cmd("setlocal listchars= nonumber norelativenumber")
+    vim.cmd("setlocal nospell")
   end,
 })
 
