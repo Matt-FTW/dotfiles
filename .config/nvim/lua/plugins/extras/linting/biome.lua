@@ -34,6 +34,9 @@ return {
         ["typescript"] = { "biome" },
         ["typescriptreact"] = { "biome" },
         ["javascriptreact"] = { "biome" },
+        ["astro"] = { "biome" },
+        ["svelte"] = { "biome" },
+        ["vue"] = { "biome" },
       })
 
       opts.formatters = {
