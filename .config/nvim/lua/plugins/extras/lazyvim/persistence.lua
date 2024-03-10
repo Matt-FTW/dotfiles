@@ -5,7 +5,7 @@ return {
   "folke/persistence.nvim",
   keys = {
     {
-      "<leader>qs",
+      "<leader>qS",
       function()
         p.save()
         vim.notify("Session saved", vim.log.levels.INFO, { title = "Persistence" })
@@ -13,7 +13,6 @@ return {
       desc = "Save Session",
     },
     -- stylua: ignore start
-    { "<leader>qr", function() require("persistence").load({ last = true }) end, desc = "Restore Last Session" },
     { "<leader>qt",
       function()
         if isActive then
