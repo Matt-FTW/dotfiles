@@ -15,7 +15,6 @@ return {
   { "tpope/vim-repeat", optional = true },
   { "echasnovski/mini.files", optional = true },
   { "SmiteshP/nvim-navic", optional = true },
-  { "simrat39/symbols-outline.nvim", optional = true },
 
   -- Lang
   -- Clangd
@@ -56,7 +55,7 @@ return {
 
   -- Rust
   { "Saecki/crates.nvim", optional = true },
-  { "rouge8/neotest-rust", optional = true },
+  { "mrcjkb/rustaceanvim", optional = true },
 
   -- Tailwind
   { "roobert/tailwindcss-colorizer-cmp.nvim", optional = true },
