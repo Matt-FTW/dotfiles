@@ -1,6 +1,5 @@
 return {
   {
-
     "luukvbaal/statuscol.nvim",
     event = { "LazyFile" },
     opts = function()

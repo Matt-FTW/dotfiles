@@ -39,6 +39,7 @@ return {
   },
   {
     "nvim-lualine/lualine.nvim",
+    optional = true,
     opts = function(_, opts)
       local icon = require("lazyvim.config").icons.kinds.Codeium
       local function show_codeium_status()

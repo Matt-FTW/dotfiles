@@ -6,6 +6,7 @@ return {
   },
   {
     "folke/noice.nvim",
+    optional = true,
     opts = {
       lsp = {
         progress = {
