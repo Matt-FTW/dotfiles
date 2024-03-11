@@ -247,4 +247,3 @@ yazi 0.2.4-1
 zathura 0.5.5-1
 zathura-pdf-mupdf 0.4.1-17
 zoxide 0.9.4-1
-zsh 5.9-4
