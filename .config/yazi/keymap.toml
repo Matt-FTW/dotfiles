@@ -5,42 +5,42 @@
 prepend_keymap = [
   { on = [
     "<C-s>",
-  ], exec = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
+  ], run = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
 ]
 
 append_keymap = [
   { on = [
     "e",
-  ], exec = "open", desc = "Open the selected files" },
+  ], run = "open", desc = "Open the selected files" },
   { on = [
     "E",
-  ], exec = "open --interactive", desc = "Open the selected files interactively" },
+  ], run = "open --interactive", desc = "Open the selected files interactively" },
   { on = [
     "g",
     "n",
-  ], exec = "cd ~/.config/nvim", desc = "Go to the nvim directory" },
+  ], run = "cd ~/.config/nvim", desc = "Go to the nvim directory" },
   { on = [
     "g",
     "v",
-  ], exec = "cd ~/Videos", desc = "Go to the videos directory" },
+  ], run = "cd ~/Videos", desc = "Go to the videos directory" },
   { on = [
     "g",
     "i",
-  ], exec = "cd ~/Imagenes", desc = "Go to the images directory" },
+  ], run = "cd ~/Imagenes", desc = "Go to the images directory" },
   { on = [
     "g",
     "D",
-  ], exec = "cd ~/Documentos", desc = "Go to the docs directory" },
+  ], run = "cd ~/Documentos", desc = "Go to the docs directory" },
   { on = [
     "g",
     "o",
-  ], exec = "cd ~/Documentos/Obsidian/obsidianVault/", desc = "Go to the obsidian directory" },
+  ], run = "cd ~/Documentos/Obsidian/obsidianVault/", desc = "Go to the obsidian directory" },
   { on = [
     "g",
     "r",
-  ], exec = "cd ~/Repos", desc = "Go to the repos directory" },
+  ], run = "cd ~/Repos", desc = "Go to the repos directory" },
 ]
 
 [input]
 
-prepend_keymap = [{ on = ["<Esc>"], exec = "close", desc = "Cancel input" }]
+prepend_keymap = [{ on = ["<Esc>"], run = "close", desc = "Cancel input" }]
