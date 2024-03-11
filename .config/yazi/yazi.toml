@@ -3,43 +3,34 @@
 [manager]
 ratio = [1, 4, 3]
 sort_by = "natural"
-sort_reverse = false
 sort_dir_first = true
-show_hidden = false
-show_symlink = true
-
-[preview]
-tab_size = 2
-max_width = 600
-max_height = 900
-cache_dir = ""
 
 [opener]
 folder = [
-  { exec = 'hyprctl dispatch exec "[float; size 60% 60%; center 1] xdg-open" "$@"', desc = "Open in GUI File Manager" },
-  { exec = '$EDITOR "$@"' },
+  { run = 'hyprctl dispatch run "[float; size 60% 60%; center 1] xdg-open" "$@"', desc = "Open in GUI File Manager" },
+  { run = '$EDITOR "$@"' },
 ]
-archive = [{ exec = 'xdg-open "$1"', desc = "Extract here" }]
-pdf = [{ exec = 'xdg-open "$1"', desc = "Open" }]
-docx = [{ exec = 'xdg-open "$1"', desc = "Open" }]
+archive = [{ run = 'xdg-open "$1"', desc = "Extract here" }]
+pdf = [{ run = 'xdg-open "$1"', desc = "Open" }]
+docx = [{ run = 'xdg-open "$1"', desc = "Open" }]
 text = [
-  { exec = 'pypr hide yazi & kitty --detach $EDITOR "$@"', block = true, desc = "Open" },
+  { run = 'pypr hide yazi & kitty --detach $EDITOR "$@"', block = true, desc = "Open" },
 ]
 image = [
-  { exec = 'xdg-open "$@"', desc = "Open" },
-  { exec = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF" },
+  { run = 'xdg-open "$@"', desc = "Open" },
+  { run = '''exiftool "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show EXIF" },
 ]
 video = [
-  { exec = 'xdg-open "$@"' },
-  { exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
+  { run = 'xdg-open "$@"' },
+  { run = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
 ]
 audio = [
-  { exec = 'xdg-open "$@"' },
-  { exec = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
+  { run = 'xdg-open "$@"' },
+  { run = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
 ]
 fallback = [
-  { exec = 'open "$@"', desc = "Open" },
-  { exec = 'open -R "$@"', desc = "Reveal in Finder" },
+  { run = 'open "$@"', desc = "Open" },
+  { run = 'open -R "$@"', desc = "Reveal in Finder" },
 ]
 
 [open]
@@ -67,11 +58,3 @@ rules = [
 
   { mime = "*", use = "fallback" },
 ]
-
-[tasks]
-micro_workers = 5
-macro_workers = 10
-bizarre_retry = 5
-
-[log]
-enabled = false
