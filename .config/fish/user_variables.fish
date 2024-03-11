@@ -37,6 +37,8 @@ set -xg PYTHONSTARTUP $XDG_CONFIG_HOME/python/pythonrc
 set -xg WINEPREFIX $XDG_DATA_HOME/wine
 set -xg NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
 set -xg GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
+set -xg W3M_DIR $XDG_DATA_HOME/w3m
+set -xg DOTNET_CLI_HOME $XDG_DATA_HOME/dotnet
 
 # Path
 fish_add_path $XDG_BIN_HOME
