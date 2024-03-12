@@ -38,7 +38,7 @@ return {
         enabled = nvim_0_10,
       },
       codelens = {
-        enabled = nvim_0_10,
+        enabled = false,
       },
       servers = {
         lua_ls = {
