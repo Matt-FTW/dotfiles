@@ -47,3 +47,5 @@ o.breakindent = true
 if vim.fn.has("nvim-0.10") == 1 then
   o.smoothscroll = true
 end
+
+o.conceallevel = 2
