@@ -2,8 +2,7 @@ if not vim.g.vscode then
   return {}
 end
 
-local Config = require("lazy.core.config")
-local Plugin = require("lazy.core.plugin")
+local config = require("lazy.core.config")
 local vscode = require("vscode-neovim")
 
 local map = vim.keymap.set
@@ -33,12 +32,13 @@ local enabled = {
   "LazyVim",
 }
 
-Config.options.checker.enabled = false
-Config.options.change_detection.enabled = false
-Config.options.defaults.cond = function(plugin)
+config.options.checker.enabled = false
+config.options.change_detection.enabled = false
+config.options.defaults.cond = function(plugin)
   return vim.tbl_contains(enabled, plugin.name) or plugin.vscode
 end
 
+-- Options
 vim.o.spell = false
 vim.opt.timeoutlen = 150 -- To show whichkey without delay
 vim.notify = vscode.notify
