@@ -112,8 +112,7 @@
       - librewolf-bin
 
       # WM
-      - waybar-hyprland-cava-git
-      - waybar-module-pacman-updates-git
+      - waybar-cava
       - wleave-git
       - hyprlock-git
       - hypridle-git
