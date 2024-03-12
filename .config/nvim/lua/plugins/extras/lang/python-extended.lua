@@ -1,13 +1,6 @@
 return {
   { import = "lazyvim.plugins.extras.lang.python" },
-  {
-    "stevearc/conform.nvim",
-    opts = function(_, opts)
-      opts.formatters_by_ft.python = opts.formatters_by_ft.python or {}
-      table.insert(opts.formatters_by_ft.python, "ruff_format")
-      return opts
-    end,
-  },
+  { import = "lazyvim.plugins.extras.lang.python-semshi" },
   {
     "neovim/nvim-lspconfig",
     opts = {

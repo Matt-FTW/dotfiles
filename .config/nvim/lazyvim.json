@@ -1,6 +1,5 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.python-semshi",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
