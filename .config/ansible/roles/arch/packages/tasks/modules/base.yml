@@ -79,7 +79,6 @@
 
       # Multimedia
       - celluloid
-      # - discord
       - geeqie
       - imagemagick
       - mpv
@@ -148,7 +147,6 @@
       - topgrade
       - upscayl-bin
       - downgrade
-      # - betterdiscord-installer-bin
       - android-sdk-platform-tools
       - pika-backup
       - rar

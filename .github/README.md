@@ -164,23 +164,23 @@ Here is all the information about my setup:
 <details>
   <summary><b>🖱️ GUI Apps</b></summary>
 
-| 📚 Entry                 | ✨ App                                                                                                                                                                                                                                  |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Music Player**         | [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) [:gear:](../.config/spicetify/)                                                                                                                 |
-| **Fallback Text Editor** | [VSCodium](https://vscodium.com/) [:gear:](../.config/VSCodium/User/)                                                                                                                                                                   |
-| **Web Browser**          | 💖 [Librewolf](https://librewolf.net/) [:gear:](../.config/browser/)                                                                                                                                                                    |
-| **Messaging App**        | [Discord](https://discord.com/) (patched with [BetterDiscord](https://betterdiscord.app/)) [:gear:](../.config/BetterDiscord/) <br> [Vesktop](https://github.com/Vencord/Vesktop) (custom Discord Client) [:gear:](../.config/vesktop/) |
-| **Email Client**         | [Thunderbird](https://www.thunderbird.net/)                                                                                                                                                                                             |
-| **PDF Viewer**           | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                                                                                                                                             |
-| **Note Taking App**      | 💖 [Obsidian](https://obsidian.md/) [:gear:](../.config/obsidian/)                                                                                                                                                                      |
-| **Video Player**         | [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) [:gear:](../.config/mpv/)                                                                                                                            |
-| **Image Viewer**         | [geeqie](https://www.geeqie.org/) [:gear:](../.config/geeqie/)                                                                                                                                                                          |
-| **File Manager**         | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                                                                                                                                              |
-| **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                                                                                                                                      |
-| **Image Editor**         | [Krita](https://krita.org/)                                                                                                                                                                                                             |
-| **VM Manager**           | [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))                                                                                                                                                               |
-| **Recording Program**    | [OBS](https://obsproject.com/)                                                                                                                                                                                                          |
-| **Office Apps**          | [LibreOffice](https://www.libreoffice.org/)                                                                                                                                                                                             |
+| 📚 Entry                 | ✨ App                                                                                                                  |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **Music Player**         | [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) [:gear:](../.config/spicetify/) |
+| **Fallback Text Editor** | [VSCodium](https://vscodium.com/) [:gear:](../.config/VSCodium/User/)                                                   |
+| **Web Browser**          | 💖 [Librewolf](https://librewolf.net/) [:gear:](../.config/browser/)                                                    |
+| **Messaging App**        | [Vesktop](https://github.com/Vencord/Vesktop) (Custom Discord Client) [:gear:](../.config/vesktop/)                     |
+| **Email Client**         | [Thunderbird](https://www.thunderbird.net/)                                                                             |
+| **PDF Viewer**           | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                             |
+| **Note Taking App**      | 💖 [Obsidian](https://obsidian.md/) [:gear:](../.config/obsidian/)                                                      |
+| **Video Player**         | [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) [:gear:](../.config/mpv/)            |
+| **Image Viewer**         | [geeqie](https://www.geeqie.org/) [:gear:](../.config/geeqie/)                                                          |
+| **File Manager**         | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                              |
+| **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                      |
+| **Image Editor**         | [Krita](https://krita.org/)                                                                                             |
+| **VM Manager**           | [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))                                               |
+| **Recording Program**    | [OBS](https://obsproject.com/)                                                                                          |
+| **Office Apps**          | [LibreOffice](https://www.libreoffice.org/)                                                                             |
 
 </details>
 

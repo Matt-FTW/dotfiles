@@ -1,7 +1,6 @@
 adwsteamgtk 0.6.9-1
 android-sdk-platform-tools 35.0.0-1
 atlauncher-bin 3.4.35.9-1
-betterdiscord-installer-bin 1.3.0-2
 brave-bin 1:1.63.169-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1

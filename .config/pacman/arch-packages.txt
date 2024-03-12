@@ -27,7 +27,6 @@ deno 1.41.1-1
 dialog 1:1.3_20240101-1
 dictd 1.13.1-5
 diff-so-fancy 1.4.4-2
-discord 0.0.44-1
 dnsmasq 2.90-1
 dnsperf 2.11.2-2
 docker 1:25.0.3-1
