@@ -74,8 +74,6 @@ set -xg ZELLIJ_RUNNER_BANNERS_DIR .config/zellij/banners
 
 # GPG/LANG
 set -xg GPG_TTY (tty)
-set -xg LANG es_ES.UTF-8
-set -xg LC_ALL es_ES.UTF-8
 
 # FZF
 set -xg FZF_DEFAULT_COMMAND fd
