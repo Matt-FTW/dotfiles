@@ -5,7 +5,7 @@ brave-bin 1:1.63.169-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.10.1-1
-cemu-bin 2.0.68-1
+cemu-bin 2.0.71-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
@@ -41,10 +41,10 @@ rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
 rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
-ryujinx-bin 1.1.1211-1
+ryujinx-bin 1.1.1224-1
 scc-bin 3.2.0-1
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.33.2-1
+spicetify-cli 2.34.0-1
 spotify 1:1.2.31.1205-2
 swaync 0.10.1-1
 swayosd-git r55.a0709bc-1
@@ -58,9 +58,9 @@ ttf-symbola 14.00-1
 universal-android-debloater 1.0.2-1
 upscayl-bin 2.10.0-1
 ventoy-bin 1.0.97-1
-vesktop-bin 1.5.0-2
+vesktop-bin 1.5.1-1
 vkbasalt 0.3.2.10-1
-vscodium-bin 1.87.1.24068-1
+vscodium-bin 1.87.2.24072-1
 vscodium-bin-marketplace 1.76.0-1
 waybar-cava 0.9.24-1
 wl-clip-persist-git r34.6ba11a2-1
