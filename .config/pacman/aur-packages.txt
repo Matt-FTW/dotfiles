@@ -31,9 +31,7 @@ pacseek 1.8.2-1
 parabolic 2023.11.1-1
 pcsx2-latest-bin 1.7.5603-1
 pika-backup 1:0.7.0-1
-pinterest-downloader-git 7d540b1.20221130.157-1
 proton-ge-custom-bin 1:GE_Proton9_1-1
-protontricks 1.11.1-1
 pyprland 2.0.8-1
 python-spotdl 4.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
@@ -43,7 +41,6 @@ rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1224-1
 scc-bin 3.2.0-1
-selectdefaultapplication-fork-git r72.4e8501d-1
 spicetify-cli 2.34.0-1
 spotify 1:1.2.31.1205-2
 swaync 0.10.1-1
