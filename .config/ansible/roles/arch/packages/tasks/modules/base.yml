@@ -84,6 +84,7 @@
       - mpv
       - pavucontrol
       - wine
+      - winetricks
 
 # AUR
 - name: Create the `aur_builder` user
