@@ -10,7 +10,7 @@ return {
       { "<leader>cen", "<cmd>FloatermNew --name=node --opener=edit --titleposition=center --wintype=split --height=0.35 node<CR>", desc = "Node" },
       { "<leader>cep", "<cmd>FloatermNew --name=python --opener=edit --titleposition=center --wintype=split --height=0.35 python<CR>", desc = "Python" },
       { "<leader>gf", function()
-        local git_path = vim.fn.system("git ls-files --full-name " .. vim.api.nvim_buf_get_name(0))
+        local git_path = vim.api.nvim_buf_get_name(0)
         vim.api.nvim_command("FloatermNew --name=lazygitroot --opener=edit --titleposition=center --height=0.85 --width=0.85 lazygit -f " .. vim.trim(git_path))
       end, desc = "File History (LazyGit)" },
       { "<S-Right>", "<Esc><Esc><cmd>FloatermNext<CR>", mode = { "t" }, desc = "Next Terminal" },
