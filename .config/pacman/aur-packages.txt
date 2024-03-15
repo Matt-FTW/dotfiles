@@ -1,7 +1,7 @@
 adwsteamgtk 0.6.9-1
 android-sdk-platform-tools 35.0.0-1
 atlauncher-bin 3.4.35.9-1
-brave-bin 1:1.63.169-1
+brave-bin 1:1.63.174-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.10.1-1
@@ -41,7 +41,7 @@ rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1224-1
 scc-bin 3.2.0-1
-spicetify-cli 2.34.0-1
+spicetify-cli 2.34.1-1
 spotify 1:1.2.31.1205-2
 swaync 0.10.1-1
 swayosd-git r55.a0709bc-1
@@ -67,4 +67,4 @@ wlrobs-hg r63.a48763b63f96-1
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 xwaylandvideobridge-git r180.ae0b96f-1
-yay 12.3.1-1
+yay 12.3.1-3
