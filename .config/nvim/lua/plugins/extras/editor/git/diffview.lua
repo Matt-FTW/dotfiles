@@ -2,7 +2,7 @@ return {
   {
     "sindrets/diffview.nvim",
     keys = {
-      { "<leader>gF", "<cmd>DiffviewFileHistory<CR>", desc = "File History (Diff)" },
+      { "<leader>gR", "<cmd>DiffviewFileHistory<CR>", desc = "Repo History (Diff)" },
       { "<leader>gd", "<cmd>DiffviewOpen<CR>", desc = "Diff View" },
     },
     opts = function(_, opts)
