@@ -13,7 +13,6 @@ grep 'workspace' ~/.config/hypr/themes/luna/rules.conf | while IFS= read -r line
 	regex=$class_value
 
 	if [ -n "$workspace_value" ] && [ -n "$class_value" ]; then
-
 		# Compare the retrieved value with the active class of the window
 		if echo "$active_class" | grep -E "$regex"; then
 			#echo "The class matches the active class of the window. Workspace value to apply: $workspace_value"
