@@ -48,9 +48,22 @@ return {
           settings = {
             typescript = {
               inlayHints = inlayHints,
+              implementationsCodeLens = {
+                enabled = true,
+              },
+              referencesCodeLens = {
+                enabled = true,
+                showOnAllFunctions = true,
+              },
             },
             javascript = {
               inlayHints = inlayHints,
+              implementationsCodeLens = {
+                enabled = true,
+              },
+              referencesCodeLens = {
+                enabled = true,
+                showOnAllFunctions = true,
             },
           },
           keys = {
