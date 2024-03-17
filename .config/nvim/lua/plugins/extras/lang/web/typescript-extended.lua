@@ -64,11 +64,12 @@ return {
               referencesCodeLens = {
                 enabled = true,
                 showOnAllFunctions = true,
+              },
             },
           },
           keys = {
             {
-              "<leader>co",
+              "<leader>cO",
               source_action("organizeImports"),
               desc = "Organize Imports",
             },
@@ -120,7 +121,7 @@ return {
       },
     },
     keys = {
-      { "<leader>co", ft = ft, "<cmd>TSToolsOrganizeImports<cr>", desc = "Organize Imports" },
+      { "<leader>cO", ft = ft, "<cmd>TSToolsOrganizeImports<cr>", desc = "Organize Imports" },
       { "<leader>cR", ft = ft, "<cmd>TSToolsRemoveUnusedImports<cr>", desc = "Remove Unused Imports" },
       { "<leader>cM", ft = ft, "<cmd>TSToolsAddMissingImports<cr>", desc = "Add Missing Imports" },
     },
