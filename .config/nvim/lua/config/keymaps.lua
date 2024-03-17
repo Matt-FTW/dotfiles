@@ -154,3 +154,12 @@ map("x", "g/", "<esc>/\\%V", { silent = false, desc = "Search inside visual sele
 -- Search visually selected text (slightly better than builtins in Neovim>=0.8)
 map("x", "*", [[y/\V<C-R>=escape(@", '/\')<CR><CR>]])
 map("x", "#", [[y?\V<C-R>=escape(@", '?\')<CR><CR>]])
+
+-- Dashboard
+map("n", "<leader>fd", function()
+  if Util.has("alpha-nvim") then
+    require("alpha").start(true)
+  elseif Util.has("dashboard-nvim") then
+    vim.cmd("Dashboard")
+  end
+end, { desc = "Dashboard" })
