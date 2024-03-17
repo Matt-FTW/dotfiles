@@ -2,6 +2,7 @@ local map = vim.keymap.set
 local o = vim.opt
 
 local Util = require("lazyvim.util")
+local lazy = require("lazy")
 
 -- Search current word
 local searching_brave = function()
@@ -14,13 +15,13 @@ map("n", "<leader>l", "<Nop>")
 map("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy" })
 -- stylua: ignore start
 map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "LazyVim Docs" })
-map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end,
-  { desc = "LazyVim Repo" })
+map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end, { desc = "LazyVim Repo" })
 map("n", "<leader>lx", "<cmd>LazyExtras<cr>", { desc = "Extras" })
 map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
-map("n", "<leader>lu", function() require("lazy").update() end, { desc = "Lazy Update" })
-map("n", "<leader>lC", function() require("lazy").check() end, { desc = "Lazy Check" })
-map("n", "<leader>ls", function() require("lazy").sync() end, { desc = "Lazy Sync" })
+
+map("n", "<leader>lu", function() lazy.update() end, { desc = "Lazy Update" })
+map("n", "<leader>lC", function() lazy.check() end, { desc = "Lazy Check" })
+map("n", "<leader>ls", function() lazy.sync() end, { desc = "Lazy Sync" })
 -- stylua: ignore end
 
 -- Disable LazyVim bindings
