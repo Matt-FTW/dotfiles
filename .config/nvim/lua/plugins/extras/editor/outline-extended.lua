@@ -12,5 +12,9 @@ return {
         autofold_depth = 1,
       },
     },
+    keys = {
+      { "<leader>co", "<cmd>Outline<cr>", desc = "Toggle Outline" },
+      { "<leader>cs", false },
+    },
   },
 }

@@ -41,6 +41,12 @@ return {
       { "<leader>sSp", Util.telescope("lsp_dynamic_workspace_symbols", { symbols = { "Property" } }), desc = "Property" },
       { "<leader>sSv", Util.telescope("lsp_dynamic_workspace_symbols", { symbols = { "Variable", "Parameter" } }), desc = "Variable" },
       { "<leader>sA", Util.telescope("treesitter"), desc = "Treesitter Symbols" },
+      { "<leader>gf", "<cmd>Telescope git_bcommits<cr>", desc = "File History" },
+      { "<leader>gS", "<cmd>Telescope git_stash<cr>", desc = "stash" },
+      { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "branches" },
+      { "<leader>cs", function()
+        require('telescope.builtin').spell_suggest(require('telescope.themes').get_dropdown({}), { layout_config = { width=0.25, height=0.3 } })
+      end, desc = "Spelling" },
     },
     opts = {
       defaults = {
