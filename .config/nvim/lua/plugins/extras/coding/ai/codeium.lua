@@ -3,7 +3,15 @@ return {
     "Exafunction/codeium.vim",
     event = "InsertEnter",
     config = function()
-      local opts = { expr = true, silent = true }
+      local cmp = require("cmp")
+      cmp.event:on("menu_opened", function()
+        vim.g.codeium_manual = true
+        vim.fn["codeium#Clear"]()
+      end)
+      cmp.event:on("menu_closed", function()
+        vim.g.codeium_manual = false
+        vim.fn["codeium#Complete"]()
+      end)
 
       vim.g.codeium_filetypes = {
         TelescopePrompt = false,
@@ -12,6 +20,7 @@ return {
         ["dap-repl"] = false,
       }
 
+      local opts = { expr = true, silent = true }
       vim.g.codeium_disable_bindings = 1
 
       vim.keymap.set("i", "<M-CR>", function()
