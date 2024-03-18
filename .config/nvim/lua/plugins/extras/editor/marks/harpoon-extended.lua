@@ -2,16 +2,16 @@ local keys = {}
 
 -- stylua: ignore start
 for i = 1, 9 do
-  table.insert(keys, { "<leader><cr>" .. i, function() require("harpoon"):list():select(i) end, desc = "File " .. i })
+  table.insert(keys, { "<leader>m" .. i, function() require("harpoon"):list():select(i) end, desc = "File " .. i })
 end
 
-table.insert(keys, { "<leader><cr>a", function() require("harpoon"):list():append() end, desc = "Add Mark" })
-table.insert(keys, { "<leader><cr><cr>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
-table.insert(keys, { "<leader><cr>t", "<cmd>Telescope harpoon marks<CR>", desc = "Marks (Telescope)" })
-table.insert(keys, { "<leader><cr>c", function() require("harpoon"):list():clear() end, desc = "Clear all Marks" })
+table.insert(keys, { "<leader>ma", function() require("harpoon"):list():append() end, desc = "Add Mark" })
+table.insert(keys, { "<leader>m<cr>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
+table.insert(keys, { "<leader>mt", "<cmd>Telescope harpoon marks<CR>", desc = "Marks (Telescope)" })
+table.insert(keys, { "<leader>mc", function() require("harpoon"):list():clear() end, desc = "Clear all Marks" })
 
-table.insert(keys, { "]<cr>", function() require("harpoon"):list():next() end, desc = "Next Mark" })
-table.insert(keys, { "[<cr>", function() require("harpoon"):list():prev() end, desc = "Prev Mark" })
+table.insert(keys, { "]k", function() require("harpoon"):list():next() end, desc = "Next Mark" })
+table.insert(keys, { "[k", function() require("harpoon"):list():prev() end, desc = "Prev Mark" })
 
 table.insert(keys, { "<C-A-l>", function() require("harpoon"):list():next() end, desc = "Next Mark" })
 table.insert(keys, { "<C-A-h>", function() require("harpoon"):list():prev() end, desc = "Prev Mark" })
@@ -84,7 +84,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader><cr>"] = { name = "󰛢 marks" },
+        ["<leader>m"] = { name = "󰛢 marks" },
       },
     },
   },

@@ -6,10 +6,10 @@ return {
       "smoka7/hydra.nvim",
     },
     cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
-  -- stylua: ignore
-  keys = {
-    { mode = { "v", "n" }, "<leader>m", "<cmd>MCstart<cr>", desc = "Multicursor" },
-  },
+    -- stylua: ignore
+    keys = {
+      { mode = { "v", "n" }, "<leader>M", "<cmd>MCstart<cr>", desc = "Multicursor" },
+    },
     opts = {
       hint_config = {
         border = "rounded",

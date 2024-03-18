@@ -5,14 +5,9 @@ return {
     opts = {
       show_icons = true,
     },
+    -- stylua: ignore
     keys = {
-      {
-        "<leader><cr>",
-        function()
-          require("arrow.ui").openMenu()
-        end,
-        desc = "Marks",
-      },
+      { "<leader>m", function() require("arrow.ui").openMenu() end, desc = "Marks" },
     },
   },
   {

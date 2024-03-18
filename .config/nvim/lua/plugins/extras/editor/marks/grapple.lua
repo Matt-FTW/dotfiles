@@ -2,19 +2,19 @@ local keys = {}
 
 -- stylua: ignore start
 for i = 1, 9 do
-  table.insert(keys, { "<leader><cr>" .. i, "<cmd>Grapple select index=" .. i .. "<CR>", desc = "File " .. i })
+  table.insert(keys, { "<leader>m" .. i, "<cmd>Grapple select index=" .. i .. "<CR>", desc = "File " .. i })
 end
 
-table.insert(keys, { "<leader><cr>a", "<cmd>Grapple tag<CR>", desc = "Add Mark" })
-table.insert(keys, { "<leader><cr><cr>", "<cmd>Grapple toggle_tags<CR>", desc = "Marks" })
-table.insert(keys, { "<leader><cr>t", "<cmd>Telescope grapple tags<CR>", desc = "Marks (Telescope)" })
-table.insert(keys, { "<leader><cr>C", "<cmd>Grapple reset<CR>", desc = "Clear all Marks" })
-table.insert(keys, { "<leader><cr>c", "<cmd>Grapple untag<CR>", desc = "Clear current Mark" })
-table.insert(keys, { "<leader><cr>s", "<cmd>Grapple toggle_scopes<CR>", desc = "Scopes" })
-table.insert(keys, { "<leader><cr>S", "<cmd>Grapple toggle_loaded<CR>", desc = "Loaded Scopes" })
+table.insert(keys, { "<leader>ma", "<cmd>Grapple tag<CR>", desc = "Add Mark" })
+table.insert(keys, { "<leader>mm", "<cmd>Grapple toggle_tags<CR>", desc = "Marks" })
+table.insert(keys, { "<leader>mt", "<cmd>Telescope grapple tags<CR>", desc = "Marks (Telescope)" })
+table.insert(keys, { "<leader>mC", "<cmd>Grapple reset<CR>", desc = "Clear all Marks" })
+table.insert(keys, { "<leader>mc", "<cmd>Grapple untag<CR>", desc = "Clear current Mark" })
+table.insert(keys, { "<leader>ms", "<cmd>Grapple toggle_scopes<CR>", desc = "Scopes" })
+table.insert(keys, { "<leader>mS", "<cmd>Grapple toggle_loaded<CR>", desc = "Loaded Scopes" })
 
-table.insert(keys, { "]<cr>", "<cmd>Grapple cycle forward<CR>", desc = "Next Mark" })
-table.insert(keys, { "[<cr>", "<cmd>Grapple cycle backward<CR>", desc = "Prev Mark" })
+table.insert(keys, { "]k", "<cmd>Grapple cycle forward<CR>", desc = "Next Mark" })
+table.insert(keys, { "[k", "<cmd>Grapple cycle backward<CR>", desc = "Prev Mark" })
 
 table.insert(keys, { "<C-A-l>", "<cmd>Grapple cycle forward<CR>", desc = "Next Mark" })
 table.insert(keys, { "<C-A-h>", "<cmd>Grapple cycle backward<CR>", desc = "Prev Mark" })
@@ -71,7 +71,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader><cr>"] = { name = "󰛢 marks" },
+        ["<leader>m"] = { name = "󰛢 marks" },
       },
     },
   },
