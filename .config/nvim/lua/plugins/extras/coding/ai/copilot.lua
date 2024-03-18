@@ -20,7 +20,7 @@ return {
       },
     },
     keys = {
-      { "<leader>cI", "<cmd>Copilot toggle<cr>", desc = "Toggle IA" },
+      { "<leader>cI", "<cmd>Copilot toggle<cr>", desc = "Toggle IA (Copilot)" },
     },
   },
 }
