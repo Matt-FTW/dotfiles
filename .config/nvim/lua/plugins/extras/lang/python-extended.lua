@@ -5,6 +5,21 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        pyright = {
+          settings = {
+            verboseOutput = true,
+            autoImportCompletion = true,
+            python = {
+              analysis = {
+                typeCheckingMode = "strict",
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+                diagnosticMode = "openFilesOnly",
+                indexing = true,
+              },
+            },
+          },
+        },
         ruff_lsp = {
           handlers = {
             ["textDocument/publishDiagnostics"] = function() end,
