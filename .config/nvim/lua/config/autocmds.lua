@@ -9,15 +9,6 @@ ac("BufRead", {
   end,
 })
 
--- Fix telescope entering on insert mode
-ac("WinLeave", {
-  callback = function()
-    if vim.bo.ft == "TelescopePrompt" and vim.fn.mode() == "i" then
-      vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "i", false)
-    end
-  end,
-})
-
 local auto_close_filetype = {
   "lazy",
   "mason",
