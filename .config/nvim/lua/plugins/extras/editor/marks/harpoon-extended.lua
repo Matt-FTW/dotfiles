@@ -52,6 +52,17 @@ return {
     end,
   },
   {
+    "nvim-lualine/lualine.nvim",
+    dependencies = {
+      "abeldekat/harpoonline",
+      opts = { formatter = "short", icon = "󰛢" },
+    },
+    optional = true,
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_c, require("harpoonline").format)
+    end,
+  },
+  {
     "goolord/alpha-nvim",
     optional = true,
     opts = function(_, dashboard)
