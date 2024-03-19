@@ -6,7 +6,7 @@ for i = 1, 9 do
 end
 
 table.insert(keys, { "<leader>ma", function() require("harpoon"):list():append() end, desc = "Add Mark" })
-table.insert(keys, { "<leader>m<cr>", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
+table.insert(keys, { "<leader>mm", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
 table.insert(keys, { "<leader>mt", "<cmd>Telescope harpoon marks<CR>", desc = "Marks (Telescope)" })
 table.insert(keys, { "<leader>mc", function() require("harpoon"):list():clear() end, desc = "Clear all Marks" })
 
