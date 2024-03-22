@@ -15,7 +15,7 @@
       "custom/arch",
       "hyprland/workspaces",
       "cava",
-      "custom/wf-recorder"
+      "custom/wf-recorder",
     ],
     "modules-center": ["custom/music"],
     "modules-right": [
@@ -24,7 +24,7 @@
       "custom/weather",
       "clock",
       "pulseaudio",
-      "custom/notifications"
+      "custom/notifications",
     ],
     "custom/wf-recorder": {
       "format": "{}",
@@ -33,33 +33,35 @@
       "tooltip": "false",
       "exec-if": "pgrep 'wf-recorder'",
       "on-click": "exec $HOME/.config/hypr/scripts/rofi/recording",
-      "signal": 8
+      "signal": 8,
     },
     "custom/updates": {
       "format": "{} {icon}",
       "return-type": "json",
       "format-icons": {
         "has-updates": "󱍷",
-        "updated": "󰂪"
+        "updated": "󰂪",
       },
       "exec-if": "which waybar-module-pacman-updates",
       "exec": "waybar-module-pacman-updates",
       "on-click": "kitty --class center-float-large topgrade -k --only system",
-      "on-click-right": "kitty --class center-float-large topgrade -k --no-self-update"
+      "on-click-right": "kitty --class center-float-large topgrade -k --no-self-update",
     },
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
       "on-click": "sleep 0.1 && rofi -show drun",
-      "on-click-right": "wleave"
+      "on-click-right": "wleave",
     },
     "custom/weather": {
-      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "exec": "wttrbar --location Alicante",
       "restart-interval": 300,
+      "tooltip": true,
+      "format": "{}°",
       "return-type": "json",
       "on-click": "kitty --hold --class center-float wttr Alicante",
       "on-click-right": "kitty --hold --class center-float wttr -v2 Alicante",
-      "on-click-middle": "xdg-open https://www.eltiempo.es/alicante.html"
+      "on-click-middle": "xdg-open https://wttr.in/alicante",
     },
     "custom/notifications": {
       "tooltip": false,
@@ -72,14 +74,14 @@
         "inhibited-notification": "<span foreground='red'><sup></sup></span>",
         "inhibited-none": "",
         "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+        "dnd-inhibited-none": "",
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
       "exec": "swaync-client -swb",
       "on-click": "sleep 0.1 && swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
-      "escape": true
+      "escape": true,
     },
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -96,18 +98,18 @@
         "7": "",
         "8": "",
         "9": "",
-        "10": ""
+        "10": "",
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
       "on-click": "activate",
-      "sort-by-number": true
+      "sort-by-number": true,
     },
     "hyprland/language": {
       "format": "{}",
       "format-en": "  US",
       "format-es": "  ES",
-      "on-click": "hyprctl switchxkblayout evision-usb-device next"
+      "on-click": "hyprctl switchxkblayout evision-usb-device next",
     },
     "clock": {
       "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -122,8 +124,8 @@
           "days": "<span color='#cad3f5'><b>{}</b></span>",
           "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
           "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
-          "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
-        }
+          "today": "<span color='#ed8796'><b><u>{}</u></b></span>",
+        },
       },
       "interval": 1,
       "format": "{:%H:%M:%OS}  ",
@@ -133,9 +135,9 @@
         "on-click-forward": "tz_up",
         "on-click-backward": "tz_down",
         "on-scroll-up": "shift_up",
-        "on-scroll-down": "shift_down"
+        "on-scroll-down": "shift_down",
       },
-      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23"
+      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23",
     },
     "pulseaudio": {
       "format": "{icon} {volume}% {format_source}",
@@ -151,14 +153,14 @@
         "phone": " ",
         "portable": " ",
         "car": " ",
-        "default": [" ", " ", " "]
+        "default": [" ", " ", " "],
       },
       "tooltip-format": "{desc}, {volume}%",
       "on-click": "swayosd-client --output-volume mute-toggle",
       "on-click-right": "swayosd-client --input-volume mute-toggle",
       "on-click-middle": "pypr toggle volume",
       "on-scroll-up": "swayosd-client --output-volume +1",
-      "on-scroll-down": "swayosd-client --output-volume -1"
+      "on-scroll-down": "swayosd-client --output-volume -1",
     },
     "cava": {
       "autosens": 1,
@@ -172,7 +174,7 @@
         "<span foreground='#89b4fa'>▅</span>",
         "<span foreground='#89b4fa'>▆</span>",
         "<span foreground='#89b4fa'>▇</span>",
-        "<span foreground='#89b4fa'>█</span>"
+        "<span foreground='#89b4fa'>█</span>",
       ],
       "framerate": 75,
       "higher_cutoff_freq": 10000,
@@ -186,7 +188,7 @@
       "waves": false,
       "on-click": "kitty --class center-float-mini cava",
       "on-click-right": "qpwgraph",
-      "on-click-middle": "easyeffects"
+      "on-click-middle": "easyeffects",
     },
     "custom/music": {
       "format": "{icon} {}",
@@ -194,14 +196,14 @@
       "max-length": 100,
       "format-icons": {
         "spotify": " ",
-        "default": " "
+        "default": " ",
       },
       "escape": true,
       "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
       "on-click": "playerctl --player=spotify play-pause",
       "on-scroll-up": "playerctl --player=spotify next",
-      "on-scroll-down": "playerctl --player=spotify previous"
-    }
+      "on-scroll-down": "playerctl --player=spotify previous",
+    },
   },
   {
     "height": 50,
@@ -222,7 +224,7 @@
       "temperature#cpu",
       "custom/gpu-usage",
       "temperature#gpu",
-      "custom/notifications"
+      "custom/notifications",
     ],
     "hyprland/window": {
       "format": "{}",
@@ -230,15 +232,15 @@
       "rewrite": {
         "(.*) — LibreWolf": "󰇧 $1",
         "(.*) - Discord": "󰙯 $1",
-        "(.*) - fish": "> [$1]"
+        "(.*) - fish": "> [$1]",
       },
-      "separate-outputs": false
+      "separate-outputs": false,
     },
     "custom/arch": {
       "format": "  ",
       "tooltip": false,
       "on-click": "sleep 0.1 && rofi -show drun",
-      "on-click-right": "wleave"
+      "on-click-right": "wleave",
     },
     "custom/notifications": {
       "tooltip": false,
@@ -251,14 +253,14 @@
         "inhibited-notification": "<span foreground='red'><sup></sup></span>",
         "inhibited-none": "",
         "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+        "dnd-inhibited-none": "",
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
       "exec": "swaync-client -swb",
       "on-click": "sleep 0.1 && swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
-      "escape": true
+      "escape": true,
     },
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -276,31 +278,31 @@
         "17": "",
         "18": "",
         "19": "",
-        "20": ""
+        "20": "",
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
       "on-click": "activate",
-      "sort-by-number": true
+      "sort-by-number": true,
     },
     "cpu": {
       "on-click": "kitty --class center-float-large btop",
       "format": "CPU: {usage}%",
       "tooltip": false,
-      "interval": 2
+      "interval": 2,
     },
     "custom/gpu-usage": {
       "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
       "on-click": "kitty --class center-float-large nvtop",
       "format": "GPU: {}%",
       "return-type": "",
-      "interval": 2
+      "interval": 2,
     },
     "memory": {
       "format": "{}%  ",
       "on-click": "kitty --class center-float-large btop",
       "tooltip": true,
-      "interval": 2
+      "interval": 2,
     },
     "temperature#cpu": {
       "critical-threshold": 90,
@@ -310,7 +312,7 @@
       "format": "{icon} {temperatureC}°C",
       "format-icons": ["", "", ""],
       "tooltip": true,
-      "interval": 2
+      "interval": 2,
     },
     "temperature#gpu": {
       "critical-threshold": 80,
@@ -320,8 +322,8 @@
       "format": "{icon} {temperatureC}°C",
       "format-icons": ["", "", ""],
       "tooltip": true,
-      "interval": 2
-    }
+      "interval": 2,
+    },
   },
   {
     "height": 50,
@@ -341,7 +343,7 @@
       "format": "  ",
       "tooltip": false,
       "on-click": "sleep 0.1 && rofi -show drun",
-      "on-click-right": "wleave"
+      "on-click-right": "wleave",
     },
     "custom/notifications": {
       "tooltip": false,
@@ -354,14 +356,14 @@
         "inhibited-notification": "<span foreground='red'><sup></sup></span>",
         "inhibited-none": "",
         "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": ""
+        "dnd-inhibited-none": "",
       },
       "return-type": "json",
       "exec-if": "which swaync-client",
       "exec": "swaync-client -swb",
       "on-click": "sleep 0.1 && swaync-client -t -sw",
       "on-click-right": "swaync-client -d -sw",
-      "escape": true
+      "escape": true,
     },
     "hyprland/workspaces": {
       "disable-scroll": true,
@@ -378,15 +380,15 @@
         "27": "",
         "28": "",
         "29": "",
-        "30": ""
+        "30": "",
       },
       "on-scroll-up": "hyprctl dispatch workspace r-1",
       "on-scroll-down": "hyprctl dispatch workspace r+1",
       "on-click": "activate",
-      "sort-by-number": true
+      "sort-by-number": true,
     },
     "tray": {
-      "spacing": 10
+      "spacing": 10,
     },
     "clock#cl2": {
       "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -401,8 +403,8 @@
           "days": "<span color='#cad3f5'><b>{}</b></span>",
           "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
           "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
-          "today": "<span color='#ed8796'><b><u>{}</u></b></span>"
-        }
+          "today": "<span color='#ed8796'><b><u>{}</u></b></span>",
+        },
       },
       "format": "{:%H:%M   - %A, %B %d, %Y  }",
       "actions": {
@@ -410,9 +412,9 @@
         "on-click-forward": "tz_up",
         "on-click-backward": "tz_down",
         "on-scroll-up": "shift_up",
-        "on-scroll-down": "shift_down"
+        "on-scroll-down": "shift_down",
       },
-      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23"
-    }
-  }
+      "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23",
+    },
+  },
 ]
