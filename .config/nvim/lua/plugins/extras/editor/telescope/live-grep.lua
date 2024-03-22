@@ -1,7 +1,7 @@
 return {
   "nvim-telescope/telescope-live-grep-args.nvim",
   config = function()
-    require("lazyvim.util").on_load("telescope.nvim", function()
+    LazyVim.on_load("telescope.nvim", function()
       require("telescope").load_extension("lazy")
     end)
   end,

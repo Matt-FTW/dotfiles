@@ -27,7 +27,7 @@ return {
   {
     "dawsers/telescope-floaterm.nvim",
     config = function()
-      require("lazyvim.util").on_load("telescope.nvim", function()
+      LazyVim.on_load("telescope.nvim", function()
         require("telescope").load_extension("floaterm")
       end)
     end,

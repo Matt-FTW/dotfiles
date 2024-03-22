@@ -2,7 +2,7 @@ return {
   {
     "jvgrootveld/telescope-zoxide",
     config = function()
-      require("lazyvim.util").on_load("telescope.nvim", function()
+      LazyVim.on_load("telescope.nvim", function()
         require("telescope").setup({
           extensions = {
             zoxide = {

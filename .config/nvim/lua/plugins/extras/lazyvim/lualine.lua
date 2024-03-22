@@ -33,7 +33,7 @@ return {
 
     opts.sections.lualine_a = { { "mode", icon = "" } }
     opts.sections.lualine_c[4] = {
-      require("lazyvim.util.lualine").pretty_path({
+      LazyVim.lualine.pretty_path({
         filename_hl = "Bold",
         modified_hl = "MatchParen",
         directory_hl = "Conceal",

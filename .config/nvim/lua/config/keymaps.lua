@@ -1,7 +1,6 @@
 local map = vim.keymap.set
 local o = vim.opt
 
-local Util = require("lazyvim.util")
 local lazy = require("lazy")
 
 -- Search current word
@@ -17,7 +16,7 @@ map("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "Lazy" })
 map("n", "<leader>ld", function() vim.fn.system({ "xdg-open", "https://lazyvim.org" }) end, { desc = "LazyVim Docs" })
 map("n", "<leader>lr", function() vim.fn.system({ "xdg-open", "https://github.com/LazyVim/LazyVim" }) end, { desc = "LazyVim Repo" })
 map("n", "<leader>lx", "<cmd>LazyExtras<cr>", { desc = "Extras" })
-map("n", "<leader>lc", function() Util.news.changelog() end, { desc = "LazyVim Changelog" })
+map("n", "<leader>lc", function() LazyVim.news.changelog() end, { desc = "LazyVim Changelog" })
 
 map("n", "<leader>lu", function() lazy.update() end, { desc = "Lazy Update" })
 map("n", "<leader>lC", function() lazy.check() end, { desc = "Lazy Check" })
@@ -157,9 +156,9 @@ map("x", "#", [[y?\V<C-R>=escape(@", '?\')<CR><CR>]])
 
 -- Dashboard
 map("n", "<leader>fd", function()
-  if Util.has("alpha-nvim") then
+  if LazyVim.has("alpha-nvim") then
     require("alpha").start(true)
-  elseif Util.has("dashboard-nvim") then
+  elseif LazyVim.has("dashboard-nvim") then
     vim.cmd("Dashboard")
   end
 end, { desc = "Dashboard" })

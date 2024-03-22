@@ -1,4 +1,3 @@
-local Util = require("lazyvim.util")
 local executeCommandIfExists = function(command)
   if vim.fn.exists(command) ~= 0 then
     vim.cmd(command)
@@ -18,7 +17,7 @@ return {
         executeCommandIfExists(":LspLensOff")
         executeCommandIfExists(":NvimContextVtDisable")
         executeCommandIfExists(":IBLDisable")
-        Util.toggle.inlay_hints()
+        LazyVim.toggle.inlay_hints()
         executeCommandIfExists(":Gitsigns toggle_current_line_blame")
         executeCommandIfExists(":CccHighlighterDisable")
       end,
@@ -29,7 +28,7 @@ return {
         executeCommandIfExists(":LspLensOn")
         executeCommandIfExists(":NvimContextVtEnable")
         executeCommandIfExists(":IBLEnable")
-        Util.toggle.inlay_hints()
+        LazyVim.toggle.inlay_hints()
         executeCommandIfExists(":Gitsigns toggle_current_line_blame")
         executeCommandIfExists(":CccHighlighterEnable")
       end,

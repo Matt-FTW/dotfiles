@@ -52,7 +52,7 @@ return {
     },
     config = function(_, opts)
       require("rest-nvim").setup(opts)
-      require("lazyvim.util").on_load("telescope.nvim", function()
+      LazyVim.on_load("telescope.nvim", function()
         require("telescope").load_extension("rest")
       end)
     end,

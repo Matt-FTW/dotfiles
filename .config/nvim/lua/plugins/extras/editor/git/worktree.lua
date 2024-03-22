@@ -3,7 +3,7 @@ return {
     "ThePrimeagen/git-worktree.nvim",
     opts = {},
     config = function()
-      require("lazyvim.util").on_load("telescope.nvim", function()
+      LazyVim.on_load("telescope.nvim", function()
         require("telescope").load_extension("git_worktree")
       end)
     end,
