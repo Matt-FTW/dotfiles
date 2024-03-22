@@ -38,7 +38,7 @@ o.cmdheight = 0
 
 -- Enable spell checking
 o.spell = true
-o.spelllang = { "en", "es" }
+o.spelllang = { "en" }
 
 -- Backspacing and indentation when wrapping
 o.backspace = { "start", "eol", "indent" }
