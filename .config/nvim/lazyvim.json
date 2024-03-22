@@ -14,6 +14,7 @@
     "plugins.extras.coding.treesitter.puppeteer",
     "plugins.extras.coding.treesitter.various-textobjs",
     "plugins.extras.coding.yanky",
+    "plugins.extras.dap.core-extended",
     "plugins.extras.dap.persistent-breakpoints",
     "plugins.extras.editor.color",
     "plugins.extras.editor.compiler",
