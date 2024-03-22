@@ -66,7 +66,9 @@ gvfs 1.52.2-2
 gvfs-gphoto2 1.52.2-2
 gvfs-mtp 1.52.2-2
 highlight 4.10-1
+hypridle 0.1.1-2
 hyprland 0.37.1-1
+hyprlock 0.2.0-2
 i2c-tools 4.3-4
 imagemagick 7.1.1.29-2
 imwheel 1.0.0pre12-6

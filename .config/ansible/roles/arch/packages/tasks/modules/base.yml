@@ -24,6 +24,8 @@
 
       # WM
       - hyprland
+      - hyprlock
+      - hypridle
       - swappy
       - wev
       - wf-recorder
@@ -114,8 +116,6 @@
       # WM
       - waybar-cava
       - wleave-git
-      - hyprlock-git
-      - hypridle-git
       - swaync
       - swayosd-git
       - swww
