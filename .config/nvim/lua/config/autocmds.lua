@@ -126,7 +126,7 @@ ac("BufWritePre", {
     if args.match:match("^%w%w+://") then
       return
     end
-    local file = vim.loop.fs_realpath(args.match) or args.match
+    local file = vim.uv.fs_realpath(args.match) or args.match
     vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
   end,
 })
