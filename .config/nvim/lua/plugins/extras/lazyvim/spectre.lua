@@ -2,7 +2,16 @@ return {
   {
     "nvim-pack/nvim-spectre",
     cmd = "Spectre",
-    opts = {},
+    opts = {
+      default = {
+        find = {
+          cmd = "rg",
+        },
+        replace = {
+          cmd = "sd",
+        },
+      },
+    },
     -- stylua: ignore
     keys = {
       { "<leader>srg", function() require("spectre").toggle() end, desc = "Globally" },
