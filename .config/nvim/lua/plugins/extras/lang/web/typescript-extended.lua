@@ -139,6 +139,7 @@ return {
     "dmmulroy/tsc.nvim",
     opts = {
       auto_start_watch_mode = false,
+      use_trouble_qflist = true,
       flags = {
         watch = false,
       },
@@ -149,6 +150,11 @@ return {
     ft = {
       "typescript",
       "typescriptreact",
+    },
+    cmd = {
+      "TSC",
+      "TSCOpen",
+      "TSCClose",
     },
   },
   {
