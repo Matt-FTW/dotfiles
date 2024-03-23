@@ -1,3 +1,7 @@
+-- LSP Server to use for Python.
+-- Set to "basedpyright" to use basedpyright instead of pyright.
+vim.g.lazyvim_python_lsp = "basedpyright"
+
 return {
   { import = "lazyvim.plugins.extras.lang.python" },
   { import = "lazyvim.plugins.extras.lang.python-semshi" },
@@ -5,6 +9,27 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        ---@type lspconfig.options.basedpyright
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                diagnosticSeverityOverrides = {
+                  reportUnusedCallResult = "information",
+                  reportUnusedExpression = "information",
+                  reportUnknownMemberType = "none",
+                  reportUnknownLambdaType = "none",
+                  reportUnknownParameterType = "none",
+                  reportMissingParameterType = "none",
+                  reportUnknownVariableType = "none",
+                  reportUnknownArgumentType = "none",
+                  reportAny = "none",
+                },
+              },
+            },
+          },
+        },
+        ---@type lspconfig.options.pyright
         pyright = {
           settings = {
             verboseOutput = true,
