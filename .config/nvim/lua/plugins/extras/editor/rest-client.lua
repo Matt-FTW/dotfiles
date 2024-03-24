@@ -9,13 +9,7 @@ return {
   },
   {
     "rest-nvim/rest.nvim",
-    dependencies = {
-      {
-        "gennaro-tedesco/nvim-jqx",
-        ft = { "json", "yaml" },
-      },
-    },
-    ft = { "http" },
+    ft = "http",
     opts = {
       -- Open request results in a horizontal split
       result_split_horizontal = true,
