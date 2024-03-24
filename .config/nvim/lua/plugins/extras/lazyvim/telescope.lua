@@ -53,13 +53,13 @@ return {
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous,
-            ["<C-r>"] = actions.delete_buffer,
             ["<C-j>"] = actions.move_selection_next,
             ["<S-esc>"] = actions.close,
             ["<C-p>"] = require("telescope.actions.layout").toggle_preview,
+            ["<c-l>"] = require("telescope.actions.layout").cycle_layout_next,
+            ["<a-l>"] = require("telescope.actions.layout").cycle_layout_prev,
             ["<C-Down>"] = actions.cycle_history_next,
             ["<C-Up>"] = actions.cycle_history_prev,
-            ["<esc>"] = actions.close,
           },
         },
         file_ignore_patterns = {
@@ -83,6 +83,11 @@ return {
             width = 0.6,
           },
           sorting_strategy = "ascending",
+          mappings = {
+            i = {
+              ["<c-r>"] = require("telescope.actions").delete_buffer,
+            },
+          },
         },
         spell_suggest = {
           layout_config = {
