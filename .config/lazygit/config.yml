@@ -19,8 +19,6 @@ gui:
       - "#8aadf4" # Blue
     selectedLineBgColor:
       - "#363a4f" # Surface0
-    selectedRangeBgColor:
-      - "#363a4f" # Surface0
     cherryPickedCommitBgColor:
       - "#8bd5ca" # Teal
     cherryPickedCommitFgColor:
@@ -40,6 +38,7 @@ gui:
   showCommandLog: true
   nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
   commandLogSize: 8
+  filterMode: "fuzzy"
   splitDiff: "auto" # one of 'auto' | 'always'
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
@@ -76,7 +75,6 @@ git:
   overrideGpg: false # prevents lazygit from spawning a separate process when using GPG
   disableForcePushing: false
   parseEmoji: false
-  diffContextSize: 3 # how many lines of context are shown around a change in diffs
 os:
   editPreset: "nvim" # see 'Configuring File Editing' section
   edit: "nvim {{filename}}"
@@ -200,13 +198,10 @@ keybinding:
     amendToCommit: "A"
     pickCommit: "p" # pick commit (when mid-rebase)
     revertCommit: "t"
-    cherryPickCopy: "c"
-    cherryPickCopyRange: "C"
     pasteCommits: "v"
     tagCommit: "T"
     checkoutCommit: "<space>"
     resetCherryPick: "<c-R>"
-    copyCommitMessageToClipboard: "<c-y>"
     openLogMenu: "<c-l>"
     viewBisectOptions: "b"
   stash:
@@ -215,8 +210,6 @@ keybinding:
   commitFiles:
     checkoutCommitFile: "c"
   main:
-    toggleDragSelect: "v"
-    toggleDragSelect-alt: "V"
     toggleSelectHunk: "a"
     pickBothHunks: "b"
   submodules:
