@@ -7,7 +7,6 @@ return {
         require("telescope").setup({
           extensions = {
             undo = {
-              use_delta = true,
               side_by_side = true,
               layout_strategy = "vertical",
               layout_config = {
