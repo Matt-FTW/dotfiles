@@ -19,11 +19,6 @@ go.gui_font_face = "JetBrainsMono Nerd Font"
 -- Enable EditorConfig integration
 go.editorconfig = true
 
--- Disable some repl providers
-for _, provider in ipairs({ "node", "perl", "python3", "ruby" }) do
-  go["loaded_" .. provider .. "_provider"] = 0
-end
-
 -- Root dir detection
 go.root_spec = {
   "lsp",
