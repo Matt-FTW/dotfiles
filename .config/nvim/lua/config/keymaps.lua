@@ -126,7 +126,7 @@ map("i", "<C-a>", "<Home>", { desc = "Start Of Line" })
 map("i", "<C-e>", "<End>", { desc = "End Of Line" })
 
 -- Select all text
-map("n", "<C-a>", "gg<S-V>G", { desc = "Select all text", silent = true, noremap = true })
+map("n", "<C-e>", "gg<S-V>G", { desc = "Select all text", silent = true, noremap = true })
 
 -- Paste options
 map("i", "<C-v>", '<C-r>"', { desc = "Paste on insert mode" })
