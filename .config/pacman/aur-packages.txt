@@ -1,5 +1,5 @@
 adwsteamgtk 0.6.9-1
-android-sdk-platform-tools 35.0.0-1
+android-sdk-platform-tools 35.0.1-1
 atlauncher-bin 3.4.35.9-1
 brave-bin 1:1.64.109-1
 catppuccin-cursors-macchiato 0.2.0-1
@@ -18,7 +18,7 @@ heroic-games-launcher-bin 2.13.0-1
 hyprpicker-git 0.1.1.r2.0889bd5-2
 lazydocker 0.23.1-1
 lazynpm 0.1.4-1
-librewolf-bin 123.0.1-1
+librewolf-bin 124.0.1-1
 ludusavi 0.22.0-2
 needrestart 3.6-3
 nwg-displays 0.3.16-1
@@ -27,7 +27,7 @@ obs-plugin-input-overlay 5.0.5-1
 paccache-hook 1.1.1-2
 pacgraph 20110629-7
 pacseek 1.8.2-3
-parabolic 2023.11.1-1
+parabolic 2023.12.0-1
 pcsx2-latest-bin 1.7.5603-1
 pika-backup 1:0.7.1-1
 proton-ge-custom-bin 1:GE_Proton9_2-1
@@ -38,7 +38,7 @@ rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
 rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
-ryujinx-bin 1.1.1224-1
+ryujinx-bin 1.1.1242-1
 scc-bin 3.2.0-1
 spicetify-cli 2.35.1-1
 spotify 1:1.2.31.1205-2
