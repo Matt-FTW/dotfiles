@@ -40,12 +40,13 @@ return {
       { "<leader>sSp", LazyVim.telescope("lsp_dynamic_workspace_symbols", { symbols = { "Property" } }), desc = "Property" },
       { "<leader>sSv", LazyVim.telescope("lsp_dynamic_workspace_symbols", { symbols = { "Variable", "Parameter" } }), desc = "Variable" },
       { "<leader>sA", LazyVim.telescope("treesitter"), desc = "Treesitter Symbols" },
+      { "<leader>sp", "<cmd>Telescope builtin<cr>", desc = "Pickers (Telescope)" },
+      { "<leader>fh", LazyVim.telescope("find_files", { hidden = true }), desc = "Find Files (hidden)" },
+      { "<leader><c-space>", LazyVim.telescope("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader>gf", "<cmd>Telescope git_bcommits<cr>", desc = "File History" },
       { "<leader>gS", "<cmd>Telescope git_stash<cr>", desc = "stash" },
       { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "branches" },
-      { "<leader>cs", function()
-        require('telescope.builtin').spell_suggest(require('telescope.themes').get_dropdown({}), { layout_config = { width=0.25, height=0.3 } })
-      end, desc = "Spelling" },
+      { "<leader>cs", "<cmd>Telescope spell_suggest<cr>", desc = "Spelling" },
     },
     opts = {
       defaults = {
