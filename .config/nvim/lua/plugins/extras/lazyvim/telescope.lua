@@ -70,21 +70,37 @@ return {
           "*.git/*",
           "*/tmp/*",
         },
-        pickers = {
-          find_files = {
-            hidden = false,
-          },
+      },
+      pickers = {
+        find_files = {
+          hidden = false,
         },
-        extensions = {
-          fzf = {
-            fuzzy = true,
-            override_generic_sorter = true,
-            override_file_sorter = true,
-            case_mode = "smart_case",
+        buffers = {
+          layout_config = {
+            prompt_position = "top",
+            height = 0.5,
+            width = 0.6,
           },
-          ["ui-select"] = {
-            require("telescope.themes").get_dropdown({}),
+          sorting_strategy = "ascending",
+        },
+        spell_suggest = {
+          layout_config = {
+            prompt_position = "top",
+            height = 0.3,
+            width = 0.25,
           },
+          sorting_strategy = "ascending",
+        },
+      },
+      extensions = {
+        fzf = {
+          fuzzy = true,
+          override_generic_sorter = true,
+          override_file_sorter = true,
+          case_mode = "smart_case",
+        },
+        ["ui-select"] = {
+          require("telescope.themes").get_dropdown({}),
         },
       },
     },
