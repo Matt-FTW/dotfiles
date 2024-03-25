@@ -64,3 +64,6 @@ function Status:render(area)
 		table.unpack(Progress:render(area, right:width())),
 	}
 end
+
+-- Plugins
+require("starship"):setup()
