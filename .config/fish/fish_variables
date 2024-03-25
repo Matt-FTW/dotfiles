@@ -67,4 +67,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/matt/\x2eyarn/bin\x1e/home/matt/\x2elocal/share/npm/bin\x1e/home/matt/\x2elocal/share/bob/nvim\x2dbin\x1e/home/matt/\x2elocal/share/bun/bin\x1e/usr/lib/go/bin\x1e/usr/lib/rustup/bin\x1e/sbin\x1e/bin\x1e/usr/sbin\x1e/usr/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/home/matt/\x2elocal/share/cargo/bin\x1e/home/matt/\x2elocal/share/go/bin\x1e/home/matt/\x2elocal/bin/color\x2dscripts\x1e/home/matt/\x2elocal/bin
+SETUVAR fish_user_paths:/home/matt/\x2elocal/share/nvim/mason/bin\x1e/home/matt/\x2eyarn/bin\x1e/home/matt/\x2elocal/share/npm/bin\x1e/home/matt/\x2elocal/share/bob/nvim\x2dbin\x1e/home/matt/\x2elocal/share/bun/bin\x1e/usr/lib/go/bin\x1e/usr/lib/rustup/bin\x1e/sbin\x1e/bin\x1e/usr/sbin\x1e/usr/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/home/matt/\x2elocal/share/cargo/bin\x1e/home/matt/\x2elocal/share/go/bin\x1e/home/matt/\x2elocal/bin/color\x2dscripts\x1e/home/matt/\x2elocal/bin
