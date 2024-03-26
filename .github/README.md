@@ -118,8 +118,8 @@ Here is all the information about my setup:
 | **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                    |
 | **Clipboard Manager**          | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist)) |
 | **Wallpaper Switcher**         | [swww](https://github.com/Horus645/swww)                                                                       |
-| **Lock Screen**                | [swaylock-effects](https://github.com/jirutka/swaylock-effects) [:gear:](../.config/swaylock/)                 |
-| **Idle Timeout**               | [swayidle](https://github.com/swaywm/swayidle) [:gear:](../.config/swayidle/)                                  |
+| **Lock Screen**                | [hyprlock](https://github.com/hyprwm/hyprlock) [:gear:](../.config/hypr/hyprlock.conf)                         |
+| **Idle Timeout**               | [hypridle](https://github.com/hyprwm/hypridle) [:gear:](../.config/hypr/hypridle.conf)                         |
 | **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                             |
 | **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot)                                                                |
 | **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                          |
