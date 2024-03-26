@@ -1,17 +1,17 @@
-adwsteamgtk 0.6.9-1
+adwsteamgtk 0.6.10-1
 android-sdk-platform-tools 35.0.1-1
 atlauncher-bin 3.4.35.9-1
 brave-bin 1:1.64.109-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 cava 0.10.1-1
-cemu-bin 2.0.72-1
+cemu-bin 2.0.73-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6442.g403ee01-1
 find-the-command 2.0.1-1
-floorp-bin 11.11.1-1
+floorp-bin 11.11.2-1
 gtrash-bin 0.0.5-1
 gzdoom 4.11.3-2
 heroic-games-launcher-bin 2.13.0-1
@@ -25,7 +25,6 @@ nwg-displays 0.3.16-1
 obs-pipewire-audio-capture-bin 1.1.4-1
 obs-plugin-input-overlay 5.0.5-1
 paccache-hook 1.1.1-2
-pacgraph 20110629-7
 pacseek 1.8.2-3
 parabolic 2023.12.0-1
 pcsx2-latest-bin 1.7.5603-1
@@ -38,9 +37,9 @@ rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
 rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
-ryujinx-bin 1.1.1242-1
+ryujinx-bin 1.1.1244-1
 scc-bin 3.2.0-1
-spicetify-cli 2.35.1-1
+spicetify-cli 2.36.0-1
 spotify 1:1.2.31.1205-2
 swaync 0.10.1-1
 swayosd-git r55.a0709bc-1
@@ -66,4 +65,4 @@ wlrobs-hg r63.a48763b63f96-1
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 xwaylandvideobridge-git r180.ae0b96f-1
-yay 12.3.4-1
+yay 12.3.5-1
