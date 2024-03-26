@@ -107,23 +107,23 @@ Here is all the information about my setup:
 | 📚 Entry                       | ✨ App                                                                                                         |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
 | **OS**                         | 💖 [Arch Linux](https://archlinux.org/)                                                                        |
-| **Package Manager**            | [Pacman](https://wiki.archlinux.org/title/Pacman) [:gear:](../.config/pacman/)                                 |
+| **Package Manager**            | [pacman](https://wiki.archlinux.org/title/Pacman) [:gear:](../.config/pacman/)                                 |
 | **AUR Helper**                 | 💖 [yay](https://github.com/Jguer/yay) [:gear:](../.config/yay/)                                               |
-| **Window Manager**             | 💖 [Hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                |
+| **Window Manager**             | 💖 [hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                |
 | **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                    |
 | **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                               |
-| **Bar**                        | 💖 [Waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
-| **Audio Daemon**               | [Pipewire](https://pipewire.org/) [:gear:](../.config/pipewire/)                                               |
-| **Application Launcher**       | 💖 [Rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
+| **Bar**                        | 💖 [waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
+| **Audio Daemon**               | [pipewire](https://pipewire.org/) [:gear:](../.config/pipewire/)                                               |
+| **Application Launcher**       | 💖 [rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
 | **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                    |
 | **Clipboard Manager**          | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist)) |
 | **Wallpaper Switcher**         | [swww](https://github.com/Horus645/swww)                                                                       |
 | **Lock Screen**                | [swaylock-effects](https://github.com/jirutka/swaylock-effects) [:gear:](../.config/swaylock/)                 |
 | **Idle Timeout**               | [swayidle](https://github.com/swaywm/swayidle) [:gear:](../.config/swayidle/)                                  |
-| **Color Picker**               | [Hyprpicker](https://github.com/hyprwm/hyprpicker)                                                             |
+| **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                             |
+| **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot)                                                                |
 | **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                          |
-| **Screenshot Tool**            | [Hyprshot](https://github.com/Gustash/Hyprshot)                                                                |
-| **Screenshot Editor**          | [Swappy](https://github.com/jtheoof/swappy)                                                                    |
+| **Screenshot Editor**          | [swappy](https://github.com/jtheoof/swappy)                                                                    |
 | **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                       |
 
 </details>
@@ -133,31 +133,31 @@ Here is all the information about my setup:
 
 | 📚 Entry                    | ✨ App                                                                                           |
 | --------------------------- | ------------------------------------------------------------------------------------------------ |
-| **Shell**                   | 💖 [Fish](https://fishshell.com/) [:gear:](../.config/fish/)                                     |
-| **Terminal Emulator**       | 💖 [Kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                         |
-| **Shell Prompt**            | [Starship](https://starship.rs/) [:gear:](../.config/starship/)                                  |
-| **Text Editor**             | 💖 [Neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
-| **Shell History**           | [Atuin](https://github.com/atuinsh/atuin) [:gear:](../.config/atuin/)                            |
+| **Shell**                   | 💖 [fish](https://fishshell.com/) [:gear:](../.config/fish/)                                     |
+| **Terminal Emulator**       | 💖 [kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                         |
+| **Shell Prompt**            | [starship](https://starship.rs/) [:gear:](../.config/starship/)                                  |
+| **Text Editor**             | 💖 [neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
+| **Shell History**           | [atuin](https://github.com/atuinsh/atuin) [:gear:](../.config/atuin/)                            |
 | **CD Replacement**          | 💖 [zoxide](https://github.com/ajeetdsouza/zoxide)                                               |
 | **LS Replacement**          | [eza](https://github.com/eza-community/eza)                                                      |
 | **Cat Replacement**         | [bat](https://github.com/sharkdp/bat) [:gear:](../.config/bat/)                                  |
 | **Find Replacement**        | [fd](https://github.com/sharkdp/fd) [:gear:](../.config/fd/)                                     |
-| **File Manager**            | 💖 [Yazi](https://yazi-rs.github.io/) [:gear:](../.config/yazi/)                                 |
-| **Help Pages**              | [Navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) [:gear:](../.config/navi/) |
+| **File Manager**            | 💖 [yazi](https://yazi-rs.github.io/) [:gear:](../.config/yazi/)                                 |
+| **Help Pages**              | [navi](https://github.com/denisidoro/navi) / [TLDR](https://tldr.sh/) [:gear:](../.config/navi/) |
 | **Fuzzy File Finder**       | 💖 [fzf](https://github.com/junegunn/fzf)                                                        |
-| **Fuzzy Word Finder**       | [Ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                        |
-| **Git TUI**                 | 💖 [Lazygit](https://github.com/jesseduffield/lazygit) [:gear:](../.config/lazygit/)             |
-| **Npm Manager TUI**         | [Lazynpm](https://github.com/jesseduffield/lazynpm)                                              |
-| **Docker TUI**              | [Lazydocker](https://github.com/jesseduffield/lazydocker)                                        |
-| **Arch Package Search TUI** | [Pacseek](https://github.com/moson-mo/pacseek) [:gear:](../.config/pacseek/)                     |
-| **Trash CLI**               | [Gtrash](https://github.com/umlx5h/gtrash)                                                       |
-| **Update Tool**             | [Topgrade](https://github.com/topgrade-rs/topgrade) [:gear:](../.config/topgrade/)               |
-| **Audio Visualizer**        | [Cava](https://github.com/karlstav/cava) [:gear:](../.config/cava/)                              |
+| **Fuzzy Word Finder**       | [ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                        |
+| **Git TUI**                 | 💖 [lazygit](https://github.com/jesseduffield/lazygit) [:gear:](../.config/lazygit/)             |
+| **Npm Manager TUI**         | [lazynpm](https://github.com/jesseduffield/lazynpm)                                              |
+| **Docker TUI**              | [lazydocker](https://github.com/jesseduffield/lazydocker)                                        |
+| **Arch Package Search TUI** | [pacseek](https://github.com/moson-mo/pacseek) [:gear:](../.config/pacseek/)                     |
+| **Trash CLI**               | [gtrash](https://github.com/umlx5h/gtrash)                                                       |
+| **Update Tool**             | [topgrade](https://github.com/topgrade-rs/topgrade) [:gear:](../.config/topgrade/)               |
+| **Audio Visualizer**        | [cava](https://github.com/karlstav/cava) [:gear:](../.config/cava/)                              |
 | **System Monitor**          | [btop](https://github.com/aristocratos/btop) [:gear:](../.config/btop/)                          |
 | **GPU Monitor**             | [nvtop](https://github.com/Syllo/nvtop)                                                          |
-| **System Fetch**            | [Neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)                |
-| **Git Fetch**               | [Onefetch](https://github.com/o2sh/onefetch)                                                     |
-| **Keybindings TUI**         | [Keyb](https://github.com/kencx/keyb) [:gear:](../.config/keyb/)                                 |
+| **System Fetch**            | [neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)                |
+| **Git Fetch**               | [onefetch](https://github.com/o2sh/onefetch)                                                     |
+| **Keybindings TUI**         | [keyb](https://github.com/kencx/keyb) [:gear:](../.config/keyb/)                                 |
 
 </details>
 
