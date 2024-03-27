@@ -53,6 +53,7 @@
       - gparted
       - playerctl
       - nm-connection-editor
+      - xwaylandvideobridge
 
       # Bluetooth
       - bluez

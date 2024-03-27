@@ -241,6 +241,7 @@ xorg-xwayland 23.2.4-2
 xorg-xwd 1.0.9-1
 xorg-xwininfo 1.1.6-1
 xorg-xwud 1.0.6-1
+xwaylandvideobridge 0.4.0-2
 yad 13.0-2
 yadm 3.2.2-1
 yapf 0.40.2-1
