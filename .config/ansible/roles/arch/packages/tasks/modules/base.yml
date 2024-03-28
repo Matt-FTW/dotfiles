@@ -121,8 +121,7 @@
       - swaync
       - swayosd-git
       - swww
-      - hyprpicker-git
-      - wlr-randr
+      - hyprpicker
       - wlrobs-hg
       - nwg-displays
       - nwg-look
@@ -142,17 +141,16 @@
       - pacseek
       - gtrash-bin
       - sysz
+      - topgrade
       - tgpt-bin
 
       # Tools
       - devify
-      - topgrade
       - upscayl-bin
       - downgrade
       - android-sdk-platform-tools
       - pika-backup
       - rar
-      - wl-clip-persist-git
 
       # Theme
       - catppuccin-gtk-theme-macchiato
