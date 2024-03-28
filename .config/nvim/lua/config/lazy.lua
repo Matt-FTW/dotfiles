@@ -17,6 +17,9 @@ require("lazy").setup({
     { import = "plugins" },
     { import = "lazyvim.plugins.extras.lazyrc" },
   },
+  ui = {
+    backdrop = 100,
+  },
   defaults = {
     lazy = true,
     version = false, -- always use the latest git commit
