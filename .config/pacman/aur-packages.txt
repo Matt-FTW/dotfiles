@@ -1,7 +1,7 @@
 adwsteamgtk 0.6.10-1
 android-sdk-platform-tools 35.0.1-1
 atlauncher-bin 3.4.35.9-1
-brave-bin 1:1.64.109-1
+brave-bin 1:1.64.113-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 catppuccinifier-gui-bin 8.0.0-1
@@ -40,7 +40,7 @@ rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1244-1
 scc-bin 3.2.0-1
-spicetify-cli 2.36.0-1
+spicetify-cli 2.36.1-1
 spotify 1:1.2.31.1205-2
 swaync 0.10.1-1
 swayosd-git r55.a0709bc-1
@@ -51,7 +51,7 @@ tgpt-bin 2.7.2-1
 topgrade 14.0.1-1
 ttf-ms-win11-auto 10.0.22631.2428-1
 ttf-symbola 14.00-1
-universal-android-debloater 1.0.2-2
+universal-android-debloater 1.0.3-1
 upscayl-bin 2.10.0-1
 ventoy-bin 1.0.97-1
 vesktop-bin 1.5.1-1
