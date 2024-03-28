@@ -1,6 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.editor.dial",
+    "lazyvim.plugins.extras.editor.mini-move",
+    "lazyvim.plugins.extras.editor.trouble-v3",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
@@ -75,7 +77,7 @@
     "plugins.extras.util.wakatime"
   ],
   "news": {
-    "NEWS.md": "2850"
+    "NEWS.md": "3314"
   },
   "version": 3
 }
