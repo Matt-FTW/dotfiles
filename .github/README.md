@@ -206,12 +206,86 @@ Here is all the information about my setup:
 
 #### WIP
 
-### :package: <samp>Manual Installation (Universal) </samp>
+### :package: <samp>Manual Installation</samp>
 
-> [!WARNING]
-> This installation assumes you have the **.config dir** in your home dir. Also, note that the names of the packages are from the AUR and Arch Repos. Adapt them to your system.
+> [!NOTE]
+> The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). For CLI/TUI specific packages I recommend to use [homebrew](https://brew.sh/).
 
-#### WIP
+1.  First, lets start with the required **base packages** for the configuration to function. Assumming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
+
+    ```bash
+    yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
+            swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard wf-recorder \
+            pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
+            catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava
+    ```
+
+    On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
+
+2.  Now lets move to the **Optional Packages** (If you dont want to install any more packages, move to the 3th step)
+
+    - Replaceable Packages
+
+    ```bash
+    yay -Sy swappy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
+            ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv celluloid
+    ```
+
+    Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv + celluloid), etc.
+
+    - Bluetooth
+
+    ```bash
+    yay -Sy bluez bluez-utils blueman
+    ```
+
+    After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
+
+    ```bash
+    systemctl --user enable bluetooth.service
+    systemctl --user start bluetooth.service
+    ```
+
+    - Useful CLI/TUI packages
+
+    ```bash
+    yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade
+    ```
+
+    - Useful GUI packages
+
+    ```bash
+    yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
+    ```
+
+3.  **Installing the dotfiles**:
+    Firstly, clone this repository (remember to have git installed).
+
+    ```bash
+    git clone --depth 1 --recurse-submodules https://github.com/Matt-FTW/dotfiles.git
+    cd dotfiles && git submodule update --remote --merge
+    ```
+
+    Now is time to copy the files into their respective directories. **Be sure to backup your existing configuration files** before copying the files.
+    Once you have that, its time to copy the config files.
+
+    ```bash
+    cp -r .config/* ~/.config/
+    cp -r .local/bin/* ~/.local/bin/
+    cp .czrc ~/
+    ```
+
+    If you installed the fonts mentioned earlier, be sure to refresh the font cache.
+
+    ```bash
+    fc-cache -fv
+    ```
+
+Congratulations, at this point your done installing the configuration! :tada:
+
+Logout from your current desktop session and log back into the Hyprland session.
+
+If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose)
 
 # :camera: ‎ <samp>Gallery</samp>
 
