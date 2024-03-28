@@ -9,7 +9,7 @@ table.insert(keys, { "<leader>ma", "<cmd>Grapple tag<CR>", desc = "Add Mark" })
 table.insert(keys, { "<leader>mm", "<cmd>Grapple toggle_tags<CR>", desc = "Marks" })
 table.insert(keys, { "<leader>mt", "<cmd>Telescope grapple tags<CR>", desc = "Marks (Telescope)" })
 table.insert(keys, { "<leader>mC", "<cmd>Grapple reset<CR>", desc = "Clear all Marks" })
-table.insert(keys, { "<leader>mc", "<cmd>Grapple untag<CR>", desc = "Clear current Mark" })
+table.insert(keys, { "<leader>mc", "<cmd>Grapple untag<CR>", desc = "Clear Current Mark" })
 table.insert(keys, { "<leader>ms", "<cmd>Grapple toggle_scopes<CR>", desc = "Scopes" })
 table.insert(keys, { "<leader>mS", "<cmd>Grapple toggle_loaded<CR>", desc = "Loaded Scopes" })
 

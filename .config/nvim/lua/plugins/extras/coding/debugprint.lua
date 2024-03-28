@@ -6,21 +6,21 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { "<Leader>ddl", function() return require("debugprint").debugprint() end, desc = "Print under current line", expr = true },
-      { "<Leader>ddL", function() return require("debugprint").debugprint({ above = true }) end, desc = "Print above current line", expr = true },
+      { "<Leader>ddl", function() return require("debugprint").debugprint() end, desc = "Under Line", expr = true },
+      { "<Leader>ddL", function() return require("debugprint").debugprint({ above = true }) end, desc = "Above Line", expr = true },
       {
         "<Leader>ddv",
         function() return require("debugprint").debugprint({ variable = true }) end,
-        desc = "Print variable under current line",
+        desc = "Variable Under Line",
         expr = true,
       },
       {
         "<Leader>ddV",
         function() return require("debugprint").debugprint({ above = true, variable = true }) end,
-        desc = "Print variable above current line",
+        desc = "Variable Above Line",
         expr = true,
       },
-      { "<Leader>ddd", function() return require("debugprint").deleteprints() end, desc = "Delete all prints" },
+      { "<Leader>ddd", function() return require("debugprint").deleteprints() end, desc = "Delete All" },
     },
   },
   {

@@ -8,7 +8,7 @@ return {
       "<leader>qS",
       function()
         p.save()
-        vim.notify("Session saved", vim.log.levels.INFO, { title = "Persistence" })
+        vim.notify("Session Saved", vim.log.levels.INFO, { title = "Persistence" })
       end,
       desc = "Save Session",
     },
@@ -18,11 +18,11 @@ return {
         if isActive then
           p.stop()
           isActive = false
-          vim.notify("Stopped session recording", vim.log.levels.INFO, { title = "Persistence" })
+          vim.notify("Stopped Session Recording", vim.log.levels.INFO, { title = "Persistence" })
         else
           p.start()
           isActive = true
-          vim.notify("Started session recording", vim.log.levels.INFO, { title = "Persistence" })
+          vim.notify("Started Session Recording", vim.log.levels.INFO, { title = "Persistence" })
         end
       end,
       desc = "Toggle Current Session Recording"

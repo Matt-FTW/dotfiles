@@ -69,7 +69,7 @@ return {
             vim.lsp.buf.hover()
           end
         end,
-        desc = "Peek folded line",
+        desc = "Peek Folded Line",
       },
     },
   },

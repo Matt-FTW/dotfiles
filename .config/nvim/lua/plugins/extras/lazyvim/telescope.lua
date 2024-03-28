@@ -44,8 +44,8 @@ return {
       { "<leader>fh", LazyVim.telescope("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader><c-space>", LazyVim.telescope("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader>gf", "<cmd>Telescope git_bcommits<cr>", desc = "File History" },
-      { "<leader>gS", "<cmd>Telescope git_stash<cr>", desc = "stash" },
-      { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "branches" },
+      { "<leader>gS", "<cmd>Telescope git_stash<cr>", desc = "Stash" },
+      { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Branches" },
       { "<leader>cs", "<cmd>Telescope spell_suggest<cr>", desc = "Spelling" },
     },
     opts = {
@@ -115,8 +115,8 @@ return {
     "folke/which-key.nvim",
     opts = {
       defaults = {
-        ["<leader>sS"] = { name = "Goto Symbols (Workspace)" },
-        ["<leader>ss"] = { name = "Goto Symbols" },
+        ["<leader>sS"] = { name = "goto symbols (Workspace)" },
+        ["<leader>ss"] = { name = "goto symbols" },
       },
     },
   },

@@ -13,6 +13,6 @@ return {
   },
   -- stylua: ignore
   keys = {
-    { "<leader>;", function() require("oil").toggle_float() end, desc = "Toggle oil" },
+    { "<leader>;", function() require("oil").toggle_float() end, desc = "Toggle Oil" },
   },
 }

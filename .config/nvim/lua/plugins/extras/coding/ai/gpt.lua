@@ -81,7 +81,7 @@ return {
     -- stylua: ignore
     keys = {
       { "<leader>Cc", "<cmd>ChatGPT<CR>", desc = "ChatGPT" },
-      { "<leader>Ce", "<cmd>ChatGPTEditWithInstruction<CR>", desc = "Edit with instruction", mode = { "n", "v" } },
+      { "<leader>Ce", "<cmd>ChatGPTEditWithInstruction<CR>", desc = "Edit With Instruction", mode = { "n", "v" } },
       { "<leader>Cg", "<cmd>ChatGPTRun grammar_correction<CR>", desc = "Grammar Correction", mode = { "n", "v" } },
       { "<leader>Ct", "<cmd>ChatGPTRun translate<CR>", desc = "Translate", mode = { "n", "v" } },
       { "<leader>Ck", "<cmd>ChatGPTRun keywords<CR>", desc = "Keywords", mode = { "n", "v" } },

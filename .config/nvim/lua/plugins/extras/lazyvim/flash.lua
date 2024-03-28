@@ -27,7 +27,7 @@ return {
       function()
         require("flash").jump({ pattern = vim.fn.expand("<cword>") })
       end,
-      desc = "Jump with current word",
+      desc = "Jump With Current Word",
     },
   },
 }
