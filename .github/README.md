@@ -113,7 +113,7 @@ Here is all the information about my setup:
 | **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                    |
 | **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                               |
 | **Bar**                        | 💖 [waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
-| **Audio Daemon**               | [pipewire](https://pipewire.org/) [:gear:](../.config/pipewire/)                                               |
+| **Audio Daemon**               | [pipewire](https://pipewire.org/)                                                                              |
 | **Application Launcher**       | 💖 [rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
 | **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                    |
 | **Clipboard Manager**          | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist)) |
