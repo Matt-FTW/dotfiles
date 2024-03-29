@@ -162,3 +162,7 @@ map("n", "<leader>fd", function()
     vim.cmd("Dashboard")
   end
 end, { desc = "Dashboard" })
+
+-- Spelling
+map("n", "<leader>!", "zg", { desc = "Add Word to Dictionary" })
+map("n", "<leader>@", "zug", { desc = "Remove Word from Dictionary" })
