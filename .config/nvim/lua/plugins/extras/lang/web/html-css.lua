@@ -48,6 +48,7 @@ return {
         "emmet-language-server",
         "html-lsp",
         "cssmodules-language-server",
+        "css-variables-language-server",
         "css-lsp",
         "htmlhint",
         "stylelint",
