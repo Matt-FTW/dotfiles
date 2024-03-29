@@ -25,7 +25,6 @@
     "plugins.extras.editor.git.diffview",
     "plugins.extras.editor.live-server",
     "plugins.extras.editor.marks.grapple",
-    "plugins.extras.editor.outline-extended",
     "plugins.extras.editor.package-info",
     "plugins.extras.editor.search-replace",
     "plugins.extras.editor.suda",
