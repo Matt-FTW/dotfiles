@@ -1,5 +1,5 @@
 return {
-  { -- better fold
+  {
     "kevinhwang91/nvim-ufo",
     event = { "LazyFile" },
     dependencies = { "kevinhwang91/promise-async" },
@@ -27,7 +27,6 @@ return {
             local hlGroup = chunk[2]
             table.insert(newVirtText, { chunkText, hlGroup })
             chunkWidth = vim.fn.strdisplaywidth(chunkText)
-            -- str width returned from truncate() may less than 2nd argument, need padding
             if curWidth + chunkWidth < targetWidth then
               suffix = suffix .. (" "):rep(targetWidth - curWidth - chunkWidth)
             end
@@ -45,7 +44,7 @@ return {
           return { "treesitter", "indent" }
         end,
         open_fold_hl_timeout = 400,
-        close_fold_kinds = { "imports", "comment" },
+        close_fold_kinds_for_ft = { "imports", "comment" },
         preview = {
           win_config = { border = { "", "─", "", "", "", "─", "", "" }, winblend = 0 },
           mappings = {
@@ -56,9 +55,6 @@ return {
           },
         },
       }
-    end,
-    config = function(_, opts)
-      require("ufo").setup(opts)
     end,
     keys = {
       {
