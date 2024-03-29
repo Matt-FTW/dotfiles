@@ -7,7 +7,7 @@ local lazy = require("lazy")
 local searching_brave = function()
   vim.fn.system({ "xdg-open", "https://search.brave.com/search?q=" .. vim.fn.expand("<cword>") })
 end
-map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search current word on brave search" })
+map("n", "<leader>?", searching_brave, { noremap = true, silent = true, desc = "Search Current Word on Brave Search" })
 
 -- Lazy options
 map("n", "<leader>l", "<Nop>")
@@ -32,13 +32,13 @@ map("n", "<", "<<", { desc = "Deindent" })
 map("n", ">", ">>", { desc = "Indent" })
 
 -- Save without formatting
-map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save without formatting" })
+map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save Without Formatting" })
 
 -- Cursor navigation on insert mode
-map("i", "<M-h>", "<left>", { desc = "Move cursor left" })
-map("i", "<M-l>", "<right>", { desc = "Move cursor left" })
-map("i", "<M-j>", "<down>", { desc = "Move cursor left" })
-map("i", "<M-k>", "<up>", { desc = "Move cursor left" })
+map("i", "<M-h>", "<left>", { desc = "Move Cursor Left" })
+map("i", "<M-l>", "<right>", { desc = "Move Cursor Left" })
+map("i", "<M-j>", "<down>", { desc = "Move Cursor Left" })
+map("i", "<M-k>", "<up>", { desc = "Move Cursor Left" })
 
 -- End of the word backwards
 map("n", "E", "ge")
@@ -83,8 +83,8 @@ map("n", "<leader>u<tab>", function()
 end, { desc = "Toggle Tabline" })
 
 -- Comment box
-map("n", "]/", "/\\S\\zs\\s*╭<CR>zt", { desc = "Next block comment" })
-map("n", "[/", "?\\S\\zs\\s*╭<CR>zt", { desc = "Prev block comment" })
+map("n", "]/", "/\\S\\zs\\s*╭<CR>zt", { desc = "Next Block Comment" })
+map("n", "[/", "?\\S\\zs\\s*╭<CR>zt", { desc = "Prev Block Comment" })
 
 -- Plugin Info
 map("n", "<leader>cif", "<cmd>LazyFormatInfo<cr>", { desc = "Formatting" })
@@ -114,11 +114,11 @@ map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 map("n", "U", "<C-r>", { desc = "Redo" })
 
 -- Move to beginning/end of line
-map("n", "<a-h>", "_", { desc = "First character of Line" })
-map("n", "<a-l>", "$", { desc = "Last character of Line" })
+map("n", "<a-h>", "_", { desc = "First Character of Line" })
+map("n", "<a-l>", "$", { desc = "Last Character of Line" })
 
 -- Copy whole text to clipboard
-map("n", "<C-c>", ":%y+<CR>", { desc = "Copy whole text to clipboard", silent = true })
+map("n", "<C-c>", ":%y+<CR>", { desc = "Copy Whole Text to Clipboard", silent = true })
 
 -- Motion
 map("c", "<C-a>", "<C-b>", { desc = "Start Of Line" })
@@ -126,15 +126,15 @@ map("i", "<C-a>", "<Home>", { desc = "Start Of Line" })
 map("i", "<C-e>", "<End>", { desc = "End Of Line" })
 
 -- Select all text
-map("n", "<C-e>", "gg<S-V>G", { desc = "Select all text", silent = true, noremap = true })
+map("n", "<C-e>", "gg<S-V>G", { desc = "Select all Text", silent = true, noremap = true })
 
 -- Paste options
-map("i", "<C-v>", '<C-r>"', { desc = "Paste on insert mode" })
-map("v", "p", '"_dP', { desc = "Paste without overwriting" })
+map("i", "<C-v>", '<C-r>"', { desc = "Paste on Insert Mode" })
+map("v", "p", '"_dP', { desc = "Paste Without Overwriting" })
 
 -- Delete and change without yanking
-map({ "n", "x" }, "<A-d>", '"_d', { desc = "Delete without yanking" })
-map({ "n", "x" }, "<A-c>", '"_c', { desc = "Change without yanking" })
+map({ "n", "x" }, "<A-d>", '"_d', { desc = "Delete Without Yanking" })
+map({ "n", "x" }, "<A-c>", '"_c', { desc = "Change Without Yanking" })
 
 -- Deleting without yanking empty line
 map("n", "dd", function()
@@ -144,11 +144,11 @@ map("n", "dd", function()
   else
     return "dd"
   end
-end, { noremap = true, expr = true, desc = "Don't yank empty line to clipboard" })
+end, { noremap = true, expr = true, desc = "Don't Yank Empty Line to Clipboard" })
 
 -- Search inside visually highlighted text. Use `silent = false` for it to
 -- make effect immediately.
-map("x", "g/", "<esc>/\\%V", { silent = false, desc = "Search inside visual selection" })
+map("x", "g/", "<esc>/\\%V", { silent = false, desc = "Search Inside Visual Selection" })
 
 -- Search visually selected text (slightly better than builtins in Neovim>=0.8)
 map("x", "*", [[y/\V<C-R>=escape(@", '/\')<CR><CR>]])
