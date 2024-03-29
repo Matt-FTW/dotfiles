@@ -217,7 +217,7 @@ Here is all the information about my setup:
     yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
             swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard wf-recorder \
             pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-            catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava
+            catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim swappy
     ```
 
     On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
@@ -227,7 +227,7 @@ Here is all the information about my setup:
     - Replaceable Packages
 
     ```bash
-    yay -Sy swappy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
+    yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
             ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv celluloid
     ```
 
