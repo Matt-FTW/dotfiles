@@ -296,17 +296,17 @@ If you had any issues or you have some questions about the installation process,
 | -------------------------------------------------------------------- |
 | ![overview-1](./assets/overview-images/overview-1.png)               |
 
-| **Audio Visualizer, Fuzzy Finder in a Git Directory and Image Viewer** |
-| ---------------------------------------------------------------------- |
-| ![overview-2](./assets/overview-images/overview-2.png)                 |
+| **Text Editor**                                        |
+| ------------------------------------------------------ |
+| ![overview-2](./assets/overview-images/overview-2.png) |
 
 | **TUI File Manager, ls replacement and System Fetch**  |
 | ------------------------------------------------------ |
 | ![overview-3](./assets/overview-images/overview-3.png) |
 
-| **Text Editor and Git UI Manager**                     |
-| ------------------------------------------------------ |
-| ![overview-4](./assets/overview-images/overview-4.png) |
+| **Audio Visualizer, Fuzzy Finder in a Git Directory and Image Viewer** |
+| ---------------------------------------------------------------------- |
+| ![overview-4](./assets/overview-images/overview-4.png)                 |
 
 | **Text Editor**                                        |
 | ------------------------------------------------------ |
@@ -331,6 +331,10 @@ If you had any issues or you have some questions about the installation process,
 | **File Manager, pipes script and Note Taking App**       |
 | -------------------------------------------------------- |
 | ![overview-10](./assets/overview-images/overview-10.png) |
+
+| **Text Editor and Git UI Manager**                       |
+| -------------------------------------------------------- |
+| ![overview-11](./assets/overview-images/overview-11.png) |
 
 # :tada: ‎ <samp>Credits</samp>
 
