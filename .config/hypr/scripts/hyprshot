@@ -60,7 +60,11 @@ function send_notification() {
 		"${message}" \
 		-t "$NOTIF_TIMEOUT" -i "${1}" -a Hyprshot)
 	if [ -n "$action" ]; then
-		xdg-open "${1}"
+		if command -v swappy &>/dev/null; then
+			swappy -f "$1"
+		else
+			xdg-open "$1"
+		fi
 	fi
 }
 

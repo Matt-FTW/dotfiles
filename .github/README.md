@@ -104,27 +104,27 @@ Here is all the information about my setup:
 <details>
   <summary><b>🐧 System</b></summary>
 
-| 📚 Entry                       | ✨ App                                                                                                         |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **OS**                         | 💖 [Arch Linux](https://archlinux.org/)                                                                        |
-| **Package Manager**            | [pacman](https://wiki.archlinux.org/title/Pacman) [:gear:](../.config/pacman/)                                 |
-| **AUR Helper**                 | 💖 [yay](https://github.com/Jguer/yay) [:gear:](../.config/yay/)                                               |
-| **Window Manager**             | 💖 [hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                |
-| **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                    |
-| **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                               |
-| **Bar**                        | 💖 [waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                    |
-| **Audio Daemon**               | [pipewire](https://pipewire.org/)                                                                              |
-| **Application Launcher**       | 💖 [rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                            |
-| **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                    |
-| **Clipboard Manager**          | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist)) |
-| **Wallpaper Switcher**         | [swww](https://github.com/Horus645/swww)                                                                       |
-| **Lock Screen**                | [hyprlock](https://github.com/hyprwm/hyprlock) [:gear:](../.config/hypr/hyprlock.conf)                         |
-| **Idle Timeout**               | [hypridle](https://github.com/hyprwm/hypridle) [:gear:](../.config/hypr/hypridle.conf)                         |
-| **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                             |
-| **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot)                                                                |
-| **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                          |
-| **Screenshot Editor**          | [swappy](https://github.com/jtheoof/swappy)                                                                    |
-| **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                       |
+| 📚 Entry                       | ✨ App                                                                                                                                       |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **OS**                         | 💖 [Arch Linux](https://archlinux.org/)                                                                                                      |
+| **Package Manager**            | [pacman](https://wiki.archlinux.org/title/Pacman) [:gear:](../.config/pacman/)                                                               |
+| **AUR Helper**                 | 💖 [yay](https://github.com/Jguer/yay) [:gear:](../.config/yay/)                                                                             |
+| **Window Manager**             | 💖 [hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                                              |
+| **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                                                  |
+| **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                                                             |
+| **Bar**                        | 💖 [waybar](https://github.com/Alexays/Waybar) [:gear:](../.config/waybar/)                                                                  |
+| **Audio Daemon**               | [pipewire](https://pipewire.org/)                                                                                                            |
+| **Application Launcher**       | 💖 [rofi](https://github.com/lbonn/rofi) [:gear:](../.config/rofi/)                                                                          |
+| **Firewall**                   | [ufw](https://wiki.archlinux.org/title/ufw)                                                                                                  |
+| **Clipboard Manager**          | [wl-clipboard](https://github.com/bugaevc/wl-clipboard) (with [cliphist](https://github.com/sentriz/cliphist))                               |
+| **Wallpaper Switcher**         | [swww](https://github.com/Horus645/swww)                                                                                                     |
+| **Lock Screen**                | [hyprlock](https://github.com/hyprwm/hyprlock) [:gear:](../.config/hypr/hyprlock.conf)                                                       |
+| **Idle Timeout**               | [hypridle](https://github.com/hyprwm/hypridle) [:gear:](../.config/hypr/hypridle.conf)                                                       |
+| **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                                                           |
+| **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot) (Using [grim](https://sr.ht/~emersion/grim/) and [slurp](https://github.com/emersion/slurp)) |
+| **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                                                        |
+| **Screenshot Editor**          | [swappy](https://github.com/jtheoof/swappy)                                                                                                  |
+| **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                                                     |
 
 </details>
 
@@ -217,7 +217,7 @@ Here is all the information about my setup:
     yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
             swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard wf-recorder \
             pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-            catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim swappy
+            catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
     ```
 
     On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
@@ -255,7 +255,7 @@ Here is all the information about my setup:
     - Useful GUI packages
 
     ```bash
-    yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
+    yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor swappy
     ```
 
 3.  **Installing the dotfiles**:
