@@ -308,7 +308,7 @@ If you had any issues or you have some questions about the installation process,
 | ---------------------------------------------------------------------- |
 | ![overview-4](./assets/overview-images/overview-4.png)                 |
 
-| **Text Editor**                                        |
+| **Lockscreen**                                         |
 | ------------------------------------------------------ |
 | ![overview-5](./assets/overview-images/overview-5.png) |
 
@@ -335,6 +335,10 @@ If you had any issues or you have some questions about the installation process,
 | **Text Editor and Git UI Manager**                       |
 | -------------------------------------------------------- |
 | ![overview-11](./assets/overview-images/overview-11.png) |
+
+| **Text Editor**                                          |
+| -------------------------------------------------------- |
+| ![overview-12](./assets/overview-images/overview-12.png) |
 
 # :tada: ‎ <samp>Credits</samp>
 
