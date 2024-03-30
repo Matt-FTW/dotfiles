@@ -274,6 +274,7 @@
 <summary><b>🐙 Github</b></summary>
 
 - [pwntester/octo.nvim](https://dotfyle.com/plugins/pwntester/octo.nvim)
+- [rawnly/gist.nvim](https://dotfyle.com/plugins/rawnly/gist.nvim)
 
 </details>
 

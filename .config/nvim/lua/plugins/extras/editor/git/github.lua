@@ -32,7 +32,24 @@ return {
         ["<leader>Gl"] = { name = "label" },
         ["<leader>Ge"] = { name = "reaction" },
         ["<leader>GR"] = { name = "review" },
+        ["<leader>Gg"] = { name = "gist" },
       },
+    },
+  },
+  {
+    "Rawnly/gist.nvim",
+    cmd = { "GistCreate", "GistCreateFromFile", "GistsList" },
+    dependencies = {
+      "samjwill/nvim-unception",
+      init = function()
+        vim.g.unception_block_while_host_edits = true
+      end,
+    },
+    opts = {},
+    keys = {
+      { prefix .. "gc", "<cmd>GistCreate<CR>", desc = "Create a Gist" },
+      { prefix .. "gf", "<cmd>GistCreateFromFile<CR>", desc = "Create a Gist from File" },
+      { prefix .. "gl", "<cmd>GistsList<CR>", desc = "List Gists" },
     },
   },
   {
