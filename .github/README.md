@@ -48,28 +48,24 @@ I've been working on this for a long time so I hope you like it!
 
 ### ✨ Features
 
-- :scroll: Scratchpads
-- :bell: Notification Center
-- :zzz: Neovim powered by LazyVim with custom extras added (More than 200!)
-- :dark_sunglasses: Dark Mode for the whole system
-- :framed_picture: Various Wallpapers
-- :nerd_face: Nerd Fonts for the Shell Prompt
-- :rocket: VSCodium with native integration of your Neovim setup
-- :loud_sound: Volume OSD
-- :iphone: App Launcher
-- :keyboard: Multiple Keyboard Layouts
-- :art: Color scripts for the terminal
-- :car: Automatic mount of USB devices with notification
-- :lock: Idle and lock apps
-- :open_file_folder: Following XDG Base Directory Standard
-- :broom: Organized and cleaned up config files
-- :film_projector: Recording script
+- :dark_sunglasses: Dark Mode for the Whole System
+- :zzz: Neovim powered by LazyVim with Custom Extras Added (More than 200!)
 - :point_up: Screenshot, Clipboard, Color and Wallpaper Picker
-- :boom: Performance Mode
-- :window: Window Animations
-- :desktop_computer: AwesomeWM workspace behavior
+- :window: Animations for Most of the System
+- :desktop_computer: AwesomeWM Workspace Behavior
+- :open_file_folder: Following XDG Base Directory Standard
+- :car: Automatic Mounting of USB Devices with Notification
+- :scroll: Scratchpads
+- :nerd_face: Shell Prompt with Nerd Icons
+- :earth_americas: Custom Userchrome and Extension Configurations
+- :rocket: Minimal VSCodium with Native Integration of your Neovim Setup
 - :crab: Rust Alternatives
-- :gear: Various other tweaks
+- :bell: Notification Center
+- :loud_sound: Volume and Brightness OSD
+- :art: Color Scripts for the Terminal
+- :lock: Idle and Lock apps
+- :boom: Performance Mode
+- :gear: Various other Tweaks
 
 ---
 
