@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.6.3/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -11,12 +11,22 @@
     "formatWithErrors": true
   },
   "javascript": {
-    "globals": ["ObjC", "Application", "delay", "Path", "$"]
+    "globals": [
+      "ObjC", // JXA variable
+      "Application",
+      "delay",
+      "Path",
+      "$",
+      "dv" // dataview
+    ]
   },
   "linter": {
     "enabled": true,
     "rules": {
       "all": true
     }
+  },
+  "json": {
+    "parser": { "allowComments": true } // for `tsconfig.json`
   }
 }
