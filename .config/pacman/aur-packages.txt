@@ -1,6 +1,6 @@
 adwsteamgtk 0.6.10-1
 android-sdk-platform-tools 35.0.1-1
-atlauncher-bin 3.4.35.9-1
+atlauncher-bin 3.4.36.0-1
 brave-bin 1:1.64.113-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
@@ -58,7 +58,7 @@ vesktop-bin 1.5.1-2
 vkbasalt 0.3.2.10-1
 vscodium-bin 1.87.2.24072-1
 vscodium-bin-marketplace 1.76.0-1
-waybar-cava 0.10.0-1
+waybar-cava 0.10.0-2
 wl-clip-persist-git r34.6ba11a2-1
 wleave-git 0.3.0.r1.ga3d2fbb-1
 wlr-randr 0.4.0-1

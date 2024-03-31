@@ -12,7 +12,7 @@ base-devel 1-1
 bat 0.24.0-1
 bc 1.07.1-4
 bison 3.8.2-6
-blueman 2.3.5-3
+blueman 2.4-1
 bluez-utils 5.73-4
 bob 2.8.3-1
 bridge-utils 1.7.1-2
@@ -104,7 +104,7 @@ maim 5.7.4-7
 make 4.4.1-2
 mesa-vdpau 1:24.0.3-2
 mpc 0.35-1
-mpv 1:0.37.0-2
+mpv 1:0.37.0-3
 nano 7.2-1
 navi 2.23.0-1
 nemo 6.0.2-1
@@ -140,11 +140,11 @@ plocate 1.1.22-1
 polkit-gnome 0.105-10
 python-cairo 1.26.0-1
 python-pip 24.0-1
-python-pipx 1.4.3-1
+python-pipx 1.5.0-1
 python-pyquery 2.0.0-3
 qemu-base 8.2.2-2
 qemu-emulators-full 8.2.2-2
-qpwgraph 0.6.2-1
+qpwgraph 0.6.3-1
 qt5-graphicaleffects 5.15.13-1
 qt5-quickcontrols 5.15.13-1
 qt5-quickcontrols2 5.15.13+kde+r5-1
