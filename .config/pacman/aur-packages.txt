@@ -62,7 +62,6 @@ waybar-cava 0.10.0-1
 wl-clip-persist-git r34.6ba11a2-1
 wleave-git 0.3.0.r1.ga3d2fbb-1
 wlr-randr 0.4.0-1
-wlrobs-hg r63.a48763b63f96-1
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 yay 12.3.5-1
