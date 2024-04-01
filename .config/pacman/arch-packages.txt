@@ -23,7 +23,6 @@ clamtk 6.14-1
 cliphist 1:0.5.0-1
 cpupower 6.7-2
 dbeaver 24.0.0-1
-deno 1.42.0-1
 dialog 1:1.3_20240307-1
 dictd 1.13.1-5
 diff-so-fancy 1.4.4-2
