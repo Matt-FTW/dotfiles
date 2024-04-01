@@ -26,7 +26,6 @@
       - hyprland
       - hyprlock
       - hypridle
-      - swappy
       - wev
       - wf-recorder
       - wl-clipboard
@@ -123,6 +122,7 @@
       - swaync
       - swayosd-git
       - swww
+      - satty
       - hyprpicker
       - nwg-displays
       - nwg-look

@@ -119,7 +119,7 @@ Here is all the information about my setup:
 | **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                                                           |
 | **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot) (Using [grim](https://sr.ht/~emersion/grim/) and [slurp](https://github.com/emersion/slurp)) |
 | **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                                                        |
-| **Screenshot Editor**          | [swappy](https://github.com/jtheoof/swappy)                                                                                                  |
+| **Screenshot Editor**          | [satty](https://github.com/gabm/Satty)                                                                                                       |
 | **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                                                     |
 
 </details>
@@ -251,7 +251,7 @@ Here is all the information about my setup:
     - Useful GUI packages
 
     ```bash
-    yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor swappy
+    yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor satty
     ```
 
 3.  **Installing the dotfiles**:

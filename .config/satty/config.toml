@@ -1,0 +1,18 @@
+[general]
+fullscreen = false
+early-exit = false
+initial-tool = "brush"
+copy-command = "wl-copy"
+annotation-size-factor = 2
+output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png"
+save-after-copy = false
+default-hide-toolbars = false
+
+
+[color-palette]
+first = "#8aadf4"  # Blue
+second = "#ed8796" # Red
+third = "#a6da95"  # Green
+fourth = "#eed49f" # Yellow
+fifth = "#c6a0f6"  # Mauve
+custom = "#cad3f5" # White
