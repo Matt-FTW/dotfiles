@@ -32,14 +32,6 @@ return {
     },
   },
   {
-    "mfussenegger/nvim-ansible",
-    ft = "yaml.ansible",
-    -- stylua: ignore
-    keys = {
-      { "<leader>tp", function() require("ansible").run() end, desc = "Run Ansible Playbooks" },
-    },
-  },
-  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     ensure_installed = {
