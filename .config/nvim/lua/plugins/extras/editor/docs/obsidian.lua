@@ -19,6 +19,7 @@ return {
       { "<leader>ow", "<cmd>ObsidianWorkspace<CR>", desc = "Workspace" },
       { "<leader>or", "<cmd>ObsidianRename<CR>", desc = "Rename" },
       { "<leader>oi", "<cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
+      { "<leader>od", "<cmd>ObsidianDailies<CR>", desc = "Daily Notes" },
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
