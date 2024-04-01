@@ -28,7 +28,7 @@ return {
     "nvim-lualine/lualine.nvim",
     optional = true,
     opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, 1, require("recorder").displaySlots)
+      table.insert(opts.sections.lualine_x, require("recorder").displaySlots)
     end,
   },
 }

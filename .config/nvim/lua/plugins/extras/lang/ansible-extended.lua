@@ -1,5 +1,5 @@
 return {
-  { import = "lazyvim.plugins.extras.lang.yaml" },
+  { import = "plugins.extras.lang.yaml-extended" },
   { import = "lazyvim.plugins.extras.lang.ansible" },
   {
     "williamboman/mason.nvim",

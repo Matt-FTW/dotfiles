@@ -3,7 +3,6 @@
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.mini-move",
     "lazyvim.plugins.extras.editor.trouble-v3",
-    "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
@@ -42,6 +41,7 @@
     "plugins.extras.lang.web.html-css",
     "plugins.extras.lang.web.typescript-extended",
     "plugins.extras.lang.web.vue",
+    "plugins.extras.lang.yaml-extended",
     "plugins.extras.lazyvim.bufferline",
     "plugins.extras.lazyvim.cmp",
     "plugins.extras.lazyvim.dashboard",
@@ -80,4 +80,3 @@
   },
   "version": 3
 }
-

@@ -245,14 +245,6 @@
 </details>
 
 <details>
-<summary><b>🔎 Search</b></summary>
-
-- [jvgrootveld/telescope-zoxide](https://dotfyle.com/plugins/jvgrootveld/telescope-zoxide)
-- [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
-
-</details>
-
-<details>
 <summary><b>🎮 Game</b></summary>
 
 - [ThePrimeagen/vim-be-good](https://dotfyle.com/plugins/ThePrimeagen/vim-be-good)
@@ -428,6 +420,8 @@
 <summary><b>🔎 Search</b></summary>
 
 - [roobert/search-replace.nvim](https://dotfyle.com/plugins/roobert/search-replace.nvim)
+- [jvgrootveld/telescope-zoxide](https://dotfyle.com/plugins/jvgrootveld/telescope-zoxide)
+- [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
 
 </details>
 
@@ -535,6 +529,7 @@
 - [stevearc/dressing.nvim](https://dotfyle.com/plugins/stevearc/dressing.nvim)
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
 - [chrisgrieser/nvim-recorder](https://dotfyle.com/plugins/chrisgrieser/nvim-recorder)
+- [someone-stole-my-name/yaml-companion.nvim](https://dotfyle.com/plugins/someone-stole-my-name/yaml-companion.nvim)
 
 </details>
 
