@@ -6,6 +6,7 @@ command = "pavucontrol"
 unfocus = "hide"
 position = "1% 8%"
 lazy = true
+force_monitor = "DP-1"
 
 [scratchpads.terminal]
 command = "kitty --class scratchpad"
