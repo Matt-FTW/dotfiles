@@ -15,7 +15,7 @@ swww init
 "$scripts"/wallpaper random &
 
 # Bar
-# waybar &
+waybar &
 
 # OSD Window
 swayosd-server &
@@ -30,7 +30,6 @@ devify &
 hypridle &
 
 # Clipboard
-wl-clip-persist --clipboard regular &
 wl-paste --watch cliphist store &
 
 # Polkit authentication
