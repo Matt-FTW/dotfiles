@@ -118,7 +118,7 @@ Here is all the information about my setup:
 | **Idle Timeout**               | [hypridle](https://github.com/hyprwm/hypridle) [:gear:](../.config/hypr/hypridle.conf)                                                       |
 | **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                                                           |
 | **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot) (Using [grim](https://sr.ht/~emersion/grim/) and [slurp](https://github.com/emersion/slurp)) |
-| **Screenshot Editor**          | [satty](https://github.com/gabm/Satty)                                                                                                       |
+| **Image Annotation**           | [satty](https://github.com/gabm/Satty) [:gear:](../.config/satty/)                                                                           |
 | **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                                                     |
 
 </details>
