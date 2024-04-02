@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+monitors=($(hyprctl monitors -j | jq -r '.[].id'))
+
+ws_per_monitor=10
+
+monitor=$(hyprctl activeworkspace -j | jq -r '.monitorID')
+
+calculate_index() {
+	local index=$(($1 + $2 * ws_per_monitor))
+	echo $index
+}
+
+move_workspace() {
+	local index=$1
+	local action=$2
+	if [[ $action == "move" ]]; then
+		hyprctl dispatch movetoworkspace $index
+	elif [[ $action == "silent" ]]; then
+		hyprctl dispatch movetoworkspacesilent $index
+	else
+		hyprctl dispatch workspace $index
+	fi
+}
+
+for ((i = 0; i < ${#monitors[@]}; i++)); do
+	if [[ $monitor == "${monitors[i]}" ]]; then
+		index=$(calculate_index $1 $i)
+		move_workspace $index $2
+		break
+	fi
+done
