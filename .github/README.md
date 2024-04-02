@@ -299,27 +299,27 @@ If you had any issues or you have some questions about the installation process,
 | ------------------------------------------------------ |
 | ![overview-3](./assets/overview-images/overview-3.png) |
 
-| **Audio Visualizer, Fuzzy Finder in a Git Directory and Image Viewer** |
-| ---------------------------------------------------------------------- |
-| ![overview-4](./assets/overview-images/overview-4.png)                 |
-
-| **Lockscreen**                                         |
+| **GUI Text Editor**                                    |
 | ------------------------------------------------------ |
-| ![overview-5](./assets/overview-images/overview-5.png) |
+| ![overview-4](./assets/overview-images/overview-4.png) |
+
+| **System Fetch, Matrix Script and Browser on [r/unixporn](https://www.reddit.com/r/unixporn/)** |
+| ----------------------------------------------------------------------------------------------- |
+| ![overview-5](./assets/overview-images/overview-5.png)                                          |
 
 | **Browser with Main Page**                             |
 | ------------------------------------------------------ |
 | ![overview-6](./assets/overview-images/overview-6.png) |
 
-| **System Fetch, Matrix Script and Browser on [r/unixporn](https://www.reddit.com/r/unixporn/)** |
-| ----------------------------------------------------------------------------------------------- |
-| ![overview-7](./assets/overview-images/overview-7.png)                                          |
+| **Lockscreen**                                         |
+| ------------------------------------------------------ |
+| ![overview-7](./assets/overview-images/overview-7.png) |
 
 | **TUI System Monitor, Doom and Clock Script, ls replacement and Notif. Center** |
 | ------------------------------------------------------------------------------- |
 | ![overview-8](./assets/overview-images/overview-8.png)                          |
 
-| **Text Editor**                                        |
+| **Text Editor and Audio Visualizer**                   |
 | ------------------------------------------------------ |
 | ![overview-9](./assets/overview-images/overview-9.png) |
 
@@ -331,9 +331,21 @@ If you had any issues or you have some questions about the installation process,
 | -------------------------------------------------------- |
 | ![overview-11](./assets/overview-images/overview-11.png) |
 
+| **Audio Visualizer, Fuzzy Finder in a Git Directory and Image Viewer** |
+| ---------------------------------------------------------------------- |
+| ![overview-12](./assets/overview-images/overview-12.png)               |
+
 | **Text Editor**                                          |
 | -------------------------------------------------------- |
-| ![overview-12](./assets/overview-images/overview-12.png) |
+| ![overview-13](./assets/overview-images/overview-13.png) |
+
+| **Game Platform and Music Player**                       |
+| -------------------------------------------------------- |
+| ![overview-14](./assets/overview-images/overview-14.png) |
+
+| **Text Editor**                                          |
+| -------------------------------------------------------- |
+| ![overview-15](./assets/overview-images/overview-15.png) |
 
 # :tada: ‎ <samp>Credits</samp>
 
