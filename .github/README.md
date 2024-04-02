@@ -118,7 +118,6 @@ Here is all the information about my setup:
 | **Idle Timeout**               | [hypridle](https://github.com/hyprwm/hypridle) [:gear:](../.config/hypr/hypridle.conf)                                                       |
 | **Color Picker**               | [hyprpicker](https://github.com/hyprwm/hyprpicker)                                                                                           |
 | **Screenshot Tool**            | [hyprshot](https://github.com/Gustash/Hyprshot) (Using [grim](https://sr.ht/~emersion/grim/) and [slurp](https://github.com/emersion/slurp)) |
-| **Recording Tool**             | [wf-recorder](https://github.com/ammen99/wf-recorder)                                                                                        |
 | **Screenshot Editor**          | [satty](https://github.com/gabm/Satty)                                                                                                       |
 | **Logout Menu**                | [wleave](https://github.com/AMNatty/wleave) [:gear:](../.config/wleave/)                                                                     |
 
@@ -211,7 +210,7 @@ Here is all the information about my setup:
 
     ```bash
     yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-            swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard wf-recorder \
+            swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard \
             pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
             catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
     ```
