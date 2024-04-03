@@ -343,6 +343,7 @@
 - [andweeb/presence.nvim](https://dotfyle.com/plugins/andweeb/presence.nvim)
 - [edluffy/hologram.nvim](https://dotfyle.com/plugins/edluffy/hologram.nvim)
 - [ellisonleao/carbon-now.nvim](https://dotfyle.com/plugins/ellisonleao/carbon-now.nvim)
+- [HakonHarnes/img-clip.nvim](https://dotfyle.com/plugins/HakonHarnes/img-clip.nvim)
 
 </details>
 
