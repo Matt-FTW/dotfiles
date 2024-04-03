@@ -154,6 +154,7 @@ retroarch-assets-ozone 1:495-1
 retroarch-assets-xmb 1:495-1
 ripgrep 14.1.0-1
 ripgrep-all 0.10.6-3
+rocm-hip-sdk 6.0.2-1
 rustup 1.27.0-1
 scrcpy 2.4-1
 sd 1.0.0-1
