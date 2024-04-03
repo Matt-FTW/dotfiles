@@ -5,7 +5,7 @@ for i = 1, 9 do
   table.insert(keys, { "<leader>m" .. i, function() require("harpoon"):list():select(i) end, desc = "File " .. i })
 end
 
-table.insert(keys, { "<leader>ma", function() require("harpoon"):list():append() end, desc = "Add Mark" })
+table.insert(keys, { "<leader>ma", function() require("harpoon"):list():add() end, desc = "Add Mark" })
 table.insert(keys, { "<leader>mm", function() require("harpoon").ui:toggle_quick_menu(require("harpoon"):list()) end, desc = "Marks" })
 table.insert(keys, { "<leader>mt", "<cmd>Telescope harpoon marks<CR>", desc = "Marks (Telescope)" })
 table.insert(keys, { "<leader>mc", function() require("harpoon"):list():clear() end, desc = "Clear all Marks" })
@@ -24,11 +24,17 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
-    --stylua: ignore
     keys = keys,
     config = function()
       local harpoon = require("harpoon")
-      harpoon:setup({})
+      harpoon:setup({
+        menu = {
+          width = vim.api.nvim_win_get_width(0) - 4,
+        },
+        settings = {
+          save_on_toggle = true,
+        },
+      })
 
       harpoon:extend({
         UI_CREATE = function(cx)
