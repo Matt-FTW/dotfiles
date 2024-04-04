@@ -19,6 +19,7 @@
       - lib32-mesa-vdpau
       - vdpauinfo
       - clinfo
+      - rocm-hip-sdk
 
 # AUR
 - name: Install AUR Packages
