@@ -23,7 +23,7 @@ notify "Started syncing..."
 for FOLDER in "${FOLDERS[@]}"; do
 	cd "$HOME/Musica/Listen-To/$FOLDER" || continue
 
-	spotdl sync "${FOLDER,,}.sync.spotdl"
+	spotdl sync "${FOLDER,,}.spotdl"
 
 	notify "$FOLDER synced"
 done
