@@ -4,7 +4,6 @@ vim.g.lazyvim_python_lsp = "basedpyright"
 
 return {
   { import = "lazyvim.plugins.extras.lang.python" },
-  { import = "lazyvim.plugins.extras.lang.python-semshi" },
   {
     "neovim/nvim-lspconfig",
     opts = {
