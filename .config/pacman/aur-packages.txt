@@ -11,7 +11,6 @@ check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6442.g403ee01-1
-find-the-command 2.0.1-1
 floorp-bin 11.11.2-1
 gtrash-bin 0.0.5-1
 gzdoom 4.11.3-2

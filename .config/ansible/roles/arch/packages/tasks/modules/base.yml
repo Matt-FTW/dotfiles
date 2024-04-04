@@ -137,7 +137,6 @@
 
       # CLI / TUI
       - cava
-      - find-the-command
       - pacseek
       - gtrash-bin
       - sysz
