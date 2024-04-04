@@ -6,6 +6,7 @@
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
+    "plugins.extras.coding.ai.gen",
     "plugins.extras.coding.annotation",
     "plugins.extras.coding.multicursor",
     "plugins.extras.coding.recorder",
