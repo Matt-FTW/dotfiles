@@ -16,7 +16,6 @@ set -xg CARGO_HOME $XDG_DATA_HOME/cargo
 set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
 set -xg ANDROID_HOME $XDG_DATA_HOME/android
-set -xg BUN_INSTALL $XDG_DATA_HOME/bun
 set -xg NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
 set -xg DOCKER_CONFIG $XDG_CONFIG_HOME/docker
 set -xg SQLITE_HISTORY $XDG_DATA_HOME/sqlite_history
@@ -55,7 +54,6 @@ fish_add_path /sbin
 fish_add_path /usr/lib/rustup/bin
 fish_add_path /usr/lib/go/bin
 fish_add_path $HOME/.dotnet/tools
-fish_add_path $BUN_INSTALL/bin
 fish_add_path $XDG_DATA_HOME/bob/nvim-bin
 fish_add_path $XDG_DATA_HOME/npm/bin
 fish_add_path $XDG_DATA_HOME/nvim/mason/bin

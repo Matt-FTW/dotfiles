@@ -45,12 +45,14 @@
       - tgpt-bin
       - vscodium-bin
       - vscodium-marketplace-bin
+      - mise
 
 # Cargo
 - name: Install Rust Packages
   cargo:
     name:
       - cargo-update
+      - cargo-binstall
 
 # Npm
 - name: Install Npm Packages
