@@ -8,6 +8,9 @@ output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png"
 save-after-copy = false
 default-hide-toolbars = false
 
+[font]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
 
 [color-palette]
 first = "#8aadf4"  # Blue
