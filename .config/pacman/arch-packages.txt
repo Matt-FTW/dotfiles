@@ -89,8 +89,8 @@ libwnck3 43.0-3
 linux 6.8.2.arch2-1
 linux-firmware 20240312.3b128b60-1
 linux-headers 6.8.2.arch2-1
-linux-lts 6.6.23-1
-linux-lts-headers 6.6.23-1
+linux-lts 6.6.24-1
+linux-lts-headers 6.6.24-1
 linux-zen 6.8.2.zen2-1
 linux-zen-headers 6.8.2.zen2-1
 logrotate 3.21.0-2
@@ -171,7 +171,7 @@ thefuck 3.32-7
 thunderbird 115.9.0-1
 tree-sitter-cli 0.22.2-1
 ttf-font-awesome 6.5.2-1
-ttf-jetbrains-mono-nerd 3.1.1-1
+ttf-jetbrains-mono-nerd 3.2.0-1
 ttf-nerd-fonts-symbols 3.1.1-1
 ttf-nerd-fonts-symbols-mono 3.1.1-1
 tumbler 4.18.2-1
@@ -245,6 +245,6 @@ yadm 3.2.2-1
 yapf 0.40.2-1
 yarn 1.22.22-1
 yazi 0.2.4-1
-zathura 0.5.5-1
-zathura-pdf-mupdf 0.4.1-18
+zathura 0.5.5-2
+zathura-pdf-mupdf 0.4.1-19
 zoxide 0.9.4-2

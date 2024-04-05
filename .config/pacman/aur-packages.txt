@@ -6,7 +6,7 @@ catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.1-1
 catppuccinifier-gui-bin 8.0.0-1
 cava 0.10.1-1
-cemu-bin 2.0.73-1
+cemu-bin 2.0.74-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
@@ -39,7 +39,7 @@ reflector-pacman-hook-git r87.eec94bd-1
 rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1248-1
-satty 0.11.3-1
+satty 0.12.0-1
 scc-bin 3.2.0-1
 spicetify-cli 2.36.2-1
 spotify 1:1.2.31.1205-2
