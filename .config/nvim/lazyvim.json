@@ -41,7 +41,6 @@
     "plugins.extras.lang.rust-extended",
     "plugins.extras.lang.web.html-css",
     "plugins.extras.lang.web.typescript-extended",
-    "plugins.extras.lang.web.vue",
     "plugins.extras.lang.yaml-extended",
     "plugins.extras.lazyvim.bufferline",
     "plugins.extras.lazyvim.cmp",
