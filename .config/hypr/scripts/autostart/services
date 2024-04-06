@@ -4,11 +4,8 @@
 config=$HOME/.config/hypr
 scripts=$config/scripts
 
-# Plugins
-pypr &
-
-# Notification Daemon
-swaync &
+# Automounter for removable media
+udiskie &
 
 # Wallpaper Backend
 swww init
@@ -17,11 +14,14 @@ swww init
 # Bar
 waybar &
 
+# Plugins
+pypr &
+
+# Notification Daemon
+swaync &
+
 # OSD Window
 swayosd-server &
-
-# Automounter for removable media
-udiskie &
 
 # Notify about devices connecting and disconnecting
 devify &
