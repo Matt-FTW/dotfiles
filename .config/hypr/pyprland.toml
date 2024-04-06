@@ -30,6 +30,10 @@ lazy = true
 command = "kitty --class scratchpad-large btop"
 lazy = true
 
+[scratchpads.cava]
+command = "kitty --class scratchpad-mini cava"
+lazy = true
+
 [scratchpads.bluetooth]
 command = "blueman-manager"
 animation = "fromRight"
