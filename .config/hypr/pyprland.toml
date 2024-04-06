@@ -9,25 +9,25 @@ lazy = true
 force_monitor = "DP-1"
 
 [scratchpads.terminal]
-command = "kitty --class scratchpad"
+command = "kitty --class scratchpad-large"
 excludes = ["dots"]
 lazy = true
 
 [scratchpads.yazi]
-command = "kitty --class scratchpad yazi"
+command = "kitty --class scratchpad-large yazi"
 lazy = true
 
 [scratchpads.gpt]
-command = "kitty --class scratchpad tgpt -m"
+command = "kitty --class scratchpad-large tgpt -m"
 lazy = true
 
 [scratchpads.dots]
-command = "kitty --class scratchpad yadm enter lazygit"
+command = "kitty --class scratchpad-large yadm enter lazygit"
 excludes = ["terminal"]
 lazy = true
 
 [scratchpads.btop]
-command = "kitty --class scratchpad btop"
+command = "kitty --class scratchpad-large btop"
 lazy = true
 
 [scratchpads.bluetooth]
