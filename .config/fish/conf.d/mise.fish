@@ -1,3 +1,3 @@
-if type mise >/dev/null ^&1
+if type -q mise
     mise activate fish | source
 end

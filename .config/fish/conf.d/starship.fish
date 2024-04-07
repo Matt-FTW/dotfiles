@@ -1,3 +1,3 @@
-if type starship >/dev/null ^&1
+if type -q starship
     starship init fish | source
 end

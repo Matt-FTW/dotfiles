@@ -1,3 +1,3 @@
-if type zoxide >/dev/null ^&1
+if type -q zoxide
     zoxide init fish | source
 end
