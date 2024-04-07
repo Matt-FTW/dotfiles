@@ -66,7 +66,7 @@ gvfs-gphoto2 1.54.0-2
 gvfs-mtp 1.54.0-2
 highlight 4.11-2
 hypridle 0.1.1-2
-hyprland 0.38.0-1
+hyprland 0.38.1-1
 hyprlock 0.2.0-2
 i2c-tools 4.3-4
 imagemagick 7.1.1.29-2
@@ -88,13 +88,13 @@ libva-mesa-driver 1:24.0.4-2
 libva-utils 2.21.0-1
 libva-vdpau-driver 0.7.4-6
 libwnck3 43.0-3
-linux 6.8.2.arch2-1
+linux 6.8.4.arch1-1
 linux-firmware 20240312.3b128b60-1
-linux-headers 6.8.2.arch2-1
+linux-headers 6.8.4.arch1-1
 linux-lts 6.6.25-1
 linux-lts-headers 6.6.25-1
-linux-zen 6.8.2.zen2-1
-linux-zen-headers 6.8.2.zen2-1
+linux-zen 6.8.4.zen1-1
+linux-zen-headers 6.8.4.zen1-1
 logrotate 3.21.0-2
 lsp-plugins 1.2.15-1
 lua51 5.1.5-11
