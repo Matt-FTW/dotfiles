@@ -35,7 +35,8 @@ window {
     padding:                     0px;
     border-radius:               10px;
     cursor:                      "default";
-    background-color:            #24273A;
+    transparency:                "real";
+    background-color:            #24273ACC;
 }
 
 /*****----- Main Box -----*****/
@@ -64,7 +65,7 @@ textbox-prompt-colon {
     border:                      0px;
     border-radius:               7px;
     border-color:                #363A4F;
-    background-color:            #363A4F;
+    background-color:            #494d64;
     text-color:                  #CAD3F5;
     str:                         " ";
 }
@@ -74,7 +75,7 @@ entry {
     border:                      0px;
     border-radius:               7px;
     border-color:                #363A4F;
-    background-color:            #363A4F;
+    background-color:            #494d64;
     text-color:                  #CAD3F5;
     cursor:                      text;
     placeholder:                 "Search...";
@@ -145,7 +146,7 @@ mode-switcher{
     enabled:                     true;
     expand:                      false;
     spacing:                     15px;
-    background-color:            #24273A;
+    background-color:            transparent;
 }
 button {
     font:                        "JetBrainsMono NF 10";
