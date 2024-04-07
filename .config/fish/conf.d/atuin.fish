@@ -1,3 +1,5 @@
 if status is-interactive
-    atuin init fish | source
+    if type atuin >/dev/null ^&1
+        atuin init fish | source
+    end
 end
