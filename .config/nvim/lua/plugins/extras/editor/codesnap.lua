@@ -2,7 +2,7 @@ return {
   "mistricky/codesnap.nvim",
   build = "make",
   cmd = { "CodeSnap", "CodeSnapSave" },
-  cond = vim.g.vscode == nil,
+  cond = vim.env.KITTY_SCROLLBACK_NVIM == nil,
   opts = {
     save_path = os.getenv("XDG_SCREENSHOTS_HOME") .. "/Codigo",
     title = "CodeSnap.nvim",

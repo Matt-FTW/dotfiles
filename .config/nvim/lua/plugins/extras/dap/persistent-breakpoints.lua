@@ -1,7 +1,7 @@
 return {
   {
     "Weissle/persistent-breakpoints.nvim",
-    cond = LazyVim.has("nvim-dap") and vim.g.vscode == nil,
+    cond = LazyVim.has("nvim-dap") or vim.g.vscode == nil,
     event = "LazyFile",
     keys = {
       { "<leader>dbd", "<cmd>PBClearAllBreakpoints<cr>", desc = "Delete All Breakpoints" },
