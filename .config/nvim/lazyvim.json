@@ -18,6 +18,7 @@
     "plugins.extras.coding.yanky",
     "plugins.extras.dap.core-extended",
     "plugins.extras.dap.persistent-breakpoints",
+    "plugins.extras.editor.codesnap",
     "plugins.extras.editor.color",
     "plugins.extras.editor.compiler",
     "plugins.extras.editor.docs.devdocs",
