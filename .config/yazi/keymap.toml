@@ -29,6 +29,10 @@ append_keymap = [
   ], run = "cd ~/Imagenes", desc = "Go to the images directory" },
   { on = [
     "g",
+    "s",
+  ], run = "cd ~/Imagenes/Capturas", desc = "Go to the screenshots directory" },
+  { on = [
+    "g",
     "D",
   ], run = "cd ~/Documentos", desc = "Go to the docs directory" },
   { on = [
