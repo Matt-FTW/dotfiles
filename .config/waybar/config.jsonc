@@ -44,8 +44,8 @@
       },
       "exec-if": "which waybar-module-pacman-updates",
       "exec": "waybar-module-pacman-updates",
-      "on-click": "kitty --class center-float-large topgrade -k --only system",
-      "on-click-right": "kitty --class center-float-large topgrade -k --no-self-update"
+      "on-click": "pypr toggle topgrade-system",
+      "on-click-right": "pypr toggle topgrade-all"
     },
     "custom/arch": {
       "format": "  ",
@@ -186,7 +186,7 @@
       "source": "auto",
       "stereo": true,
       "waves": false,
-      "on-click": "kitty --class center-float-mini cava",
+      "on-click": "pypr toggle cava",
       "on-click-right": "qpwgraph",
       "on-click-middle": "easyeffects"
     },

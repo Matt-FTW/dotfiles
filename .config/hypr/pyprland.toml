@@ -10,7 +10,7 @@ force_monitor = "DP-1"
 
 [scratchpads.terminal]
 command = "kitty --class scratchpad-large"
-excludes = ["dots"]
+excludes = ["dots", "yazi", "topgrade-system", "topgrade-all"]
 lazy = true
 
 [scratchpads.yazi]
@@ -32,6 +32,14 @@ lazy = true
 
 [scratchpads.cava]
 command = "kitty --class scratchpad-mini cava"
+lazy = true
+
+[scratchpads.topgrade-system]
+command = "kitty --class scratchpad-large topgrade -k --only system"
+lazy = true
+
+[scratchpads.topgrade-all]
+command = "kitty --class scratchpad-large topgrade -k --no-self-update"
 lazy = true
 
 [scratchpads.bluetooth]
