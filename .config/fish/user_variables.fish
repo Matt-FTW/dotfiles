@@ -89,3 +89,4 @@ set -xg fzf_fd_opts --hidden --color=always
 set -x THEFUCK_OVERRIDDEN_ALIASES 'vi, yarn, eza, vim, neofetch, onefetch, cat, tty-clock, dua i'
 set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 set -xg BAT_THEME Catppuccin-macchiato
+set -xg STARSHIP_LOG error
