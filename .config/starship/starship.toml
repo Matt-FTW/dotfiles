@@ -1,13 +1,14 @@
-# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
 add_newline = true
 
+# Duration entry
 [cmd_duration]
 min_time = 10000
 format = "[󰔟 $duration](bold cyan)"
 
+# Git entry
 [git_metrics]
 disabled = false
 added_style = "green"
@@ -28,6 +29,38 @@ up_to_date = '[ ](bold green) '
 diverged = '[ $ahead_count  $behind_count ](bold red) '
 format = '([$all_status$ahead_behind]($style))'
 
+[git_branch]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+# Gcloud entry
+[gcloud]
+format = "on [$symbol$domain](style) "
+symbol = "☁️ "
+style = "bold blue"
+
+# Directory entry
+[directory]
+read_only = " 󰌾 "
+home_symbol = " "
+truncation_length = 3
+
+[directory.substitutions]
+"Documentos" = "󰈙 "
+"Descargas" = " "
+"Musica" = " "
+"Imagenes" = " "
+"Repos" = " "
+"Videos" = " "
+"obsidianVault" = "󰏪 󰠮 "
+".config" = " "
+
+# Custom entries
 [custom.neovim]
 command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
 detect_folders = ["lua"]
@@ -49,6 +82,7 @@ symbol = " "
 style = "blue bold"
 format = '[$symbol$output]($style) '
 
+# Nerd fonts preset
 [aws]
 symbol = "  "
 
@@ -61,38 +95,23 @@ symbol = " "
 [conda]
 symbol = " "
 
+[crystal]
+symbol = " "
+
 [dart]
 symbol = " "
-
-[directory]
-read_only = " 󰌾 "
-home_symbol = " "
-truncation_length = 3
-
-[directory.substitutions]
-"Documentos" = "󰈙 "
-"Descargas" = " "
-"Musica" = " "
-"Imagenes" = " "
-"Repos" = " "
-"Videos" = " "
-"Obsidian" = "󰏪 "
-".config" = " "
 
 [docker_context]
 symbol = " "
 
 [elixir]
-symbol = " "
+symbol = " "
 
 [elm]
 symbol = " "
 
-[fossil_branch]
-symbol = " "
-
-[git_branch]
-symbol = " "
+[fennel]
+symbol = " "
 
 [golang]
 symbol = " "
@@ -104,10 +123,7 @@ symbol = " "
 symbol = " "
 
 [haxe]
-symbol = "⌘ "
-
-[hg_branch]
-symbol = " "
+symbol = " "
 
 [hostname]
 ssh_symbol = " "
@@ -118,8 +134,10 @@ symbol = " "
 [julia]
 symbol = " "
 
+[kotlin]
+symbol = " "
+
 [lua]
-detect_folders = []
 symbol = " "
 
 [memory_usage]
@@ -137,9 +155,13 @@ symbol = " "
 [nodejs]
 symbol = " "
 
+[ocaml]
+symbol = " "
+
 [os.symbols]
 Alpaquita = " "
 Alpine = " "
+AlmaLinux = " "
 Amazon = " "
 Android = " "
 Arch = " "
@@ -155,6 +177,7 @@ Garuda = "󰛓 "
 Gentoo = " "
 HardenedBSD = "󰞌 "
 Illumos = "󰈸 "
+Kali = " "
 Linux = " "
 Mabox = " "
 Macos = " "
@@ -171,18 +194,26 @@ Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
+RockyLinux = " "
 Redox = "󰀘 "
 Solus = "󰠳 "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
+Void = " "
 Windows = "󰍲 "
 
 [package]
 symbol = "󰏗 "
 
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
 [pijul_channel]
-symbol = "🪺 "
+symbol = " "
 
 [python]
 symbol = " "
@@ -199,10 +230,13 @@ symbol = " "
 [scala]
 symbol = " "
 
-[spack]
-symbol = "🅢 "
+[swift]
+symbol = " "
 
+[zig]
+symbol = " "
 
+# Theme
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
 flamingo = "#f0c6c6"
@@ -230,6 +264,5 @@ surface0 = "#363a4f"
 base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
-
 
 palette = "catppuccin_macchiato"
