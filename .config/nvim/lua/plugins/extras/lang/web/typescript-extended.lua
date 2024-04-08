@@ -39,6 +39,12 @@ return {
     opts = {
       servers = {
         tsserver = {
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
+              require("ts-error-translator").translate_diagnostics(err, result, ctx, config)
+              vim.lsp.diagnostic.on_publish_diagnostics(err, result, ctx, config)
+            end,
+          },
           enabled = ts_server_activated,
           init_options = {
             preferences = {
@@ -96,6 +102,12 @@ return {
     ft = ft,
     opts = {
       cmd = { "typescript-language-server", "--stdio" },
+      handlers = {
+        ["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
+          require("ts-error-translator").translate_diagnostics(err, result, ctx, config)
+          vim.lsp.diagnostic.on_publish_diagnostics(err, result, ctx, config)
+        end,
+      },
       settings = {
         code_lens = "all",
         expose_as_code_action = "all",
@@ -160,22 +172,6 @@ return {
   },
   {
     "dmmulroy/ts-error-translator.nvim",
-    ft = { "typescript", "typescriptreact" },
-    dependencies = {
-      "neovim/nvim-lspconfig",
-      opts = {
-        servers = {
-          tsserver = {
-            handlers = {
-              ["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
-                require("ts-error-translator").translate_diagnostics(err, result, ctx, config)
-                vim.lsp.diagnostic.on_publish_diagnostics(err, result, ctx, config)
-              end,
-            },
-          },
-        },
-      },
-    },
     opts = {},
   },
   {

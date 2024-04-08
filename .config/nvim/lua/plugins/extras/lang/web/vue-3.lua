@@ -11,7 +11,14 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        volar = {},
+        volar = {
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
+              require("ts-error-translator").translate_diagnostics(err, result, ctx, config)
+              vim.lsp.diagnostic.on_publish_diagnostics(err, result, ctx, config)
+            end,
+          },
+        },
         tsserver = {},
       },
       setup = {
@@ -33,6 +40,10 @@ return {
         end,
       },
     },
+  },
+  {
+    "dmmulroy/ts-error-translator.nvim",
+    opts = {},
   },
   {
     "williamboman/mason.nvim",
