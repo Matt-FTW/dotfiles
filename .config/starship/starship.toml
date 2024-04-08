@@ -40,7 +40,7 @@ symbol = " "
 
 # Gcloud entry
 [gcloud]
-format = "on [$symbol$domain](style) "
+format = "on [$symbol$domain]($style) "
 symbol = "☁️ "
 style = "bold blue"
 
