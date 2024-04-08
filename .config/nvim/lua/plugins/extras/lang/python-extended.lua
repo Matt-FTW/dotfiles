@@ -95,8 +95,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "python-3.11",
+    opts = {
+      ensure_installed = {
+        "python-3.11",
+      },
     },
   },
 }

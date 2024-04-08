@@ -11,8 +11,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "tailwindcss",
+    opts = {
+      ensure_installed = {
+        "tailwindcss",
+      },
     },
   },
 }

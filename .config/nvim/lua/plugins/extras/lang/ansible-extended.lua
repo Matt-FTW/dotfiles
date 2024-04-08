@@ -38,8 +38,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "ansible",
+    opts = {
+      ensure_installed = {
+        "ansible",
+      },
     },
   },
 }

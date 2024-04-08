@@ -42,8 +42,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "nix",
+    opts = {
+      ensure_installed = {
+        "nix",
+      },
     },
   },
 }

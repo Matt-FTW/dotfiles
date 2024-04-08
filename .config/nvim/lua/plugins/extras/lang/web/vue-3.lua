@@ -44,8 +44,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "vue-3",
+    opts = {
+      ensure_installed = {
+        "vue-3",
+      },
     },
   },
 }

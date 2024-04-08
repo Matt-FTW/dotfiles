@@ -25,8 +25,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "svelte",
+    opts = {
+      ensure_installed = {
+        "svelte",
+      },
     },
   },
 }

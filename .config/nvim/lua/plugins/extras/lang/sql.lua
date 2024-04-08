@@ -134,9 +134,11 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "sqlite",
-      "postgresql-16",
+    opts = {
+      ensure_installed = {
+        "sqlite",
+        "postgresql-16",
+      },
     },
   },
 }

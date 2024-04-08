@@ -34,8 +34,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "julia",
+    opts = {
+      ensure_installed = {
+        "julia",
+      },
     },
   },
 }

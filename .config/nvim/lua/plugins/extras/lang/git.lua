@@ -16,8 +16,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "git",
+    opts = {
+      ensure_installed = {
+        "git",
+      },
     },
   },
 }

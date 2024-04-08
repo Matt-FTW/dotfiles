@@ -78,8 +78,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "php",
+    opts = {
+      ensure_installed = {
+        "php",
+      },
     },
   },
 }

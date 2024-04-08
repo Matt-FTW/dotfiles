@@ -3,8 +3,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "haskell-9",
+    opts = {
+      ensure_installed = {
+        "haskell-9",
+      },
     },
   },
 }

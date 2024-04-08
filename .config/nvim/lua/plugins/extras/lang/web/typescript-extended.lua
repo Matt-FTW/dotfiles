@@ -214,9 +214,11 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "react",
-      "typescript",
+    opts = {
+      ensure_installed = {
+        "react",
+        "typescript",
+      },
     },
   },
 }

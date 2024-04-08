@@ -31,8 +31,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "markdown",
+    opts = {
+      ensure_installed = {
+        "markdown",
+      },
     },
   },
 }

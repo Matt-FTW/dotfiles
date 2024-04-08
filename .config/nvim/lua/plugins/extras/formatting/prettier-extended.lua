@@ -33,8 +33,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "prettier",
+    opts = {
+      ensure_installed = {
+        "prettier",
+      },
     },
   },
 }

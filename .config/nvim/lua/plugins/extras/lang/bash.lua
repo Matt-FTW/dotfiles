@@ -45,8 +45,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "bash",
+    opts = {
+      ensure_installed = {
+        "bash",
+      },
     },
   },
 }

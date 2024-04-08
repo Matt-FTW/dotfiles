@@ -3,8 +3,10 @@ return {
   {
     "luckasRanarison/nvim-devdocs",
     optional = true,
-    ensure_installed = {
-      "docker",
+    opts = {
+      ensure_installed = {
+        "docker",
+      },
     },
   },
 }
