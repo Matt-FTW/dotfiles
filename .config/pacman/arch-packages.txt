@@ -249,4 +249,5 @@ yarn 1.22.22-1
 yazi 0.2.4-1
 zathura 0.5.5-2
 zathura-pdf-mupdf 0.4.1-19
+zellij 0.39.2-4
 zoxide 0.9.4-2

@@ -1,0 +1,44 @@
+layout {
+    default_tab_template {
+        children
+        pane size=1 borderless=true {
+            plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+                format_left  "{mode} #[fg=#8aadf4,bold]{session}"
+                format_center "{tabs}"
+                format_right  "{command_git_branch} {datetime}"
+                format_space  ""
+
+                border_enabled  "true"
+                border_char     "─"
+                border_format   "#[fg=#6C7086]{char}"
+                border_position "top"
+
+                command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
+                command_git_branch_format      "#[fg=blue] {stdout} "
+                command_git_branch_interval    "10"
+                command_git_branch_rendermode  "static"
+
+                hide_frame_for_single_pane "true"
+
+                mode_normal        "#[bg=blue]  "
+                mode_locked        "#[bg=red]  "
+                mode_pane          "#[bg=green]  "
+                mode_tab           "#[bg=magenta]  "
+                mode_search        "#[bg=orange]  "
+                mode_session       "#[bg=yellow]  "
+                mode_tmux          "#[bg=cyan]  "
+
+                tab_normal   "#[fg=#6e738d] {name} "
+                tab_active   "#[fg=#939ab7,bold,italic] {name} "
+                tab_active_fullscreen   "#[fg=#939ab7,bold,italic] {name} []"
+
+                datetime        "#[fg=#939ab7,bold] {format} "
+                datetime_format "%A, %d %b %Y %H:%M"
+                datetime_timezone "Europe/Madrid"
+            }
+        }
+    }
+    tab name="terminal" {
+        pane size="90%"
+    }
+}

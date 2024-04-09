@@ -1,0 +1,15 @@
+themes {
+    default {
+        bg "#24273a" // Surface2
+        fg "#b7bdf8" // Lavender
+        red "#ed8796" // Red
+        green "#a6da95" // Green
+        blue "#8aadf4" // Blue
+        yellow "#eed49f" // Yellow
+        magenta "#f5bde6" // Pink
+        orange "#f5a97f" // Peach
+        cyan "#91d7e3" // Sky
+        black "#1e2030" // Mantle
+        white "#cad3f5" // White
+    }
+}
