@@ -1,10 +1,8 @@
 [tools]
-# global tool versions go here
-# you can set these with `mise use -g`
-# node = 'lts' # Let the system manage it
-# python = ['3.11.8'] # Let the system manage it
+# python = latest # Let the system manage it
 usage = "latest"
 bun = "latest"
+node = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
