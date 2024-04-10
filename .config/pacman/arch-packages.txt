@@ -69,7 +69,7 @@ hypridle 0.1.1-2
 hyprland 0.38.1-1
 hyprlock 0.2.0-2
 i2c-tools 4.3-4
-imagemagick 7.1.1.29-2
+imagemagick 7.1.1.30-2
 imwheel 1.0.0pre12-6
 inotify-tools 4.23.9.0-1
 iptables-nft 1:1.8.10-1

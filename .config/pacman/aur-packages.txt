@@ -1,6 +1,6 @@
 adwsteamgtk 0.6.10-1
 android-sdk-platform-tools 35.0.1-1
-atlauncher-bin 3.4.36.2-1
+atlauncher-bin 3.4.36.3-1
 brave-bin 1:1.64.116-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.3-1
@@ -20,7 +20,7 @@ lazydocker 0.23.1-1
 lazynpm 0.1.4-1
 librewolf-bin 124.0.1-1
 ludusavi 0.22.0-2
-mise 2024.4.1-1
+mise 2024.4.3-1
 needrestart 3.6-3
 nwg-displays 0.3.16-1
 obs-plugin-input-overlay 5.0.5-1
@@ -30,8 +30,7 @@ parabolic 2023.12.0-1
 pcsx2-latest-bin 1.7.5684-1
 pika-backup 1:0.7.1-1
 proton-ge-custom-bin 1:GE_Proton9_2-1
-pyprland 2.2.3-1
-python-spotdl 4.2.5-1
+pyprland 2.2.4-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
@@ -41,6 +40,7 @@ ryujinx-bin 1.1.1251-1
 satty 0.12.0-1
 scc-bin 3.2.0-1
 spicetify-cli 2.36.4-1
+spotdl 4.2.5-4
 spotify 1:1.2.31.1205-2
 swaync 0.10.1-1
 swayosd-git r55.a0709bc-1
@@ -61,7 +61,7 @@ vscodium-bin-marketplace 1.76.0-1
 waybar-cava 0.10.0-2
 wl-clip-persist-git r34.6ba11a2-1
 wleave-git 0.3.0.r1.ga3d2fbb-1
-wlr-randr 0.4.1-1
+wlr-randr 0.4.1-2
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 yay 12.3.5-1
