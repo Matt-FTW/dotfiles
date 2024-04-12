@@ -1,11 +1,16 @@
 return {
   "3rd/image.nvim",
   event = "LazyFile",
-  init = function()
-    package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
-    package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
-  end,
-  dependencies = { "nvim-treesitter/nvim-treesitter" },
+  dependencies = {
+    { "nvim-treesitter/nvim-treesitter" },
+    {
+      "vhyrro/luarocks.nvim",
+      priority = 1000, -- this plugin needs to run before anything else
+      opts = {
+        rocks = { "magick" },
+      },
+    },
+  },
   opts = {
     backend = "kitty",
     integrations = {
