@@ -1,12 +1,12 @@
 adwsteamgtk 0.6.10-1
 android-sdk-platform-tools 35.0.1-1
 atlauncher-bin 3.4.36.3-1
-brave-bin 1:1.64.116-1
+brave-bin 1:1.64.122-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.3-1
 catppuccinifier-gui-bin 8.0.0-1
 cava 0.10.1-1
-cemu-bin 2.0.74-1
+cemu-bin 2.0.77-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
@@ -28,9 +28,9 @@ paccache-hook 1.1.1-2
 pacseek 1.8.3-1
 parabolic 2023.12.0-1
 pcsx2-latest-bin 1.7.5684-1
-pika-backup 1:0.7.1-1
+pika-backup 1:0.7.2-1
 proton-ge-custom-bin 1:GE_Proton9_2-1
-pyprland 2.2.4-1
+pyprland 2.2.5-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
@@ -56,7 +56,7 @@ upscayl-bin 2.10.0-1
 ventoy-bin 1.0.97-1
 vesktop-bin 1.5.1-3
 vkbasalt 0.3.2.10-1
-vscodium-bin 1.88.0.24096-1
+vscodium-bin 1.88.1.24104-1
 vscodium-bin-marketplace 1.76.0-1
 waybar-cava 0.10.0-2
 wl-clip-persist-git r34.6ba11a2-1
