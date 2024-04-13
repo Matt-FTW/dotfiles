@@ -9,7 +9,6 @@ udiskie &
 
 # Wallpaper Backend
 swww init
-"$scripts"/wallpaper random &
 
 # Bar
 waybar &

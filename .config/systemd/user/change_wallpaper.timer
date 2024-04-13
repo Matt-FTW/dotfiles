@@ -1,9 +1,0 @@
-[Unit]
-Description=Timer to change the wallpaper each 1 hours
-
-[Timer]
-OnCalendar=0/1:00:00
-Unit=change_wallpaper.service
-
-[Install]
-WantedBy=timers.target

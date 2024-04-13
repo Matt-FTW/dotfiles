@@ -1,5 +1,5 @@
 [pyprland]
-plugins = ["scratchpads", "expose", "magnify"]
+plugins = ["scratchpads", "expose", "magnify", "wallpapers"]
 
 [scratchpads.volume]
 command = "pavucontrol"
@@ -51,7 +51,7 @@ lazy = true
 
 [wallpapers]
 path = "/home/matt/.config/hypr/themes/luna/walls/"
-interval = 60                                                                                                              # change every hour
-command = "swww img --transition-bezier 0.5,1.19,.8,.4 --transition-type wipe --transition-duration 2 --transition-fps 75"
+interval = 60                                                                                                                                                                          # change every hour
+command = "swww img --transition-bezier 0.5,1.19,.8,.4 --transition-type wipe --transition-duration 2 --transition-fps 75 \"[file]\" && notify-send 'Wallpaper Changed' -i \"[file]\""
 clear_command = "swww clear"
 extensions = ["jpg", "png", "gif", "jpeg"]

@@ -1,9 +1,0 @@
-[Unit]
-Description=Change wallpaper with swww as backend
-
-[Service]
-Type=simple
-ExecStart=/home/matt/.config/hypr/scripts/wallpaper random
-
-[Install]
-WantedBy=default.target
