@@ -50,6 +50,11 @@ return {
             return not vim.fs.find({ "biome.json" }, { path = ctx.filename, upward = true })[1]
           end,
         },
+        prettierd = {
+          condition = function(self, ctx)
+            return not vim.fs.find({ "biome.json" }, { path = ctx.filename, upward = true })[1]
+          end,
+        },
       }
 
       return opts
