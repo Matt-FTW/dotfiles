@@ -111,7 +111,7 @@ window#waybar.hidden {
 #workspaces button.active {
   padding-right: 6px;
   padding-left: 6px;
-  box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+  box-shadow: rgba(0, 0, 0, 0.288) 2 2 2 2px;
   padding-bottom: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
