@@ -532,6 +532,7 @@
 - [kevinhwang91/nvim-ufo](https://dotfyle.com/plugins/kevinhwang91/nvim-ufo)
 - [chrisgrieser/nvim-recorder](https://dotfyle.com/plugins/chrisgrieser/nvim-recorder)
 - [someone-stole-my-name/yaml-companion.nvim](https://dotfyle.com/plugins/someone-stole-my-name/yaml-companion.nvim)
+- [Diogo-ss/five-server.nvim](https://dotfyle.com/plugins/Diogo-ss/five-server.nvim)
 
 </details>
 
