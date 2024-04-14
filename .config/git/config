@@ -1,3 +1,9 @@
+[includeIf "gitdir:~/Repos/Work/"]
+  path = ~/.config/git/config-work
+
+[include]
+  path = ~/.config/git/themes/catppuccin.gitconfig
+
 [user]
   name = Sergio Laín
   email = sergiolain11@gmail.com
@@ -26,11 +32,16 @@
 
 [core]
   editor = nvim
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta
   excludesfile = ~/.config/git/ignore
 
 [interactive]
-  diffFilter = diff-so-fancy --patch
+  diffFilter = delta --color-only
+
+[delta]
+  features = catppuccin-macchiato
+  side-by-side = false
+  true-color = always
 
 [merge]
   tool = nvimdiff
@@ -50,9 +61,6 @@
 
 [gpg]
   program = /sbin/gpg
-
-[includeIf "gitdir:~/Repos/Work/"]
-  path = ~/.config/git/config-work
 
 [alias]
   aliases = config --get-regexp alias

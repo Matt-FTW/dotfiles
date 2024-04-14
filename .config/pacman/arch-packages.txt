@@ -25,7 +25,6 @@ cpupower 6.7-2
 dbeaver 24.0.2-1
 dialog 1:1.3_20240307-2
 dictd 1.13.1-5
-diff-so-fancy 1.4.4-2
 dnsmasq 2.90-1
 dnsperf 2.11.2-2
 docker 1:26.0.1-1
@@ -50,6 +49,7 @@ gamemode 1.8.1-2
 gcc 13.2.1-5
 geeqie 2.4-1
 git 2.44.0-1
+git-delta 0.17.0-2
 github-cli 2.47.0-1
 glow 1.5.1-1
 gnome-disk-utility 46.0-1

@@ -24,7 +24,7 @@
       # Tools
       - github-cli
       - dbeaver
-      - diff-so-fancy
+      - git-delta
       - lazygit
       - onefetch
 
