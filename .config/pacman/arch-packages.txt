@@ -39,7 +39,7 @@ ethtool 1:6.7-1
 eza 0.18.10-1
 fakeroot 1.34-1
 fd 9.0.0-2
-fish 3.7.1-1
+fish 3.7.1-2
 fisher 4.4.4-1
 flex 2.6.4-5
 fmt 10.2.0-1
@@ -91,8 +91,8 @@ libwnck3 43.0-3
 linux 6.8.5.arch1-1
 linux-firmware 20240409.1addd7dc-1
 linux-headers 6.8.5.arch1-1
-linux-lts 6.6.26-1
-linux-lts-headers 6.6.26-1
+linux-lts 6.6.27-1
+linux-lts-headers 6.6.27-1
 linux-zen 6.8.5.zen1-1
 linux-zen-headers 6.8.5.zen1-1
 logrotate 3.21.0-2
@@ -171,11 +171,11 @@ tealdeer 1.6.1-1
 texinfo 7.1-2
 thefuck 3.32-7
 thunderbird 115.9.0-1
-tree-sitter-cli 0.22.2-1
+tree-sitter-cli 0.22.4-1
 ttf-font-awesome 6.5.2-1
 ttf-jetbrains-mono-nerd 3.2.1-1
-ttf-nerd-fonts-symbols 3.2.0-1
-ttf-nerd-fonts-symbols-mono 3.2.0-1
+ttf-nerd-fonts-symbols 3.2.1-1
+ttf-nerd-fonts-symbols-mono 3.2.1-1
 tumbler 4.18.2-1
 udiskie 2.5.2-1
 ufw 0.36.2-3
