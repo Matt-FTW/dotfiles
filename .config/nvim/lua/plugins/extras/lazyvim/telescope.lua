@@ -60,6 +60,9 @@ return {
             ["<a-l>"] = require("telescope.actions.layout").cycle_layout_prev,
             ["<C-Down>"] = actions.cycle_history_next,
             ["<C-Up>"] = actions.cycle_history_prev,
+            ["<C-Tab>"] = require("telescope.actions").select_tab_drop,
+            ["<M-h>"] = require("telescope.actions").results_scrolling_left,
+            ["<M-l>"] = require("telescope.actions").results_scrolling_right,
           },
         },
         file_ignore_patterns = {
