@@ -57,7 +57,7 @@ for i = 1, 9 do
 end
 map("n", "<leader>f<tab>", function()
   vim.ui.select(vim.api.nvim_list_tabpages(), {
-    prompt = "Select tab:",
+    prompt = "Select Tab:",
     format_item = function(tabid)
       local wins = vim.api.nvim_tabpage_list_wins(tabid)
       local not_floating_win = function(winid)
@@ -74,8 +74,9 @@ map("n", "<leader>f<tab>", function()
         end
       end
       local tabnr = vim.api.nvim_tabpage_get_number(tabid)
-      local cwd = vim.fn.fnamemodify(vim.fn.getcwd(-1, tabnr), ":t")
-      return "Tab " .. tabnr .. " (" .. cwd .. "): " .. table.concat(bufs, ",")
+      local cwd = string.format(" %8s: ", vim.fn.fnamemodify(vim.fn.getcwd(-1, tabnr), ":t"))
+      local is_current = vim.api.nvim_tabpage_get_number(0) == tabnr and "✸" or " "
+      return tabnr .. is_current .. cwd .. table.concat(bufs, ", ")
     end,
   }, function(tabid)
     if tabid ~= nil then
