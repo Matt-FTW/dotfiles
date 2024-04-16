@@ -35,6 +35,12 @@ return {
             autoImportCompletion = true,
             python = {
               analysis = {
+                diagnosticSeverityOverrides = {
+                  reportWildcardImportFromLibrary = "none",
+                  reportUnusedImport = "information",
+                  reportUnusedClass = "information",
+                  reportUnusedFunction = "information",
+                },
                 typeCheckingMode = "strict",
                 autoSearchPaths = true,
                 useLibraryCodeForTypes = true,
