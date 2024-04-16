@@ -8,7 +8,7 @@ scripts=$config/scripts
 udiskie &
 
 # Wallpaper Backend
-swww init
+swww-daemon --format xrgb &
 
 # Bar
 waybar &
