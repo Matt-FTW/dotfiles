@@ -30,6 +30,7 @@ hypridle &
 
 # Clipboard
 wl-paste --watch cliphist store &
+wl-clip-persist --clipboard regular &
 
 # Polkit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

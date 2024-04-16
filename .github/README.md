@@ -207,11 +207,11 @@ Here is all the information about my setup:
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). For CLI/TUI specific packages I recommend to use [homebrew](https://brew.sh/).
 
-1.  First, lets start with the required **base packages** for the configuration to function. Assumming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
+1.  First, lets start with the required **base packages** for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
 
     ```bash
     yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-            swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard \
+            swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard wl-clip-persist-git \
             pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
             catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
     ```

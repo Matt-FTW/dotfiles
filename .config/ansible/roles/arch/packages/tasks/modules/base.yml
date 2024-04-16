@@ -127,6 +127,7 @@
       - nwg-look
       - pyprland
       - rofi-lboon-wayland
+      - wl-clip-persist-git
 
       # Hooks
       - check-broken-packages-pacman-hook-git
