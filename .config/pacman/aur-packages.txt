@@ -30,7 +30,7 @@ parabolic 2023.12.0-1
 pcsx2-latest-bin 1.7.5684-1
 pika-backup 1:0.7.2-1
 proton-ge-custom-bin 1:GE_Proton9_4-1
-pyprland 2.2.7-1
+pyprland 2.2.8-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
