@@ -38,6 +38,7 @@ efibootmgr 18-3
 ethtool 1:6.7-1
 eza 0.18.11-1
 fakeroot 1.34-1
+fastfetch 2.9.2-1
 fd 9.0.0-2
 fish 3.7.1-2
 fisher 4.4.4-1

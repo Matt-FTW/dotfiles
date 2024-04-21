@@ -72,6 +72,7 @@
       - ripgrep-all
       - sd
       - jq
+      - fastfetch
 
       # Productivity
       - libreoffice-fresh

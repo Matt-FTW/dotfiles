@@ -151,7 +151,7 @@ Here is all the information about my setup:
 | **Audio Visualizer**        | [cava](https://github.com/karlstav/cava) [:gear:](../.config/cava/)                              |
 | **System Monitor**          | [btop](https://github.com/aristocratos/btop) [:gear:](../.config/btop/)                          |
 | **GPU Monitor**             | [nvtop](https://github.com/Syllo/nvtop)                                                          |
-| **System Fetch**            | [neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)                |
+| **System Fetch**            | [fastfetch](https://github.com/fastfetch-cli/fastfetch) [:gear:](../.config/fastfetch/)          |
 | **Git Fetch**               | [onefetch](https://github.com/o2sh/onefetch)                                                     |
 | **Keybindings TUI**         | [keyb](https://github.com/kencx/keyb) [:gear:](../.config/keyb/)                                 |
 
@@ -245,7 +245,7 @@ Here is all the information about my setup:
     - Useful CLI/TUI packages
 
     ```bash
-    yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade
+    yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade fastfetch
     ```
 
     - Useful GUI packages
