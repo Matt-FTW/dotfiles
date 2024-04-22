@@ -222,3 +222,6 @@ map("n", "go", "<Cmd>call append(line('.'), repeat([''], v:count1))<CR>", { desc
 
 -- Insert Mode
 map({ "c", "i", "t" }, "<M-BS>", "<C-w>", { desc = "Delete Word" })
+
+-- Git
+map("n", "<leader>ghB", LazyVim.lazygit.blame_line, { desc = "Blame Line (LazyGit)" })
