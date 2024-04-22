@@ -50,7 +50,7 @@ return {
             },
           },
         },
-        ruff_lsp = {
+        ruff = {
           handlers = {
             ["textDocument/publishDiagnostics"] = function() end,
           },
