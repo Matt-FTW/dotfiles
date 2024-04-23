@@ -259,6 +259,7 @@
 - [akinsho/git-conflict.nvim](https://dotfyle.com/plugins/akinsho/git-conflict.nvim)
 - [sindrets/diffview.nvim](https://dotfyle.com/plugins/sindrets/diffview.nvim)
 - [NeogitOrg/neogit](https://dotfyle.com/plugins/NeogitOrg/neogit)
+- [FabijanZulj/blame.nvim](https://dotfyle.com/plugins/FabijanZulj/blame.nvim)
 
 </details>
 
