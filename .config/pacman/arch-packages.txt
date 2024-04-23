@@ -22,7 +22,7 @@ celluloid 0.26-1
 clamtk 6.14-1
 cliphist 1:0.5.0-1
 cpupower 6.7-2
-dbeaver 24.0.2-1
+dbeaver 24.0.3-1
 dialog 1:1.3_20240307-2
 dictd 1.13.1-5
 dnsmasq 2.90-1
@@ -38,7 +38,7 @@ efibootmgr 18-3
 ethtool 1:6.7-1
 eza 0.18.11-1
 fakeroot 1.34-1
-fastfetch 2.9.2-1
+fastfetch 2.10.1-1
 fd 9.0.0-2
 fish 3.7.1-2
 fisher 4.4.4-1
@@ -51,13 +51,13 @@ gcc 13.2.1-5
 geeqie 2.4-1
 git 2.44.0-1
 git-delta 0.17.0-2
-github-cli 2.48.0-1
+github-cli 2.48.0-2
 glow 1.5.1-1
 gnome-disk-utility 46.0-1
 gnome-logs 45.0-1
 go 2:1.22.2-1
 gparted 1.6.0-1
-greetd 0.9.0-3
+greetd 0.10.0-1
 grim 1.4.1-1
 groff 1.23.0-5
 grub 2:2.12-2
@@ -70,7 +70,7 @@ hypridle 0.1.2-1
 hyprland 0.39.1-5
 hyprlock 0.3.0-1
 i2c-tools 4.3-4
-imagemagick 7.1.1.30-2
+imagemagick 7.1.1.31-1
 imwheel 1.0.0pre12-6
 inotify-tools 4.23.9.0-1
 iptables-nft 1:1.8.10-1
@@ -121,6 +121,7 @@ npm 10.5.2-1
 ntfs-3g 2022.10.3-1
 nvtop 3.1.0-1
 nwg-look 0.2.7-1
+obs-studio 30.1.1-1
 obsidian 1.5.12-1
 onefetch 2.20.0-3
 openbsd-netcat 1.226_1-2
@@ -171,7 +172,7 @@ syncthing 1.27.6-1
 tealdeer 1.6.1-1
 texinfo 7.1-2
 thefuck 3.32-7
-thunderbird 115.10.0-1
+thunderbird 115.10.1-1
 tree-sitter-cli 0.22.5-1
 ttf-font-awesome 6.5.2-1
 ttf-jetbrains-mono-nerd 3.2.1-1
@@ -194,6 +195,7 @@ wget 1.24.5-1
 which 2.21-6
 wine 9.6-1
 wl-clipboard 1:2.2.1-1
+wlr-randr 0.4.1-4
 wmctrl 1.07-6
 wpa_supplicant 2:2.10-8
 xdg-desktop-portal-hyprland 1.3.1-6

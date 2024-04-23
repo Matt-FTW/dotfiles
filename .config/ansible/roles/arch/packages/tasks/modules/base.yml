@@ -27,6 +27,7 @@
       - hyprlock
       - hypridle
       - wev
+      - swaync
       - wl-clipboard
       - xdg-desktop-portal-hyprland
       - kitty
@@ -119,7 +120,6 @@
       # WM
       - waybar-cava
       - wleave-git
-      - swaync
       - swayosd-git
       - swww
       - satty
