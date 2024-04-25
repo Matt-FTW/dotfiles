@@ -14,49 +14,38 @@ case $app in
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
 		hyprctl dispatch exec [workspace 4] nemo &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 14] nemo &
+		hyprctl dispatch exec [workspace 13] nemo &
 	else
 		nemo &
 	fi
 	;;
 "obsidian")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 10] obsidian &
+		hyprctl dispatch exec [workspace 9] obsidian &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 20] obsidian &
+		hyprctl dispatch exec [workspace 18] obsidian &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec [workspace 30] obsidian &
+		hyprctl dispatch exec [workspace 27] obsidian &
 	else
 		obsidian &
 	fi
 	;;
 "office")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 10] libreoffice &
+		hyprctl dispatch exec [workspace 9] libreoffice &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 20] libreoffice &
+		hyprctl dispatch exec [workspace 18] libreoffice &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec [workspace 30] libreoffice &
+		hyprctl dispatch exec [workspace 27] libreoffice &
 	else
 		libreoffice &
-	fi
-	;;
-"kitty")
-	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 3] kitty &
-	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 13] kitty &
-	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch exec "[workspace 24] kitty --class center-float-large" &
-	else
-		kitty &
 	fi
 	;;
 "nvim")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
 		hyprctl dispatch exec [workspace 2] kitty nvim &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 12] kitty nvim &
+		hyprctl dispatch exec [workspace 11] kitty nvim &
 	else
 		kitty nvim &
 	fi
@@ -65,7 +54,7 @@ case $app in
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
 		hyprctl dispatch workspace 2 && codium &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch workspace 12 && codium &
+		hyprctl dispatch workspace 11 && codium &
 	else
 		codium
 	fi
@@ -74,9 +63,9 @@ case $app in
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
 		hyprctl dispatch workspace 1 && librewolf & # Had to to this because it didnt work the other way
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch workspace 11 && librewolf &
+		hyprctl dispatch workspace 10 && librewolf &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch workspace 25 && librewolf &
+		hyprctl dispatch workspace 23 && librewolf &
 	else
 		librewolf &
 	fi

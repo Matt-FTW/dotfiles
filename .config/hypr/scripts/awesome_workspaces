@@ -2,7 +2,7 @@
 
 monitors=($(hyprctl monitors -j | jq -r '.[].id'))
 
-ws_per_monitor=10
+ws_per_monitor=9
 
 monitor=$(hyprctl activeworkspace -j | jq -r '.monitorID')
 
