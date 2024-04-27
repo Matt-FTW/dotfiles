@@ -12,9 +12,9 @@ source ~/.config/hypr/scripts/monitors
 case $app in
 "nemo")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch exec [workspace 4] nemo &
+		hyprctl dispatch exec [workspace 3] nemo &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch exec [workspace 13] nemo &
+		hyprctl dispatch exec [workspace 12] nemo &
 	else
 		nemo &
 	fi
@@ -59,13 +59,13 @@ case $app in
 		codium
 	fi
 	;;
-"librewolf")
+"browser")
 	if [ "$FOCUSED_MONITOR" = "$MONITOR1" ]; then
-		hyprctl dispatch workspace 1 && librewolf & # Had to to this because it didnt work the other way
+		hyprctl dispatch workspace 1 && floorp & # Had to to this because it didnt work the other way
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR2" ]; then
-		hyprctl dispatch workspace 10 && librewolf &
+		hyprctl dispatch workspace 10 && floorp &
 	elif [ "$FOCUSED_MONITOR" = "$MONITOR3" ]; then
-		hyprctl dispatch workspace 23 && librewolf &
+		hyprctl dispatch workspace 23 && floorp &
 	else
 		librewolf &
 	fi
