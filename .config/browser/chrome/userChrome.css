@@ -161,10 +161,6 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
   height: calc((var(--TabsHeight) * 1px + var(--TabsBorder) * 1px) + 0px);
 }
 
-#nav-bar {
-  margin-left: 35px !important;
-}
-
 #urlbar-container {
   min-width: 0px !important;
   flex: auto !important;
