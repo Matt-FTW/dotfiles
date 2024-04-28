@@ -211,7 +211,7 @@ Here is all the information about my setup:
 
     ```bash
     yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-            swww waybar-cava wleave-git rofi-lboon-wayland swaync swayosd-git wl-clipboard wl-clip-persist-git \
+            swww waybar-cava wleave-git rofi-wayland swaync swayosd-git wl-clipboard wl-clip-persist-git \
             pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
             catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
     ```

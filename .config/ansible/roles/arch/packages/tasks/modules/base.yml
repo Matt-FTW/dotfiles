@@ -31,6 +31,7 @@
       - wl-clipboard
       - xdg-desktop-portal-hyprland
       - kitty
+      - rofi-wayland
 
       # File Manager
       - yazi
@@ -127,7 +128,6 @@
       - nwg-displays
       - nwg-look
       - pyprland
-      - rofi-lboon-wayland
       - wl-clip-persist-git
 
       # Hooks

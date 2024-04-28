@@ -33,7 +33,6 @@ pyprland 2.2.14-1
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1
-rofi-lbonn-wayland 1.7.5+wayland3-1
 rpcs3-bin 0.0.31-1
 ryujinx-bin 1.1.1291-1
 satty 0.12.0-1
