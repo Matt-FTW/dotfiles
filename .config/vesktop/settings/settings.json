@@ -394,9 +394,6 @@
         "ShowMeYourName": {
             "enabled": false
         },
-        "ShowTimeouts": {
-            "enabled": false
-        },
         "SilentMessageToggle": {
             "enabled": false
         },
@@ -509,6 +506,9 @@
             "guild": true,
             "everyone": true,
             "role": true
+        },
+        "ShowHiddenThings": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -521,6 +521,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1708114548080
+        "settingsSyncVersion": 1713951071849
     }
 }

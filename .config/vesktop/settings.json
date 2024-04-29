@@ -4,5 +4,6 @@
     "arRPC": "on",
     "splashColor": "rgb(202, 211, 245)",
     "splashBackground": "rgb(36, 39, 58)",
-    "enableMenu": false
+    "enableMenu": false,
+    "disableMinSize": true
 }
