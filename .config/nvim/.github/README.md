@@ -513,6 +513,7 @@
 <summary><b>🔧 Utility</b></summary>
 
 - [zbirenbaum/neodim](https://dotfyle.com/plugins/zbirenbaum/neodim)
+- [zapling/mason-lock.nvim](https://dotfyle.com/plugins/zapling/mason-lock.nvim)
 - [mistricky/codesnap.nvim](https://dotfyle.com/plugins/mistricky/codesnap.nvim)
 - [malbertzard/inline-fold.nvim](https://dotfyle.com/plugins/malbertzard/inline-fold.nvim)
 - [dmmulroy/ts-error-translator.nvim](https://dotfyle.com/plugins/dmmulroy/ts-error-translator.nvim)
