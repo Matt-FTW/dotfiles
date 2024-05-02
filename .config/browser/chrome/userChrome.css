@@ -9,28 +9,16 @@
 /*------------------------------------------------*/
 /* Background Color */
 
-@media (prefers-color-scheme: dark) {
-  #tabbrowser-tabbox,
-  #tabbrowser-tabpanels,
-  #browser,
-  #appcontent {
-    background-image: url(night-lake.jpg) !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
+#browser {
+  background-image: url(arch-logo.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
-@media (prefers-color-scheme: light) {
-  #navigator-toolbox,
-  #sidebar-box,
-  #tabbrowser-tabbox,
-  #tabbrowser-tabpanels,
-  #browser,
-  #appcontent,
-  #sidebar-select-box,
-  .browser-sidebar2,
-  tab.tabbrowser-tab * {
-    background-color: #e6e6e6 !important;
-  }
+
+#tabbrowser-tabpanels,
+#appcontent,
+#tabbrowser-tabbox {
+  background: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -673,7 +661,7 @@ tab,
 /* Expand Side bar on hover */
 
 #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
-  --sidebar-width: 40px;
+  --sidebar-width: 69px;
   --sidebar-hover-width: 350px;
   background: none !important;
   position: relative;
@@ -789,7 +777,7 @@ tab,
 @media (prefers-color-scheme: dark) {
   #sidebar2-box browser {
     border-radius: 15px !important;
-    margin: 10px 10px 10px 0px !important;
+    margin: 3px 10px 10px 0px !important;
     border: 3px solid rgba(0, 0, 0, 0);
     transition: border 0.3s ease;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -799,6 +787,10 @@ tab,
     border: 3px solid rgba(183, 189, 248, 0.4) !important;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
   }
+}
+
+.browser-sidebar2 {
+  background: none !important;
 }
 
 @media (prefers-color-scheme: light) {
