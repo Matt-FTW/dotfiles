@@ -10,9 +10,7 @@
 /* Background Color */
 
 #browser {
-  background-image: url(arch-logo.png) !important;
-  background-size: cover !important;
-  background-position: center !important;
+  background-color: #1e2030 !important;
 }
 
 #tabbrowser-tabpanels,
