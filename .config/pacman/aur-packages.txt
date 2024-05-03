@@ -1,7 +1,7 @@
 adwsteamgtk 0.6.10-1
 android-sdk-platform-tools 35.0.1-1
 atlauncher-bin 3.4.36.3-1
-brave-bin 1:1.65.123-1
+brave-bin 1:1.65.126-1
 catppuccin-cursors-macchiato 0.2.0-1
 catppuccin-gtk-theme-macchiato 0.7.3-1
 catppuccinifier-gui-bin 8.0.0-1
@@ -18,11 +18,11 @@ heroic-games-launcher-bin 2.14.1-1
 hyprpicker 0.2.0-2
 lazydocker 0.23.1-1
 lazynpm 0.1.4-1
-librewolf-bin 125.0.2-1.1
+librewolf-bin 125.0.3-1.1
 ludusavi 0.23.0-1
-mise 2024.4.8-1
+mise 2024.5.2-1
 needrestart 3.6-3
-nwg-displays 0.3.16-2
+nwg-displays 0.3.18-1
 paccache-hook 1.1.1-2
 pacseek 1.8.3-1
 parabolic 2023.12.0-1
@@ -38,11 +38,11 @@ ryujinx-bin 1.1.1291-1
 satty 0.12.0-1
 scc-bin 3.2.0-1
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.36.9-1
+spicetify-cli 2.36.10-1
 spotdl 4.2.5-5
 spotify 1:1.2.31.1205-2
 swayosd-git r55.a0709bc-1
-swww 0.9.3-1
+swww 0.9.5-1
 sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
 tgpt-bin 2.7.3-1
