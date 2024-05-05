@@ -18,7 +18,7 @@ layout {
                 command_git_branch_interval    "10"
                 command_git_branch_rendermode  "static"
 
-                hide_frame_for_single_pane "true"
+                hide_frame_for_single_pane "false"
 
                 mode_normal        "#[bg=blue]  "
                 mode_locked        "#[bg=red]  "
