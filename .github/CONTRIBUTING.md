@@ -65,4 +65,4 @@ Thank you for your interest in contributing to Community Standards! We welcome a
 
 ## Contact
 
-If you have any questions, feel free to contact via [GitHub Discussions](https://github.com/Matt-FTW/dotfiles/discussions) or via email at sergiolain11@gmail.com
+If you have any questions, feel free to contact via [GitHub Discussions](https://github.com/Matt-FTW/dotfiles/discussions) or via email at sergio.lac@pm.me
