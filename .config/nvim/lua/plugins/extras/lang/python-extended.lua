@@ -1,6 +1,7 @@
 -- LSP Server to use for Python.
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_ruff = "ruff"
 
 return {
   { import = "lazyvim.plugins.extras.lang.python" },
@@ -50,7 +51,7 @@ return {
             },
           },
         },
-        ruff = {
+        [vim.g.lazyvim_python_ruff] = {
           handlers = {
             ["textDocument/publishDiagnostics"] = function() end,
           },
