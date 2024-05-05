@@ -58,10 +58,12 @@
             "enabled": true
         },
         "AlwaysTrust": {
-            "enabled": true
+            "enabled": true,
+            "domain": true,
+            "file": true
         },
         "AnonymiseFileNames": {
-            "enabled": false,
+            "enabled": true,
             "anonymiseByDefault": true,
             "method": 0,
             "randomisedLength": 7,
@@ -86,7 +88,7 @@
             "enabled": false
         },
         "BetterGifPicker": {
-            "enabled": false
+            "enabled": true
         },
         "BetterNotesBox": {
             "enabled": false
@@ -95,7 +97,7 @@
             "enabled": false
         },
         "BetterUploadButton": {
-            "enabled": false
+            "enabled": true
         },
         "BiggerStreamPreview": {
             "enabled": true
@@ -148,14 +150,16 @@
         },
         "FakeNitro": {
             "enabled": true,
-            "enableEmojiBypass": true,
+            "enableEmojiBypass": false,
             "emojiSize": 48,
-            "transformEmojis": true,
-            "enableStickerBypass": true,
+            "transformEmojis": false,
+            "enableStickerBypass": false,
             "stickerSize": 160,
-            "transformStickers": true,
+            "transformStickers": false,
             "transformCompoundSentence": false,
-            "enableStreamQualityBypass": true
+            "enableStreamQualityBypass": true,
+            "useHyperLinks": false,
+            "hyperLinkText": "{{NAME}}"
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -170,7 +174,8 @@
             "enabled": true
         },
         "FixSpotifyEmbeds": {
-            "enabled": false
+            "enabled": false,
+            "volume": 10
         },
         "FixYoutubeEmbeds": {
             "enabled": false
@@ -204,7 +209,8 @@
             "enabled": true
         },
         "InvisibleChat": {
-            "enabled": false
+            "enabled": false,
+            "savedPasswords": "password, Password"
         },
         "KeepCurrentChannel": {
             "enabled": false
@@ -219,7 +225,11 @@
             "enabled": false
         },
         "MessageClickActions": {
-            "enabled": false
+            "enabled": true,
+            "enableDeleteOnClick": true,
+            "enableDoubleClickToEdit": true,
+            "enableDoubleClickToReply": true,
+            "requireModifier": false
         },
         "MessageLinkEmbeds": {
             "enabled": false
@@ -228,7 +238,8 @@
             "enabled": false
         },
         "MessageTags": {
-            "enabled": false
+            "enabled": false,
+            "clyde": true
         },
         "MoreCommands": {
             "enabled": false
@@ -437,7 +448,7 @@
             "includeCurrentChannel": true
         },
         "TypingTweaks": {
-            "enabled": false
+            "enabled": true
         },
         "Unindent": {
             "enabled": false
@@ -509,6 +520,36 @@
         },
         "ShowHiddenThings": {
             "enabled": false
+        },
+        "BetterRoleContext": {
+            "enabled": false
+        },
+        "BetterSessions": {
+            "enabled": false
+        },
+        "BetterSettings": {
+            "enabled": true,
+            "disableFade": true,
+            "organizeMenu": true,
+            "eagerLoad": true
+        },
+        "FriendsSince": {
+            "enabled": true
+        },
+        "ImplicitRelationships": {
+            "enabled": false
+        },
+        "OverrideForumDefaults": {
+            "enabled": false
+        },
+        "ResurrectHome": {
+            "enabled": false
+        },
+        "StreamerModeOnStream": {
+            "enabled": false
+        },
+        "UnlockedAvatarZoom": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -521,6 +562,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1713951071849
+        "settingsSyncVersion": 1714825835729
     }
 }
