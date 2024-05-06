@@ -28,7 +28,7 @@
   allow = always
 
 [credential]
-  helper = libsecret
+  helper = store
 
 [core]
   editor = nvim
