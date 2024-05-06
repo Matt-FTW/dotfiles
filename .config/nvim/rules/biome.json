@@ -1,5 +1,6 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.6.3/schema.json",
+  // Use the schema of the version installed from mason
+  "$schema": "~/.local/share/nvim/mason/packages/biome/node_modules/@biomejs/biome/configuration_schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -25,6 +26,11 @@
     "rules": {
       "all": true
     }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
   },
   "json": {
     "parser": { "allowComments": true } // for `tsconfig.json`
