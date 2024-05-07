@@ -122,6 +122,7 @@
   pacman:
     name:
       - greetd
+      - greetd-tuigreet
 
 - name: enable and start greeter
   systemd:

@@ -58,6 +58,7 @@ gnome-logs 45.0-1
 go 2:1.22.2-1
 gparted 1.6.0-1
 greetd 0.10.0-1
+greetd-tuigreet 0.8.0-2
 grim 1.4.1-1
 groff 1.23.0-5
 grub 2:2.12-2

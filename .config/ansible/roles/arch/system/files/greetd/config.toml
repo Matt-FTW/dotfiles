@@ -1,10 +1,6 @@
 [terminal]
-vt = 1
+vt = 8
 
 [default_session]
-command = "agreety -c Hyprland"
+command = "tuigreet --remember --time -c 'Hyprland > /dev/null 2>&1'"
 user = "greeter"
-
-[initial_session]
-command = "Hyprland"
-user = "matt"
