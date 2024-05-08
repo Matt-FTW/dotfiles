@@ -1,4 +1,3 @@
 #!/usr/bin/bash
 
---ignore-file=~/.config/fd/ignore
 --smart-case
