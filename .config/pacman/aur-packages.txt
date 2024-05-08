@@ -1,4 +1,4 @@
-adwsteamgtk 0.6.10-1
+adwsteamgtk 0.6.11-1
 android-sdk-platform-tools 35.0.1-1
 atlauncher-bin 3.4.36.3-1
 brave-bin 1:1.65.126-1
@@ -8,10 +8,11 @@ catppuccinifier-gui-bin 8.0.0-1
 cava 0.10.1-1
 cemu-bin 2.0.82-1
 check-broken-packages-pacman-hook-git r97.313dd92-1
+clipse 0.0.71-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6757.g7626a9b-1
-floorp-bin 11.12.2-1
+floorp-bin 11.12.2-2
 gtrash-bin 0.0.5-1
 gzdoom 4.11.3-2
 heroic-games-launcher-bin 2.14.1-1
@@ -30,7 +31,7 @@ pcsx2-latest-bin 1.7.5684-1
 pika-backup 1:0.7.2-1
 pinterest-downloader-git f69006c.20230501.171-1
 proton-ge-custom-bin 1:GE_Proton9_4-1
-proton-vpn-gtk-app 4.3.1-1
+proton-vpn-gtk-app 4.3.1-2
 protonvpn-cli-community 2.2.12-1
 pyprland 2.2.17-1
 qt5-styleplugins 5.0.0.20170311-35
@@ -41,7 +42,7 @@ ryujinx-bin 1.1.1291-1
 satty 0.12.0-1
 scc-bin 3.2.0-1
 selectdefaultapplication-fork-git r72.4e8501d-1
-spicetify-cli 2.36.10-1
+spicetify-cli 2.36.11-1
 spotdl 4.2.5-5
 spotify 1:1.2.31.1205-2
 swayosd-git r55.a0709bc-1
@@ -50,7 +51,7 @@ sync-pacman-hook-git r89.f1fa692-1
 sysz 1.4.3-1
 tgpt-bin 2.7.3-1
 topgrade 14.0.1-1
-ttf-ms-win11-auto 10.0.22631.2428-1
+ttf-ms-win11-auto 10.0.22631.2428-2
 ttf-symbola 14.00-1
 universal-android-debloater 1.0.3-1
 upscayl-bin 2.11.0-1
