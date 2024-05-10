@@ -169,7 +169,7 @@ Here is all the information about my setup:
 | **Email Client**         | [Thunderbird](https://www.thunderbird.net/)                                                                             |
 | **PDF Viewer**           | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                             |
 | **Note Taking App**      | 💖 [Obsidian](https://obsidian.md/) [:gear:](../.config/obsidian/)                                                      |
-| **Video Player**         | [Celluloid](https://celluloid-player.github.io/) ([MPV](https://mpv.io/) frontend) [:gear:](../.config/mpv/)            |
+| **Video Player**         | [MPV](https://mpv.io/) [:gear:](../.config/mpv/)                                                                        |
 | **Image Viewer**         | [geeqie](https://www.geeqie.org/) [:gear:](../.config/geeqie/)                                                          |
 | **File Manager**         | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                              |
 | **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                      |
@@ -224,10 +224,10 @@ Here is all the information about my setup:
 
     ```bash
     yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
-            ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv celluloid
+            ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
     ```
 
-    Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv + celluloid), etc.
+    Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
 
     - Bluetooth
 

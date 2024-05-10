@@ -84,7 +84,6 @@
       - zathura-pdf-mupdf
 
       # Multimedia
-      - celluloid
       - geeqie
       - imagemagick
       - mpv
