@@ -32,6 +32,7 @@ pika-backup 1:0.7.2-1
 pinterest-downloader-git f69006c.20230501.171-1
 proton-ge-custom-bin 1:GE_Proton9_5-1
 proton-vpn-gtk-app 4.3.1-2
+protonmail-bridge-bin 3.10.0-1
 protonvpn-cli-community 2.2.12-1
 pyprland 2.2.18-1
 qt5-styleplugins 5.0.0.20170311-35

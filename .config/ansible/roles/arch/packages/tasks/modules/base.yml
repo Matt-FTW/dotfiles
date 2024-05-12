@@ -56,6 +56,7 @@
       - grim
       - nm-connection-editor
       - xwaylandvideobridge
+      - gnome-keyring
 
       # Bluetooth
       - bluez
@@ -151,6 +152,7 @@
       - android-sdk-platform-tools
       - pika-backup
       - rar
+      - protonmail-bridge-bin
 
       # Theme
       - catppuccin-gtk-theme-macchiato

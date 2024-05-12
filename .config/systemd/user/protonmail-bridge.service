@@ -1,0 +1,10 @@
+[Unit]
+Description=Protonmail client bridge service
+
+[Service]
+Type=simple
+StandardOutput=journal
+ExecStart=/usr/bin/protonmail-bridge --no-window
+
+[Install]
+WantedBy=default.target
