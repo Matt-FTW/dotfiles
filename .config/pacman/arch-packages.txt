@@ -184,7 +184,7 @@ ufw 0.36.2-4
 upower 1.90.4-1
 v4l2loopback-dkms 0.13.1-1
 vde2 2.3.3-5
-vim 9.1.0405-1
+vim 9.1.0408-1
 virt-manager 4.1.0-3
 vivid 0.9.0-1
 vkd3d 1.11-1
