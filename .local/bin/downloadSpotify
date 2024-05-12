@@ -13,15 +13,13 @@ MUSIC_FOLDER="$HOME/Musica/Listen-To"
 
 notify "Started syncing..."
 
-while IFS= read -r -d '' FOLDER; do
-	FOLDER_NAME=$(basename "$FOLDER")
-
-	SPOTDL_FILE=$(find "$FOLDER" -maxdepth 1 -type f -name '*.spotdl' -print -quit)
-	if [ -n "$SPOTDL_FILE" ]; then
+while IFS= read -r -d '' SPOTDL_FILE; do
+	if [[ -f "$SPOTDL_FILE" && "$SPOTDL_FILE" == *.spotdl ]]; then
+		FOLDER_NAME=$(basename "$(dirname "$SPOTDL_FILE")")
 		cd "$(dirname "$SPOTDL_FILE")" || continue
 		spotdl sync "$(basename "$SPOTDL_FILE")"
 		notify "Synced $FOLDER_NAME"
 	fi
-done < <(find "$MUSIC_FOLDER" -mindepth 1 -maxdepth 1 -type d -print0)
+done < <(find "$MUSIC_FOLDER" -mindepth 1 -maxdepth 3 -type f -name '*.spotdl' -print0)
 
 notify "Spotdl Sync Complete"
