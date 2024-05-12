@@ -9,23 +9,19 @@ if ! command -v spotdl &>/dev/null; then
 	exit 1
 fi
 
-FOLDERS=(
-	"EDM-House"
-	"Metal-Rock"
-	"Synth-Chill"
-	"Lofi-Sleppy"
-	"Space-Cyberpunk"
-	"Cyberpunk-Darksynth"
-)
+MUSIC_FOLDER="$HOME/Musica/Listen-To"
 
 notify "Started syncing..."
 
-for FOLDER in "${FOLDERS[@]}"; do
-	cd "$HOME/Musica/Listen-To/$FOLDER" || continue
+while IFS= read -r -d '' FOLDER; do
+	FOLDER_NAME=$(basename "$FOLDER")
 
-	spotdl sync "${FOLDER,,}.spotdl"
-
-	notify "$FOLDER synced"
-done
+	SPOTDL_FILE=$(find "$FOLDER" -maxdepth 1 -type f -name '*.spotdl' -print -quit)
+	if [ -n "$SPOTDL_FILE" ]; then
+		cd "$(dirname "$SPOTDL_FILE")" || continue
+		spotdl sync "$(basename "$SPOTDL_FILE")"
+		notify "Synced $FOLDER_NAME"
+	fi
+done < <(find "$MUSIC_FOLDER" -mindepth 1 -maxdepth 1 -type d -print0)
 
 notify "Spotdl Sync Complete"
