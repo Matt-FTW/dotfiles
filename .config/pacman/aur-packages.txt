@@ -21,7 +21,7 @@ lazydocker 0.23.1-2
 lazynpm 0.1.4-1
 librewolf-bin 125.0.3-1.1
 ludusavi 0.23.0-1
-mise 2024.5.2-1
+mise 2024.5.12-1
 needrestart 3.6-3
 nwg-displays 0.3.18-1
 paccache-hook 1.1.1-2
@@ -34,7 +34,7 @@ proton-ge-custom-bin 1:GE_Proton9_5-1
 proton-vpn-gtk-app 4.3.1-2
 protonmail-bridge-bin 3.10.0-1
 protonvpn-cli-community 2.2.12-1
-pyprland 2.2.18-1
+pyprland 2.2.20-2
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.00-1
 reflector-pacman-hook-git r87.eec94bd-1

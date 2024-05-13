@@ -79,14 +79,14 @@ kitty 0.33.1-4
 krita 5.2.2-9
 lazygit 0.41.0-1
 lib32-libnm 1.46.0-1
-lib32-libva-mesa-driver 1:24.0.6-2
-lib32-mesa-vdpau 1:24.0.6-2
-lib32-opencl-clover-mesa 1:24.0.6-2
-lib32-vulkan-radeon 1:24.0.6-2
+lib32-libva-mesa-driver 1:24.0.7-3
+lib32-mesa-vdpau 1:24.0.7-3
+lib32-opencl-clover-mesa 1:24.0.7-3
+lib32-vulkan-radeon 1:24.0.7-3
 libnma-gtk4 1.10.6-2
 libreoffice-fresh 24.2.3-2
 libtool 2.4.7+83+g7b091831-1
-libva-mesa-driver 1:24.0.6-2
+libva-mesa-driver 1:24.0.7-3
 libva-utils 2.21.0-1
 libwnck3 43.0-3
 linux 6.8.9.arch1-2
@@ -104,7 +104,7 @@ lxappearance 0.6.3-4
 m4 1.4.19-3
 maim 5.8.0-1
 make 4.4.1-2
-mesa-vdpau 1:24.0.6-2
+mesa-vdpau 1:24.0.7-3
 meson 1.4.0-5
 mpc 0.35-1
 mpv 1:0.38.0-2
@@ -117,7 +117,7 @@ nemo-python 6.0.1-2
 net-tools 2.10-2
 network-manager-applet 1.36.0-1
 networkmanager 1.46.0-2
-nodejs 21.7.3-1
+nodejs 22.0.0-1
 npm 10.7.0-1
 ntfs-3g 2022.10.3-1
 nvtop 3.1.0-1
@@ -147,7 +147,7 @@ python-pipx 1.5.0-2
 python-pyquery 2.0.0-4
 qemu-base 9.0.0-1
 qemu-emulators-full 9.0.0-1
-qpwgraph 0.7.1-1
+qpwgraph 0.7.2-1
 qt5-graphicaleffects 5.15.13-1
 qt5-quickcontrols 5.15.13-1
 qt5-quickcontrols2 5.15.13+kde+r5-1
@@ -189,7 +189,7 @@ vim 9.1.0408-1
 virt-manager 4.1.0-3
 vivid 0.9.0-1
 vkd3d 1.11-1
-vulkan-radeon 1:24.0.6-2
+vulkan-radeon 1:24.0.7-3
 w3m 0.5.3.git20230713_1-1
 wev 1.0.0-13
 wget 1.24.5-2
@@ -252,6 +252,6 @@ yapf 0.40.2-2
 yarn 1.22.22-1
 yazi 0.2.5-2
 zathura 0.5.6-2
-zathura-pdf-mupdf 0.4.1-20
+zathura-pdf-mupdf 0.4.1-21
 zellij 0.40.1-1
 zoxide 0.9.4-2
