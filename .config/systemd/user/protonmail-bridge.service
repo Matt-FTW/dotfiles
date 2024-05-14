@@ -1,10 +1,12 @@
 [Unit]
 Description=Protonmail client bridge service
+PartOf=graphical-session.target
+After=graphical-session.target
 
 [Service]
-Type=simple
+Type=exec
 StandardOutput=journal
 ExecStart=/usr/bin/protonmail-bridge --no-window
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
