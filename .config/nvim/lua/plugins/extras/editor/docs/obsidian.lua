@@ -8,7 +8,6 @@ return {
       { "<leader>sO", "<cmd>ObsidianSearch<CR>", desc = "Obsidian Grep" },
       { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "New Note" },
       { "<leader>o<space>", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find Files" },
-      { "<leader>fo", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find Obsidian Files" },
       { "<leader>ob", "<cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
       { "<leader>ot", "<cmd>ObsidianTags<CR>", desc = "Tags" },
       { "<leader>ot", "<cmd>ObsidianTemplate<CR>", desc = "Template" },
