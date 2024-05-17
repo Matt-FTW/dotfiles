@@ -191,6 +191,7 @@ vivid 0.9.0-1
 vkd3d 1.11-1
 vulkan-radeon 1:24.0.7-3
 w3m 0.5.3.git20230713_1-1
+waybar 0.10.3-1
 wev 1.0.0-13
 wget 1.24.5-2
 which 2.21-6

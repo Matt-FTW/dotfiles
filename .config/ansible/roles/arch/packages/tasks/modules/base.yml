@@ -28,6 +28,7 @@
       - hypridle
       - wev
       - swaync
+      - waybar
       - wl-clipboard
       - xdg-desktop-portal-hyprland
       - kitty
@@ -119,7 +120,6 @@
       - floorp-bin
 
       # WM
-      - waybar-cava
       - wleave-git
       - swayosd-git
       - swww

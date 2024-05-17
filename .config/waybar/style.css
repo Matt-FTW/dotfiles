@@ -6,6 +6,7 @@
 
 /* General Settings */
 #cava,
+#custom-cava,
 #custom-clipboard,
 #custom-notifications,
 #custom-arch,
@@ -143,6 +144,11 @@ window#waybar.hidden {
 }
 
 /* Individual Modules */
+#custom-cava {
+  color: rgb(183, 189, 248);
+  border-radius: 12px;
+}
+
 #cpu {
   background-color: #24273a;
   color: #8aadf4;
