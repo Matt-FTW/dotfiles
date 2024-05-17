@@ -1,4 +1,4 @@
-amd-ucode 20240409.1addd7dc-1
+amd-ucode 20240510.b9d2bf23-1
 android-file-transfer 4.3-1
 android-tools 35.0.1-1
 ansible 9.5.1-1
@@ -20,7 +20,7 @@ btop 1.3.2-1
 calf 0.90.3-6
 clamtk 6.14-1
 cliphist 1:0.5.0-1
-cpupower 6.7-3
+cpupower 6.9-1
 dbeaver 24.0.4-1
 dialog 1:1.3_20240307-2
 dictd 1.13.1-5
@@ -63,9 +63,9 @@ grim 1.4.1-1
 groff 1.23.0-5
 grub 2:2.12-2
 gst-libav 1.24.3-1
-gvfs 1.54.0-2
-gvfs-gphoto2 1.54.0-2
-gvfs-mtp 1.54.0-2
+gvfs 1.54.0-3
+gvfs-gphoto2 1.54.0-3
+gvfs-mtp 1.54.0-3
 highlight 4.11-2
 hypridle 0.1.2-1
 hyprland 0.40.0-1
@@ -90,7 +90,7 @@ libva-mesa-driver 1:24.0.7-3
 libva-utils 2.21.0-1
 libwnck3 43.0-3
 linux 6.8.9.arch1-2
-linux-firmware 20240409.1addd7dc-1
+linux-firmware 20240510.b9d2bf23-1
 linux-headers 6.8.9.arch1-2
 linux-lts 6.6.30-2
 linux-lts-headers 6.6.30-2
@@ -118,7 +118,7 @@ net-tools 2.10-2
 network-manager-applet 1.36.0-1
 networkmanager 1.46.0-2
 nodejs 22.0.0-1
-npm 10.7.0-1
+npm 10.8.0-1
 ntfs-3g 2022.10.3-1
 nvtop 3.1.0-1
 nwg-look 0.2.7-1
@@ -253,6 +253,6 @@ yapf 0.40.2-2
 yarn 1.22.22-1
 yazi 0.2.5-2
 zathura 0.5.6-2
-zathura-pdf-mupdf 0.4.1-21
+zathura-pdf-mupdf 0.4.2-1
 zellij 0.40.1-1
 zoxide 0.9.4-2
