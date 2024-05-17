@@ -42,7 +42,7 @@ I created this repo to help me backup my config files and to easily **deploy** t
 
 At first I didn't think about ricing but more and more, my focus has got into creating a good and aesthetic rice, with a lot of customization, as well as maintaining the easy deploy and use for my multiple machines.
 
-If you wanna know how to **install** them, go to the [setup](#wrench--setup) section. It has a guided installation and an automatic one (Only for Arch Linux users)
+If you wanna know how to **install** them, go to the [setup](#wrench--setup) section. There is a guided installation.
 
 I've been working on this for a long time so I hope you like it!
 
@@ -194,13 +194,6 @@ Here is all the information about my setup:
 </details>
 
 # :wrench: ‎ <samp>Setup</samp>
-
-### :package: <samp>Automatic Installation (Arch Linux)</samp>
-
-> [!WARNING]
-> This installation is specifically designed for Arch Linux. If you're running other systems, install the packages with your OS's package manager.
-
-#### WIP
 
 ### :package: <samp>Manual Installation</samp>
 
