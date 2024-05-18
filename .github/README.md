@@ -235,6 +235,26 @@ Here is all the information about my setup:
     systemctl --user start bluetooth.service
     ```
 
+    - Icon Theme
+
+    First off, we have to download the icon package from the releases page of their repo. You can do it very easily by using curl.
+
+    ```bash
+    curl -LJO https://github.com/ljmill/catppuccin-icons/releases/download/v0.2.0/Catppuccin-SE.tar.bz2
+    ```
+
+    Once you have that, its time to extract the compressed package.
+
+    ```bash
+    tar -xf Catppuccin-SE.tar.bz2
+    ```
+
+    And finally, move them to the ~/.local/share/icons directory.
+
+    ```bash
+    mv Catppuccin-SE ~/.local/share/icons
+    ```
+
     - Useful CLI/TUI packages
 
     ```bash
