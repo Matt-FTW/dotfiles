@@ -9,7 +9,6 @@ return {
       local mapping = require("yanky.telescope.mapping")
 
       opts.highlight = { timer = 250 }
-      opts.ring = { storage = jit.os:find("Windows") and "shada" or "sqlite" }
       opts.picker = {
         telescope = {
           use_default_mappings = false,
