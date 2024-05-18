@@ -2,7 +2,6 @@
   "extras": [
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.mini-move",
-    "lazyvim.plugins.extras.editor.trouble-v3",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
@@ -11,7 +10,6 @@
     "plugins.extras.coding.multicursor",
     "plugins.extras.coding.recorder",
     "plugins.extras.coding.refactoring",
-    "plugins.extras.coding.treesitter.endwise",
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.treesitter.puppeteer",
     "plugins.extras.coding.treesitter.various-textobjs",
@@ -50,7 +48,6 @@
     "plugins.extras.lazyvim.gitsigns",
     "plugins.extras.lazyvim.lspconfig",
     "plugins.extras.lazyvim.lualine",
-    "plugins.extras.lazyvim.luasnip",
     "plugins.extras.lazyvim.mason",
     "plugins.extras.lazyvim.neo-tree",
     "plugins.extras.lazyvim.noice",
@@ -75,10 +72,11 @@
     "plugins.extras.util.mason-lock",
     "plugins.extras.util.smart-splits",
     "plugins.extras.util.vscode",
-    "plugins.extras.util.wakatime"
+    "plugins.extras.util.wakatime",
+    "lazyvim.plugins.extras.editor.trouble-v3"
   ],
   "news": {
-    "NEWS.md": "3314"
+    "NEWS.md": "4885"
   },
   "version": 3
 }
