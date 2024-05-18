@@ -20,11 +20,11 @@ Options:
   -m, --mode                one of: output, window, region, active, OUTPUT_NAME
   -o, --output-folder       directory in which to save screenshot
   -f, --filename            the file name of the resulting screenshot
-  -F, --freeze              freeze the screen on initialization
   -d, --debug               print debug information
   -s, --silent              don't send notification when screenshot is saved
   -r, --raw                 output raw image data to stdout
   -t, --notif-timeout       notification timeout in milliseconds (default 5000)
+  -z, --freeze              freeze current output to take screenshot
   --clipboard-only          copy screenshot to clipboard and don't save image in disk
   -- [command]              open screenshot with a command of your choosing. e.g. hyprshot -m window -- mirage
 
@@ -45,7 +45,7 @@ function Print() {
 		return 0
 	fi
 
-	printf 1>&2 "$@"
+	1>&2 printf "$@"
 }
 
 function send_notification() {
@@ -77,8 +77,11 @@ function trim() {
 	local width=$(echo "${wh_str}" | cut -dx -f1)
 	local height=$(echo "${wh_str}" | cut -dx -f2)
 
-	local max_width=$(hyprctl monitors -j | jq -r '[.[] | (.x + .width)] | max')
-	local max_height=$(hyprctl monitors -j | jq -r '[.[] | (.y + .height)] | max')
+	local max_width=$(hyprctl monitors -j | jq -r '[.[] | if (.transform % 2 == 0) then (.x + .width) else (.x + .height) end] | max')
+	local max_height=$(hyprctl monitors -j | jq -r '[.[] | if (.transform % 2 == 0) then (.y + .height) else (.y + .width) end] | max')
+
+	local min_x=$(hyprctl monitors -j | jq -r '[.[] | (.x)] | min')
+	local min_y=$(hyprctl monitors -j | jq -r '[.[] | (.y)] | min')
 
 	local cropped_x=$x
 	local cropped_y=$y
@@ -92,13 +95,13 @@ function trim() {
 		cropped_height=$((max_height - y))
 	fi
 
-	if ((x < 0)); then
-		cropped_x=0
-		cropped_width=$((cropped_width + x))
+	if ((x < min_x)); then
+		cropped_x="$min_x"
+		cropped_width=$((cropped_width + x - min_x))
 	fi
-	if ((y < 0)); then
-		cropped_y=0
-		cropped_height=$((cropped_height + y))
+	if ((y < min_y)); then
+		cropped_y="$min_y"
+		cropped_height=$((cropped_height + y - min_y))
 	fi
 
 	printf "%s,%s %sx%s\n" \
@@ -132,19 +135,16 @@ function save_geometry() {
 	send_notification $output
 }
 
-function killHyprpicker() {
-	if [ ! $HYPRPICKER_PID -eq -1 ]; then
-		kill $HYPRPICKER_PID
-	fi
-}
-
 function begin_grab() {
-	if [ $FREEZE -eq 1 ] && [ "$(command -v "hyprpicker")" ] >/dev/null 2>&1; then
+	local option=$1
+
+	if [ $FREEZE -eq 1 ]; then
+		sleep 0.5
 		hyprpicker -r -z &
 		sleep 0.2
-		HYPRPICKER_PID=$!
+		local picker_pid=$!
 	fi
-	local option=$1
+
 	case $option in
 	output)
 		if [ $CURRENT -eq 1 ]; then
@@ -166,7 +166,12 @@ function begin_grab() {
 		fi
 		;;
 	esac
+
 	save_geometry "${geometry}"
+
+	if [ $FREEZE -eq 1 ]; then
+		kill $picker_pid
+	fi
 }
 
 function grab_output() {
@@ -180,13 +185,13 @@ function grab_active_output() {
 	Print "Active workspace: %s\n" "$active_workspace"
 	local current_monitor="$(echo $monitors | jq -r 'first(.[] | select(.activeWorkspace.id == '$(echo $active_workspace | jq -r '.id')'))')"
 	Print "Current output: %s\n" "$current_monitor"
-	echo $current_monitor | jq -r '"\(.x),\(.y) \(.width)x\(.height)"'
+	echo $current_monitor | jq -r '"\(.x),\(.y) \(.width/.scale|round)x\(.height/.scale|round)"'
 }
 
 function grab_selected_output() {
 	local monitor=$(hyprctl -j monitors | jq -r '.[] | select(.name == "'$(echo $1)'")')
 	Print "Capturing: %s\n" "${1}"
-	echo $monitor | jq -r '"\(.x),\(.y) \(.width)x\(.height)"'
+	echo $monitor | jq -r '"\(.x),\(.y) \(.width/.scale|round)x\(.height/.scale|round)"'
 }
 
 function grab_region() {
@@ -230,7 +235,7 @@ function parse_mode() {
 }
 
 function args() {
-	local options=$(getopt -o hf:o:m:dsFr:t: --long help,filename:,output-folder:,mode:,clipboard-only,debug,silent,freeze,raw,notif-timeout: -- "$@")
+	local options=$(getopt -o hf:o:m:dsrt:z --long help,filename:,output-folder:,mode:,clipboard-only,debug,silent,raw,notif-timeout:,freeze -- "$@")
 	eval set -- "$options"
 
 	while true; do
@@ -257,9 +262,6 @@ function args() {
 		-d | --debug)
 			DEBUG=1
 			;;
-		-F | --freeze)
-			FREEZE=1
-			;;
 		-s | --silent)
 			SILENT=1
 			;;
@@ -269,6 +271,9 @@ function args() {
 		-t | --notif-timeout)
 			shift
 			NOTIF_TIMEOUT=$1
+			;;
+		-z | --freeze)
+			FREEZE=1
 			;;
 		--)
 			shift # Skip -- argument
@@ -294,9 +299,9 @@ CLIPBOARD=0
 DEBUG=0
 SILENT=0
 RAW=0
+FREEZE=0
 NOTIF_TIMEOUT=5000
 CURRENT=0
-FREEZE=0
 [ -z "$XDG_PICTURES_DIR" ] && type xdg-user-dir &>/dev/null && XDG_PICTURES_DIR=$(xdg-user-dir PICTURES)
 FILENAME="$(date +'%Y-%m-%d-%H%M%S_hyprshot.png')"
 [ -z "$HYPRSHOT_DIR" ] && SAVEDIR=${XDG_PICTURES_DIR:=~} || SAVEDIR=${HYPRSHOT_DIR}
@@ -306,4 +311,3 @@ args $0 "$@"
 SAVE_FULLPATH="$SAVEDIR/$FILENAME"
 [ $CLIPBOARD -eq 0 ] && Print "Saving in: %s\n" "$SAVE_FULLPATH"
 begin_grab $OPTION
-killHyprpicker
