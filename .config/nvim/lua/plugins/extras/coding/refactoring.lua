@@ -4,7 +4,9 @@ return {
     { "nvim-lua/plenary.nvim" },
     { "nvim-treesitter/nvim-treesitter" },
   },
-  opts = {},
+  opts = {
+    show_success_message = true,
+  },
   -- stylua: ignore
   keys = {
     { "<leader>cR", function() require("refactoring").select_refactor() end, mode = { "n", "x", "v" }, desc = "Refactor" },
