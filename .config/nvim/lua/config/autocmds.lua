@@ -5,7 +5,7 @@ local ag = vim.api.nvim_create_augroup
 ac("BufRead", {
   pattern = ".env",
   callback = function()
-    vim.diagnostic.disable(0)
+    vim.diagnostic.disable(false)
   end,
 })
 
@@ -75,7 +75,7 @@ ac({ "BufNewFile", "BufRead" }, {
   group = ag("DisableEslintOnNodeModules", { clear = true }),
   pattern = { "**/node_modules/**", "node_modules", "/node_modules/*" },
   callback = function()
-    vim.diagnostic.disable(0)
+    vim.diagnostic.disable(false)
   end,
 })
 
@@ -95,9 +95,8 @@ ac("ModeChanged", {
     end
   end,
 })
-
-local numbertoggle = ag("numbertoggle", { clear = true })
 -- Toggle between relative/absolute line numbers
+local numbertoggle = ag("numbertoggle", { clear = true })
 ac({ "BufEnter", "FocusGained", "InsertLeave", "CmdlineLeave", "WinEnter" }, {
   pattern = "*",
   group = numbertoggle,
