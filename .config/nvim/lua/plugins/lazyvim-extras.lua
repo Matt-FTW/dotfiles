@@ -4,11 +4,14 @@ return {
   -- Coding
   { "tzachar/cmp-tabnine", optional = true },
   { "Exafunction/codeium.nvim", optional = true },
+  { "echasnovski/mini.surround", optional = true },
+  { "JoosepAlviste/nvim-ts-context-commentstring" },
 
   -- DAP
   { "jbyuki/one-small-step-for-vimkind", optional = true },
 
   -- Editor
+  { "RRethy/vim-illuminate", optional = true },
   { "stevearc/aerial.nvim", optional = true },
   { "ggandor/flit.nvim", optional = true },
   { "ggandor/leap.nvim", optional = true },
@@ -71,9 +74,12 @@ return {
 
   -- UI
   { "echasnovski/mini.animate", optional = true },
+  { "echasnovski/mini.indentscope", optional = true },
   { "echasnovski/mini.starter", optional = true },
+  { "nvim-treesitter/nvim-treesitter-context", optional = true },
 
   -- Util
   { "echasnovski/mini.hipatterns", optional = true },
+  { "dstein64/vim-startuptime", optional = true },
   { "ahmedkhalf/project.nvim", optional = true },
 }
