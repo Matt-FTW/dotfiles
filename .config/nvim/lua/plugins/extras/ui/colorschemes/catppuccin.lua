@@ -122,4 +122,16 @@ return {
       load = { "catppuccin-macchiato-cursor", "catppuccin-macchiato-cursorline" },
     },
   },
+  {
+    "rachartier/tiny-devicons-auto-colors.nvim",
+    optional = true,
+    opts = {
+      colors = palette,
+      factors = {
+        lightness = 0.9,
+        chroma = 1,
+        hue = 0.7,
+      },
+    },
+  },
 }

@@ -79,6 +79,7 @@
 - [miversen33/sunglasses.nvim](https://dotfyle.com/plugins/miversen33/sunglasses.nvim)
 - [xiyaowong/nvim-transparent](https://dotfyle.com/plugins/xiyaowong/nvim-transparent)
 - [uga-rosa/ccc.nvim](https://dotfyle.com/plugins/uga-rosa/ccc.nvim)
+- [rachartier/tiny-devicons-auto-colors.nvim](https://dotfyle.com/plugins/rachartier/tiny-devicons-auto-colors.nvim)
 
 </details>
 
