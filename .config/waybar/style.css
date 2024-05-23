@@ -1,3 +1,25 @@
+/* Variables */
+@define-color mantle #1e2030;
+@define-color base rgb(36, 39, 58);
+@define-color text #cad3f5;
+@define-color surface0 #363a4f;
+@define-color surface2 #5b6078;
+@define-color blue #8aadf4;
+@define-color green #a6da95;
+@define-color peach #f5a97f;
+@define-color rosewater #f4dbd6;
+@define-color lavender #b7bdf8;
+@define-color yellow #eed49f;
+@define-color red #ed8796;
+@define-color maroon #ee99a0;
+@define-color teal #8bd5ca;
+@define-color sky #91d7e3;
+@define-color sapphire #7dc4e4;
+@define-color mauve #c6a0f6;
+@define-color pink #f5bde6;
+@define-color border rgba(183, 189, 248, 0.4);
+@define-color shadow rgb(30, 32, 48);
+
 * {
   font-family: JetBrainsMono NF;
   font-size: 13px;
@@ -41,62 +63,58 @@
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-  background-color: #24273a;
+  background-color: alpha(@base, 0.9);
   padding: 0 10px;
   margin: 2px 4px 5px 4px;
   border-radius: 10px;
-  box-shadow: 3px 3px 1px 1px #181926;
-  border: 2px solid rgba(183, 189, 248, 0.4);
+  box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
+  border: 2px solid @border;
   background-clip: padding-box;
 }
 
-/* Window */
 window#waybar {
-  color: #cad3f5;
+  color: @text;
   background: transparent;
-  color: #cdd6f4;
 }
 
 window#waybar.hidden {
   opacity: 0;
 }
 
-/* Workspaces */
 #workspaces * {
-  font-size: 13px;
+  font-size: 14px;
 }
 #workspaces button label {
-  color: #b7bdf8;
+  color: @lavender;
   font-weight: bolder;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
 #workspaces button.active label {
-  color: #24273a;
+  color: @base;
   font-weight: bolder;
 }
 
 #workspaces button.urgent {
-  background-color: #e06c75;
+  background-color: @red;
 }
 
 #workspaces button.urgent label {
-  color: #24273a;
+  color: @base;
   font-weight: bolder;
 }
 
 #workspaces {
-  background-color: #24273a;
-  border: 2px solid rgba(183, 189, 248, 0.4);
+  background-color: alpha(@base, 0.9);
+  border: 2px solid @border;
   padding: 0 10px;
   margin: 2px 4px 5px 4px;
-  box-shadow: 3px 3px 1px 1px #181926;
+  box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
   border-radius: 10px;
   background-clip: padding-box;
 }
 
 #workspaces button {
-  background-color: transparent;
   border-radius: 15px;
   margin-right: 3px;
   margin-left: 3px;
@@ -105,14 +123,14 @@ window#waybar.hidden {
   padding: 0 5px;
   font-weight: bolder;
   min-width: 20px;
-  color: #24273a;
+  color: @base;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #workspaces button.active {
   padding-right: 6px;
   padding-left: 6px;
-  box-shadow: rgba(0, 0, 0, 0.288) 2 2 2 2px;
+  box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
   padding-bottom: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -127,79 +145,71 @@ window#waybar.hidden {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-  color: #c678dd;
+  color: @mauve;
   border-radius: 12px;
 }
 
 #workspaces button:hover {
-  background-color: #363a4f;
+  background-color: @surface0;
 }
 
 #workspaces button.focused:hover {
-  background-color: #24273a;
+  background-color: alpha(@base, 0.9);
 }
 
 #workspaces button.focused:hover label {
-  color: #cad3f5;
+  color: @text;
 }
 
 /* Individual Modules */
 #custom-cava {
-  color: rgb(183, 189, 248);
+  color: @lavender;
   border-radius: 12px;
 }
 
 #cpu {
-  background-color: #24273a;
-  color: #8aadf4;
+  color: @blue;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
 #memory {
-  background-color: #24273a;
-  color: #a6da95;
+  color: @green;
   transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
 }
 
 #custom-notifications {
-  background-color: #24273a;
-  color: #eed49f;
+  color: @yellow;
 }
 
 #custom-weather {
-  color: #ee99a0;
+  color: @red;
 }
 
 #custom-updates {
-  background-color: #24273a;
-  color: #8bd5ca;
+  color: @teal;
 }
 
 #custom-wf-recorder {
-  color: #ed8796;
+  color: @red;
 }
 
 #custom-gpu-temp {
-  background-color: #24273a;
-  color: #f5a97f;
+  color: @peach;
 }
 
 #custom-gpu-usage {
-  background-color: #24273a;
-  color: #8bd5ca;
+  color: @teal;
 }
 
 #custom-power-menu {
-  color: #e06c75;
+  color: @red;
 }
 
 #temperature {
-  background-color: #24273a;
-  color: #f5a97f;
+  color: @peach;
 }
 
 #window {
-  background: #b7bdf8;
   background: linear-gradient(
     52deg,
     rgba(139, 213, 202, 1) 0%,
@@ -210,20 +220,20 @@ window#waybar.hidden {
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  text-shadow: 0px 0px 5px @lavender;
   font-weight: bold;
-  color: #1e2030;
+  color: @mantle;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
   border: none;
 }
 
 #temperature.critical {
-  background-color: #ed8796;
-  color: #1e2030;
+  background-color: @red;
+  color: @mantle;
 }
 
 #custom-music {
-  background: #b7bdf8;
+  background: @lavender;
   background: linear-gradient(
     52deg,
     rgba(139, 213, 202, 1) 0%,
@@ -234,66 +244,56 @@ window#waybar.hidden {
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  text-shadow: 0px 0px 5px @border;
   font-weight: bold;
-  color: #1e2030;
+  color: @mantle;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
   border: none;
 }
 
 #custom-fans {
-  color: #98c379;
+  color: @green;
 }
 
 #clock {
-  color: #b7bdf8;
-}
-
-#idle_inhibitor {
-  color: #abb2bf;
-}
-
-#idle_inhibitor.activated {
-  background-color: #abb2bf;
-  color: #1e222a;
+  color: @lavender;
 }
 
 #language {
-  color: #8aadf4;
+  color: @blue;
 }
 
 #pulseaudio {
-  background-color: #24273a;
-  color: #f5bde6;
+  color: @pink;
 }
 
 #pulseaudio.muted {
-  background-color: #ed8796;
-  color: #1e222a;
+  background-color: @red;
+  color: @mantle;
 }
 
 #pulseaudio.source-muted {
-  background-color: #f5a97f;
-  color: #1e222a;
+  background-color: @peach;
+  color: @mantle;
 }
 
 #backlight {
-  color: #61afef;
+  color: @blue;
 }
 
 #battery {
-  color: #98c379;
+  color: @green;
 }
 
 #battery.charging,
 #battery.plugged {
-  background-color: #98c379;
-  color: #1e222a;
+  background-color: @green;
+  color: @mantle;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #e06c75;
-  color: #1e222a;
+  background-color: @red;
+  color: @mantle;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -302,21 +302,16 @@ window#waybar.hidden {
 }
 
 #network {
-  background-color: #24273a;
-  color: #8bd5ca;
+  color: @mantle;
 }
 
 #network.disconnected {
-  background-color: #ed8796;
-  color: #1e222a;
-}
-
-#custom-notifications {
-  padding-right: 10px;
+  background-color: @red;
+  color: @mantle;
 }
 
 #clock.cl2 {
-  background: #b7bdf8;
+  background: @lavender;
   background: linear-gradient(
     52deg,
     rgba(139, 213, 202, 1) 0%,
@@ -327,9 +322,9 @@ window#waybar.hidden {
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+  text-shadow: 0px 0px 5px @border;
   font-weight: bold;
-  color: #1e2030;
+  color: @mantle;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
   border: none;
 }
@@ -337,8 +332,8 @@ window#waybar.hidden {
 /* Animation Keyframes */
 @keyframes blink {
   to {
-    background-color: #24273a;
-    color: #e06c75;
+    background-color: alpha(@base, 0.9);
+    color: @red;
   }
 }
 
