@@ -76,10 +76,7 @@ git:
   disableForcePushing: false
   parseEmoji: false
 os:
-  editPreset: "nvim" # see 'Configuring File Editing' section
-  edit: "nvim {{filename}}"
-  editAtLine: "nvim --line={{line}} {{filename}}"
-  editAtLineAndWait: "nvim --block --line={{line}} {{filename}}"
+  editPreset: "nvim-remote" # see 'Configuring File Editing' section
 refresher:
   refreshInterval: 10 # File/submodule refresh interval in seconds. Auto-refresh can be disabled via option 'git.autoRefresh'.
   fetchInterval: 60 # Re-fetch interval in seconds. Auto-fetch can be disabled via option 'git.autoFetch'.
@@ -116,7 +113,7 @@ keybinding:
     jumpToBlock: ["1", "2", "3", "4", "5"] # goto the Nth block / panel
     nextMatch: "n"
     prevMatch: "N"
-    optionMenu: null # show help menu
+    optionMenu: <disabled> # show help menu
     optionMenu-alt1: "?" # show help menu
     select: "<space>"
     goInto: "<enter>"
