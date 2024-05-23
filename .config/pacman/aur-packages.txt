@@ -12,7 +12,7 @@ clipse 0.0.71-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6757.g7626a9b-1
-floorp-bin 11.13.0-1
+floorp-bin 11.13.2-1
 gtrash-bin 0.0.5-1
 gzdoom 4.12.2-1
 heroic-games-launcher-bin 2.14.1-1
@@ -33,7 +33,7 @@ proton-ge-custom-bin 1:GE_Proton9_5-1
 proton-vpn-gtk-app 4.3.1-2
 protonmail-bridge-bin 3.10.0-1
 protonvpn-cli-community 2.2.12-1
-pyprland 2.3.0-1
+pyprland 2.3.2-2
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.01-1
 reflector-pacman-hook-git r87.eec94bd-1
@@ -44,7 +44,7 @@ scc-bin 3.2.0-1
 selectdefaultapplication-fork-git r72.4e8501d-1
 spicetify-cli 2.36.11-1
 spotdl 4.2.5-5
-spotify 1:1.2.31.1205-2
+spotify 1:1.2.37.701-1
 swayosd-git r55.a0709bc-1
 swww 0.9.5-1
 sync-pacman-hook-git r89.f1fa692-1
