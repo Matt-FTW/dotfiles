@@ -1,0 +1,19 @@
+{
+  "custom/cava": {
+    "exec": "~/.config/waybar/scripts/cava.sh",
+    "format": "{}",
+    "format-icons": [
+      "<span foreground='#cba6f7'>▁</span>",
+      "<span foreground='#cba6f7'>▂</span>",
+      "<span foreground='#cba6f7'>▃</span>",
+      "<span foreground='#cba6f7'>▄</span>",
+      "<span foreground='#89b4fa'>▅</span>",
+      "<span foreground='#89b4fa'>▆</span>",
+      "<span foreground='#89b4fa'>▇</span>",
+      "<span foreground='#89b4fa'>█</span>",
+    ],
+    "on-click": "pypr toggle cava",
+    "on-click-right": "qpwgraph",
+    "on-click-middle": "easyeffects",
+  },
+}

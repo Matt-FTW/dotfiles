@@ -1,0 +1,30 @@
+{
+  "clock#cl1": {
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#eed49f'><b>{}</b></span>",
+        "days": "<span color='#cad3f5'><b>{}</b></span>",
+        "weeks": "<span color='#8aadf4'><b>W{}</b></span>",
+        "weekdays": "<span color='#8bd5ca'><b>{}</b></span>",
+        "today": "<span color='#ed8796'><b><u>{}</u></b></span>",
+      },
+    },
+    "interval": 1,
+    "format": "{:%H:%M:%OS}  ",
+    "format-alt": "{:%A, %B %d, %Y}  ",
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down",
+    },
+    "on-click-middle": "thunderbird -calendar && hyprctl dispatch workspace 23",
+  },
+}

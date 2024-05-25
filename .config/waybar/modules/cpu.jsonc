@@ -1,0 +1,8 @@
+{
+  "cpu": {
+    "on-click": "kitty --class center-float-large btop",
+    "format": "CPU: {usage}%",
+    "tooltip": false,
+    "interval": 2,
+  },
+}

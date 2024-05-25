@@ -1,0 +1,30 @@
+{
+  "include": [
+    "~/.config/waybar/modules/custom-cava.jsonc",
+    "~/.config/waybar/modules/custom-wf-recorder.jsonc",
+    "~/.config/waybar/modules/custom-updates.jsonc",
+    "~/.config/waybar/modules/custom-music.jsonc",
+    "~/.config/waybar/modules/custom-logo.jsonc",
+    "~/.config/waybar/modules/custom-notifications.jsonc",
+    "~/.config/waybar/modules/custom-weather.jsonc",
+    "~/.config/waybar/modules/hyprland-language.jsonc",
+    "~/.config/waybar/modules/hyprland-workspaces.jsonc",
+    "~/.config/waybar/modules/clock-1.jsonc",
+    "~/.config/waybar/modules/pulseaudio.jsonc",
+  ],
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces",
+    "custom/cava",
+    "custom/wf-recorder",
+  ],
+  "modules-center": ["custom/music"],
+  "modules-right": [
+    "custom/updates",
+    "hyprland/language",
+    "custom/weather",
+    "clock#cl1",
+    "pulseaudio",
+    "custom/notifications",
+  ],
+}

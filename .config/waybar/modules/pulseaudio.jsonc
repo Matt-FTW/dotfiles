@@ -1,0 +1,25 @@
+{
+  "pulseaudio": {
+    "format": "{icon} {volume}% {format_source}",
+    "format-bluetooth": "{icon} {volume}% {format_source}",
+    "format-bluetooth-muted": "   {volume}% {format_source}",
+    "format-muted": "  {format_source}",
+    "format-source": " ",
+    "format-source-muted": " ",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" ", " ", " "],
+    },
+    "tooltip-format": "{desc}, {volume}%",
+    "on-click": "swayosd-client --output-volume mute-toggle",
+    "on-click-right": "swayosd-client --input-volume mute-toggle",
+    "on-click-middle": "pypr toggle volume",
+    "on-scroll-up": "swayosd-client --output-volume +1",
+    "on-scroll-down": "swayosd-client --output-volume -1",
+  },
+}

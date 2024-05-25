@@ -1,0 +1,15 @@
+{
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 80,
+    "rewrite": {
+      "(.*) — LibreWolf": "󰇧 $1",
+      "(.*) — Abaze Floorp": "󰇧 $1",
+      "(.*) — Mozilla Firefox": "󰇧 $1",
+      "(.*) — Brave": "󰇧 $1",
+      "(.*) - Discord": "󰙯 $1",
+      "(.*) - fish": "> [$1]",
+    },
+    "separate-outputs": false,
+  },
+}

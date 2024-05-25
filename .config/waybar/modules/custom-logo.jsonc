@@ -1,0 +1,8 @@
+{
+  "custom/arch": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "sleep 0.1 && rofi -show drun",
+    "on-click-right": "~/.config/rofi/scripts/powermenu/powermenu",
+  },
+}

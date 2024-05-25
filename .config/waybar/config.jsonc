@@ -1,6 +1,6 @@
 [
   {
-    "include": "~/.config/waybar/modules/top-bar.jsonc",
+    "include": "~/.config/waybar/bars/bar-1.jsonc",
     "height": 50,
     "layer": "top",
     "output": "DP-1",
@@ -12,24 +12,9 @@
     "margin-left": 17,
     "margin-bottom": 0,
     "margin-right": 17,
-    "modules-left": [
-      "custom/arch",
-      "hyprland/workspaces",
-      "custom/cava",
-      "custom/wf-recorder",
-    ],
-    "modules-center": ["custom/music"],
-    "modules-right": [
-      "custom/updates",
-      "hyprland/language",
-      "custom/weather",
-      "clock",
-      "pulseaudio",
-      "custom/notifications",
-    ],
   },
   {
-    "include": "~/.config/waybar/modules/bottom-bar.jsonc",
+    "include": "~/.config/waybar/bars/bar-2.jsonc",
     "height": 50,
     "position": "bottom",
     "layer": "top",
@@ -41,19 +26,9 @@
     "margin-left": 17,
     "margin-bottom": 10,
     "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": [
-      "memory",
-      "cpu",
-      "temperature#cpu",
-      "custom/gpu-usage",
-      "temperature#gpu",
-      "custom/notifications",
-    ],
   },
   {
-    "include": "~/.config/waybar/modules/top-bar-2.jsonc",
+    "include": "~/.config/waybar/bars/bar-3.jsonc",
     "height": 50,
     "layer": "top",
     "output": "HDMI-A-1",
@@ -65,8 +40,5 @@
     "margin-left": 17,
     "margin-bottom": 0,
     "margin-right": 17,
-    "modules-left": ["custom/arch", "hyprland/workspaces"],
-    "modules-center": ["clock#cl2"],
-    "modules-right": ["tray", "custom/notifications"],
   },
 ]

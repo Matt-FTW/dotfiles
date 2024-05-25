@@ -1,0 +1,8 @@
+{
+  "memory": {
+    "format": "{}%  ",
+    "on-click": "kitty --class center-float-large btop",
+    "tooltip": true,
+    "interval": 2,
+  },
+}

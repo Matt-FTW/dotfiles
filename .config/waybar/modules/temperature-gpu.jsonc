@@ -1,0 +1,12 @@
+{
+  "temperature#gpu": {
+    "critical-threshold": 80,
+    "on-click": "kitty --class center-float-large nvtop",
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "format-critical": "{icon} {temperatureC}°C",
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": ["", "", ""],
+    "tooltip": true,
+    "interval": 2,
+  },
+}

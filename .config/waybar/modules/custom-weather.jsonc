@@ -1,0 +1,12 @@
+{
+  "custom/weather": {
+    "exec": "wttrbar --location Alicante",
+    "restart-interval": 300,
+    "tooltip": true,
+    "format": "{}°",
+    "return-type": "json",
+    "on-click": "kitty --hold --class center-float wttr Alicante",
+    "on-click-right": "kitty --hold --class center-float wttr -v2 Alicante",
+    "on-click-middle": "xdg-open https://wttr.in/alicante",
+  },
+}
