@@ -26,10 +26,10 @@
 <br>
 
 <div align="center">
-	<a href="https://github.com/Matt-FTW/dotfiles/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/Matt-FTW/dotfiles?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
-	<a href="https://github.com/Matt-FTW/dotfiles/issues"><img alt="Forks" src="https://img.shields.io/github/issues/Matt-FTW/dotfiles?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
+ <a href="https://github.com/Matt-FTW/dotfiles/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/Matt-FTW/dotfiles?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41"></a>
+ <a href="https://github.com/Matt-FTW/dotfiles/issues"><img alt="Forks" src="https://img.shields.io/github/issues/Matt-FTW/dotfiles?style=for-the-badge&logo=gitbook&color=B5E8E0&logoColor=D9E0EE&labelColor=302D41"></a>
   <a href="https://github.com/Matt-FTW/dotfiles/commits/main/"><img alt="Commit Activity" src="https://img.shields.io/github/commit-activity/m/Matt-FTW/dotfiles/main?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=302D41"/></a>
-	<a href="https://github.com/Matt-FTW/dotfiles"><img alt="Size" src="https://img.shields.io/github/repo-size/Matt-FTW/dotfiles?style=for-the-badge&logo=discord&color=DDB6F2&logoColor=D9E0EE&labelColor=302D41"></a>
+ <a href="https://github.com/Matt-FTW/dotfiles"><img alt="Size" src="https://img.shields.io/github/repo-size/Matt-FTW/dotfiles?style=for-the-badge&logo=discord&color=DDB6F2&logoColor=D9E0EE&labelColor=302D41"></a>
 </div>
 
 # :herb: ‎ <samp>About</samp>
@@ -201,95 +201,95 @@ Here is all the information about my setup:
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). For CLI/TUI specific packages I recommend to use [homebrew](https://brew.sh/).
 
-1.  First, lets start with the required **base packages** for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
+1. First, lets start with the required **base packages** for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
 
-    ```bash
-    yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-            swww waybar wleave-git rofi-wayland swaync swayosd-git wl-clipboard \
-            pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-            catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
-    ```
+   ```bash
+   yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
+           swww waybar rofi-wayland swaync swayosd-git wl-clipboard \
+           pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
+           catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
+   ```
 
-    On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
+   On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
 
-2.  Now lets move to the **Optional Packages** (If you dont want to install any more packages, move to the 3th step)
+2. Now lets move to the **Optional Packages** (If you dont want to install any more packages, move to the 3th step)
 
-    - Replaceable Packages
+   - Replaceable Packages
 
-    ```bash
-    yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
-            ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
-    ```
+   ```bash
+   yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
+           ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
+   ```
 
-    Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
+   Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
 
-    - Bluetooth
+   - Bluetooth
 
-    ```bash
-    yay -Sy bluez bluez-utils blueman
-    ```
+   ```bash
+   yay -Sy bluez bluez-utils blueman
+   ```
 
-    After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
+   After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
 
-    ```bash
-    systemctl --user enable bluetooth.service
-    systemctl --user start bluetooth.service
-    ```
+   ```bash
+   systemctl --user enable bluetooth.service
+   systemctl --user start bluetooth.service
+   ```
 
-    - Icon Theme
+   - Icon Theme
 
-    First off, we have to download the icon package from the releases page of their repo. You can do it very easily by using curl.
+   First off, we have to download the icon package from the releases page of their repo. You can do it very easily by using curl.
 
-    ```bash
-    curl -LJO https://github.com/ljmill/catppuccin-icons/releases/download/v0.2.0/Catppuccin-SE.tar.bz2
-    ```
+   ```bash
+   curl -LJO https://github.com/ljmill/catppuccin-icons/releases/download/v0.2.0/Catppuccin-SE.tar.bz2
+   ```
 
-    Once you have that, its time to extract the compressed package.
+   Once you have that, its time to extract the compressed package.
 
-    ```bash
-    tar -xf Catppuccin-SE.tar.bz2
-    ```
+   ```bash
+   tar -xf Catppuccin-SE.tar.bz2
+   ```
 
-    And finally, move them to the ~/.local/share/icons directory.
+   And finally, move them to the ~/.local/share/icons directory.
 
-    ```bash
-    mv Catppuccin-SE ~/.local/share/icons
-    ```
+   ```bash
+   mv Catppuccin-SE ~/.local/share/icons
+   ```
 
-    - Useful CLI/TUI packages
+   - Useful CLI/TUI packages
 
-    ```bash
-    yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade fastfetch
-    ```
+   ```bash
+   yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade fastfetch
+   ```
 
-    - Useful GUI packages
+   - Useful GUI packages
 
-    ```bash
-    yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor satty
-    ```
+   ```bash
+   yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor satty
+   ```
 
-3.  **Installing the dotfiles**:
-    Firstly, clone this repository (remember to have git installed).
+3. **Installing the dotfiles**:
+   Firstly, clone this repository (remember to have git installed).
 
-    ```bash
-    git clone --depth 1 --recurse-submodules https://github.com/Matt-FTW/dotfiles.git
-    cd dotfiles && git submodule update --remote --merge
-    ```
+   ```bash
+   git clone --depth 1 --recurse-submodules https://github.com/Matt-FTW/dotfiles.git
+   cd dotfiles && git submodule update --remote --merge
+   ```
 
-    Now is time to copy the files into their respective directories. **Be sure to backup your existing configuration files** before copying the files.
-    Once you have that, its time to copy the config files.
+   Now is time to copy the files into their respective directories. **Be sure to backup your existing configuration files** before copying the files.
+   Once you have that, its time to copy the config files.
 
-    ```bash
-    cp -r .config/* ~/.config/
-    cp -r .local/bin/* ~/.local/bin/
-    cp .czrc ~/
-    ```
+   ```bash
+   cp -r .config/* ~/.config/
+   cp -r .local/bin/* ~/.local/bin/
+   cp .czrc ~/
+   ```
 
-    If you installed the fonts mentioned earlier, be sure to refresh the font cache.
+   If you installed the fonts mentioned earlier, be sure to refresh the font cache.
 
-    ```bash
-    fc-cache -fv
-    ```
+   ```bash
+   fc-cache -fv
+   ```
 
 Congratulations, at this point your done installing the configuration! :tada:
 
