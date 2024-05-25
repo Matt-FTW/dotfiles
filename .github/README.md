@@ -56,7 +56,7 @@ I've been working on this for a long time so I hope you like it!
 - :open_file_folder: Following XDG Base Directory Standard
 - :car: Automatic Mounting of USB Devices with Notification
 - :scroll: Scratchpads
-- :dizzy: Beautiful [Wallpapers](../.config/hypr/theme/walls/)
+- :dizzy: Beautiful [Wallpapers](../.config/hypr/theme/walls/README.md)
 - :nerd_face: Shell Prompt with Nerd Icons
 - :earth_americas: Custom Userchrome and Extension Configurations
 - :rocket: Minimal VSCodium with Native Integration of your Neovim Setup
@@ -303,7 +303,7 @@ If you had any issues or you have some questions about the installation process,
 > For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
 
 > [!NOTE]
-> If you want to check the wallpapers, they are available [right here](../.config/hypr/theme/walls/).
+> If you want to check the wallpapers, they are available [right here](../.config/hypr/theme/walls/README.md).
 
 | **System Fetch, Pacman Colorscript, App Launcher and Notif. Center** |
 | -------------------------------------------------------------------- |
