@@ -312,9 +312,6 @@
             "steam": true,
             "epic": true
         },
-        "Party mode 🎉": {
-            "enabled": false
-        },
         "PermissionFreeWill": {
             "enabled": false,
             "lockout": true,
@@ -550,6 +547,9 @@
         },
         "UnlockedAvatarZoom": {
             "enabled": false
+        },
+        "PartyMode": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -562,6 +562,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1714825835729
+        "settingsSyncVersion": 1716390820022
     }
 }
