@@ -300,6 +300,7 @@
 <summary><b>📜 LSP</b></summary>
 
 - [j-hui/fidget.nvim](https://dotfyle.com/plugins/j-hui/fidget.nvim)
+- [lewis6991/hover.nvim](https://dotfyle.com/plugins/lewis6991/hover.nvim)
 - [antosha417/nvim-lsp-file-operations](https://github.com/antosha417/nvim-lsp-file-operations)
 - [Wansmer/symbol-usage.nvim](https://dotfyle.com/plugins/Wansmer/symbol-usage.nvim)
 - [aznhe21/actions-preview.nvim](https://dotfyle.com/plugins/aznhe21/actions-preview.nvim)
