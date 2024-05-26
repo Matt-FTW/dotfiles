@@ -168,6 +168,7 @@ return {
       "TSC",
       "TSCOpen",
       "TSCClose",
+      "TSStop",
     },
   },
   {
