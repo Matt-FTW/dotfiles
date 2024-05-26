@@ -5,6 +5,6 @@ wait
 
 systemctl --user restart wireplumber pipewire pipewire-pulse
 
-notify-send "Audio restarted" "Audio services have been restarted" -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/audio-x-generic.svg
+notify-send "Audio restarted" "Audio services have been restarted" -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/audio-x-generic.svg --app-name=Audio
 
 easyeffects --gapplication-service &

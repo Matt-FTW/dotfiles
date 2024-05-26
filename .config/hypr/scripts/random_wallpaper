@@ -8,4 +8,4 @@ swww img "$wallpaper" \
 	--transition-bezier 0.5,1.19,.8,.4 \
 	--transition-type wipe \
 	--transition-duration 2 \
-	--transition-fps 75 && notify-send "Wallpaper Changed" -i "$wallpaper"
+	--transition-fps 75 && notify-send "Wallpaper Changed" -i "$wallpaper" --app-name=Wallpaper

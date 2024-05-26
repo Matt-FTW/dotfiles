@@ -1,7 +1,7 @@
 #!/bin/bash
 
 notify() {
-	notify-send "Spotdl Sync" "$1" --icon=spotify --app-name=spotify
+	notify-send "Spotdl Sync" "$1" --icon=spotify --app-name=Spotify
 }
 
 if ! command -v spotdl &>/dev/null; then
