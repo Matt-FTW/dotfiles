@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | rofi -dmenu)
 

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+screenshots_dir="$HOME/Imagenes/Capturas/PC"
+theme="$HOME/.config/rofi/scripts/wallpaper/style.rasi"
+
+build_theme() {
+	rows=$1
+	cols=$2
+	icon_size=$3
+
+	echo "element{orientation:vertical;}element-text{horizontal-align:0.5;}element-icon{size:$icon_size.0000em;}listview{lines:$rows;columns:$cols;}"
+}
+
+rofi_cmd="rofi -dmenu -i -show-icons -theme-str $(build_theme 5 4 10) -theme ${theme}"
+
+choice=$(
+	ls -t --escape "$screenshots_dir" -p | grep -v / |
+		while read A; do echo -en "$A\x00icon\x1f$screenshots_dir/$A\n"; done |
+		$rofi_cmd
+)
+
+screenshot="$screenshots_dir/$choice"
+
+if command -v satty &>/dev/null; then
+	satty -f "$screenshot"
+else
+	xdg-open "$screenshot"
+fi

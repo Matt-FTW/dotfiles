@@ -1,0 +1,135 @@
+// Config
+configuration {
+  modi:                       "games";
+  show-icons:                 true;
+  drun-display-format:        "{name}";
+  font:                       "JetBrainsMono Nerd Font 9";
+}
+
+@theme "~/.config/rofi/theme/catppuccin-macchiato.rasi"
+
+// Main
+window {
+  enabled:                    true;
+  fullscreen:                 false;
+  width:                      90%;
+  transparency:               "real";
+  cursor:                     "default";
+  spacing:                    0px;
+  padding:                    0px;
+  border:                     2px;
+  border-radius:              10px;
+  border-color:               @accent;
+  background-color:           transparent;
+}
+
+mainbox {
+  enabled:                    true;
+  children:                   [ "inputbar-box", "listview" ];
+  background-color:           @background;
+}
+
+inputbar-box {
+  children:                   [ dummy, inputbar, dummy ];
+  orientation:                horizontal;
+  expand:                     false;
+  margin:                     20px 0px 0px 0px;
+  background-color:           transparent;
+}
+
+dummy {
+  expand:                     true;
+  background-color:           transparent;
+}
+
+inputbar {
+  enabled:                    true;
+  spacing:                    15px;
+  margin:                     0px;
+  background-color:           transparent;
+  children:                   [ "textbox-prompt-colon", "entry" ];
+}
+
+textbox-prompt-colon {
+  enabled:                    true;
+  expand:                     false;
+  padding:                    13px 12px 13px 16px;
+  border:                     0px;
+  border-radius:              7px;
+  border-color:               @border-tb;
+  background-color:           @background-tb;
+  text-color:                 @foreground;
+  str:                        " ";
+}
+
+entry {
+  enabled:                    true;
+  padding:                    12px 16px;
+  border:                     0px;
+  border-radius:              7px;
+  border-color:               @border-tb;
+  background-color:           @background-tb;
+  text-color:                 @foreground;
+  cursor:                     text;
+  placeholder:                "Search...";
+  placeholder-color:          inherit;
+  vertical-align:             0.5;
+  horizontal-align:           0.0;
+  width:                      10%;
+}
+
+// Lists
+listview {
+  enabled:                    true;
+  columns:                    10;
+  lines:                      1;
+  spacing:                    30px;
+  padding:                    20px 40px 40px 40px;
+  cycle:                      true;
+  dynamic:                    false;
+  scrollbar:                  false;
+  layout:                     vertical;
+  reverse:                    false;
+  fixed-height:               true;
+  fixed-columns:              true;
+  cursor:                     "default";
+  background-color:           transparent;
+  text-color:                 @foreground;
+}
+
+// Elements
+element {
+  enabled:                    true;
+  orientation:                vertical;
+  spacing:                    0px;
+  padding:                    5px;
+  border-radius:              15px;
+  cursor:                     pointer;
+  background-color:           transparent;
+  text-color:                 @foreground;
+}
+
+element selected.normal {
+  background-color:           @accent;
+  text-color:                 @foreground;
+}
+
+element-icon {
+  size:                       25%;
+  spacing:                    0px;
+  padding:                    10px;
+  cursor:                     inherit;
+  border-radius:              20px;
+  background-color:           transparent;
+  text-color:                 inherit;
+}
+
+element-text {
+  vertical-align:             0.5;
+  horizontal-align:           0.5;
+  spacing:                    0px;
+  padding:                    10px;
+  cursor:                     inherit;
+  background-color:           transparent;
+  text-color:                 inherit;
+}

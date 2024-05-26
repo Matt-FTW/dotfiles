@@ -1,176 +1,175 @@
-/*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,filebrowser";
-    show-icons:                 true;
-    display-drun:               "Apps";
-    display-run:                "Run";
-    display-filebrowser:        "Files";
-    display-file-browser-extended: "Files";
-    display-window:             "Windows";
-	drun-display-format:        "{name}\n[<span weight='light' size='small'><i>({generic})</i></span>]";
-	window-format:              "Class : {c}\nWorkspace : {w}";
+  modi:                       "drun,filebrowser";
+  show-icons:                 true;
+  display-drun:               "Apps";
+  display-run:                "Run";
+  display-filebrowser:        "Files";
+  display-window:             "Windows";
+  drun-display-format:        "{name}\n[<span weight='light' size='small'><i>({generic})</i></span>]";
+  window-format:              "Class : {c}\nWorkspace : {w}";
+  me-select-entry:            "";
+  me-accept-entry:            [ MousePrimary, MouseSecondary, MouseDPrimary ];
 }
 
-/*****----- Global Properties -----*****/
-* {
-    font:                        "JetBrainsMono NF 10";
-}
+@theme "~/.config/rofi/theme/catppuccin-macchiato.rasi"
 
-/*****----- Main Window -----*****/
+// Main Window
 window {
-    /* properties for window widget */
-    location:                    center;
-    anchor:                      center;
-    fullscreen:                  false;
-    border:                      2px;
-    border-radius:               10px;
-    border-color:                #B7BDF869;
-    width:                       500px;
-    x-offset:                    0px;
-    y-offset:                    0px;
-
-    /* properties for all widgets */
-    enabled:                     true;
-    margin:                      0px;
-    padding:                     0px;
-    border-radius:               10px;
-    cursor:                      "default";
-    transparency:                "real";
-    background-color:            #24273ACC;
+  location:                    center;
+  anchor:                      center;
+  fullscreen:                  false;
+  border:                      2px;
+  border-radius:               10px;
+  border-color:                @accent;
+  width:                       500px;
+  x-offset:                    0px;
+  y-offset:                    0px;
+  enabled:                     true;
+  margin:                      0px;
+  padding:                     0px;
+  border-radius:               10px;
+  cursor:                      "default";
+  transparency:                "real";
+  background-color:            @background;
 }
 
-/*****----- Main Box -----*****/
+// Main Box
 mainbox {
-    enabled:                     true;
-    spacing:                     15px;
-    padding:                     30px;
-    background-color:            transparent;
-    children:                    [ "inputbar", "mode-switcher", "listview" ];
+  enabled:                     true;
+  spacing:                     15px;
+  padding:                     30px;
+  background-color:            transparent;
+  children:                    [ "inputbar", "mode-switcher", "listview" ];
 }
 
-/*****----- Inputbar -----*****/
+// Inputbar
 inputbar {
-    enabled:                     true;
-    spacing:                     15px;
-    margin:                      0px;
-    background-color:            transparent;
-    children:                    [ "textbox-prompt-colon", "entry" ];
-
+  enabled:                     true;
+  spacing:                     15px;
+  margin:                      0px;
+  background-color:            transparent;
+  children:                    [ "textbox-prompt-colon", "entry" ];
 }
 
 textbox-prompt-colon {
-    enabled:                     true;
-    expand:                      false;
-    padding:                     13px 12px 13px 16px;
-    border:                      0px;
-    border-radius:               7px;
-    border-color:                #363A4F;
-    background-color:            #494d64;
-    text-color:                  #CAD3F5;
-    str:                         " ";
+  enabled:                     true;
+  expand:                      false;
+  padding:                     13px 12px 13px 16px;
+  border:                      0px;
+  border-radius:               7px;
+  border-color:                @border-tb;
+  background-color:            @background-tb;
+  text-color:                  @foreground;
+  str:                         " ";
 }
+
 entry {
-    enabled:                     true;
-    padding:                     12px 16px;
-    border:                      0px;
-    border-radius:               7px;
-    border-color:                #363A4F;
-    background-color:            #494d64;
-    text-color:                  #CAD3F5;
-    cursor:                      text;
-    placeholder:                 "Search...";
-    placeholder-color:           inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
-
+  enabled:                     true;
+  padding:                     12px 16px;
+  border:                      0px;
+  border-radius:               7px;
+  border-color:                @border-tb;
+  background-color:            @background-tb;
+  text-color:                  @foreground;
+  cursor:                      text;
+  placeholder:                 "Search...";
+  placeholder-color:           inherit;
+  vertical-align:              0.5;
+  horizontal-align:            0.0;
 }
 
-/*****----- Listview -----*****/
+// Listview
 listview {
-    enabled:                     true;
-    columns:                     1;
-    lines:                       5;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   false;
-    layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
-    fixed-columns:               true;
-
-    spacing:                     10px;
-    background-color:            transparent;
-    cursor:                      "default";
+  enabled:                     true;
+  columns:                     1;
+  lines:                       5;
+  cycle:                       true;
+  dynamic:                     true;
+  scrollbar:                   false;
+  layout:                      vertical;
+  reverse:                     false;
+  fixed-height:                true;
+  fixed-columns:               true;
+  spacing:                     10px;
+  background-color:            transparent;
+  cursor:                      "default";
 }
 
-/*****----- Elements -----*****/
+// Elements
 element {
-    enabled:                     true;
-    spacing:                     10px;
-    margin:                      0px;
-    padding:                     10px;
-    border:                      0px solid;
-    border-radius:               7px;
-    background-color:            transparent;
-    text-color:                  #CAD3F5;
-    cursor:                      pointer;
+  enabled:                     true;
+  spacing:                     10px;
+  margin:                      0px;
+  padding:                     10px;
+  border:                      0px solid;
+  border-radius:               7px;
+  background-color:            transparent;
+  text-color:                  @foreground;
+  cursor:                      pointer;
 }
+
 element normal.active {
-    background-image:            linear-gradient(to right, #19B466, #7BF4B7);
-    text-color:                  #CAD3F5;
+  background-image:            @active;
+  text-color:                  @foreground;
 }
+
 element selected.normal {
-    border-radius:               7px;
-    background-image:            linear-gradient(to right, #363A4F, #B7BDF89F);
-    text-color:                  #CAD3F5;
+  border-radius:               7px;
+  background-image:            @selected;
+  text-color:                  @foreground;
 }
+
 element selected.active {
-    background-image:            linear-gradient(to right, #EA5553, #EAACAB);
-    text-color:                  #CAD3F5;
+  background-image:            @urgent;
+  text-color:                  @foreground;
 }
+
 element-icon {
-    background-color:            transparent;
-    size:                        48px;
-    cursor:                      inherit;
+  background-color:            transparent;
+  size:                        48px;
+  cursor:                      inherit;
 }
+
 element-text {
-    background-color:            inherit;
-    text-color:                  inherit;
-    cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
+  background-color:            inherit;
+  text-color:                  inherit;
+  cursor:                      inherit;
+  vertical-align:              0.5;
+  horizontal-align:            0.0;
 }
 
-/*****----- Mode Switcher -----*****/
-mode-switcher{
-    enabled:                     true;
-    expand:                      false;
-    spacing:                     15px;
-    background-color:            transparent;
+// Mode Switcher
+mode-switcher {
+  enabled:                     true;
+  expand:                      false;
+  spacing:                     15px;
+  background-color:            transparent;
 }
+
 button {
-    font:                        "JetBrainsMono NF 10";
-    padding:                     10px;
-    border-radius:               7px;
-    background-image:            linear-gradient(#939ab7);
-    text-color:                  #24273A;
-    cursor:                      pointer;
-}
-button selected {
-    background-image:            linear-gradient(#B7BDF89F);
-    text-color:                  #24273A;
+  padding:                     10px;
+  border-radius:               7px;
+  background-image:            @button;
+  text-color:                  @background;
+  cursor:                      pointer;
 }
 
-/*****----- Message -----*****/
-error-message {
-    padding:                     20px;
-    background-color:            #24273A;
-    text-color:                  #CAD3F5;
+button selected {
+  background-image:            @button-selected;
+  text-color:                  @background;
 }
+
+// Message
+error-message {
+  padding:                     20px;
+  background-color:            @background;
+  text-color:                  @foreground;
+}
+
 textbox {
-    padding:                     0px;
-    border-radius:               7px;
-    text-color:                  #CAD3F5;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
+  padding:                     0px;
+  border-radius:               7px;
+  text-color:                  @foreground;
+  vertical-align:              0.5;
+  horizontal-align:            0.0;
 }

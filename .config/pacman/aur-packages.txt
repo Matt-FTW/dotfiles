@@ -37,6 +37,7 @@ pyprland 2.3.2-2
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.01-1
 reflector-pacman-hook-git r87.eec94bd-1
+rofi-games v1.9.1.r0.g95654f7-1
 rpcs3-bin 0.0.32-1
 ryujinx-bin 1.1.1315-1
 satty 0.12.0-1
