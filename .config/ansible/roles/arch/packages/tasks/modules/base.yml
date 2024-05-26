@@ -120,7 +120,6 @@
       - floorp-bin
 
       # WM
-      - wleave-git
       - swayosd-git
       - swww
       - satty

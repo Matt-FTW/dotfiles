@@ -60,7 +60,6 @@ vesktop-bin 1.5.2-2
 vkbasalt 0.3.2.10-1
 vscodium-bin 1.89.1.24130-1
 vscodium-bin-marketplace 1.76.0-1
-wleave-git 0.3.0.r1.ga3d2fbb-1
 xdg-ninja 0.2.0.2-1
 xemu-bin 0.7.118-1
 yay 12.3.5-1
