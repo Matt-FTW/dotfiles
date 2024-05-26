@@ -175,7 +175,7 @@
   "animations.Smooth-Mode": true,
   "animations.Install-Method": "Apc Customize UI++",
   "apc.imports": [
-    "file:///home/matt/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.1/dist/updateHandler.js"
+    "file://${userHome}/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
   ],
   // Language specific
   "markdown.preview.scrollEditorWithPreview": true,

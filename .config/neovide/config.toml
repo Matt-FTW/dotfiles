@@ -3,5 +3,5 @@ maximized = false
 srgb = true
 idle = false
 no-multigrid = true
-neovim_bin = "/home/matt/.local/share/bob/nvim-bin/nvim"
+neovim_bin = "~/.local/share/bob/nvim-bin/nvim"
 frame = "full"
