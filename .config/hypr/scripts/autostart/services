@@ -1,20 +1,16 @@
 #!/bin/bash
 
-# Variables
-config=$HOME/.config/hypr
-scripts=$config/scripts
-
 # Automounter for removable media
 udiskie &
 
 # Wallpaper Backend
 swww-daemon --format xrgb &
 
+# Pyprland Daemon
+pypr &
+
 # Bar
 waybar &
-
-# Plugins
-pypr &
 
 # Notification Daemon
 swaync &
@@ -29,16 +25,17 @@ devify &
 hypridle &
 
 # Clipboard
-wl-clip-persist --clipboard regular &
 wl-paste --watch cliphist store &
 
 # Polkit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Screen sharing and portals
-"$scripts"/portal &
-# xwaylandvideobridge &
+"$HOME"/.config/hypr/portal &
+# xwaylandvideobridge & # Off when using Vesktop instead of Discord
 
 # Audio
 easyeffects --gapplication-service &
+
+# Systemd services
 systemctl --user start protonmail-bridge &
