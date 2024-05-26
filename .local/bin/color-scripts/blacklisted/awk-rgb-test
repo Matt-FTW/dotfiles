@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo "This should be a smooth gradient"
 echo ""
 awk 'BEGIN{

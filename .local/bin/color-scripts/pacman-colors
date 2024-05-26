@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # ANSI color scheme script featuring PACMAN
 # Author: pfh

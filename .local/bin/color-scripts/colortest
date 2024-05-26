@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 #   Daniel Crisman's ANSI color chart script from
 #   The Bash Prompt HOWTO: 6.1. Colours

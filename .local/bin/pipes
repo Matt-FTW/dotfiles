@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # pipes.sh: Animated pipes terminal screensaver.
 # https://github.com/pipeseroni/pipes.sh
 #
