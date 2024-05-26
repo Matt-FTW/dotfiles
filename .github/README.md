@@ -50,14 +50,15 @@ I've been working on this for a long time so I hope you like it!
 
 - :dark_sunglasses: Dark Mode for the Whole System
 - :zzz: Neovim powered by LazyVim with Custom Extras Added (More than 200!)
-- :window: Animations for Most of the System
 - :point_up: Screenshot, Keybindings, Games, Clipboard, Color and Wallpaper Picker
+- :window: Animations for nearly all the System
 - :desktop_computer: AwesomeWM Workspace Behavior
 - :open_file_folder: Following XDG Base Directory Standard
 - :car: Automatic Mounting of USB Devices with Notification
 - :scroll: Scratchpads
 - :dizzy: Beautiful [Wallpapers](../.config/hypr/theme/walls/.github/README.md)
 - :nerd_face: Shell Prompt with Nerd Icons
+- :heavy_plus_sign: Extra Hyprland Plugins
 - :earth_americas: Custom Userchrome and Extension Configurations
 - :rocket: Minimal VSCodium with Native Integration of your Neovim Setup
 - :crab: Rust Alternatives
@@ -65,7 +66,7 @@ I've been working on this for a long time so I hope you like it!
 - :loud_sound: Volume and Brightness OSD
 - :art: Color Scripts for the Terminal
 - :lock: Idle and Lock apps
-- :boom: Performance Mode
+- :zap: Performance Mode
 - :gear: Various other Tweaks
 
 ---
@@ -198,7 +199,7 @@ Here is all the information about my setup:
 ### :package: <samp>Manual Installation</samp>
 
 > [!NOTE]
-> The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). For CLI/TUI specific packages I recommend to use [homebrew](https://brew.sh/).
+> The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). To install CLI/TUI specific packages in non-arch based distros, I recommend to use [homebrew](https://brew.sh/).
 
 1. First, lets start with the required **base packages** for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
 
