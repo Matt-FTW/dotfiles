@@ -11,11 +11,13 @@
       # Video
       - obs-studio
       - blender
-      - yt-dlp
 
       # Image
       - pinta
       - krita
+
+      # Downloaders
+      - yt-dlp
 
 - name: Install AUR Packages
   become: true
@@ -26,4 +28,7 @@
       # Audio
       - spicetify-cli
       - spotify
-      - ytdlp-gui
+
+      # Downloaders
+      - gallery-dl
+      - spotdl
