@@ -17,6 +17,7 @@ return {
       "symbols-outline",
       "vim-be-good",
       "oil",
+      "outline",
     },
     restriction_mode = "hint",
     restricted_keys = {
