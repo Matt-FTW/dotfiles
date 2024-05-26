@@ -674,65 +674,65 @@
 
 # :camera: ‎ <samp>Gallery</samp>
 
-| **Dashboard**                                 |
-| --------------------------------------------- |
-| ![dashboard](./overview-images/dashboard.png) |
+| **Dashboard**                        |
+| ------------------------------------ |
+| ![dashboard](./assets/dashboard.png) |
 
-| **Telescope Find-files**                        |
-| ----------------------------------------------- |
-| ![find-files](./overview-images/find-files.png) |
+| **Telescope Find-files**               |
+| -------------------------------------- |
+| ![find-files](./assets/find-files.png) |
 
-| **Neo-tree**                                | **Symbols Outline**                       |
-| ------------------------------------------- | ----------------------------------------- |
-| ![neo-tree](./overview-images/neo-tree.png) | ![outline](./overview-images/outline.png) |
+| **Neo-tree**                       | **Symbols Outline**              |
+| ---------------------------------- | -------------------------------- |
+| ![neo-tree](./assets/neo-tree.png) | ![outline](./assets/outline.png) |
 
-| **Bufferline**                                  |
-| ----------------------------------------------- |
-| ![bufferline](./overview-images/bufferline.png) |
+| **Bufferline**                         |
+| -------------------------------------- |
+| ![bufferline](./assets/bufferline.png) |
 
-| **Lualine**                               |
-| ----------------------------------------- |
-| ![lualine](./overview-images/lualine.png) |
+| **Lualine**                      |
+| -------------------------------- |
+| ![lualine](./assets/lualine.png) |
 
-| **Notify Info**                            | **Notify Warning**                               | **Notify Error**                             |
-| ------------------------------------------ | ------------------------------------------------ | -------------------------------------------- |
-| ![info](./overview-images/notify-info.png) | ![warning](./overview-images/notify-warning.png) | ![error](./overview-images/notify-error.png) |
+| **Notify Info**                   | **Notify Warning**                      | **Notify Error**                    |
+| --------------------------------- | --------------------------------------- | ----------------------------------- |
+| ![info](./assets/notify-info.png) | ![warning](./assets/notify-warning.png) | ![error](./assets/notify-error.png) |
 
-| **Which-key**                                 |
-| --------------------------------------------- |
-| ![which-key](./overview-images/which-key.png) |
+| **Which-key**                        |
+| ------------------------------------ |
+| ![which-key](./assets/which-key.png) |
 
-| **Telescope Live-Grep**                       |
-| --------------------------------------------- |
-| ![live-grep](./overview-images/live-grep.png) |
+| **Telescope Live-Grep**              |
+| ------------------------------------ |
+| ![live-grep](./assets/live-grep.png) |
 
-| **Cmp**                               |
-| ------------------------------------- |
-| ![cmp](./overview-images/cmp.png)     |
-| ![cmp-2](./overview-images/cmp-2.png) |
+| **Cmp**                      |
+| ---------------------------- |
+| ![cmp](./assets/cmp.png)     |
+| ![cmp-2](./assets/cmp-2.png) |
 
-| **Breadcrumbs**                                   |
-| ------------------------------------------------- |
-| ![breadcrumbs](./overview-images/breadcrumbs.png) |
+| **Breadcrumbs**                          |
+| ---------------------------------------- |
+| ![breadcrumbs](./assets/breadcrumbs.png) |
 
-| **Actions Preview**                                       |
-| --------------------------------------------------------- |
-| ![actions-preview](./overview-images/actions-preview.png) |
+| **Actions Preview**                              |
+| ------------------------------------------------ |
+| ![actions-preview](./assets/actions-preview.png) |
 
-| **Trouble**                               |
-| ----------------------------------------- |
-| ![trouble](./overview-images/trouble.png) |
+| **Trouble**                      |
+| -------------------------------- |
+| ![trouble](./assets/trouble.png) |
 
-| **Diff-History**                                    |
-| --------------------------------------------------- |
-| ![diff-history](./overview-images/diff-history.png) |
+| **Diff-History**                           |
+| ------------------------------------------ |
+| ![diff-history](./assets/diff-history.png) |
 
-| **Floaterm**                                      |
-| ------------------------------------------------- |
-| ![floating](./overview-images/floaterm-float.png) |
+| **Floaterm**                             |
+| ---------------------------------------- |
+| ![floating](./assets/floaterm-float.png) |
 
-| **Dressing Menu**                           |
-| ------------------------------------------- |
-| ![dressing](./overview-images/dressing.png) |
+| **Dressing Menu**                  |
+| ---------------------------------- |
+| ![dressing](./assets/dressing.png) |
 
 # :keyboard: ‎ <samp>Binds</samp>
