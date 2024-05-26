@@ -12,10 +12,13 @@ require("lazy").setup({
     {
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
-      opts = { colorscheme = "catppuccin" },
+      opts = {
+        colorscheme = "catppuccin",
+      },
     },
-    { import = "plugins" },
-    { import = "lazyvim.plugins.extras.lazyrc" },
+    {
+      import = "plugins",
+    },
   },
   ui = {
     backdrop = 100,
@@ -25,6 +28,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
+  local_spec = true,
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     cache = {
