@@ -50,13 +50,13 @@ I've been working on this for a long time so I hope you like it!
 
 - :dark_sunglasses: Dark Mode for the Whole System
 - :zzz: Neovim powered by LazyVim with Custom Extras Added (More than 200!)
-- :point_up: Screenshot, Clipboard, Color and Wallpaper Picker
 - :window: Animations for Most of the System
+- :point_up: Screenshot, Keybindings, Games, Clipboard, Color and Wallpaper Picker
 - :desktop_computer: AwesomeWM Workspace Behavior
 - :open_file_folder: Following XDG Base Directory Standard
 - :car: Automatic Mounting of USB Devices with Notification
 - :scroll: Scratchpads
-- :dizzy: Beautiful [Wallpapers](../.config/hypr/theme/walls/README.md)
+- :dizzy: Beautiful [Wallpapers](../.config/hypr/theme/walls/.github/README.md)
 - :nerd_face: Shell Prompt with Nerd Icons
 - :earth_americas: Custom Userchrome and Extension Configurations
 - :rocket: Minimal VSCodium with Native Integration of your Neovim Setup
@@ -206,7 +206,7 @@ Here is all the information about my setup:
    yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
            swww waybar rofi-wayland swaync swayosd-git wl-clipboard \
            pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-           catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim
+           catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty
    ```
 
    On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
@@ -264,7 +264,7 @@ Here is all the information about my setup:
    - Useful GUI packages
 
    ```bash
-   yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor satty
+   yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
    ```
 
 3. **Installing the dotfiles**:
@@ -302,7 +302,7 @@ If you had any issues or you have some questions about the installation process,
 > For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
 
 > [!NOTE]
-> If you want to check the wallpapers, they are available [right here](../.config/hypr/theme/walls/README.md).
+> If you want to check the wallpapers, they are available [right here](../.config/hypr/theme/walls/.github/README.md).
 
 | **System Fetch, Pacman Colorscript, App Launcher and Notif. Center** |
 | -------------------------------------------------------------------- |
