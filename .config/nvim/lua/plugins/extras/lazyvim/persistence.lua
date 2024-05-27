@@ -8,7 +8,7 @@ return {
       "<leader>qS",
       function()
         p.save()
-        vim.notify("Session Saved", vim.log.levels.INFO, { title = "Persistence" })
+        LazyVim.notify("Session Saved", { title = "Persistence" })
       end,
       desc = "Save Session",
     },

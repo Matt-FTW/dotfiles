@@ -124,7 +124,7 @@ local linters = function()
   local buf_linters = {}
 
   if not linters_attached then
-    vim.notify("No linters attached", vim.log.levels.WARN, { title = "Linter" })
+    LazyVim.warn("No linters attached", { title = "Linter" })
     return
   end
 
@@ -135,7 +135,7 @@ local linters = function()
   local unique_client_names = table.concat(buf_linters, ", ")
   local linters = string.format("%s", unique_client_names)
 
-  vim.notify(linters, vim.log.levels.INFO, { title = "Linter" })
+  LazyVim.notify(linters, { title = "Linter" })
 end
 map("n", "<leader>ciL", linters, { desc = "Lint" })
 map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })

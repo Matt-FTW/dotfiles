@@ -37,5 +37,5 @@ if vim.fn.has("nvim-0.10") == 1 then
     },
   }
 else
-  vim.notify("Treesitter Playground only works with the nightly build")
+  LazyVim.notify("Treesitter Playground only works with the nightly build", { title = "Treesitter Playground" })
 end
