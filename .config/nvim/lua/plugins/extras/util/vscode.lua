@@ -29,6 +29,7 @@ local enabled = {
   "vim-carbon-now-sh",
   "highlight-undo.nvim",
   "ts-node-action",
+  "ts.comments",
   "LazyVim",
 }
 
