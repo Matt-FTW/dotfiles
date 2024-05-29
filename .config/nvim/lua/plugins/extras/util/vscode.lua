@@ -2,42 +2,8 @@ if not vim.g.vscode then
   return {}
 end
 
-local config = require("lazy.core.config")
 local vscode = require("vscode-neovim")
-
 local map = vim.keymap.set
-
--- Add any additional plugins in vscode, you can set vscode=true on a plugin spec.
-local enabled = {
-  "flash.nvim",
-  "lazy.nvim",
-  "dial.nvim",
-  "mini.align",
-  "nvim-recorder",
-  "comment-box.nvim",
-  "text-case.nvim",
-  "mini.ai",
-  "mini.comment",
-  "mini.pairs",
-  "mini.surround",
-  "nvim-treesitter",
-  "wildfire.nvim",
-  "nvim-treesitter-textobjects",
-  "nvim-various-textobjs",
-  "nvim-ts-context-commentstring",
-  "vim-repeat",
-  "vim-carbon-now-sh",
-  "highlight-undo.nvim",
-  "ts-node-action",
-  "ts.comments",
-  "LazyVim",
-}
-
-config.options.checker.enabled = false
-config.options.change_detection.enabled = false
-config.options.defaults.cond = function(plugin)
-  return vim.tbl_contains(enabled, plugin.name) or plugin.vscode
-end
 
 -- Options
 vim.o.spell = false
@@ -154,6 +120,7 @@ vim.api.nvim_create_autocmd("User", {
 })
 
 return {
+  { import = "lazyvim.plugins.extras.vscode" },
   {
     "LazyVim/LazyVim",
     config = function(_, opts)
@@ -162,14 +129,6 @@ return {
       opts.colorscheme = function() end
       require("lazyvim").setup(opts)
     end,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      highlight = {
-        enable = false,
-      },
-    },
   },
   {
     "folke/flash.nvim",
