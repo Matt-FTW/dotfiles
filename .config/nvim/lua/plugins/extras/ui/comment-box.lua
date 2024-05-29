@@ -2,6 +2,7 @@ return {
   {
     "LudoPinelli/comment-box.nvim",
     opts = {},
+    vscode = true,
     keys = {
       { "<leader>acb", "<cmd>CBccbox<CR>", mode = { "n", "v" }, desc = "Comment Box" },
       { "<leader>act", "<cmd>CBllline<CR>", mode = { "n", "v" }, desc = "Tiled Line" },

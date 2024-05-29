@@ -2,6 +2,7 @@ return {
   "mistricky/codesnap.nvim",
   build = "make",
   cmd = { "CodeSnap", "CodeSnapSave" },
+  vscode = true,
   keys = {
     { "<leader>cs", mode = "v", ":'<,'>CodeSnap<cr>", desc = "Screenshot (Clipboard)" },
     { "<leader>cS", mode = "v", ":'<,'>CodeSnapSave<cr>", desc = "Screenshot (Save)" },

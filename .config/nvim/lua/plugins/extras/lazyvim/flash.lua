@@ -1,6 +1,7 @@
 return {
   "folke/flash.nvim",
   opts = {},
+  vscode = true,
   keys = {
     {
       "s",

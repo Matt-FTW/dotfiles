@@ -1,6 +1,7 @@
 return {
   "chrisgrieser/nvim-various-textobjs",
   opts = { useDefaultKeymaps = false },
+  vscode = true,
   -- stylua: ignore
   keys = {
     { "im", ft = { "markdown", "toml" }, mode = { "o", "x" }, function() require("various-textobjs").mdlink("inner") end, desc = "Markdown Link" },
