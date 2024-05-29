@@ -2,7 +2,7 @@
 
 # variables
 uptime="$(uptime -p | sed -e 's/up //g')"
-shutdown='󰤁'
+shutdown='󰐥'
 reboot='󰜉'
 lock=''
 suspend='󰤄'
