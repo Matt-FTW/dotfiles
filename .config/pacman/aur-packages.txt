@@ -13,6 +13,7 @@ devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6757.g7626a9b-1
 floorp-bin 11.13.3-1
+gallery-dl 1.26.9-3
 gtrash-bin 0.0.5-1
 gzdoom 4.12.2-1
 heroic-games-launcher-bin 2.14.1-1
@@ -28,7 +29,6 @@ paccache-hook 1.1.1-2
 pacseek 1.8.3-1
 pcsx2-latest-bin 1.7.5808-1
 pika-backup 1:0.7.2-1
-pinterest-downloader-git f69006c.20230501.171-1
 proton-ge-custom-bin 1:GE_Proton9_5-1
 proton-vpn-gtk-app 4.3.2-1
 protonmail-bridge-bin 3.10.0-1
