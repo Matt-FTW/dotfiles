@@ -2,7 +2,6 @@
   "extras": [
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.mini-move",
-    "lazyvim.plugins.extras.editor.trouble-v3",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codeium",
@@ -40,7 +39,9 @@
     "plugins.extras.lang.python-extended",
     "plugins.extras.lang.rust-extended",
     "plugins.extras.lang.web.html-css",
+    "plugins.extras.lang.web.svelte",
     "plugins.extras.lang.web.typescript-extended",
+    "plugins.extras.lang.web.vue-3",
     "plugins.extras.lang.yaml-extended",
     "plugins.extras.lazyvim.bufferline",
     "plugins.extras.lazyvim.cmp",
@@ -80,5 +81,5 @@
   "news": {
     "NEWS.md": "4964"
   },
-  "version": 5
+  "version": 6
 }
