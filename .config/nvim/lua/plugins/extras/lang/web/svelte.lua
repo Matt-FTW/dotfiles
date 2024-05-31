@@ -1,3 +1,12 @@
+local inlay_hints_settings = {
+  parameterNames = { enabled = "all" },
+  parameterTypes = { enabled = true },
+  variableTypes = { enabled = true },
+  propertyDeclarationTypes = { enabled = true },
+  functionLikeReturnTypes = { enabled = true },
+  enumMemberValues = { enabled = true },
+}
+
 return {
   {
     "nvim-treesitter/nvim-treesitter",
@@ -12,6 +21,16 @@ return {
     opts = {
       servers = {
         svelte = {
+          settings = {
+            typescript = {
+              updateImportsOnFileMove = { enabled = "always" },
+              inlayHints = inlay_hints_settings,
+            },
+            javascript = {
+              updateImportsOnFileMove = { enabled = "always" },
+              inlayHints = inlay_hints_settings,
+            },
+          },
           handlers = {
             ["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
               require("ts-error-translator").translate_diagnostics(err, result, ctx, config)
