@@ -288,7 +288,7 @@
   {
     "key": "space",
     "command": "whichkey.show",
-    "when": "neovim.mode != 'insert' && !inputFocus"
+    "when": "editorFocus || filesExplorerFocus && !inputFocus && neovim.mode != 'insert'"
   },
   {
     "key": "alt+enter",

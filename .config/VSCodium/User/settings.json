@@ -163,7 +163,7 @@
   "animations.CursorAnimationOptions": {
     "Color": "#b7bdf8",
     "CursorStyle": "block",
-    "TrailLength": 3
+    "TrailLength": 2
   },
   "animations.Active": "Indent",
   "animations.Scrolling": "Slide",
@@ -1118,7 +1118,7 @@
     }
   ],
   "workbench.statusBar.visible": false,
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.activityBar.location": "hidden"
 }
