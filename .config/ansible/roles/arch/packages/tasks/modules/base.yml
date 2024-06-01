@@ -127,7 +127,7 @@
       - nwg-displays
       - nwg-look
       - pyprland
-      - wl-clip-persist-git
+      - wl-clip-persist
 
       # Hooks
       - check-broken-packages-pacman-hook-git
