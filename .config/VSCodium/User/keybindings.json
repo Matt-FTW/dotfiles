@@ -288,7 +288,7 @@
   {
     "key": "space",
     "command": "whichkey.show",
-    "when": "editorFocus || filesExplorerFocus && !inputFocus && neovim.mode != 'insert'"
+    "when": "!inputFocus && neovim.mode != 'insert' && !codeium.chatPanelView.active && !codeium.searchPanelView.active"
   },
   {
     "key": "alt+enter",

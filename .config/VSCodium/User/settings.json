@@ -1118,7 +1118,7 @@
     }
   ],
   "workbench.statusBar.visible": false,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "workbench.editor.showTabs": "multiple",
   "workbench.activityBar.location": "hidden"
 }
