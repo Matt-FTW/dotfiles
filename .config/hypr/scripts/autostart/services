@@ -25,6 +25,7 @@ devify &
 hypridle &
 
 # Clipboard
+wl-clip-persist --clipboard regular &
 wl-paste --watch cliphist store &
 
 # Polkit authentication
