@@ -5,7 +5,7 @@ return {
   { "tzachar/cmp-tabnine", optional = true },
   { "Exafunction/codeium.nvim", optional = true },
   { "echasnovski/mini.surround", optional = true },
-  { "JoosepAlviste/nvim-ts-context-commentstring" },
+  { "JoosepAlviste/nvim-ts-context-commentstring", optional = true },
 
   -- DAP
   { "jbyuki/one-small-step-for-vimkind", optional = true },
