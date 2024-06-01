@@ -1,6 +1,7 @@
 return {
   "chrisgrieser/nvim-spider",
   opts = {},
+  vscode = true,
   -- stylua: ignore
   keys = {
     { "e", mode = { "n", "o", "x" }, function() require("spider").motion("e") end, desc = "Spider-e" },

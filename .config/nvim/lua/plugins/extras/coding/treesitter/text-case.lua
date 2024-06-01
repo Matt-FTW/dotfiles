@@ -1,6 +1,5 @@
 return {
   "johmsalas/text-case.nvim",
-  vscode = true,
   config = function()
     require("textcase").setup()
     LazyVim.on_load("telescope.nvim", function()

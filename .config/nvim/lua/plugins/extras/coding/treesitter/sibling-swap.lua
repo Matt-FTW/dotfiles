@@ -1,6 +1,7 @@
 return {
   "Wansmer/sibling-swap.nvim",
   dependencies = "nvim-treesitter/nvim-treesitter",
+  vscode = true,
   opts = {
     use_default_keymaps = false,
     highlight_node_at_cursor = true,

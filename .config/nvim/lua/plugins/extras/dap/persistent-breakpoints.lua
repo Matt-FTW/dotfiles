@@ -2,6 +2,7 @@ return {
   {
     "mfussenegger/nvim-dap",
     optional = true,
+    vscode = false,
     dependencies = {
       "Weissle/persistent-breakpoints.nvim",
       vscode = false,
