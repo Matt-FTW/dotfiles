@@ -4,5 +4,7 @@ return {
   vscode = true,
   opts = {},
   --stylua: ignore
-  keys = { { "J", "<cmd>NodeAction<cr>", mode = "n", desc = "Node action" } },
+  keys = {
+    { "J", "<cmd>NodeAction<cr>", mode = "n", desc = "Node action" }
+  },
 }

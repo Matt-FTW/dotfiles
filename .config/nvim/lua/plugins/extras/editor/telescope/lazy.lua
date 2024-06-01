@@ -6,6 +6,6 @@ return {
     end)
   end,
   keys = {
-    { "<leader>sP", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
+    { "<leader>sp", "<cmd>Telescope lazy<CR>", desc = "Plugins (Lazy)" },
   },
 }

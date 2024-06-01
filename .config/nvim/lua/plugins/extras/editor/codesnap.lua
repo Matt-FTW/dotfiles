@@ -4,8 +4,8 @@ return {
   cmd = { "CodeSnap", "CodeSnapSave" },
   vscode = true,
   keys = {
-    { "<leader>cs", mode = "v", ":'<,'>CodeSnap<cr>", desc = "Screenshot (Clipboard)" },
-    { "<leader>cS", mode = "v", ":'<,'>CodeSnapSave<cr>", desc = "Screenshot (Save)" },
+    { "<leader>cs", mode = "v", "<cmd>'<,'>CodeSnap<cr>", desc = "Screenshot (Clipboard)" },
+    { "<leader>cS", mode = "v", "<cmd>'<,'>CodeSnapSave<cr>", desc = "Screenshot (Save)" },
   },
   cond = vim.env.KITTY_SCROLLBACK_NVIM == nil,
   opts = {

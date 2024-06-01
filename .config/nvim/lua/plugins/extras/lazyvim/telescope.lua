@@ -40,7 +40,7 @@ return {
       { "<leader>sSp", LazyVim.telescope("lsp_dynamic_workspace_symbols", { symbols = { "Property" } }), desc = "Property" },
       { "<leader>sSv", LazyVim.telescope("lsp_dynamic_workspace_symbols", { symbols = { "Variable", "Parameter" } }), desc = "Variable" },
       { "<leader>sA", LazyVim.telescope("treesitter"), desc = "Treesitter Symbols" },
-      { "<leader>sp", "<cmd>Telescope builtin<cr>", desc = "Pickers (Telescope)" },
+      { "<leader>sP", "<cmd>Telescope builtin<cr>", desc = "Pickers (Telescope)" },
       { "<leader>fh", LazyVim.telescope("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader><c-space>", LazyVim.telescope("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader>gf", "<cmd>Telescope git_bcommits<cr>", desc = "File History" },

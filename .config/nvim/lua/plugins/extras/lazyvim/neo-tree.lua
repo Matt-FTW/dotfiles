@@ -5,7 +5,8 @@ return {
     window = {
       mappings = {
         ["l"] = "open",
-        ["e"] = function()
+        ["e"] = "open",
+        ["E"] = function()
           vim.api.nvim_exec("Neotree focus filesystem left", true)
         end,
         ["b"] = function()
