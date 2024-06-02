@@ -6,13 +6,13 @@ return {
   { "folke/ts-comments.nvim" },
   { "echasnovski/mini.comment" },
   { "echasnovski/mini.ai" },
+  { "folke/lazydev.nvim" },
 
   -- Editor
   { "folke/trouble.nvim" },
   { "folke/todo-comments.nvim" },
 
   -- LSP
-  { "folke/neoconf.nvim" },
   { "folke/neodev.nvim" },
   { "williamboman/mason-lspconfig.nvim" },
 

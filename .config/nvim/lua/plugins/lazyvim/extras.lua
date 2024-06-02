@@ -71,6 +71,8 @@ return {
 
   -- LSP
   { "nvimtools/none-ls.nvim", optional = true },
+  { "folke/neoconf.nvim", optional = true },
+  { "folke/neodev.nvim", optional = true },
 
   -- UI
   { "echasnovski/mini.animate", optional = true },
