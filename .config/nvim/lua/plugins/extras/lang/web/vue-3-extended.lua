@@ -9,6 +9,7 @@ local inlay_hints_settings = {
 
 return {
   { import = "lazyvim.plugins.extras.lang.vue" },
+  { import = "plugins.extras.lang.web.typescript-extended" },
   {
     "neovim/nvim-lspconfig",
     opts = {
