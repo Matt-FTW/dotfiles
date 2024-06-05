@@ -5,8 +5,6 @@ for i = 1, 9 do
   table.insert(keys, { "<leader>b" .. i, "<cmd>BufferLineGoToBuffer " .. i .. "<cr>", desc = "Buffer " .. i })
 end
 
-table.insert(keys, { "[B", "<cmd>BufferLineMovePrev<cr>", desc = "Move Buffer Prev" })
-table.insert(keys, { "]B", "<cmd>BufferLineMoveNext<cr>", desc = "Move Buffer Next" })
 table.insert(keys, { "<leader>.", "<Cmd>BufferLinePick<CR>", desc = "Pick Buffer" })
 
 table.insert(keys, { "<leader>bS", "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort By Directory" })
