@@ -327,6 +327,7 @@
 - [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
 - [toppair/peek.nvim](https://dotfyle.com/plugins/toppair/peek.nvim)
 - [lukas-reineke/headlines.nvim](https://dotfyle.com/plugins/lukas-reineke/headlines.nvim)
+- [crispgm/telescope-heading.nvim](https://dotfyle.com/plugins/crispgm/telescope-heading.nvim)
 
 </details>
 
