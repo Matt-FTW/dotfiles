@@ -4,6 +4,10 @@ local o = vim.opt
 -- Optimizations on startup
 vim.loader.enable()
 
+-- LazyVim related options
+vim.g.lazyvim_statuscolumn.folds_open = true
+vim.g.lazyvim_statuscolumn.folds_githl = true
+
 -- Define leader key
 go.mapleader = " "
 go.maplocalleader = "\\"
