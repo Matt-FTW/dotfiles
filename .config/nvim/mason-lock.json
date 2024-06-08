@@ -1,5 +1,4 @@
 {
-  "basedpyright": "1.12.4",
   "bash-language-server": "5.3.3",
   "biome": "1.7.3",
   "codelldb": "v1.10.0",
@@ -16,7 +15,8 @@
   "jq": "jq-1.7",
   "js-debug-adapter": "v1.90.0",
   "json-lsp": "4.10.0",
-  "lua-language-server": "3.9.1",
+  "lua-language-server": "3.9.2",
+  "markdown-toc": "1.2.0",
   "markdownlint": "0.41.0",
   "marksman": "2023-12-09",
   "markuplint": "4.9.0",
@@ -34,5 +34,6 @@
   "typescript-language-server": "4.3.3",
   "vtsls": "0.2.3",
   "vue-language-server": "2.0.19",
-  "yaml-language-server": "1.14.0"
+  "yaml-language-server": "1.14.0",
+
 }
