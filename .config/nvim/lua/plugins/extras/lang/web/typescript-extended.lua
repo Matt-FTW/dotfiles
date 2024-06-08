@@ -3,10 +3,11 @@ return {
   { import = "plugins.extras.lang.json-extended" },
   {
     "williamboman/mason.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, { "deno" })
-    end,
+    opts = {
+      ensure_installed = {
+        "deno",
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -31,12 +32,12 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, {
+    opts = {
+      ensure_installed = {
         "javascript",
         "jsdoc",
-      })
-    end,
+      },
+    },
   },
   {
     "dmmulroy/tsc.nvim",

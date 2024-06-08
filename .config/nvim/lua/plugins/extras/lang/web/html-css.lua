@@ -1,13 +1,13 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, {
+    opts = {
+      ensure_installed = {
         "html",
         "css",
         "scss",
-      })
-    end,
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -42,9 +42,8 @@ return {
   },
   {
     "williamboman/mason.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = opts.ensure_installed or {}
-      vim.list_extend(opts.ensure_installed, {
+    opts = {
+      ensure_installed = {
         "emmet-language-server",
         "html-lsp",
         "cssmodules-language-server",
@@ -52,8 +51,8 @@ return {
         "css-lsp",
         "htmlhint",
         "stylelint",
-      })
-    end,
+      },
+    },
   },
   {
     "mfussenegger/nvim-lint",
