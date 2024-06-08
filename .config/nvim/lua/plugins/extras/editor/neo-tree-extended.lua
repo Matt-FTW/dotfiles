@@ -4,7 +4,6 @@ return {
     close_if_last_window = true,
     window = {
       mappings = {
-        ["l"] = "open",
         ["e"] = "open",
         ["E"] = function()
           vim.api.nvim_exec("Neotree focus filesystem left", true)
@@ -15,7 +14,6 @@ return {
         ["g"] = function()
           vim.api.nvim_exec("Neotree focus git_status left", true)
         end,
-        ["h"] = "close_node",
         ["<c-/>"] = "fuzzy_finder_directory",
         ["D"] = function(state)
           local node = state.tree:get_node()
