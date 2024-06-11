@@ -1,12 +1,26 @@
 [Unit]
-Description=Protonmail client bridge service
-PartOf=graphical-session.target
-After=graphical-session.target
+Description=ProtonMail Bridge - ProtonMail IMAP and SMTP Bridge
+After=network.target
 
 [Service]
-Type=exec
-StandardOutput=journal
-ExecStart=/usr/bin/protonmail-bridge --no-window
+Type=simple
+ExecStart=/usr/bin/protonmail-bridge-core --noninteractive
+Restart=always
+KillMode=process
+
+# Hardening
+PrivateTmp=true
+# ProtectHome=true
+ProtectSystem=full
+NoNewPrivileges=true
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+PrivateDevices=true
+# RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+RestrictNamespaces=true
+RestrictRealtime=true
+SystemCallArchitectures=native
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=default.target
