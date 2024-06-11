@@ -1,8 +1,8 @@
 [Unit]
-Description=Run Spotdl Sync Weekly
+Description=Run Spotdl Sync
 
 [Timer]
-OnCalendar=*-*-* 18:00:00
+OnCalendar=Mon,Wed,Fri 18:00:00
 Persistent=true
 Unit=downloadSpotify.service
 
