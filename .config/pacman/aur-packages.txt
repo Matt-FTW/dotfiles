@@ -31,7 +31,6 @@ pcsx2-latest-bin 1.7.5844-1
 pika-backup 1:0.7.2-1
 proton-ge-custom-bin 1:GE_Proton9_5-1
 proton-vpn-gtk-app 4.3.2-1
-protonmail-bridge-bin 3.10.0-1
 protonvpn-cli-community 2.2.12-1
 pyprland 2.3.5-1
 qt5-styleplugins 5.0.0.20170311-35

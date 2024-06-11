@@ -142,6 +142,7 @@ pkgconf 2.1.1-1
 playerctl 2.4.1-3
 plocate 1.1.22-1
 polkit-gnome 0.105-10
+protonmail-bridge 3.11.1-3
 python-cairo 1.26.0-2
 python-pip 24.0-2
 python-pipx 1.5.0-2
