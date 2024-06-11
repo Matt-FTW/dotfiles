@@ -32,7 +32,7 @@ go.root_spec = {
 
 -- Disable annoying cmd line stuff
 o.showcmd = false
-o.laststatus = 0
+o.laststatus = 3
 o.cmdheight = 0
 
 -- Enable spell checking
