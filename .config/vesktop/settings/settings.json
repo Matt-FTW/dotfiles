@@ -382,9 +382,6 @@
         "ServerListIndicators": {
             "enabled": false
         },
-        "ServerProfile": {
-            "enabled": false
-        },
         "ShikiCodeblocks": {
             "enabled": false
         },
@@ -550,6 +547,9 @@
         },
         "PartyMode": {
             "enabled": false
+        },
+        "ServerInfo": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -562,6 +562,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1716390820022
+        "settingsSyncVersion": 1717659274169
     }
 }
