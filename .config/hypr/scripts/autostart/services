@@ -37,6 +37,3 @@ wl-paste --watch cliphist store &
 
 # Audio
 easyeffects --gapplication-service &
-
-# Systemd services
-systemctl --user start protonmail-bridge &
