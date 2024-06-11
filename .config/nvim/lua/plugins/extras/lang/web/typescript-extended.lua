@@ -3,11 +3,6 @@ return {
   { import = "plugins.extras.lang.json-extended" },
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "deno",
-      },
-    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -26,7 +21,6 @@ return {
             },
           },
         },
-        denols = {},
       },
     },
   },
