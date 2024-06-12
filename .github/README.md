@@ -378,6 +378,8 @@ I wanna point out some resources that helped me the most with the setup:
 - [Hyprdots](https://github.com/prasanthrangan/hyprdots) for helping me to take ideas from their work. Also, their setup is the best one I've ever seen for Hyprland; it's pretty awesome!.
 - [Catppuccin](https://github.com/catppuccin/catppuccin) for making the **Best Colorscheme Ever** 🖌️
 - [Github-issue-templates](https://github.com/stevemao/github-issue-templates) for the some of the markdown templates of the repo.
+- [Shina-Fox](https://github.com/Shina-SG/Shina-Fox) for the incredible userChrome.
+- [Catppuccin-Startpage](https://github.com/pivoshenko/catppuccin-startpage) an asthetic and clean startpage for the browser.
 
 Those were the biggest inspiring factor for me, though you can find a lot more of setups that helped me in my list of favorite dotfiles from the **Stars** section of my Github Profile: [Check it out!](https://github.com/stars/Matt-FTW/lists/paintbrush-theming-dots)
 
