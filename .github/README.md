@@ -365,6 +365,10 @@ If you had any issues or you have some questions about the installation process,
 | -------------------------------------------------------- |
 | ![overview-15](./assets/overview-images/overview-15.png) |
 
+| **Old Browser with Main Page**                           |
+| -------------------------------------------------------- |
+| ![overview-16](./assets/overview-images/overview-16.png) |
+
 # :tada: ‎ <samp>Credits</samp>
 
 Big thanks to everyone at r/unixporn for inspiring me to make this!
