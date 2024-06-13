@@ -12,7 +12,7 @@ clipse 0.0.71-1
 devify 119.c381fbb-1
 downgrade 11.3.0-1
 duckstation-git 0.1.r6889.g2eb0085-1
-floorp-bin 11.13.3-1
+floorp-bin 11.14.1-1
 gallery-dl 1.27.0-1
 gtrash-bin 0.0.5-1
 gzdoom 4.12.2-1
@@ -32,7 +32,7 @@ pika-backup 1:0.7.2-1
 proton-ge-custom-bin 1:GE_Proton9_7-1
 proton-vpn-gtk-app 4.3.2-1
 protonvpn-cli-community 2.2.12-1
-pyprland 2.3.7-0
+pyprland 2.3.8-0
 qt5-styleplugins 5.0.0.20170311-35
 rar 7.01-1
 reflector-pacman-hook-git r87.eec94bd-1
@@ -56,9 +56,9 @@ ttf-symbola 14.00-1
 universal-android-debloater 1.0.3-1
 upscayl-bin 2.11.5-1
 ventoy-bin 1.0.99-1
-vesktop-bin 1.5.2-2
+vesktop-bin 1.5.2-3
 vkbasalt 0.3.2.10-1
-vscodium-bin 1.90.0.24158-1
+vscodium-bin 1.90.0.24158-2
 vscodium-bin-marketplace 1.76.0-1
 wl-clip-persist 0.4.3-1
 xdg-ninja 0.2.0.2-1
