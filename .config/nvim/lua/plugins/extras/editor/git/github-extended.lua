@@ -1,6 +1,8 @@
 local prefix = "<leader>G"
 
 return {
+  { import = "lazyvim.plugins.extras.util.octo" },
+  { import = "plugins.extras.lang.git-extended" },
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -54,12 +56,6 @@ return {
   },
   {
     "pwntester/octo.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-      "nvim-tree/nvim-web-devicons",
-    },
-    cmd = { "Octo" },
     opts = {
       use_diagnostic_signs = true,
       mappings = {},
