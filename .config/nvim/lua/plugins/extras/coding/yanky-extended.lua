@@ -30,9 +30,20 @@ return {
         },
       }
     end,
-    -- stylua: ignore
     keys = {
-      {"<leader>sy", function() require("telescope").extensions.yank_history.yank_history({}) end, mode = {"n", "v"}, desc = "Yank History"},
+      {
+        "<leader>sy",
+        function()
+          local ok, telescope = pcall(require, "telescope")
+          if ok then
+            telescope.extensions.yank_history.yank_history({})
+          else
+            vim.cmd([[YankyRingHistory]])
+          end
+        end,
+        mode = { "n", "v" },
+        desc = "Yank History",
+      },
     },
   },
 }
