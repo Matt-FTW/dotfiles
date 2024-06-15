@@ -39,6 +39,8 @@ map("yu", "ya");
 // Buffers/Tabs
 map("b", "T");
 
+map("<Space><Space>", "t");
+
 // History Back/Forward
 map("H", "S");
 map("L", "D");
@@ -72,6 +74,15 @@ map("<", "<<");
 map("<Ctrl-l>", "R");
 map("<Ctrl-h>", "E");
 
+// only keep E, R and T from Surfingkeys for gmail.com and twitter.com
+api.unmapAllExcept(
+  ["f", "d", "t", "r", "<Space><Space>"],
+  /matt-startpage.vercel.app/,
+);
+
+api.unmapAllExcept(["f", "d", "t", "r"], /youtube.com/);
+// settings.lurkingPattern = /matt-startpage.vercel.app/;
+
 // set theme
 Hints.style(
   "border: solid 2px #6e738d; color:#8aadf4; font-size: 12px; font-weight: bold; background: initial; background-color: #1e2030;",
@@ -83,12 +94,19 @@ Hints.style(
 Visual.style("marks", "background-color: #ed8796;");
 Visual.style("cursor", "background-color: #8aadf4;");
 
+// ---- Search Engines -----
+removeSearchAlias("b", "s");
+
+addSearchAlias("b", "brave", "https://search.brave.com/search?q=", "s");
+
+settings.defaultSearchEngine = "b";
+
 settings.theme = `
 /* Edit these variables for easy theme making */
 :root {
   /* Font */
   --font: 'JetBrainsMono Nerd Font';
-  --font-size: 12;
+  --font-size: 13px;
   --font-weight: bold;
   
   --fg: #cad3f5;
