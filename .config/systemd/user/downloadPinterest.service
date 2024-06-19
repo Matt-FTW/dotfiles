@@ -1,0 +1,11 @@
+
+[Unit]
+Description=Download Pinterest Boards
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/matt/.local/bin/downloadPinterest
+
+[Install]
+WantedBy=default.target

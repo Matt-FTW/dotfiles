@@ -1,0 +1,24 @@
+#!/bin/bash
+
+image_folder="$HOME/Images/"
+video_folder="$HOME/Videos/"
+
+notify() {
+	notify-send "Pinterest Sync" "$1" -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/application-x-partial-download.svg --app-name=Pinterest
+}
+
+if ! command -v gallery-dl &>/dev/null; then
+	notify "Error: gallery-dl is not installed"
+	exit 1
+fi
+
+notify "Started syncing..."
+
+while [ "$1" != "" ]; do
+	gallery-dl -d "$image_folder" --download-archive "$image_folder/pinterest/downloads.sqlite3" "$1" --filter "extension not in ('mp4', 'gif')"
+	gallery-dl -d "$video_folder" --download-archive "$video_folder/pinterest/downloads.sqlite3" "$1" --filter "extension in ('mp4', 'gif')"
+	notify "Synced $1"
+	shift
+done
+
+notify "Pinterest Sync Complete"
