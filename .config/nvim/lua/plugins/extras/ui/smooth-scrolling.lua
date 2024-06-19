@@ -1,5 +1,3 @@
-local map = vim.keymap.set
-
 return {
   "declancm/cinnamon.nvim",
   event = "VeryLazy",
