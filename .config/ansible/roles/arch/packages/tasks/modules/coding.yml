@@ -45,7 +45,7 @@
       - tgpt-bin
       - vscodium-bin
       - vscodium-marketplace-bin
-      - mise
+      - mise-bin
 
 # Cargo
 - name: Install Rust Packages
