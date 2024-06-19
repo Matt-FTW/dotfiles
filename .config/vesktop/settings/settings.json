@@ -45,7 +45,8 @@
             "enabled": true
         },
         "NoTrack": {
-            "enabled": true
+            "enabled": true,
+            "disableAnalytics": true
         },
         "Settings": {
             "enabled": true,
@@ -434,7 +435,8 @@
         },
         "Translate": {
             "enabled": true,
-            "autoTranslate": false
+            "autoTranslate": false,
+            "showChatBarButton": true
         },
         "TypingIndicator": {
             "enabled": true,
@@ -442,7 +444,10 @@
             "includeCurrentChannel": true
         },
         "TypingTweaks": {
-            "enabled": true
+            "enabled": true,
+            "alternativeFormatting": true,
+            "showRoleColors": true,
+            "showAvatars": true
         },
         "Unindent": {
             "enabled": false
@@ -550,6 +555,77 @@
         },
         "ServerInfo": {
             "enabled": false
+        },
+        "MessageUpdaterAPI": {
+            "enabled": false
+        },
+        "SettingsStoreAPI": {
+            "enabled": true
+        },
+        "AppleMusicRichPresence": {
+            "enabled": false
+        },
+        "AutomodContext": {
+            "enabled": false
+        },
+        "CopyEmojiMarkdown": {
+            "enabled": false
+        },
+        "CtrlEnterSend": {
+            "enabled": false
+        },
+        "CustomIdle": {
+            "enabled": false,
+            "idleTimeout": 10,
+            "remainInIdle": true
+        },
+        "DontRoundMyTimestamps": {
+            "enabled": false
+        },
+        "ImageLink": {
+            "enabled": false
+        },
+        "MaskedLinkPaste": {
+            "enabled": false
+        },
+        "MessageLatency": {
+            "enabled": false
+        },
+        "NoDefaultHangStatus": {
+            "enabled": false
+        },
+        "NoOnboardingDelay": {
+            "enabled": false
+        },
+        "NoServerEmojis": {
+            "enabled": false
+        },
+        "PauseInvitesForever": {
+            "enabled": false
+        },
+        "ReplaceGoogleSearch": {
+            "enabled": false
+        },
+        "ReplyTimestamp": {
+            "enabled": false
+        },
+        "Summaries": {
+            "enabled": false
+        },
+        "ShowTimeoutDuration": {
+            "enabled": false
+        },
+        "ValidReply": {
+            "enabled": false
+        },
+        "VoiceDownload": {
+            "enabled": false
+        },
+        "WatchTogetherAdblock": {
+            "enabled": false
+        },
+        "WebScreenShareFixes": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -562,6 +638,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1717659274169
+        "settingsSyncVersion": 1718821550913
     }
 }
