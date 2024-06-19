@@ -7,7 +7,7 @@
 [user]
   name = Sergio Laín
   email = sergio.lac@pm.me
-  signingKey = FB00AF7015FFE76B
+  signingKey = 8429B2EE312F8150
 
 [safe]
   directory = ~/Repos/
