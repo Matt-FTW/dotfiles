@@ -21,7 +21,7 @@
 @define-color shadow rgb(30, 32, 48);
 
 * {
-  font-family: JetBrainsMono NF;
+  font-family: JetBrainsMono Nerd Font;
   font-size: 13px;
   min-height: 0;
 }

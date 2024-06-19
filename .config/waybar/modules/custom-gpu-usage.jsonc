@@ -1,6 +1,6 @@
 {
   "custom/gpu-usage": {
-    "exec": "cat /sys/class/hwmon/hwmon1/device/gpu_busy_percent",
+    "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
     "on-click": "kitty --class center-float-large nvtop",
     "format": "GPU: {}%",
     "return-type": "",
