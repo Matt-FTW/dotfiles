@@ -1,0 +1,76 @@
+/* ../../../AppData/Local/Temp/tmp-15744-866d0PjWRxih/18d53b11b111/config_modal.css */
+#config-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#config-container .section-header {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--spice-text);
+}
+#config-container .col.description {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--spice-subtext);
+}
+#config-container .disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+#config-container .text-input {
+  background: rgba(var(--spice-rgb-selected-row), 0.1);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--spice-text);
+  font-family: inherit;
+  font-size: 14px;
+  height: 32px;
+  padding: 0 12px;
+  width: 100%;
+}
+#config-container .text-input:focus {
+  background-color: var(--spice-tab-active);
+  border: 1px solid var(--spice-button-disabled);
+  outline: none;
+}
+#config-container .dropdown-input {
+  background-color: var(--spice-tab-active);
+  border: 0;
+  border-radius: 4px;
+  color: rgba(var(--spice-rgb-selected-row), 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0.24px;
+  line-height: 20px;
+  padding: 0 32px 0 12px;
+  width: 100%;
+}
+#config-container .tooltip-icon {
+  float: right;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  fill: var(--spice-subtext);
+}
+#config-container .tooltip-icon:hover {
+  fill: var(--spice-text);
+}
+#config-container .tooltip {
+  text-align: center;
+}
+#config-container .setting-row {
+  display: flex;
+  justify-content: space-between;
+}
+#config-container .playback-progressbar {
+  width: 200px;
+}
