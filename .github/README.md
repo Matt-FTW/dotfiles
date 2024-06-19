@@ -253,7 +253,7 @@ Here is all the information about my setup:
    And finally, move them to the ~/.local/share/icons directory.
 
    ```bash
-   mv Catppuccin-SE ~/.local/share/icons
+   mv Catppuccin-SE ~/.local/share/icons/
    ```
 
    - Useful CLI/TUI packages
