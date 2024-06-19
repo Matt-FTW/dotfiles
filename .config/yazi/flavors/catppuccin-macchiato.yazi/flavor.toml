@@ -115,20 +115,3 @@ rules = [
   { name = "*", fg = "#cad3f5" },
   { name = "*/", fg = "#8aadf4" },
 ]
-
-
-[icon]
-
-prepend_rules = [
-  { name = "Escritorio/", text = "" },
-  { name = "Repos/", text = "" },
-  { name = "Documentos/", text = "" },
-  { name = "Descargas/", text = "" },
-  { name = "Peliculas/", text = "" },
-  { name = "Musica/", text = "" },
-  { name = "Imagenes/", text = "" },
-  { name = "Publico/", text = "" },
-  { name = "Videos/", text = "" },
-  { name = "Plantillas/", text = "" },
-  { name = "Juegos/", text = "" },
-]

@@ -9,7 +9,7 @@ if ! command -v spotdl &>/dev/null; then
 	exit 1
 fi
 
-MUSIC_FOLDER="$HOME/Musica/Listen-To"
+MUSIC_FOLDER="$HOME/Music/Listen-To"
 
 notify "Started syncing..."
 
