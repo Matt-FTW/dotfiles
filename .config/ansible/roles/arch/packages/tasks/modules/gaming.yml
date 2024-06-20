@@ -10,6 +10,7 @@
 
       # Tools
       - gamemode
+      - mangohud
 
 # AUR
 - name: Install AUR Packages
