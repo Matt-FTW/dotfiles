@@ -1,8 +1,6 @@
 [tools]
-# python = latest # Let the system manage it
 usage = "latest"
 bun = "latest"
-node = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
