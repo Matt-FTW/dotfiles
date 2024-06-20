@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup Game Filesaves
+
+[Timer]
+OnCalendar=Mon,Wed,Fri 19:00:00
+Persistent=true
+Unit=backupGames.service
+
+[Install]
+WantedBy=timers.target

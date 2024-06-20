@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup Game Filesaves with Ludusavi
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ludusavi backup --force --full-limit 3
+
+[Install]
+WantedBy=default.target
