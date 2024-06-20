@@ -1,0 +1,69 @@
+---
+runtime:
+  threads: ~
+manifest:
+  url: "https://raw.githubusercontent.com/mtkennerly/ludusavi-manifest/master/data/manifest.yaml"
+language: en-US
+theme: dark
+roots:
+  - path: /home/matt/.local/share/Steam
+    store: steam
+  - path: /home/matt/.config/heroic
+    store: heroic
+  - path: /home/matt/Games/SteamLibrary
+    store: steam
+redirects: []
+backup:
+  path: /backups/gamesaves
+  ignoredGames: []
+  filter:
+    excludeStoreScreenshots: false
+    cloud:
+      exclude: false
+      epic: false
+      gog: false
+      origin: false
+      steam: false
+      uplay: false
+    ignoredPaths: []
+    ignoredRegistry: []
+  toggledPaths: {}
+  toggledRegistry: {}
+  sort:
+    key: status
+    reversed: false
+  retention:
+    full: 1
+    differential: 0
+  format:
+    chosen: simple
+    zip:
+      compression: deflate
+    compression:
+      deflate:
+        level: 6
+      bzip2:
+        level: 6
+      zstd:
+        level: 10
+restore:
+  path: /backups/gamesaves/
+  ignoredGames: []
+  toggledPaths: {}
+  toggledRegistry: {}
+  sort:
+    key: status
+    reversed: false
+scan:
+  showDeselectedGames: true
+  showUnchangedGames: true
+  showUnscannedGames: true
+cloud:
+  remote: ~
+  path: ludusavi-backup
+  synchronize: true
+apps:
+  rclone:
+    path: ""
+    arguments: "--fast-list --ignore-checksum"
+customGames: []
