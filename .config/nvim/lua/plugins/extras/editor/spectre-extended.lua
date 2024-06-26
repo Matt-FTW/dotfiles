@@ -11,6 +11,7 @@ return {
           cmd = "sd",
         },
       },
+      use_trouble_qf = true,
     },
     -- stylua: ignore
     keys = {
