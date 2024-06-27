@@ -1,4 +1,4 @@
-# name: 'Catppuccin latte'
+# name: 'Catppuccin Latte'
 # url: 'https://github.com/catppuccin/fish'
 # preferred_background: eff1f5
 
@@ -21,8 +21,8 @@ fish_color_autosuggestion 9ca0b0
 fish_color_cancel d20f39
 fish_color_cwd df8e1d
 fish_color_user 179299
-fish_color_host_remote 40a02b
 fish_color_host 1e66f5
+fish_color_host_remote 40a02b
 fish_color_status d20f39
 fish_pager_color_progress 9ca0b0
 fish_pager_color_prefix ea76cb

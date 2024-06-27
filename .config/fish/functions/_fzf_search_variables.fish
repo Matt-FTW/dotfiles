@@ -12,7 +12,7 @@ function _fzf_search_variables --argument-names set_show_output set_names_output
     # Exclude the history variable from being piped into fzf because
     # 1. it's not included in $set_names_output
     # 2. it tends to be a very large value => increases computation time
-    # 3._fzf_search_history is a much better way to ezamine history anyway
+    # 3._fzf_search_history is a much better way to examine history anyway
     set -f all_variable_names (string match --invert history <$set_names_output)
 
     set -f current_token (commandline --current-token)
@@ -23,12 +23,11 @@ function _fzf_search_variables --argument-names set_show_output set_names_output
     set -f variable_names_selected (
         printf '%s\n' $all_variable_names |
         _fzf_wrapper --preview "_fzf_extract_var_info {} $set_show_output" \
-            --prompt="Search Variables> " \
+            --prompt="Variables> " \
             --preview-window="wrap" \
             --multi \
             --query=$cleaned_curr_token \
-            # $fzf_shell_vars_opts is the deprecated version of $fzf_variables_opts
-            $fzf_shell_vars_opts $fzf_variables_opts
+            $fzf_variables_opts
     )
 
     if test $status -eq 0

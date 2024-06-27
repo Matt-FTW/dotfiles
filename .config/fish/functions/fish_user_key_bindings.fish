@@ -8,7 +8,6 @@ function fish_user_key_bindings
 
     fzf_configure_bindings --directory=\e\cf --history=\ch --variables=\e\cv
 
-    bind \e\cg fgit
     bind \e\cw rga-fzf
     bind \e\z cdzi
     bind \e\cn navi
