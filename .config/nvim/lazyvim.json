@@ -76,7 +76,8 @@
     "plugins.extras.util.persistence-extended",
     "plugins.extras.util.smart-splits",
     "plugins.extras.util.vscode",
-    "plugins.extras.util.wakatime"
+    "plugins.extras.util.wakatime",
+    "plugins.extras.util.yadm"
   ],
   "news": {
     "NEWS.md": "6077"
