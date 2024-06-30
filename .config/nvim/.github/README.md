@@ -198,6 +198,7 @@
 
 - [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
 - [artemave/workspace-diagnostics.nvim](https://dotfyle.com/plugins/artemave/workspace-diagnostics.nvim)
+- [rachartier/tiny-inline-diagnostic.nvim](https://dotfyle.com/plugins/rachartier/tiny-inline-diagnostic.nvim)
 
 </details>
 
