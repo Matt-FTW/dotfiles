@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/ludusavi backup --force --full-limit 3 && notify-send "Gamesaves Backup Complete" -i ~/.local/share/icons/Catppuccin-SE/64x64@2x/apps/org.gnome.games.svg --app-name=Ludusavi
+ExecStart=/home/matt/.local/bin/backupGamesaves
 
 [Install]
 WantedBy=default.target

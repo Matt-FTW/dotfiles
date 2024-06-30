@@ -1,0 +1,16 @@
+#!/bin/bash
+
+notify() {
+	notify-send "$1" -i ~/.local/share/icons/Catppuccin-SE/64x64@2x/apps/org.gnome.games.svg --app-name=Ludusavi
+}
+
+if ! command -v ludusavi &>/dev/null; then
+	notify "Error: ludusavi is not installed"
+	exit 1
+fi
+
+notify "Started Backup..."
+
+ludusavi backup --force --full-limit 3
+
+notify "Backup Complete"
