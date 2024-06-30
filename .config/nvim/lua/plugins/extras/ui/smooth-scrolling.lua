@@ -3,8 +3,9 @@ return {
   event = "VeryLazy",
   config = function()
     require("cinnamon").setup({
-      keymaps = { extra = true },
-      options = { delay = 5 },
+      options = {
+        delay = 5,
+      },
     })
 
     local keymaps = {
