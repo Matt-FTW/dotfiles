@@ -90,10 +90,6 @@ map("n", "<leader>bf", "<cmd>bfirst<cr>", { desc = "First Buffer" })
 map("n", "<leader>ba", "<cmd>blast<cr>", { desc = "Last Buffer" })
 map("n", "<leader>b<tab>", "<cmd>tabnew %<cr>", { desc = "Current Buffer in New Tab" })
 
--- Center the screen automatically
-map("n", "n", "nzzzv")
-map("n", "N", "Nzzzv")
-
 -- Toggle statusline
 map("n", "<leader>uS", function()
   if o.laststatus:get() == 0 then
