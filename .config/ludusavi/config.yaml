@@ -6,12 +6,12 @@ manifest:
 language: en-US
 theme: dark
 roots:
-  - path: /home/matt/.local/share/Steam
-    store: steam
-  - path: /home/matt/.config/heroic
-    store: heroic
-  - path: /home/matt/Games/SteamLibrary
-    store: steam
+  - store: steam
+    path: /home/matt/.local/share/Steam
+  - store: heroic
+    path: /home/matt/.config/heroic
+  - store: steam
+    path: /home/matt/Games/SteamLibrary
 redirects: []
 backup:
   path: /backups/gamesaves
