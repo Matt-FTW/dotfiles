@@ -26,7 +26,7 @@ return {
   { "lukas-reineke/indent-blankline.nvim" },
   { "stevearc/dressing.nvim" },
   { "folke/noice.nvim" },
-  { "nvim-tree/nvim-web-devicons" },
+  { "echasnovski/mini.icons" },
   { "MunifTanjim/nui.nvim" },
 
   -- Util
