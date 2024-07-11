@@ -171,7 +171,7 @@ Here is all the information about my setup:
 | **PDF Viewer**           | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                             |
 | **Note Taking App**      | 💖 [Obsidian](https://obsidian.md/) [:gear:](../.config/obsidian/)                                                      |
 | **Video Player**         | [MPV](https://mpv.io/) [:gear:](../.config/mpv/)                                                                        |
-| **Image Viewer**         | [geeqie](https://www.geeqie.org/) [:gear:](../.config/geeqie/)                                                          |
+| **Image Viewer**         | [qimgv](https://github.com/easymodo/qimgv) [:gear:](../.config/qimgv//)                                                 |
 | **File Manager**         | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                              |
 | **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                      |
 | **Image Editor**         | [Krita](https://krita.org/)                                                                                             |
@@ -217,7 +217,7 @@ Here is all the information about my setup:
    - Replaceable Packages
 
    ```bash
-   yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura geeqie \
+   yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura zathura-pdf-mupdf qimgv-light \
            ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
    ```
 
