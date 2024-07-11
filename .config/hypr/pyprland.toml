@@ -10,7 +10,6 @@ force_monitor = "DP-1"
 
 [scratchpads.terminal]
 command = "kitty --class scratchpad-large"
-excludes = ["dots", "yazi", "topgrade-system", "topgrade-all"]
 lazy = true
 
 [scratchpads.yazi]
@@ -23,7 +22,6 @@ lazy = true
 
 [scratchpads.dots]
 command = "kitty --class scratchpad-large yadm enter lazygit"
-excludes = ["terminal"]
 lazy = true
 
 [scratchpads.btop]
