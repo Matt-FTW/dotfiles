@@ -1,0 +1,93 @@
+{
+  "extractor": {
+    "base-directory": "~/.gallery-dl/sites",
+    "archive": "~/.gallery-dl/archives/{category}.sqlite3",
+
+    "pixiv": {
+      "filename": "{id}{num}.{extension}",
+      "directory": ["pixiv", "Works", "{user[name]}"],
+      "refresh-token": "",
+      "metadata": true,
+      "tags": "original",
+      "skip": "abort:10",
+      "favorite": {
+        "directory": ["pixiv", "Favorites", "{user[name]}"]
+      },
+      "bookmark": {
+        "directory": ["pixiv", "Bookmarks", "{user[name]}"]
+      }
+    },
+    "pinterest": {
+      "filename": "{id}{num}.{extension}"
+    },
+    "twitter": {
+      "username": "",
+      "password": "",
+      "likes": {
+        "directory": ["twitter", "{user[name]}", "Likes", "{author[name]}"]
+      },
+      "bookmark": {
+        "directory": ["twitter", "{user[name]}", "Bookmarks", "{author[name]}"]
+      }
+    },
+    "reddit": {
+      "refresh-token": "",
+      "filename": "{id}{num}.{extension}",
+      "user-upvoted": {
+        "directory": ["reddit", "Upvoted", "{subreddit}"]
+      },
+      "user-saved": {
+        "directory": ["reddit", "Saved", "{subreddit}"]
+      }
+    },
+    "reddit>imgur": {
+      "filename": "{id}{num}.{extension}"
+    }
+  },
+
+  "downloader": {
+    "progress": 2.0,
+    "retries": 3,
+
+    "timeout": 8.0,
+    "part-directory": "/tmp/.download/",
+    "mtime": false,
+
+    "ytdl": {
+      "module": "yt_dlp"
+    }
+  },
+
+  "output": {
+    "log": {
+      "level": "info",
+
+      "format": {
+        "debug": "\u001b[0;37m{name}: {message}\u001b[0m",
+        "info": "\u001b[1;37m{name}: {message}\u001b[0m",
+        "warning": "\u001b[1;33m{name}: {message}\u001b[0m",
+        "error": "\u001b[1;31m{name}: {message}\u001b[0m"
+      }
+    },
+
+    "shorten": "eaw",
+    "ansi": true,
+
+    "logfile": {
+      "path": "~/.gallery-dl/log.txt",
+      "mode": "w",
+      "level": "debug"
+    },
+
+    "unsupportedfile": {
+      "path": "~/.gallery-dl/unsupported.txt",
+      "mode": "a",
+      "format": "{asctime} {message}",
+      "format-date": "%Y-%m-%d-%H-%M-%S"
+    }
+  },
+
+  "cache": {
+    "file": "~/.gallery-dl/cache.sqlite3"
+  }
+}
