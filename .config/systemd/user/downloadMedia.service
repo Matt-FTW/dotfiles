@@ -1,0 +1,10 @@
+[Unit]
+Description=Download Media
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/matt/.local/bin/downloadMedia
+
+[Install]
+WantedBy=default.target

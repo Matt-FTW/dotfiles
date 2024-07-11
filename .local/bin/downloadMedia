@@ -1,0 +1,87 @@
+#!/bin/bash
+
+image_folder="$HOME/Images/"
+video_folder="$HOME/Videos/"
+
+# Utils
+notify() {
+  notify-send "Media Download" "$1" -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/application-x-partial-download.svg --app-name=gallery-dl
+}
+
+notify_error() {
+  notify-send "Media Download" "$1" -u=critical -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/application-x-partial-download.svg --app-name=gallery-dl
+}
+
+download_images() {
+  gallery-dl -d "$image_folder" --download-archive "$image_folder/{$1}/archive.sqlite3" "$2" --filter "$3"
+}
+
+download_videos() {
+  gallery-dl -d "$video_folder" --download-archive "$video_folder/{$1}/archive.sqlite3" "$2" --filter "$3"
+}
+
+# Download Sites
+download_pinterest() {
+  download_images "pinterest" "$1" "extension not in ('mp4', 'gif')"
+  download_videos "pinterest" "$1" "extension in ('mp4', 'gif')"
+  notify "Pinterest ($1) Complete"
+}
+
+download_pixiv() {
+  download_images "pixiv" "$1" "extension not in ('mp4', 'gif')"
+  notify "Pixiv ($1) Complete"
+}
+
+download_twitter() {
+  download_images "twitter" "$1" "extension not in ('mp4', 'gif')"
+  download_videos "twitter" "$1" "extension in ('mp4', 'gif')"
+  notify "Twitter ($1) Complete"
+}
+
+download_reddit() {
+  download_images "reddit" "$1" "extension not in ('mp4')"
+  download_videos "reddit" "$1" "extension in ('mp4')"
+  notify "Reddit ($1) Complete"
+}
+
+download_unknown_site() {
+  download_images "$1" "extension not in ('mp4', 'gif')"
+  download_videos "$1" "extension in ('mp4', 'gif')"
+  notify "$1 Complete"
+}
+
+if ! command -v gallery-dl &>/dev/null; then
+  notify_error "gallery-dl is not installed"
+  exit 1
+fi
+
+url_file="$HOME/.config/gallery-dl/urls.txt"
+
+if [ ! -f "$url_file" ]; then
+  notify_error "URl file does not exist"
+  exit 1
+fi
+
+notify "Started Download..."
+
+while IFS= read -r url; do
+  case "$url" in
+  *pinterest.com*)
+    download_pinterest "$url"
+    ;;
+  *pixiv.net*)
+    download_pixiv "$url"
+    ;;
+  *x.com*)
+    download_twitter "$url"
+    ;;
+  *reddit.com*)
+    download_reddit "$url"
+    ;;
+  *)
+    download_unknown_site "$url"
+    ;;
+  esac
+done <"$url_file"
+
+notify "Media Download Complete"

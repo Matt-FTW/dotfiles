@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Media Downloader Daily
+
+[Timer]
+OnCalendar=*-*-* 17:00:00
+Persistent=true
+Unit=downloadMedia.service
+
+[Install]
+WantedBy=timers.target
