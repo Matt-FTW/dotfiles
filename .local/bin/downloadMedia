@@ -9,7 +9,7 @@ notify() {
 }
 
 notify_error() {
-  notify-send "Media Download" "$1" -u=critical -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/application-x-partial-download.svg --app-name=gallery-dl
+  notify-send "Media Download" "$1" -u critical -i ~/.local/share/icons/Catppuccin-SE/64x64/mimetypes/application-x-partial-download.svg --app-name=gallery-dl
 }
 
 download_images() {
@@ -55,7 +55,7 @@ if ! command -v gallery-dl &>/dev/null; then
   exit 1
 fi
 
-url_file="$HOME/.config/gallery-dl/urls.txt"
+url_file="$HOME/.gallery-dl/urls.txt"
 
 if [ ! -f "$url_file" ]; then
   notify_error "URl file does not exist"
