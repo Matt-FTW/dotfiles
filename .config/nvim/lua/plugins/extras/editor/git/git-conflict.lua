@@ -18,8 +18,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>gC"] = { name = "conflicts" },
+      spec = {
+        { "<leader>gC", group = "conflicts", icon = " " },
       },
     },
   },

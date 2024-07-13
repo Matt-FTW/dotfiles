@@ -60,8 +60,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>th"] = { name = "http" },
+      spec = {
+        { "<leader>th", group = "http", icon = "󱞒 " },
       },
     },
   },

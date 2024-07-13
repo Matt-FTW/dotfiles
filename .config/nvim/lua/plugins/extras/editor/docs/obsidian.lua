@@ -1,24 +1,26 @@
+local prefix = "<leader>O"
+
 return {
   {
     "epwalsh/obsidian.nvim",
     event = { "BufReadPre /docs/Documentos/Obsidian/**.md" },
     keys = {
-      { "<leader>oo", "<cmd>ObsidianOpen<CR>", desc = "Open on App" },
-      { "<leader>og", "<cmd>ObsidianSearch<CR>", desc = "Grep" },
+      { prefix .. "o", "<cmd>ObsidianOpen<CR>", desc = "Open on App" },
+      { prefix .. "g", "<cmd>ObsidianSearch<CR>", desc = "Grep" },
       { "<leader>sO", "<cmd>ObsidianSearch<CR>", desc = "Obsidian Grep" },
-      { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "New Note" },
-      { "<leader>o<space>", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find Files" },
-      { "<leader>ob", "<cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
-      { "<leader>ot", "<cmd>ObsidianTags<CR>", desc = "Tags" },
-      { "<leader>ot", "<cmd>ObsidianTemplate<CR>", desc = "Template" },
-      { "<leader>ol", "<cmd>ObsidianLink<CR>", desc = "Link" },
-      { "<leader>oL", "<cmd>ObsidianLinks<CR>", desc = "Links" },
-      { "<leader>oN", "<cmd>ObsidianLinkNew<CR>", desc = "New Link" },
-      { "<leader>oe", "<cmd>ObsidianExtractNote<CR>", desc = "Extract Note" },
-      { "<leader>ow", "<cmd>ObsidianWorkspace<CR>", desc = "Workspace" },
-      { "<leader>or", "<cmd>ObsidianRename<CR>", desc = "Rename" },
-      { "<leader>oi", "<cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
-      { "<leader>od", "<cmd>ObsidianDailies<CR>", desc = "Daily Notes" },
+      { prefix .. "n", "<cmd>ObsidianNew<CR>", desc = "New Note" },
+      { prefix .. "<space>", "<cmd>ObsidianQuickSwitch<CR>", desc = "Find Files" },
+      { prefix .. "b", "<cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
+      { prefix .. "t", "<cmd>ObsidianTags<CR>", desc = "Tags" },
+      { prefix .. "t", "<cmd>ObsidianTemplate<CR>", desc = "Template" },
+      { prefix .. "l", "<cmd>ObsidianLink<CR>", desc = "Link" },
+      { prefix .. "L", "<cmd>ObsidianLinks<CR>", desc = "Links" },
+      { prefix .. "N", "<cmd>ObsidianLinkNew<CR>", desc = "New Link" },
+      { prefix .. "e", "<cmd>ObsidianExtractNote<CR>", desc = "Extract Note" },
+      { prefix .. "w", "<cmd>ObsidianWorkspace<CR>", desc = "Workspace" },
+      { prefix .. "r", "<cmd>ObsidianRename<CR>", desc = "Rename" },
+      { prefix .. "i", "<cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
+      { prefix .. "d", "<cmd>ObsidianDailies<CR>", desc = "Daily Notes" },
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -76,8 +78,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>o"] = { name = " obsidian" },
+      spec = {
+        { prefix, group = "obsidian", icon = " " },
       },
     },
   },

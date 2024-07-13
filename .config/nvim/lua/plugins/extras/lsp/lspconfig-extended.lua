@@ -57,8 +57,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>cL"] = { name = "lsp" },
+      spec = {
+        { "<leader>cL", group = "lsp", icon = " " },
       },
     },
   },

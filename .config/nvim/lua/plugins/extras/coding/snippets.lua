@@ -16,8 +16,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>a"] = { name = " annotation/snippets" },
+      spec = {
+        { "<leader>a", group = "annotation/snippets", icon = " " },
       },
     },
   },

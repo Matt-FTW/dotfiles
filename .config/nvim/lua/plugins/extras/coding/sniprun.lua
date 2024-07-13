@@ -61,8 +61,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>cu"] = { name = "runner" },
+      spec = {
+        { "<leader>cu", group = "runner", icon = "󰜎 " },
       },
     },
   },

@@ -23,8 +23,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>sr"] = { name = "replace" },
+      spec = {
+        { "<leader>sr", group = "replace", icon = " " },
       },
     },
   },

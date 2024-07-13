@@ -98,8 +98,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>C"] = { name = "󰚩 chatGPT" },
+      spec = {
+        { "<leader>C", group = "chatGPT", icon = "󰚩 " },
       },
     },
   },

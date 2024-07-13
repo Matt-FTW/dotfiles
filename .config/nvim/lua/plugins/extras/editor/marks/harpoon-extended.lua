@@ -100,8 +100,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>m"] = { name = "󰛢 marks" },
+      spec = {
+        { "<leader>m", group = "marks", icon = "󰛢 " },
       },
     },
   },

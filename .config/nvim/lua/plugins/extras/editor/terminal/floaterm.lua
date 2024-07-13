@@ -39,9 +39,9 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>ce"] = { name = "r[e]pl" },
-        ["<leader>ft"] = { name = "terminals" },
+      spec = {
+        { "<leader>ce", group = "r[e]pl", icon = "󰫧 " },
+        { "<leader>ft", group = "terminals", icon = " " },
       },
     },
   },

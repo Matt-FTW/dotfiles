@@ -7,7 +7,7 @@ return {
     opts = {
       disable_legacy_commands = true,
     },
-  -- stylua: ignore
+    -- stylua: ignore
     keys = {
       { "<leader>sia", "<cmd>IconPickerNormal<cr>", desc = "All" },
       { "<leader>sis", "<cmd>IconPickerNormal symbols<cr>", desc = "Symbols" },
@@ -18,8 +18,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>si"] = { name = "icons" },
+      spec = {
+        { "<leader>si", group = "icons", icon = " " },
       },
     },
   },

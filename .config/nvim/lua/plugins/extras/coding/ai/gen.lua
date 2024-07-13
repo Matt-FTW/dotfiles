@@ -55,8 +55,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>i"] = { name = "󱚦 IA (Gen)" },
+      spec = {
+        { "<leader>i", group = "IA (Gen)", icon = "󱚦 " },
       },
     },
   },

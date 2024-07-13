@@ -26,9 +26,9 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>p"] = { name = " packages/dependencies" },
-        ["<leader>pw"] = { name = "web" },
+      spec = {
+        { "<leader>p", group = "packages/dependencies", icon = " " },
+        { "<leader>pw", group = "web", icon = "󰖟 " },
       },
     },
   },

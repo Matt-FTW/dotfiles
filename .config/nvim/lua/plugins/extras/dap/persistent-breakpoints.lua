@@ -25,8 +25,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>db"] = { name = "breakpoints" },
+      spec = {
+        { "<leader>db", group = "breakpoints", icon = " " },
       },
     },
   },

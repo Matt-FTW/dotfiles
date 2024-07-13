@@ -93,9 +93,9 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>p"] = { name = " packages/dependencies" },
-        ["<leader>pp"] = { name = "python" },
+      spec = {
+        { "<leader>p", group = "packages/dependencies", icon = " " },
+        { "<leader>pp", group = "python", icon = " " },
       },
     },
   },

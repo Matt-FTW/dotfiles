@@ -24,8 +24,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>o"] = { name = " c[o]ntainers" },
+      spec = {
+        { "<leader><S-Tab>", group = "containers", icon = " " },
       },
     },
   },

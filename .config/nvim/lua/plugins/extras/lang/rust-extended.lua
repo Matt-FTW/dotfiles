@@ -37,9 +37,9 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>p"] = { name = " packages/dependencies" },
-        ["<leader>pr"] = { name = "rust" },
+      spec = {
+        { "<leader>p", group = "packages/dependencies", icon = " " },
+        { "<leader>pr", group = "rust", icon = " " },
       },
     },
   },
