@@ -4,6 +4,10 @@
     "arRPC": "on",
     "splashColor": "rgb(202, 211, 245)",
     "splashBackground": "rgb(36, 39, 58)",
-    "enableMenu": false,
-    "disableMinSize": true
+    "enableMenu": true,
+    "disableMinSize": true,
+    "spellCheckLanguages": [
+        "en-US",
+        "en"
+    ]
 }

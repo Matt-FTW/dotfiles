@@ -83,7 +83,9 @@
             "closeAllHomeButton": false,
             "keepIcons": false,
             "sidebarAnim": true,
-            "closeOthers": false
+            "closeOthers": true,
+            "closeAllFolders": true,
+            "forceOpen": false
         },
         "BetterGifAltText": {
             "enabled": false
@@ -92,7 +94,9 @@
             "enabled": true
         },
         "BetterNotesBox": {
-            "enabled": false
+            "enabled": true,
+            "hide": true,
+            "noSpellCheck": true
         },
         "BetterRoleDot": {
             "enabled": false
@@ -160,10 +164,12 @@
             "transformCompoundSentence": false,
             "enableStreamQualityBypass": true,
             "useHyperLinks": false,
-            "hyperLinkText": "{{NAME}}"
+            "hyperLinkText": "{{NAME}}",
+            "disableEmbedPermissionCheck": false
         },
         "FakeProfileThemes": {
-            "enabled": false
+            "enabled": false,
+            "nitroFirst": true
         },
         "FavoriteEmojiFirst": {
             "enabled": true
@@ -175,8 +181,8 @@
             "enabled": true
         },
         "FixSpotifyEmbeds": {
-            "enabled": false,
-            "volume": 10
+            "enabled": true,
+            "volume": 7.119582551619932
         },
         "FixYoutubeEmbeds": {
             "enabled": false
@@ -185,7 +191,7 @@
             "enabled": false
         },
         "FriendInvites": {
-            "enabled": false
+            "enabled": true
         },
         "GameActivityToggle": {
             "enabled": true,
@@ -207,7 +213,12 @@
             "enabled": false
         },
         "ImageZoom": {
-            "enabled": true
+            "enabled": true,
+            "size": 100,
+            "zoom": 2,
+            "nearestNeighbour": false,
+            "square": false,
+            "saveZoomValues": true
         },
         "InvisibleChat": {
             "enabled": false,
@@ -233,7 +244,11 @@
             "requireModifier": false
         },
         "MessageLinkEmbeds": {
-            "enabled": false
+            "enabled": true,
+            "automodEmbeds": "never",
+            "listMode": "blacklist",
+            "idList": "",
+            "messageBackgroundColor": true
         },
         "MessageLogger": {
             "enabled": false
@@ -260,7 +275,7 @@
             "ignoreBlocked": true
         },
         "MutualGroupDMs": {
-            "enabled": false
+            "enabled": true
         },
         "NoBlockedMessages": {
             "enabled": false
@@ -278,7 +293,7 @@
             "enabled": false
         },
         "NoProfileThemes": {
-            "enabled": false
+            "enabled": true
         },
         "NoReplyMention": {
             "enabled": false
@@ -302,7 +317,10 @@
             "enabled": false
         },
         "OnePingPerDM": {
-            "enabled": false
+            "enabled": false,
+            "channelToAffect": "both_dms",
+            "allowMentions": false,
+            "allowEveryone": false
         },
         "oneko": {
             "enabled": false
@@ -330,7 +348,9 @@
             "enabled": false
         },
         "PinDMs": {
-            "enabled": false
+            "enabled": true,
+            "dmSectioncollapsed": false,
+            "pinOrder": 0
         },
         "PlainFolderIcon": {
             "enabled": false
@@ -348,13 +368,14 @@
             "enabled": false
         },
         "QuickReply": {
-            "enabled": false
+            "enabled": false,
+            "shouldMention": 2
         },
         "ReactErrorDecoder": {
             "enabled": false
         },
         "ReadAllNotificationsButton": {
-            "enabled": false
+            "enabled": true
         },
         "RelationshipNotifier": {
             "enabled": false
@@ -413,7 +434,9 @@
             "enabled": false
         },
         "SpotifyCrack": {
-            "enabled": false
+            "enabled": true,
+            "noSpotifyAutoPause": true,
+            "keepSpotifyActivityOnIdle": true
         },
         "SpotifyShareCommands": {
             "enabled": false
@@ -459,7 +482,9 @@
             "enabled": false
         },
         "UserVoiceShow": {
-            "enabled": false
+            "enabled": false,
+            "showInUserProfileModal": true,
+            "showVoiceChannelSectionHeader": true
         },
         "USRBG": {
             "enabled": false,
@@ -487,7 +512,9 @@
             "enabled": false
         },
         "VoiceMessages": {
-            "enabled": false
+            "enabled": true,
+            "noiseSuppression": true,
+            "echoCancellation": true
         },
         "WebContextMenus": {
             "enabled": true,
@@ -509,13 +536,17 @@
             "enabled": true
         },
         "DisableCallIdle": {
-            "enabled": false
+            "enabled": true
         },
         "NewGuildSettings": {
             "enabled": true,
             "guild": true,
             "everyone": true,
-            "role": true
+            "role": true,
+            "messages": 3,
+            "highlights": true,
+            "events": true,
+            "showAllChannels": true
         },
         "ShowHiddenThings": {
             "enabled": false
@@ -545,7 +576,7 @@
             "enabled": false
         },
         "StreamerModeOnStream": {
-            "enabled": false
+            "enabled": true
         },
         "UnlockedAvatarZoom": {
             "enabled": false
@@ -554,10 +585,10 @@
             "enabled": false
         },
         "ServerInfo": {
-            "enabled": false
+            "enabled": true
         },
         "MessageUpdaterAPI": {
-            "enabled": false
+            "enabled": true
         },
         "SettingsStoreAPI": {
             "enabled": true
@@ -629,6 +660,15 @@
         },
         "UserSettingsAPI": {
             "enabled": true
+        },
+        "ConsoleJanitor": {
+            "enabled": false
+        },
+        "MentionAvatars": {
+            "enabled": false
+        },
+        "ShowAllRoles": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -641,6 +681,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1719083478179
+        "settingsSyncVersion": 1721033581408
     }
 }
