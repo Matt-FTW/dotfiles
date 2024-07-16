@@ -10,7 +10,7 @@
 /****************************************************************************
  * Betterfox                                                                *
  * "Ad meliora"                                                             *
- * version: 122.1                                                           *
+ * version: 128                                                             *
  * url: https://github.com/yokoffing/Betterfox                              *
  ****************************************************************************/
 
@@ -42,18 +42,18 @@ user_pref("network.http.max-persistent-connections-per-server", 10);
 user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
 user_pref("network.http.pacing.requests.enabled", false);
 user_pref("network.dnsCacheExpiration", 3600);
-user_pref("network.dns.max_high_priority_threads", 8);
 user_pref("network.ssl_tokens_cache_capacity", 10240);
 
 /** SPECULATIVE LOADING ***/
 user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.prefetch-next", false);
 user_pref("network.predictor.enabled", false);
+user_pref("network.predictor.enable-prefetch", false);
 
 /** EXPERIMENTAL ***/
 user_pref("layout.css.grid-template-masonry-value.enabled", true);
 user_pref("dom.enable_web_task_scheduling", true);
-user_pref("layout.css.has-selector.enabled", true);
 user_pref("dom.security.sanitizer.enabled", true);
 
 /****************************************************************************
@@ -93,11 +93,14 @@ user_pref("browser.sessionstore.interval", 60000);
 user_pref("privacy.history.custom", true);
 
 /** SEARCH / URL BAR ***/
+user_pref("browser.urlbar.trimHttps", true);
 user_pref("browser.search.separatePrivateDefault.ui.enabled", true);
 user_pref("browser.urlbar.update2.engineAliasRefresh", true);
 user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.quicksuggest.enabled", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
+user_pref("browser.urlbar.groupLabels.enabled", false);
 user_pref("browser.formfill.enable", false);
 user_pref("security.insecure_connection_text.enabled", true);
 user_pref("security.insecure_connection_text.pbmode.enabled", true);
@@ -115,8 +118,6 @@ user_pref("editor.truncate_user_pastes", false);
 
 /** MIXED CONTENT + CROSS-SITE ***/
 user_pref("security.mixed_content.block_display_content", true);
-user_pref("security.mixed_content.upgrade_display_content", true);
-user_pref("security.mixed_content.upgrade_display_content.image", true);
 user_pref("pdfjs.enableScripting", false);
 user_pref("extensions.postDownloadThirdPartyPrompt", false);
 
@@ -136,10 +137,6 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 /** MOZILLA ***/
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.geo", 2);
-user_pref(
-  "geo.provider.network.url",
-  "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%",
-);
 user_pref("permissions.manager.defaultsUrl", "");
 user_pref("webchannel.allowObject.urlWhitelist", "");
 
@@ -158,7 +155,6 @@ user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true);
 user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.coverage.endpoint.base", "");
-user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 
@@ -176,6 +172,7 @@ user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.connectivity-service.enabled", false);
+user_pref("dom.private-attribution.submission.enabled", false);
 
 /****************************************************************************
  * SECTION: PESKYFOX                                                        *
@@ -256,12 +253,6 @@ user_pref("signon.rememberSignons", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 
-// PREF: disable all DRM content
-user_pref("media.eme.enabled", false);
-
-// PREF: hide the setting; this also disables the DRM prompt (optional)
-user_pref("browser.eme.ui.enabled", false);
-
 // PREF: disable telemetry of what default browser you use [WINDOWS]
 user_pref("default-browser-agent.enabled", false);
 
@@ -275,13 +266,9 @@ user_pref("default-browser-agent.enabled", false);
  * Smoothfox                                                                            *
  * "Faber est suae quisque fortunae"                                                    *
  * priority: better scrolling                                                           *
- * version: 8 January 2024                                                              *
+ * version: 126.1                                                                       *
  * url: https://github.com/yokoffing/Betterfox                                          *
  ***************************************************************************************/
-
-// Note: msdPhysics was enabled by default for 122 Nightly.
-// The options below have not been modified to account for this change.
-// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1846935
 
 // Use only one option at a time!
 // Reset prefs if you decide to use different option.
@@ -292,10 +279,14 @@ user_pref("default-browser-agent.enabled", false);
 // credit: https://github.com/black7375/Firefox-UI-Fix
 // only sharpen scrolling
 // user_pref("apz.overscroll.enabled", true); // DEFAULT NON-LINUX
+// user_pref("general.smoothScroll", true); // DEFAULT
 // user_pref("mousewheel.min_line_scroll_amount", 10); // 10-40; adjust this number to your liking; default=5
 // user_pref("general.smoothScroll.mouseWheel.durationMinMS", 80); // default=50
 // user_pref("general.smoothScroll.currentVelocityWeighting", "0.15"); // default=.25
 // user_pref("general.smoothScroll.stopDecelerationWeighting", "0.6"); // default=.4
+// Firefox Nightly only:
+// [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1846935
+// user_pref("general.smoothScroll.msdPhysics.enabled", false); // [FF122+ Nightly]
 
 /****************************************************************************************
  * OPTION: INSTANT SCROLLING (SIMPLE ADJUSTMENT)                                       *
@@ -304,6 +295,9 @@ user_pref("default-browser-agent.enabled", false);
 // user_pref("apz.overscroll.enabled", true); // DEFAULT NON-LINUX
 // user_pref("general.smoothScroll", true); // DEFAULT
 // user_pref("mousewheel.default.delta_multiplier_y", 275); // 250-400; adjust this number to your liking
+// // Firefox Nightly only:
+// // [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1846935
+// user_pref("general.smoothScroll.msdPhysics.enabled", false); // [FF122+ Nightly]
 
 /****************************************************************************************
  * OPTION: SMOOTH SCROLLING                                                            *
@@ -327,12 +321,11 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
 // user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 600);
 // user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 650);
 // user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 25);
-// user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", 2.0);
+// user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", "2");
 // user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
-// user_pref("general.smoothScroll.currentVelocityWeighting", 1.0);
-// user_pref("general.smoothScroll.stopDecelerationWeighting", 1.0);
+// user_pref("general.smoothScroll.currentVelocityWeighting", "1");
+// user_pref("general.smoothScroll.stopDecelerationWeighting", "1");
 // user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
-
 /****************************************************************************
  * END: BETTERFOX                                                           *
  ****************************************************************************/
