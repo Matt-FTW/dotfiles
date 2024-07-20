@@ -23,7 +23,10 @@ table.insert(keys, { "<C-A-h>", "<cmd>Grapple cycle backward<CR>", desc = "Prev 
 return {
   {
     "cbochs/grapple.nvim",
-    dependencies = "nvim-tree/nvim-web-devicons",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      optional = true,
+    },
     cmd = { "Grapple" },
     keys = keys,
     config = function()
