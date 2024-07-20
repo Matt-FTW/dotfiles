@@ -1,8 +1,10 @@
 return {
   {
     "nvim-pack/nvim-spectre",
+    build = false,
     cmd = "Spectre",
     opts = {
+      open_cmd = "noswapfile vnew",
       default = {
         find = {
           cmd = "rg",
@@ -27,5 +29,9 @@ return {
         { "<leader>sr", group = "replace", icon = " " },
       },
     },
+  },
+  {
+    "MagicDuck/grug-far.nvim",
+    enabled = false,
   },
 }
