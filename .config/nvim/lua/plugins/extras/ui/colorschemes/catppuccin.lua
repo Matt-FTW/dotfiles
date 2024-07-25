@@ -51,6 +51,7 @@ return {
         flash = true,
         headlines = true,
         gitsigns = true,
+        grug_far = true,
         harpoon = false,
         illuminate = true,
         indent_blankline = {
