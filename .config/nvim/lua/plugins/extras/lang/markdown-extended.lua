@@ -29,6 +29,15 @@ return {
     },
   },
   {
+    "epwalsh/obsidian.nvim",
+    optional = true,
+    opts = {
+      ui = {
+        enable = false,
+      },
+    },
+  },
+  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     opts = {
