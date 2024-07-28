@@ -1,6 +1,7 @@
 return {
   "mrjones2014/smart-splits.nvim",
   build = "./kitty/install-kittens.bash",
+  event = "VeryLazy",
   -- stylua: ignore
   keys = {
     { "<C-A-Left>",  function() require("smart-splits").resize_left() end,       desc = "Resize Left" },
