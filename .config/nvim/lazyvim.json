@@ -58,6 +58,7 @@
     "plugins.extras.ui.colorschemes.catppuccin",
     "plugins.extras.ui.context",
     "plugins.extras.ui.dashboard-extended",
+    "plugins.extras.ui.edgy-extended",
     "plugins.extras.ui.highlight-colors",
     "plugins.extras.ui.lualine-extended",
     "plugins.extras.ui.noice-extended",
