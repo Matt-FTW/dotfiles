@@ -1,6 +1,6 @@
 return {
   "nvim-zh/colorful-winsep.nvim",
-  event = "WinNew",
+  event = { "WinNew", "WinLeave" },
   opts = {
     no_exec_files = {
       "packer",
