@@ -4,7 +4,7 @@
   // Theme
   "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
-  "workbench.iconTheme": "catppuccin-perfect-mocha",
+  "workbench.iconTheme": "catppuccin-macchiato",
   "workbench.preferredHighContrastColorTheme": "Catppuccin Macchiato",
   "catppuccin.accentColor": "lavender",
   "catppuccin.extraBordersEnabled": true,
