@@ -73,15 +73,6 @@ style = "blue"
 format = "[ ]($style)"
 detect_files = ["hyprland.conf"]
 
-[custom.folder_number]
-description = "Number of files (and folders) in the current working directory"
-command = "fd -H --min-depth 1 --max-depth 1 | wc -l"
-when = "true"
-require_repo = true
-symbol = " "
-style = "blue bold"
-format = '[$symbol$output]($style) '
-
 # Nerd fonts preset
 [aws]
 symbol = "  "
