@@ -7,7 +7,7 @@ udiskie &
 swww-daemon --format xrgb &
 
 # Pyprland Daemon
-pypr &
+pypr --debug /tmp/pypr.log &
 
 # Bar
 waybar &
