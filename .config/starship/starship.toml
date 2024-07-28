@@ -61,6 +61,12 @@ truncation_length = 3
 ".config" = " "
 
 # Custom entries
+[custom.yazi]
+description = "Shell launched inside Yazi"
+symbol = " "
+style = "blue bold"
+when = """ test -n "$YAZI_LEVEL" """
+
 [custom.neovim]
 command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
 detect_folders = ["lua"]
