@@ -6,8 +6,10 @@ function repos --description 'Open Git directories in ~/Repos with fzf in a new 
         set tab_title (basename "$selected_dir")
         set new_tab_cmd = ""
 
-        if zellij ls | grep --quiet current
-            set new_tab_cmd "zellij action rename-tab \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
+        if type -q zellij
+            if zellij ls | grep --quiet current
+                set new_tab_cmd "zellij action rename-tab \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
+            end
         else if type -q kitty
             set new_tab_cmd "kitty @ set-tab-title \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
         else
