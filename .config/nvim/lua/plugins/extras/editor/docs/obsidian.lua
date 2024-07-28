@@ -1,9 +1,9 @@
-local prefix = "<leader>O"
+local prefix = "<leader>o"
 
 return {
   {
     "epwalsh/obsidian.nvim",
-    event = { "BufReadPre /docs/Documentos/Obsidian/**.md" },
+    event = "VeryLazy",
     keys = {
       { prefix .. "o", "<cmd>ObsidianOpen<CR>", desc = "Open on App" },
       { prefix .. "g", "<cmd>ObsidianSearch<CR>", desc = "Grep" },
@@ -22,17 +22,11 @@ return {
       { prefix .. "i", "<cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
       { prefix .. "d", "<cmd>ObsidianDailies<CR>", desc = "Daily Notes" },
     },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-      "nvim-telescope/telescope.nvim",
-      "nvim-treesitter/nvim-treesitter",
-    },
     opts = {
       workspaces = {
         {
           name = "personal",
-          path = "~/Documentos/Obsidian/obsidianVault/root",
+          path = "~/Documents/Obsidian/obsidianVault/",
         },
       },
 
@@ -57,6 +51,12 @@ return {
             return require("obsidian").util.toggle_checkbox()
           end,
           opts = { buffer = true },
+        },
+        ["<cr>"] = {
+          action = function()
+            return require("obsidian").util.smart_action()
+          end,
+          opts = { buffer = true, expr = true },
         },
       },
 
