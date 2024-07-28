@@ -82,11 +82,9 @@ return {
         },
         buffers = {
           layout_config = {
-            prompt_position = "top",
-            height = 0.5,
-            width = 0.6,
+            height = 0.7,
+            width = 0.7,
           },
-          sorting_strategy = "ascending",
           mappings = {
             i = {
               ["<c-r>"] = require("telescope.actions").delete_buffer,
