@@ -27,6 +27,7 @@
       - git-delta
       - lazygit
       - onefetch
+      - tmux
 
       # Neovim
       - neovide
