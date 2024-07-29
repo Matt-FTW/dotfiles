@@ -2,90 +2,93 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "source": "$XDG_CONFIG_HOME/fastfetch/logo.png",
-    "height": 18
+    "height": 18,
   },
   "display": {
-    "separator": " ➜ "
+    "separator": " ➜ ",
+    "color": "white",
   },
   "modules": [
     {
       "type": "custom",
-      "format": "┌──────────── Hardware Information ────────────┐"
+      "format": "┌──────────── Hardware Information ────────────┐",
     },
     {
       "type": "cpu",
       "key": "   CPU",
-      "keyColor": "blue"
+      "keyColor": "blue",
     },
     {
       "type": "board",
-      "key": "   Board"
+      "key": "   Board",
+      "keyColor": "magenta",
     },
     {
       "type": "gpu",
-      "key": "  󰛇 GPU"
-    },
-    {
-      "type": "gpu",
-      "format": "{3}",
-      "key": "   GPU Driver",
-      "keyColor": "magenta"
+      "format": "{2} {3}",
+      "key": "  󰛇 GPU",
+      "keyColor": "yellow",
     },
     {
       "type": "memory",
-      "key": "  ﬙ Memory",
-      "keyColor": "magenta"
+      "key": "   Memory",
+      "keyColor": "green",
     },
     {
       "type": "display",
-      "key": "   Display",
-      "keyColor": "green",
-      "compactType": "original"
+      "key": "  󰍹 Display",
+      "keyColor": "cyan",
+      "compactType": "original",
     },
     "break",
     {
       "type": "custom",
-      "format": "├──────────── Software Information ────────────┤"
+      "format": "├──────────── Software Information ────────────┤",
     },
     {
       "type": "os",
       "key": "   OS",
-      "keyColor": "red"
+      "keyColor": "blue",
     },
     {
       "type": "kernel",
-      "key": "   Kernel",
-      "keyColor": "red"
+      "key": "   Kernel",
+      "keyColor": "red",
     },
     {
       "type": "shell",
-      "key": "   Shell",
-      "keyColor": "magenta"
+      "key": "   Shell",
+      "keyColor": "magenta",
     },
     {
       "type": "wm",
-      "key": "   WM",
-      "keyColor": "yellow"
+      "key": "   WM",
+      "keyColor": "cyan",
     },
     {
       "type": "terminal",
       "key": "   Terminal",
-      "keyColor": "yellow"
+      "keyColor": "yellow",
     },
     {
       "type": "packages",
-      "key": "   Packages",
-      "keyColor": "green"
+      "key": "   Packages",
+      "keyColor": "green",
+    },
+    {
+      "type": "uptime",
+      "key": "  󱫐 Uptime",
+      "keyColor": "white",
     },
     {
       "type": "custom",
-      "format": "└──────────────────────────────────────────────┘"
+      "format": "└──────────────────────────────────────────────┘",
     },
     "break",
     {
       "type": "colors",
       "symbol": "block",
-      "paddingLeft": 11
-    }
-  ]
+      "paddingLeft": 12,
+    },
+  ],
 }
