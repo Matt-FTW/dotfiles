@@ -221,3 +221,7 @@ map({ "c", "i", "t" }, "<M-BS>", "<C-w>", { desc = "Delete Word" })
 
 -- Git
 map("n", "<leader>ghB", LazyVim.lazygit.blame_line, { desc = "Blame Line (LazyGit)" })
+
+-- Windows Split
+map("n", "<leader>_", "<C-W>s", { desc = "Split Window Below", remap = true })
+map("n", "<leader>\\", "<C-W>v", { desc = "Split Window Right", remap = true })
