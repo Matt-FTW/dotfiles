@@ -131,7 +131,7 @@ Here is all the information about my setup:
 | --------------------------- | ------------------------------------------------------------------------------------------------ |
 | **Shell**                   | 💖 [fish](https://fishshell.com/) [:gear:](../.config/fish/)                                     |
 | **Terminal Emulator**       | 💖 [kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                         |
-| **Terminal Multiplexer**    | [zellij](https://github.com/zellij-org/zellij) [:gear:](../.config/zellij/)                      |
+| **Terminal Multiplexer**    | [tmux](https://github.com/tmux/tmux) [:gear:](../.config/tmux/)                                  |
 | **Shell Prompt**            | [starship](https://starship.rs/) [:gear:](../.config/starship/)                                  |
 | **Text Editor**             | 💖 [neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                       |
 | **Shell History**           | [atuin](https://github.com/atuinsh/atuin) [:gear:](../.config/atuin/)                            |
