@@ -6,7 +6,13 @@ function repos --description 'Open Git directories in ~/Repos with fzf in a new 
         set tab_title (basename "$selected_dir")
         set new_tab_cmd = ""
 
-        if type -q zellij
+        if type -q tmux
+            if set -q TMUX
+                set new_tab_cmd "tmux rename-session \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
+            else
+                set new_tab_cmd "tmux new-session -s \"$tab_title\" -c \"$selected_dir\""
+            end
+        else if type -q zellij
             if zellij ls | grep --quiet current
                 set new_tab_cmd "zellij action rename-tab \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
             end
