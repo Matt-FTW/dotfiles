@@ -1,6 +1,6 @@
 #!/bin/bash
 
-image_folder="$HOME/Images/"
+image_folder="$HOME/Pictures/"
 video_folder="$HOME/Videos/"
 
 # Utils

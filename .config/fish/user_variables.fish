@@ -5,7 +5,6 @@ set -xg XDG_DATA_HOME $HOME/.local/share
 set -xg XDG_STATE_HOME $HOME/.local/state
 set -xg XDG_BIN_HOME $HOME/.local/bin
 set -xg XDG_SCRIPT_HOME $HOME/.local/script
-set -xg XDG_SCREENSHOTS_HOME $HOME/Images/Screenshots
 
 # Respect XDG Specification
 set -xg CONAN_USER_HOME $XDG_CONFIG_HOME
