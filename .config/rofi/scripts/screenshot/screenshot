@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$1" = "--freeze" ]; then
-	extra_args="--freeze"
+  extra_args="--freeze"
 fi
 
 # variables
@@ -20,15 +20,15 @@ folder=""
 selected="$(echo -e "$region\n$output\n$window\n$folder" | rofi -dmenu -theme "${theme}")"
 case $selected in
 $region)
-	$command -m region
-	;;
+  $command -m region
+  ;;
 $output)
-	$command -m output
-	;;
+  $command -m output
+  ;;
 $window)
-	$command -m window
-	;;
+  $command -m window
+  ;;
 $folder)
-	~/.config/rofi/scripts/screenshot/screenshot_selection
-	;;
+  ~/.config/rofi/scripts/screenshot/screenshot_selection
+  ;;
 esac
