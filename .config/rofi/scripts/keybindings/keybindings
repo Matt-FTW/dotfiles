@@ -1,5 +1,9 @@
 #!/bin/bash
 
-CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | rofi -dmenu)
+CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | sed 's/\.yml$//' | rofi -dmenu)
 
-hyprctl dispatch exec "[float;size 45% 80%;center 1] kitty keyb -k '$HOME/.config/keyb/bindings/$CONFIG'"
+if [ -z "$CONFIG" ]; then
+  exit
+fi
+
+hyprctl dispatch exec "[float;size 45% 80%;center 1] kitty keyb -k '$HOME/.config/keyb/bindings/$CONFIG.yml'"
