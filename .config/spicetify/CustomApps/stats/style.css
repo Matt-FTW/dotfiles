@@ -1,4 +1,4 @@
-/* ../../../AppData/Local/Temp/tmp-17120-n3iWRzissBjg/18f3cbbb4bc3/navBar.module.css */
+/* ../../../AppData/Local/Temp/tmp-8216-VCWpAfv0Bkqy/1909217e9563/navBar.module.css */
 .navBar-module__topBarHeaderItem___piw4C_stats {
   -webkit-app-region: no-drag;
   display: inline-block;
@@ -46,13 +46,16 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_stats {
   padding: 0;
 }
 
-/* ../../../AppData/Local/Temp/tmp-17120-n3iWRzissBjg/18f3cbbb33e0/app.css */
+/* ../../../AppData/Local/Temp/tmp-8216-VCWpAfv0Bkqy/1909217e7ff0/app.css */
 #stats-app .stats-gridInline {
   --grid-gap: 24px;
   grid-template-columns: repeat(10, 180px) !important;
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin-top: 5px;
+}
+#stats-app .grid:nth-child(2) {
+  margin-top: 24px;
 }
 #stats-app [data-scroll=both] {
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
@@ -125,6 +128,9 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_stats {
   font-size: 0.875rem;
   margin-left: 7px;
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #stats-app .stats-genreValue {
   color: var(--spice-text);
@@ -138,6 +144,35 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_stats {
   background-color: transparent;
   border: none;
 }
+#stats-app .main-trackList-rowPlayPauseIcon {
+  fill: currentColor;
+}
+#stats-app .badge {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgb(65, 110, 170);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+#stats-app .extend-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 14px;
+  color: var(--spice-subtext);
+}
+#stats-app .extend-button:hover {
+  color: var(--spice-text);
+}
 .GenericModal[aria-label="Playlist Stats"] .main-embedWidgetGenerator-container {
   width: 80vw;
   height: 80vh;
@@ -147,7 +182,7 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_stats {
   color: var(--spice-text);
 }
 
-/* ../../../AppData/Local/Temp/tmp-17120-n3iWRzissBjg/18f3cbbb48b1/config_modal.css */
+/* ../../../AppData/Local/Temp/tmp-8216-VCWpAfv0Bkqy/1909217e92e1/config_modal.css */
 .config-container {
   gap: 10px;
   display: flex;
@@ -224,7 +259,7 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_stats {
   width: 200px;
 }
 
-/* ../../../AppData/Local/Temp/tmp-17120-n3iWRzissBjg/18f3cbbb49f2/shared.css */
+/* ../../../AppData/Local/Temp/tmp-8216-VCWpAfv0Bkqy/1909217e93c2/shared.css */
 .grid {
   --grid-gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
