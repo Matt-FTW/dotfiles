@@ -8,7 +8,7 @@ function repos --description 'Open Git directories in ~/Repos with fzf in a new 
 
         if type -q tmux
             if set -q TMUX
-                set new_tab_cmd "tmux rename-session \"$tab_title\"; and cd $selected_dir; and $gfetch; and l"
+                set new_tab_cmd "tmux new-session -ds \"$tab_title\" -c \"$selected_dir\"; and tmux switch-client -t \"$tab_title\""
             else
                 set new_tab_cmd "tmux new-session -s \"$tab_title\" -c \"$selected_dir\""
             end
