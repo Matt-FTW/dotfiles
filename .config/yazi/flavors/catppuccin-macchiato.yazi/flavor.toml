@@ -115,3 +115,23 @@ rules = [
   { name = "*", fg = "#cad3f5" },
   { name = "*/", fg = "#8aadf4" },
 ]
+
+[icon]
+dirs = [
+  { name = ".config", text = "" },
+  { name = ".git", text = "" },
+  { name = ".github", text = "" },
+  { name = "Desktop", text = "" },
+  { name = "Repos", text = "" },
+  { name = "Documents", text = "" },
+  { name = "Downloads", text = "" },
+  { name = "Library", text = "" },
+  { name = "Obsidian", text = "󰠮" },
+  { name = "Games", text = "" },
+  { name = "Movies", text = "" },
+  { name = "Music", text = "" },
+  { name = "Pictures", text = "" },
+  { name = "Public", text = "" },
+  { name = "Templates", text = "" },
+  { name = "Videos", text = "" },
+]
