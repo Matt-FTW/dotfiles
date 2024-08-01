@@ -14,6 +14,8 @@ lazy = true
 
 [scratchpads.yazi]
 command = "kitty --class scratchpad-large yazi"
+unfocus = "hide"
+hysteresis = 0.1
 lazy = true
 
 [scratchpads.gpt]
