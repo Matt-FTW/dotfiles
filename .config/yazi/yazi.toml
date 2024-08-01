@@ -26,10 +26,18 @@ document = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
 ]
 
-image = [{ run = 'xdg-open "$@"', desc = "xdg-open", for = "linux" }]
-video = [{ run = 'xdg-open "$@"', desc = "xdg-open", for = "linux" }]
-audio = [{ run = 'xdg-open "$@"', desc = "xdg-open", for = "linux" }]
-fallback = [{ run = 'xdg-open "$@"', desc = "xdg-open", for = "linux" }]
+image = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
+video = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
+audio = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
+fallback = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+]
 
 [open]
 rules = [
