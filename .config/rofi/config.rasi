@@ -12,6 +12,12 @@ configuration {
   steal-focus: false;
   hover-select: true;
 
+  // Keybindings
+  kb-row-up: "Control+k";
+  kb-row-down: "Control+j";
+  kb-accept-entry: "Return,KP_Enter";
+  kb-remove-to-eol: "";
+
   // Matching setting
   matching: "normal";
   tokenize: true;
