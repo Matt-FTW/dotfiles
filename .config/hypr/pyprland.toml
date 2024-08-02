@@ -13,7 +13,7 @@ command = "kitty --class scratchpad-large"
 lazy = true
 
 [scratchpads.yazi]
-command = "kitty --class scratchpad-large yazi"
+command = "kitty --class scratchpad-large fish -c yazi"
 unfocus = "hide"
 hysteresis = 0.1
 lazy = true
