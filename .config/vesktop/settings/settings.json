@@ -652,9 +652,6 @@
         "VoiceDownload": {
             "enabled": false
         },
-        "WatchTogetherAdblock": {
-            "enabled": false
-        },
         "WebScreenShareFixes": {
             "enabled": false
         },
@@ -669,6 +666,9 @@
         },
         "ShowAllRoles": {
             "enabled": false
+        },
+        "YoutubeAdblock": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -681,6 +681,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1722361513162
+        "settingsSyncVersion": 1722588782019
     }
 }
