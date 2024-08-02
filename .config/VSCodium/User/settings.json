@@ -64,10 +64,10 @@
   "explorer.compactFolders": false,
   "breadcrumbs.filePath": "off",
   "editor.bracketPairColorization.enabled": true,
-  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.vertical": "visible",
   "editor.wordWrap": "off",
   "errorLens.fontStyleItalic": true,
-  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.tabs.enabled": true,
   // Misc
   "codeium.enableCodeLens": false,
   "workbench.tips.enabled": false,
@@ -129,12 +129,18 @@
     ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #c6a0f6 10%, #8aadf4 100%)",
     ".quick-input-list-row div": "display: flex !important; align-items: center !important",
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
-    ".monaco-editor .scroll-decoration": "display: none !important",
     ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
     ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
     ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
     ".composite": "border: none !important",
-    ".global-actions": "display: none !important"
+    ".global-actions": "display: none !important",
+    ".slider": "position: absolute !important; right: 1px !important; width: 6px !important; border-radius: 5px; left: auto !important;",
+    ".monaco-scrollable-element > .shadow.top": "box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) !important; top: -3px !important",
+    ".monaco-editor-hover, .monaco-hover": "box-shadow: 0px 8px 32px rgba(0,0,0,.45) !important; padding: 5px !important; background-image: linear-gradient(#363a4f 0%, #24273a 100%) !important; border-radius: 7px !important; border: none !important;",
+    ".quick-input-widget": "transform: translateY(-50%) !important; top: 50% !important; box-shadow: 0px 8px 20px rgba(0, 0, 0, .45) !important; padding: 10px 10px 18px 10px !important; background-image: linear-gradient(#363a4f 0%, #1e2030 100%) !important; border-radius: 7px !important;",
+    ".monaco-list-rows": "background: transparent !important;",
+    ".monaco-list-row:hover": "background: rgba(0, 0, 0, .2) !important;",
+    ".notifications-toasts .monaco-list-row:hover": "background: none !important;"
   },
 
   // Neovim
@@ -152,7 +158,6 @@
   ],
   "projectManager.sortList": "Recent",
   // Smooth movement
-  "editor.cursorSmoothCaretAnimation": "on",
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "editor.cursorBlinking": "smooth",
@@ -176,9 +181,6 @@
   },
   "animations.Smooth-Mode": true,
   "animations.Install-Method": "Apc Customize UI++",
-  "apc.imports": [
-    "file://${userHome}/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
-  ],
   // Language specific
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
@@ -1117,8 +1119,6 @@
       ]
     }
   ],
-  "workbench.statusBar.visible": false,
   "editor.matchBrackets": "never",
-  "workbench.editor.showTabs": "multiple",
-  "workbench.activityBar.location": "hidden"
+  "workbench.statusBar.visible": false
 }
