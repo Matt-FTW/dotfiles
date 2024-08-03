@@ -59,6 +59,7 @@ return {
           scope_color = "lavender", -- catppuccin color (eg. `lavender`) Default: text
           colored_indent_levels = false,
         },
+        render_markdown = true,
         mason = true,
         markdown = true,
         mini = true,
