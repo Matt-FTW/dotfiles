@@ -47,9 +47,6 @@
   tool = nvimdiff
   conflictstyle = diff3
 
-[pager]
-  blame = diff-so-fancy | less --tabs=4 -RFX
-
 [diff]
   colorMoved = default
 
