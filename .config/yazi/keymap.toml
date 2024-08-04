@@ -6,6 +6,10 @@ prepend_keymap = [
   { on = [
     "<C-s>",
   ], run = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
+  { on = [
+    "c",
+    "a",
+  ], run = "plugin compress", desc = "Archive selected files" },
 ]
 
 append_keymap = [

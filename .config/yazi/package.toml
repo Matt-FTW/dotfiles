@@ -3,6 +3,7 @@ deps = [
   { use = "yazi-rs/plugins#full-border", commit = "06e5fe1" },
   { use = "llanosrocas/yaziline", commit = "5886330" },
   { use = "Rolv-Apneseth/starship", commit = "0a141f6" },
+  { use = "KKV9/compress", commit = "878b876" },
 ]
 
 [flavor]
