@@ -10,6 +10,12 @@ prepend_keymap = [
     "c",
     "a",
   ], run = "plugin compress", desc = "Archive selected files" },
+  { on = "<C-u>", run = "seek -5", desc = "Seek up 5 units in the preview" },
+  { on = "<C-d>", run = "seek 5", desc = "Seek down 5 units in the preview" },
+  { on = "K", run = "arrow -50%", desc = "Move cursor up half page" },
+  { on = "J", run = "arrow 50%", desc = "Move cursor down half page" },
+  { on = "<A-k>", run = "arrow -5", desc = "Move cursor up half page" },
+  { on = "<A-j>", run = "arrow 5", desc = "Move cursor down half page" },
 ]
 
 append_keymap = [
