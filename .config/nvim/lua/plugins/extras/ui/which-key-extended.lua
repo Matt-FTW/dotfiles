@@ -1,11 +1,11 @@
 return {
   "folke/which-key.nvim",
   opts = {
+    triggers = {
+      { "<auto>", mode = "nixsoc" },
+    },
     icons = {
       group = "",
-    },
-    layout = {
-      align = "center",
     },
     spec = {
       { "<leader>ci", group = "info", icon = " " },
