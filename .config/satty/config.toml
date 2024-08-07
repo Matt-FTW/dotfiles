@@ -7,6 +7,7 @@ annotation-size-factor = 2
 output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png"
 save-after-copy = false
 default-hide-toolbars = false
+disable-notifications = true
 
 [font]
 family = "JetBrainsMono Nerd Font"
