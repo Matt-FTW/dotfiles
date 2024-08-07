@@ -88,4 +88,28 @@ return {
       },
     },
   },
+  {
+    "nvimdev/dashboard-nvim",
+    opts = function(_, opts)
+      -- Remove the older session plugin entry
+      for i, section in ipairs(opts.config.center) do
+        if section.key == "s" then
+          table.remove(opts.config.center, i)
+          break
+        end
+      end
+
+      local session = {
+        action = 'lua require("persisted").load()',
+        desc = " Restore Session",
+        icon = " ",
+        key = "s",
+      }
+
+      session.desc = session.desc .. string.rep(" ", 43 - #session.desc)
+      session.key_format = "  %s"
+
+      table.insert(opts.config.center, 9, session)
+    end,
+  },
 }
