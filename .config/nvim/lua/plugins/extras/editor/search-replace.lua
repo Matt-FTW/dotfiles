@@ -15,7 +15,6 @@ return {
     { "<leader>srw", "<CMD>SearchReplaceSingleBufferCWord<CR>", desc = "Word on Buffer", mode = "n" },
     { "<leader>srW", "<CMD>SearchReplaceSingleBufferCWORD<CR>", desc = "WORD on Buffer", mode = "n" },
     { "<leader>sre", "<CMD>SearchReplaceSingleBufferCExpr<CR>", desc = "Expression on Buffer", mode = "n" },
-    { "<leader>srf", "<CMD>SearchReplaceSingleBufferCFile<CR>", desc = "File on Buffer", mode = "n" },
 
     -- { "n", "<leader>rbs", "<CMD>SearchReplaceMultiBufferSelections<CR>", desc = "Search and Replace in Multi Buffer Selections" },
     -- { "n", "<leader>rbo", "<CMD>SearchReplaceMultiBufferOpen<CR>", desc = "Search and Replace in Multi Buffer, Open" },
@@ -35,6 +34,22 @@ return {
   },
   {
     "MagicDuck/grug-far.nvim",
-    enabled = false,
+    keys = {
+      {
+        "<leader>srp",
+        function()
+          local grug = require("grug-far")
+          local ext = vim.bo.buftype == "" and vim.fn.expand("%:e")
+          grug.grug_far({
+            transient = true,
+            prefills = {
+              filesFilter = ext and ext ~= "" and "*." .. ext or nil,
+            },
+          })
+        end,
+        mode = { "n", "v" },
+        desc = "Project",
+      },
+    },
   },
 }

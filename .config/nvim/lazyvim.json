@@ -29,6 +29,7 @@
     "plugins.extras.editor.marks.grapple",
     "plugins.extras.editor.neo-tree-extended",
     "plugins.extras.editor.package-info",
+    "plugins.extras.editor.search-replace",
     "plugins.extras.editor.suda",
     "plugins.extras.editor.telescope.lazy",
     "plugins.extras.editor.telescope.telescope-extended",
