@@ -1,14 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+
 gui:
-  # stuff relating to the UI
-  windowSize: "normal" # one of 'normal' | 'half' | 'full' default is 'normal'
   scrollHeight: 10 # how many lines you scroll by
-  scrollPastBottom: true # enable scrolling past the bottom
-  sidePanelWidth: 0.3333 # number from 0 to 1
+  scrollPastBottom: false # enable scrolling past the bottom
+  sidePanelWidth: 0.25 # number from 0 to 1
   expandFocusedSidePanel: true
-  mainPanelSplitMode: "flexible" # one of 'horizontal' | 'flexible' | 'vertical'
-  language: "auto" # one of 'auto' | 'en' | 'zh' | 'pl' | 'nl' | 'ja' | 'ko' | 'ru'
-  timeFormat: "02 Jan 06" # https://pkg.go.dev/time#Time.Format
-  shortTimeFormat: "3:04PM"
   theme:
     activeBorderColor:
       - "#a6da95"
@@ -31,68 +27,33 @@ gui:
       - "#eed49f"
   commitLength:
     show: true
-  mouseEvents: true
-  skipDiscardChangeWarning: false
-  skipStashWarning: false
-  showFileTree: true # for rendering changes files in a tree format
-  showListFooter: true # for seeing the '5 of 20' message in list panels
-  showRandomTip: true
-  showBranchCommitHash: false # show commit hashes alongside branch names
-  showBottomLine: true # for hiding the bottom information line (unless it has important information to tell you)
-  showCommandLog: true
+  branchColors:
+    "release": "#eed49f"
+    "hotfix": "#ed8796"
+    "feature": "#a6da95"
+  showBottomLine: false # for hiding the bottom information line (unless it has important information to tell you)
   nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
-  commandLogSize: 8
+  commandLogSize: 5
+  showDivergenceFromBaseBranch: "arrowAndNumber"
   filterMode: "fuzzy"
-  splitDiff: "auto" # one of 'auto' | 'always'
+  showPanelJumps: false
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
+  statusPanelView: "dashboard"
+
 git:
   paging:
-    colorArg: always
     pager: delta --paging=never
-  commit:
-    signOff: false
-  merging:
-    # only applicable to unix users
-    manualCommit: false
-    # extra args passed to `git merge`, e.g. --no-ff
-    args: ""
-  log:
-    # one of date-order, author-date-order, topo-order or default.
-    # topo-order makes it easier to read the git log graph, but commits may not
-    # appear chronologically. See https://git-scm.com/docs/git-log#_commit_ordering
-    order: "topo-order"
-    # one of always, never, when-maximised
-    # this determines whether the git graph is rendered in the commits panel
-    showGraph: "when-maximised"
-    # displays the whole git graph by default in the commits panel (equivalent to passing the `--all` argument to `git log`)
-    showWholeGraph: false
-  skipHookPrefix: WIP
-  # The main branches. We colour commits green if they belong to one of these branches,
-  # so that you can easily see which commits are unique to your branch (coloured in yellow)
-  mainBranches: [master, main]
-  autoFetch: true
-  autoRefresh: true
-  fetchAll: true # Pass --all flag when running git fetch. Set to false to fetch only origin (or the current branch's upstream remote if there is one)
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' {{branchName}} --"
   allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --date-relative --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
-  overrideGpg: false # prevents lazygit from spawning a separate process when using GPG
-  disableForcePushing: false
-  parseEmoji: false
+  parseEmoji: true
+
 os:
   editPreset: "nvim-remote" # see 'Configuring File Editing' section
-refresher:
-  refreshInterval: 10 # File/submodule refresh interval in seconds. Auto-refresh can be disabled via option 'git.autoRefresh'.
-  fetchInterval: 60 # Re-fetch interval in seconds. Auto-fetch can be disabled via option 'git.autoFetch'.
-update:
-  method: prompt # can be: prompt | background | never
-  days: 14 # how often an update is checked for
-confirmOnQuit: false
-# determines whether hitting 'esc' will quit the application when there is nothing to cancel/close
-quitOnTopLevelReturn: false
-disableStartupPopups: false
+
+disableStartupPopups: true
 notARepository: "skip" # one of: 'prompt' | 'create' | 'skip' | 'quit'
-promptToReturnFromSubprocess: true # display confirmation when subprocess terminates
+
 keybinding:
   universal:
     quit: "q"
@@ -104,8 +65,8 @@ keybinding:
     nextItem: "<down>" # go one line down
     prevItem-alt: "k" # go one line up
     nextItem-alt: "j" # go one line down
-    prevPage: "," # go to next page in list
-    nextPage: "." # go to previous page in list
+    prevPage: "K" # go to next page in list
+    nextPage: "J" # go to previous page in list
     gotoTop: "<" # go to top of list
     gotoBottom: ">" # go to bottom of list
     scrollLeft: "H" # scroll left within list view
@@ -129,10 +90,10 @@ keybinding:
     openFile: "o"
     scrollUpMain: "<pgup>" # main panel scroll up
     scrollDownMain: "<pgdown>" # main panel scroll down
-    scrollUpMain-alt1: "K" # main panel scroll up
-    scrollDownMain-alt1: "J" # main panel scroll down
-    scrollUpMain-alt2: "<c-u>" # main panel scroll up
-    scrollDownMain-alt2: "<c-d>" # main panel scroll down
+    scrollUpMain-alt1: "<c-u>" # main panel scroll up
+    scrollDownMain-alt1: "<c-d>" # main panel scroll down
+    scrollUpMain-alt2: "<disabled>" # main panel scroll up
+    scrollDownMain-alt2: "<disabled>" # main panel scroll down
     executeCustomCommand: ":"
     createRebaseOptionsMenu: "m"
     pushFiles: "P"
@@ -217,6 +178,7 @@ keybinding:
     init: "i"
     update: "u"
     bulkMenu: "b"
+
 customCommands:
   - key: "C"
     command: "git cz"
