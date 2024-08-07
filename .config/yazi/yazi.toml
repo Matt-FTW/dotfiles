@@ -7,12 +7,13 @@ sort_dir_first = true
 
 [opener]
 folder = [
-  { run = 'hyprctl dispatch exec "[float; size 60% 60%; center 1] xdg-open" "$@"', desc = "GUI file manager" },
+  { run = 'hyprctl dispatch exec "[float; size 60% 60%; center 1] nemo" "$@"', orphan = true, desc = "nemo", for = "linux" },
   { run = '''fish -c "nvim "$1""''', block = true, desc = "neovim", for = "linux" },
   { run = 'kitty --detach nvim "$@"', orphan = true, desc = "neovim (detached)", for = "linux" },
   { run = '''fish -c "lazygit -p "$1""''', block = true, desc = "lazygit", for = "linux" },
   { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
   { run = 'kitty "$@"', orphan = true, desc = "kitty", for = "linux" },
+  { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
 ]
 
 text = [
@@ -24,16 +25,23 @@ text = [
 
 document = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'zathura "$@"', orphan = true, desc = "zathura", for = "linux" },
+  { run = 'libreoffice "$@"', orphan = true, desc = "libreoffice", for = "linux" },
 ]
 
 image = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'qimgv "$@"', orphan = true, desc = "qimgv", for = "linux" },
+  { run = 'krita "$@"', orphan = true, desc = "krita", for = "linux" },
+  { run = 'satty --filename "$@"', orphan = true, desc = "satty", for = "linux" },
 ]
 video = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
 ]
 audio = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
+  { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
 ]
 fallback = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
