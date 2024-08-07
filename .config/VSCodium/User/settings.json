@@ -284,7 +284,8 @@
     "**/*.java",
     "**/*.kt",
     "**/*.cpp",
-    "**/*.rasi"
+    "**/*.rasi",
+    "**/*.toml"
   ],
   "colorize.languages": [
     "css",
@@ -301,7 +302,8 @@
     "java",
     "c",
     "rasi",
-    "markdown"
+    "markdown",
+    "toml"
   ],
   // Toggle excluded files
   "files.exclude": {
