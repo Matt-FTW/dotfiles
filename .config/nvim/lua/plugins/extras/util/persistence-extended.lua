@@ -1,20 +1,22 @@
-local isActive = true
-local p = require("persistence")
-
 return {
   "folke/persistence.nvim",
+  optional = true,
   keys = {
     {
       "<leader>qS",
       function()
+        local p = require("persistence")
         p.save()
         LazyVim.notify("Session Saved", { title = "Persistence" })
       end,
       desc = "Save Session",
     },
     -- stylua: ignore start
-    { "<leader>qt",
+    {
+      "<leader>qt",
       function()
+        local isActive = true
+        local p = require("persistence")
         if isActive then
           p.stop()
           isActive = false

@@ -455,6 +455,14 @@
 </details>
 
 <details>
+<summary><b> Session</b></summary>
+
+- [olimorris/persisted.nvim](https://dotfyle.com/plugins/olimorris/persisted.nvim)
+- [folke/persistence.nvim](https://dotfyle.com/plugins/folke/persistence.nvim)
+
+</details>
+
+<details>
 <summary><b>📈 Startup</b></summary>
 
 - [nvimdev/dashboard-nvim](https://dotfyle.com/plugins/nvimdev/dashboard-nvim)
