@@ -29,6 +29,12 @@ return {
     },
   },
   {
+    "MeanderingProgrammer/markdown.nvim",
+    opts = {
+      preset = "lazy",
+    },
+  },
+  {
     "epwalsh/obsidian.nvim",
     optional = true,
     opts = {

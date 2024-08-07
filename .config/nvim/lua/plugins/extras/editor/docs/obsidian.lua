@@ -1,6 +1,13 @@
 local prefix = "<leader>o"
 
 return {
+  { import = "plugins.extras.lang.markdown-extended" },
+  {
+    "MeanderingProgrammer/markdown.nvim",
+    opts = {
+      preset = "obsidian",
+    },
+  },
   {
     "epwalsh/obsidian.nvim",
     event = "VeryLazy",
