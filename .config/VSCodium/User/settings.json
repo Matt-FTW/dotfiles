@@ -42,6 +42,7 @@
   "editor.stickyScroll.enabled": true,
   "window.commandCenter": false,
   "editor.lineNumbers": "relative",
+  "editor.lineHeight": 23,
   "window.menuBarVisibility": "toggle",
   "editor.minimap.enabled": false,
   "editor.overviewRulerBorder": false,
