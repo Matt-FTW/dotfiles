@@ -151,12 +151,7 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/home/matt/.local/share/bob/nvim-bin/nvim",
 
   // Project Manager
-  "projectManager.git.baseFolders": [
-    "/home/matt/Repos/Work",
-    "/home/matt/Repos/Personal",
-    "/home/matt/Repos/Community",
-    "/home/matt/Repos/Class"
-  ],
+  "projectManager.git.baseFolders": ["/home/matt/Repos/"],
   "projectManager.sortList": "Recent",
   // Smooth movement
   "workbench.list.smoothScrolling": true,
