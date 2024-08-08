@@ -1,8 +1,8 @@
 [plugin]
 deps = [
-  { use = "yazi-rs/plugins#full-border", commit = "06e5fe1" },
+  { use = "yazi-rs/plugins#full-border", commit = "ba2a7d7" },
   { use = "KKV9/compress", commit = "878b876" },
-  { use = "imsi32/yatline", commit = "439b9d0" },
+  { use = "imsi32/yatline", commit = "f5a56cb" },
   { use = "imsi32/yatline-githead", commit = "2f2b000" },
 ]
 
