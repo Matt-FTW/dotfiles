@@ -1,10 +1,10 @@
 ## 🌿 Description
 
-_(Include a summary of the changes)_
+<!-- Include a summary of the changes -->
 
 ## 📝 Type of change
 
-Please put an `x` in the boxes that apply:
+<!-- Please put an `x` in the boxes that apply -->
 
 - [ ] **Bug fix** (non-breaking change which fixes an issue)
 - [ ] **New feature** (non-breaking change which adds functionality)
@@ -15,7 +15,7 @@ Please put an `x` in the boxes that apply:
 
 ## 🔎 Checklist
 
-Please put an `x` in the boxes that apply:
+<!-- Please put an `x` in the boxes that apply -->
 
 - [ ] I have read the [CONTRIBUTING](./CONTRIBUTING.md) document.
 - [ ] My code follows the code style of this project.
@@ -27,8 +27,8 @@ Please put an `x` in the boxes that apply:
 
 ## 📸 Screenshots
 
-_(If appropriate)_
+<!-- If appropriate -->
 
 ## ✏️ Additional context
 
-_(Add any other context about the pull request here)_
+<!-- Add any other context about the pull request here -->
