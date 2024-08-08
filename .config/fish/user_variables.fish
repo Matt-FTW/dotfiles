@@ -62,13 +62,6 @@ set -xg EDITOR nvim
 set -xg VISUAL $EDITOR
 set -xg SUDO_EDITOR $EDITOR
 
-# Zellij Runner
-set -xg ZELLIJ_RUNNER_ROOT_DIR Repos
-set -xg ZELLIJ_RUNNER_IGNORE_DIRS node_modules,target
-set -xg ZELLIJ_RUNNER_MAX_DIRS_DEPTH 3
-set -xg ZELLIJ_RUNNER_LAYOUTS_DIR .config/zellij/layouts
-set -xg ZELLIJ_RUNNER_BANNERS_DIR .config/zellij/banners
-
 # GPG/LANG
 set -xg GPG_TTY (tty)
 
@@ -84,7 +77,6 @@ set -xg fzf_preview_dir_cmd eza --long --header --icons --all --color=always --g
 set -xg fzf_fd_opts --hidden --color=always
 
 # Other
-set -x THEFUCK_OVERRIDDEN_ALIASES 'vi, yarn, eza, vim, neofetch, onefetch, cat, tty-clock, dua i'
 set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 set -xg BAT_THEME Catppuccin-macchiato
 set -xg STARSHIP_LOG error
