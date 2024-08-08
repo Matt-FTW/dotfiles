@@ -77,6 +77,8 @@ set -xg fzf_preview_dir_cmd eza --long --header --icons --all --color=always --g
 set -xg fzf_fd_opts --hidden --color=always
 
 # Other
-set -xg LS_COLORS (vivid generate catppuccin-macchiato)
+if type -q vivid
+    set -xg LS_COLORS (vivid generate catppuccin-macchiato)
+end
 set -xg BAT_THEME Catppuccin-macchiato
 set -xg STARSHIP_LOG error
