@@ -207,7 +207,7 @@ Here is all the information about my setup:
    yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
            swww waybar rofi-wayland swaync swayosd-git wl-clipboard wl-clip-persist \
            pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-           catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty
+           catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty vivid
    ```
 
    On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
