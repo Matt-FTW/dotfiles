@@ -107,6 +107,7 @@ Here is all the information about my setup:
 | **OS**                         | 💖 [Arch Linux](https://archlinux.org/)                                                                                                      |
 | **Package Manager**            | [pacman](https://wiki.archlinux.org/title/Pacman) [:gear:](../.config/pacman/)                                                               |
 | **AUR Helper**                 | 💖 [yay](https://github.com/Jguer/yay) [:gear:](../.config/yay/)                                                                             |
+| **Display Manager**            | [greetd](https://sr.ht/~kennylevinsen/greetd/) (with [tuigreet](https://github.com/apognu/tuigreet))                                         |
 | **Window Manager**             | 💖 [hyprland](https://hyprland.org/) [:gear:](../.config/hypr/)                                                                              |
 | **Notification Daemon/Center** | [swaync](https://github.com/ErikReider/SwayNotificationCenter) [:gear:](../.config/swaync/)                                                  |
 | **OSD Popup**                  | [swayosd](https://github.com/ErikReider/SwayOSD)                                                                                             |
