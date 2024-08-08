@@ -1,13 +1,11 @@
 {
   "aururl": "https://aur.archlinux.org",
   "aurrpcurl": "https://aur.archlinux.org/rpc?",
-  "buildDir": "/home/matt/.cache/yay",
   "editor": "nvim",
   "editorflags": "",
   "makepkgbin": "makepkg",
   "makepkgconf": "",
   "pacmanbin": "pacman",
-  "pacmanconf": "/etc/pacman.conf",
   "redownload": "no",
   "answerclean": "",
   "answerdiff": "",
