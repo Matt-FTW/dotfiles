@@ -282,7 +282,7 @@ mv Catppuccin-SE ~/.local/share/icons/
 > [!WARNING]
 > Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
 
-### <samp>Yadm Method</samp> (_Easier to install and maintain, recommended_):
+### <samp>Yadm Method (_Easier to install and maintain, recommended_)</samp>
 
 [Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
 
@@ -331,7 +331,7 @@ Now you can receive new updates from my repo and modify your custom one :sunglas
 
 If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose)
 
-### <samp>Git Method</samp> (_Classic method, not recommended_):
+### <samp>Git Method (_Classic method, not recommended_)</samp>
 
 Firstly, clone this repository (remember to have git installed).
 
