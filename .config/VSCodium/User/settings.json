@@ -151,7 +151,7 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/home/matt/.local/share/bob/nvim-bin/nvim",
 
   // Project Manager
-  "projectManager.git.baseFolders": ["/home/matt/Repos/"],
+  "projectManager.git.baseFolders": ["~/Repos/"],
   "projectManager.sortList": "Recent",
   // Smooth movement
   "workbench.list.smoothScrolling": true,
@@ -1118,5 +1118,6 @@
     }
   ],
   "editor.matchBrackets": "never",
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden"
 }

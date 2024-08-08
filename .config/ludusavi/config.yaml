@@ -7,11 +7,11 @@ language: en-US
 theme: dark
 roots:
   - store: steam
-    path: /home/matt/.local/share/Steam
+    path: ~/.local/share/Steam
   - store: heroic
-    path: /home/matt/.config/heroic
+    path: ~/.config/heroic
   - store: steam
-    path: /home/matt/Games/SteamLibrary
+    path: ~/Games/SteamLibrary
 redirects: []
 backup:
   path: /backups/gamesaves
