@@ -224,7 +224,7 @@ Now lets move to the Optional Packages (If you don't want to install any more pa
 
 ```bash
 yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura zathura-pdf-mupdf qimgv-light \
-        ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
+         mpv
 ```
 
 Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
@@ -276,6 +276,21 @@ And finally, move them to the ~/.local/share/icons directory.
 mv Catppuccin-SE ~/.local/share/icons/
 ```
 
+- **Fonts**
+
+Install the following fonts:
+
+```bash
+yay -Sy ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols-common \
+       ttf-font-awesome noto-fonts-cjk ttf-ms-win11-auto
+```
+
+After that, be sure to refresh the font cache:
+
+```bash
+fc-cache -fv
+```
+
 ---
 
 ### :floppy_disk: Dotfiles Installation
@@ -283,7 +298,7 @@ mv Catppuccin-SE ~/.local/share/icons/
 > [!WARNING]
 > Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
 
-### <samp>Yadm Method (_Easier to install and maintain_, **recommended**)</samp>
+- ### <samp>Yadm Method (_Easier to install and maintain_, **recommended**)</samp>
 
 [Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
 
@@ -308,12 +323,6 @@ After that, its time to clone the dotfiles repo into your system using yadm.
 yadm clone https://github.com/Matt-FTW/dotfiles.git
 ```
 
-If you installed the fonts mentioned earlier, be sure to refresh the font cache.
-
-```bash
-fc-cache -fv
-```
-
 Congratulations, at this point your done installing the configuration! :tada:
 
 Logout from your current desktop session and log back into the Hyprland session.
@@ -332,7 +341,7 @@ Now you can receive new updates from my repo and modify your custom one :sunglas
 
 If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose)
 
-### <samp>Git Method (_Classic method_, **not recommended**)</samp>
+- ### <samp>Git Method (_Classic method_, **not recommended**)</samp>
 
 Firstly, clone this repository (remember to have git installed).
 
@@ -347,12 +356,6 @@ Once you have that, its time to copy the config files.
 ```bash
 cp -r .config/* ~/.config/
 cp -r .local/bin/* ~/.local/bin/
-```
-
-If you installed the fonts mentioned earlier, be sure to refresh the font cache.
-
-```bash
-fc-cache -fv
 ```
 
 Congratulations, at this point your done installing the configuration! :tada:
