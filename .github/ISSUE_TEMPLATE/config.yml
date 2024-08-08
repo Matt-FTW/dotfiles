@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/Matt-FTW/dotfiles/discussions/new/choose
+    about: Use Github discussions instead

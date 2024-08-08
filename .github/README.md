@@ -339,7 +339,8 @@ Then, be sure to push your changes to your remote!
 
 Now you can receive new updates from my repo and modify your custom one :sunglasses:
 
-If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose). Be sure to read the [FAQ](./FAQ.md) first!
+If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
+Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
 - ### <samp>Git Method (_Classic method_, **not recommended**)</samp>
 
@@ -362,7 +363,8 @@ Congratulations, at this point your done installing the configuration! :tada:
 
 Logout from your current desktop session and log back into the Hyprland session.
 
-If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose). Be sure to read the [FAQ](./FAQ.md) first!
+If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
+Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
 # :camera: ‎ <samp>Gallery</samp>
 
