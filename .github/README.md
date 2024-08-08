@@ -196,100 +196,163 @@ Here is all the information about my setup:
 
 # :wrench: ‎ <samp>Setup</samp>
 
-### :package: <samp>Manual Installation</samp>
+> [!WARNING]
+> The installation guide is under construction, try it at your own risk!
+
+### :package: <samp>Dependencies Installation</samp>
 
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). To install CLI/TUI specific packages in non-arch based distros, I recommend to use [homebrew](https://brew.sh/).
 
-1. First, lets start with the required **base packages** for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
+- **Base Packages**
 
-   ```bash
-   yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-           swww waybar rofi-wayland swaync swayosd-git wl-clipboard wl-clip-persist \
-           pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-           catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty vivid
-   ```
+First, lets start with the required base packages for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
 
-   On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
+```bash
+yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
+        swww waybar rofi-wayland swaync swayosd-git wl-clipboard wl-clip-persist \
+        pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
+        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty vivid
+```
 
-2. Now lets move to the **Optional Packages** (If you dont want to install any more packages, move to the 3th step)
+On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
 
-   - Replaceable Packages
+- **Optional Packages**
 
-   ```bash
-   yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura zathura-pdf-mupdf qimgv-light \
-           ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
-   ```
+Now lets move to the Optional Packages (If you don't want to install any more packages, move to the Dotfiles Installation step)
 
-   Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
+```bash
+yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura zathura-pdf-mupdf qimgv-light \
+        ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono mpv
+```
 
-   - Bluetooth
+Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
 
-   ```bash
-   yay -Sy bluez bluez-utils blueman
-   ```
+Useful CLI/TUI packages
 
-   After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
+```bash
+yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade fastfetch
+```
 
-   ```bash
-   systemctl --user enable bluetooth.service
-   systemctl --user start bluetooth.service
-   ```
+Useful GUI packages
 
-   - Icon Theme
+```bash
+yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
+```
 
-   First off, we have to download the icon package from the releases page of their repo. You can do it very easily by using curl.
+- **Bluetooth**
 
-   ```bash
-   curl -LJO https://github.com/ljmill/catppuccin-icons/releases/download/v0.2.0/Catppuccin-SE.tar.bz2
-   ```
+Lets start installing the Bluetooth packages:
 
-   Once you have that, its time to extract the compressed package.
+```bash
+yay -Sy bluez bluez-utils blueman
+```
 
-   ```bash
-   tar -xf Catppuccin-SE.tar.bz2
-   ```
+After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
 
-   And finally, move them to the ~/.local/share/icons directory.
+```bash
+systemctl --user enable bluetooth.service
+systemctl --user start bluetooth.service
+```
 
-   ```bash
-   mv Catppuccin-SE ~/.local/share/icons/
-   ```
+- **Icon Theme**
 
-   - Useful CLI/TUI packages
+First off, we have to download the icon package from the releases page of their repo. You can do it very easily by using curl.
 
-   ```bash
-   yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade fastfetch
-   ```
+```bash
+curl -LJO https://github.com/ljmill/catppuccin-icons/releases/download/v0.2.0/Catppuccin-SE.tar.bz2
+```
 
-   - Useful GUI packages
+Once you have that, its time to extract the compressed package.
 
-   ```bash
-   yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
-   ```
+```bash
+tar -xf Catppuccin-SE.tar.bz2
+```
 
-3. **Installing the dotfiles**:
-   Firstly, clone this repository (remember to have git installed).
+And finally, move them to the ~/.local/share/icons directory.
 
-   ```bash
-   git clone --depth 1 --recurse-submodules https://github.com/Matt-FTW/dotfiles.git
-   cd dotfiles && git submodule update --remote --merge
-   ```
+```bash
+mv Catppuccin-SE ~/.local/share/icons/
+```
 
-   Now is time to copy the files into their respective directories. **Be sure to backup your existing configuration files** before copying the files.
-   Once you have that, its time to copy the config files.
+---
 
-   ```bash
-   cp -r .config/* ~/.config/
-   cp -r .local/bin/* ~/.local/bin/
-   cp .czrc ~/
-   ```
+### :floppy_disk: <samp>Dotfiles Installation</samp>
 
-   If you installed the fonts mentioned earlier, be sure to refresh the font cache.
+> [!WARNING]
+> Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
 
-   ```bash
-   fc-cache -fv
-   ```
+#### <samp>Yadm Method</samp> (_Easier to install and maintain_):
+
+[Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
+
+It also lets you pull from the repos that you set up on remote to your local repo and then push to your personal remote.
+
+I'd recommend you to look at it if you want a more personal and advanced config.
+
+For now, we are going to install it the simple way without to many complications and just to have an origin to pull and another to push.
+
+Firstly, **be sure to backup your existing config files**. Then, we are going to install yadm. You can do it using pacman with the following command:
+
+```bash
+sudo pacman -S yadm
+```
+
+After that, its time to clone the dotfiles repo into your system using yadm.
+
+> [!NOTE]
+> If you any file of the repo that already exists in your system and the content differs, the local file will be left unmodified and you'll have to review the changes and resolve the differences.
+
+```bash
+yadm clone https://github.com/Matt-FTW/dotfiles.git
+```
+
+If you installed the fonts mentioned earlier, be sure to refresh the font cache.
+
+```bash
+fc-cache -fv
+```
+
+Congratulations, at this point your done installing the configuration! :tada:
+
+Logout from your current desktop session and log back into the Hyprland session.
+
+If you want to pull from my remote, commit or add any files you can do it using yadm and then the git command you want to use (pull, commit, add, etc).
+
+Now, if you want to **add your personal remote**, use the following command:
+
+```bash
+yadm remote add origin <url>
+```
+
+Then, be sure to push your changes to your remote!
+
+Now you can receive new updates from my repo and modify your custom one :sunglasses:
+
+If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose)
+
+#### <samp>Git Method</samp> (Classic method not recommended):
+
+Firstly, clone this repository (remember to have git installed).
+
+```bash
+git clone https://github.com/Matt-FTW/dotfiles.git
+cd dotfiles
+```
+
+Now is time to copy the files into their respective directories. **Be sure to backup your existing configuration files** before copying the files.
+Once you have that, its time to copy the config files.
+
+```bash
+cp -r .config/* ~/.config/
+cp -r .local/bin/* ~/.local/bin/
+```
+
+If you installed the fonts mentioned earlier, be sure to refresh the font cache.
+
+```bash
+fc-cache -fv
+```
 
 Congratulations, at this point your done installing the configuration! :tada:
 
