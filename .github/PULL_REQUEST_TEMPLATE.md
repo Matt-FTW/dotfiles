@@ -1,10 +1,6 @@
 ## 🌿 Description
 
-**Include a summary of the changes and which issue is fixed**
-
-**List any dependencies that are required for this change. (e.g., packages or other PRs)**
-
-**Provide a link if there is an issue related to this pull request. e.g., Fixes # (issue)**
+_(Include a summary of the changes)_
 
 ## 📝 Type of change
 
@@ -31,8 +27,8 @@ Please put an `x` in the boxes that apply:
 
 ## 📸 Screenshots
 
-(if appropriate)
+_(If appropriate)_
 
 ## ✏️ Additional context
 
-Add any other context about the pull request here.
+_(Add any other context about the pull request here)_
