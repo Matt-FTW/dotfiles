@@ -36,4 +36,4 @@ body:
       value: |
         Linux Distro, Linux Version, Hyprland Version...
     validations:
-      required: false
+      required: true
