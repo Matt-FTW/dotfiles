@@ -199,7 +199,7 @@ Here is all the information about my setup:
 > [!WARNING]
 > The installation guide is under construction, try it at your own risk!
 
-### :package: <samp>Dependencies Installation</samp>
+### :package: Dependencies Installation
 
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). To install CLI/TUI specific packages in non-arch based distros, I recommend to use [homebrew](https://brew.sh/).
@@ -277,12 +277,12 @@ mv Catppuccin-SE ~/.local/share/icons/
 
 ---
 
-### :floppy_disk: <samp>Dotfiles Installation</samp>
+### :floppy_disk: Dotfiles Installation
 
 > [!WARNING]
 > Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
 
-#### <samp>Yadm Method</samp> (_Easier to install and maintain_):
+### <samp>Yadm Method</samp> (_Easier to install and maintain, recommended_):
 
 [Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
 
@@ -331,7 +331,7 @@ Now you can receive new updates from my repo and modify your custom one :sunglas
 
 If you had any issues or you have some questions about the installation process, feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose) or a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose)
 
-#### <samp>Git Method</samp> (Classic method not recommended):
+### <samp>Git Method</samp> (_Classic method, not recommended_):
 
 Firstly, clone this repository (remember to have git installed).
 
