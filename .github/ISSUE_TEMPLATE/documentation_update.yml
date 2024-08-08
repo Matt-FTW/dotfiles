@@ -1,7 +1,7 @@
 name: "📚 Documentation Update"
 description: Suggest a new change in the repo documentation
-title: "📚 [DOC UPDATE] - <title>"
-labels: ["documentation"]
+title: "📚 Docs: "
+labels: [documentation]
 body:
   - type: checkboxes
     attributes:
@@ -10,27 +10,31 @@ body:
       options:
         - label: I have searched the existing requests of the repo
           required: true
+        - label: I have searched the existing requests of used programs related to this request
+          required: true
+        - label: I have read the [FAQ](https://github.com/Matt-FTW/dotfiles/blob/main/.github/FAQ.md)
+          required: true
   - type: textarea
-    validations:
-      required: true
     attributes:
       label: Description of the request
       description: A clear description of the documentation update.
-  - type: input
     validations:
       required: true
+  - type: input
     attributes:
       label: Current Documentation
       description: Provide a link to the current documentation or describe where it can be found.
-  - type: textarea
     validations:
       required: true
+  - type: textarea
     attributes:
       label: Proposed Documentation
       description: Provide a clear description of the updated documentation.
-  - type: textarea
     validations:
-      required: false
+      required: true
+  - type: textarea
     attributes:
       label: Additional Context
       description: Add any other information about the documentation update here. For example, you might include links to similar documentation in other projects, or screenshots or diagrams to help explain your idea.
+    validations:
+      required: false
