@@ -1,3 +1,5 @@
 function fish_greeting
-    colorscript random
+    if type -q colorscript
+        colorscript random
+    end
 end
