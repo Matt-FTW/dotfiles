@@ -1,8 +1,5 @@
-local group = vim.api.nvim_create_augroup("PersistedHooks", {})
-
 vim.api.nvim_create_autocmd({ "User" }, {
   pattern = "PersistedTelescopeLoadPre",
-  group = group,
   callback = function(session)
     -- Save the currently loaded session using a global variable
     require("persisted").save({ session = vim.g.persisted_loaded_session })
@@ -36,8 +33,7 @@ return {
       end)
       require("persisted").setup({
         use_git_branch = true,
-        autoload = false,
-        should_autosave = function()
+        should_save = function()
           if vim.bo.filetype == "dashboard" then
             return false
           end
