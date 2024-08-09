@@ -5,8 +5,13 @@ function fish_user_key_bindings
     bind -M visual -m default y 'fish_clipboard_copy; commandline -f end-selection repaint-mode'
     bind yy fish_clipboard_copy
     bind p fish_clipboard_paste
+    for dir in ~/.config/fish/functions
+        if test -f "$dir/fzf_configure_bindings.fish"
+            fzf_configure_bindings --directory=\e\cf --history=\ch --variables=\e\cv
+            break
+        end
+    end
 
-    fzf_configure_bindings --directory=\e\cf --history=\ch --variables=\e\cv
 
     bind \e\cw rga-fzf
     bind \e\z cdzi
