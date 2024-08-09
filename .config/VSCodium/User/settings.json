@@ -13,16 +13,17 @@
   "catppuccin.italicKeywords": false,
   "terminal.integrated.minimumContrastRatio": 1,
   "editor.semanticHighlighting.enabled": true,
-  "catppuccin.workbenchMode": "minimal",
-  /*
   "catppuccin.customUIColors": {
     "all": {
-      "activityBar.background": "mantle",
-      "activityBar.activeBorder": "mantle",
-      "editorGroupHeader.tabsBackground": "mantle"
+      "activityBar.background": "base",
+      "activityBar.border": "base",
+      "sideBar.background": "base",
+      "editorGroupHeader.tabsBackground": "mantle",
+      "tab.inactiveBackground": "mantle",
+      "tab.unfocusedActiveBackground": "mantle",
+      "tab.unfocusedInactiveBackground": "mantle"
     }
   },
-  */
 
   // Font
   "editor.fontFamily": "JetBrainsMono Nerd Font",
@@ -119,7 +120,7 @@
   },
   // Custom css
   "apc.stylesheet": {
-    ".title-actions": "display: none !important",
+    // ".title-actions": "display: none !important",
     ".tabs-and-actions-container > .editor-actions": "display: none !important",
     ".titlebar-center": "display: none !important",
     ".titlebar-right": "display: none !important",
@@ -1118,6 +1119,5 @@
     }
   ],
   "editor.matchBrackets": "never",
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden"
+  "workbench.statusBar.visible": false
 }
