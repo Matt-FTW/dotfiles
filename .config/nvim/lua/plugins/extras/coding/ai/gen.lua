@@ -1,4 +1,4 @@
-local prefix = "<leader>A"
+local prefix = "<leader>a"
 
 return {
   {

@@ -1,14 +1,16 @@
+local prefix = "<leader>A"
+
 return {
   { import = "lazyvim.plugins.extras.coding.neogen" },
   {
     "danymat/neogen",
     -- stylua: ignore
     keys = {
-      { "<leader>ad", function() require("neogen").generate() end, desc = "Default Annotation" },
-      { "<leader>aC", function() require("neogen").generate({ type = "class" }) end, desc = "Class" },
-      { "<leader>af", function() require("neogen").generate({ type = "func" }) end, desc = "Function" },
-      { "<leader>at", function() require("neogen").generate({ type = "type" }) end, desc = "Type" },
-      { "<leader>aF", function() require("neogen").generate({ type = "file" }) end, desc = "File" },
+      { prefix .. "d", function() require("neogen").generate() end, desc = "Default Annotation" },
+      { prefix .. "C", function() require("neogen").generate({ type = "class" }) end, desc = "Class" },
+      { prefix .. "f", function() require("neogen").generate({ type = "func" }) end, desc = "Function" },
+      { prefix .. "t", function() require("neogen").generate({ type = "type" }) end, desc = "Type" },
+      { prefix .. "F", function() require("neogen").generate({ type = "file" }) end, desc = "File" },
       { "<leader>cn", false },
     },
   },
@@ -18,15 +20,15 @@ return {
     opts = {},
     -- stylua: ignore
     keys = {
-      { "<leader>ag", "<Cmd>DookuGenerate<CR>", desc = "Generate HTML Docs" },
-      { "<leader>ao", "<Cmd>DookuOpen<CR>", desc = "Open HTML Docs" },
+      { prefix .. "g", "<Cmd>DookuGenerate<CR>", desc = "Generate HTML Docs" },
+      { prefix .. "o", "<Cmd>DookuOpen<CR>", desc = "Open HTML Docs" },
     },
   },
   {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>a", group = "annotation/snippets", icon = " " },
+        { prefix, group = "annotation/snippets", icon = " " },
       },
     },
   },

@@ -1,3 +1,5 @@
+local prefix = "<leader>cu"
+
 return {
   {
     "michaelb/sniprun",
@@ -48,21 +50,21 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { "<leader>cur", "<cmd>SnipRun<cr>", desc = "Run" },
+      { prefix .. "r", "<cmd>SnipRun<cr>", desc = "Run" },
       { "<F6>", "<cmd>SnipRun<cr>", desc = "Run" },
-      { "<leader>cur", function() require("sniprun").run("v") end, mode = { "v" }, desc = "Run" },
+      { prefix .. "r", function() require("sniprun").run("v") end, mode = { "v" }, desc = "Run" },
       { "<F6>", function() require("sniprun").run("v") end, mode = { "v" }, desc = "Run" },
-      { "<leader>cui", function() require("sniprun").info() end, desc = "Info" },
-      { "<leader>cuR", function() require("sniprun").reset() end, desc = "Reset" },
+      { prefix .. "i", function() require("sniprun").info() end, desc = "Info" },
+      { prefix .. "R", function() require("sniprun").reset() end, desc = "Reset" },
       { "<S-F6>", function() require("sniprun").reset() end, desc = "Reset" },
-      { "<leader>cul", function() require("sniprun.live_mode").toggle() end, desc = "Live" },
+      { prefix .. "l", function() require("sniprun.live_mode").toggle() end, desc = "Live" },
     },
   },
   {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>cu", group = "runner", icon = "󰜎 " },
+        { prefix, group = "runner", icon = "󰜎 " },
       },
     },
   },

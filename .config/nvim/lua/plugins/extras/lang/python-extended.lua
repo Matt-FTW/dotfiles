@@ -1,3 +1,5 @@
+local package_prefix = "<leader>pp"
+
 -- LSP Server to use for Python.
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "basedpyright"
@@ -85,9 +87,9 @@ return {
     opts = {},
     -- stylua: ignore
     keys = {
-      { "<leader>ppu", function() require("py-requirements").upgrade() end, desc = "Update Package" },
-      { "<leader>ppi", function() require("py-requirements").show_description() end, desc = "Package Info" },
-      { "<leader>ppa", function() require("py-requirements").upgrade_all() end, desc = "Update All Packages" },
+      { package_prefix .. "u", function() require("py-requirements").upgrade() end, desc = "Update Package" },
+      { package_prefix .. "i", function() require("py-requirements").show_description() end, desc = "Package Info" },
+      { package_prefix .. "a", function() require("py-requirements").upgrade_all() end, desc = "Update All Packages" },
     },
   },
   {
@@ -95,7 +97,7 @@ return {
     opts = {
       spec = {
         { "<leader>p", group = "packages/dependencies", icon = " " },
-        { "<leader>pp", group = "python", icon = " " },
+        { package_prefix, group = "python", icon = " " },
       },
     },
   },

@@ -1,4 +1,5 @@
 local nvim_0_10 = vim.fn.has("nvim-0.10")
+local prefix = "<leader>cl"
 
 return {
   {
@@ -8,13 +9,13 @@ return {
 
       keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cil", "<cmd>LspInfo<cr>", desc = "Lsp" }
-      keys[#keys + 1] = { "<leader>clr", "<cmd>LspRestart<cr>", desc = "Restart Lsp" }
-      keys[#keys + 1] = { "<leader>cls", "<cmd>LspStart<cr>", desc = "Start Lsp" }
-      keys[#keys + 1] = { "<leader>clS", "<cmd>LspStop<cr>", desc = "Stop Lsp" }
+      keys[#keys + 1] = { prefix .. "r", "<cmd>LspRestart<cr>", desc = "Restart Lsp" }
+      keys[#keys + 1] = { prefix .. "s", "<cmd>LspStart<cr>", desc = "Start Lsp" }
+      keys[#keys + 1] = { prefix .. "S", "<cmd>LspStop<cr>", desc = "Stop Lsp" }
 
       -- stylua: ignore start
-      keys[#keys + 1] = { "<leader>clr", function() vim.lsp.buf.remove_workspace_folder() end, desc = "Remove workspace" }
-      keys[#keys + 1] = { "<leader>cla", function() vim.lsp.buf.add_workspace_folder() end, desc = "Add workspace" }
+      keys[#keys + 1] = { prefix .. "r", function() vim.lsp.buf.remove_workspace_folder() end, desc = "Remove workspace" }
+      keys[#keys + 1] = { prefix .. "a", function() vim.lsp.buf.add_workspace_folder() end, desc = "Add workspace" }
       -- stylua: ignore end
     end,
     opts = {
@@ -58,7 +59,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>cL", group = "lsp", icon = " " },
+        { "<leader>cl", group = "lsp", icon = " " },
       },
     },
   },

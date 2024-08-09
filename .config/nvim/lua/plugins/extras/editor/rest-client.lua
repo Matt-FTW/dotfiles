@@ -1,3 +1,5 @@
+local prefix = "<leader>th"
+
 return {
   {
     "nvim-treesitter/nvim-treesitter",
@@ -52,8 +54,8 @@ return {
     end,
     -- stylua: ignore
     keys = {
-      { "<leader>thp", function() require("rest-nvim").run(true) end, desc = "Preview Request" },
-      { "<leader>thr", function() require("rest-nvim").run() end, desc = "Run Request" },
+      { prefix .. "p", function() require("rest-nvim").run(true) end, desc = "Preview Request" },
+      { prefix .. "r", function() require("rest-nvim").run() end, desc = "Run Request" },
       { "<leader>sv", function() require("telescope").extensions.rest.select_env() end, desc = "Env Files" },
     },
   },
@@ -61,7 +63,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>th", group = "http", icon = "󱞒 " },
+        { prefix, group = "http", icon = "󱞒 " },
       },
     },
   },

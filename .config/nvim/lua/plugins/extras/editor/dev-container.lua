@@ -1,3 +1,5 @@
+local prefix = "<leader>o"
+
 return {
   {
     "https://codeberg.org/esensar/nvim-dev-container",
@@ -14,11 +16,11 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter" },
     opts = {},
     keys = {
-      { "<leader>os", "<cmd>DevcontainerStart<cr>", desc = "Start" },
-      { "<leader>oS", "<cmd>DevcontainerStop<cr>", desc = "Stop" },
-      { "<leader>ol", "<cmd>DevcontainerLogs<cr>", desc = "Log" },
-      { "<leader>oc", "<cmd>DevcontainerEditNearestConfig<cr>", desc = "Config" },
-      { "<leader>oa", "<cmd>DevcontainerAttach<cr>", desc = "Attach" },
+      { prefix .. "s", "<cmd>DevcontainerStart<cr>", desc = "Start" },
+      { prefix .. "S", "<cmd>DevcontainerStop<cr>", desc = "Stop" },
+      { prefix .. "l", "<cmd>DevcontainerLogs<cr>", desc = "Log" },
+      { prefix .. "c", "<cmd>DevcontainerEditNearestConfig<cr>", desc = "Config" },
+      { prefix .. "a", "<cmd>DevcontainerAttach<cr>", desc = "Attach" },
     },
   },
   {

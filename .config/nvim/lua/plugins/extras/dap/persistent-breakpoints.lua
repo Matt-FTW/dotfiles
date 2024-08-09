@@ -1,3 +1,5 @@
+local prefix = "<leader>db"
+
 return {
   {
     "mfussenegger/nvim-dap",
@@ -8,9 +10,9 @@ return {
       vscode = false,
       event = "LazyFile",
       keys = {
-        { "<leader>dbd", "<cmd>PBClearAllBreakpoints<cr>", desc = "Delete All Breakpoints" },
-        { "<leader>dbB", "<cmd>PBSetConditionalBreakpoint<cr>", desc = "Breakpoint Condition" },
-        { "<leader>dbb", "<cmd>PBToggleBreakpoint<cr>", desc = "Toggle Breakpoint" },
+        { prefix .. "d", "<cmd>PBClearAllBreakpoints<cr>", desc = "Delete All Breakpoints" },
+        { prefix .. "B", "<cmd>PBSetConditionalBreakpoint<cr>", desc = "Breakpoint Condition" },
+        { prefix .. "b", "<cmd>PBToggleBreakpoint<cr>", desc = "Toggle Breakpoint" },
         { "<F2>", "<cmd>PBToggleBreakpoint<cr>", desc = "Toggle Breakpoint" },
       },
       opts = {
@@ -26,7 +28,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>db", group = "breakpoints", icon = " " },
+        { prefix, group = "breakpoints", icon = " " },
       },
     },
   },

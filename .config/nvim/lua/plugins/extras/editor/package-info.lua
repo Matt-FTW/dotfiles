@@ -1,3 +1,5 @@
+local prefix = "<leader>pw"
+
 return {
   {
     "vuki656/package-info.nvim",
@@ -8,11 +10,11 @@ return {
     opts = {},
     -- stylua: ignore
     keys = {
-      { "<leader>pwv", function() require('package-info').show({ force = true }) end, desc = "Show Package Versions" },
-      { "<leader>pwu", function() require('package-info').update() end, desc = "Update Package" },
-      { "<leader>pwr", function() require('package-info').delete() end, desc = "Remove Package" },
-      { "<leader>pwc", function() require('package-info').change_version() end, desc = "Change Package Version" },
-      { "<leader>pwi", function() require('package-info').install() end, desc = "Install New Dependency" },
+      { prefix .. "v", function() require('package-info').show({ force = true }) end, desc = "Show Package Versions" },
+      { prefix .. "u", function() require('package-info').update() end, desc = "Update Package" },
+      { prefix .. "r", function() require('package-info').delete() end, desc = "Remove Package" },
+      { prefix .. "c", function() require('package-info').change_version() end, desc = "Change Package Version" },
+      { prefix .. "i", function() require('package-info').install() end, desc = "Install New Dependency" },
     },
   },
   {
@@ -20,7 +22,7 @@ return {
     optional = true,
     -- stylua: ignore
     keys = {
-      { "<leader>pwp", "<cmd>FloatermNew --disposable --name=lazynpm --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazynpm<CR>", desc = "Lazynpm" },
+      { prefix .. "p", "<cmd>FloatermNew --disposable --name=lazynpm --opener=edit --titleposition=center --height=0.85 --width=0.85 --cwd=<root> lazynpm<CR>", desc = "Lazynpm" },
     },
   },
   {
@@ -28,7 +30,7 @@ return {
     opts = {
       spec = {
         { "<leader>p", group = "packages/dependencies", icon = " " },
-        { "<leader>pw", group = "web", icon = "󰖟 " },
+        { prefix, group = "web", icon = "󰖟 " },
       },
     },
   },

@@ -1,3 +1,5 @@
+local prefix = "<leader>si"
+
 return {
   {
     "ziontee113/icon-picker.nvim",
@@ -9,17 +11,17 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { "<leader>sia", "<cmd>IconPickerNormal<cr>", desc = "All" },
-      { "<leader>sis", "<cmd>IconPickerNormal symbols<cr>", desc = "Symbols" },
-      { "<leader>sie", "<cmd>IconPickerNormal emoji<cr>", desc = "Emoji" },
-      { "<leader>sin", "<cmd>IconPickerNormal nerd_font_v3<cr>", desc = "Nerd Fonts" },
+      { prefix .. "a", "<cmd>IconPickerNormal<cr>", desc = "All" },
+      { prefix .. "s", "<cmd>IconPickerNormal symbols<cr>", desc = "Symbols" },
+      { prefix .. "e", "<cmd>IconPickerNormal emoji<cr>", desc = "Emoji" },
+      { prefix .. "n", "<cmd>IconPickerNormal nerd_font_v3<cr>", desc = "Nerd Fonts" },
     },
   },
   {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>si", group = "icons", icon = " " },
+        { prefix, group = "icons", icon = " " },
       },
     },
   },

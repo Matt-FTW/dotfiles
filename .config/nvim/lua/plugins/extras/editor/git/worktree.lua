@@ -1,3 +1,5 @@
+local prefix = "<leader>gw"
+
 return {
   {
     "ThePrimeagen/git-worktree.nvim",
@@ -9,15 +11,15 @@ return {
     end,
     -- stylua: ignore
     keys = {
-      { "<leader>gwm", function() require("telescope").extensions.git_worktree.git_worktrees() end, desc = "Manage Worktrees" },
-      { "<leader>gwc", function() require("telescope").extensions.git_worktree.create_git_worktree() end, desc = "Create Worktree" },
+      { prefix .. "m", function() require("telescope").extensions.git_worktree.git_worktrees() end, desc = "Manage Worktrees" },
+      { prefix .. "c", function() require("telescope").extensions.git_worktree.create_git_worktree() end, desc = "Create Worktree" },
     },
   },
   {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>gw", group = "worktrees", icon = " " },
+        { prefix, group = "worktrees", icon = " " },
       },
     },
   },

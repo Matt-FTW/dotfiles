@@ -1,3 +1,5 @@
+local prefix = "<leader>gC"
+
 return {
   {
     "akinsho/git-conflict.nvim",
@@ -7,10 +9,10 @@ return {
     version = "v1.0.0",
     cmd = { "GitConflictChooseTheirs", "GitConflictChooseOurs", "GitConflictChooseBoth", "GitConflictListQf" },
     keys = {
-      { "<leader>gCt", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
-      { "<leader>gCo", "<cmd>GitConflictChooseOurs<cr>", desc = "Choose Our Changes" },
-      { "<leader>gCb", "<cmd>GitConflictChooseBoth<cr>", desc = "Choose Both changes" },
-      { "<leader>gCl", "<cmd>GitConflictListQf<cr>", desc = "Git Conflict Quicklist" },
+      { prefix .. "t", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
+      { prefix .. "o", "<cmd>GitConflictChooseOurs<cr>", desc = "Choose Our Changes" },
+      { prefix .. "b", "<cmd>GitConflictChooseBoth<cr>", desc = "Choose Both changes" },
+      { prefix .. "l", "<cmd>GitConflictListQf<cr>", desc = "Git Conflict Quicklist" },
       { "[g", "<cmd>GitConflictPrevConflict<cr>", desc = "Prev Git Conflict" },
       { "]g", "<cmd>GitConflictPrevConflict<cr>", desc = "Next Git Conflict" },
     },
@@ -19,7 +21,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>gC", group = "conflicts", icon = " " },
+        { prefix, group = "conflicts", icon = " " },
       },
     },
   },
