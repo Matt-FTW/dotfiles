@@ -51,10 +51,10 @@ home_symbol = " "
 truncation_length = 3
 
 [directory.substitutions]
-"Documentos" = "󰈙 "
-"Descargas" = " "
-"Musica" = " "
-"Imagenes" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
 "Repos" = " "
 "Videos" = " "
 "obsidianVault" = "󰏪 󰠮 "
