@@ -9,7 +9,7 @@ return {
   },
   cond = vim.env.KITTY_SCROLLBACK_NVIM == nil,
   opts = {
-    save_path = "~/Pictures/Screenshots/Code", -- FIX: Need to find a way for this to work inside vscode and kitty
+    save_path = (os.getenv("HOME") .. "/Pictures/Screenshots/Code"),
     title = "CodeSnap.nvim",
     code_font_family = "JetBrainsMono Nerd Font",
     watermark_font_family = "JetBrainsMono Nerd Font",
