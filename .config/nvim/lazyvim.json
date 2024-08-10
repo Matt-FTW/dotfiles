@@ -56,6 +56,7 @@
     "plugins.extras.lsp.lspconfig-extended",
     "plugins.extras.lsp.mason-extended",
     "plugins.extras.ui.bufferline-extended",
+    "plugins.extras.ui.colorful-winsep",
     "plugins.extras.ui.colorschemes.catppuccin",
     "plugins.extras.ui.context",
     "plugins.extras.ui.dashboard-extended",
@@ -84,4 +85,3 @@
   },
   "version": 6
 }
-
