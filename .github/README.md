@@ -298,7 +298,7 @@ fc-cache -fv
 > [!WARNING]
 > Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
 
-- ### <samp>Yadm Method (_Easier to install and maintain_, **recommended**)</samp>
+- ### <samp>Yadm Method (**recommended**)</samp>
 
 [Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
 
@@ -342,7 +342,7 @@ Now you can receive new updates from my repo and modify your custom one :sunglas
 If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
-- ### <samp>Git Method (_Classic method_, **not recommended**)</samp>
+- ### <samp>Git Method</samp>
 
 Firstly, clone this repository (remember to have git installed).
 
