@@ -87,13 +87,14 @@ As before, close all instances of your browser and you should be able to test yo
 
 Read the extensions list over on [this file](). To import the configurations, check each extensions docs to see how.
 
+
 # :camera: ‎ <samp>Gallery</samp>
 
-| **Lockscreen**                  |
+| **Startpage**                   |
 | ------------------------------- |
 | ![overview-1](./overview-1.png) |
 
-| **Lockscreen**                  |
+| **Github Repo**                 |
 | ------------------------------- |
 | ![overview-2](./overview-2.png) |
 
