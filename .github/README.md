@@ -10,10 +10,10 @@
 
 <div align="center">
 
-<a href="#herb--about"><img width="190px" src="./assets/category-images/dotfiles-about.png"></a>
-<a href="#wrench--setup"><img width="190px" src="./assets/category-images/dotfiles-setup.png"></a>
-<a href="#camera--gallery"><img width="190px" src="./assets/category-images/dotfiles-gallery.png"></a>
-<a href="#tada--credits"><img width="190px" src="./assets/category-images/dotfiles-credits.png"></a>
+<a href="#herb--about"><img width="190px" src="https://raw.githubusercontent.com/Matt-FTW/dotfiles/main/.github/assets/category-images/dotfiles-about.png"></a>
+<a href="#wrench--setup"><img width="190px" src="https://raw.githubusercontent.com/Matt-FTW/dotfiles/main/.github/assets/category-images/dotfiles-setup.png"></a>
+<a href="#camera--gallery"><img width="190px" src="https://raw.githubusercontent.com/Matt-FTW/dotfiles/main/.github/assets/category-images/dotfiles-gallery.png"></a>
+<a href="#tada--credits"><img width="190px" src="https://raw.githubusercontent.com/Matt-FTW/dotfiles/main/.github/assets/category-images/dotfiles-credits.png"></a>
 
 </div>
 
