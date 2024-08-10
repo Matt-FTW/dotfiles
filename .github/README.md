@@ -213,7 +213,8 @@ First, lets start with the required base packages for the configuration to funct
 yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swww waybar rofi-wayland swaync swayosd-git wl-clipboard wl-clip-persist \
         pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty vivid
+        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty \
+        vivid fish starship
 ```
 
 On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
@@ -232,7 +233,7 @@ Here we have some packages that you can replace with your favorite ones and are 
 Useful CLI/TUI packages
 
 ```bash
-yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek tgpt-bin sysz gtrash-bin topgrade fastfetch
+yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek sysz gtrash-bin topgrade fastfetch
 ```
 
 Useful GUI packages
