@@ -48,6 +48,8 @@ The extensions I'm using are:
 - [Web Scrobbler](https://github.com/web-scrobbler/web-scrobbler)
 - [Wikiwand](https://www.wikiwand.com/)
 
+I'm also using my [custom Startpage](https://github.com/Matt-FTW/startpage) based on [this project](https://github.com/pivoshenko/catppuccin-startpage).
+
 # :wrench: ‎ <samp>Setup</samp>
 
 > [!WARNING]
@@ -87,6 +89,9 @@ As before, close all instances of your browser and you should be able to test yo
 
 Read the extensions list over on [this file](). To import the configurations, check each extensions docs to see how.
 
+### :package: Startpage Installation
+
+Read the Startpage [usage section](https://github.com/Matt-FTW/startpage?tab=readme-ov-file#usage) in the README.
 
 # :camera: ‎ <samp>Gallery</samp>
 
