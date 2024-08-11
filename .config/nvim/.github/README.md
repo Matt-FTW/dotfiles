@@ -34,7 +34,7 @@ All the other configuration that you want to do, like assigning some new keymaps
 
 ### :package: Extras Installation
 
-To install an extra is just as easy as opening neovim, typing `:Lazyextras`, and selecting any row from the menu that appears. To select one, hit the `x` key. And your done, be sure to close and open again neovim to see the changes.
+To install an extra is just as easy as opening neovim, typing `:LazyExtras`, and selecting any row from the menu that appears. To select one, hit the `x` key. And your done, be sure to close and open again neovim to see the changes.
 
 If you see any errors with a custom extra, be sure to report it by creating a [new issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 
