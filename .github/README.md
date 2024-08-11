@@ -365,6 +365,11 @@ Logout from your current desktop session and log back into the Hyprland session.
 If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
+### :heavy_plus_sign: Post Installation (Optional)
+
+Once the dependencies and dotfiles are installed, you can take a look at some specific app configuration. You can check them at the config section of the READMEs from each app in their respective config folders.
+Examples are: [fish](../.config/fish/), [browser](../.config/browser/), [yazi](../.config/yazi/), [hyprland](../.config/hypr/)...
+
 # :camera: ‎ <samp>Gallery</samp>
 
 > [!NOTE]
