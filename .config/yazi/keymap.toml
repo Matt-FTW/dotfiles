@@ -16,6 +16,33 @@ prepend_keymap = [
   { on = "J", run = "arrow 50%", desc = "Move cursor down half page" },
   { on = "<A-k>", run = "arrow -5", desc = "Move cursor up half page" },
   { on = "<A-j>", run = "arrow 5", desc = "Move cursor down half page" },
+  { on = [
+    "f",
+    "g",
+  ], run = "plugin fg", desc = "find file by content (fuzzy match)" },
+  { on = [
+    "f",
+    "G",
+  ], run = "plugin fg --args='rg'", desc = "find file by content (ripgrep match)" },
+  { on = [
+    "f",
+    "n",
+  ], run = "plugin fg --args='fzf'", desc = "find file by filename" },
+  { on = [
+    "f",
+    "f",
+  ], run = "filter --smart", desc = "Filter files" },
+  { on = [
+    "f",
+    "F",
+  ], run = "plugin smart-filter", desc = "Smart Filter" },
+  { on = [
+    "s",
+  ], run = "plugin searchjump", desc = "searchjump mode" },
+  { on = "S", run = "search fd", desc = "Search files by name using fd" },
+  { on = [
+    "T",
+  ], run = "plugin --sync hide-preview", desc = "Hide or show the preview" },
 ]
 
 append_keymap = [
@@ -58,3 +85,9 @@ append_keymap = [
 [input]
 
 prepend_keymap = [{ on = ["<Esc>"], run = "close", desc = "Cancel input" }]
+
+[completion]
+prepend_keymap = [
+  { on = "<C-k>", run = "arrow -1", desc = "Move cursor up" },
+  { on = "<C-j>", run = "arrow 1", desc = "Move cursor down" },
+]
