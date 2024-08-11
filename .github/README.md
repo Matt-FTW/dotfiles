@@ -292,8 +292,6 @@ After that, be sure to refresh the font cache:
 fc-cache -fv
 ```
 
----
-
 ### :floppy_disk: Dotfiles Installation
 
 > [!WARNING]
