@@ -16,6 +16,12 @@ return {
       "vim-be-good",
       "oil",
       "outline",
+      "trouble",
+      "startuptime",
+      "packer",
+      "spectre",
+      "alpha",
+      "edgy",
     },
   },
 }
