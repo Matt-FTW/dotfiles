@@ -33,6 +33,7 @@ Alongside this plugins, I use some specific apps from the hypr ecosystem
 - [Hyprlock](https://github.com/hyprwm/hyprlock)
 - [Hypridle](https://github.com/hyprwm/hypridle)
 - [Hyprpicker](https://github.com/hyprwm/hyprpicker)
+- [pyprland](https://github.com/hyprland-community/pyprland)
 - [Hyprshot](https://github.com/Gustash/Hyprshot) (_Script_)
 - [Hyprfreeze](https://github.com/Zerodya/hyprfreeze) (_Script_)
 
