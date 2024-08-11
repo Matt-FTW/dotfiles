@@ -48,6 +48,8 @@ Maybe you want to add a new app or service to autostart? Check [this](../scripts
 
 If you want to add a new script to the config, go to [this folder](../scripts/).
 
+If you have any other default programs, you can edit [this file](../configs/default_apps.conf) to set your defaults.
+
 # :wrench: ‎ <samp>Setup</samp>
 
 ### :package: Extensions Installation
