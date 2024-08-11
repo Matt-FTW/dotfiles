@@ -18,7 +18,7 @@
 
 # :herb: ‎ <samp>About</samp>
 
-Fish is my default shell. I tried zsh in the past but I like the built in options of fish as well as its language and the plugin options.
+[Fish](https://fishshell.com/) is my default shell. I tried [zsh](https://zsh.org) in the past but I like the built in options of fish as well as its language and the plugin options.
 
 Talking about plugins, these are the ones I'm currently using:
 
@@ -35,7 +35,7 @@ The prompt I use is [starship](https://starship.rs/). A minimal, easy to customi
 
 There is some completion files for apps that I use. You can check them [here](../completions/).
 
-In term of aliases, I have none. Instead, I use custom functions, but thats just a preference. Be sure to not put your aliases inside you config.fish tho. If you wanna know more about it, check this [article](https://bsago.me/tech-notes/make-fish-start-faster).
+In term of aliases, I have none. Instead, I use custom functions, but that's just a preference. Be sure to not put your aliases inside you config.fish tho. If you wanna know more about it, check this [article](https://bsago.me/tech-notes/make-fish-start-faster).
 
 Abbreviations are included in [this file](../abbreviations.fish).
 
