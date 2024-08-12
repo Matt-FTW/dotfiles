@@ -21,7 +21,10 @@
       "editorGroupHeader.tabsBackground": "mantle",
       "tab.inactiveBackground": "mantle",
       "tab.unfocusedActiveBackground": "mantle",
-      "tab.unfocusedInactiveBackground": "mantle"
+      "tab.unfocusedInactiveBackground": "mantle",
+      "statusBar.background": "base",
+      "statusBar.border": "base",
+      "sideBar.border": "base"
     }
   },
 
@@ -43,7 +46,7 @@
   "editor.stickyScroll.enabled": true,
   "window.commandCenter": false,
   "editor.lineNumbers": "relative",
-  "editor.lineHeight": 23,
+  "editor.lineHeight": 25,
   "window.menuBarVisibility": "toggle",
   "editor.minimap.enabled": false,
   "editor.overviewRulerBorder": false,
@@ -104,18 +107,19 @@
   "apc.activityBar": {
     "position": "bottom",
     "hideSettings": true,
-    "size": 26
+    "size": 28,
+    "itemMargin": 5
   },
   "apc.listRow": {
     "lists": ["explorer-folders-view", "quick-input-list", "results"],
-    "height": 23,
+    "height": 26,
     "fontSize": 12
   },
   "apc.font.family": "JetBrainsMono Nerd Font",
   "apc.monospace.font.family": "JetBrainsMono Nerd Font",
   "apc.statusBar": {
     "position": "editor-bottom",
-    "height": 26,
+    "height": 28,
     "fontSize": 12
   },
   // Custom css
@@ -192,6 +196,7 @@
   "vue.updateImportsOnFileMove.enabled": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
+  "svelte.enable-ts-plugin": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -248,6 +253,7 @@
   // File explorer
   // Terminal
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.stickyScroll.enabled": false,
   "terminal.external.linuxExec": "kitty",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.linux": "fish",
