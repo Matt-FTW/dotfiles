@@ -377,6 +377,7 @@ Some configuration examples are:
 - [yazi](../.config/yazi/)
 - [hyprland](../.config/hypr/)
 - [vscodium](../.config/VSCodium/User/)
+- [tmux](../.config/tmux/)
 
 # :camera: ‎ <samp>Gallery</samp>
 
