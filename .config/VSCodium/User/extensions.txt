@@ -2,10 +2,9 @@ alefragnani.project-manager
 amodio.toggle-excluded-files
 astro-build.astro-vscode
 asvetliakov.vscode-neovim
-be5invis.vscode-custom-css
+barbosshack.crates-io
 bmalehorn.vscode-fish
 bradlc.vscode-tailwindcss
-brandonkirbyson.vscode-animations
 catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
 charliermarsh.ruff
@@ -15,6 +14,7 @@ dbaeumer.vscode-eslint
 drcika.apc-extension
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
+emilast.logfilehighlighter
 esbenp.prettier-vscode
 exodiusstudios.comment-anchors
 formulahendry.code-runner
@@ -31,11 +31,11 @@ ms-python.vscode-pylance
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
 ms-vscode.remote-explorer
+pucelle.vscode-css-navigation
 rafamel.subtle-brackets
 redhat.ansible
 redhat.vscode-yaml
 rust-lang.rust-analyzer
-serayuzgur.crates
 stivo.tailwind-fold
 streetsidesoftware.code-spell-checker
 sumneko.lua
