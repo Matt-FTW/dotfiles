@@ -368,7 +368,15 @@ Do you have some questions about the installation process? You can create a [new
 ### :heavy_plus_sign: Post Installation (Optional)
 
 Once the dependencies and dotfiles are installed, you can take a look at some specific app configuration. You can check them at the config section of the READMEs from each app in their respective config folders.
-Examples are: [fish](../.config/fish/), [neovim](../.config/nvim/), [browser](../.config/browser/), [yazi](../.config/yazi/), [hyprland](../.config/hypr/)...
+
+Some configuration examples are:
+
+- [fish](../.config/fish/)
+- [neovim](../.config/nvim/)
+- [browser](../.config/browser/)
+- [yazi](../.config/yazi/)
+- [hyprland](../.config/hypr/)
+- [vscodium](../.config/VSCodium/User/)
 
 # :camera: ‎ <samp>Gallery</samp>
 
