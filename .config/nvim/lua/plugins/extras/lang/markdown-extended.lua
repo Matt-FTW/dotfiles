@@ -29,18 +29,16 @@ return {
     },
   },
   {
-    "MeanderingProgrammer/markdown.nvim",
+    "antonk52/markdowny.nvim",
+    ft = { "markdown", "txt" },
     opts = {
-      preset = "lazy",
+      filetypes = { "markdown", "txt" },
     },
   },
   {
-    "epwalsh/obsidian.nvim",
-    optional = true,
+    "MeanderingProgrammer/markdown.nvim",
     opts = {
-      ui = {
-        enable = false,
-      },
+      preset = "lazy",
     },
   },
   {
