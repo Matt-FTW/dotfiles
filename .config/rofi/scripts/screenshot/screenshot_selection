@@ -1,6 +1,6 @@
 #!/bin/bash
 
-screenshots_dir=$HOME/Pictures/Screenshots/PC
+screenshots_dir=$HOME/pictures/screenshots/pc
 theme="$HOME/.config/rofi/scripts/wallpaper/style.rasi"
 
 build_theme() {

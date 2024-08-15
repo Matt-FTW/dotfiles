@@ -1,7 +1,7 @@
 #!/bin/bash
 
-image_folder="$HOME/Pictures/"
-video_folder="$HOME/Videos/"
+image_folder="$HOME/pictures/"
+video_folder="$HOME/videos/"
 
 # Utils
 notify() {

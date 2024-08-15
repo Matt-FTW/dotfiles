@@ -594,6 +594,19 @@ dirs = [
   { name = "Public", text = "" },
   { name = "Templates", text = "" },
   { name = "Videos", text = "" },
+  { name = "desktop", text = "" },
+  { name = "repos", text = "" },
+  { name = "documents", text = "" },
+  { name = "downloads", text = "" },
+  { name = "library", text = "" },
+  { name = "obsidian", text = "󰠮" },
+  { name = "games", text = "" },
+  { name = "movies", text = "" },
+  { name = "music", text = "" },
+  { name = "pictures", text = "" },
+  { name = "public", text = "" },
+  { name = "templates", text = "" },
+  { name = "videos", text = "" },
 ]
 
 files = [

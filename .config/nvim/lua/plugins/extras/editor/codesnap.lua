@@ -9,7 +9,7 @@ return {
   },
   cond = vim.env.KITTY_SCROLLBACK_NVIM == nil,
   opts = {
-    save_path = (os.getenv("HOME") .. "/Pictures/Screenshots/Code"),
+    save_path = (os.getenv("HOME") .. "/pictures/screenshots/code"),
     title = "CodeSnap.nvim",
     code_font_family = "JetBrainsMono Nerd Font",
     watermark_font_family = "JetBrainsMono Nerd Font",
