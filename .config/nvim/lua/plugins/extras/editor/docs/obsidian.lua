@@ -10,7 +10,7 @@ return {
   },
   {
     "epwalsh/obsidian.nvim",
-    event = "VeryLazy",
+    ft = "markdown",
     keys = {
       { prefix .. "o", "<cmd>ObsidianOpen<CR>", desc = "Open on App" },
       { prefix .. "g", "<cmd>ObsidianSearch<CR>", desc = "Grep" },
@@ -33,7 +33,7 @@ return {
       workspaces = {
         {
           name = "personal",
-          path = "~/Documents/Obsidian/obsidianVault/",
+          path = "~/documents/obsidian-vaults/personal/",
         },
       },
 
