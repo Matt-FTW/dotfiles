@@ -822,6 +822,7 @@ tab,
 
 @media (prefers-color-scheme: dark) {
   #sidebar-select-box {
+    background-color: #1e2030 !important;
     border-radius: 15px !important;
     margin: 10px 10px 10px 0px !important;
     border: 3px solid rgba(0, 0, 0, 0);
