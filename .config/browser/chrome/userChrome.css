@@ -68,6 +68,14 @@
   transition: opacity 0.3s ease !important;
 }
 
+#forward-button {
+  display: none !important;
+}
+
+#back-button {
+  display: none !important;
+}
+
 /*------------------------------------------------*/
 /* Remove line between website content and top bar */
 
@@ -142,7 +150,7 @@ toolbar:not([customizing]) > #nav-bar-customization-target {
 
 #nav-bar {
   margin-top: calc(
-    var(--TabsHeight) * -1px - var(--TabsBorder) * 1px
+    var(--TabsHeight) * -0.7px - var(--TabsBorder) * 1px
   ) !important;
   height: calc((var(--TabsHeight) * 1px + var(--TabsBorder) * 1px) + 0px);
 }
@@ -822,7 +830,7 @@ tab,
 
 @media (prefers-color-scheme: dark) {
   #sidebar-select-box {
-    background-color: #1e2030 !important;
+    background-color: #181926 !important;
     border-radius: 15px !important;
     margin: 10px 10px 10px 0px !important;
     border: 3px solid rgba(0, 0, 0, 0);
