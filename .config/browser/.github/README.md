@@ -44,6 +44,7 @@ The extensions I'm using are:
 - [SurfingKeys](https://github.com/brookhong/Surfingkeys)
 - [Tab Session Manager](https://github.com/sienori/Tab-Session-Manager)
 - [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin)
+- [ublacklist](https://github.com/iorate/ublacklist)
 - [ViolentMonkey](https://github.com/violentmonkey/violentmonkey)
 - [Web Scrobbler](https://github.com/web-scrobbler/web-scrobbler)
 - [Wikiwand](https://www.wikiwand.com/)

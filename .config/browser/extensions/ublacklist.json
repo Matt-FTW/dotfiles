@@ -1,0 +1,38 @@
+{
+  "blacklist": "*://*.shecodes.io/*\n*://*.quora.com/*",
+  "blockWholeSite": true,
+  "skipBlockDialog": false,
+  "hideBlockLinks": false,
+  "hideControl": false,
+  "enablePathDepth": false,
+  "linkColor": "#b7bdf8",
+  "blockColor": "#f0c6c6",
+  "highlightColors": [
+    "#ddeeff"
+  ],
+  "dialogTheme": "default",
+  "syncBlocklist": true,
+  "syncGeneral": false,
+  "syncAppearance": false,
+  "syncSubscriptions": false,
+  "syncInterval": 15,
+  "subscriptions": [
+    {
+      "name": "uBlacklist",
+      "url": "https://git.io/ublacklist",
+      "enabled": true
+    },
+    {
+      "name": "Ali-express fake sites",
+      "url": "https://raw.githubusercontent.com/franga2000/aliexpress-fake-sites/main/domains_uBlacklist.txt",
+      "enabled": true
+    },
+    {
+      "name": "ai content",
+      "url": "https://raw.githubusercontent.com/wdmpa/content-farm-list/main/uBlacklist.txt",
+      "enabled": true
+    }
+  ],
+  "updateInterval": 120,
+  "version": "8.9.2"
+}
