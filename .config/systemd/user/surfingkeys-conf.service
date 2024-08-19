@@ -1,0 +1,22 @@
+# 1. Install this service to $XDG_CONFIG_HOME/systemd/user/
+# 2. Update the path in the ExecStart directive
+# 3. Run systemctl --user daemon-reload
+# 4. Run systemctl --user enable --now surfingkeys-conf.service
+
+[Unit]
+Description=Surfingkeys configuration server
+After=network.target graphical-session.target
+PartOf=graphical-session.target
+Requires=graphical-session.target
+
+[Service]
+# Update the path in the following line to point to your surfingkeys-conf repository
+ExecStart=bash -c 'cd /home/matt/repos/surfingkeys-conf; npm run gulp serve-simple'
+Type=simple
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=graphical-session.target
+
+# vim: set ft=systemd:
