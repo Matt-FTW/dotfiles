@@ -62,7 +62,6 @@
 
       # Bluetooth
       - bluez
-      - blueman
 
       # CLI / TUI
       - bat
@@ -136,6 +135,9 @@
       - sync-pacman-hook-git
       - needrestart
       - paccache-hook
+
+      # Bluetooth
+      - overskride
 
       # CLI / TUI
       - cava
