@@ -1,0 +1,28 @@
+#!/bin/bash
+
+gfetch="gfetch -d churn contributors --no-color-palette --no-title"
+eza="eza --long --header --icons --all --color=always --group-directories-first --hyperlink"
+selected_dir=$(find ~/repos -mindepth 1 -maxdepth 1 -type d | fzf --preview "$gfetch {} && $eza {}")
+
+if [[ -n "$selected_dir" ]]; then
+  tab_title=$(basename "$selected_dir")
+  new_tab_cmd=""
+
+  if command -v tmux &>/dev/null; then
+    if command -v tmuxp &>/dev/null && [[ -f "$selected_dir/.tmuxp.yaml" ]]; then
+      new_tab_cmd="tmuxp load \"$selected_dir\""
+    elif [[ -n "$TMUX" ]]; then
+      new_tab_cmd="tmux new-session -ds \"$tab_title\" -c \"$selected_dir\"; tmux switch-client -t \"$tab_title\""
+    else
+      new_tab_cmd="tmux new-session -s \"$tab_title\" -c \"$selected_dir\""
+    fi
+  elif command -v kitty &>/dev/null; then
+    new_tab_cmd="kitty @ set-tab-title \"$tab_title\"; cd \"$selected_dir\"; $gfetch; l"
+  else
+    new_tab_cmd="cd \"$selected_dir\"; $gfetch; l"
+  fi
+
+  eval "$new_tab_cmd"
+
+  tput reset
+fi
