@@ -59,27 +59,27 @@ append_keymap = [
   { on = [
     "g",
     "v",
-  ], run = "cd ~/Videos/", desc = "Go to the videos directory" },
+  ], run = "cd ~/videos/", desc = "Go to the videos directory" },
   { on = [
     "g",
     "i",
-  ], run = "cd ~/Pictures/", desc = "Go to the images directory" },
+  ], run = "cd ~/pictures/", desc = "Go to the images directory" },
   { on = [
     "g",
     "s",
-  ], run = "cd ~/Pictures/Screenshots/", desc = "Go to the screenshots directory" },
+  ], run = "cd ~/pictures/screenshots/", desc = "Go to the screenshots directory" },
   { on = [
     "g",
     "D",
-  ], run = "cd ~/Documents/", desc = "Go to the docs directory" },
+  ], run = "cd ~/documents/", desc = "Go to the docs directory" },
   { on = [
     "g",
     "o",
-  ], run = "cd ~/Documents/Obsidian/obsidianVault/", desc = "Go to the obsidian directory" },
+  ], run = "cd ~/documents/obsidian-vaults", desc = "Go to the obsidian directory" },
   { on = [
     "g",
     "r",
-  ], run = "cd ~/Repos/", desc = "Go to the repos directory" },
+  ], run = "cd ~/repos/", desc = "Go to the repos directory" },
 ]
 
 [input]
