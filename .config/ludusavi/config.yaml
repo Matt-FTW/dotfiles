@@ -11,7 +11,7 @@ roots:
   - store: heroic
     path: ~/.config/heroic
   - store: steam
-    path: ~/Games/SteamLibrary
+    path: ~/games/SteamLibrary
 redirects: []
 backup:
   path: /backups/gamesaves
