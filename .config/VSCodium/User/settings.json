@@ -46,7 +46,7 @@
   "editor.stickyScroll.enabled": true,
   "window.commandCenter": false,
   "editor.lineNumbers": "relative",
-  "editor.lineHeight": 25,
+  "editor.lineHeight": 24,
   "window.menuBarVisibility": "toggle",
   "editor.minimap.enabled": false,
   "editor.overviewRulerBorder": false,
@@ -156,7 +156,7 @@
   "vscode-neovim.neovimExecutablePaths.linux": "/home/matt/.local/share/bob/nvim-bin/nvim",
 
   // Project Manager
-  "projectManager.git.baseFolders": ["~/Repos/"],
+  "projectManager.git.baseFolders": ["~/dev/"],
   "projectManager.sortList": "Recent",
   // Smooth movement
   "workbench.list.smoothScrolling": true,

@@ -17,7 +17,7 @@ always_keep_install = false  # deleted on failure by default
 plugin_autoupdate_last_check_duration = '1 week' # set to 0 to disable updates
 
 # config files with these prefixes will be trusted by default
-trusted_config_paths = ['~/Repos']
+trusted_config_paths = ['~/dev']
 
 verbose = false     # set to true to see full installation output, see `MISE_VERBOSE`
 asdf_compat = false # set to true to ensure .tool-versions will be compatible with asdf, see `MISE_ASDF_COMPAT`

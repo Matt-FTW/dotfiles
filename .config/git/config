@@ -1,4 +1,4 @@
-[includeIf "gitdir:~/Repos/Work/"]
+[includeIf "gitdir:~/dev/work/"]
   path = ~/.config/git/config-work
 
 [include]
@@ -10,7 +10,7 @@
   signingKey = 8429B2EE312F8150
 
 [safe]
-  directory = ~/Repos/
+  directory = ~/dev
 
 [credential "https://github.com"]
   username = Matt-FTW
