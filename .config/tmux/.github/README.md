@@ -23,12 +23,10 @@ My default multiplexer is [tmux](https://github.com/tmux/tmux). In the past I tr
 Now, here are the plugins I use alongside tmux:
 
 - [tpm](https://github.com/tmux-plugins/tpm) (Plugin manager)
-- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - [catppuccin](https://github.com/catppuccin/tmux)
 - [tmux-sessionx](https://github.com/omerxx/tmux-sessionx)
 - [tmux-floax](https://github.com/omerxx/tmux-floax)
 - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
-- [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum)
 
 The plugins and their options are declared on [this file](../conf/plugins.conf).
 
@@ -40,7 +38,7 @@ In the case of the keybindings, [here they are](../conf/binds.conf).
 
 ### :package: Plugins Installation
 
-Once you enter tmux, hit `prefix + I` to install the plugins. And that's it.
+Once you enter tmux, hit `prefix + I` to install all the plugins. And that's it.
 
 # :camera: ‎ <samp>Gallery</samp>
 
