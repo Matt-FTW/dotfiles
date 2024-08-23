@@ -27,6 +27,7 @@
 }
 
 /* General Settings */
+#battery,
 #cava,
 #custom-cava,
 #custom-clipboard,
@@ -162,6 +163,22 @@ window#waybar.hidden {
 }
 
 /* Individual Modules */
+#battery {
+  color: @mauve;
+}
+
+#battery.warning {
+  color: @yellow;
+}
+
+#battery.critical {
+  color: @peach;
+}
+
+#battery.urgent {
+  color: @red;
+}
+
 #custom-cava {
   color: @lavender;
   border-radius: 12px;
