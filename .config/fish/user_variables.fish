@@ -71,6 +71,8 @@ set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border r
 --color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
+--bind 'ctrl-u:preview-half-page-up'
+--bind 'ctrl-d:preview-half-page-down'
 --bind 'ctrl-y:execute-silent(printf {} | cut -f 2- | wl-copy --trim-newline)'"
 set -xg _ZO_FZF_OPTS $FZF_DEFAULT_OPTS
 set -xg fzf_preview_dir_cmd eza --long --header --icons --all --color=always --group-directories-first --hyperlink
