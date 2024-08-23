@@ -58,30 +58,37 @@ return {
         desc = "Load Last Session",
       },
       {
-        "<leader>qS",
+        "<leader>qt",
         function()
           require("persisted").stop()
         end,
         desc = "Stop Current Session",
       },
       {
-        "<leader>qs",
+        "<leader>qv",
         function()
           require("persisted").save()
         end,
-        desc = "Save Current Session (Telescope)",
+        desc = "Save Current Session",
       },
       {
-        "<leader>qT",
+        "<leader>qr",
         function()
           require("persisted").start()
         end,
         desc = "Start Recording Current Session",
       },
       {
-        "<leader>qt",
+        "<leader>qs",
+        function()
+          require("persisted").select()
+        end,
+        desc = "Select Sessions",
+      },
+      {
+        "<leader>qS",
         "<cmd>Telescope persisted<cr>",
-        desc = "Search Sessions (Telescope)",
+        desc = "Select Session (Telescope)",
       },
     },
   },
