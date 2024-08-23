@@ -1,0 +1,8 @@
+{
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""],
+    "on-scroll-up": "brightnessctl -c backlight set +1%",
+    "on-scroll-down": "brightnessctl -c backlight set 1%-",
+  },
+}
