@@ -1,19 +1,14 @@
 {
-  "timeStamp": 1714988486224,
-  "version": "1.57.2",
+  "timeStamp": 1724538130436,
+  "version": "1.59.0",
   "userSettings": {
-    "cloudStorageEnabled": true,
-    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion Sprout's Anti-Malware List.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt\nhttps://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt\nhttps://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
+    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
     "importedLists": [
-      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion Sprout's Anti-Malware List.txt",
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
-      "https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt",
-      "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt",
-      "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
-      "https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt",
+      "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
       "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt"
-    ]
+    ],
+    "popupPanelSections": 31
   },
   "selectedFilterLists": [
     "user-filters",
@@ -24,29 +19,16 @@
     "ublock-unbreak",
     "easylist",
     "easyprivacy",
-    "adguard-spyware",
     "adguard-spyware-url",
     "urlhaus-1",
-    "curben-phishing",
     "plowe-0",
     "fanboy-cookiemonster",
     "ublock-cookies-easylist",
     "fanboy-social",
-    "easylist-chat",
-    "easylist-newsletters",
-    "easylist-notifications",
-    "easylist-annoyances",
     "ublock-annoyances",
-    "spa-1",
-    "spa-0",
-    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
-    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
-    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Dandelion Sprout's Anti-Malware List.txt",
-    "https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt",
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
     "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
-    "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
-    "https://raw.githubusercontent.com/bpc-clone/bypass-paywalls-clean-filters/main/bpc-paywall-filter.txt",
-    "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/antimalware.txt"
+    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
