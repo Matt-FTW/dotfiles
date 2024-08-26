@@ -47,8 +47,8 @@ return {
     }
 
     opts.performance = {
-      debounce = 20,
-      throttle = 20,
+      debounce = 0,
+      throttle = 0,
       fetching_timeout = 20,
       confirm_resolve_timeout = 20,
       async_budget = 1,
