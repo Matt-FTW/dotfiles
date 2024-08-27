@@ -57,6 +57,9 @@ If you have any other default programs, you can edit [this file](../configs/defa
 
 You can manage and install extensions with `hyprpm`, a package manager that ships by default with hyprland. Here's a quick reference guide for installing, updating and removing extensions.
 
+> [!WARNING]
+> hyprpm update may not work. This is and issue with hyprland and its plugins, not with the dotfiles themselves.
+
 ```bash
 # Installing an extension
 hyprpm add <repo-link>
