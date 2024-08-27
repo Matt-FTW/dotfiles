@@ -366,9 +366,27 @@ Logout from your current desktop session and log back into the Hyprland session.
 If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
-### :heavy_plus_sign: Post Installation (Optional)
+### :heavy_plus_sign: Post Installation
 
-Once the dependencies and dotfiles are installed, you can take a look at some specific app configuration. You can check them at the config section of the READMEs from each app in their respective config folders.
+Here are some things you might consider changing:
+
+- **Change Outputs**
+
+Firstly, change the outputs defined in [this file](../.config/hypr/configs/monitors.conf). They are the ones defined for Hyprland to use, so is very important that you change them. If you wanna know what ID does your monitor has, execute `hyprctl monitors`.
+
+You also need to change the workspaces associated with that monitor. For that, check [this file](../.config/hypr/configs/workspaces.conf).
+
+For more information about Hyprland monitors and workspaces, [check the docs](https://wiki.hyprland.org/).
+
+Now, for the Waybar to appear you also need to change the output definition on [this file](../.config/waybar/config.jsonc).
+
+- **Git Changes**
+
+If you are going to use git, be sure to change the user definition as well as the credentials over on the [gitconfig file](../.config/git/config).
+
+- **Specific Configs/Information** (_Optional_)
+
+Finally, if you want to take a look at some specific app configuration, check the READMEs from each app in their respective config folders.
 
 Some configuration examples are:
 
