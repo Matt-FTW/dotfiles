@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1724538130436,
+  "timeStamp": 1724798420376,
   "version": "1.59.0",
   "userSettings": {
     "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
@@ -26,9 +26,9 @@
     "ublock-cookies-easylist",
     "fanboy-social",
     "ublock-annoyances",
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
+    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
     "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
-    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
@@ -38,5 +38,5 @@
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
-  "userFilters": ""
+  "userFilters": "/pagead.js$domain=d3ward.github.io\n/widget/ads."
 }
