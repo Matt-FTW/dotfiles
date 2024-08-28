@@ -43,6 +43,12 @@ prepend_keymap = [
   { on = [
     "T",
   ], run = "plugin --sync hide-preview", desc = "Hide or show the preview" },
+  { on = [
+    "y",
+  ], run = [
+    '''shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm''',
+    "yank",
+  ], desc = "yank files and copy to clipboard" },
 ]
 
 append_keymap = [
@@ -62,8 +68,8 @@ append_keymap = [
   ], run = "cd ~/videos/", desc = "Go to the videos directory" },
   { on = [
     "g",
-    "i",
-  ], run = "cd ~/pictures/", desc = "Go to the images directory" },
+    "p",
+  ], run = "cd ~/pictures/", desc = "Go to the pictures directory" },
   { on = [
     "g",
     "s",
