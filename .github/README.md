@@ -177,7 +177,7 @@ Here is all the information about my setup:
 | **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                      |
 | **Image Editor**         | [Krita](https://krita.org/)                                                                                             |
 | **VM Manager**           | [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))                                               |
-| **Recording Program**    | [OBS](https://obsproject.com/)                                                                                          |
+| **Recording Program**    | [OBS](https://obsproject.com/) [:gear:](../.config/obs-studio/)                                                         |
 | **Office Apps**          | [LibreOffice](https://www.libreoffice.org/)                                                                             |
 
 </details>
