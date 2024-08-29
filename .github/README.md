@@ -214,10 +214,11 @@ First, lets start with the required base packages for the configuration to funct
 
 ```bash
 yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-        swww waybar rofi-wayland swaync swayosd-git wl-clipboard wl-clip-persist \
-        pyprland qt5ct pavucontrol cliphist playerctl udiskie devify fzf jq eza fd \
-        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato cava slurp grim satty \
-        vivid fish starship
+        swww waybar waybar-updates rofi-wayland swaync swayosd-git playerctl \
+        wl-clipboard wl-clip-persist cliphist udiskie devify polkit-gnome \
+        pyprland qt5ct qt5-wayland qt6-wayland pavucontrol \
+        fzf jq eza fd slurp grim satty vivid fish starship \
+        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato
 ```
 
 On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
@@ -227,8 +228,7 @@ On the first line we have the hypr ecosystem packages and on the other lines we 
 Now lets move to the Optional Packages (If you don't want to install any more packages, move to the Dotfiles Installation step)
 
 ```bash
-yay -Sy yazi nemo kitty ttf-ms-win11-auto ttf-jetbrainsmono-nerd zathura zathura-pdf-mupdf qimgv-light \
-         mpv
+yay -Sy yazi nemo kitty zathura zathura-pdf-mupdf qimgv-light mpv
 ```
 
 Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
