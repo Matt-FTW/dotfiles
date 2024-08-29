@@ -172,9 +172,9 @@ Here is all the information about my setup:
 | **PDF Viewer**           | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                             |
 | **Note Taking App**      | 💖 [Obsidian](https://obsidian.md/) [:gear:](../.config/obsidian/)                                                      |
 | **Video Player**         | [MPV](https://mpv.io/) [:gear:](../.config/mpv/)                                                                        |
-| **Image Viewer**         | [qimgv](https://github.com/easymodo/qimgv) [:gear:](../.config/qimgv//)                                                 |
+| **Image Viewer**         | [qimgv](https://github.com/easymodo/qimgv) [:gear:](../.config/qimgv/)                                                  |
 | **File Manager**         | [Nemo](https://community.linuxmint.com/software/view/nemo)                                                              |
-| **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects)                                                                      |
+| **Audio Effects**        | [Easyeffects](https://github.com/wwmm/easyeffects) [:gear:](../.config/easyeffects/)                                    |
 | **Image Editor**         | [Krita](https://krita.org/)                                                                                             |
 | **VM Manager**           | [Virt-Manager](https://virt-manager.org/) ([QEMU](https://www.qemu.org/))                                               |
 | **Recording Program**    | [OBS](https://obsproject.com/) [:gear:](../.config/obs-studio/)                                                         |
