@@ -390,6 +390,16 @@ For more information about Hyprland monitors and workspaces, [check the docs](ht
 
 Now, for the Waybar to appear you also need to change the output definition on [this file](../.config/waybar/config.jsonc).
 
+- **Change Default Applications**
+
+To change the default applications by filetype, be sure to install [this app](https://github.com/magnus-ISU/selectdefaultapplication).
+
+```bash
+yay -Sy selectdefaultapplication-fork-git
+```
+
+If you wanna change the default apps used in the Hyprland bindings, change the variables over on [this file](../.config/hypr/configs/default_apps.conf).
+
 - **Git Changes**
 
 If you are going to use git, be sure to change the user definition as well as the credentials over on the [gitconfig file](../.config/git/config).
