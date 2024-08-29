@@ -199,15 +199,18 @@ Here is all the information about my setup:
 
 > [!WARNING]
 > The installation guide is under construction, try it at your own risk!
+> It is also ment only for Arch based systems. All other distros are not supported and I will not be helping with issues related to them.
 
 ### :package: Dependencies Installation
 
 > [!NOTE]
-> The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date). To install CLI/TUI specific packages in non-arch based distros, I recommend to use [homebrew](https://brew.sh/).
+> The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date).
+> To install CLI/TUI specific packages in non-arch based distros, I recommend to use [homebrew](https://brew.sh/).
+> In the guide, I will be using [Yay](https://github.com/Jguer/yay) as the AUR helper. Be sure to [install it](../.local/bin/installYay) or change the commands to your preferred one.
 
 - **Base Packages**
 
-First, lets start with the required base packages for the configuration to function. Assuming you're running Arch Linux, and your AUR helper is [yay](https://github.com/Jguer/yay):
+First, lets start with the required base packages for the configuration to function.
 
 ```bash
 yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
