@@ -245,22 +245,6 @@ Useful GUI packages
 yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
 ```
 
-- **Bluetooth**
-
-Lets start by installing bluez (bluetooth support) and overskride (GUI):
-
-```bash
-yay -Sy bluez overskride
-```
-
-After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
-
-```bash
-systemctl --user enable --now bluetooth.service
-```
-
-Now launch overskride and there you have it.
-
 - **Icon Theme**
 
 First off, we have to download the icon package from the releases page of their repo. You can do it very easily by using curl.
@@ -295,6 +279,25 @@ After that, be sure to refresh the font cache:
 ```bash
 fc-cache -fv
 ```
+
+- **Audio Service** (_Optional_)
+
+> [!NOTE]
+> If you have Pipewire already setup on your system, you dont have to follow this step.
+
+Firstly, install this dependencies:
+
+```bash
+yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
+```
+
+Now enable pipewire and wireplumber systemd services:
+
+```bash
+systemctl --user enable --now pipewire wireplumber
+```
+
+And there you have it.
 
 ### :floppy_disk: Dotfiles Installation
 
@@ -371,7 +374,7 @@ Do you have some questions about the installation process? You can create a [new
 
 ### :heavy_plus_sign: Post Installation
 
-Here are some things you might consider changing:
+Here are some things you might consider changing or adding:
 
 - **Change Outputs**
 
@@ -386,6 +389,56 @@ Now, for the Waybar to appear you also need to change the output definition on [
 - **Git Changes**
 
 If you are going to use git, be sure to change the user definition as well as the credentials over on the [gitconfig file](../.config/git/config).
+
+- **Laptop Additions**
+
+  - **Bluetooth**
+
+    Lets start by installing bluez (bluetooth support) and overskride (GUI):
+
+    ```bash
+    yay -Sy bluez overskride
+    ```
+
+    After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
+
+    ```bash
+    systemctl --user enable --now bluetooth.service
+    ```
+
+    Now launch overskride and there you have it.
+
+  - **Brightness**
+
+    Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD). It was installed in the first steps, so you should be able to change it. If not, be sure to read [this part](https://github.com/ErikReider/SwayOSD#brightness-control) on the SwayOSD documentation.
+
+    If you wanna have automatic screen brightness, install wluma.
+
+    ```bash
+    yay -Sy wluma
+    ```
+
+    Then, enable the systemd unit.
+
+    ```bash
+    systemctl --user enable --now wluma.service
+    ```
+
+  - **Wi-Fi**
+
+    To manage your Wi-Fi connections, I'd recommend you to install [iwgtk](https://github.com/J-Lentz/iwgtk):
+
+    ```bash
+    yay -Sy iwgtk
+    ```
+
+    After that, enable the systemd unit just like with wluma.
+
+    ```bash
+    systemctl --user enable --now iwgtk.service
+    ```
+
+    To manage all the other network configurations, use [nm-connection-editor](https://gitlab.gnome.org/GNOME/network-manager-applet)
 
 - **Specific Configs/Information** (_Optional_)
 
