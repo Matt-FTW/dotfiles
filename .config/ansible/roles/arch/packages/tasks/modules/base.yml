@@ -128,6 +128,7 @@
       - nwg-look
       - pyprland
       - wl-clip-persist
+      - waybar-updates
 
       # Hooks
       - check-broken-packages-pacman-hook-git
