@@ -317,7 +317,7 @@ sudo pacman -S yadm
 After that, its time to clone the dotfiles repo into your system using yadm.
 
 > [!NOTE]
-> If you any file of the repo that already exists in your system and the content differs, the local file will be left unmodified and you'll have to review the changes and resolve the differences.
+> If any file in your local machine differs from the one in the remote repository, your local file will remain unmodified. You'll need to manually review and resolve any differences.
 
 ```bash
 yadm clone https://github.com/Matt-FTW/dotfiles.git
