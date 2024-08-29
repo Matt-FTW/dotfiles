@@ -11,4 +11,6 @@ function fish_user_key_bindings
             break
         end
     end
+
+    bind \e\z zi
 end
