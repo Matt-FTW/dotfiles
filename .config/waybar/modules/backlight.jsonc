@@ -1,8 +1,8 @@
 {
   "backlight": {
     "format": "{percent}% {icon}",
-    "format-icons": ["", ""],
-    "on-scroll-up": "brightnessctl -c backlight set +1%",
-    "on-scroll-down": "brightnessctl -c backlight set 1%-",
+    "format-icons": [" ", " "],
+    "on-scroll-up": "swayosd-client --brightness +10",
+    "on-scroll-down": "swayosd-client --brightness -10",
   },
 }
