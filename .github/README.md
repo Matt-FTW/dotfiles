@@ -52,6 +52,7 @@ I've been working on this for a long time so I hope you like it!
 - :zzz: Neovim powered by LazyVim with Custom Extras Added (More than 200!)
 - :point_up: Screenshot, Keybindings, Games, Clipboard, Color and Wallpaper Picker
 - :window: Animations for nearly all the System
+- :wrench: Modular Configuration
 - :desktop_computer: AwesomeWM Workspace Behavior
 - :open_file_folder: Following XDG Base Directory Standard
 - :car: Automatic Mounting of USB Devices with Notification
