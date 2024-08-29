@@ -320,9 +320,17 @@ window#waybar.hidden {
   color: @mantle;
 }
 
+#network {
+  color: @mantle;
+}
+
 #network.disconnected {
   background-color: @red;
   color: @mantle;
+}
+
+#network.linked {
+  color: @yellow;
 }
 
 #clock.cl2 {
