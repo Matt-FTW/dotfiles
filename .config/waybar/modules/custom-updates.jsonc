@@ -2,6 +2,7 @@
   "custom/updates": {
     "format": "{} {icon}",
     "return-type": "json",
+    "tooltip": true,
     "format-icons": {
       "pending-updates": " ",
       "updated": " ",
