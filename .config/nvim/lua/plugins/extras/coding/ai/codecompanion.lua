@@ -1,14 +1,36 @@
 local prefix = "<leader>a"
 local user = vim.env.USER or "User"
 
+vim.api.nvim_create_autocmd("User", {
+  pattern = "CodeCompanionChatAdapter",
+  callback = function(args)
+    if args.data.adapter == nil or vim.tbl_isempty(args.data) then
+      return
+    end
+    vim.g.llm_name = args.data.adapter.name
+  end,
+})
+
 return {
   {
     "olimorris/codecompanion.nvim",
     cmd = { "CodeCompanion", "CodeCompanionActions", "CodeCompanionToggle", "CodeCompanionAdd", "CodeCompanionChat" },
     opts = {
+      adapters = {
+        deepseek_coder = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            name = "deepseek_coder",
+            schema = {
+              model = {
+                default = "deepseek-coder-v2:latest",
+              },
+            },
+          })
+        end,
+      },
       strategies = {
         chat = {
-          adapter = "ollama",
+          adapter = "deepseek_coder",
           roles = {
             llm = "  CodeCompanion",
             user = " " .. user:sub(1, 1):upper() .. user:sub(2),
@@ -18,8 +40,8 @@ return {
             stop = { modes = { n = "<C-c>" } },
           },
         },
-        inline = { adapter = { adapter = "ollama" } },
-        agent = { adapter = { adapter = "ollama" } },
+        inline = { adapter = "deepseek_coder" },
+        agent = { adapter = "deepseek_coder" },
       },
     },
     keys = {
