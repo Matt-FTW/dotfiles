@@ -43,6 +43,7 @@
 #custom-fans,
 #clock,
 #idle_inhibitor,
+#bluetooth,
 #custom-wf-recorder,
 #pulseaudio,
 #backlight,
@@ -222,6 +223,10 @@ window#waybar.hidden {
 
 #temperature {
   color: @peach;
+}
+
+#bluetooth {
+  color: @blue;
 }
 
 #window {
