@@ -2,6 +2,11 @@ return {
   "folke/persistence.nvim",
   optional = true,
   keys = {
+    -- stylua: ignore start
+    { "<leader>ql", function() require("persistence").load() end, desc = "Load Session" },
+    { "<leader>qs", function() require("persistence").select() end,desc = "Select Session" },
+    { "<leader>qL", function() require("persistence").load({ last = true }) end, desc = "Restore Last Session" },
+    { "<leader>qd", function() require("persistence").stop() end, desc = "Don't Save Current Session" },
     {
       "<leader>qS",
       function()
@@ -11,7 +16,6 @@ return {
       end,
       desc = "Save Session",
     },
-    -- stylua: ignore start
     {
       "<leader>qt",
       function()
@@ -27,7 +31,7 @@ return {
           vim.notify("Started Session Recording", vim.log.levels.INFO, { title = "Persistence" })
         end
       end,
-      desc = "Toggle Current Session Recording"
+      desc = "Toggle Recording"
     },
     -- stylua: ignore end
   },
