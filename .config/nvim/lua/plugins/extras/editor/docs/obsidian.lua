@@ -3,7 +3,7 @@ local prefix = "<leader>o"
 return {
   { import = "plugins.extras.lang.markdown-extended" },
   {
-    "MeanderingProgrammer/markdown.nvim",
+    "MeanderingProgrammer/render-markdown.nvim",
     opts = {
       preset = "obsidian",
     },
