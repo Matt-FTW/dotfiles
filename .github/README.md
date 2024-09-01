@@ -472,8 +472,7 @@ Some configuration examples are:
 
 > [!NOTE]
 > For specific images and videos about each tool, check out their own READMEs at their respective config folders. (STILL WIP 🚧)
-
-> [!NOTE]
+>
 > If you want to check the wallpapers, they are available [right here](../.config/hypr/theme/walls/.github/README.md).
 
 | **System Fetch, Pacman Colorscript, App Launcher and Notif. Center** |

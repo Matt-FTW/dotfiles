@@ -45,6 +45,8 @@ Wanna see or add new bindings? Check [this file](../configs/binds.conf).
 
 Wanna edit the theme? Check [this folder](../theme/).
 
+Are you interested in all of the more than 100 wallpapers available? [Check them out!](../theme/walls/.github/README.md)
+
 Maybe you want to add a new app or service to autostart? Check [this](../scripts/autostart/)
 
 If you want to add a new script to the config, go to [this folder](../scripts/).
