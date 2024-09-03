@@ -46,9 +46,9 @@ return {
       { "<leader>sP", "<cmd>Telescope builtin<cr>", desc = "Pickers (Telescope)" },
       { "<leader>fh", LazyVim.pick("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader><c-space>", LazyVim.pick("find_files", { hidden = true }), desc = "Find Files (hidden)" },
-      { "<leader>gf", "<cmd>Telescope git_bcommits<cr>", desc = "File History" },
+      { "<leader>gy", "<cmd>Telescope git_bcommits<cr>", desc = "File History" },
       { "<leader>gS", "<cmd>Telescope git_stash<cr>", desc = "Stash" },
-      { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Branches" },
+      { "<leader>ga", "<cmd>Telescope git_branches<cr>", desc = "Branches" },
       { "<leader>S", "<cmd>Telescope spell_suggest<cr>", desc = "Spelling" },
     },
     opts = {
