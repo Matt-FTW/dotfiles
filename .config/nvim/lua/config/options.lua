@@ -7,6 +7,7 @@ vim.loader.enable()
 -- LazyVim related options
 vim.g.lazyvim_statuscolumn.folds_open = true
 vim.g.lazyvim_statuscolumn.folds_githl = true
+vim.g.lazygit_config = false
 
 -- Define leader key
 go.mapleader = " "

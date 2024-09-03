@@ -139,10 +139,6 @@ map("n", "<leader>cir", "<cmd>LazyRoot<cr>", { desc = "Root" })
 -- U for redo
 map("n", "U", "<C-r>", { desc = "Redo" })
 
--- Move to beginning/end of line
-map("n", "<a-h>", "_", { desc = "First Character of Line" })
-map("n", "<a-l>", "$", { desc = "Last Character of Line" })
-
 -- Copy whole text to clipboard
 map("n", "<C-c>", ":%y+<CR>", { desc = "Copy Whole Text to Clipboard", silent = true })
 
@@ -191,6 +187,19 @@ end, { desc = "Dashboard" })
 -- Spelling
 map("n", "<leader>!", "zg", { desc = "Add Word to Dictionary" })
 map("n", "<leader>@", "zug", { desc = "Remove Word from Dictionary" })
+
+-- Terminal Stuff
+if not LazyVim.has("floaterm.nvim") or not LazyVim.has("toggleterm.nvim") then
+  local lazyterm = function()
+    LazyVim.terminal(nil, { backdrop = 90.0, size = { width = 0.8, height = 0.8 }, cwd = LazyVim.root() })
+  end
+  map("n", "<leader>ft", lazyterm, { desc = "Terminal (Root Dir)" })
+  map("n", "<leader>fT", function()
+    LazyVim.terminal(nil, { backdrop = 90.0, size = { width = 0.8, height = 0.8 }, cwd = vim.fn.getcwd() })
+  end, { desc = "Terminal (cwd)" })
+  map("n", [[<c-\>]], lazyterm, { desc = "Terminal (Root Dir)" })
+  map("t", [[<c-\>]], "<cmd>close<cr>", { desc = "Hide Terminal" })
+end
 
 -- Marks
 map("n", "dm", function()
