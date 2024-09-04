@@ -33,7 +33,6 @@ The extensions I'm using are:
 - [Catppuccin Github Icons](https://github.com/catppuccin/github-file-explorer-icons)
 - [Dark Reader](https://github.com/darkreader/darkreader) [:gear:](../extensions/dark-reader.json)
 - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)
-- [I still don't care about cookies](https://github.com/OhMyGuus/I-Still-Dont-Care-About-Cookies)
 - [LibRedirect](https://github.com/libredirect/browser_extension) [:gear:](../extensions/libredirect.json)
 - [New Tab Override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
 - [Return Youtube Dislikes](https://github.com/Anarios/return-youtube-dislike)
