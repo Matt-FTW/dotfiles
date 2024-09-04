@@ -1,12 +1,14 @@
 {
-  "timeStamp": 1725016962642,
+  "timeStamp": 1725452997186,
   "version": "1.59.0",
   "userSettings": {
-    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt\nhttps://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
+    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt\nhttps://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
     "importedLists": [
+      "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
       "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
       "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
+      "https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt",
       "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt"
     ],
     "popupPanelSections": 31
@@ -26,11 +28,17 @@
     "fanboy-cookiemonster",
     "ublock-cookies-easylist",
     "fanboy-social",
+    "easylist-chat",
+    "easylist-newsletters",
+    "easylist-notifications",
+    "easylist-annoyances",
     "ublock-annoyances",
     "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
     "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
+    "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
-    "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt"
+    "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
+    "https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
