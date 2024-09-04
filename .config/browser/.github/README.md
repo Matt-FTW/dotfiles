@@ -28,24 +28,31 @@ The browser I'm using right now is [Floorp](https://floorp.app). It is a fork of
 
 The extensions I'm using are:
 
-- [Improve Youtube](https://github.com/code-charity/youtube)
+- [Improve Youtube](https://github.com/code-charity/youtube) [:gear:](../extensions/improved-youtube.json)
 - [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?browser=firefox)
 - [Catppuccin Github Icons](https://github.com/catppuccin/github-file-explorer-icons)
-- [Dark Reader](https://github.com/darkreader/darkreader)
+- [Dark Reader](https://github.com/darkreader/darkreader) [:gear:](../extensions/dark-reader.json)
 - [Firefox Color](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)
 - [I still don't care about cookies](https://github.com/OhMyGuus/I-Still-Dont-Care-About-Cookies)
-- [LibRedirect](https://github.com/libredirect/browser_extension)
+- [LibRedirect](https://github.com/libredirect/browser_extension) [:gear:](../extensions/libredirect.json)
 - [New Tab Override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/)
 - [Return Youtube Dislikes](https://github.com/Anarios/return-youtube-dislike)
 - [Search by Image](https://github.com/dessant/search-by-image)
-- [Sidebery](https://github.com/mbnuqw/sidebery)
-- [Sponsorblock](https://github.com/ajayyy/SponsorBlock)
-- [Stylus](https://github.com/openst)
-- [SurfingKeys](https://github.com/brookhong/Surfingkeys)
-- [Tab Session Manager](https://github.com/sienori/Tab-Session-Manager)
-- [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin)
-- [ViolentMonkey](https://github.com/violentmonkey/violentmonkey)
+- [Sidebery](https://github.com/mbnuqw/sidebery) [:gear:](../extensions/sidebery.json)
+- [Sponsorblock](https://github.com/ajayyy/SponsorBlock) [:gear:](../extensions/sponsor-block.json)
+- [Stylus](https://github.com/openst) [:gear:](../extensions/stylus.json)
+- [SurfingKeys](https://github.com/brookhong/Surfingkeys) [:gear:](https://github.com/Matt-FTW/surfingkeys-conf)
+- [Tab Session Manager](https://github.com/sienori/Tab-Session-Manager) [:gear:](../extensions/session-manager.json)
+- [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) [:gear:](../extensions/ublock.txt)
 - [Web Scrobbler](https://github.com/web-scrobbler/web-scrobbler)
+- [ViolentMonkey](https://github.com/violentmonkey/violentmonkey) [:gear:](../extensions/violentmonkey.zip)
+  Scripts:
+  - [Simple YouTube Age Restriction Bypass](https://greasyfork.org/en/scripts/423851-simple-youtube-age-restriction-bypass)
+  - [KeepChatGPT](https://greasyfork.org/en/scripts/462804-keepchatgpt)
+  - [YouTube - Stay Active and Play Forever](https://greasyfork.org/en/scripts/390352-youtube-stay-active-and-play-forever)
+  - [Bypass All Shortlinks Debloated](https://codeberg.org/Amm0ni4/bypass-all-shortlinks-debloated)
+  - [GreasyFork Bullshit Filter](https://greasyfork.org/en/scripts/12179-greasyfork-bull-filter)
+  - [Fandom Redirect](https://greasyfork.org/en/scripts/476527-fandom-redirect)
 
 I'm also using my [custom Startpage](https://github.com/Matt-FTW/startpage) based on [this project](https://github.com/pivoshenko/catppuccin-startpage).
 
