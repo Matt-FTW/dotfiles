@@ -1,12 +1,12 @@
 #!/bin/bash
 
 notify() {
-	notify-send "Spotdl Sync" "$1" --icon=spotify --app-name=Spotify
+  notify-send "Spotdl Sync" "$1" --icon=spotify --app-name=Spotify
 }
 
 if ! command -v spotdl &>/dev/null; then
-	notify "Error: spotdl is not installed"
-	exit 1
+  notify "Error: spotdl is not installed"
+  exit 1
 fi
 
 MUSIC_FOLDER="$HOME/music/listen-to"
@@ -14,12 +14,12 @@ MUSIC_FOLDER="$HOME/music/listen-to"
 notify "Started syncing..."
 
 while IFS= read -r -d '' SPOTDL_FILE; do
-	if [[ -f "$SPOTDL_FILE" && "$SPOTDL_FILE" == *.spotdl ]]; then
-		FOLDER_NAME=$(basename "$(dirname "$SPOTDL_FILE")")
-		cd "$(dirname "$SPOTDL_FILE")" || continue
 		spotdl sync "$(basename "$SPOTDL_FILE")"
-		notify "Synced $FOLDER_NAME"
-	fi
+  if [[ -f "$SPOTDL_FILE" && "$SPOTDL_FILE" == *.spotdl ]]; then
+    FOLDER_NAME=$(basename "$(dirname "$SPOTDL_FILE")")
+    cd "$(dirname "$SPOTDL_FILE")" || continue
+    notify "Synced $FOLDER_NAME"
+  fi
 done < <(find "$MUSIC_FOLDER" -mindepth 1 -maxdepth 3 -type f -name '*.spotdl' -print0)
 
 notify "Spotdl Sync Complete"
