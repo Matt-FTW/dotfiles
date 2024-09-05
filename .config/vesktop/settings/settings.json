@@ -676,12 +676,25 @@
             "enabled": false
         },
         "MentionAvatars": {
-            "enabled": true
+            "enabled": true,
+            "showAtSymbol": true
         },
         "YoutubeAdblock": {
             "enabled": true
         },
         "AlwaysExpandRoles": {
+            "enabled": false
+        },
+        "CopyFileContents": {
+            "enabled": true
+        },
+        "NoMaskedUrlPaste": {
+            "enabled": false
+        },
+        "StickerPaste": {
+            "enabled": false
+        },
+        "VolumeBooster": {
             "enabled": false
         }
     },
@@ -695,6 +708,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1725014232340
+        "settingsSyncVersion": 1725531927896
     }
 }
