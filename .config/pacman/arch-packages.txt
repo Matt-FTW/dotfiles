@@ -1,14 +1,12 @@
 alsa-plugins
 amd-ucode
 android-file-transfer
-atac
 atuin
 baobab
 base
 base-devel
 bat
 bob
-boost
 btop
 calf
 cliphist
@@ -18,7 +16,6 @@ dnsmasq
 docker
 docker-compose
 dua-cli
-duf
 easyeffects
 efibootmgr
 eza
@@ -37,7 +34,6 @@ greetd-tuigreet
 grim
 grub
 gst-plugin-pipewire
-gum
 hyprcursor
 hypridle
 hyprland
@@ -45,7 +41,6 @@ hyprlang
 hyprlock
 hyprwayland-scanner
 jq
-just
 kitty
 krita
 kvantum
@@ -55,7 +50,6 @@ lib32-libva-mesa-driver
 lib32-mesa
 lib32-mesa-vdpau
 lib32-vulkan-radeon
-libgnome-keyring
 libguestfs
 libpulse
 libreoffice-fresh
@@ -119,7 +113,6 @@ tmuxp
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols-mono
-typescript
 udiskie
 ufw
 vde2
@@ -127,6 +120,7 @@ vim
 virt-manager
 virt-viewer
 vivid
+vulkan-headers
 vulkan-radeon
 vulkan-tools
 waybar
