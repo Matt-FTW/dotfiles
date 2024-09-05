@@ -25,11 +25,14 @@ jrebocho.vscode-random
 kisstkondoros.vscode-gutter-preview
 mads-hartmann.bash-ide-vscode
 ms-azuretools.vscode-docker
+ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
+ms-vscode.cpptools
 ms-vscode.remote-explorer
 pucelle.vscode-css-navigation
 rafamel.subtle-brackets
