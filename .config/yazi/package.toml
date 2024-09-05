@@ -6,6 +6,7 @@ deps = [
   { use = "imsi32/yatline-githead", rev = "2f2b000" },
   { use = "yazi-rs/plugins:smart-filter", rev = "b659791" },
   { use = "yazi-rs/plugins:hide-preview", rev = "b659791" },
+  { use = "yazi-rs/plugins:git", rev = "118ae4d" },
 ]
 
 [flavor]

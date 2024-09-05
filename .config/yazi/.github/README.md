@@ -30,6 +30,7 @@ The plugins I'm using are the following:
 - [fg](https://gitee.com/DreamMaoMao/fg.yazi)
 - [smart-filter](https://github.com/yazi-rs/plugins/tree/main/smart-filter.yazi)
 - [hide-preview](https://github.com/yazi-rs/plugins/tree/main/hide-preview.yazi)
+- [git](https://github.com/yazi-rs/plugins/tree/main/git.yazi)
 
 The added keymaps are located on [this file](../keymap.toml).
 

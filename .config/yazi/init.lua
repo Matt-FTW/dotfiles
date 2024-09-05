@@ -179,3 +179,5 @@ require("yatline-githead"):setup({
 	unstaged_color = catppuccin_palette.yellow,
 	untracked_color = catppuccin_palette.pink,
 })
+
+require("git"):setup()
