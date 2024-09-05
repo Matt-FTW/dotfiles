@@ -8,4 +8,4 @@ Target = *
 [Action]
 Description = Create a backup list of all installed packages
 When = PostTransaction
-Exec = /bin/sh -c "pacman -Qme > /home/matt/.config/pacman/aur-packages.txt && pacman -Qne > /home/matt/.config/pacman/arch-packages.txt"
+Exec = /bin/sh -c "pacman -Qme | awk '{ print $1 }' > /home/matt/.config/pacman/aur-packages.txt && pacman -Qne | awk '{ print $1 }' > /home/matt/.config/pacman/arch-packages.txt"
