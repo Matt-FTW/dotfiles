@@ -1,3 +1,3 @@
-function ld --wraps='eza --long --header -a --icons -D --git' --description 'alias ld=eza --long --header -a --icons -D --git'
-    eza --long --header -a --icons -D --git --hyperlink $argv
+function ld --wraps=lazydocker --description 'alias ld=lazydocker'
+    lazydocker $argv
 end
