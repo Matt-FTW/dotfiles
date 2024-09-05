@@ -214,39 +214,39 @@ Here is all the information about my setup:
 
 - **Base Packages**
 
-First, lets start with the required base packages for the configuration to function.
+Lets start with the required base packages for the configuration to function.
 
 ```bash
 yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swww waybar waybar-updates rofi-wayland swaync swayosd-git playerctl \
         wl-clipboard wl-clip-persist cliphist udiskie devify polkit-gnome \
-        pyprland qt5ct qt5-wayland qt6-wayland pavucontrol \
-        fzf jq eza fd slurp grim satty vivid fish starship \
-        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato
+        pyprland qt5ct qt5-wayland qt6-wayland pavucontrol fastfetch \
+        fzf jq eza fd slurp grim satty vivid fish starship ripgrep bat \
+        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato \
+        yazi nemo kitty zathura zathura-pdf-mupdf qimgv-light mpv
+
 ```
 
-On the first line we have the hypr ecosystem packages and on the other lines we have the must have packages.
+- **Graphics Drivers** (_Optional_)
 
-- **Optional Packages**
+> [!WARNING]
+> Skip this step if you already have the correct drivers for your graphics card.
 
-Now lets move to the Optional Packages (If you don't want to install any more packages, move to the Dotfiles Installation step)
-
-```bash
-yay -Sy yazi nemo kitty zathura zathura-pdf-mupdf qimgv-light mpv
-```
-
-Here we have some packages that you can replace with your favorite ones and are not required at all for the desktop to function (though it wont look the same). For example, the terminal (kitty), the file manager (nemo and yazi), the font (ttf-jetbrainsmono-nerd), the video player (mpv), etc.
-
-Useful CLI/TUI packages
+Chose one if this commands depending on your graphics card brand.
 
 ```bash
-yay -Sy ripgrep riprep-all sd duf nvtop btop dua-cli bat pacseek sysz gtrash-bin topgrade fastfetch
-```
+# AMD (Open Source)
+yay -Sy xf86-video-amdgpu xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon vulkan-tools \
+        opencl-clover-mesa lib32-opencl-clover-mesa libva-mesa-driver lib32-libva-mesa-driver \
+        mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau vdpauinfo clinfo
 
-Useful GUI packages
+# Nvidia (Propietary)
+yay -Sy nvidia nvidia-utils nvidia-settings opencl-nvidia lib32-nvidia-utils \
+        lib32-opencl-nvidia cuda vdpauinfo clinfo
 
-```bash
-yay -Sy pika-backup vesktop-bin nwg-displays nwg-look gnome-logs galculator gparted nm-connection-editor
+# Intel (Open Source)
+yay -Sy xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-tools libva-intel-driver \
+        lib32-libva-intel-driver mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau
 ```
 
 - **Icon Theme**
@@ -274,8 +274,8 @@ mv Catppuccin-SE ~/.local/share/icons/
 Install the following fonts:
 
 ```bash
-yay -Sy ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-nerd-fonts-symbols-common \
-       ttf-font-awesome noto-fonts-cjk ttf-ms-win11-auto
+yay -Sy ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono \
+        ttf-nerd-fonts-symbols-common ttf-font-awesome noto-fonts-cjk ttf-ms-win11-auto
 ```
 
 After that, be sure to refresh the font cache:
@@ -453,6 +453,16 @@ If you are going to use git, be sure to change the user definition as well as th
     ```
 
     To manage all the other network configurations, use [nm-connection-editor](https://gitlab.gnome.org/GNOME/network-manager-applet)
+
+- **Keyring Support**
+
+There are some applications that you might need the keyring for. Examples: bitwarden, dbeaver, protonmail-bridge, vlc...
+
+To enable the keyring support, install the following packages:
+
+```bash
+yay -Sy gnome-keyring libsecret
+```
 
 - **Specific Configs/Information** (_Optional_)
 
