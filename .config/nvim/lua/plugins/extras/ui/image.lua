@@ -3,13 +3,6 @@ return {
   event = "LazyFile",
   dependencies = {
     { "nvim-treesitter/nvim-treesitter" },
-    {
-      "vhyrro/luarocks.nvim",
-      priority = 1000, -- this plugin needs to run before anything else
-      opts = {
-        rocks = { "magick" },
-      },
-    },
   },
   opts = {
     backend = "kitty",
