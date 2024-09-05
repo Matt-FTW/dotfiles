@@ -5,7 +5,7 @@ PartOf=graphical-session.target
 Requires=graphical-session.target
 
 [Service]
-ExecStart=bash -c 'cd /home/matt/dev/personal/projects/surfingkeys-conf; npm run gulp serve-simple'
+ExecStart=bash -c 'cd /home/matt/dev/projects/surfingkeys-conf; npm run gulp serve-simple'
 Type=simple
 Restart=always
 RestartSec=10
