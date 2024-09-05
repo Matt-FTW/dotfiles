@@ -46,7 +46,7 @@ If you wanna know how to **install** them, go to the [setup](#wrench--setup) sec
 
 I've been working on this for a long time so I hope you like it!
 
-### ✨ Features
+## ✨ Features
 
 - :dark_sunglasses: Dark Mode for the Whole System
 - :zzz: Neovim powered by LazyVim with Custom Extras Added (More than 200!)
@@ -72,7 +72,7 @@ I've been working on this for a long time so I hope you like it!
 
 ---
 
-### 🌸 Core System Info
+## 🌸 Core System Info
 
  <img src="assets/rice-logo.png" alt="rice-logo" align="right" width="390px">
 
@@ -203,7 +203,7 @@ Here is all the information about my setup:
 >
 > It is also ment only for Arch based systems. All other distros are not supported and I will not be helping with issues related to them.
 
-### :package: Dependencies Installation
+## :package: Dependencies Installation
 
 > [!NOTE]
 > The names of the packages are from the AUR and Arch Repos; adapt them to your system. Most of the packages are available on other distros official repos (most of the time out-to-date).
@@ -286,7 +286,7 @@ fc-cache -fv
 
 - **Audio Service** (_Optional_)
 
-> [!NOTE]
+> [!WARNING]
 > If you have Pipewire already setup on your system, you dont have to follow this step.
 
 Firstly, install this dependencies:
@@ -303,12 +303,12 @@ systemctl --user enable --now pipewire wireplumber
 
 And there you have it.
 
-### :floppy_disk: Dotfiles Installation
+## :floppy_disk: Dotfiles Installation
 
 > [!WARNING]
 > Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
 
-- ### <samp>Yadm Method (**recommended**)</samp>
+### Yadm Method (**recommended**)
 
 [Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
 
@@ -352,7 +352,7 @@ Now you can receive new updates from my repo and modify your custom one :sunglas
 If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
-- ### <samp>Git Method</samp>
+### Git Method
 
 Firstly, clone this repository (remember to have git installed).
 
@@ -376,7 +376,7 @@ Logout from your current desktop session and log back into the Hyprland session.
 If you had any issues feel free to [open an issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 Do you have some questions about the installation process? You can create a [new discussion post](https://github.com/Matt-FTW/dotfiles/discussions/new/choose) then. Be sure to read the [FAQ](./FAQ.md) first!
 
-### :heavy_plus_sign: Post Installation
+## :heavy_plus_sign: Post Installation
 
 Here are some things you might consider changing or adding:
 
@@ -557,7 +557,7 @@ I wanna point out some resources that helped me the most with the setup:
 
 Those were the biggest inspiring factor for me, though you can find a lot more of setups that helped me in my list of favorite dotfiles from the **Stars** section of my Github Profile: [Check it out!](https://github.com/stars/Matt-FTW/lists/paintbrush-theming-dots)
 
-### :writing_hand: Contributing
+## :writing_hand: Contributing
 
 Part of what makes the open source community special are the contributions. Any contributions will be **highly appreciated!**
 
@@ -567,7 +567,7 @@ Please, before submitting a PR or opening an issue, be sure to follow the [contr
 
 Blank or repeated issues and PRs will be closed.
 
-### :dollar: Donating
+## :dollar: Donating
 
 If you want to support my work, please consider donating.
 
@@ -579,13 +579,13 @@ Thank you! :sparkling_heart:
 [![](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&color=ed8796&logoColor=D9E0EE&labelColor=302D41)](https://ko-fi.com/matt_ftw)
 [![](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?style=for-the-badge&logo=buy-me-a-coffee&color=eed49f&logoColor=D9E0EE&labelColor=302D41)](https://www.buymeacoffee.com/matt_ftw)
 
-### :two_hearts: Star History and Contributors
+## :two_hearts: Star History and Contributors
 
 Thanks to everyone who have contributed and given an star to this project!
 
 <div align="center">
 
-#### :pencil2: Contributors
+### :pencil2: Contributors
 
 </div>
 
@@ -595,7 +595,7 @@ Thanks to everyone who have contributed and given an star to this project!
 
 <div align="center">
 
-#### :star: Star History
+### :star: Star History
 
 </div>
 
