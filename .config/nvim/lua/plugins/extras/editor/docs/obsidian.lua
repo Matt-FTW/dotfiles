@@ -20,10 +20,10 @@ return {
       { prefix .. "b", "<cmd>ObsidianBacklinks<CR>", desc = "Backlinks" },
       { prefix .. "t", "<cmd>ObsidianTags<CR>", desc = "Tags" },
       { prefix .. "t", "<cmd>ObsidianTemplate<CR>", desc = "Template" },
-      { prefix .. "l", "<cmd>ObsidianLink<CR>", desc = "Link" },
+      { prefix .. "l", "<cmd>ObsidianLink<CR>", mode = "v", desc = "Link" },
       { prefix .. "L", "<cmd>ObsidianLinks<CR>", desc = "Links" },
-      { prefix .. "N", "<cmd>ObsidianLinkNew<CR>", desc = "New Link" },
-      { prefix .. "e", "<cmd>ObsidianExtractNote<CR>", desc = "Extract Note" },
+      { prefix .. "N", "<cmd>ObsidianLinkNew<CR>", mode = "v", desc = "New Link" },
+      { prefix .. "e", "<cmd>ObsidianExtractNote<CR>", mode = "v", desc = "Extract Note" },
       { prefix .. "w", "<cmd>ObsidianWorkspace<CR>", desc = "Workspace" },
       { prefix .. "r", "<cmd>ObsidianRename<CR>", desc = "Rename" },
       { prefix .. "i", "<cmd>ObsidianPasteImg<CR>", desc = "Paste Image" },
@@ -34,6 +34,10 @@ return {
         {
           name = "personal",
           path = "~/documents/obsidian-vaults/personal/",
+        },
+        {
+          name = "personal-brain",
+          path = "~/documents/obsidian-vaults/personal-brain/",
         },
       },
 
