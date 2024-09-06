@@ -4,7 +4,7 @@ return {
   {
     "sindrets/diffview.nvim",
     keys = {
-      { "<leader>gY", "<cmd>DiffviewFileHistory<CR>", desc = "Repo History (Diff)" },
+      { "<leader>gD", "<cmd>DiffviewFileHistory<CR>", desc = "Diff Repo" },
       { "<leader>gd", "<cmd>DiffviewOpen<CR>", desc = "Diff View" },
     },
     opts = function(_, opts)
@@ -45,6 +45,15 @@ return {
         },
       }
     end,
+  },
+  {
+    "NeogitOrg/neogit",
+    optional = true,
+    opts = {
+      integrations = {
+        diffview = true,
+      },
+    },
   },
   {
     "folke/which-key.nvim",
