@@ -29,6 +29,7 @@ sync-pacman-hook-git
 sysz
 tidal-hifi-bin
 topgrade-bin
+trashy
 ttf-ms-win11-auto
 upscayl-bin
 vesktop
