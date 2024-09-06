@@ -35,7 +35,6 @@
     "plugins.extras.editor.telescope.telescope-extended",
     "plugins.extras.editor.telescope.undotree",
     "plugins.extras.editor.telescope.zoxide",
-    "plugins.extras.editor.terminal.floaterm",
     "plugins.extras.editor.trouble-extended",
     "plugins.extras.formatting.prettier-extended",
     "plugins.extras.formatting.trim_newlines",
