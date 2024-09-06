@@ -1,20 +1,37 @@
 local prefix = "<leader>gC"
 
+vim.api.nvim_create_autocmd("User", {
+  pattern = "GitConflictDetected",
+  callback = function()
+    vim.notify("Conflict detected in " .. vim.fn.expand("<afile>"))
+  end,
+})
+
 return {
   {
     "akinsho/git-conflict.nvim",
     opts = {
-      default_mappings = false,
+      default_mappings = {
+        ours = prefix .. "o",
+        theirs = prefix .. "t",
+        none = prefix .. "n",
+        both = prefix .. "b",
+      },
     },
-    version = "v1.0.0",
-    cmd = { "GitConflictChooseTheirs", "GitConflictChooseOurs", "GitConflictChooseBoth", "GitConflictListQf" },
+    cmd = {
+      "GitConflictChooseTheirs",
+      "GitConflictChooseOurs",
+      "GitConflictChooseBoth",
+      "GitConflictListQf",
+      "GitConflictRefresh",
+      "GitConflictNextConflict",
+      "GitConflictPrevConflict",
+    },
     keys = {
-      { prefix .. "t", "<cmd>GitConflictChooseTheirs<cr>", desc = "Choose Their Changes" },
-      { prefix .. "o", "<cmd>GitConflictChooseOurs<cr>", desc = "Choose Our Changes" },
-      { prefix .. "b", "<cmd>GitConflictChooseBoth<cr>", desc = "Choose Both changes" },
-      { prefix .. "l", "<cmd>GitConflictListQf<cr>", desc = "Git Conflict Quicklist" },
-      { "[g", "<cmd>GitConflictPrevConflict<cr>", desc = "Prev Git Conflict" },
-      { "]g", "<cmd>GitConflictPrevConflict<cr>", desc = "Next Git Conflict" },
+      { "]g", "<cmd>GitConflictNextConflict<cr>", desc = "Next Conflict" },
+      { "[g", "<cmd>GitConflictPrevConflict<cr>", desc = "Previous Conflict" },
+      { prefix .. "l", "<cmd>GitConflictListQf<cr>", desc = "List Conflicts" },
+      { prefix .. "r", "<cmd>GitConflictRefresh<cr>", desc = "Refresh Conflicts" },
     },
   },
   {
