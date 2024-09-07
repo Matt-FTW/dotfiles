@@ -43,6 +43,11 @@ return {
         inline = { adapter = "deepseek_coder" },
         agent = { adapter = "deepseek_coder" },
       },
+      display = {
+        chat = {
+          show_settings = true,
+        },
+      },
     },
     keys = {
       { prefix .. "a", "<cmd>CodeCompanionActions<cr>", mode = { "n", "v" }, desc = "Action Palette" },
