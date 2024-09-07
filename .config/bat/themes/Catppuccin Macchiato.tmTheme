@@ -24,13 +24,13 @@
           <key>caret</key>
           <string>#f4dbd6</string>
           <key>lineHighlight</key>
-          <string>#cad3f512</string>
+          <string>#363a4f</string>
           <key>misspelling</key>
           <string>#ed8796</string>
           <key>accent</key>
           <string>#c6a0f6</string>
           <key>selection</key>
-          <string>#5b607866</string>
+          <string>#939ab740</string>
           <key>activeGuide</key>
           <string>#494d64</string>
           <key>findHighlight</key>
@@ -1987,6 +1987,60 @@
         <dict>
           <key>foreground</key>
           <string>#cad3f5</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.synopsis.man, markup.heading.title.man, markup.heading.other.man, markup.heading.env.man</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#c6a0f6</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.commands.man</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8aadf4</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.env.man</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f5bde6</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.1.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ed8796</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.2.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f5a97f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>markup.heading.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#eed49f</string>
         </dict>
       </dict>
     </array>

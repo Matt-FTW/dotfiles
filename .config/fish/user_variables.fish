@@ -82,5 +82,4 @@ set -xg _ZO_FZF_OPTS $FZF_DEFAULT_OPTS '--preview "{$fzf_preview_dir_cmd} {2}"'
 if type -q vivid
     set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 end
-set -xg BAT_THEME Catppuccin-macchiato
 set -xg STARSHIP_LOG error
