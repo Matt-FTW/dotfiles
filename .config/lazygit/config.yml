@@ -40,20 +40,17 @@ gui:
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
   statusPanelView: "dashboard"
-
 git:
   paging:
-    pager: delta --paging=never
+    colorArg: always
+    pager: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' {{branchName}} --"
   allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --date-relative --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
   parseEmoji: true
-
 os:
   editPreset: "nvim-remote" # see 'Configuring File Editing' section
-
 disableStartupPopups: true
 notARepository: "skip" # one of: 'prompt' | 'create' | 'skip' | 'quit'
-
 keybinding:
   universal:
     quit: "q"
@@ -94,7 +91,7 @@ keybinding:
     scrollDownMain-alt1: "<c-d>" # main panel scroll down
     scrollUpMain-alt2: "<disabled>" # main panel scroll up
     scrollDownMain-alt2: "<disabled>" # main panel scroll down
-    executeCustomCommand: ":"
+    executeShellCommand: ":"
     createRebaseOptionsMenu: "m"
     pushFiles: "P"
     pullFiles: "p"
@@ -178,7 +175,6 @@ keybinding:
     init: "i"
     update: "u"
     bulkMenu: "b"
-
 customCommands:
   - key: "C"
     command: "git cz"
