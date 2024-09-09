@@ -5,8 +5,7 @@ configuration {
   display-run:                "Run";
   display-filebrowser:        "Files";
   display-window:             "Windows";
-  drun-display-format:        "{name}\n[<span weight='light' size='small'><i>({generic})</i></span>]";
-  window-format:              "Class : {c}\nWorkspace : {w}";
+  drun-display-format:        "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
   me-select-entry:            "";
   me-accept-entry:            [ MousePrimary, MouseSecondary, MouseDPrimary ];
 }
