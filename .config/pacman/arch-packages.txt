@@ -128,7 +128,6 @@ wev
 wine
 wireguard-tools
 wireplumber
-wl-clip-persist
 wl-clipboard
 xdg-desktop-portal-hyprland
 xdg-user-dirs

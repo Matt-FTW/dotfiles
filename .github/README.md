@@ -219,7 +219,7 @@ Lets start with the required base packages for the configuration to function.
 ```bash
 yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
         swww waybar waybar-updates rofi-wayland swaync swayosd-git playerctl \
-        wl-clipboard wl-clip-persist cliphist udiskie devify polkit-gnome \
+        wl-clipboard cliphist udiskie devify polkit-gnome \
         pyprland qt5ct qt5-wayland qt6-wayland pavucontrol fastfetch \
         fzf jq eza fd slurp grim satty vivid fish starship ripgrep bat \
         catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato \

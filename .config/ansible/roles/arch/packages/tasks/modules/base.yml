@@ -127,7 +127,6 @@
       - nwg-displays
       - nwg-look
       - pyprland
-      - wl-clip-persist
       - waybar-updates
 
       # Hooks
