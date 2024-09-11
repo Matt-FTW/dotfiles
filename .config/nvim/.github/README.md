@@ -38,6 +38,28 @@ To install an extra is just as easy as opening neovim, typing `:LazyExtras`, and
 
 If you see any errors with a custom extra, be sure to report it by creating a [new issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 
+### :package: Neovim Version Manager
+
+If you wanna use multiple instances of neovim and switch between them, check out [bob](https://github.com/MordechaiHadad/bob).
+
+Here is a quick start using the latest version as an example:
+
+```bash
+# Install the latest version
+bob install latest
+
+# Switch to the latest version
+bob use latest
+
+# Check installed versions
+bob ls
+
+# Uninstall the latest version
+bob uninstall latest
+```
+
+Check the [bob usage section](https://github.com/MordechaiHadad/bob?tab=readme-ov-file#-usage) for more information.
+
 # :camera: ‎ <samp>Gallery</samp>
 
 | **Dashboard**                        |
