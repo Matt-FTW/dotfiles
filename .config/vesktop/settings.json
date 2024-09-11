@@ -9,5 +9,8 @@
     "spellCheckLanguages": [
         "en-US",
         "en"
-    ]
+    ],
+    "audio": {
+        "workaround": true
+    }
 }
