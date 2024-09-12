@@ -75,7 +75,8 @@
     "plugins.extras.util.smart-splits",
     "plugins.extras.util.vscode",
     "plugins.extras.util.wakatime",
-    "plugins.extras.util.yadm"
+    "plugins.extras.util.yadm",
+    "plugins.extras.util.yazi"
   ],
   "news": {
     "NEWS.md": "6520"
