@@ -36,6 +36,9 @@ All the other configuration that you want to do, like assigning some new keymaps
 
 To install an extra is just as easy as opening neovim, typing `:LazyExtras`, and selecting any row from the menu that appears. To select one, hit the `x` key. And your done, be sure to close and open again neovim to see the changes.
 
+> [!NOTE]
+> There are some extras that have extended in the name. Those are based on the native [LazyVim extras](https://github.com/LazyVim/LazyVim/tree/main/lua/lazyvim/plugins/extras).
+
 If you see any errors with a custom extra, be sure to report it by creating a [new issue](https://github.com/Matt-FTW/dotfiles/issues/new/choose).
 
 ### :package: Neovim Version Manager
@@ -59,6 +62,26 @@ bob uninstall latest
 ```
 
 Check the [bob usage section](https://github.com/MordechaiHadad/bob?tab=readme-ov-file#-usage) for more information.
+
+### :package: Neovim Standalone Config
+
+This section is for those who only want to install the Neovim config instead of all the dotfiles or they want to try this config alongside theirs.
+
+To do this, first of all clone the repo and install the plugins.
+
+```bash
+git clone git@github.com:Matt-FTW/dotfiles ~/.config/Matt-FTW/dotfiles
+NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim --headless +"Lazy! sync" +qa
+```
+
+Finally to open neovim and try the configuration use this command:
+
+> [!TIP]
+> Add the command as an alias to your shell config if you want to use it in the future alongside your neovim config.
+
+```bash
+NVIM_APPNAME=Matt-FTW/dotfiles/.config/nvim nvim
+```
 
 # :camera: ‎ <samp>Gallery</samp>
 
