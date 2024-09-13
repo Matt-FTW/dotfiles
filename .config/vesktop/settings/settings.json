@@ -695,6 +695,9 @@
             "enabled": false
         },
         "VolumeBooster": {
+            "enabled": true
+        },
+        "AccountPanelServerProfile": {
             "enabled": false
         }
     },
@@ -708,6 +711,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1725531927896
+        "settingsSyncVersion": 1726176112315
     }
 }
