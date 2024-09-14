@@ -8,6 +8,7 @@ var library = (() => {
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
   var __getOwnPropNames = Object.getOwnPropertyNames;
   var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
   var __export = (target, all) => {
     for (var name in all)
       __defProp(target, name, { get: all[name], enumerable: true });
@@ -21,13 +22,17 @@ var library = (() => {
     return to;
   };
   var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __publicField = (obj, key, value) => {
+    __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+    return value;
+  };
 
   // src/extensions/folder_image_wrapper.ts
   var folder_image_wrapper_exports = {};
   __export(folder_image_wrapper_exports, {
     default: () => folder_image_wrapper_default
   });
-  var FolderImageWrapper = class extends EventTarget {
+  var _FolderImageWrapper = class extends EventTarget {
     _folderImages;
     constructor() {
       super();
@@ -54,6 +59,9 @@ var library = (() => {
       localStorage.setItem("library:folderImages", JSON.stringify(this._folderImages));
     }
   };
+  var FolderImageWrapper = _FolderImageWrapper;
+  __publicField(FolderImageWrapper, "INSTANCE", new _FolderImageWrapper());
+  window.FolderImageWrapper = FolderImageWrapper.INSTANCE;
   var folder_image_wrapper_default = FolderImageWrapper;
   return __toCommonJS(folder_image_wrapper_exports);
 })();

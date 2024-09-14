@@ -8,6 +8,7 @@ var library = (() => {
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
   var __getOwnPropNames = Object.getOwnPropertyNames;
   var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
   var __export = (target, all) => {
     for (var name in all)
       __defProp(target, name, { get: all[name], enumerable: true });
@@ -21,6 +22,10 @@ var library = (() => {
     return to;
   };
   var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var __publicField = (obj, key, value) => {
+    __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+    return value;
+  };
 
   // src/extensions/collections_wrapper.ts
   var collections_wrapper_exports = {};
@@ -77,7 +82,7 @@ var library = (() => {
   var v4_default = v4;
 
   // src/extensions/collections_wrapper.ts
-  var CollectionWrapper = class extends EventTarget {
+  var _CollectionsWrapper = class extends EventTarget {
     _collections;
     constructor() {
       super();
@@ -90,115 +95,189 @@ var library = (() => {
     getCollection(uri) {
       return this._collections.find((collection) => collection.uri === uri);
     }
-    async requestAlbums({ sortOrder, textFilter }) {
+    async getCollectionContents(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        throw new Error("Collection not found");
+      const items = this._collections.filter((collection2) => collection2.parentCollection === uri);
       const albums = await Spicetify.Platform.LibraryAPI.getContents({
         filters: ["0"],
-        sortOrder,
-        textFilter,
         offset: 0,
         limit: 9999
       });
-      return albums;
+      items.push(...albums.items.filter((album) => collection.items.includes(album.uri)));
+      return items;
     }
-    async getCollectionItems(props) {
-      const { collectionUri, textFilter, sortOrder, rootlist, limit = 9999, offset = 0 } = props;
-      let collectionItems = this._collections;
-      let albumItems = [];
-      let unfilteredLength = this._collections.length;
-      let openedCollection = "";
-      if (collectionUri) {
-        const collection = this.getCollection(collectionUri);
-        const res = await this.requestAlbums({ sortOrder, textFilter });
-        const collectionSet = new Set(collection.items);
-        const commonElements = res.items.filter((item) => collectionSet.has(item.uri));
-        const collections = this._collections.filter((collection2) => collection2.parentCollection === collectionUri);
-        openedCollection = collection.name;
-        collectionItems = collections;
-        albumItems = commonElements;
-        unfilteredLength = collection.totalLength;
-      }
+    async getContents(props) {
+      const { collectionUri, offset, limit, textFilter } = props;
+      let items = collectionUri ? await this.getCollectionContents(collectionUri) : this._collections;
+      const openedCollectionName = collectionUri ? this.getCollection(collectionUri)?.name : void 0;
       if (textFilter) {
-        let regex = new RegExp("\\b" + textFilter, "i");
-        collectionItems = collectionItems.filter((item) => {
-          return regex.test(item.name);
-        });
+        const regex = new RegExp(`\\b${textFilter}`, "i");
+        items = items.filter((collection) => regex.test(collection.name));
       }
-      if (rootlist && !collectionUri) {
-        const res = await this.requestAlbums({ sortOrder, textFilter });
-        albumItems = res.items;
-        if (!textFilter) {
-          const collectionSet = new Set(this._collections.map((collection) => collection.items).flat());
-          const uncommonElements = res.items.filter((item) => !collectionSet.has(item.uri));
-          collectionItems = this._collections.filter((collection) => !collection.parentCollection);
-          albumItems = uncommonElements;
-          unfilteredLength = this._collections.length + uncommonElements.length;
+      items = items.slice(offset, offset + limit);
+      return { items, totalLength: this._collections.length, offset, openedCollectionName };
+    }
+    async cleanCollections() {
+      for (const collection of this._collections) {
+        const boolArray = await Spicetify.Platform.LibraryAPI.contains(...collection.items);
+        if (boolArray.includes(false)) {
+          collection.items = collection.items.filter((_, i) => boolArray[i]);
+          this.saveCollections();
+          Spicetify.showNotification("Album removed from collection");
+          this.syncCollection(collection.uri);
         }
       }
-      if (offset > 0)
-        collectionItems = [];
-      return {
-        openedCollection,
-        items: [...collectionItems, ...albumItems.slice(offset, offset + limit)],
-        totalLength: albumItems.length + collectionItems.length,
-        unfilteredLength
-      };
+    }
+    async syncCollection(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      const { PlaylistAPI } = Spicetify.Platform;
+      if (!collection.syncedPlaylistUri)
+        return;
+      const playlist = await PlaylistAPI.getPlaylist(collection.syncedPlaylistUri);
+      const playlistTracks = playlist.contents.items.filter((t) => t.type === "track").map((t) => t.uri);
+      const collectionTracks = await this.getTracklist(uri);
+      const wanted = collectionTracks.filter((track) => !playlistTracks.includes(track));
+      const unwanted = playlistTracks.filter((track) => !collectionTracks.includes(track)).map((uri2) => ({ uri: uri2, uid: [] }));
+      if (wanted.length)
+        await PlaylistAPI.add(collection.syncedPlaylistUri, wanted, { before: "end" });
+      if (unwanted.length)
+        await PlaylistAPI.remove(collection.syncedPlaylistUri, unwanted);
+    }
+    unsyncCollection(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      collection.syncedPlaylistUri = void 0;
+      this.saveCollections();
+    }
+    async getTracklist(collectionUri) {
+      const collection = this.getCollection(collectionUri);
+      if (!collection)
+        return [];
+      return Promise.all(
+        collection.items.map(async (uri) => {
+          const album = await Spicetify.Platform.LibraryAPI.getAlbum(uri);
+          return album.items.map((t) => t.uri);
+        })
+      ).then((tracks) => tracks.flat());
+    }
+    async convertToPlaylist(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      const { Platform, showNotification } = Spicetify;
+      const { RootlistAPI, PlaylistAPI } = Platform;
+      if (collection.syncedPlaylistUri) {
+        showNotification("Synced Playlist already exists", true);
+        return;
+      }
+      try {
+        const playlistUri = await RootlistAPI.createPlaylist(collection.name, { before: "start" });
+        const items = await this.getTracklist(uri);
+        await PlaylistAPI.add(playlistUri, items, { before: "start" });
+        collection.syncedPlaylistUri = playlistUri;
+      } catch (error) {
+        console.error(error);
+        showNotification("Failed to create playlist", true);
+      }
+    }
+    async createCollectionFromDiscog(artistUri) {
+      const [raw, info] = await Promise.all([
+        Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistDiscographyAlbums, {
+          uri: artistUri,
+          offset: 0,
+          limit: 50
+        }),
+        Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistOverview, {
+          uri: artistUri,
+          locale: Spicetify.Locale.getLocale(),
+          includePrerelease: false
+        })
+      ]);
+      const items = raw?.data?.artistUnion.discography.albums?.items;
+      const name = info?.data?.artistUnion.profile.name;
+      const image = info?.data?.artistUnion.visuals.avatarImage?.sources?.[0]?.url;
+      if (!name || !items?.length) {
+        Spicetify.showNotification("Artist not found or has no albums");
+        return;
+      }
+      const collectionUri = this.createCollection(`${name} Albums`);
+      if (image)
+        this.setCollectionImage(collectionUri, image);
+      for (const album of items) {
+        this.addAlbumToCollection(collectionUri, album.releases.items[0].uri);
+      }
     }
     createCollection(name, parentCollection = "") {
-      const uri = v4_default();
-      const collection = {
+      const id = v4_default();
+      this._collections.push({
         type: "collection",
-        uri,
+        uri: id,
         name,
         items: [],
-        totalLength: 0,
-        imgUrl: "",
+        addedAt: new Date(),
+        lastPlayedAt: new Date(),
         parentCollection
-      };
-      this._collections.push(collection);
+      });
       this.saveCollections();
       Spicetify.showNotification("Collection created");
+      return id;
     }
     deleteCollection(uri) {
       this._collections = this._collections.filter((collection) => collection.uri !== uri);
       this.saveCollections();
       Spicetify.showNotification("Collection deleted");
     }
+    deleteCollectionAndAlbums(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      for (const album of collection.items) {
+        Spicetify.Platform.LibraryAPI.remove({ uris: [album] });
+      }
+      this.deleteCollection(uri);
+    }
     async addAlbumToCollection(collectionUri, albumUri) {
       const collection = this.getCollection(collectionUri);
       if (!collection)
         return;
+      await Spicetify.Platform.LibraryAPI.add({ uris: [albumUri] });
       collection.items.push(albumUri);
-      collection.totalLength++;
       this.saveCollections();
       Spicetify.showNotification("Album added to collection");
+      this.syncCollection(collectionUri);
     }
     removeAlbumFromCollection(collectionUri, albumUri) {
       const collection = this.getCollection(collectionUri);
       if (!collection)
         return;
       collection.items = collection.items.filter((item) => item !== albumUri);
-      collection.totalLength--;
       this.saveCollections();
       Spicetify.showNotification("Album removed from collection");
+      this.syncCollection(collectionUri);
     }
     getCollectionsWithAlbum(albumUri) {
       return this._collections.filter((collection) => {
         return collection.items.some((item) => item === albumUri);
       });
     }
-    renameCollection(uri, newName) {
+    renameCollection(uri, name) {
       const collection = this.getCollection(uri);
       if (!collection)
         return;
-      collection.name = newName;
+      collection.name = name;
       this.saveCollections();
       Spicetify.showNotification("Collection renamed");
     }
-    setCollectionImage(uri, imgUrl) {
+    setCollectionImage(uri, url) {
       const collection = this.getCollection(uri);
       if (!collection)
         return;
-      collection.imgUrl = imgUrl;
+      collection.image = url;
       this.saveCollections();
       Spicetify.showNotification("Collection image set");
     }
@@ -206,12 +285,15 @@ var library = (() => {
       const collection = this.getCollection(uri);
       if (!collection)
         return;
-      collection.imgUrl = "";
+      collection.image = void 0;
       this.saveCollections();
       Spicetify.showNotification("Collection image removed");
     }
   };
-  var collections_wrapper_default = CollectionWrapper;
+  var CollectionsWrapper = _CollectionsWrapper;
+  __publicField(CollectionsWrapper, "INSTANCE", new _CollectionsWrapper());
+  window.CollectionsWrapper = CollectionsWrapper.INSTANCE;
+  var collections_wrapper_default = CollectionsWrapper;
   return __toCommonJS(collections_wrapper_exports);
 })();
 

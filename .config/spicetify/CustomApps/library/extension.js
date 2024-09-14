@@ -285,7 +285,9 @@ var library = (() => {
     });
   };
   var ToggleFiltersButton = () => {
-    const [direction, setDirection] = import_react3.default.useState(document.body.classList.contains("show-ylx-filters") ? "up" : "down");
+    const [direction, setDirection] = import_react3.default.useState(
+      document.body.classList.contains("show-ylx-filters") ? "up" : "down"
+    );
     const { ButtonTertiary } = Spicetify.ReactComponent;
     const toggleDirection = () => {
       if (direction === "down") {
@@ -332,31 +334,207 @@ var library = (() => {
   };
   var collapse_button_default = CollapseButton;
 
-  // src/components/expand_button.tsx
+  // src/components/album_menu_item.tsx
+  var import_react8 = __toESM(require_react());
+
+  // src/components/leading_icon.tsx
   var import_react5 = __toESM(require_react());
-  var expandLibrary = () => {
-    Spicetify.Platform.LocalStorageAPI.setItem("ylx-sidebar-state", 0);
-  };
-  var ExpandIcon = () => {
-    const { IconComponent } = Spicetify.ReactComponent;
-    return /* @__PURE__ */ import_react5.default.createElement(IconComponent, {
+  var LeadingIcon = ({ path }) => {
+    return /* @__PURE__ */ import_react5.default.createElement(Spicetify.ReactComponent.IconComponent, {
       semanticColor: "textSubdued",
       dangerouslySetInnerHTML: {
-        __html: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" ><path d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z"></path></svg>'
+        __html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">${path}</svg>`
       },
       iconSize: 16
     });
   };
-  var ExpandButton = () => {
-    const { ButtonTertiary } = Spicetify.ReactComponent;
-    return /* @__PURE__ */ import_react5.default.createElement(ButtonTertiary, {
-      buttonSize: "sm",
-      "aria-label": "Show Filters",
-      iconOnly: ExpandIcon,
-      onClick: expandLibrary
+  var leading_icon_default = LeadingIcon;
+
+  // src/components/text_input_dialog.tsx
+  var import_react6 = __toESM(require_react());
+  var TextInputDialog = (props) => {
+    const { def, placeholder, onSave } = props;
+    const [value, setValue] = import_react6.default.useState(def || "");
+    const onSubmit = (e) => {
+      e.preventDefault();
+      Spicetify.PopupModal.hide();
+      onSave(value);
+    };
+    return /* @__PURE__ */ import_react6.default.createElement(import_react6.default.Fragment, null, /* @__PURE__ */ import_react6.default.createElement("form", {
+      className: "text-input-form",
+      onSubmit
+    }, /* @__PURE__ */ import_react6.default.createElement("label", {
+      className: "text-input-wrapper"
+    }, /* @__PURE__ */ import_react6.default.createElement("input", {
+      className: "text-input",
+      type: "text",
+      value,
+      placeholder,
+      onChange: (e) => setValue(e.target.value)
+    })), /* @__PURE__ */ import_react6.default.createElement("button", {
+      type: "submit",
+      "data-encore-id": "buttonPrimary",
+      className: "Button-sc-qlcn5g-0 Button-small-buttonPrimary"
+    }, /* @__PURE__ */ import_react6.default.createElement("span", {
+      className: "ButtonInner-sc-14ud5tc-0 ButtonInner-small encore-bright-accent-set"
+    }, "Save"))));
+  };
+  var text_input_dialog_default = TextInputDialog;
+
+  // src/components/searchbar.tsx
+  var import_react7 = __toESM(require_react());
+  var SearchBar = (props) => {
+    const { setSearch, placeholder } = props;
+    const handleChange = (e) => {
+      setSearch(e.target.value);
+    };
+    return /* @__PURE__ */ import_react7.default.createElement("div", {
+      className: "x-filterBox-filterInputContainer x-filterBox-expandedOrHasFilter",
+      role: "search"
+    }, /* @__PURE__ */ import_react7.default.createElement("input", {
+      type: "text",
+      className: "x-filterBox-filterInput",
+      role: "searchbox",
+      maxLength: 80,
+      autoCorrect: "off",
+      autoCapitalize: "off",
+      spellCheck: "false",
+      placeholder: `Search ${placeholder}`,
+      "aria-hidden": "false",
+      onChange: handleChange
+    }), /* @__PURE__ */ import_react7.default.createElement("div", {
+      className: "x-filterBox-overlay"
+    }, /* @__PURE__ */ import_react7.default.createElement("span", {
+      className: "x-filterBox-searchIconContainer"
+    }, /* @__PURE__ */ import_react7.default.createElement("svg", {
+      "data-encore-id": "icon",
+      role: "img",
+      "aria-hidden": "true",
+      className: "Svg-sc-ytk21e-0 Svg-img-icon-small x-filterBox-searchIcon",
+      viewBox: "0 0 16 16"
+    }, /* @__PURE__ */ import_react7.default.createElement("path", {
+      d: "M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"
+    })))), /* @__PURE__ */ import_react7.default.createElement("button", {
+      className: "x-filterBox-expandButton",
+      "aria-hidden": "false",
+      "aria-label": "Search Playlists",
+      type: "button"
+    }, /* @__PURE__ */ import_react7.default.createElement("svg", {
+      "data-encore-id": "icon",
+      role: "img",
+      "aria-hidden": "true",
+      className: "Svg-sc-ytk21e-0 Svg-img-icon-small x-filterBox-searchIcon",
+      viewBox: "0 0 16 16"
+    }, /* @__PURE__ */ import_react7.default.createElement("path", {
+      d: "M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"
+    }))));
+  };
+  var searchbar_default = SearchBar;
+
+  // src/components/album_menu_item.tsx
+  var createCollection = () => {
+    const onSave = (value) => {
+      CollectionsWrapper.createCollection(value);
+    };
+    Spicetify.PopupModal.display({
+      title: "Create Collection",
+      content: /* @__PURE__ */ import_react8.default.createElement(text_input_dialog_default, {
+        def: "New Collection",
+        placeholder: "Collection Name",
+        onSave
+      })
     });
   };
-  var expand_button_default = ExpandButton;
+  var CollectionSearchMenu = () => {
+    const { MenuItem } = Spicetify.ReactComponent;
+    const { SVGIcons } = Spicetify;
+    const [textFilter, setTextFilter] = import_react8.default.useState("");
+    const [collections, setCollections] = import_react8.default.useState(null);
+    const context = import_react8.default.useContext(Spicetify.ContextMenuV2._context);
+    const uri = context?.props?.uri;
+    import_react8.default.useEffect(() => {
+      const fetchCollections = async () => {
+        setCollections(await CollectionsWrapper.getContents({ textFilter, limit: 20, offset: 0 }));
+      };
+      fetchCollections();
+    }, [textFilter]);
+    if (!collections)
+      return /* @__PURE__ */ import_react8.default.createElement(import_react8.default.Fragment, null);
+    const addToCollection = (collectionUri) => {
+      CollectionsWrapper.addAlbumToCollection(collectionUri, uri);
+    };
+    const activeCollections = CollectionsWrapper.getCollectionsWithAlbum(uri);
+    const hasCollections = activeCollections.length > 0;
+    const removeFromCollections = () => {
+      for (const collection of activeCollections) {
+        CollectionsWrapper.removeAlbumFromCollection(collection.uri, uri);
+      }
+    };
+    const allCollectionsLength = collections.totalLength;
+    const menuItems = collections.items.map((collection, index) => {
+      return /* @__PURE__ */ import_react8.default.createElement(MenuItem, {
+        key: collection.uri,
+        onClick: () => {
+          addToCollection(collection.uri);
+        },
+        divider: index === 0 ? "before" : void 0
+      }, collection.name);
+    });
+    const menuLength = allCollectionsLength + (hasCollections ? 1 : 0);
+    return /* @__PURE__ */ import_react8.default.createElement("div", {
+      className: "main-contextMenu-filterPlaylistSearchContainer",
+      style: { "--context-menu-submenu-length": `${menuLength}` }
+    }, /* @__PURE__ */ import_react8.default.createElement("li", {
+      role: "presentation",
+      className: "main-contextMenu-filterPlaylistSearch"
+    }, /* @__PURE__ */ import_react8.default.createElement("div", {
+      role: "menuitem"
+    }, /* @__PURE__ */ import_react8.default.createElement(searchbar_default, {
+      setSearch: setTextFilter,
+      placeholder: "collections"
+    }))), /* @__PURE__ */ import_react8.default.createElement(MenuItem, {
+      key: "new-collection",
+      leadingIcon: /* @__PURE__ */ import_react8.default.createElement(leading_icon_default, {
+        path: SVGIcons.plus2px
+      }),
+      onClick: createCollection
+    }, "Create collection"), hasCollections && /* @__PURE__ */ import_react8.default.createElement(MenuItem, {
+      key: "remove-collection",
+      leadingIcon: /* @__PURE__ */ import_react8.default.createElement(leading_icon_default, {
+        path: SVGIcons.minus
+      }),
+      onClick: removeFromCollections
+    }, "Remove from all"), menuItems);
+  };
+  var AlbumMenuItem = () => {
+    const { MenuSubMenuItem } = Spicetify.ReactComponent;
+    const { SVGIcons } = Spicetify;
+    return /* @__PURE__ */ import_react8.default.createElement(MenuSubMenuItem, {
+      displayText: "Add to collection",
+      divider: "after",
+      leadingIcon: /* @__PURE__ */ import_react8.default.createElement(leading_icon_default, {
+        path: SVGIcons.plus2px
+      })
+    }, /* @__PURE__ */ import_react8.default.createElement(CollectionSearchMenu, null));
+  };
+  var album_menu_item_default = AlbumMenuItem;
+
+  // src/components/artist_menu_item.tsx
+  var import_react9 = __toESM(require_react());
+  var ArtistMenuItem = () => {
+    const { MenuItem } = Spicetify.ReactComponent;
+    const { SVGIcons } = Spicetify;
+    const context = import_react9.default.useContext(Spicetify.ContextMenuV2._context);
+    const uri = context?.props?.uri;
+    return /* @__PURE__ */ import_react9.default.createElement(MenuItem, {
+      divider: "after",
+      leadingIcon: /* @__PURE__ */ import_react9.default.createElement(leading_icon_default, {
+        path: SVGIcons.plus2px
+      }),
+      onClick: () => CollectionsWrapper.createCollectionFromDiscog(uri)
+    }, "Create Discog Collection");
+  };
+  var artist_menu_item_default = ArtistMenuItem;
 
   // ../node_modules/uuid/dist/esm-browser/rng.js
   var getRandomValues;
@@ -407,7 +585,7 @@ var library = (() => {
   var v4_default = v4;
 
   // src/extensions/collections_wrapper.ts
-  var CollectionWrapper = class extends EventTarget {
+  var _CollectionsWrapper = class extends EventTarget {
     _collections;
     constructor() {
       super();
@@ -420,115 +598,189 @@ var library = (() => {
     getCollection(uri) {
       return this._collections.find((collection) => collection.uri === uri);
     }
-    async requestAlbums({ sortOrder, textFilter }) {
+    async getCollectionContents(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        throw new Error("Collection not found");
+      const items = this._collections.filter((collection2) => collection2.parentCollection === uri);
       const albums = await Spicetify.Platform.LibraryAPI.getContents({
         filters: ["0"],
-        sortOrder,
-        textFilter,
         offset: 0,
         limit: 9999
       });
-      return albums;
+      items.push(...albums.items.filter((album) => collection.items.includes(album.uri)));
+      return items;
     }
-    async getCollectionItems(props) {
-      const { collectionUri, textFilter, sortOrder, rootlist, limit = 9999, offset = 0 } = props;
-      let collectionItems = this._collections;
-      let albumItems = [];
-      let unfilteredLength = this._collections.length;
-      let openedCollection = "";
-      if (collectionUri) {
-        const collection = this.getCollection(collectionUri);
-        const res = await this.requestAlbums({ sortOrder, textFilter });
-        const collectionSet = new Set(collection.items);
-        const commonElements = res.items.filter((item) => collectionSet.has(item.uri));
-        const collections = this._collections.filter((collection2) => collection2.parentCollection === collectionUri);
-        openedCollection = collection.name;
-        collectionItems = collections;
-        albumItems = commonElements;
-        unfilteredLength = collection.totalLength;
-      }
+    async getContents(props) {
+      const { collectionUri, offset, limit, textFilter } = props;
+      let items = collectionUri ? await this.getCollectionContents(collectionUri) : this._collections;
+      const openedCollectionName = collectionUri ? this.getCollection(collectionUri)?.name : void 0;
       if (textFilter) {
-        let regex = new RegExp("\\b" + textFilter, "i");
-        collectionItems = collectionItems.filter((item) => {
-          return regex.test(item.name);
-        });
+        const regex = new RegExp(`\\b${textFilter}`, "i");
+        items = items.filter((collection) => regex.test(collection.name));
       }
-      if (rootlist && !collectionUri) {
-        const res = await this.requestAlbums({ sortOrder, textFilter });
-        albumItems = res.items;
-        if (!textFilter) {
-          const collectionSet = new Set(this._collections.map((collection) => collection.items).flat());
-          const uncommonElements = res.items.filter((item) => !collectionSet.has(item.uri));
-          collectionItems = this._collections.filter((collection) => !collection.parentCollection);
-          albumItems = uncommonElements;
-          unfilteredLength = this._collections.length + uncommonElements.length;
+      items = items.slice(offset, offset + limit);
+      return { items, totalLength: this._collections.length, offset, openedCollectionName };
+    }
+    async cleanCollections() {
+      for (const collection of this._collections) {
+        const boolArray = await Spicetify.Platform.LibraryAPI.contains(...collection.items);
+        if (boolArray.includes(false)) {
+          collection.items = collection.items.filter((_, i) => boolArray[i]);
+          this.saveCollections();
+          Spicetify.showNotification("Album removed from collection");
+          this.syncCollection(collection.uri);
         }
       }
-      if (offset > 0)
-        collectionItems = [];
-      return {
-        openedCollection,
-        items: [...collectionItems, ...albumItems.slice(offset, offset + limit)],
-        totalLength: albumItems.length + collectionItems.length,
-        unfilteredLength
-      };
+    }
+    async syncCollection(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      const { PlaylistAPI } = Spicetify.Platform;
+      if (!collection.syncedPlaylistUri)
+        return;
+      const playlist = await PlaylistAPI.getPlaylist(collection.syncedPlaylistUri);
+      const playlistTracks = playlist.contents.items.filter((t) => t.type === "track").map((t) => t.uri);
+      const collectionTracks = await this.getTracklist(uri);
+      const wanted = collectionTracks.filter((track) => !playlistTracks.includes(track));
+      const unwanted = playlistTracks.filter((track) => !collectionTracks.includes(track)).map((uri2) => ({ uri: uri2, uid: [] }));
+      if (wanted.length)
+        await PlaylistAPI.add(collection.syncedPlaylistUri, wanted, { before: "end" });
+      if (unwanted.length)
+        await PlaylistAPI.remove(collection.syncedPlaylistUri, unwanted);
+    }
+    unsyncCollection(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      collection.syncedPlaylistUri = void 0;
+      this.saveCollections();
+    }
+    async getTracklist(collectionUri) {
+      const collection = this.getCollection(collectionUri);
+      if (!collection)
+        return [];
+      return Promise.all(
+        collection.items.map(async (uri) => {
+          const album = await Spicetify.Platform.LibraryAPI.getAlbum(uri);
+          return album.items.map((t) => t.uri);
+        })
+      ).then((tracks) => tracks.flat());
+    }
+    async convertToPlaylist(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      const { Platform, showNotification } = Spicetify;
+      const { RootlistAPI, PlaylistAPI } = Platform;
+      if (collection.syncedPlaylistUri) {
+        showNotification("Synced Playlist already exists", true);
+        return;
+      }
+      try {
+        const playlistUri = await RootlistAPI.createPlaylist(collection.name, { before: "start" });
+        const items = await this.getTracklist(uri);
+        await PlaylistAPI.add(playlistUri, items, { before: "start" });
+        collection.syncedPlaylistUri = playlistUri;
+      } catch (error) {
+        console.error(error);
+        showNotification("Failed to create playlist", true);
+      }
+    }
+    async createCollectionFromDiscog(artistUri) {
+      const [raw, info] = await Promise.all([
+        Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistDiscographyAlbums, {
+          uri: artistUri,
+          offset: 0,
+          limit: 50
+        }),
+        Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistOverview, {
+          uri: artistUri,
+          locale: Spicetify.Locale.getLocale(),
+          includePrerelease: false
+        })
+      ]);
+      const items = raw?.data?.artistUnion.discography.albums?.items;
+      const name = info?.data?.artistUnion.profile.name;
+      const image = info?.data?.artistUnion.visuals.avatarImage?.sources?.[0]?.url;
+      if (!name || !items?.length) {
+        Spicetify.showNotification("Artist not found or has no albums");
+        return;
+      }
+      const collectionUri = this.createCollection(`${name} Albums`);
+      if (image)
+        this.setCollectionImage(collectionUri, image);
+      for (const album of items) {
+        this.addAlbumToCollection(collectionUri, album.releases.items[0].uri);
+      }
     }
     createCollection(name, parentCollection = "") {
-      const uri = v4_default();
-      const collection = {
+      const id = v4_default();
+      this._collections.push({
         type: "collection",
-        uri,
+        uri: id,
         name,
         items: [],
-        totalLength: 0,
-        imgUrl: "",
+        addedAt: new Date(),
+        lastPlayedAt: new Date(),
         parentCollection
-      };
-      this._collections.push(collection);
+      });
       this.saveCollections();
       Spicetify.showNotification("Collection created");
+      return id;
     }
     deleteCollection(uri) {
       this._collections = this._collections.filter((collection) => collection.uri !== uri);
       this.saveCollections();
       Spicetify.showNotification("Collection deleted");
     }
+    deleteCollectionAndAlbums(uri) {
+      const collection = this.getCollection(uri);
+      if (!collection)
+        return;
+      for (const album of collection.items) {
+        Spicetify.Platform.LibraryAPI.remove({ uris: [album] });
+      }
+      this.deleteCollection(uri);
+    }
     async addAlbumToCollection(collectionUri, albumUri) {
       const collection = this.getCollection(collectionUri);
       if (!collection)
         return;
+      await Spicetify.Platform.LibraryAPI.add({ uris: [albumUri] });
       collection.items.push(albumUri);
-      collection.totalLength++;
       this.saveCollections();
       Spicetify.showNotification("Album added to collection");
+      this.syncCollection(collectionUri);
     }
     removeAlbumFromCollection(collectionUri, albumUri) {
       const collection = this.getCollection(collectionUri);
       if (!collection)
         return;
       collection.items = collection.items.filter((item) => item !== albumUri);
-      collection.totalLength--;
       this.saveCollections();
       Spicetify.showNotification("Album removed from collection");
+      this.syncCollection(collectionUri);
     }
     getCollectionsWithAlbum(albumUri) {
       return this._collections.filter((collection) => {
         return collection.items.some((item) => item === albumUri);
       });
     }
-    renameCollection(uri, newName) {
+    renameCollection(uri, name) {
       const collection = this.getCollection(uri);
       if (!collection)
         return;
-      collection.name = newName;
+      collection.name = name;
       this.saveCollections();
       Spicetify.showNotification("Collection renamed");
     }
-    setCollectionImage(uri, imgUrl) {
+    setCollectionImage(uri, url) {
       const collection = this.getCollection(uri);
       if (!collection)
         return;
-      collection.imgUrl = imgUrl;
+      collection.image = url;
       this.saveCollections();
       Spicetify.showNotification("Collection image set");
     }
@@ -536,201 +788,17 @@ var library = (() => {
       const collection = this.getCollection(uri);
       if (!collection)
         return;
-      collection.imgUrl = "";
+      collection.image = void 0;
       this.saveCollections();
       Spicetify.showNotification("Collection image removed");
     }
   };
-  var collections_wrapper_default = CollectionWrapper;
-
-  // src/components/album_menu_item.tsx
-  var import_react9 = __toESM(require_react());
-
-  // src/components/leading_icon.tsx
-  var import_react6 = __toESM(require_react());
-  var LeadingIcon = ({ path }) => {
-    return /* @__PURE__ */ import_react6.default.createElement(Spicetify.ReactComponent.IconComponent, {
-      semanticColor: "textSubdued",
-      dangerouslySetInnerHTML: {
-        __html: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">${path}</svg>`
-      },
-      iconSize: 16
-    });
-  };
-  var leading_icon_default = LeadingIcon;
-
-  // src/components/text_input_dialog.tsx
-  var import_react7 = __toESM(require_react());
-  var TextInputDialog = (props) => {
-    const { ButtonPrimary } = Spicetify.ReactComponent;
-    const { def, placeholder, onSave } = props;
-    const [value, setValue] = import_react7.default.useState(def);
-    const onSubmit = (e) => {
-      e.preventDefault();
-      Spicetify.PopupModal.hide();
-      onSave(value);
-    };
-    return /* @__PURE__ */ import_react7.default.createElement(import_react7.default.Fragment, null, /* @__PURE__ */ import_react7.default.createElement("form", {
-      className: "text-input-form",
-      onSubmit
-    }, /* @__PURE__ */ import_react7.default.createElement("label", {
-      className: "text-input-wrapper"
-    }, /* @__PURE__ */ import_react7.default.createElement("input", {
-      className: "text-input",
-      type: "text",
-      value,
-      placeholder,
-      onChange: (e) => setValue(e.target.value)
-    })), /* @__PURE__ */ import_react7.default.createElement("button", {
-      type: "submit",
-      "data-encore-id": "buttonPrimary",
-      className: "Button-sc-qlcn5g-0 Button-small-buttonPrimary"
-    }, /* @__PURE__ */ import_react7.default.createElement("span", {
-      className: "ButtonInner-sc-14ud5tc-0 ButtonInner-small encore-bright-accent-set"
-    }, "Save"))));
-  };
-  var text_input_dialog_default = TextInputDialog;
-
-  // src/components/searchbar.tsx
-  var import_react8 = __toESM(require_react());
-  var SearchBar = (props) => {
-    const { setSearch, placeholder } = props;
-    const handleChange = (e) => {
-      setSearch(e.target.value);
-    };
-    return /* @__PURE__ */ import_react8.default.createElement("div", {
-      className: "x-filterBox-filterInputContainer x-filterBox-expandedOrHasFilter",
-      role: "search"
-    }, /* @__PURE__ */ import_react8.default.createElement("input", {
-      type: "text",
-      className: "x-filterBox-filterInput",
-      role: "searchbox",
-      maxLength: 80,
-      autoCorrect: "off",
-      autoCapitalize: "off",
-      spellCheck: "false",
-      placeholder: `Search ${placeholder}`,
-      "aria-hidden": "false",
-      onChange: handleChange
-    }), /* @__PURE__ */ import_react8.default.createElement("div", {
-      className: "x-filterBox-overlay"
-    }, /* @__PURE__ */ import_react8.default.createElement("span", {
-      className: "x-filterBox-searchIconContainer"
-    }, /* @__PURE__ */ import_react8.default.createElement("svg", {
-      "data-encore-id": "icon",
-      role: "img",
-      "aria-hidden": "true",
-      className: "Svg-sc-ytk21e-0 Svg-img-icon-small x-filterBox-searchIcon",
-      viewBox: "0 0 16 16"
-    }, /* @__PURE__ */ import_react8.default.createElement("path", {
-      d: "M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"
-    })))), /* @__PURE__ */ import_react8.default.createElement("button", {
-      className: "x-filterBox-expandButton",
-      "aria-hidden": "false",
-      "aria-label": "Search Playlists"
-    }, /* @__PURE__ */ import_react8.default.createElement("svg", {
-      "data-encore-id": "icon",
-      role: "img",
-      "aria-hidden": "true",
-      className: "Svg-sc-ytk21e-0 Svg-img-icon-small x-filterBox-searchIcon",
-      viewBox: "0 0 16 16"
-    }, /* @__PURE__ */ import_react8.default.createElement("path", {
-      d: "M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"
-    }))));
-  };
-  var searchbar_default = SearchBar;
-
-  // src/components/album_menu_item.tsx
-  var createCollection = () => {
-    const onSave = (value) => {
-      SpicetifyLibrary.CollectionWrapper.createCollection(value);
-    };
-    Spicetify.PopupModal.display({
-      title: "Create Collection",
-      content: /* @__PURE__ */ import_react9.default.createElement(text_input_dialog_default, {
-        def: "New Collection",
-        placeholder: "Collection Name",
-        onSave
-      })
-    });
-  };
-  var CollectionSearchMenu = () => {
-    const { MenuItem } = Spicetify.ReactComponent;
-    const { SVGIcons } = Spicetify;
-    const [textFilter, setTextFilter] = import_react9.default.useState("");
-    const [collections, setCollections] = import_react9.default.useState(null);
-    const context = import_react9.default.useContext(Spicetify.ContextMenuV2._context);
-    const uri = context?.props?.uri;
-    import_react9.default.useEffect(() => {
-      const fetchCollections = async () => {
-        const res = await SpicetifyLibrary.CollectionWrapper.getCollectionItems({ textFilter });
-        setCollections(res);
-      };
-      fetchCollections();
-    }, [textFilter]);
-    if (!collections)
-      return /* @__PURE__ */ import_react9.default.createElement(import_react9.default.Fragment, null);
-    const addToCollection = (collectionUri) => {
-      SpicetifyLibrary.CollectionWrapper.addAlbumToCollection(collectionUri, uri);
-    };
-    const activeCollections = SpicetifyLibrary.CollectionWrapper.getCollectionsWithAlbum(uri);
-    const hasCollections = activeCollections.length > 0;
-    const removeFromCollections = () => {
-      activeCollections.forEach((collection) => {
-        SpicetifyLibrary.CollectionWrapper.removeAlbumFromCollection(collection.uri, uri);
-      });
-    };
-    const allCollectionsLength = collections.unfilteredLength;
-    const menuItems = collections.items.map((collection, index) => {
-      return /* @__PURE__ */ import_react9.default.createElement(MenuItem, {
-        key: collection.uri,
-        onClick: () => {
-          addToCollection(collection.uri);
-        },
-        divider: index === 0 ? "before" : void 0
-      }, collection.name);
-    });
-    const menuLength = allCollectionsLength + (hasCollections ? 1 : 0);
-    return /* @__PURE__ */ import_react9.default.createElement("div", {
-      className: "main-contextMenu-filterPlaylistSearchContainer",
-      style: { "--context-menu-submenu-length": `${menuLength}` }
-    }, /* @__PURE__ */ import_react9.default.createElement("li", {
-      role: "presentation",
-      className: "main-contextMenu-filterPlaylistSearch"
-    }, /* @__PURE__ */ import_react9.default.createElement("div", {
-      role: "menuitem"
-    }, /* @__PURE__ */ import_react9.default.createElement(searchbar_default, {
-      setSearch: setTextFilter,
-      placeholder: "collections"
-    }))), /* @__PURE__ */ import_react9.default.createElement(MenuItem, {
-      key: "new-collection",
-      leadingIcon: /* @__PURE__ */ import_react9.default.createElement(leading_icon_default, {
-        path: SVGIcons["plus2px"]
-      }),
-      onClick: createCollection
-    }, "Create collection"), hasCollections && /* @__PURE__ */ import_react9.default.createElement(MenuItem, {
-      key: "remove-collection",
-      leadingIcon: /* @__PURE__ */ import_react9.default.createElement(leading_icon_default, {
-        path: SVGIcons["minus"]
-      }),
-      onClick: removeFromCollections
-    }, "Remove from all"), menuItems);
-  };
-  var AlbumMenuItem = () => {
-    const { MenuSubMenuItem } = Spicetify.ReactComponent;
-    const { SVGIcons } = Spicetify;
-    return /* @__PURE__ */ import_react9.default.createElement(MenuSubMenuItem, {
-      displayText: "Add to collection",
-      divider: "after",
-      leadingIcon: /* @__PURE__ */ import_react9.default.createElement(leading_icon_default, {
-        path: SVGIcons["plus2px"]
-      })
-    }, /* @__PURE__ */ import_react9.default.createElement(CollectionSearchMenu, null));
-  };
-  var album_menu_item_default = AlbumMenuItem;
+  var CollectionsWrapper2 = _CollectionsWrapper;
+  __publicField(CollectionsWrapper2, "INSTANCE", new _CollectionsWrapper());
+  window.CollectionsWrapper = CollectionsWrapper2.INSTANCE;
 
   // src/extensions/folder_image_wrapper.ts
-  var FolderImageWrapper = class extends EventTarget {
+  var _FolderImageWrapper = class extends EventTarget {
     _folderImages;
     constructor() {
       super();
@@ -757,7 +825,9 @@ var library = (() => {
       localStorage.setItem("library:folderImages", JSON.stringify(this._folderImages));
     }
   };
-  var folder_image_wrapper_default = FolderImageWrapper;
+  var FolderImageWrapper2 = _FolderImageWrapper;
+  __publicField(FolderImageWrapper2, "INSTANCE", new _FolderImageWrapper());
+  window.FolderImageWrapper = FolderImageWrapper2.INSTANCE;
 
   // src/extensions/extension.tsx
   var styleLink = document.createElement("link");
@@ -773,6 +843,7 @@ var library = (() => {
   };
   var FolderImage = ({ url }) => {
     return /* @__PURE__ */ import_react10.default.createElement("img", {
+      alt: "Folder Image",
       "aria-hidden": "true",
       draggable: "false",
       loading: "eager",
@@ -793,7 +864,7 @@ var library = (() => {
       d: "M1 4a2 2 0 0 1 2-2h5.155a3 3 0 0 1 2.598 1.5l.866 1.5H21a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7.155 0H3v16h18V7H10.464L9.021 4.5a1 1 0 0 0-.866-.5z"
     })));
   };
-  var SpicetifyLibrary2 = class {
+  var SpicetifyLibrary = class {
     ConfigWrapper = new config_wrapper_default(
       [
         {
@@ -812,16 +883,25 @@ var library = (() => {
           type: "toggle",
           def: false,
           callback: setSearchBarSize
-        }
+        },
+        {
+          name: "Playlists Page",
+          key: "show-playlists",
+          type: "toggle",
+          def: true,
+          sectionHeader: "Pages"
+        },
+        { name: "Albums Page", key: "show-albums", type: "toggle", def: true },
+        { name: "Collections Page", key: "show-collections", type: "toggle", def: true },
+        { name: "Artists Page", key: "show-artists", type: "toggle", def: true },
+        { name: "Shows Page", key: "show-shows", type: "toggle", def: true }
       ],
       "library"
     );
-    CollectionWrapper = new collections_wrapper_default();
-    FolderImageWrapper = new folder_image_wrapper_default();
   };
-  window.SpicetifyLibrary = new SpicetifyLibrary2();
+  window.SpicetifyLibrary = new SpicetifyLibrary();
   (function wait() {
-    const { LocalStorageAPI } = Spicetify?.Platform;
+    const { LocalStorageAPI } = Spicetify.Platform;
     if (!LocalStorageAPI) {
       setTimeout(wait, 100);
       return;
@@ -829,22 +909,23 @@ var library = (() => {
     main(LocalStorageAPI);
   })();
   function main(LocalStorageAPI) {
-    const isAlbum = (props) => {
-      return props.uri?.includes("album");
-    };
+    const isAlbum = (props) => props.uri?.includes("album");
+    const isArtist = (props) => props.uri?.includes("artist");
     Spicetify.ContextMenuV2.registerItem(/* @__PURE__ */ import_react10.default.createElement(album_menu_item_default, null), isAlbum);
+    Spicetify.ContextMenuV2.registerItem(/* @__PURE__ */ import_react10.default.createElement(artist_menu_item_default, null), isArtist);
+    Spicetify.Platform.LibraryAPI.getEvents()._emitter.addListener("update", () => CollectionsWrapper.cleanCollections());
     function injectFolderImages() {
       const rootlist = document.querySelector(".main-rootlist-wrapper > div:nth-child(2)");
       if (!rootlist)
         return setTimeout(injectFolderImages, 100);
       setTimeout(() => {
-        Array.from(rootlist.children).forEach((el) => {
-          const uri = el.querySelector(".main-yourLibraryX-listItemGroup")?.getAttribute("aria-labelledby")?.slice(14);
+        for (const el of Array.from(rootlist.children)) {
+          const uri = el.querySelector("[aria-labelledby]")?.getAttribute("aria-labelledby")?.slice(14);
           if (uri?.includes("folder")) {
             const imageBox = el.querySelector(".x-entityImage-imageContainer");
             if (!imageBox)
               return;
-            const imageUrl = window.SpicetifyLibrary.FolderImageWrapper.getFolderImage(uri);
+            const imageUrl = FolderImageWrapper.getFolderImage(uri);
             if (!imageUrl)
               import_react_dom.default.render(/* @__PURE__ */ import_react10.default.createElement(FolderPlaceholder, null), imageBox);
             else
@@ -852,17 +933,13 @@ var library = (() => {
                 url: imageUrl
               }), imageBox);
           }
-        });
+        }
       }, 500);
     }
     injectFolderImages();
-    window.SpicetifyLibrary.FolderImageWrapper.addEventListener("update", () => {
-      injectFolderImages();
-    });
+    FolderImageWrapper.addEventListener("update", injectFolderImages);
     function injectYLXButtons() {
-      const ylx_filter = document.querySelector(
-        ".main-yourLibraryX-libraryRootlist > .main-yourLibraryX-libraryFilter"
-      );
+      const ylx_filter = document.querySelector(".main-yourLibraryX-libraryRootlist > .main-yourLibraryX-libraryFilter");
       if (!ylx_filter) {
         return setTimeout(injectYLXButtons, 100);
       }
@@ -887,37 +964,17 @@ var library = (() => {
         collapseButton
       );
     }
-    function injectExpandButton() {
-      const sidebarHeader = document.querySelector("li.main-yourLibraryX-navItem[data-id='/library']");
-      if (!sidebarHeader) {
-        return setTimeout(injectExpandButton, 100);
-      }
-      const expandButton = document.createElement("span");
-      expandButton.classList.add("expand-button");
-      sidebarHeader.appendChild(expandButton);
-      import_react_dom.default.render(/* @__PURE__ */ import_react10.default.createElement(expand_button_default, null), expandButton);
-    }
-    function removeExpandButton() {
-      const expandButton = document.querySelector(".expand-button");
-      if (expandButton)
-        expandButton.remove();
-    }
     const state = LocalStorageAPI.getItem("ylx-sidebar-state");
-    if (state === 0) {
+    if (state === 0)
       injectYLXButtons();
-    } else if (state === 1) {
-      injectExpandButton();
-    }
     LocalStorageAPI.getEvents()._emitter.addListener("update", (e) => {
       const { key, value } = e.data;
       if (key === "ylx-sidebar-state" && value === 0) {
         injectFolderImages();
         injectYLXButtons();
-        removeExpandButton();
       }
       if (key === "ylx-sidebar-state" && value === 1) {
         injectFolderImages();
-        injectExpandButton();
       }
     });
   }
