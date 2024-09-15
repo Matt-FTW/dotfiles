@@ -217,20 +217,28 @@ Here is all the information about my setup:
 
 - **Base Packages**
 
-Lets start with the required base packages for the configuration to function.
+  - **System**
 
-```bash
-yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-        swww waybar waybar-updates rofi-wayland swaync swayosd-git playerctl \
-        wl-clipboard cliphist udiskie devify polkit-gnome \
-        pyprland qt5ct qt5-wayland qt6-wayland pavucontrol fastfetch \
-        fzf jq eza fd slurp grim satty vivid fish starship ripgrep bat \
-        catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato \
-        yazi nemo kitty zathura zathura-pdf-mupdf qimgv-light mpv
+    ```bash
+    yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
+            swww waybar waybar-updates rofi-wayland swaync swayosd-git \
+            wl-clipboard cliphist udiskie devify polkit-gnome playerctl \
+            pyprland grim slurp \
+    ```
 
-```
+  - **CLI/TUI**
 
-- **Graphics Drivers** (_Optional_)
+    ```bash
+    yay -Sy fastfetch fzf jq eza fd vivid fish starship ripgrep bat yazi
+    ```
+
+  - **GUI Apps**
+
+    ```bash
+    yay -Sy pavucontrol satty nemo zathura zathura-pdf-mupdf qimgv-light mpv
+    ```
+
+- **Graphics Drivers**
 
 > [!WARNING]
 > Skip this step if you already have the correct drivers for your graphics card.
@@ -250,6 +258,20 @@ yay -Sy nvidia nvidia-utils nvidia-settings opencl-nvidia lib32-nvidia-utils \
 # Intel (Open Source)
 yay -Sy xf86-video-intel vulkan-intel lib32-vulkan-intel vulkan-tools libva-intel-driver \
         lib32-libva-intel-driver mesa lib32-mesa mesa-vdpau lib32-mesa-vdpau
+```
+
+- **Color Theme**
+
+To install the color theme for GTK and QT apps use the following command:
+
+```bash
+yay -Sy catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato qt5ct qt5-wayland qt6-wayland
+```
+
+If you want to edit your GTK settings, install [nwg-look](https://github.com/nwg-piotr/nwg-look):
+
+```bash
+yay -Sy nwg-look
 ```
 
 - **Icon Theme**
@@ -287,31 +309,12 @@ After that, be sure to refresh the font cache:
 fc-cache -fv
 ```
 
-- **Audio Service** (_Optional_)
-
-> [!WARNING]
-> If you have Pipewire already setup on your system, you dont have to follow this step.
-
-Firstly, install this dependencies:
-
-```bash
-yay -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
-```
-
-Now enable pipewire and wireplumber systemd services:
-
-```bash
-systemctl --user enable --now pipewire wireplumber
-```
-
-And there you have it.
-
 ## :floppy_disk: Dotfiles Installation
 
-> [!WARNING]
-> Here we can take two routes. **CHOOSE ONE, NOT BOTH!**
+> [!CAUTION]
+> Here we can take two routes (Yadm or Git). **CHOOSE ONE, NOT BOTH!**
 
-### Yadm Method (**recommended**)
+- **Yadm Method** (_Recommended_)
 
 [Yadm](https://yadm.io/) is amazing. It lets you manage your dotfiles with git without the hassle of creating a git repo on your home directory as well as gitignoring a lot of files.
 
@@ -324,12 +327,12 @@ For now, we are going to install it the simple way without to many complications
 Firstly, **be sure to backup your existing config files**. Then, we are going to install yadm. You can do it using pacman with the following command:
 
 ```bash
-sudo pacman -S yadm
+yay -Sy yadm
 ```
 
 After that, its time to clone the dotfiles repo into your system using yadm.
 
-> [!NOTE]
+> [!IMPORTANT]
 > If any file in your local machine differs from the one in the remote repository, your local file will remain unmodified. You'll need to manually review and resolve any differences.
 
 ```bash
@@ -352,7 +355,7 @@ Then, be sure to push your changes to your remote!
 
 Now you can receive new updates from my repo and modify your custom one :sunglasses:
 
-### Git Method
+- **Git Method**
 
 Firstly, clone this repository (remember to have git installed).
 
@@ -387,7 +390,7 @@ For more information about Hyprland monitors and workspaces, [check the docs](ht
 
 Now, for the Waybar to appear you also need to change the output definition on [this file](../.config/waybar/config.jsonc).
 
-- **Change Default Applications**
+**Change Default Applications**
 
 To change the default applications by filetype, be sure to install [this app](https://github.com/magnus-ISU/selectdefaultapplication).
 
@@ -403,9 +406,31 @@ If you are going to use git, be sure to change the user definition as well as th
 
 - **Laptop Additions**
 
+  - **Automatic CPU Frequency** (_Recommended_)
+
+    This one is a must have for all laptops users, even for desktop pc users as well. Firstly, [install auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq):
+
+    ```bash
+    yay -Sy auto-cpufreq
+    ```
+
+    After that, install the daemon by using this command:
+
+    ```bash
+    sudo auto-cpufreq --install
+    ```
+
+    If that didn't work, enable the systemd unit:
+
+    ```bash
+    systemctl enable --now auto-cpufreq.service
+    ```
+
+    Now your good to go, check their documentation for more details on how to configure it. I personally use the default profile it comes with and I didn't had any issues.
+
   - **Bluetooth**
 
-    Lets start by installing bluez (bluetooth support) and overskride (GUI):
+    Lets start by installing bluez (Bluetooth support) and overskride (GUI):
 
     ```bash
     yay -Sy bluez overskride
@@ -460,6 +485,35 @@ To enable the keyring support, install the following packages:
 ```bash
 yay -Sy gnome-keyring libsecret
 ```
+
+- **Misc**
+
+  - **Bat**
+
+    Bat needs to rebuild the cache to load the themes. Make sure to run this command:
+
+    ```bash
+    bat cache --build
+    ```
+
+- **Audio Service** (_Optional_)
+
+> [!WARNING]
+> If you have Pipewire already setup on your system, you dont have to follow this step.
+
+Firstly, install this dependencies:
+
+```bash
+yay -Sy pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber alsa-utils
+```
+
+Now enable pipewire and wireplumber systemd services:
+
+```bash
+systemctl --user enable --now pipewire wireplumber
+```
+
+And there you have it.
 
 - **Specific Configs/Information** (_Optional_)
 
