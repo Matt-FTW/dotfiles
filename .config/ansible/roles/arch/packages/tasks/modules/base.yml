@@ -148,6 +148,7 @@
       - tgpt-bin
 
       # Tools
+      - auto-cpufreq
       - devify
       - upscayl-bin
       - downgrade

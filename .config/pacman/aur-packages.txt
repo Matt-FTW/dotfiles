@@ -1,4 +1,5 @@
 atlauncher-bin
+auto-cpufreq
 bottles
 brave-bin
 catppuccin-cursors-macchiato
