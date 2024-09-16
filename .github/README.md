@@ -446,10 +446,7 @@ If you are going to use git, be sure to change the user definition as well as th
 
   - **Brightness**
 
-    > [!NOTE]
-    > Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD).
-    > It was installed in the first steps, so you should be able to change it.
-    > If not, be sure to read [this part](https://github.com/ErikReider/>SwayOSD#brightness-control) on the SwayOSD documentation.
+    Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD). It was installed in the first steps, so you should be able to change it. If not, be sure to read [this part](https://github.com/ErikReider/>SwayOSD#brightness-control) on the SwayOSD documentation.
 
     If you wanna have automatic screen brightness, install [wluma](https://github.com/maximbaz/wluma).
 
