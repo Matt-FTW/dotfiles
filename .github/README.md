@@ -390,7 +390,7 @@ For more information about Hyprland monitors and workspaces, [check the docs](ht
 
 Now, for the Waybar to appear you also need to change the output definition on [this file](../.config/waybar/config.jsonc).
 
-**Change Default Applications**
+- **Change Default Applications**
 
 To change the default applications by filetype, be sure to install [this app](https://github.com/magnus-ISU/selectdefaultapplication).
 
@@ -423,7 +423,7 @@ If you are going to use git, be sure to change the user definition as well as th
     If that didn't work, enable the systemd unit:
 
     ```bash
-    systemctl enable --now auto-cpufreq.service
+    sudo systemctl enable --now auto-cpufreq.service
     ```
 
     Now your good to go, check their documentation for more details on how to configure it. I personally use the default profile it comes with and I didn't had any issues.
@@ -436,7 +436,7 @@ If you are going to use git, be sure to change the user definition as well as th
     yay -Sy bluez overskride
     ```
 
-    After installing the required packages, we have to start the Bluetooth service. With systemd is pretty straightforward:
+    After installing the required packages, we have to start the Bluetooth service:
 
     ```bash
     systemctl --user enable --now bluetooth.service
@@ -446,9 +446,12 @@ If you are going to use git, be sure to change the user definition as well as th
 
   - **Brightness**
 
-    Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD). It was installed in the first steps, so you should be able to change it. If not, be sure to read [this part](https://github.com/ErikReider/SwayOSD#brightness-control) on the SwayOSD documentation.
+    > [!NOTE]
+    > Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD).
+    > It was installed in the first steps, so you should be able to change it.
+    > If not, be sure to read [this part](https://github.com/ErikReider/>SwayOSD#brightness-control) on the SwayOSD documentation.
 
-    If you wanna have automatic screen brightness, install wluma.
+    If you wanna have automatic screen brightness, install [wluma](https://github.com/maximbaz/wluma).
 
     ```bash
     yay -Sy wluma
@@ -466,12 +469,6 @@ If you are going to use git, be sure to change the user definition as well as th
 
     ```bash
     yay -Sy iwgtk
-    ```
-
-    After that, enable the systemd unit just like with wluma.
-
-    ```bash
-    systemctl --user enable --now iwgtk.service
     ```
 
     To manage all the other network configurations, use [nm-connection-editor](https://gitlab.gnome.org/GNOME/network-manager-applet)
@@ -494,6 +491,14 @@ yay -Sy gnome-keyring libsecret
 
     ```bash
     bat cache --build
+    ```
+
+  - **SwayOSD**
+
+    If you want to have a caps-lock popup, enable the swayosd-libinput-backend service:
+
+    ```bash
+    sudo systemctl enable --now swayosd-libinput-backend.service
     ```
 
 - **Audio Service** (_Optional_)
