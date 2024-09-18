@@ -1,5 +1,5 @@
 {
-  "custom/music": {
+  "custom/media": {
     "format": "{icon} {}",
     "return-type": "json",
     "max-length": 100,
