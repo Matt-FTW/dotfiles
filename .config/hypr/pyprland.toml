@@ -1,5 +1,5 @@
 [pyprland]
-plugins = ["scratchpads", "expose", "magnify", "wallpapers"]
+plugins = ["scratchpads", "wallpapers"]
 
 [scratchpads.volume]
 command = "pavucontrol"
@@ -43,9 +43,20 @@ command = "kitty --class scratchpad-large topgrade -k --no-self-update"
 lazy = true
 
 [scratchpads.bluetooth]
-command = "blueman-manager"
+command = "overskride"
 animation = "fromRight"
-unfocus = "hide"
+margin = 20
+lazy = true
+
+[scratchpads.wifi]
+command = "iwgtk"
+animation = "fromRight"
+margin = 20
+lazy = true
+
+[scratchpads.network]
+command = "nm-connection-editor"
+animation = "fromRight"
 margin = 20
 lazy = true
 
