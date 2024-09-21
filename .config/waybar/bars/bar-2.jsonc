@@ -9,10 +9,12 @@
     "~/.config/waybar/modules/custom-notifications.jsonc",
     "~/.config/waybar/modules/hyprland-window.jsonc",
     "~/.config/waybar/modules/hyprland-workspaces.jsonc",
+    "~/.config/waybar/modules/network.jsonc",
   ],
   "modules-left": ["custom/arch", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
+    "network",
     "memory",
     "cpu",
     "temperature#cpu",

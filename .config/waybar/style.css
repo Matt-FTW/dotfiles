@@ -322,11 +322,7 @@ window#waybar.hidden {
 }
 
 #network {
-  color: @mantle;
-}
-
-#network {
-  color: @mantle;
+  color: @sky;
 }
 
 #network.disconnected {
@@ -335,7 +331,8 @@ window#waybar.hidden {
 }
 
 #network.linked {
-  color: @yellow;
+  background-color: @peach;
+  color: @mantle;
 }
 
 #clock.cl2 {
