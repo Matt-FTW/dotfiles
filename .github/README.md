@@ -221,8 +221,8 @@ Here is all the information about my setup:
 
     ```bash
     yay -Sy hyprland hyprlock hypridle xdg-desktop-portal-hyprland hyprpicker \
-            swww waybar waybar-updates rofi-wayland swaync swayosd-git \
-            wl-clipboard cliphist udiskie devify polkit-gnome playerctl \
+            swww waybar waybar-updates rofi-wayland swaync wl-clipboard cliphist \
+            swayosd-git brightnessctl udiskie devify polkit-gnome playerctl \
             pyprland grim slurp \
     ```
 
@@ -446,7 +446,7 @@ If you are going to use git, be sure to change the user definition as well as th
 
   - **Brightness**
 
-    Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD). It was installed in the first steps, so you should be able to change it. If not, be sure to read [this part](https://github.com/ErikReider/>SwayOSD#brightness-control) on the SwayOSD documentation.
+    Brightness control is integrated with [SwayOSD](https://github.com/ErikReider/SwayOSD) and [brightnessctl](https://github.com/Hummer12007/brightnessctl). Be sure to follow [this steps](https://github.com/ErikReider/>SwayOSD#brightness-control) on the SwayOSD documentation to be able to change the brightness.
 
     If you wanna have automatic screen brightness, install [wluma](https://github.com/maximbaz/wluma).
 
