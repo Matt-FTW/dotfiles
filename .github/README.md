@@ -480,23 +480,8 @@ To enable the keyring support, install the following packages:
 yay -Sy gnome-keyring libsecret
 ```
 
-- **Misc**
 
-  - **Bat**
 
-    Bat needs to rebuild the cache to load the themes. Make sure to run this command:
-
-    ```bash
-    bat cache --build
-    ```
-
-  - **SwayOSD**
-
-    If you want to have a caps-lock popup, enable the swayosd-libinput-backend service:
-
-    ```bash
-    sudo systemctl enable --now swayosd-libinput-backend.service
-    ```
 
 - **Audio Service** (_Optional_)
 
