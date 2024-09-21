@@ -468,7 +468,13 @@ If you are going to use git, be sure to change the user definition as well as th
     yay -Sy iwgtk
     ```
 
-    To manage all the other network configurations, use [nm-connection-editor](https://gitlab.gnome.org/GNOME/network-manager-applet)
+    Also, you have to enable the iwd service:
+
+    ```bash
+    sudo systemctl enable --now iwd.service
+    ```
+
+    To manage all the other network configurations, use something like [nm-connection-editor](https://gitlab.gnome.org/GNOME/network-manager-applet)
 
 - **Keyring Support**
 
