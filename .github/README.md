@@ -266,13 +266,7 @@ To install the color theme for GTK and QT apps use the following command:
 
 ```bash
 yay -Sy catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato \
-        qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5
-```
-
-If you want to edit your GTK settings, install [nwg-look](https://github.com/nwg-piotr/nwg-look):
-
-```bash
-yay -Sy nwg-look
+        qt5ct qt5-wayland qt6-wayland kvantum kvantum-qt5 nwg-look
 ```
 
 - **Icon Theme**
