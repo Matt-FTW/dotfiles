@@ -28,6 +28,7 @@
       - hypridle
       - wev
       - swaync
+      - satty
       - waybar
       - wl-clipboard
       - xdg-desktop-portal-hyprland
@@ -117,12 +118,11 @@
     name:
       # Browser
       - brave-bin
-      - floorp-bin
+      - zen-browser-avx0-bin
 
       # WM
       - swayosd-git
       - swww
-      - satty
       - hyprpicker
       - nwg-displays
       - nwg-look
