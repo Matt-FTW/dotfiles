@@ -5,6 +5,7 @@ brave-bin
 catppuccin-cursors-macchiato
 catppuccin-gtk-theme-macchiato
 cava
+cemu-bin
 check-broken-packages-pacman-hook-git
 devify
 downgrade
@@ -21,7 +22,7 @@ proton-ge-custom-bin
 pyprland
 qimgv-light
 reflector-pacman-hook-git
-satty
+ryujinx-bin
 spicetify-cli
 spotify
 swayosd-git
@@ -31,6 +32,7 @@ tidal-hifi-bin
 topgrade-bin
 trashy
 ttf-ms-win11-auto
+universal-android-debloater-bin
 upscayl-bin
 vesktop
 vscodium-bin

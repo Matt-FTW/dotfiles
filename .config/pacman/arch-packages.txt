@@ -15,6 +15,7 @@ cpio
 dnsmasq
 docker
 docker-compose
+dolphin-emu
 dua-cli
 easyeffects
 efibootmgr
@@ -98,6 +99,7 @@ rocm-opencl-sdk
 rocm-smi-lib
 rofi-wayland
 rustup
+satty
 scrcpy
 sd
 slurp
