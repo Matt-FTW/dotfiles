@@ -1,6 +1,6 @@
 {
   "cpu": {
-    "on-click": "kitty --class center-float-large btop",
+    "on-click": "pypr toggle btop",
     "format": "CPU: {usage}%",
     "tooltip": false,
     "interval": 2,
