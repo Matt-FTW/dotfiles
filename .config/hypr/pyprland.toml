@@ -30,8 +30,8 @@ lazy = true
 command = "kitty --class scratchpad-large btop"
 lazy = true
 
-[scratchpads.cava]
-command = "kitty --class scratchpad-mini cava"
+[scratchpads.nvtop]
+command = "kitty --class scratchpad-large nvtop"
 lazy = true
 
 [scratchpads.topgrade-system]
