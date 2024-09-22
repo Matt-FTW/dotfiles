@@ -86,7 +86,7 @@ The rice codename is **Artemis** 🏹, named after the Greek goddess of the hunt
 - **Text Editor**: [neovim](https://neovim.io/) :keyboard:
 - **App Launcher**: [rofi](https://davatorium.github.io/rofi/) :rocket:
 - **File Manager**: [yazi](https://yazi-rs.github.io/) / [nemo](https://community.linuxmint.com/software/view/nemo) :open_file_folder:
-- **Browser**: [Floorp](https://floorp.app/en) :globe_with_meridians:
+- **Browser**: [Zen-Browser](https://zen-browser.app) :globe_with_meridians:
 - **Notification Manager**: [swaync](https://github.com/ErikReider/SwayNotificationCenter) :bell:
 - **Colorscheme**: [Catppuccin](https://github.com/catppuccin/catppuccin) :art:
 
@@ -167,7 +167,7 @@ Here is all the information about my setup:
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
 | **Music Player**         | [Spotify](https://open.spotify.com/) (patched with [Spicetify](https://spicetify.app/)) [:gear:](../.config/spicetify/) |
 | **Fallback Text Editor** | [VSCodium](https://vscodium.com/) [:gear:](../.config/VSCodium/User/)                                                   |
-| **Web Browser**          | 💖 [Floorp](https://floorp.app/en/) [:gear:](../.config/browser/)                                                       |
+| **Web Browser**          | 💖 [Zen-Browser](https://zen-browser.app) [:gear:](../.config/browser/)                                                 |
 | **Messaging App**        | [Vesktop](https://github.com/Vencord/Vesktop) (Custom Discord Client) [:gear:](../.config/vesktop/)                     |
 | **Email Client**         | [Thunderbird](https://www.thunderbird.net/)                                                                             |
 | **PDF Viewer**           | [Zathura](https://pwmt.org/projects/zathura/) [:gear:](../.config/zathura/)                                             |

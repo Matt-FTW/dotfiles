@@ -8,7 +8,6 @@ cava
 check-broken-packages-pacman-hook-git
 devify
 downgrade
-floorp-bin
 gallery-dl
 heroic-games-launcher-bin
 hyprpicker
@@ -39,4 +38,4 @@ vscodium-bin-marketplace
 waybar-updates
 wttrbar
 yay
-zen-browser-bin
+zen-browser-avx2-bin

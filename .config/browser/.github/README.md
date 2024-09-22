@@ -18,11 +18,11 @@
 
 # :herb: ‎ <samp>About</samp>
 
-The browser I'm using right now is [Floorp](https://floorp.app). It is a fork of Firefox, which adds some functionality I really like such as:
+The browser I'm using right now is [Zen](https://zen-browser.app/). It is a fork of Firefox, which adds some functionality I really like such as:
 
 - 🚦 Vertical Tabs
-- 👉 Right Sidebar with Custom Actions
-- 🔒 Strong Privacy Options and Defaults
+- 👉 Split Views
+- 🔒 Strong Privacy Options and Defaults (Using [BetterFox](https://github.com/yokoffing/Betterfox))
 - 🔥 Fast as F\*ck
 - 🍿 And much more...
 
