@@ -3,7 +3,6 @@ return {
     "natecraddock/workspaces.nvim",
     event = "VeryLazy",
     cmd = {
-      "Telescope workspaces",
       "WorkspacesAdd",
       "WorkspacesAddDir",
       "WorkspacesRemove",
