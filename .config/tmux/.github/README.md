@@ -27,6 +27,7 @@ Now, here are the plugins I use alongside tmux:
 - [tmux-sessionx](https://github.com/omerxx/tmux-sessionx)
 - [tmux-fzf-url](https://github.com/wfxr/tmux-fzf-url)
 - [tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+- [tmux-floax](https://github.com/omerxx/tmux-floax)
 
 The plugins and their options are declared on [this file](../conf/plugins.conf).
 
