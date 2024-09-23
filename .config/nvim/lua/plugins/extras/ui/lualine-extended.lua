@@ -40,9 +40,11 @@ return {
       }),
     }
 
-    table.insert(opts.sections.lualine_x, 2, lsp)
-    table.insert(opts.sections.lualine_x, 2, formatter)
-    table.insert(opts.sections.lualine_x, 2, linter)
+    if vim.g.lualine_info_extras == true then
+      table.insert(opts.sections.lualine_x, 2, lsp)
+      table.insert(opts.sections.lualine_x, 2, formatter)
+      table.insert(opts.sections.lualine_x, 2, linter)
+    end
     opts.sections.lualine_y = { "progress" }
     opts.sections.lualine_z = {
       { "location", separator = "" },

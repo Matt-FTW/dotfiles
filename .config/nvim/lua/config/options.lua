@@ -4,7 +4,8 @@ local o = vim.opt
 -- Optimizations on startup
 vim.loader.enable()
 
--- LazyVim related options
+-- Personal Config and LazyVim global options
+vim.g.lualine_info_extras = false
 vim.g.lazyvim_statuscolumn.folds_open = true
 vim.g.lazyvim_statuscolumn.folds_githl = true
 vim.g.lazygit_config = false
