@@ -14,6 +14,10 @@ roots:
     path: ~/.config/heroic
   - store: steam
     path: ~/games/SteamLibrary
+  - store: other
+    path: ~/.local/share/dolphin-emu
+  - store: other
+    path: ~/.config/Ryujinx
 redirects: []
 backup:
   path: /backups/gamesaves
