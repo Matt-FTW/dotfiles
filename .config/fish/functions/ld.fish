@@ -1,3 +1,7 @@
 function ld --wraps=lazydocker --description 'alias ld=lazydocker'
-    lazydocker $argv
+    if type -f lazydocker &>/dev/null
+        lazydocker $argv
+    else
+        missing_package lazydocker
+    end
 end

@@ -1,4 +1,3 @@
 function s --wraps=sudo --description 'alias s=sudo'
-  sudo $argv
-        
+    sudo $argv
 end

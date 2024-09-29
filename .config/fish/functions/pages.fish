@@ -1,3 +1,7 @@
 function pages --wraps=navi --description 'alias pages=navi'
-    navi $argv
+    if type -f navi &>/dev/null
+        navi $argv
+    else
+        missing_package navi
+    end
 end

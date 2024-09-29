@@ -1,3 +1,7 @@
 function disks --wraps=duf --description 'alias disks=duf'
-    duf $argv
+    if type -f duf &>/dev/null
+        duf $argv
+    else
+        missing_package duf
+    end
 end

@@ -1,3 +1,7 @@
 function vcl --wraps='nvim --clean' --description 'alias vcl=nvim --clean'
-    nvim --clean $argv
+    if type -f nvim &>/dev/null
+        nvim --clean $argv
+    else
+        missing_package nvim
+    end
 end

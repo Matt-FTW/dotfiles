@@ -1,3 +1,8 @@
 function pse --wraps=pacseek --description 'alias pse=pacseek'
-    pacseek $argv
+    if type -f pacseek &>/dev/null
+        pacseek $argv
+    else
+        missing_package pacseek
+    end
+
 end

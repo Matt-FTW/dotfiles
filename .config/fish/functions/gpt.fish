@@ -1,3 +1,7 @@
 function gpt --wraps='tgpt -i' --description 'alias gpt=tgpt -i'
-    tgpt $argv
+    if type -f tgpt &>/dev/null
+        tgpt $argv
+    else
+        missing_package tgpt
+    end
 end

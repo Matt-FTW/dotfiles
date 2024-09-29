@@ -1,3 +1,7 @@
 function v --wraps=nvim --description 'alias v=nvim'
-    nvim $argv
+    if type -f nvim &>/dev/null
+        nvim $argv
+    else
+        missing_package nvim
+    end
 end
