@@ -395,6 +395,17 @@ yay -Sy selectdefaultapplication-fork-git
 
 If you wanna change the default apps used in the Hyprland bindings, change the variables over on [this file](../.config/hypr/configs/default_apps.conf).
 
+- **Default Editor**
+
+The default editor is Neovim, but you can change it to whatever editor you want. You only need to edit the [fish variables file](../.config/fish/user_variables.fish), and find where the EDITOR variable is defined.
+
+Here's and example on how to change it to use VSCode.
+
+```fish
+# set -xg EDITOR nvim
+set -xg EDITOR code
+```
+
 - **Git Changes**
 
 If you are going to use git, be sure to change the user definition as well as the credentials over on the [gitconfig file](../.config/git/config).
