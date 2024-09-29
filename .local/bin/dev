@@ -59,6 +59,14 @@ handle_kitty() {
   $eza
 }
 
+handle_editor() {
+  if [[ "$EDITOR" == "nvim" || "$EDITOR" == "vim" ]]; then
+    echo "terminal"
+  elif [[ "$EDITOR" == "code" || "$EDITOR" == "codium" ]]; then
+    echo "gui"
+  fi
+}
+
 selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' \
   --header='CTRL-P: Projects / CTRL-Z: Zoxide' \
   --bind "ctrl-p:reload($projects_command)" \
@@ -68,13 +76,18 @@ selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' 
 tab_title=$(basename "$selected_dir")
 
 if [[ -n "$selected_dir" ]]; then
-  if command -v tmux &>/dev/null; then
-    if command -v tmuxp &>/dev/null; then
-      handle_tmuxp
-    else
-      handle_tmux
+  editor_type=$(handle_editor)
+  if [[ $editor_type == "terminal" ]]; then
+    if command -v tmux &>/dev/null; then
+      if command -v tmuxp &>/dev/null; then
+        handle_tmuxp
+      else
+        handle_tmux
+      fi
+    elif [[ "$TERM" == "xterm-kitty" ]]; then
+      handle_kitty
     fi
-  elif [[ "$TERM" == "xterm-kitty" ]]; then
-    handle_kitty
+  else
+    $EDITOR -r "$selected_dir"
   fi
 fi

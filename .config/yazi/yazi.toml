@@ -17,6 +17,7 @@ folder = [
 ]
 
 text = [
+  { run = '$EDITOR "$@"', block = true, desc = "$EDITOR", for = "linux" },
   { run = 'nvim "$@"', block = true, desc = "neovim", for = "linux" },
   { run = 'kitty --detach nvim "$@"', block = true, desc = "neovim (detached)", for = "linux" },
   { run = 'codium  "$@"', orphan = true, desc = "vscodium", for = "linux" },
