@@ -1,3 +1,7 @@
 function i --wraps='yay -S ' --description 'alias i=yay -S '
-    yay -S $argv
+    if type -f yay &>/dev/null
+        yay -Sy $argv
+    else
+        pacman -Sy $argv
+    end
 end

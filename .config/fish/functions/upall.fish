@@ -1,3 +1,7 @@
 function upall --wraps=topgrade --description 'alias upall=topgrade'
-    topgrade $argv
+    if type -f topgrade
+        topgrade $argv
+    else
+        echo "topgrade not found"
+    end
 end
