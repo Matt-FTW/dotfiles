@@ -25,14 +25,14 @@ table.insert(keys, { "<C-A-h>", "<cmd>Grapple cycle backward<CR>", desc = "Prev 
 return {
   {
     "cbochs/grapple.nvim",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-      optional = true,
-    },
     cmd = { "Grapple" },
     keys = keys,
     config = function()
-      require("grapple").setup()
+      require("grapple").setup({
+        win_opts = {
+          footer = "",
+        },
+      })
       LazyVim.on_load("telescope.nvim", function()
         require("telescope").load_extension("grapple")
       end)
