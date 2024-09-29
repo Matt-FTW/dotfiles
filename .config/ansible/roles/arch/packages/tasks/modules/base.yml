@@ -26,6 +26,7 @@
       - hyprland
       - hyprlock
       - hypridle
+      - hyprpicker
       - wev
       - swaync
       - satty
@@ -123,7 +124,6 @@
       # WM
       - swayosd-git
       - swww
-      - hyprpicker
       - nwg-displays
       - nwg-look
       - pyprland
