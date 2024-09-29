@@ -39,6 +39,12 @@ In the case of the keybindings, [here they are](../conf/binds.conf).
 
 ### :package: Plugins Installation
 
+First, you need to install [tpm](https://github.com/tmux-plugins/tpm), the tmux plugin manager. Use this command to do so:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
+
 Once you enter tmux, hit `prefix + I` to install all the plugins. And that's it.
 
 # :camera: ‎ <samp>Gallery</samp>
