@@ -14,9 +14,6 @@ return {
     },
     dependencies = {
       "MeanderingProgrammer/render-markdown.nvim",
-      opts = {
-        file_types = { "markdown", "norg", "rmd", "org", "Avante" },
-      },
       ft = { "markdown", "norg", "rmd", "org", "Avante" },
     },
   },
