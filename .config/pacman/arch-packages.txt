@@ -74,9 +74,7 @@ nemo-fileroller
 nemo-image-converter
 networkmanager
 nm-connection-editor
-nodejs
 noto-fonts-cjk
-npm
 nvtop
 nwg-look
 obs-studio
@@ -137,7 +135,6 @@ xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils
 yadm
-yarn
 yazi
 zathura
 zathura-pdf-mupdf

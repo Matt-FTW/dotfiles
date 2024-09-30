@@ -1,6 +1,8 @@
 [tools]
 usage = "latest"
 bun = "latest"
+"npm:five-server" = "latest"
+node = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
