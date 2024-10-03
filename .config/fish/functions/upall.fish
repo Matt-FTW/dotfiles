@@ -1,7 +1,7 @@
 function upall --wraps=topgrade --description 'alias upall=topgrade'
-    if type -f topgrade
-        topgrade $argv
+    if type -f topgrade &>/dev/null
+        topgrade -k $argv
     else
-        echo "topgrade not found"
+        missing_package topgrade
     end
 end
