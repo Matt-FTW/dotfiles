@@ -36,6 +36,7 @@ set -xg NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
 set -xg GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
 set -xg W3M_DIR $XDG_DATA_HOME/w3m
 set -xg DOTNET_CLI_HOME $XDG_DATA_HOME/dotnet
+set -xg PNPM_HOME $XDG_DATA_HOME/pnpm
 
 # Path
 fish_add_path $XDG_BIN_HOME
@@ -56,6 +57,7 @@ fish_add_path $XDG_DATA_HOME/bob/nvim-bin
 fish_add_path $XDG_DATA_HOME/npm/bin
 fish_add_path $XDG_DATA_HOME/nvim/mason/bin
 fish_add_path $HOME/.yarn/bin
+fish_add_path $XDG_DATA_HOME/pnpm
 
 # Editor
 set -xg EDITOR nvim
