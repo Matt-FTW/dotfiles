@@ -35,11 +35,11 @@ command = "kitty --class scratchpad-large nvtop"
 lazy = true
 
 [scratchpads.topgrade-system]
-command = "kitty --class scratchpad-large topgrade -k --only system"
+command = "kitty --class scratchpad-large fish -c 'up'"
 lazy = true
 
 [scratchpads.topgrade-all]
-command = "kitty --class scratchpad-large topgrade -k --no-self-update"
+command = "kitty --class scratchpad-large fish -c 'upall'"
 lazy = true
 
 [scratchpads.bluetooth]
