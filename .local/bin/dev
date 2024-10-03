@@ -73,7 +73,9 @@ handle_editor() {
 }
 
 zoxide_score() {
-  zoxide add "$selected_dir"
+  if command -v zoxide &>/dev/null; then
+    zoxide add "$selected_dir"
+  fi
 }
 
 selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' \
