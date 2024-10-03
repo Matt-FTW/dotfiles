@@ -2,7 +2,7 @@
 
 # Constants
 gfetch="gfetch -d churn contributors --no-color-palette --no-title"
-eza="eza --header --icons --all --color=always --group-directories-first --hyperlink"
+ls="eza --header --icons --all --color=always --group-directories-first --hyperlink"
 projects_dir="$HOME/dev"
 projects_command="find $projects_dir -mindepth 2 -maxdepth 2 -type d"
 fzf_command="fzf --height=100%"
@@ -19,9 +19,10 @@ yaml_config() {
 tmuxp_load() {
   if [[ -n "$TMUX" ]]; then
     tmuxp load -d "$selected_dir"
+    zoxide_score
   else
     tmuxp load "$selected_dir"
-
+    zoxide_score
   fi
   tmux switch-client -t "$tab_title"
 }
@@ -38,6 +39,8 @@ handle_tmuxp() {
       if [[ -n "$yaml_file" ]]; then
         yaml_config "$XDG_CONFIG_HOME/tmuxp/$yaml_file.yaml" "$selected_dir"
         tmuxp_load
+      else
+        handle_tmux
       fi
     fi
   fi
@@ -50,13 +53,15 @@ handle_tmux() {
   else
     tmux new-session -s "$tab_title" -c "$selected_dir"
   fi
+  zoxide_score
 }
 
 handle_kitty() {
   kitty @ set-tab-title "$tab_title"
   cd "$selected_dir"
+  zoxide_score
   $gfetch
-  $eza
+  $ls
 }
 
 handle_editor() {
@@ -67,11 +72,15 @@ handle_editor() {
   fi
 }
 
+zoxide_score() {
+  zoxide add "$selected_dir"
+}
+
 selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' \
   --header='CTRL-P: Projects / CTRL-Z: Zoxide' \
   --bind "ctrl-p:reload($projects_command)" \
   --bind "ctrl-z:reload(zoxide query -l)" \
-  --preview "$gfetch {} 2>&1 | grep -v 'Error: Could not find a git repository in' || true && $eza {} || $eza {}")
+  --preview "$gfetch {} 2>&1 | grep -v 'Error: Could not find a git repository in' || true && $ls {} || $ls {}")
 
 tab_title=$(basename "$selected_dir")
 
@@ -89,5 +98,6 @@ if [[ -n "$selected_dir" ]]; then
     fi
   else
     $EDITOR -r "$selected_dir"
+    zoxide_score
   fi
 fi
