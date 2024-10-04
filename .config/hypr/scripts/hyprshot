@@ -60,17 +60,22 @@ function send_notification() {
   local message=$([ $CLIPBOARD -eq 1 ] &&
     echo "Image copied to the clipboard" ||
     echo "Image saved in <i>${1}</i> and copied to the clipboard.")
-  action=$(notify-send -i "$1" --action "View Image" "Screenshot saved" \
+  action=$(notify-send -i "$1" --action="view=View" --action="edit=Edit" "Screenshot saved" \
     "${message}" \
     -t "$NOTIF_TIMEOUT" -i "${1}" -a Hyprshot)
 
-  if [ -n "$action" ]; then
+  case $action in
+  "view")
+    xdg-open "$1"
+    ;;
+  "edit")
     if command -v satty &>/dev/null; then
       satty -f "$1"
     else
-      xdg-open "$1"
+      notify-send -u critical "Cannot Edit Image" "Install Satty"
     fi
-  fi
+    ;;
+  esac
 }
 
 function trim() {
