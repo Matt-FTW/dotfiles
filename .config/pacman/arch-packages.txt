@@ -29,7 +29,6 @@ gamemode
 git-delta
 gnome-disk-utility
 gnome-keyring
-go
 greetd
 greetd-tuigreet
 grim

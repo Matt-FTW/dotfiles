@@ -7,6 +7,9 @@ pnpm = "latest"
 uv = "latest"
 cargo-binstall = "latest"
 age = "latest"
+deno = "latest"
+go = "latest"
+watchexec = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
@@ -44,4 +47,4 @@ experimental = true # enable experimental features
 
 # configure messages displayed when entering directories with config files
 status = { missing_tools = "if_other_versions_installed", show_env = false, show_tools = false }
-cargo_binstall = true
+cargo_binstall = true                                                                            # Install pre-compiled cargo packages
