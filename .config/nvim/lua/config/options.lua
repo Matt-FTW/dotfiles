@@ -5,10 +5,10 @@ local o = vim.opt
 vim.loader.enable()
 
 -- Personal Config and LazyVim global options
-vim.g.lualine_info_extras = false
-vim.g.lazyvim_statuscolumn.folds_open = true
-vim.g.lazyvim_statuscolumn.folds_githl = true
-vim.g.lazygit_config = false
+go.lualine_info_extras = false
+go.lazyvim_statuscolumn.folds_open = true
+go.lazyvim_statuscolumn.folds_githl = true
+go.lazygit_config = false
 
 -- Define leader key
 go.mapleader = " "
@@ -39,7 +39,7 @@ o.cmdheight = 0
 
 -- Enable spell checking
 o.spell = true
-o.spelllang = { "en" }
+o.spelllang:append("es")
 
 -- Backspacing and indentation when wrapping
 o.backspace = { "start", "eol", "indent" }
