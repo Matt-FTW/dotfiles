@@ -12,7 +12,7 @@
       "<span foreground='#89b4fa'>▇</span>",
       "<span foreground='#89b4fa'>█</span>",
     ],
-    "on-click": "pypr toggle cava",
+    "on-click": "kitty --class center-float-mini cava",
     "on-click-right": "qpwgraph",
     "on-click-middle": "easyeffects",
   },
