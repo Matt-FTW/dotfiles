@@ -67,8 +67,8 @@ First of all, check your active profile. To do so, type `about:profiles` in your
 **Be sure to change the path to your profile**.
 
 ```bash
-# Symlink the folder (Recommended)
-ln -s ~/.config/browser/chrome/ ~/.{browser}/{profileid}/chrome
+# Symlink the folder (Recommended, this way changing values on the original path alters the destination)
+ln -sf ~/.config/browser/chrome/ ~/.{browser}/{profileid}/chrome
 
 # Copy the folder
 cp -r ~/.config/browser/chrome/ ~/.{browser}/{profileid}/chrome
@@ -82,10 +82,14 @@ Tada! 🎉 You should now see your theme correctly installed.
 
 ### :package: user.js Installation
 
-Just like before, check your active profile. Now copy the user.js file from the configuration to the active profile folder.
+Just like before, check your active profile. Now symlink or copy the user.js file from the configuration to the active profile folder.
 
 ```bash
-cp ~/.config/browser/user.js ~/.{browser}/{profileid}/user.js
+# Symlink the folder (Recommended, this way changing values on the original path alters the destination)
+ln -sf ~/.config/browser/userjs/{browser}-user.js ~/.{browser}/{profileid}/user.js
+
+# Copy the file
+cp ~/.config/browser/userjs/{browser}-user.js ~/.{browser}/{profileid}/user.js
 ```
 
 As before, close all instances of your browser and you should be able to test your new user.js.
