@@ -81,10 +81,10 @@
 </tr>
 <tr>
   <td>
-    <img alt="car" src="../car.jpg" width="260" height="150"/>
+    <img alt="car-wreck" src="../car-wreck.png" width="260" height="150"/>
   </td>
   <td>
-    <img alt="car-wreck" src="../car-wreck.png" width="260" height="150"/>
+    <img alt="car" src="../car.jpg" width="260" height="150"/>
   </td>
   <td>
     <img alt="city" src="../city.png" width="260" height="150"/>
@@ -125,57 +125,57 @@
 </tr>
 <tr>
   <td>
+    <img alt="darknet" src="../darknet.png" width="260" height="150"/>
+  </td>
+  <td>
     <img alt="delorean" src="../delorean.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="dominik-mayer" src="../dominik-mayer.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="doom-slayer" src="../doom-slayer.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="fireskull" src="../fireskull.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="flower-camp" src="../flower-camp.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="flowers-2" src="../flowers-2.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="flowers" src="../flowers.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="flying-comets-clouds" src="../flying-comets-clouds.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="fox-clearing" src="../fox-clearing.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="fuji-2" src="../fuji-2.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="fuji" src="../fuji.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="galaxies" src="../galaxies.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="galaxy-2" src="../galaxy-2.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="galaxy-3" src="../galaxy-3.png" width="260" height="150"/>
-  </td>
-  <td>
-    <img alt="galaxy" src="../galaxy.png" width="260" height="150"/>
   </td>
 </tr>
 <tr>
@@ -183,98 +183,109 @@
     <img alt="galaxy-waves" src="../galaxy-waves.jpg" width="260" height="150"/>
   </td>
   <td>
-    <img alt="girl" src="../girl.png" width="260" height="150"/>
+    <img alt="galaxy" src="../galaxy.png" width="260" height="150"/>
   </td>
   <td>
-    <img alt="glass-room" src="../glass-room.png" width="260" height="150"/>
+    <img alt="girl" src="../girl.png" width="260" height="150"/>
   </td>
 </tr>
 <tr>
+  <td>
+    <img alt="glass-room" src="../glass-room.png" width="260" height="150"/>
+  </td>
   <td>
     <img alt="glitch" src="../glitch.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="haunted-house" src="../haunted-house.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="hollow-knight-2" src="../hollow-knight-2.jpg" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="hollow-knight-3" src="../hollow-knight-3.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="hollow-knight" src="../hollow-knight.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="hyprland-logo" src="../hyprland-logo.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="japan-city" src="../japan-city.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="keyboards" src="../keyboards.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="kurz" src="../kurz.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="lake" src="../lake.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="lifeform" src="../lifeform.png" width="260" height="150"/>
   </td>
-  <td>
-    <img alt="lofi" src="../lofi.jpeg" width="260" height="150"/>
-  </td>
 </tr>
 <tr>
   <td>
+    <img alt="lofi-girl-2" src="../lofi-girl-2.jpg" width="260" height="150"/>
+  </td>
+  <td>
+    <img alt="lofi-girl" src="../lofi-girl.jpg" width="260" height="150"/>
+  </td>
+  <td>
     <img alt="marine-tunnel" src="../marine-tunnel.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="maze" src="../maze.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="megumin" src="../megumin.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="montains" src="../montains.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="nature" src="../nature.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="nebula" src="../nebula.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="neon-dim" src="../neon-dim.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="neon-man" src="../neon-man.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="neon" src="../neon.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="night-city" src="../night-city.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="night-forest-path" src="../night-forest-path.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="night-lake" src="../night-lake.jpg" width="260" height="150"/>
+  </td>
+  <td>
+    <img alt="night-landscape" src="../night-landscape.png" width="260" height="150"/>
   </td>
 </tr>
 <tr>
@@ -351,60 +362,65 @@
     <img alt="souls" src="../souls.png" width="260" height="150"/>
   </td>
   <td>
-    <img alt="space" src="../space.jpg" width="260" height="150"/>
+    <img alt="space-2" src="../space-2.jpg" width="260" height="150"/>
   </td>
 </tr>
 <tr>
+  <td>
+    <img alt="space" src="../space.jpg" width="260" height="150"/>
+  </td>
   <td>
     <img alt="sparkles" src="../sparkles.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="spill" src="../spill.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="stars" src="../stars.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="street" src="../street.jpg" width="260" height="150"/>
   </td>
   <td>
     <img alt="switch-2" src="../switch-2.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="switch" src="../switch.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="sword" src="../sword.jpg" width="260" height="150"/>
   </td>
   <td>
     <img alt="tokyo" src="../tokyo.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="trigonometry" src="../trigonometry.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="underwater" src="../underwater.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="voxel-houses-monochrome" src="../voxel-houses-monochrome.png" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="waterfall" src="../waterfall.png" width="260" height="150"/>
   </td>
-</tr>
-<tr>
   <td>
     <img alt="window-room" src="../window-room.png" width="260" height="150"/>
   </td>
   <td>
     <img alt="windows-error" src="../windows-error.jpg" width="260" height="150"/>
   </td>
+</tr>
+<tr>
   <td>
     <img alt="yohoho" src="../yohoho.jpg" width="260" height="150"/>
   </td>
