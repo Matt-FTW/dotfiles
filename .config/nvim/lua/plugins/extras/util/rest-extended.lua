@@ -13,4 +13,12 @@ return {
       },
     },
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        kulala_ls = {},
+      },
+    },
+  },
 }
