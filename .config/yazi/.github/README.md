@@ -67,7 +67,7 @@ git clone <repo-link> ~/.config/yazi/plugins/<plugin-name>
 ```
 
 > [!WARNING]
-> If you dont install all the plugins I have, make sure to remove their init calls (basically, the require(<plugin-name>) call) on [this file](../init.lua) or yazi will not launch.
+> If you dont install all the plugins I have, make sure to remove their init calls (basically, the require("plugin-name") call) on [this file](../init.lua) or yazi will not launch.
 
 # :camera: ‎ <samp>Gallery</samp>
 

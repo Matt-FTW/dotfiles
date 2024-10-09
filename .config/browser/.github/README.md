@@ -111,5 +111,3 @@ Read the Startpage [usage section](https://github.com/Matt-FTW/startpage?tab=rea
 | **Github Repo**                 |
 | ------------------------------- |
 | ![overview-2](./overview-2.png) |
-
-</div>
