@@ -473,7 +473,8 @@
         "TypingIndicator": {
             "enabled": true,
             "includeMutedChannels": false,
-            "includeCurrentChannel": true
+            "includeCurrentChannel": true,
+            "indicatorMode": 3
         },
         "TypingTweaks": {
             "enabled": true,
@@ -695,7 +696,8 @@
             "enabled": true
         },
         "AccountPanelServerProfile": {
-            "enabled": false
+            "enabled": true,
+            "prioritizeServerProfile": false
         },
         "FullSearchContext": {
             "enabled": false
@@ -711,6 +713,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1727040479821
+        "settingsSyncVersion": 1728310498197
     }
 }
