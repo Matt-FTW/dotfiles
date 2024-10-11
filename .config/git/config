@@ -4,6 +4,9 @@
 [includeIf "gitdir:~/dev/work/"]
   path = ~/.config/git/config-work
 
+[includeIf "gitdir:~/dev/class/"]
+  path = ~/.config/git/config-class
+
 [user]
   name = Sergio Laín
   email = sergio.lac@pm.me
@@ -11,9 +14,6 @@
 
 [safe]
   directory = ~/dev
-
-[credential "https://github.com"]
-  username = Matt-FTW
 
 [filter "lfs"]
   clean = git-lfs clean -- %f
