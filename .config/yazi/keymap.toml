@@ -44,11 +44,8 @@ prepend_keymap = [
     "T",
   ], run = "plugin --sync hide-preview", desc = "Hide or show the preview" },
   { on = [
-    "y",
-  ], run = [
-    '''shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm''',
-    "yank",
-  ], desc = "yank files and copy to clipboard" },
+    "<C-y>",
+  ], run = '''shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm''', desc = "Copy to clipboard" },
   { on = "A", run = "create --dir", desc = "Create a dir" },
 ]
 
