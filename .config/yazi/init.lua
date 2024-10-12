@@ -154,6 +154,10 @@ require("yatline-githead"):setup({
 
 	commit_symbol = " ",
 
+	show_behind_ahead = true,
+	behind_symbol = " ",
+	ahead_symbol = " ",
+
 	show_stashes = true,
 	stashes_symbol = " ",
 
@@ -178,6 +182,8 @@ require("yatline-githead"):setup({
 	staged_color = catppuccin_palette.green,
 	unstaged_color = catppuccin_palette.yellow,
 	untracked_color = catppuccin_palette.pink,
+	ahead_color = catppuccin_palette.green,
+	behind_color = catppuccin_palette.yellow,
 })
 
 require("git"):setup()
