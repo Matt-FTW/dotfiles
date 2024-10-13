@@ -10,7 +10,7 @@
 [user]
   name = Sergio Laín
   email = sergio.lac@pm.me
-  signingKey = 8429B2EE312F8150
+  signingKey = 51BB28D8B42FB438
 
 [safe]
   directory = ~/dev
