@@ -1,0 +1,20 @@
+#!/bin/sh
+
+function __gi() {
+  curl -L -s https://www.gitignore.io/api/"$@"
+}
+
+if [ "$#" -eq 0 ]; then
+  IFS+=","
+  result=$(for item in $(__gi list); do
+    echo $item
+  done | fzf --multi --ansi | paste -s -d "," -)
+  
+  if [ -n "$result" ]; then
+    __gi "$result" > .gitignore
+    echo ".gitignore created: $result"
+  fi
+else
+  __gi "$@" > .gitignore
+  echo ".gitignore created: $@"
+fi
