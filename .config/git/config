@@ -56,7 +56,7 @@
   rebase = false
 
 [commit]
-  gpgsign = false
+  gpgsign = true
 
 [gpg]
   program = /sbin/gpg
