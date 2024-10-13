@@ -86,8 +86,8 @@
   "py-requirements.nvim": { "branch": "main", "commit": "ab86e8832635b0e74a4ce2ed5a023ff99e651951" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "d227e6c9879bb50af35cd733461198666981d482" },
   "refactoring.nvim": { "branch": "master", "commit": "c406fc5fb4d7ba5fce7b668637075fad6e75e9f8" },
-  "render-markdown.nvim": { "branch": "main", "commit": "965c222076b2d289ed498730845d533780f3c7c7" },
-  "rustaceanvim": { "branch": "master", "commit": "d1f56672638508a7bc971cde31a29df4018579a9" },
+  "render-markdown.nvim": { "branch": "main", "commit": "e13ac2c05d2f081453db1451ec07fbd8be33ceec" },
+  "rustaceanvim": { "branch": "master", "commit": "1c47bdd38150d9ba636fd234128e232dc618e832" },
   "search-replace.nvim": { "branch": "main", "commit": "d92290a02d97f4e9b8cd60d28b56b403432158d5" },
   "smart-splits.nvim": { "branch": "master", "commit": "70f9e4f36082bf28b8bc1d05e2ea7c3f6aeb51ff" },
   "suda.vim": { "branch": "master", "commit": "b97fab52f9cdeabe2bbb5eb98d82356899f30829" },
@@ -108,5 +108,5 @@
   "which-key.nvim": { "branch": "main", "commit": "8badb359f7ab8711e2575ef75dfe6fbbd87e4821" },
   "yaml-companion.nvim": { "branch": "main", "commit": "131b0d67bd2e0f1a02e0daf2f3460482221ce3c0" },
   "yanky.nvim": { "branch": "main", "commit": "73215b77d22ebb179cef98e7e1235825431d10e4" },
-  "yazi.nvim": { "branch": "main", "commit": "1e8d63d85176d5e0cca191fd6c5847839b65bfa8" }
+  "yazi.nvim": { "branch": "main", "commit": "d7513472d66d2adc5698d7f791347ead36b4988b" }
 }
