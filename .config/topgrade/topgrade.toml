@@ -15,7 +15,7 @@ pre_sudo = true
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["spicetify", "vim", "containers"]
+disable = ["poetry", "spicetify", "vim", "containers"]
 
 # Ignore failures for these steps
 # ignore_failures = []
@@ -89,6 +89,8 @@ disable = ["spicetify", "vim", "containers"]
 [commands]
 # "Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
+hyprpm = "hyprpm update -v"
+yazi = "ya pack -u"
 
 
 [python]
