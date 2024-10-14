@@ -38,6 +38,8 @@ return {
         ["astro"] = { "biome" },
         ["svelte"] = { "biome" },
         ["vue"] = { "biome" },
+        ["graphql"] = { "biome" },
+        ["css"] = { "biome" },
       })
 
       opts.formatters = {
