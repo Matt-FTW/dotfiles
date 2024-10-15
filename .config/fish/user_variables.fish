@@ -14,7 +14,7 @@ set -xg RUSTUP_HOME $XDG_DATA_HOME/rustup
 set -xg CARGO_HOME $XDG_DATA_HOME/cargo
 set -xg LEIN_HOME $XDG_DATA_HOME/lein
 set -xg NUGET_PACKAGES $XDG_CACHE_HOME/NuGetPackages
-set -xg ANDROID_HOME $XDG_DATA_HOME/android
+set -xg ANDROID_USER_HOME $XDG_DATA_HOME/android
 set -xg NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
 set -xg DOCKER_CONFIG $XDG_CONFIG_HOME/docker
 set -xg SQLITE_HISTORY $XDG_DATA_HOME/sqlite_history
@@ -37,6 +37,7 @@ set -xg GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
 set -xg W3M_DIR $XDG_DATA_HOME/w3m
 set -xg DOTNET_CLI_HOME $XDG_DATA_HOME/dotnet
 set -xg PNPM_HOME $XDG_DATA_HOME/pnpm
+set -xg GNUPGHOME $XDG_CONFIG_HOME/gnupg
 
 # Path
 fish_add_path $XDG_BIN_HOME
