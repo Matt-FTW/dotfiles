@@ -39,7 +39,7 @@
 #cpu,
 #memory,
 #temperature,
-#custom-media,
+#custom-music,
 #custom-fans,
 #clock,
 #idle_inhibitor,
@@ -252,7 +252,7 @@ window#waybar.hidden {
   color: @mantle;
 }
 
-#custom-media {
+#custom-music {
   background: @lavender;
   background: linear-gradient(
     52deg,

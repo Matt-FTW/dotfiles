@@ -3,7 +3,7 @@
     "~/.config/waybar/modules/custom-cava.jsonc",
     "~/.config/waybar/modules/custom-wf-recorder.jsonc",
     "~/.config/waybar/modules/custom-updates.jsonc",
-    "~/.config/waybar/modules/custom-media.jsonc",
+    "~/.config/waybar/modules/custom-music.jsonc",
     "~/.config/waybar/modules/custom-logo.jsonc",
     "~/.config/waybar/modules/custom-notifications.jsonc",
     "~/.config/waybar/modules/custom-weather.jsonc",
@@ -18,7 +18,7 @@
     "custom/cava",
     "custom/wf-recorder",
   ],
-  "modules-center": ["custom/media"],
+  "modules-center": ["custom/music"],
   "modules-right": [
     "custom/updates",
     "hyprland/language",
