@@ -1,0 +1,10 @@
+// Config
+configuration {
+  modi:                       "emoji";
+  show:                       "emoji";
+  emoji-mode:                 "copy";
+  display-emoji:              "Emojis";
+  show-icons:                 true;
+}
+
+@theme "~/.config/rofi/style.rasi"
