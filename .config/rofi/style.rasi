@@ -1,5 +1,5 @@
 configuration {
-  modi:                       "drun,filebrowser";
+  modi:                       "drun";
   show-icons:                 true;
   display-drun:               "Apps";
   display-run:                "Run";

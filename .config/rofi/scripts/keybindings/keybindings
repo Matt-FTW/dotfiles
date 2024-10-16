@@ -1,9 +1,14 @@
 #!/bin/bash
 
-CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | sed 's/\.yml$//' | rofi -dmenu)
+if ! command -v keyb >/dev/null 2>&1; then
+  notify-send "Program not found" "Make sure you have installed cliphist"
+  exit 1
+else
+  CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | sed 's/\.yml$//' | rofi -dmenu)
 
-if [ -z "$CONFIG" ]; then
-  exit
+  if [ -z "$CONFIG" ]; then
+    exit
+  fi
+
+  hyprctl dispatch exec "[float;size 45% 80%;center 1] kitty keyb -k '$HOME/.config/keyb/bindings/$CONFIG.yml'"
 fi
-
-hyprctl dispatch exec "[float;size 45% 80%;center 1] kitty keyb -k '$HOME/.config/keyb/bindings/$CONFIG.yml'"
