@@ -1,0 +1,33 @@
+# Install Rust dependencies
+[tasks.install]
+alias = "i"
+run = "cargo build"
+
+# Add a new dependency
+[tasks.add]
+run = "cargo add"
+
+# Run the application
+[tasks.dev]
+run = "cargo run"
+
+# Run linting
+[tasks.lint]
+run = "cargo clippy"
+
+# Run formatting
+[tasks.format]
+run = "cargo fmt"
+
+# Run tests
+[tasks.test]
+run = "cargo test"
+
+# Cleaning the cache
+[tasks.clean]
+depends = ['cleancache']
+run = "cargo clean"
+
+[tasks.cleancache]
+run = "rm -rf .cache"
+hide = true

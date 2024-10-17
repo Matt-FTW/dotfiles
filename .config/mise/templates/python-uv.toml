@@ -1,0 +1,39 @@
+[env]
+# Automatic virtualenv activation
+_.python.venv = { path = ".venv", create = true }
+
+[tools]
+# Installs the specified Python version
+# python = "{{ get_env(name='PYTHON_VERSION', default='3.11') }}" # Specific version
+python = "latest"
+uv = "latest"
+ruff = "latest"
+
+# Install dependencies
+[tasks.install]
+alias = "i"
+run = "uv pip install -r requirements.txt"
+
+# Add a new dependency
+[tasks.add]
+run = "uv pip install"
+
+# Run the application
+[tasks.run]
+run = "python main.py"
+
+# List dependencies
+[tasks.deps]
+run = "uv pip list"
+
+# Run tests
+[tasks.test]
+run = "pytest tests/"
+
+# Lint the code
+[tasks.lint]
+run = "ruff src/"
+
+# Format the code
+[tasks.format]
+run = "ruff format src/"

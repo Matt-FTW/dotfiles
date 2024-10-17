@@ -1,0 +1,20 @@
+# Install Go dependencies
+[tasks.install]
+alias = "i"
+run = "go mod tidy"
+
+# Add a new dependency
+[tasks.add]
+run = "go get"
+
+# Run the application
+[tasks.dev]
+run = "go run main.go"
+
+# Run linting
+[tasks.lint]
+run = "golangci-lint run"
+
+# Run formatting
+[tasks.format]
+run = "gofumpt -l -w ."

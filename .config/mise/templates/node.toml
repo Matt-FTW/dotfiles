@@ -1,0 +1,39 @@
+[env]
+# Set up the path for node module binaries
+BIN_PATH = "{{ cwd }}/node_modules/.bin"
+
+[tools]
+# Install Node.js using the specified version
+# node = "{{ env['NODE_VERSION'] | default(value='lts') }}" # LTS Version
+# node = "{{ get_env(name='NODE_VERSION', default='18.2') }}" # Specific version
+node = "latest"
+pnpm = "latest"
+
+# Install npm dependencies
+[tasks.install]
+run = "pnpm install"
+
+# Add a new dependency
+[tasks.add]
+run = "pnpm add"
+
+# Run the development server
+[tasks.dev]
+alias = "d"
+run = "pnpm run dev"
+
+# Run linting
+[tasks.lint]
+run = "eslint src/"
+
+# Run formatting
+[tasks.format]
+run = "prettierd src/"
+
+# Run tests
+[tasks.test]
+run = "jest"
+
+# Build the project
+[tasks.build]
+run = "pnpm run build"

@@ -1,0 +1,39 @@
+[env]
+_.python.venv = { path = ".venv", create = true }
+
+[tools]
+poetry = { version = "latest", pyproject = "pyproject.toml" }
+
+# Installs the specified Python version
+# python = "{{ get_env(name='PYTHON_VERSION', default='3.11') }}" # Specific version
+python = "latest"
+
+# Install dependencies
+[tasks.install]
+alias = "i"
+run = "poetry install"
+
+# Add a new dependency
+[tasks.add]
+alias = "a"
+run = "poetry add"
+
+# Update dependencies
+[tasks.update]
+run = "poetry update"
+
+# Run the application
+[tasks.run]
+run = "python main.py"
+
+# List dependencies
+[tasks.deps]
+run = "poetry show --tree"
+
+# Run tests
+[tasks.test]
+run = "pytest tests/"
+
+# Lint the code
+[tasks.lint]
+run = "ruff src/"
