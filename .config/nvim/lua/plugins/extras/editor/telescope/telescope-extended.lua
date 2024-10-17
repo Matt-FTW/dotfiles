@@ -48,7 +48,6 @@ return {
       { "<leader><c-space>", LazyVim.pick("find_files", { hidden = true }), desc = "Find Files (hidden)" },
       { "<leader>gb", "<cmd>Telescope git_branches<cr>", desc = "Branches" },
       { "<leader>S", "<cmd>Telescope spell_suggest<cr>", desc = "Spelling" },
-      { "<leader>gC", "<cmd>Telescope git_commits<cr>", desc = "Commits" },
       { "<leader>gs", false },
     },
     opts = {
