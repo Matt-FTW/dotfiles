@@ -35,6 +35,7 @@ return {
         { prefix .. "e", group = "reaction" },
         { prefix .. "R", group = "review" },
         { prefix .. "g", group = "gist" },
+        { prefix .. "s", group = "review" },
       },
     },
   },
@@ -61,6 +62,14 @@ return {
       mappings = {},
     },
     keys = {
+      -- Disable default LazyVim keymaps
+      { "<leader>gi", false },
+      { "<leader>gI", false },
+      { "<leader>gp", false },
+      { "<leader>gP", false },
+      { "<leader>gr", false },
+      { "<leader>gS", false },
+
       { prefix .. "ca", "<cmd>Octo comment add<CR>", desc = "Add a New Comment" },
       { prefix .. "cd", "<cmd>Octo comment delete<CR>", desc = "Delete a Comment" },
 
@@ -70,6 +79,7 @@ return {
       { prefix .. "ic", "<cmd>Octo issue close<CR>", desc = "Close Current Issue" },
       { prefix .. "ir", "<cmd>Octo issue reopen<CR>", desc = "Reopen Current Issue" },
       { prefix .. "il", "<cmd>Octo issue list<CR>", desc = "List Open Issues" },
+      { prefix .. "is", "<cmd>Octo issue search<CR>", desc = "Search Issues" },
       { prefix .. "iu", "<cmd>Octo issue url<CR>", desc = "Copies URL of Current Issue" },
       { prefix .. "io", "<cmd>Octo issue browser<CR>", desc = "Open Current Issue in Browser" },
 
@@ -81,6 +91,7 @@ return {
       { prefix .. "pc", "<cmd>Octo pr close<CR>", desc = "Close Current PR" },
       { prefix .. "pn", "<cmd>Octo pr create<CR>", desc = "Create PR for Current Branch" },
       { prefix .. "pd", "<cmd>Octo pr diff<CR>", desc = "Show PR Diff" },
+      { prefix .. "ps", "<cmd>Octo pr search<CR>", desc = "Search PR" },
       { prefix .. "ps", "<cmd>Octo pr list<CR>", desc = "List Open PRs" },
       { prefix .. "pr", "<cmd>Octo pr ready<CR>", desc = "Mark Draft as Ready for Review" },
       { prefix .. "po", "<cmd>Octo pr browser<CR>", desc = "Open Current PR in Browser" },
@@ -88,8 +99,7 @@ return {
       { prefix .. "pt", "<cmd>Octo pr commits<CR>", desc = "List PR Commits" },
       { prefix .. "pl", "<cmd>Octo pr commits<CR>", desc = "List Changed Files in PR" },
 
-      { prefix .. "rl", "<cmd>Octo repo list<CR>", desc = "List Repo User Stats" },
-      { prefix .. "rF", "<cmd>Octo repo fork<CR>", desc = "Fork Repo" },
+      { prefix .. "rf", "<cmd>Octo repo fork<CR>", desc = "Fork Repo" },
       { prefix .. "ru", "<cmd>Octo repo url<CR>", desc = "Copies URL of Current Repo" },
 
       { prefix .. "aa", "<cmd> Octo assignee add<CR>", desc = "Assign a User" },
