@@ -16,6 +16,7 @@ return {
       term_colors = true,
       custom_highlights = function()
         return {
+          Visual = { bg = palette.surface2 },
           FloatermBorder = { fg = palette.base },
           TelescopeMatching = { fg = palette.blue },
           TelescopeSelection = { fg = palette.text, bg = palette.surface0, bold = true },
