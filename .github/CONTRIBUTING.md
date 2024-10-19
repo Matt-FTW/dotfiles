@@ -5,7 +5,7 @@ Thank you for your interest in contributing to Community Standards! We welcome a
 ## Getting Started
 
 1. Fork this repository to your GitHub account. This will create a copy of this repository in your account. You can make changes to this copy without affecting the original repository.
-   - For fork this repository, click the **Fork** button in the top right corner of this page or click [here](https://github.com/prasanthrangan/hyprdots/fork).
+   - For fork this repository, click the **Fork** button in the top right corner of this page or click [here](https://github.com/Matt-FTW/dotfiles/fork).
 2. Clone your forked repository to your local machine.
 
    - Use the following command to clone your forked repository to your local machine.
