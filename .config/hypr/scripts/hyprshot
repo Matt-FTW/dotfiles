@@ -60,7 +60,7 @@ function send_notification() {
   local message=$([ $CLIPBOARD -eq 1 ] &&
     echo "Image copied to the clipboard" ||
     echo "Image saved in <i>${1}</i> and copied to the clipboard.")
-  action=$(notify-send -i "$1" --action="view=View" --action="edit=Edit" "Screenshot saved" \
+  action=$(notify-send -i "$1" --action="view=View" --action="edit=Edit" --action="folder=Open on Folder" "Screenshot saved" \
     "${message}" \
     -t "$NOTIF_TIMEOUT" -i "${1}" -a Hyprshot)
 
@@ -74,6 +74,9 @@ function send_notification() {
     else
       notify-send -u critical "Cannot Edit Image" "Install Satty"
     fi
+    ;;
+  "folder")
+    nemo "$1"
     ;;
   esac
 }
