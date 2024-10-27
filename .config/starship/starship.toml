@@ -47,37 +47,37 @@ style = "bold blue"
 # Directory entry
 [directory]
 read_only = " 󰌾 "
-home_symbol = " "
+# home_symbol = " "
 truncation_length = 3
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-"Repos" = " "
-"Videos" = " "
-"obsidianVault" = "󰏪 󰠮 "
-".config" = " "
+# [directory.substitutions]
+# "Documents" = "󰈙 "
+# "Downloads" = " "
+# "Music" = " "
+# "Pictures" = " "
+# "Repos" = " "
+# "Videos" = " "
+# "obsidianVault" = "󰏪 󰠮 "
+# ".config" = " "
 
 # Custom entries
-[custom.yazi]
-description = "Shell launched inside Yazi"
-symbol = " "
-style = "blue bold"
-when = """ test -n "$YAZI_LEVEL" """
+# [custom.yazi]
+# description = "Shell launched inside Yazi"
+# symbol = " "
+# style = "blue bold"
+# when = """ test -n "$YAZI_LEVEL" """
 
-[custom.neovim]
-command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
-detect_folders = ["lua"]
-style = "green"
-format = "[ $output ]($style)"
-shell = ["bash"]
+# [custom.neovim]
+# command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
+# detect_folders = ["lua"]
+# style = "green"
+# format = "[ $output ]($style)"
+# shell = ["bash"]
 
-[custom.hypr]
-style = "blue"
-format = "[ ]($style)"
-detect_files = ["hyprland.conf"]
+# [custom.hypr]
+# style = "blue"
+# format = "[ ]($style)"
+# detect_files = ["hyprland.conf"]
 
 # Nerd fonts preset
 [aws]
