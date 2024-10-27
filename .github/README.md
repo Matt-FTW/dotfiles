@@ -19,7 +19,7 @@
 
 <div align="center">
 
-<img src="./assets/overview-images/big-showcase.png">
+<img src="./assets/showcase.png">
 
 </div>
 
