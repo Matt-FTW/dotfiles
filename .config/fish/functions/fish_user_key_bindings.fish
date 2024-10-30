@@ -12,5 +12,5 @@ function fish_user_key_bindings
         end
     end
 
-    bind \e\z zi
+    bind -M insert \e\z zi
 end
