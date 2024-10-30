@@ -562,7 +562,9 @@
             "enabled": false
         },
         "BetterSessions": {
-            "enabled": false
+            "enabled": true,
+            "backgroundCheck": false,
+            "checkInterval": 20
         },
         "BetterSettings": {
             "enabled": true,
@@ -690,7 +692,8 @@
             "enabled": false
         },
         "VolumeBooster": {
-            "enabled": true
+            "enabled": true,
+            "multiplier": 2
         },
         "AccountPanelServerProfile": {
             "enabled": true,
@@ -700,13 +703,15 @@
             "enabled": false
         },
         "UserMessagesPronouns": {
-            "enabled": false
+            "enabled": false,
+            "pronounsFormat": "LOWERCASE",
+            "showSelf": true
         },
         "DynamicImageModalAPI": {
             "enabled": true
         },
         "FixImagesQuality": {
-            "enabled": false
+            "enabled": true
         }
     },
     "notifications": {
@@ -719,6 +724,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1729672235423
+        "settingsSyncVersion": 1730190242609
     }
 }
