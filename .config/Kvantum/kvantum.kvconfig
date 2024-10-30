@@ -1,2 +1,5 @@
 [General]
 theme=catppuccin-macchiato-lavender
+
+[Applications]
+KvArcDark=virtualbox,VirtualBoxVM
