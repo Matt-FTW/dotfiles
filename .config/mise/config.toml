@@ -11,6 +11,7 @@ deno = "latest"
 go = "latest"
 watchexec = "latest"
 poetry = "latest"
+"cargo:cargo-cache" = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
