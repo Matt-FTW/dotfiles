@@ -60,6 +60,7 @@ restore:
   sort:
     key: status
     reversed: false
+  reverseRedirects: false
 scan:
   showDeselectedGames: true
   showUnchangedGames: true
