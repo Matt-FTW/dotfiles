@@ -46,6 +46,7 @@ return {
       display = {
         chat = {
           show_settings = true,
+          render_headers = false,
         },
       },
     },
