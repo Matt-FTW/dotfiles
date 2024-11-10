@@ -36,14 +36,19 @@ image = [
   { run = 'krita "$@"', orphan = true, desc = "krita", for = "linux" },
   { run = 'satty --filename "$@"', orphan = true, desc = "satty", for = "linux" },
 ]
+
 video = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
   { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
+  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
 ]
+
 audio = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
   { run = 'mpv "$@"', orphan = true, desc = "mpv", for = "linux" },
+  { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
 ]
+
 fallback = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
 ]
