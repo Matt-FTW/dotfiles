@@ -191,11 +191,11 @@ map("n", "<leader>@", "zug", { desc = "Remove Word from Dictionary" })
 -- Terminal Stuff
 if not LazyVim.has("floaterm.nvim") or not LazyVim.has("toggleterm.nvim") then
   local lazyterm = function()
-    LazyVim.terminal(nil, { size = { width = 0.8, height = 0.8 }, cwd = LazyVim.root() })
+    Snacks.terminal(nil, { size = { width = 0.8, height = 0.8 }, cwd = LazyVim.root() })
   end
   map("n", "<leader>ft", lazyterm, { desc = "Terminal (Root Dir)" })
   map("n", "<leader>fT", function()
-    LazyVim.terminal(nil, { size = { width = 0.8, height = 0.8 }, cwd = vim.fn.getcwd() })
+    Snacks.terminal(nil, { size = { width = 0.8, height = 0.8 }, cwd = vim.fn.getcwd() })
   end, { desc = "Terminal (cwd)" })
   map("n", [[<c-\>]], lazyterm, { desc = "Terminal (Root Dir)" })
   map("t", [[<c-\>]], "<cmd>close<cr>", { desc = "Hide Terminal" })
@@ -229,7 +229,7 @@ map("n", "go", "<Cmd>call append(line('.'), repeat([''], v:count1))<CR>", { desc
 map({ "c", "i", "t" }, "<M-BS>", "<C-w>", { desc = "Delete Word" })
 
 -- Git
-map("n", "<leader>ghb", LazyVim.lazygit.blame_line, { desc = "Blame Line" })
+map("n", "<leader>ghb", Snacks.git.blame_line, { desc = "Blame Line" })
 
 -- Windows Split
 map("n", "<leader>_", "<C-W>s", { desc = "Split Window Below", remap = true })

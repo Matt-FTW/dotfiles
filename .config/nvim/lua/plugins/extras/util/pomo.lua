@@ -2,9 +2,6 @@ return {
   {
     "epwalsh/pomo.nvim",
     cmd = { "TimerStart", "TimerStop", "TimerRepeat" },
-    dependencies = {
-      "rcarriga/nvim-notify",
-    },
     opts = {
       notifiers = {
         {

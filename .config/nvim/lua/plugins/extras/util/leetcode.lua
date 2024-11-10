@@ -8,7 +8,6 @@ return {
 
     -- optional
     "nvim-treesitter/nvim-treesitter",
-    "rcarriga/nvim-notify",
     "nvim-tree/nvim-web-devicons",
   },
   opts = {},

@@ -3,9 +3,6 @@ local prefix = "<leader>a"
 return {
   {
     "chrisgrieser/nvim-scissors",
-    dependencies = {
-      "rcarriga/nvim-notify",
-    },
     opts = {
       jsonFormatter = "jq",
     },

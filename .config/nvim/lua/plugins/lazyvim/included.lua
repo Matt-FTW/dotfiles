@@ -22,7 +22,6 @@ return {
   { "windwp/nvim-ts-autotag" },
 
   -- UI
-  { "rcarriga/nvim-notify" },
   { "lukas-reineke/indent-blankline.nvim" },
   { "stevearc/dressing.nvim" },
   { "folke/noice.nvim" },
@@ -31,5 +30,6 @@ return {
 
   -- Util
   { "folke/persistence.nvim" },
+  { "folke/snacks.nvim" },
   { "nvim-lua/plenary.nvim" },
 }
