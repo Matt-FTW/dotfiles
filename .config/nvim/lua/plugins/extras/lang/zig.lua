@@ -1,38 +1,10 @@
 return {
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "zig",
-      },
-    },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        zls = {},
-      },
-    },
-  },
+  { import = "lazyvim.plugins.extras.lang.zig" },
   {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "zls",
         "codelldb",
-      },
-    },
-  },
-  {
-    "nvim-neotest/neotest",
-    optional = true,
-    dependencies = {
-      "lawrence-laz/neotest-zig",
-    },
-    opts = {
-      adapters = {
-        ["neotest-zig"] = {},
       },
     },
   },
