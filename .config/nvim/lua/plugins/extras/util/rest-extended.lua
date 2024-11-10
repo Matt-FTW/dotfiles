@@ -21,4 +21,12 @@ return {
       },
     },
   },
+  {
+    "stevearc/conform.nvim",
+    opts = function(_, opts)
+      opts.formatters_by_ft.http = opts.formatters_by_ft.http or {}
+      table.insert(opts.formatters_by_ft.python, "kulala")
+      return opts
+    end,
+  },
 }
