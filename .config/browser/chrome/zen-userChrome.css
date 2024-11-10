@@ -2,6 +2,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --zen-colors-primary: #24273a !important;
+    --zen-primary-color: #b7bdf8 !important;
     --zen-colors-secondary: #363a4f !important;
     --zen-colors-tertiary: #1e2030 !important;
     --zen-colors-border: #363a4f !important;
@@ -19,6 +20,8 @@
     --lwt-sidebar-background-color: #181926 !important;
     --toolbar-bgcolor: #363a4f !important;
     --newtab-background-color: #24273a !important;
+    --zen-themed-toolbar-bg: #1e2030 !important;
+    --zen-main-browser-background: #1e2030 !important;
   }
 
   .sidebar-placesTree {
@@ -44,6 +47,10 @@
 
   .urlbarView-url {
     color: #b7bdf8 !important;
+  }
+
+  #zenEditBookmarkPanelFaviconContainer {
+    background: #181926 !important;
   }
 }
 
