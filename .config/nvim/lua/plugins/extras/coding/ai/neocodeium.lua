@@ -2,19 +2,21 @@ return {
   "monkoose/neocodeium",
   event = "InsertEnter",
   config = function()
-    local cmp = require("cmp")
     local neocodeium = require("neocodeium")
     neocodeium.setup()
 
     local commands = require("neocodeium.commands")
-    cmp.event:on("menu_opened", function()
-      commands.disable()
-      neocodeium.clear()
-    end)
+    if vim.g.codeium_cmp_hide == true then
+      local cmp = require("cmp")
+      cmp.event:on("menu_opened", function()
+        commands.disable()
+        neocodeium.clear()
+      end)
 
-    cmp.event:on("menu_closed", function()
-      commands.enable()
-    end)
+      cmp.event:on("menu_closed", function()
+        commands.enable()
+      end)
+    end
 
     vim.keymap.set("i", "<M-CR>", function()
       require("neocodeium").accept()
