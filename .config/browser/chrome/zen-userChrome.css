@@ -54,8 +54,12 @@
   }
 }
 
-/* Hide some buttons */
+/* Hide some things */
 #back-button,
 #forward-button {
+  display: none !important;
+}
+
+#zen-current-workspace-indicator {
   display: none !important;
 }
