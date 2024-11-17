@@ -22,10 +22,11 @@
     --newtab-background-color: #24273a !important;
     --zen-themed-toolbar-bg: #1e2030 !important;
     --zen-main-browser-background: #1e2030 !important;
+    --newtab-primary-action-background: #b7bdf8 !important;
   }
 
   .sidebar-placesTree {
-    background-color: #363a4f !important;
+    background-color: #24273a !important;
   }
 
   #zen-workspaces-button {
