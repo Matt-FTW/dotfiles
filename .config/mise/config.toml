@@ -10,7 +10,6 @@ age = "latest"
 deno = "latest"
 go = "latest"
 watchexec = "latest"
-poetry = "latest"
 "cargo:cargo-cache" = "latest"
 
 [settings]
