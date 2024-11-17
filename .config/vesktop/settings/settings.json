@@ -335,9 +335,11 @@
         },
         "OpenInApp": {
             "enabled": true,
-            "spotify": true,
+            "spotify": false,
             "steam": true,
-            "epic": true
+            "epic": true,
+            "tidal": true,
+            "itunes": true
         },
         "PermissionFreeWill": {
             "enabled": false,
@@ -724,6 +726,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1730190242609
+        "settingsSyncVersion": 1731451966227
     }
 }
