@@ -1,7 +1,9 @@
 return {
-  "nvimdev/dashboard-nvim",
-  opts = function(_, opts)
-    local logo = [[
+  { import = "lazyvim.plugins.extras.ui.dashboard" },
+  {
+    "nvimdev/dashboard-nvim",
+    opts = function(_, opts)
+      local logo = [[
                                                                    
       ████ ██████           █████      ██                    
      ███████████             █████                            
@@ -12,8 +14,9 @@ return {
 ██████  █████████████████████ ████ █████ █████ ████ ██████
       ]]
 
-    logo = string.rep("\n", 8) .. logo .. "\n\n"
-    opts.config.header = vim.split(logo, "\n")
-    return opts
-  end,
+      logo = string.rep("\n", 8) .. logo .. "\n\n"
+      opts.config.header = vim.split(logo, "\n")
+      return opts
+    end,
+  },
 }
