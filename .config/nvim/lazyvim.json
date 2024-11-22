@@ -57,7 +57,6 @@
     "plugins.extras.ui.bufferline-extended",
     "plugins.extras.ui.colorschemes.catppuccin",
     "plugins.extras.ui.context",
-    "plugins.extras.ui.dashboard-extended",
     "plugins.extras.ui.edgy-extended",
     "plugins.extras.ui.highlight-colors",
     "plugins.extras.ui.lualine-extended",
@@ -71,13 +70,15 @@
     "plugins.extras.util.neovide",
     "plugins.extras.util.persistence-extended",
     "plugins.extras.util.smart-splits",
+    "plugins.extras.util.snacks-extended",
     "plugins.extras.util.vscode",
     "plugins.extras.util.wakatime",
     "plugins.extras.util.yadm",
     "plugins.extras.util.yazi"
   ],
   "news": {
-    "NEWS.md": "7107"
+    "NEWS.md": "7429"
   },
   "version": 7
 }
+
