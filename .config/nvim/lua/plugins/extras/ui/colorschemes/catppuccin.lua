@@ -94,6 +94,7 @@ return {
         octo = false,
         rainbow_delimiters = true,
         semantic_tokens = true,
+        snacks = true,
         telescope = {
           enabled = true,
         },
