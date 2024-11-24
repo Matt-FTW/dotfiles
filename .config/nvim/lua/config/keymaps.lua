@@ -177,7 +177,9 @@ map("x", "#", [[y?\V<C-R>=escape(@", '?\')<CR><CR>]], { desc = "Search Selected 
 
 -- Dashboard
 map("n", "<leader>fd", function()
-  if LazyVim.has("alpha-nvim") then
+  if LazyVim.has("snacks.nvim") then
+    Snacks.dashboard()
+  elseif LazyVim.has("alpha-nvim") then
     require("alpha").start(true)
   elseif LazyVim.has("dashboard-nvim") then
     vim.cmd("Dashboard")
