@@ -21,5 +21,10 @@ return {
     notifier = {
       style = "fancy",
     },
+    terminal = {
+      win = {
+        position = "float",
+      },
+    },
   },
 }
