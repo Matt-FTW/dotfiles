@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! command -v keyb >/dev/null 2>&1; then
-  notify-send "Program not found" "Make sure you have installed cliphist"
+  notify-send "Program not found" "Make sure you have installed keyb"
   exit 1
 else
   CONFIG=$(fd --base-directory "$HOME/.config/keyb/bindings" --type f . | sed 's/\.yml$//' | rofi -dmenu)
