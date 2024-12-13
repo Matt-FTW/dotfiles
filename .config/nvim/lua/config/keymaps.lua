@@ -99,15 +99,6 @@ map("n", "<leader>uS", function()
   end
 end, { desc = "Toggle Statusline" })
 
--- Toggle tabline
-map("n", "<leader>u<tab>", function()
-  if o.showtabline:get() == 0 then
-    o.showtabline = 2
-  else
-    o.showtabline = 0
-  end
-end, { desc = "Toggle Tabline" })
-
 -- Comment box
 map("n", "]/", "/\\S\\zs\\s*╭<CR>zt", { desc = "Next Block Comment" })
 map("n", "[/", "?\\S\\zs\\s*╭<CR>zt", { desc = "Prev Block Comment" })
