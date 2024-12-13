@@ -26,5 +26,10 @@ return {
         position = "float",
       },
     },
+    scroll = {
+      animate = {
+        duration = { step = 10, total = 150 },
+      },
+    },
   },
 }
