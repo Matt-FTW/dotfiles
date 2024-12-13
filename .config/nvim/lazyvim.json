@@ -8,7 +8,6 @@
     "plugins.extras.coding.ai.codecompanion",
     "plugins.extras.coding.ai.codeium",
     "plugins.extras.coding.annotation",
-    "plugins.extras.coding.cmp-extended",
     "plugins.extras.coding.multicursor",
     "plugins.extras.coding.recorder",
     "plugins.extras.coding.refactoring",
@@ -32,7 +31,6 @@
     "plugins.extras.editor.search-replace",
     "plugins.extras.editor.suda",
     "plugins.extras.editor.telescope.lazy",
-    "plugins.extras.editor.telescope.telescope-extended",
     "plugins.extras.editor.telescope.undotree",
     "plugins.extras.editor.telescope.zoxide",
     "plugins.extras.editor.trouble-extended",
@@ -62,7 +60,6 @@
     "plugins.extras.ui.lualine-extended",
     "plugins.extras.ui.noice-extended",
     "plugins.extras.ui.rainbow-delimeters",
-    "plugins.extras.ui.smooth-scrolling",
     "plugins.extras.ui.which-key-extended",
     "plugins.extras.util.icon-picker",
     "plugins.extras.util.kitty-scrollback",
@@ -77,8 +74,7 @@
     "plugins.extras.util.yazi"
   ],
   "news": {
-    "NEWS.md": "7429"
+    "NEWS.md": "10960"
   },
   "version": 7
 }
-
