@@ -1,6 +1,10 @@
 return {
   "chrisgrieser/nvim-various-textobjs",
-  opts = { useDefaultKeymaps = false },
+  opts = {
+    keymaps = {
+      useDefaults = false,
+    },
+  },
   vscode = true,
   -- stylua: ignore
   keys = {
