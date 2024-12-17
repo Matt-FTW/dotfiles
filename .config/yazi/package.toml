@@ -1,12 +1,12 @@
 [plugin]
 deps = [
-  { use = "yazi-rs/plugins:full-border", rev = "38418dd" },
+  { use = "yazi-rs/plugins:full-border", rev = "62f0789" },
   { use = "KKV9/compress", rev = "60b24af" },
-  { use = "imsi32/yatline", rev = "e255f5c" },
+  { use = "imsi32/yatline", rev = "1b4a9a1" },
   { use = "imsi32/yatline-githead", rev = "a6377a8" },
-  { use = "yazi-rs/plugins:smart-filter", rev = "38418dd" },
-  { use = "yazi-rs/plugins:hide-preview", rev = "38418dd" },
-  { use = "yazi-rs/plugins:git", rev = "38418dd" },
+  { use = "yazi-rs/plugins:smart-filter", rev = "62f0789" },
+  { use = "yazi-rs/plugins:hide-preview", rev = "62f0789" },
+  { use = "yazi-rs/plugins:git", rev = "62f0789" },
 ]
 
 [flavor]
