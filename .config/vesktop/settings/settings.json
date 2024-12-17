@@ -587,7 +587,7 @@
             "enabled": false
         },
         "StreamerModeOnStream": {
-            "enabled": true
+            "enabled": false
         },
         "UnlockedAvatarZoom": {
             "enabled": false
@@ -726,6 +726,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1731451966227
+        "settingsSyncVersion": 1734293128371
     }
 }
