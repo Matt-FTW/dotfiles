@@ -32,22 +32,18 @@ return {
     opts = {
       workspaces = {
         {
-          name = "personal",
-          path = "~/documents/obsidian-vaults/personal/",
-        },
-        {
           name = "personal-brain",
-          path = "~/documents/obsidian-vaults/personal-brain/",
+          path = "~/documents/obsidian/personal-brain/",
         },
       },
 
-      notes_subdir = "Notes",
+      notes_subdir = "01 - Bandeja Entrada",
 
       daily_notes = {
-        folder = "Journal/Entries/Daily",
+        folder = "03 - Diario/Diariamente",
         date_format = "%Y-%m-%d",
         alias_format = "%B %-d, %Y",
-        template = "_data_/templates/journal/daily_entry.md",
+        template = "00 - Data/Plantillas/Diariamente.md",
       },
 
       mappings = {
@@ -72,7 +68,7 @@ return {
       },
 
       templates = {
-        subdir = "_data_/templates",
+        subdir = "00 - Data/Plantillas",
         date_format = "%Y-%m-%d-%a",
         time_format = "%H:%M",
       },
@@ -82,7 +78,7 @@ return {
       end,
 
       attachments = {
-        img_folder = "_data_/media",
+        img_folder = "00 - Data/Documentos",
       },
     },
   },
