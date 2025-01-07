@@ -11,6 +11,8 @@
         "en"
     ],
     "audio": {
-        "workaround": true
+        "workaround": true,
+        "deviceSelect": true,
+        "granularSelect": false
     }
 }
