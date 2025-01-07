@@ -1,10 +1,12 @@
----
 runtime:
-  threads: ~
+  threads: null
 release:
   check: true
 manifest:
-  enable: true
+  enable: false
+  secondary:
+    - url: https://cdn.losbroxas.org/manifest.yaml
+      enable: true
 language: en-US
 theme: dark
 roots:
@@ -66,11 +68,11 @@ scan:
   showUnchangedGames: true
   showUnscannedGames: true
 cloud:
-  remote: ~
+  remote: null
   path: ludusavi-backup
   synchronize: true
 apps:
   rclone:
     path: ""
-    arguments: "--fast-list --ignore-checksum"
+    arguments: --fast-list --ignore-checksum
 customGames: []
