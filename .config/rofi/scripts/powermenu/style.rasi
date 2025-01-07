@@ -156,7 +156,7 @@ element-text {
   background-color:            transparent;
   text-color:                  inherit;
   cursor:                      inherit;
-  vertical-align:              0.5;
+  vertical-align:              0; // NOTE: Change this back to 0.5 once https://github.com/davatorium/rofi/issues/2076 is resolved
   horizontal-align:            0.5;
 }
 
