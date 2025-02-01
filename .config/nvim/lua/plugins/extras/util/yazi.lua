@@ -2,8 +2,8 @@ return {
   {
     "mikavilpas/yazi.nvim",
     keys = {
-      { "<leader>fy", "<cmd>Yazi<cr>", desc = "Yazi (Root Dir)" },
-      { "<leader>fY", "<cmd>Yazi cwd<cr>", desc = "Yazi (Cwd)" },
+      { "<leader>e", "<cmd>Yazi<cr>", desc = "Yazi (Current File)" },
+      { "<leader>E", "<cmd>Yazi cwd<cr>", desc = "Yazi (cwd)" },
       { "<a-e>", "<cmd>Yazi toggle<cr>", desc = "Resume Last Yazi Session" },
     },
     opts = {
@@ -14,10 +14,6 @@ return {
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
-    opts = {
-      filesystem = {
-        hijack_netrw_behavior = "disabled",
-      },
-    },
+    enabled = false,
   },
 }
