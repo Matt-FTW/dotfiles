@@ -3,6 +3,7 @@
     "lazyvim.plugins.extras.coding.mini-surround",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.mini-move",
+    "lazyvim.plugins.extras.editor.snacks_picker",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
     "plugins.extras.coding.ai.codecompanion",
@@ -24,7 +25,6 @@
     "plugins.extras.editor.docs.devdocs",
     "plugins.extras.editor.docs.obsidian",
     "plugins.extras.editor.flash-extended",
-    "plugins.extras.editor.fzf.fzf-extended",
     "plugins.extras.editor.git.diffview",
     "plugins.extras.editor.gitsigns-extended",
     "plugins.extras.editor.marks.grapple",
@@ -58,7 +58,6 @@
     "plugins.extras.ui.noice-extended",
     "plugins.extras.ui.rainbow-delimeters",
     "plugins.extras.ui.which-key-extended",
-    "plugins.extras.util.icon-picker",
     "plugins.extras.util.kitty-scrollback",
     "plugins.extras.util.mason-lock",
     "plugins.extras.util.neovide",
@@ -75,3 +74,4 @@
   },
   "version": 7
 }
+
