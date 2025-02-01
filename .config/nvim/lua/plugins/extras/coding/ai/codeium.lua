@@ -20,6 +20,7 @@ return {
         DressingInput = false,
         ["neo-tree-popup"] = false,
         ["dap-repl"] = false,
+        ["snacks_picker_input"] = false,
       }
 
       local opts = { expr = true, silent = true }
