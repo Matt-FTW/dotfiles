@@ -359,8 +359,12 @@
         },
         "PinDMs": {
             "enabled": true,
-            "dmSectioncollapsed": false,
-            "pinOrder": 0
+            "pinOrder": 0,
+            "dmSectionCollapsed": false,
+            "canCollapseDmSection": false,
+            "userBasedCategoryList": {
+                "302085663057248267": []
+            }
         },
         "PlainFolderIcon": {
             "enabled": false
@@ -714,6 +718,12 @@
         },
         "FixImagesQuality": {
             "enabled": true
+        },
+        "FullUserInChatbox": {
+            "enabled": false
+        },
+        "IrcColors": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -726,6 +736,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1734293128371
+        "settingsSyncVersion": 1738066923994
     }
 }
