@@ -5,7 +5,7 @@
 prepend_keymap = [
   { on = [
     "<C-s>",
-  ], run = '''shell "$SHELL" --block --confirm''', desc = "Open shell here" },
+  ], run = '''shell "$SHELL" --block''', desc = "Open shell here" },
   { on = [
     "c",
     "a",
@@ -42,10 +42,10 @@ prepend_keymap = [
   { on = "S", run = "search fd", desc = "Search files by name using fd" },
   { on = [
     "T",
-  ], run = "plugin --sync hide-preview", desc = "Hide or show the preview" },
+  ], run = "plugin hide-preview", desc = "Hide or show the preview" },
   { on = [
     "<C-y>",
-  ], run = '''shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list' --confirm''', desc = "Copy to clipboard" },
+  ], run = '''shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list'''', desc = "Copy to clipboard" },
   { on = "A", run = "create --dir", desc = "Create a dir" },
 ]
 
@@ -79,7 +79,7 @@ append_keymap = [
   { on = [
     "g",
     "o",
-  ], run = "cd ~/documents/obsidian-vaults", desc = "Go to the obsidian directory" },
+  ], run = "cd ~/documents/obsidian/personal-brain/", desc = "Go to the obsidian directory" },
   { on = [
     "g",
     "e",
