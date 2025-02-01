@@ -27,10 +27,20 @@ return {
             },
           })
         end,
+        deepseek_r1 = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            name = "deepseek_r1",
+            schema = {
+              model = {
+                default = "deepseek-r1:14b",
+              },
+            },
+          })
+        end,
       },
       strategies = {
         chat = {
-          adapter = "deepseek_coder",
+          adapter = "deepseek_r1",
           roles = {
             llm = "  CodeCompanion",
             user = " " .. user:sub(1, 1):upper() .. user:sub(2),
@@ -40,8 +50,8 @@ return {
             stop = { modes = { n = "<C-c>" } },
           },
         },
-        inline = { adapter = "deepseek_coder" },
-        agent = { adapter = "deepseek_coder" },
+        inline = { adapter = "deepseek_r1" },
+        agent = { adapter = "deepseek_r1" },
       },
       display = {
         chat = {
