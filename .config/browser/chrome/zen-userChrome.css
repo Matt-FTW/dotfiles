@@ -61,6 +61,10 @@
   display: none !important;
 }
 
+.titlebar-buttonbox-container {
+  display: none;
+}
+
 #zen-current-workspace-indicator {
   display: none !important;
 }
