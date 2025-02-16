@@ -227,3 +227,22 @@ map("n", "<leader>ghb", Snacks.git.blame_line, { desc = "Blame Line" })
 -- Windows Split
 map("n", "<leader>_", "<C-W>s", { desc = "Split Window Below", remap = true })
 map("n", "<leader>\\", "<C-W>v", { desc = "Split Window Right", remap = true })
+
+-- Center when scrolling
+if Snacks.scroll.enabled then
+  map("n", "<C-d>", function()
+    vim.wo.scrolloff = 999
+    vim.defer_fn(function()
+      vim.wo.scrolloff = 8
+    end, 500)
+    return "<c-d>"
+  end, { expr = true })
+
+  map("n", "<C-u>", function()
+    vim.wo.scrolloff = 999
+    vim.defer_fn(function()
+      vim.wo.scrolloff = 8
+    end, 500)
+    return "<c-u>"
+  end, { expr = true })
+end
