@@ -1,7 +1,7 @@
 return {
   "folke/which-key.nvim",
   opts = {
-    preset = "classic",
+    -- preset = "classic",
     icons = {
       group = "",
     },

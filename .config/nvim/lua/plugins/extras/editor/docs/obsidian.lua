@@ -86,7 +86,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { prefix, group = "obsidian", icon = " " },
+        { prefix, group = "obsidian", icon = " ", mode = { "n", "v" } },
       },
     },
   },

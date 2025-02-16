@@ -1,15 +1,13 @@
+local prefix = "<leader>b"
+
 local keys = {}
 
 -- stylua: ignore start
-for i = 1, 9 do
-  table.insert(keys, { "<leader>b" .. i, "<cmd>BufferLineGoToBuffer " .. i .. "<cr>", desc = "Buffer " .. i })
-end
+table.insert(keys, { prefix .. "S", "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort By Directory" })
+table.insert(keys, { prefix .. "s", "<Cmd>BufferLineSortByExtension<CR>", desc = "Sort By Extensions" })
 
-table.insert(keys, { "<leader>bS", "<Cmd>BufferLineSortByDirectory<CR>", desc = "Sort By Directory" })
-table.insert(keys, { "<leader>bs", "<Cmd>BufferLineSortByExtension<CR>", desc = "Sort By Extensions" })
-
-table.insert(keys, { "<space><", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" })
-table.insert(keys, { "<space>>", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" })
+table.insert(keys, { prefix .. "<", "<cmd>BufferLineMovePrev<cr>", desc = "Move buffer prev" })
+table.insert(keys, { prefix .. ">", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" })
 -- stylua: ignore end
 
 return {

@@ -45,6 +45,7 @@ return {
         mode = { "n", "v" },
         desc = "Yank History",
       },
+      { "<leader>p", mode = { "n", "x" }, false },
     },
   },
 }

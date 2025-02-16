@@ -72,7 +72,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { prefix, group = "ai", icon = "󱚦 " },
+        { prefix, group = "ai", icon = "󱚦 ", mode = { "n", "v" } },
       },
     },
   },
