@@ -3,6 +3,7 @@
     "lazyvim.plugins.extras.coding.mini-surround",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.mini-move",
+    "lazyvim.plugins.extras.editor.refactoring",
     "lazyvim.plugins.extras.editor.snacks_picker",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
@@ -12,7 +13,6 @@
     "plugins.extras.coding.blink-extended",
     "plugins.extras.coding.multicursor",
     "plugins.extras.coding.recorder",
-    "plugins.extras.coding.refactoring",
     "plugins.extras.coding.treesitter.endwise",
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.treesitter.puppeteer",
@@ -69,9 +69,9 @@
     "plugins.extras.util.yadm",
     "plugins.extras.util.yazi"
   ],
+  "install_version": 7,
   "news": {
     "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }
-
