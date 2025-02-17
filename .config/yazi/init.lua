@@ -187,3 +187,7 @@ require("yatline-githead"):setup({
 })
 
 require("git"):setup()
+
+require("fg"):setup({
+	default_action = "jump",
+})

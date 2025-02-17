@@ -4,8 +4,8 @@
 
 prepend_keymap = [
   { on = [
-    "<C-s>",
-  ], run = '''shell "$SHELL" --block''', desc = "Open shell here" },
+    "!",
+  ], run = 'shell "$SHELL" --block', desc = "Open shell here" },
   { on = [
     "c",
     "a",
@@ -22,31 +22,24 @@ prepend_keymap = [
   ], run = "plugin fg", desc = "find file by content (fuzzy match)" },
   { on = [
     "f",
-    "G",
-  ], run = "plugin fg --args='rg'", desc = "find file by content (ripgrep match)" },
-  { on = [
-    "f",
-    "n",
-  ], run = "plugin fg --args='fzf'", desc = "find file by filename" },
-  { on = [
-    "f",
     "f",
   ], run = "filter --smart", desc = "Filter files" },
   { on = [
-    "f",
-    "F",
-  ], run = "plugin smart-filter", desc = "Smart Filter" },
-  { on = [
     "s",
-  ], run = "plugin searchjump", desc = "searchjump mode" },
-  { on = "S", run = "search fd", desc = "Search files by name using fd" },
-  { on = [
-    "T",
-  ], run = "plugin hide-preview", desc = "Hide or show the preview" },
+  ], run = "plugin searchjump", desc = "Flash" },
+  { on = "S", run = "search --via=fd", desc = "Search files by name using fd" },
   { on = [
     "<C-y>",
-  ], run = '''shell 'for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list'''', desc = "Copy to clipboard" },
+  ], run = 'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list', desc = "Copy to clipboard" },
   { on = "A", run = "create --dir", desc = "Create a dir" },
+  { on = [
+    "g",
+    "r",
+  ], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"', desc = "Root of Git Repo" },
+  { on = "H", run = "tab_switch -1 --relative", desc = "Switch to the previous tab" },
+  { on = "L", run = "tab_switch 1 --relative", desc = "Switch to the next tab" },
+  { on = "<", run = "tab_swap -1", desc = "Swap current tab with previous tab" },
+  { on = ">", run = "tab_swap 1", desc = "Swap current tab with next tab" },
 ]
 
 append_keymap = [
@@ -56,39 +49,7 @@ append_keymap = [
   { on = [
     "E",
   ], run = "open --interactive", desc = "Open the selected files interactively" },
-  { on = [
-    "g",
-    "n",
-  ], run = "cd ~/.config/nvim/", desc = "Go to the nvim directory" },
-  { on = [
-    "g",
-    "v",
-  ], run = "cd ~/videos/", desc = "Go to the videos directory" },
-  { on = [
-    "g",
-    "p",
-  ], run = "cd ~/pictures/", desc = "Go to the pictures directory" },
-  { on = [
-    "g",
-    "s",
-  ], run = "cd ~/pictures/screenshots/", desc = "Go to the screenshots directory" },
-  { on = [
-    "g",
-    "D",
-  ], run = "cd ~/documents/", desc = "Go to the docs directory" },
-  { on = [
-    "g",
-    "o",
-  ], run = "cd ~/documents/obsidian/personal-brain/", desc = "Go to the obsidian directory" },
-  { on = [
-    "g",
-    "e",
-  ], run = "cd ~/dev/", desc = "Go to the dev directory" },
 ]
-
-[input]
-
-prepend_keymap = [{ on = ["<Esc>"], run = "close", desc = "Cancel input" }]
 
 [completion]
 prepend_keymap = [
