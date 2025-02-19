@@ -26,6 +26,24 @@ return {
         position = "float",
       },
     },
+    picker = {
+      win = {
+        input = {
+          keys = {
+            ["<c-u>"] = { "preview_scroll_up", mode = { "i", "n" } },
+            ["<a-j>"] = { "list_scroll_down", mode = { "i", "n" } },
+            ["<c-d>"] = { "preview_scroll_down", mode = { "i", "n" } },
+            ["<a-k>"] = { "list_scroll_up", mode = { "i", "n" } },
+          },
+        },
+      },
+    },
+    image = {
+      enabled = true,
+      -- doc = {
+      --   inline = false,
+      -- },
+    },
     scroll = {
       animate = {
         duration = { step = 10, total = 150 },
