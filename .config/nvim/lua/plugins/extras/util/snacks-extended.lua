@@ -27,6 +27,11 @@ return {
       },
     },
     picker = {
+      previewers = {
+        git = {
+          builtin = false,
+        },
+      },
       win = {
         input = {
           keys = {
