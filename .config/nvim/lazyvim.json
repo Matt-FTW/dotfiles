@@ -22,7 +22,6 @@
     "plugins.extras.dap.persistent-breakpoints",
     "plugins.extras.editor.codesnap",
     "plugins.extras.editor.compiler",
-    "plugins.extras.editor.docs.devdocs",
     "plugins.extras.editor.docs.obsidian",
     "plugins.extras.editor.flash-extended",
     "plugins.extras.editor.git.diffview",
