@@ -46,13 +46,12 @@
     border-color: #b7bdf8 !important;
   }
 
-  .urlbarView-url {
-    color: #b7bdf8 !important;
-  }
+#zen-essentials-container {
+  margin-bottom: 3px !important;
+}
 
-  #zenEditBookmarkPanelFaviconContainer {
-    background: #181926 !important;
-  }
+.urlbar-input-box {
+  text-align: center;
 }
 
 /* Hide some things */
@@ -62,9 +61,9 @@
 }
 
 .titlebar-buttonbox-container {
-  display: none;
+  display: none !important;
 }
 
-#zen-current-workspace-indicator {
+#zen-current-workspace-indicator-container {
   display: none !important;
 }

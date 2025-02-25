@@ -65,8 +65,7 @@ user_pref("mousewheel.default.delta_multiplier_y", 250); // 250-400; adjust this
 
 // Custom Options
 user_pref("ui.key.menuAccessKey", 0);
-user_pref("toolkit.tabbox.switchByScrolling", true);
 user_pref("browser.tabs.hoverPreview.enabled", true);
-user_pref("zen.tabs.newtab-on-middle-click", true);
 user_pref("zen.urlbar.replace-newtab", false);
 user_pref("zen.workspaces.open-new-tab-if-last-unpinned-tab-is-closed", false);
+user_pref("browser.tabs.groups.enabled", false);
