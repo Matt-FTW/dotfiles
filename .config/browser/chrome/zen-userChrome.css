@@ -23,6 +23,7 @@
     --zen-themed-toolbar-bg: #1e2030 !important;
     --zen-main-browser-background: #1e2030 !important;
     --newtab-primary-action-background: #b7bdf8 !important;
+    --toolbox-bgcolor-inactive: #1e2030 !important;
   }
 
   .sidebar-placesTree {
@@ -45,6 +46,15 @@
     background-color: #24273a !important;
     border-color: #b7bdf8 !important;
   }
+
+  .urlbarView-url {
+    color: #b7bdf8 !important;
+  }
+
+  #zenEditBookmarkPanelFaviconContainer {
+    background: #181926 !important;
+  }
+}
 
 #zen-essentials-container {
   margin-bottom: 3px !important;
