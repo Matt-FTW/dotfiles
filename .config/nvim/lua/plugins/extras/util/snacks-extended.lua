@@ -32,6 +32,9 @@ return {
           builtin = false,
         },
       },
+      matcher = {
+        frecency = true,
+      },
       win = {
         input = {
           keys = {
@@ -45,9 +48,9 @@ return {
     },
     image = {
       enabled = true,
-      -- doc = {
-      --   inline = false,
-      -- },
+      doc = {
+        inline = false,
+      },
     },
     scroll = {
       animate = {
