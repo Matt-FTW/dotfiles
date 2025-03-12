@@ -9,7 +9,8 @@ return {
     },
   },
   {
-    "epwalsh/obsidian.nvim",
+    -- "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim", -- NOTE: Using a fork from the community
     ft = "markdown",
     keys = {
       { prefix .. "o", "<cmd>ObsidianOpen<CR>", desc = "Open on App" },
@@ -33,7 +34,7 @@ return {
       workspaces = {
         {
           name = "personal-brain",
-          path = "~/documents/obsidian/personal-brain/",
+          path = "~/documents/obsidian/personal-brain/vault",
         },
       },
 
@@ -44,6 +45,15 @@ return {
         date_format = "%Y-%m-%d",
         alias_format = "%B %-d, %Y",
         template = "00 - Data/Plantillas/Diariamente.md",
+      },
+
+      completion = {
+        nvim_cmp = false,
+        blink = true,
+      },
+
+      picker = {
+        name = "snacks.pick",
       },
 
       mappings = {
