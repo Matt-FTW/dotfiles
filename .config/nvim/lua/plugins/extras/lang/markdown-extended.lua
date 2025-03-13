@@ -11,8 +11,6 @@ return {
     },
     opts = {},
     keys = {
-      { "<tab>", "<cmd>AutolistTab<cr>", mode = { "i" } },
-      { "<s-tab>", "<cmd>AutolistShiftTab<cr>", mode = { "i" } },
       { "<CR>", "<CR><cmd>AutolistNewBullet<cr>", mode = { "i" } },
       { "o", "o<cmd>AutolistNewBullet<cr>", mode = { "n" } },
       { "O", "O<cmd>AutolistNewBulletBefore<cr>", mode = { "n" } },
