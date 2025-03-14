@@ -2,9 +2,6 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   { import = "plugins.extras.lang.json-extended" },
   {
-    "williamboman/mason.nvim",
-  },
-  {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
