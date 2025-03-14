@@ -7,11 +7,6 @@
 [includeIf "gitdir:~/dev/class/"]
   path = ~/.config/git/config-class
 
-[user]
-  name = Sergio Laín
-  email = sergio.lac@pm.me
-  signingKey = 51BB28D8B42FB438
-
 [safe]
   directory = ~/dev
 
