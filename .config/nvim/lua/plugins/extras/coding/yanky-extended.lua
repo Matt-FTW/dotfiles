@@ -1,7 +1,5 @@
 return {
-  {
-    import = "lazyvim.plugins.extras.coding.yanky",
-  },
+  { import = "lazyvim.plugins.extras.coding.yanky" },
   {
     "gbprod/yanky.nvim",
     opts = function(_, opts)
@@ -36,11 +34,7 @@ return {
       {
         "<leader>sy",
         function()
-          if LazyVim.pick.picker.name == "telescope" then
-            require("telescope").extensions.yank_history.yank_history({})
-          else
-            vim.cmd([[YankyRingHistory]])
-          end
+          vim.cmd([[YankyRingHistory]])
         end,
         mode = { "n", "v" },
         desc = "Yank History",

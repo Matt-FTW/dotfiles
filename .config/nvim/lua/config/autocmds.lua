@@ -115,7 +115,7 @@ ac("BufWritePre", {
 })
 
 -- Toggle lazygit instead of closing
-vim.api.nvim_create_autocmd("TermOpen", {
+ac("TermOpen", {
   pattern = "*",
   callback = function()
     local term_title = vim.b.term_title

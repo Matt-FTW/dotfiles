@@ -3,12 +3,6 @@ local prefix = "<leader>o"
 return {
   { import = "plugins.extras.lang.markdown-extended" },
   {
-    "MeanderingProgrammer/render-markdown.nvim",
-    opts = {
-      preset = "obsidian",
-    },
-  },
-  {
     -- "epwalsh/obsidian.nvim",
     "obsidian-nvim/obsidian.nvim", -- NOTE: Using a fork from the community
     ft = "markdown",
@@ -90,6 +84,8 @@ return {
       attachments = {
         img_folder = "00 - Data/Documentos",
       },
+
+      ui = { enable = false },
     },
   },
   {
