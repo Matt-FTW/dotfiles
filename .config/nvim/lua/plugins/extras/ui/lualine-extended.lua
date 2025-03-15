@@ -1,12 +1,3 @@
-local lsp = function()
-  local buf_clients = vim.lsp.get_clients({ bufnr = 0 })
-  if #buf_clients == 0 then
-    return ""
-  end
-
-  return " "
-end
-
 local formatter = function()
   local formatters = require("conform").list_formatters(0)
   if #formatters == 0 then
@@ -41,10 +32,11 @@ return {
     }
 
     if vim.g.lualine_info_extras == true then
-      table.insert(opts.sections.lualine_x, 2, lsp)
+      table.insert(opts.sections.lualine_x, 2, { "lsp_status" })
       table.insert(opts.sections.lualine_x, 2, formatter)
       table.insert(opts.sections.lualine_x, 2, linter)
     end
+
     opts.sections.lualine_y = { "progress" }
     opts.sections.lualine_z = {
       { "location", separator = "" },
