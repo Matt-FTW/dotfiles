@@ -70,3 +70,4 @@ user_pref("zen.urlbar.replace-newtab", false);
 user_pref("zen.workspaces.open-new-tab-if-last-unpinned-tab-is-closed", false);
 user_pref("browser.tabs.groups.enabled", false);
 user_pref("browser.urlbar.trimURLs", false);
+user_pref("zen.workspaces.swipe-actions", false);
