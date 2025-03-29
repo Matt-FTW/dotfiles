@@ -1,36 +1,34 @@
+local filetype = { "markdown", "text", "tex", "plaintex", "norg" }
+
 return {
   { import = "lazyvim.plugins.extras.lang.markdown" },
   {
     "gaoDean/autolist.nvim",
-    ft = {
-      "markdown",
-      "text",
-      "tex",
-      "plaintex",
-      "norg",
-    },
+    enabled = false,
+    ft = filetype,
     opts = {},
     keys = {
-      { "<CR>", "<CR><cmd>AutolistNewBullet<cr>", mode = { "i" } },
-      { "o", "o<cmd>AutolistNewBullet<cr>", mode = { "n" } },
-      { "O", "O<cmd>AutolistNewBulletBefore<cr>", mode = { "n" } },
-      { "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>", mode = { "n" } },
-      { "<C-r>", "<cmd>AutolistRecalculate<cr>", mode = { "n" } },
+      { "<CR>", "<CR><cmd>AutolistNewBullet<cr>", mode = { "i" }, ft = filetype },
+      { "o", "o<cmd>AutolistNewBullet<cr>", mode = { "n" }, ft = filetype },
+      { "O", "O<cmd>AutolistNewBulletBefore<cr>", mode = { "n" }, ft = filetype },
+      { "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>", mode = { "n" }, ft = filetype },
+      { "<C-r>", "<cmd>AutolistRecalculate<cr>", mode = { "n" }, ft = filetype },
 
-      { "].", "<cmd>AutolistCycleNext<cr>", mode = { "n" }, desc = "Next List Type" },
-      { "[.", "<cmd>AutolistCyclePrev<cr>", mode = { "n" }, desc = "Prev List Type" },
+      { "].", "<cmd>AutolistCycleNext<cr>", mode = { "n" }, desc = "Next List Type", ft = filetype },
+      { "[.", "<cmd>AutolistCyclePrev<cr>", mode = { "n" }, desc = "Prev List Type", ft = filetype },
 
-      { ">>", ">><cmd>AutolistRecalculate<cr>", mode = { "n" } },
-      { "<<", "<<<cmd>AutolistRecalculate<cr>", mode = { "n" } },
-      { "dd", "dd<cmd>AutolistRecalculate<cr>", mode = { "n" } },
-      { "d", "d<cmd>AutolistRecalculate<cr>", mode = { "v" } },
+      { ">>", ">><cmd>AutolistRecalculate<cr>", mode = { "n" }, ft = filetype },
+      { "<<", "<<<cmd>AutolistRecalculate<cr>", mode = { "n" }, ft = filetype },
+      { "dd", "dd<cmd>AutolistRecalculate<cr>", mode = { "n" }, ft = filetype },
+      { "d", "d<cmd>AutolistRecalculate<cr>", mode = { "v" }, ft = filetype },
     },
   },
   {
     "antonk52/markdowny.nvim",
-    ft = { "markdown", "txt" },
+    enabled = false,
+    ft = filetype,
     opts = {
-      filetypes = { "markdown", "txt" },
+      filetypes = filetype,
     },
   },
   {
