@@ -98,20 +98,23 @@ var library = (() => {
   };
   var SliderInput = (props) => {
     const { Slider } = Spicetify.ReactComponent;
-    const handleSliderChange = (newValue) => {
+    const [value, setValue] = import_react.default.useState((props.value - props.min) / (props.max - props.min));
+    const handleSliderChange = import_react.default.useCallback((newValue) => {
+      setValue(newValue);
       const calculatedValue = props.min + newValue * (props.max - props.min);
       props.callback(calculatedValue);
-    };
-    const value = (props.value - props.min) / (props.max - props.min);
+    }, [props]);
+    const handleDragMove = import_react.default.useCallback((v) => {
+      console.log(v);
+    }, []);
     return /* @__PURE__ */ import_react.default.createElement(Slider, {
       id: `slider:${props.storageKey}`,
       value,
       min: 0,
       max: 1,
       step: 0.1,
-      onDragMove: (newValue) => handleSliderChange(newValue),
-      onDragStart: () => {
-      },
+      onDragMove: handleDragMove,
+      onDragStart: handleSliderChange,
       onDragEnd: () => {
       }
     });
@@ -311,7 +314,7 @@ var library = (() => {
   // src/components/collapse_button.tsx
   var import_react4 = __toESM(require_react());
   var collapseLibrary = () => {
-    Spicetify.Platform.LocalStorageAPI.setItem("ylx-sidebar-state", 1);
+    Spicetify.Platform.LocalStorageAPI.setItem("left-sidebar-state", 1);
   };
   var CollapseIcon = () => {
     const { IconComponent } = Spicetify.ReactComponent;
@@ -410,7 +413,7 @@ var library = (() => {
       "data-encore-id": "icon",
       role: "img",
       "aria-hidden": "true",
-      className: "Svg-sc-ytk21e-0 Svg-img-icon-small x-filterBox-searchIcon",
+      className: "Svg-sc-ytk21e-0 Svg-img-icon-small e-9640-icon x-filterBox-searchIcon",
       viewBox: "0 0 16 16"
     }, /* @__PURE__ */ import_react7.default.createElement("path", {
       d: "M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"
@@ -451,7 +454,7 @@ var library = (() => {
     const [textFilter, setTextFilter] = import_react8.default.useState("");
     const [collections, setCollections] = import_react8.default.useState(null);
     const context = import_react8.default.useContext(Spicetify.ContextMenuV2._context);
-    const uri = context?.props?.uri;
+    const uri = context?.props?.uri || context?.props?.id;
     import_react8.default.useEffect(() => {
       const fetchCollections = async () => {
         setCollections(await CollectionsWrapper.getContents({ textFilter, limit: 20, offset: 0 }));
@@ -598,6 +601,23 @@ var library = (() => {
     getCollection(uri) {
       return this._collections.find((collection) => collection.uri === uri);
     }
+    async getLocalAlbums() {
+      const localAlbumsIntegration = window.localTracksService;
+      if (!localAlbumsIntegration)
+        return /* @__PURE__ */ new Map();
+      if (!localAlbumsIntegration.isReady) {
+        await new Promise((resolve) => {
+          const sub = localAlbumsIntegration.isReady$.subscribe((ready) => {
+            if (ready) {
+              resolve(true);
+              sub.unsubscribe();
+            }
+          });
+          localAlbumsIntegration.init();
+        });
+      }
+      return localAlbumsIntegration.getAlbums();
+    }
     async getCollectionContents(uri) {
       const collection = this.getCollection(uri);
       if (!collection)
@@ -609,6 +629,12 @@ var library = (() => {
         limit: 9999
       });
       items.push(...albums.items.filter((album) => collection.items.includes(album.uri)));
+      const localAlbumUris = collection.items.filter((item) => item.includes("local"));
+      if (localAlbumUris.length > 0) {
+        const localAlbums = await this.getLocalAlbums();
+        const inCollection = localAlbumUris.map((uri2) => localAlbums.get(uri2));
+        items.push(...inCollection.filter(Boolean));
+      }
       return items;
     }
     async getContents(props) {
@@ -626,10 +652,18 @@ var library = (() => {
       for (const collection of this._collections) {
         const boolArray = await Spicetify.Platform.LibraryAPI.contains(...collection.items);
         if (boolArray.includes(false)) {
-          collection.items = collection.items.filter((_, i) => boolArray[i]);
-          this.saveCollections();
-          Spicetify.showNotification("Album removed from collection");
-          this.syncCollection(collection.uri);
+          const result = [];
+          for (let i = 0; i < boolArray.length; i++) {
+            if (boolArray[i] || collection.items[i].includes("local")) {
+              result.push(collection.items[i]);
+            }
+          }
+          if (result.length !== collection.items.length) {
+            collection.items = collection.items.filter((uri, i) => boolArray[i] || uri.includes("local"));
+            this.saveCollections();
+            Spicetify.showNotification("Album removed from collection");
+            this.syncCollection(collection.uri);
+          }
         }
       }
     }
@@ -649,6 +683,7 @@ var library = (() => {
         await PlaylistAPI.add(collection.syncedPlaylistUri, wanted, { before: "end" });
       if (unwanted.length)
         await PlaylistAPI.remove(collection.syncedPlaylistUri, unwanted);
+      Spicetify.showNotification("Playlist synced");
     }
     unsyncCollection(uri) {
       const collection = this.getCollection(uri);
@@ -656,6 +691,7 @@ var library = (() => {
         return;
       collection.syncedPlaylistUri = void 0;
       this.saveCollections();
+      Spicetify.showNotification("Collection unsynced");
     }
     async getTracklist(collectionUri) {
       const collection = this.getCollection(collectionUri);
@@ -663,8 +699,17 @@ var library = (() => {
         return [];
       return Promise.all(
         collection.items.map(async (uri) => {
-          const album = await Spicetify.Platform.LibraryAPI.getAlbum(uri);
-          return album.items.map((t) => t.uri);
+          if (uri.includes("local")) {
+            const localAlbums = await this.getLocalAlbums();
+            const localAlbum = localAlbums.get(uri);
+            return localAlbum?.getTracks().map((t) => t.uri) || [];
+          }
+          const res = await Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryAlbumTrackUris, {
+            offset: 0,
+            limit: 50,
+            uri
+          });
+          return res.data.albumUnion.tracksV2.items.map((t) => t.track.uri);
         })
       ).then((tracks) => tracks.flat());
     }
@@ -693,7 +738,8 @@ var library = (() => {
         Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistDiscographyAlbums, {
           uri: artistUri,
           offset: 0,
-          limit: 50
+          limit: 50,
+          order: "DATE_DESC"
         }),
         Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistOverview, {
           uri: artistUri,
@@ -740,7 +786,8 @@ var library = (() => {
       if (!collection)
         return;
       for (const album of collection.items) {
-        Spicetify.Platform.LibraryAPI.remove({ uris: [album] });
+        if (!album.includes("local"))
+          Spicetify.Platform.LibraryAPI.remove({ uris: [album] });
       }
       this.deleteCollection(uri);
     }
@@ -748,11 +795,20 @@ var library = (() => {
       const collection = this.getCollection(collectionUri);
       if (!collection)
         return;
-      await Spicetify.Platform.LibraryAPI.add({ uris: [albumUri] });
-      collection.items.push(albumUri);
-      this.saveCollections();
-      Spicetify.showNotification("Album added to collection");
-      this.syncCollection(collectionUri);
+      if (!albumUri.includes("local")) {
+        const isSaved = await Spicetify.Platform.LibraryAPI.contains(albumUri)[0];
+        if (!isSaved) {
+          await Spicetify.Platform.LibraryAPI.add({ uris: [albumUri] });
+        }
+      }
+      if (!collection.items.includes(albumUri)) {
+        collection.items.push(albumUri);
+        this.saveCollections();
+        Spicetify.showNotification("Album added to collection");
+        this.syncCollection(collectionUri);
+      } else {
+        Spicetify.showNotification("Album already in collection");
+      }
     }
     removeAlbumFromCollection(collectionUri, albumUri) {
       const collection = this.getCollection(collectionUri);
@@ -851,19 +907,6 @@ var library = (() => {
       className: "main-image-image x-entityImage-image main-image-loading main-image-loaded"
     });
   };
-  var FolderPlaceholder = () => {
-    return /* @__PURE__ */ import_react10.default.createElement("div", {
-      className: "x-entityImage-imagePlaceholder"
-    }, /* @__PURE__ */ import_react10.default.createElement("svg", {
-      "data-encore-id": "icon",
-      role: "img",
-      "aria-hidden": "true",
-      className: "Svg-sc-ytk21e-0 Svg-img-icon-medium",
-      viewBox: "0 0 24 24"
-    }, /* @__PURE__ */ import_react10.default.createElement("path", {
-      d: "M1 4a2 2 0 0 1 2-2h5.155a3 3 0 0 1 2.598 1.5l.866 1.5H21a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7.155 0H3v16h18V7H10.464L9.021 4.5a1 1 0 0 0-.866-.5z"
-    })));
-  };
   var SpicetifyLibrary = class {
     ConfigWrapper = new config_wrapper_default(
       [
@@ -883,6 +926,21 @@ var library = (() => {
           type: "toggle",
           def: false,
           callback: setSearchBarSize
+        },
+        {
+          name: "Add Local Albums Integration",
+          key: "localAlbums",
+          type: "toggle",
+          def: true,
+          desc: "You need to install the better-local-files app for this to work."
+        },
+        {
+          name: "Hide 'Your Library' Button",
+          key: "hideLibraryButton",
+          type: "toggle",
+          def: false,
+          desc: "This is experimental and may break the sidebar layout in some cases. Requires a spotify restart to take effect.",
+          sectionHeader: "Left Sidebar"
         },
         {
           name: "Playlists Page",
@@ -909,7 +967,7 @@ var library = (() => {
     main(LocalStorageAPI);
   })();
   function main(LocalStorageAPI) {
-    const isAlbum = (props) => props.uri?.includes("album");
+    const isAlbum = (props) => props.uri?.includes("album") || props.id?.includes("local");
     const isArtist = (props) => props.uri?.includes("artist");
     Spicetify.ContextMenuV2.registerItem(/* @__PURE__ */ import_react10.default.createElement(album_menu_item_default, null), isAlbum);
     Spicetify.ContextMenuV2.registerItem(/* @__PURE__ */ import_react10.default.createElement(artist_menu_item_default, null), isArtist);
@@ -926,9 +984,7 @@ var library = (() => {
             if (!imageBox)
               return;
             const imageUrl = FolderImageWrapper.getFolderImage(uri);
-            if (!imageUrl)
-              import_react_dom.default.render(/* @__PURE__ */ import_react10.default.createElement(FolderPlaceholder, null), imageBox);
-            else
+            if (imageUrl)
               import_react_dom.default.render(/* @__PURE__ */ import_react10.default.createElement(FolderImage, {
                 url: imageUrl
               }), imageBox);
@@ -939,7 +995,7 @@ var library = (() => {
     injectFolderImages();
     FolderImageWrapper.addEventListener("update", injectFolderImages);
     function injectYLXButtons() {
-      const ylx_filter = document.querySelector(".main-yourLibraryX-libraryRootlist > .main-yourLibraryX-libraryFilter");
+      const ylx_filter = document.querySelector(".main-yourLibraryX-libraryRootlist .main-yourLibraryX-libraryFilter");
       if (!ylx_filter) {
         return setTimeout(injectYLXButtons, 100);
       }
@@ -956,24 +1012,22 @@ var library = (() => {
       const collapseButton = document.createElement("span");
       collapseButton.classList.add("collapse-button");
       ylx_filter.appendChild(collapseButton);
-      import_react_dom.default.render(
-        /* @__PURE__ */ import_react10.default.createElement(Spicetify.ReactComponent.TooltipWrapper, {
-          label: "Collapse Sidebar",
-          placement: "top"
-        }, /* @__PURE__ */ import_react10.default.createElement(collapse_button_default, null)),
-        collapseButton
-      );
+      import_react_dom.default.render(/* @__PURE__ */ import_react10.default.createElement(collapse_button_default, null), collapseButton);
     }
-    const state = LocalStorageAPI.getItem("ylx-sidebar-state");
+    if (!window.SpicetifyLibrary.ConfigWrapper.Config.hideLibraryButton) {
+      return;
+    }
+    document.body.classList.add("hide-library-button");
+    const state = LocalStorageAPI.getItem("left-sidebar-state");
     if (state === 0)
       injectYLXButtons();
     LocalStorageAPI.getEvents()._emitter.addListener("update", (e) => {
       const { key, value } = e.data;
-      if (key === "ylx-sidebar-state" && value === 0) {
+      if (key === "left-sidebar-state" && value === 0) {
         injectFolderImages();
         injectYLXButtons();
       }
-      if (key === "ylx-sidebar-state" && value === 1) {
+      if (key === "left-sidebar-state" && value === 1) {
         injectFolderImages();
       }
     });

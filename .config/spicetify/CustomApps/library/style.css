@@ -1,4 +1,4 @@
-/* ../../../AppData/Local/Temp/tmp-4464-wbZ6O1BKhuot/19178f16f304/navBar.module.css */
+/* ../../../AppData/Local/Temp/tmp-11620-eM0deEIwPFIq/1961479c6904/navBar.module.css */
 .navBar-module__topBarHeaderItem___piw4C_library {
   -webkit-app-region: no-drag;
   display: inline-block;
@@ -46,7 +46,7 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_library {
   padding: 0;
 }
 
-/* ../../../AppData/Local/Temp/tmp-4464-wbZ6O1BKhuot/19178f16dc80/app.css */
+/* ../../../AppData/Local/Temp/tmp-11620-eM0deEIwPFIq/1961479c4ec0/app.css */
 :root {
   --library-card-size: 180px;
   --library-searchbar-size: 200px;
@@ -79,6 +79,10 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_library {
 #library-app .load-more-card:hover {
   cursor: pointer;
 }
+#library-app .x-filterBox-searchIcon {
+  --encore-icon-height: var(--encore-graphic-size-decorative-smaller);
+  --encore-icon-width: var(--encore-graphic-size-decorative-smaller);
+}
 .text-input-form {
   display: flex;
   flex-direction: column;
@@ -104,25 +108,27 @@ div.navBar-module__topBarHeaderItemLink___xA4uv_library {
   align-self: end;
 }
 
-/* ../../../AppData/Local/Temp/tmp-4464-wbZ6O1BKhuot/19178f16ee21/external.css */
-body:not(.show-ylx-filters) .main-yourLibraryX-filterArea:not(:has(> .main-yourLibraryX-libraryFilter)),
-.main-yourLibraryX-header:not(:has(> .main-yourLibraryX-headerContent > .main-yourLibraryX-collapseButton > button:nth-child(2))),
-.main-yourLibraryX-collapseButton > button:first-child,
-.main-yourLibraryX-headerContent > button {
+/* ../../../AppData/Local/Temp/tmp-11620-eM0deEIwPFIq/1961479c6341/external.css */
+body.hide-library-button:not(.show-ylx-filters) .main-yourLibraryX-filterArea:not(:has(> .main-yourLibraryX-libraryFilter)),
+body.hide-library-button .main-yourLibraryX-header:not(:has(> .main-yourLibraryX-headerContent > .main-yourLibraryX-collapseButton > button:nth-child(2))),
+body.hide-library-button .main-yourLibraryX-collapseButton > button:first-child,
+body.hide-library-button .main-yourLibraryX-headerContent > button {
   display: none;
 }
-.main-yourLibraryX-library {
+body.hide-library-button .main-yourLibraryX-library {
   padding-top: 8px;
 }
-.main-yourLibraryX-header {
+body.hide-library-button .main-yourLibraryX-header {
   margin-top: -8px;
 }
-.main-yourLibraryX-libraryFilter .main-yourLibraryX-librarySortWrapper button span:first-child,
-.main-yourLibraryX-libraryFilter span[role=presentation] span[role=presentation] button span:first-child {
+body.hide-library-button .main-yourLibraryX-libraryFilter {
+  --encore-spacing-base: 8px;
+}
+body.hide-library-button .main-yourLibraryX-libraryFilter span[role=presentation] button span:first-child,
+body.hide-library-button .main-yourLibraryX-libraryFilter span[role=presentation] button span:first-child {
   display: none;
 }
-.main-yourLibraryX-libraryFilter .main-yourLibraryX-librarySortWrapper,
-.main-yourLibraryX-libraryFilter span[role=presentation] {
+body.hide-library-button .main-yourLibraryX-libraryFilter span[role=presentation] {
   margin-left: auto;
 }
 .toggle-filters-button > button:after,
@@ -236,7 +242,7 @@ li.main-yourLibraryX-navItem[data-id="/library"] > a {
   transform: scale(1.04);
 }
 
-/* ../../../AppData/Local/Temp/tmp-4464-wbZ6O1BKhuot/19178f16f0a2/config_modal.css */
+/* ../../../AppData/Local/Temp/tmp-11620-eM0deEIwPFIq/1961479c6612/config_modal.css */
 .config-container {
   gap: 10px;
   display: flex;
@@ -313,7 +319,7 @@ li.main-yourLibraryX-navItem[data-id="/library"] > a {
   width: 200px;
 }
 
-/* ../../../AppData/Local/Temp/tmp-4464-wbZ6O1BKhuot/19178f16f163/shared.css */
+/* ../../../AppData/Local/Temp/tmp-11620-eM0deEIwPFIq/1961479c6713/shared.css */
 .grid {
   --grid-gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
@@ -376,4 +382,11 @@ li.main-yourLibraryX-navItem[data-id="/library"] > a {
   padding: 2px 12px;
   margin: 0 24px;
   border: 0px;
+}
+.x-sortBox-sortDropdown {
+  fill: rgba(var(--spice-rgb-selected-row), 0.7);
+}
+#stats-app > :first-child,
+#library-app > :first-child {
+  margin-top: 64px;
 }

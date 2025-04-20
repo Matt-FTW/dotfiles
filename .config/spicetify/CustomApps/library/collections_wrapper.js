@@ -95,6 +95,23 @@ var library = (() => {
     getCollection(uri) {
       return this._collections.find((collection) => collection.uri === uri);
     }
+    async getLocalAlbums() {
+      const localAlbumsIntegration = window.localTracksService;
+      if (!localAlbumsIntegration)
+        return /* @__PURE__ */ new Map();
+      if (!localAlbumsIntegration.isReady) {
+        await new Promise((resolve) => {
+          const sub = localAlbumsIntegration.isReady$.subscribe((ready) => {
+            if (ready) {
+              resolve(true);
+              sub.unsubscribe();
+            }
+          });
+          localAlbumsIntegration.init();
+        });
+      }
+      return localAlbumsIntegration.getAlbums();
+    }
     async getCollectionContents(uri) {
       const collection = this.getCollection(uri);
       if (!collection)
@@ -106,6 +123,12 @@ var library = (() => {
         limit: 9999
       });
       items.push(...albums.items.filter((album) => collection.items.includes(album.uri)));
+      const localAlbumUris = collection.items.filter((item) => item.includes("local"));
+      if (localAlbumUris.length > 0) {
+        const localAlbums = await this.getLocalAlbums();
+        const inCollection = localAlbumUris.map((uri2) => localAlbums.get(uri2));
+        items.push(...inCollection.filter(Boolean));
+      }
       return items;
     }
     async getContents(props) {
@@ -123,10 +146,18 @@ var library = (() => {
       for (const collection of this._collections) {
         const boolArray = await Spicetify.Platform.LibraryAPI.contains(...collection.items);
         if (boolArray.includes(false)) {
-          collection.items = collection.items.filter((_, i) => boolArray[i]);
-          this.saveCollections();
-          Spicetify.showNotification("Album removed from collection");
-          this.syncCollection(collection.uri);
+          const result = [];
+          for (let i = 0; i < boolArray.length; i++) {
+            if (boolArray[i] || collection.items[i].includes("local")) {
+              result.push(collection.items[i]);
+            }
+          }
+          if (result.length !== collection.items.length) {
+            collection.items = collection.items.filter((uri, i) => boolArray[i] || uri.includes("local"));
+            this.saveCollections();
+            Spicetify.showNotification("Album removed from collection");
+            this.syncCollection(collection.uri);
+          }
         }
       }
     }
@@ -146,6 +177,7 @@ var library = (() => {
         await PlaylistAPI.add(collection.syncedPlaylistUri, wanted, { before: "end" });
       if (unwanted.length)
         await PlaylistAPI.remove(collection.syncedPlaylistUri, unwanted);
+      Spicetify.showNotification("Playlist synced");
     }
     unsyncCollection(uri) {
       const collection = this.getCollection(uri);
@@ -153,6 +185,7 @@ var library = (() => {
         return;
       collection.syncedPlaylistUri = void 0;
       this.saveCollections();
+      Spicetify.showNotification("Collection unsynced");
     }
     async getTracklist(collectionUri) {
       const collection = this.getCollection(collectionUri);
@@ -160,8 +193,17 @@ var library = (() => {
         return [];
       return Promise.all(
         collection.items.map(async (uri) => {
-          const album = await Spicetify.Platform.LibraryAPI.getAlbum(uri);
-          return album.items.map((t) => t.uri);
+          if (uri.includes("local")) {
+            const localAlbums = await this.getLocalAlbums();
+            const localAlbum = localAlbums.get(uri);
+            return localAlbum?.getTracks().map((t) => t.uri) || [];
+          }
+          const res = await Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryAlbumTrackUris, {
+            offset: 0,
+            limit: 50,
+            uri
+          });
+          return res.data.albumUnion.tracksV2.items.map((t) => t.track.uri);
         })
       ).then((tracks) => tracks.flat());
     }
@@ -190,7 +232,8 @@ var library = (() => {
         Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistDiscographyAlbums, {
           uri: artistUri,
           offset: 0,
-          limit: 50
+          limit: 50,
+          order: "DATE_DESC"
         }),
         Spicetify.GraphQL.Request(Spicetify.GraphQL.Definitions.queryArtistOverview, {
           uri: artistUri,
@@ -237,7 +280,8 @@ var library = (() => {
       if (!collection)
         return;
       for (const album of collection.items) {
-        Spicetify.Platform.LibraryAPI.remove({ uris: [album] });
+        if (!album.includes("local"))
+          Spicetify.Platform.LibraryAPI.remove({ uris: [album] });
       }
       this.deleteCollection(uri);
     }
@@ -245,11 +289,20 @@ var library = (() => {
       const collection = this.getCollection(collectionUri);
       if (!collection)
         return;
-      await Spicetify.Platform.LibraryAPI.add({ uris: [albumUri] });
-      collection.items.push(albumUri);
-      this.saveCollections();
-      Spicetify.showNotification("Album added to collection");
-      this.syncCollection(collectionUri);
+      if (!albumUri.includes("local")) {
+        const isSaved = await Spicetify.Platform.LibraryAPI.contains(albumUri)[0];
+        if (!isSaved) {
+          await Spicetify.Platform.LibraryAPI.add({ uris: [albumUri] });
+        }
+      }
+      if (!collection.items.includes(albumUri)) {
+        collection.items.push(albumUri);
+        this.saveCollections();
+        Spicetify.showNotification("Album added to collection");
+        this.syncCollection(collectionUri);
+      } else {
+        Spicetify.showNotification("Album already in collection");
+      }
     }
     removeAlbumFromCollection(collectionUri, albumUri) {
       const collection = this.getCollection(collectionUri);
