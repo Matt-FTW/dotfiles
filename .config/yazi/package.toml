@@ -1,17 +1,12 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "9a09505"
+rev = "b12a9ab"
 hash = "1f3dad061209081a6b04dd6ff2cb06c7"
 
 [[plugin.deps]]
-use = "KKV9/compress"
-rev = "60b24af"
-hash = "ee025be766240cc98e671754ac836da3"
-
-[[plugin.deps]]
 use = "imsi32/yatline"
-rev = "6b0fc1e"
-hash = "ab115c6cc77f5710c27f39dfa2f3d4d"
+rev = "90e0284"
+hash = "8d4cb2dfadcbda045ddaa5c274441f9c"
 
 [[plugin.deps]]
 use = "imsi32/yatline-githead"
@@ -20,7 +15,7 @@ hash = "bfd30c396bbe2af526cb949d97ce3dcf"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "9a09505"
+rev = "b12a9ab"
 hash = "e0ada736ea676c2bbb3ec705a49526ef"
 
 [flavor]
