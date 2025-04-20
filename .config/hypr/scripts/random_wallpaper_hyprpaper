@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+WALLPAPER_DIR="$HOME/.config/hypr/theme/walls"
+CURRENT_WALL=$(hyprctl hyprpaper listloaded)
+
+WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
+
+hyprctl hyprpaper reload ,"$WALLPAPER" && notify-send "Wallpaper Changed" -i "$WALLPAPER" --app-name=Wallpaper

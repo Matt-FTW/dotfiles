@@ -4,7 +4,8 @@
 udiskie &
 
 # Wallpaper Backend
-swww-daemon --format xrgb &
+hyprpaper &
+"$HOME"/.config/hypr/scripts/random_wallpaper_hyprpaper &
 
 # Pyprland Daemon
 pypr --debug /tmp/pypr.log &
@@ -31,7 +32,7 @@ wl-paste --watch cliphist store &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Screen sharing and portals
-"$HOME"/.config/hypr/portal &
+"$HOME"/.config/hypr/scripts/portal &
 # xwaylandvideobridge & # Off when using Vesktop instead of Discord
 
 # Audio
