@@ -1,6 +1,5 @@
 {
   "include": [
-    "~/.config/waybar/modules/custom-cava.jsonc",
     "~/.config/waybar/modules/custom-wf-recorder.jsonc",
     "~/.config/waybar/modules/custom-updates.jsonc",
     "~/.config/waybar/modules/custom-music.jsonc",
