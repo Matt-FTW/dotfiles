@@ -1,18 +1,21 @@
 {
-  "timeStamp": 1742988054380,
+  "timeStamp": 1745253018328,
   "version": "1.63.2",
   "userSettings": {
-    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt\nhttps://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt\nhttps://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
+    "externalLists": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/Onsotumenh/YouTube-Cosmetic-Filters-for-uBlock-Origin/main/YouTubeFilterList.txt\nhttps://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist.txt\nhttps://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt\nhttps://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt\nhttps://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt\nhttps://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt\nhttps://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
     "importedLists": [
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt",
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
+      "https://raw.githubusercontent.com/Onsotumenh/YouTube-Cosmetic-Filters-for-uBlock-Origin/main/YouTubeFilterList.txt",
+      "https://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist.txt",
+      "https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt",
       "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
       "https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt",
       "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
       "https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt",
       "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt"
     ],
-    "popupPanelSections": 31
+    "popupPanelSections": 63
   },
   "selectedFilterLists": [
     "user-filters",
@@ -39,8 +42,11 @@
     "https://raw.githubusercontent.com/yokoffing/filterlists/main/annoyance_list.txt",
     "https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt",
     "https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt",
+    "https://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist.txt",
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt",
-    "https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt"
+    "https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt",
+    "https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/list.txt",
+    "https://raw.githubusercontent.com/Onsotumenh/YouTube-Cosmetic-Filters-for-uBlock-Origin/main/YouTubeFilterList.txt"
   ],
   "hiddenSettings": {},
   "whitelist": [
@@ -50,5 +56,5 @@
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true\nno-strict-blocking: cheatsheets.zip true\nno-strict-blocking: pwning.owasp-juice.shop true\nno-strict-blocking: squid.wtf true",
-  "userFilters": "/pagead.js$domain=d3ward.github.io\n/widget/ads.\n\n! Jan 22, 2025 https://www.youtube.com\nwww.youtube.com###chips-wrapper > .ytd-feed-filter-chip-bar-renderer.style-scope"
+  "userFilters": "/pagead.js$domain=d3ward.github.io\n/widget/ads.\n\n! Hide the related videos sidebar when watching a video and move the video player to centre\nwww.youtube.com###secondary"
 }
