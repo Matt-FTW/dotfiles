@@ -3,10 +3,6 @@
 # Automounter for removable media
 udiskie &
 
-# Wallpaper Backend
-hyprpaper &
-"$HOME"/.config/hypr/scripts/random_wallpaper_hyprpaper &
-
 # Pyprland Daemon
 pypr --debug /tmp/pypr.log &
 
@@ -37,3 +33,8 @@ wl-paste --watch cliphist store &
 
 # Audio
 easyeffects --gapplication-service &
+
+# Wallpaper Backend
+hyprpaper &
+# swww-daemon --format xrgb &
+"$HOME"/.config/hypr/scripts/random_wallpaper &

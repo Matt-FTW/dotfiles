@@ -1,5 +1,5 @@
 [pyprland]
-plugins = ["scratchpads", "magnify", "wallpapers"]
+plugins = ["scratchpads", "magnify"]
 
 [scratchpads.volume]
 command = "pavucontrol"
