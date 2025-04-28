@@ -20,6 +20,10 @@ choice=$(
     $rofi_cmd
 )
 
+if [ -z "$choice" ]; then
+  exit 1
+fi
+
 WALLPAPER="$wallpapers_dir/$choice"
 
 if pgrep -x "hyprpaper" >/dev/null; then
