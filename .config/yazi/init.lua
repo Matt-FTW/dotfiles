@@ -33,7 +33,7 @@ require("full-border"):setup({
 })
 
 require("zoxide"):setup({
-	update_db = true,
+	update_db = false,
 })
 
 require("session"):setup({
