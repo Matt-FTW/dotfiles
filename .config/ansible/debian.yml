@@ -1,9 +1,0 @@
-- name: Setup Debian Linux
-  hosts: local
-  roles:
-    - role: system
-      vars:
-        role_path: roles/debian
-    - role: packages
-      vars:
-        role_path: roles/debian

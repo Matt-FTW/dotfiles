@@ -1,9 +1,0 @@
-- name: Setup Arch Linux
-  hosts: local
-  roles:
-    - role: system
-      vars:
-        role_path: roles/arch
-    - role: packages
-      vars:
-        role_path: roles/arch

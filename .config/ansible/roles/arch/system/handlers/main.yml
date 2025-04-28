@@ -1,3 +1,0 @@
-- name: update_repos
-  pacman:
-    update_cache: yes
