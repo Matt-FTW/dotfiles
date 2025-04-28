@@ -99,3 +99,6 @@ keymap_mode = "vim-insert"
 ## faster sync
 [sync]
 records = true
+
+[theme]
+name = "catppuccin-macchiato-lavender"

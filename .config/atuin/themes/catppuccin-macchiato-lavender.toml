@@ -1,0 +1,12 @@
+[theme]
+name = "catppuccin-macchiato-lavender"
+
+[colors]
+AlertInfo = "#a6da95"
+AlertWarn = "#f5a97f"
+AlertError = "#ed8796"
+Annotation = "#b7bdf8"
+Base = "#cad3f5"
+Guidance = "#939ab7"
+Important = "#ed8796"
+Title = "#b7bdf8"
