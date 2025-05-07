@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Wallpaper engine
+# swww-daemon --format xrgb &
+hyprpaper &
+
 # Automounter for removable media
 udiskie &
 
@@ -15,9 +19,6 @@ swaync &
 # OSD Window
 swayosd-server &
 
-# Notify about devices connecting and disconnecting
-devify &
-
 # Idle daemon to screen lock
 hypridle &
 
@@ -27,14 +28,12 @@ wl-paste --watch cliphist store &
 # Polkit authentication
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-# Screen sharing and portals
-"$HOME"/.config/hypr/scripts/portal &
-# xwaylandvideobridge & # Off when using Vesktop instead of Discord
-
 # Audio
 easyeffects --gapplication-service &
 
-# Wallpaper Backend
-hyprpaper &
-# swww-daemon --format xrgb &
+# Random Wallpaper
 "$HOME"/.config/hypr/scripts/random_wallpaper &
+
+# Screen sharing and portals
+"$HOME"/.config/hypr/scripts/portal &
+# xwaylandvideobridge & # Off when using Vesktop instead of Discord
