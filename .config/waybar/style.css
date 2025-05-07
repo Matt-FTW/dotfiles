@@ -143,7 +143,7 @@ window#waybar.hidden {
     rgba(238, 153, 160, 1) 100%
   );
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
   color: @mauve;
   border-radius: 12px;
@@ -239,7 +239,7 @@ window#waybar.hidden {
     rgba(238, 153, 160, 1) 100%
   );
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   text-shadow: 0px 0px 5px @lavender;
   font-weight: bold;
   color: @mantle;
@@ -263,7 +263,7 @@ window#waybar.hidden {
     rgba(238, 153, 160, 1) 100%
   );
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   text-shadow: 0px 0px 5px @border;
   font-weight: bold;
   color: @mantle;
@@ -346,7 +346,7 @@ window#waybar.hidden {
     rgba(238, 153, 160, 1) 100%
   );
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  /* animation: gradient 15s ease infinite; */
   text-shadow: 0px 0px 5px @border;
   font-weight: bold;
   color: @mantle;
