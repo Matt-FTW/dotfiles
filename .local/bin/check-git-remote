@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+GIT_REMOTE=$(command git ls-remote --get-url 2>/dev/null)
+if [[ "$GIT_REMOTE" =~ "github" ]]; then
+  GIT_REMOTE_SYMBOL=" "
+elif [[ "$GIT_REMOTE" =~ "gitlab" ]]; then
+  GIT_REMOTE_SYMBOL=" "
+elif [[ "$GIT_REMOTE" =~ "bitbucket" ]]; then
+  GIT_REMOTE_SYMBOL=" "
+else
+  GIT_REMOTE_SYMBOL=" "
+fi
+echo "$GIT_REMOTE_SYMBOL "
