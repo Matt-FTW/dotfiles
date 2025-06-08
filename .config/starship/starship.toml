@@ -61,23 +61,31 @@ truncation_length = 3
 # ".config" = " "
 
 # Custom entries
-# [custom.yazi]
-# description = "Shell launched inside Yazi"
-# symbol = " "
-# style = "blue bold"
-# when = """ test -n "$YAZI_LEVEL" """
+[custom.neovim]
+command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
+detect_folders = ["lua"]
+style = "green"
+format = "[ $output ]($style)"
+shell = ["bash"]
 
-# [custom.neovim]
-# command = 'bob ls | rg Used | awk "{print \$2}"' # shows output of command
-# detect_folders = ["lua"]
-# style = "green"
-# format = "[ $output ]($style)"
-# shell = ["bash"]
+[custom.hypr]
+style = "blue"
+format = "[ ]($style)"
+detect_files = ["hyprland.conf"]
 
-# [custom.hypr]
-# style = "blue"
-# format = "[ ]($style)"
-# detect_files = ["hyprland.conf"]
+[custom.docker]
+files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]
+style = "bold blue"
+format = "[ ]($style)"
+
+
+[custom.giturl]
+# disabled = true
+description = "Display symbol for remote Git server"
+command = "check-git-remote"
+when = 'git rev-parse --is-inside-work-tree 2> /dev/null'
+shell = ["bash", "--noprofile", "--norc"]
+format = "at $output  "
 
 # Nerd fonts preset
 [aws]
