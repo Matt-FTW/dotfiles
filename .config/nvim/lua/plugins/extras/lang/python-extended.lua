@@ -17,6 +17,13 @@ return {
             basedpyright = {
               analysis = {
                 diagnosticSeverityOverrides = {
+                  reportMissingTypeStubs = "information", -- import has no type stub file
+                  reportIgnoreCommentWithoutRule = "warning",
+                  reportUnreachable = "error",
+                  reportPrivateLocalImportUsage = "error",
+                  reportImplicitRelativeImport = "error",
+                  reportInvalidCast = "error",
+                  reportMissingSuperCall = false,
                   reportUnusedCallResult = "information",
                   reportUnusedExpression = "information",
                   reportUnknownMemberType = "none",
@@ -53,11 +60,6 @@ return {
             },
           },
         },
-        [vim.g.lazyvim_python_ruff] = {
-          handlers = {
-            ["textDocument/publishDiagnostics"] = function() end,
-          },
-        },
       },
     },
   },
@@ -76,13 +78,6 @@ return {
     },
     dependencies = {
       { "nvim-lua/plenary.nvim" },
-      {
-        "hrsh7th/nvim-cmp",
-        dependencies = {},
-        opts = function(_, opts)
-          table.insert(opts.sources, { name = "py-requirements" })
-        end,
-      },
     },
     opts = {},
     -- stylua: ignore

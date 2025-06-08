@@ -36,10 +36,6 @@ return {
     },
   },
   {
-    "dmmulroy/ts-error-translator.nvim",
-    opts = {},
-  },
-  {
     "luckasRanarison/nvim-devdocs",
     optional = true,
     opts = {
