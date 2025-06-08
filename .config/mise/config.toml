@@ -11,6 +11,9 @@ deno = "latest"
 go = "latest"
 watchexec = "latest"
 "cargo:cargo-cache" = "latest"
+"cargo:kanata" = "latest"
+"go:github.com/stefanlogue/meteor" = "latest"
+"pipx:darrenburns/posting" = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
@@ -39,8 +42,7 @@ not_found_auto_install = true # see MISE_NOT_FOUND_AUTO_INSTALL
 task_output = "prefix"        # see Tasks Runner for more information
 paranoid = false              # see MISE_PARANOID
 
-shorthands_file = '~/.config/mise/shorthands.toml' # path to the shorthands file, see `MISE_SHORTHANDS_FILE`
-disable_default_shorthands = false                 # disable the default shorthands, see `MISE_DISABLE_DEFAULT_SHORTHANDS`
+disable_default_shorthands = false # disable the default shorthands, see `MISE_DISABLE_DEFAULT_SHORTHANDS`
 
 env_file = '.env' # load env vars from a dotenv file, see `MISE_ENV_FILE`
 
@@ -50,3 +52,4 @@ experimental = true # enable experimental features
 status = { missing_tools = "if_other_versions_installed", show_env = false, show_tools = false }
 cargo_binstall = true                                                                            # Install pre-compiled cargo packages
 pipx_uvx = true                                                                                  # Use uvx instead of pipx
+idiomatic_version_file_enable_tools = ["node"]
