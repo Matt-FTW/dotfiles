@@ -1,10 +1,10 @@
 [delta "catppuccin-latte"]
 	blame-palette = "#eff1f5 #e6e9ef #dce0e8 #ccd0da #bcc0cc"
-	commit-decoration-style = box ul
+	commit-decoration-style = "#9ca0b0" bold box ul
 	light = true
-	file-decoration-style = "#4c4f69"
+	file-decoration-style = "#9ca0b0"
 	file-style = "#4c4f69"
-	hunk-header-decoration-style = box ul
+	hunk-header-decoration-style = "#9ca0b0" box ul
 	hunk-header-file-style = bold
 	hunk-header-line-number-style = bold "#6c6f85"
 	hunk-header-style = file line-number syntax
@@ -31,11 +31,11 @@
 
 [delta "catppuccin-frappe"]
 	blame-palette = "#303446 #292c3c #232634 #414559 #51576d"
-	commit-decoration-style = box ul
+	commit-decoration-style = "#737994" bold box ul
 	dark = true
-	file-decoration-style = "#c6d0f5"
+	file-decoration-style = "#737994"
 	file-style = "#c6d0f5"
-	hunk-header-decoration-style = box ul
+	hunk-header-decoration-style = "#737994" box ul
 	hunk-header-file-style = bold
 	hunk-header-line-number-style = bold "#a5adce"
 	hunk-header-style = file line-number syntax
@@ -62,11 +62,11 @@
 
 [delta "catppuccin-macchiato"]
 	blame-palette = "#24273a #1e2030 #181926 #363a4f #494d64"
-	commit-decoration-style = box ul
+	commit-decoration-style = "#6e738d" bold box ul
 	dark = true
-	file-decoration-style = "#cad3f5"
+	file-decoration-style = "#6e738d"
 	file-style = "#cad3f5"
-	hunk-header-decoration-style = box ul
+	hunk-header-decoration-style = "#6e738d" box ul
 	hunk-header-file-style = bold
 	hunk-header-line-number-style = bold "#a5adcb"
 	hunk-header-style = file line-number syntax
@@ -93,11 +93,11 @@
 
 [delta "catppuccin-mocha"]
 	blame-palette = "#1e1e2e #181825 #11111b #313244 #45475a"
-	commit-decoration-style = box ul
+	commit-decoration-style = "#6c7086" bold box ul
 	dark = true
-	file-decoration-style = "#cdd6f4"
+	file-decoration-style = "#6c7086"
 	file-style = "#cdd6f4"
-	hunk-header-decoration-style = box ul
+	hunk-header-decoration-style = "#6c7086" box ul
 	hunk-header-file-style = bold
 	hunk-header-line-number-style = bold "#a6adc8"
 	hunk-header-style = file line-number syntax
