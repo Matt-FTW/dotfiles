@@ -34,7 +34,11 @@ return {
       {
         "<leader>sy",
         function()
-          vim.cmd([[YankyRingHistory]])
+          if LazyVim.pick.picker.name == "snacks" then
+            Snacks.picker.yanky()
+          else
+            vim.cmd([[YankyRingHistory]])
+          end
         end,
         mode = { "n", "v" },
         desc = "Yank History",
