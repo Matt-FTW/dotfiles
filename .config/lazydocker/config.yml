@@ -53,8 +53,8 @@ commandTemplates:
   checkDockerComposeConfig: "{{ .DockerCompose }} config --quiet"
   serviceTop: "{{ .DockerCompose }} top {{ .Service.Name }}"
 oS:
-  openCommand: open {{filename}}
-  openLinkCommand: open {{link}}
+  openCommand: $EDITOR {{filename}}
+  openLinkCommand: xdg-open {{link}}
 stats:
   graphs:
     - caption: CPU (%)
