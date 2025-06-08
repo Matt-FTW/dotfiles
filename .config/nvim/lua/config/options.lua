@@ -38,6 +38,9 @@ o.showcmd = false
 o.laststatus = 3
 o.cmdheight = 0
 
+-- Disable native bufferline
+o.showtabline = 0
+
 -- Enable spell checking
 o.spell = true
 o.spelllang:append("es")

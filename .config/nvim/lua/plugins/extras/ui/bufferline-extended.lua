@@ -12,6 +12,7 @@ table.insert(keys, { prefix .. ">", "<cmd>BufferLineMoveNext<cr>", desc = "Move 
 
 return {
   "akinsho/bufferline.nvim",
+  enabled = false,
   keys = keys,
   opts = {
     options = {
