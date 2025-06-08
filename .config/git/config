@@ -31,10 +31,11 @@
   excludesfile = ~/.config/git/ignore
 
 [interactive]
-  diffFilter = delta --color-only
+  diffFilter = delta
 
 [delta]
   features = catppuccin-macchiato
+  decoration = true
   side-by-side = false
   true-color = always
   hyperlinks = true
