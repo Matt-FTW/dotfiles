@@ -3,7 +3,7 @@
 gui:
   scrollHeight: 10 # how many lines you scroll by
   scrollPastBottom: false # enable scrolling past the bottom
-  sidePanelWidth: 0.25 # number from 0 to 1
+  sidePanelWidth: 0.22 # number from 0 to 1
   expandFocusedSidePanel: true
   theme:
     activeBorderColor:
@@ -33,24 +33,28 @@ gui:
     "feature": "#a6da95"
   showBottomLine: false # for hiding the bottom information line (unless it has important information to tell you)
   nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
+  showNumstatInFilesView: true
   commandLogSize: 5
   showDivergenceFromBaseBranch: "arrowAndNumber"
   filterMode: "fuzzy"
   showPanelJumps: false
   skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
-  statusPanelView: "dashboard"
+  statusPanelView: allBranchesLog
 git:
   paging:
     colorArg: always
-    pager: delta --paging=never --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
-  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' {{branchName}} --"
-  allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --date-relative --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
+    pager: delta --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' {{branchName}} --"
   parseEmoji: true
+  allBranchesLogCmds:
+    - git log --graph --all --color=always --abbrev-commit  --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 os:
-  edit: '[ -z "$NVIM" ] && (nvim -- {{filename}}) || (nvim --server "$NVIM" --remote-send "q" && nvim --server "$NVIM" --remote {{filename}})'
+  editPreset: "nvim-remote"
+  # edit: '[ -z "$NVIM" ] && (nvim -- {{filename}}) || (nvim --server "$NVIM" --remote-send "q" && nvim --server "$NVIM" --remote {{filename}})'
 disableStartupPopups: true
 notARepository: "skip" # one of: 'prompt' | 'create' | 'skip' | 'quit'
+promptToReturnFromSubprocess: false
 keybinding:
   universal:
     quit: "q"
@@ -119,7 +123,7 @@ keybinding:
     commitChanges: "c"
     commitChangesWithoutHook: "w" # commit changes without pre-commit hook
     amendLastCommit: "A"
-    commitChangesWithEditor: "C"
+    commitChangesWithEditor: "<c-c>"
     ignoreFile: "i"
     refreshFiles: "r"
     stashAllChanges: "s"
@@ -176,9 +180,134 @@ keybinding:
     update: "u"
     bulkMenu: "b"
 customCommands:
+  - key: "<c-n>"
+    description: "New branch with prefix"
+    prompts:
+      - type: "menu"
+        title: "Creating new branch. What kind of branch is it?"
+        options:
+          - name: "feature"
+            value: "feat"
+          - name: "hotfix"
+            value: "hotfix"
+          - name: "fix/bugfix"
+            value: "fix"
+          - name: "chore"
+            value: "chore"
+          - name: "experiment"
+            value: "experiment"
+      - type: "input"
+        title: "What is the new branch name?"
+        initialValue: ""
+    command: "git checkout -b {{index .PromptResponses 0}}/{{index .PromptResponses 1}}"
+    context: "localBranches"
+    loadingText: "Creating branch"
+  - key: "<c-r>"
+    description: "Create pull request on GitHub"
+    context: files, localBranches
+    prompts:
+      - type: "input"
+        title: "Pull Request Title"
+        key: "title"
+        initialValue: ""
+      - type: "input"
+        title: "Base Branch (leave empty for default branch)"
+        key: "base"
+        initialValue: ""
+      - type: "menu"
+        title: "Create as draft PR?"
+        key: "draft"
+        options:
+          - name: "No"
+            value: ""
+          - name: "Yes"
+            value: "--draft"
+      - type: "menu"
+        title: "Add Reviewers"
+        key: "reviewers"
+        options:
+          - name: "CNS"
+            value: "--reviewer peterbornerup,farhadh,benjaminbruun"
+          - name: "None"
+            value: ""
+    command: >
+      gh pr create --assignee @me --title "{{.Form.title}}" --fill {{ if ne .Form.base "" }}--base "{{.Form.base}}"{{ end }} {{.Form.draft}} {{ if eq .Form.reviewers "other" }}--reviewer "{{.Form.customReviewers}}"{{ else }}{{.Form.reviewers}}{{ end }}
+
+    loadingText: "Creating pull request on GitHub"
+  - key: "o"
+    command: "gh repo view --web"
+    context: "localBranches"
+    description: "View Repo on GitHub"
+    loadingText: "Opening GitHub - Repository ..."
+  - key: "O"
+    command: "gh pr view --web"
+    context: "localBranches"
+    description: "View PR on GitHub"
+    loadingText: "Opening GitHub - Pull request ..."
   - key: "C"
-    command: "git cz"
-    description: "commit with commitizen"
+    context: "global"
+    description: "Create new conventional commit"
+    prompts:
+      - type: "menu"
+        key: "Type"
+        title: "Type of change"
+        options:
+          - name: "feat"
+            description: "A new feature"
+            value: "feat"
+          - name: "fix"
+            description: "A bug fix"
+            value: "fix"
+          - name: "chore"
+            description: "Other changes that don't modify src or test files"
+            value: "chore"
+          - name: "build"
+            description: "Changes that affect the build system or external dependencies"
+            value: "build"
+          - name: "ci"
+            description: "Changes to CI configuration files and scripts"
+            value: "ci"
+          - name: "docs"
+            description: "Documentation only changes"
+            value: "docs"
+          - name: "perf"
+            description: "A code change that improves performance"
+            value: "perf"
+          - name: "refactor"
+            description: "A code change that neither fixes a bug nor adds a feature"
+            value: "refactor"
+          - name: "revert"
+            description: "Reverts a previous commit"
+            value: "revert"
+          - name: "style"
+            description: "Changes that do not affect the meaning of the code"
+            value: "style"
+          - name: "test"
+            description: "Adding missing tests or correcting existing tests"
+            value: "test"
+      - type: "input"
+        title: "Scope"
+        key: "Scope"
+        initialValue: ""
+      - type: "menu"
+        key: "Breaking"
+        title: "Breaking change"
+        options:
+          - name: "no"
+            value: ""
+          - name: "yes"
+            value: "!"
+      - type: "input"
+        title: "message"
+        key: "Message"
+        initialValue: ""
+      - type: "confirm"
+        key: "Confirm"
+        title: "Commit"
+        body: "Are you sure you want to commit?"
+    command: "git commit --message '{{.Form.Type}}{{ if .Form.Scope }}({{ .Form.Scope }}){{ end }}{{.Form.Breaking}}: {{.Form.Message}}'"
+    loadingText: "Creating conventional commit..."
+  - key: "R"
+    command: "git reset --soft HEAD~1"
     context: "files"
-    loadingText: "opening commitizen commit tool"
-    subprocess: true
+    description: "Undo last commit"
