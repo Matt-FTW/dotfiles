@@ -52,6 +52,7 @@
   rebase = false
 
 [commit]
+  template = ~/.config/git/gitmessage
   gpgsign = true
 
 [gpg]
