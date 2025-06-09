@@ -1,0 +1,36 @@
+theme = catppuccin-macchiato
+background-blur-radius = 20
+
+font-family = JetBrainsMono Nerd Font
+font-feature = +ss02
+font-feature = +ss03
+font-feature = +ss05
+font-feature = +ss07
+
+font-size = 13
+adjust-cell-height = 28%
+cursor-style = block
+cursor-style-blink = true
+cursor-invert-fg-bg = false
+
+gtk-single-instance = true
+window-theme = system
+gtk-titlebar = false
+gtk-wide-tabs = false
+gtk-adwaita = false
+
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+
+confirm-close-surface = false
+window-padding-x = 12
+window-padding-y = 11
+window-padding-balance = true
+
+auto-update = check
+auto-update-channel = stable
+
+# extras
+shell-integration-features = no-cursor
+copy-on-select = clipboard
