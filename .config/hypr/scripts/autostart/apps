@@ -2,10 +2,9 @@
 
 # Apps
 spotify &
-vesktop &
-thunderbird &
 obsidian &
 
 # Terminal Apps
-kitty --class btop btop &
-kitty --class nvtop nvtop &
+# kitty --class btop btop &
+# kitty --class nvtop nvtop &
+ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false &
