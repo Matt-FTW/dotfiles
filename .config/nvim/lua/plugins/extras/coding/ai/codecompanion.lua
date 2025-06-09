@@ -37,10 +37,30 @@ return {
             },
           })
         end,
+        ollama31 = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            name = "ollama3.1",
+            schema = {
+              model = {
+                default = "ollama3.1:latest",
+              },
+            },
+          })
+        end,
+        qwen3 = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            name = "qwen3",
+            schema = {
+              model = {
+                default = "qwen3:14b",
+              },
+            },
+          })
+        end,
       },
       strategies = {
         chat = {
-          adapter = "deepseek_r1",
+          adapter = "qwen3",
           roles = {
             llm = "  CodeCompanion",
             user = " " .. user:sub(1, 1):upper() .. user:sub(2),
@@ -50,7 +70,7 @@ return {
             stop = { modes = { n = "<C-c>" } },
           },
         },
-        inline = { adapter = "deepseek_r1" },
+        inline = { adapter = "ollama31" },
         agent = { adapter = "deepseek_r1" },
       },
       display = {
