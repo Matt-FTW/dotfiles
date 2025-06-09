@@ -4,7 +4,6 @@
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.refactoring",
     "lazyvim.plugins.extras.util.dot",
-    "plugins.extras.coding.ai.codecompanion",
     "plugins.extras.coding.blink-extended",
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.yanky-extended",
