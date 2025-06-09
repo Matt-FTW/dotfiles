@@ -8,40 +8,6 @@ position = "1% 8%"
 lazy = true
 force_monitor = "DP-1"
 
-[scratchpads.terminal]
-command = "kitty --class scratchpad-large"
-lazy = true
-
-[scratchpads.yazi]
-command = "kitty --class scratchpad-large fish -c yazi"
-unfocus = "hide"
-hysteresis = 0.1
-lazy = true
-
-[scratchpads.gpt]
-command = "kitty --class scratchpad-large tgpt -m"
-lazy = true
-
-[scratchpads.dots]
-command = "kitty --class scratchpad-large yadm enter lazygit"
-lazy = true
-
-[scratchpads.btop]
-command = "kitty --class scratchpad-large btop"
-lazy = true
-
-[scratchpads.nvtop]
-command = "kitty --class scratchpad-large nvtop"
-lazy = true
-
-[scratchpads.topgrade-system]
-command = "kitty --class scratchpad-large fish -c 'up'"
-lazy = true
-
-[scratchpads.topgrade-all]
-command = "kitty --class scratchpad-large fish -c 'upall'"
-lazy = true
-
 [scratchpads.bluetooth]
 command = "overskride"
 animation = "fromRight"
