@@ -17,6 +17,7 @@ yaml_config() {
 }
 
 tmuxp_load() {
+  launch_docs
   if [[ -n "$TMUX" ]]; then
     tmuxp load -d "$selected_dir"
     zoxide_score
@@ -24,6 +25,7 @@ tmuxp_load() {
     tmuxp load "$selected_dir"
     zoxide_score
   fi
+
   tmux switch-client -t "$tab_title"
 }
 
@@ -56,50 +58,27 @@ handle_tmux() {
   zoxide_score
 }
 
-handle_kitty() {
-  kitty @ set-tab-title "$tab_title"
-  cd "$selected_dir"
-  zoxide_score
-  $gfetch
-  $ls
-}
-
-handle_editor() {
-  if [[ "$EDITOR" == "nvim" || "$EDITOR" == "vim" ]]; then
-    echo "terminal"
-  elif [[ "$EDITOR" == "code" || "$EDITOR" == "codium" ]]; then
-    echo "gui"
-  fi
-}
-
 zoxide_score() {
   if command -v zoxide &>/dev/null; then
     zoxide add "$selected_dir"
   fi
 }
 
+launch_docs() {
+  tmuxp load -d notes-tasks # Doesn't load if it exists already
+}
+
 selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' \
-  --header='CTRL-P: Projects / CTRL-Z: Zoxide' \
-  --bind "ctrl-p:reload($projects_command)" \
-  --bind "ctrl-z:reload(zoxide query -l)" \
-  --preview "$gfetch {} 2>&1 | grep -v 'Error: Could not find a git repository in' || true && $ls {} || $ls {}")
+  --preview "$gfetch {} && $ls {} || $ls {}")
 
 tab_title=$(basename "$selected_dir")
 
 if [[ -n "$selected_dir" ]]; then
-  editor_type=$(handle_editor)
-  if [[ $editor_type == "terminal" ]]; then
-    if command -v tmux &>/dev/null; then
-      if command -v tmuxp &>/dev/null; then
-        handle_tmuxp
-      else
-        handle_tmux
-      fi
-    elif [[ "$TERM" == "xterm-kitty" ]]; then
-      handle_kitty
+  if command -v tmux &>/dev/null; then
+    if command -v tmuxp &>/dev/null; then
+      handle_tmuxp
+    else
+      handle_tmux
     fi
-  else
-    $EDITOR -r "$selected_dir"
-    zoxide_score
   fi
 fi
