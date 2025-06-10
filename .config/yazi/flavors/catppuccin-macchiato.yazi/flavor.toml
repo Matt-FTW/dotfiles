@@ -1,7 +1,7 @@
-[manager]
+[mgr]
 cwd = { fg = "#8bd5ca" }
 
-hovered = { fg = "#24273a", bg = "#8aadf4" }
+hovered = { fg = "#24273a", bg = "#b7bdf8" }
 preview_hovered = { fg = "#24273a", bg = "#cad3f5" }
 
 find_keyword = { fg = "#eed49f", italic = true }
@@ -12,10 +12,6 @@ marker_cut = { fg = "#ed8796", bg = "#ed8796" }
 marker_marked = { fg = "#8bd5ca", bg = "#8bd5ca" }
 marker_selected = { fg = "#b7bdf8", bg = "#b7bdf8" }
 
-tab_active = { fg = "#24273a", bg = "#cad3f5" }
-tab_inactive = { fg = "#cad3f5", bg = "#494d64" }
-tab_width = 1
-
 count_copied = { fg = "#24273a", bg = "#a6da95" }
 count_cut = { fg = "#24273a", bg = "#ed8796" }
 count_selected = { fg = "#24273a", bg = "#b7bdf8" }
@@ -24,6 +20,10 @@ border_symbol = "│"
 border_style = { fg = "#8087a2" }
 
 syntect_theme = "~/.config/bat/themes/Catppuccin-macchiato.tmTheme"
+
+[tabs]
+active = { fg = "#24273a", bg = "#cad3f5", bold = true }
+inactive = { fg = "#cad3f5", bg = "#494d64" }
 
 [mode]
 normal_main = { fg = "#24273a", bg = "#b7bdf8", bold = true }
@@ -36,9 +36,8 @@ unset_main = { fg = "#24273a", bg = "#f0c6c6", bold = true }
 unset_alt = { fg = "#f0c6c6", bg = "#363a4f" }
 
 [status]
-separator_open = ""
-separator_close = ""
-separator_style = { fg = "#494d64", bg = "#494d64" }
+separator_open = ""
+separator_close = ""
 
 progress_label = { fg = "#ffffff", bold = true }
 progress_normal = { fg = "#8aadf4", bg = "#494d64" }
@@ -51,13 +50,13 @@ perm_exec = { fg = "#a6da95" }
 perm_sep = { fg = "#8087a2" }
 
 [input]
-border = { fg = "#8aadf4" }
+border = { fg = "#b7bdf8" }
 title = {}
 value = {}
 selected = { reversed = true }
 
 [pick]
-border = { fg = "#8aadf4" }
+border = { fg = "#b7bdf8" }
 active = { fg = "#f5bde6" }
 inactive = {}
 
@@ -69,7 +68,7 @@ list = {}
 btn_yes = { reversed = true }
 btn_no = {}
 
-[completion]
+[cmp]
 border = { fg = "#b7bdf8" }
 
 [tasks]
@@ -97,8 +96,13 @@ title_info = { fg = "#8bd5ca" }
 title_warn = { fg = "#eed49f" }
 title_error = { fg = "#ed8796" }
 
-[filetype]
+[spot]
+border = { fg = "#b7bdf8" }
+title = { fg = "#b7bdf8" }
+tbl_cell = { fg = "#b7bdf8", reversed = true }
+tbl_col = { bold = true }
 
+[filetype]
 rules = [
   { name = "*", is = "block", fg = "#cad3f5" },
   { name = "*", is = "char", fg = "#a6da95" },

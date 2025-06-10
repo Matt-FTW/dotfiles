@@ -1,6 +1,4 @@
-"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
-
-[manager]
+[mgr]
 
 prepend_keymap = [
   { on = [
@@ -26,7 +24,7 @@ prepend_keymap = [
   ], run = "filter --smart", desc = "Filter files" },
   { on = [
     "s",
-  ], run = "plugin searchjump", desc = "Flash" },
+  ], run = "plugin searchjump --autocd", desc = "Flash" },
   { on = "S", run = "search --via=fd", desc = "Search files by name using fd" },
   { on = [
     "<C-y>",
