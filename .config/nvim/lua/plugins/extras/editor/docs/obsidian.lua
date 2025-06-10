@@ -11,10 +11,11 @@ return {
       { prefix .. "o", "<cmd>Obsidian open<CR>", desc = "Open on App" },
       { prefix .. "g", "<cmd>Obsidian search<CR>", desc = "Grep" },
       { prefix .. "n", "<cmd>Obsidian new<CR>", desc = "New Note" },
+      { prefix .. "N", "<cmd>Obsidian new_from_template<CR>", desc = "New Note (Template)" },
       { prefix .. "<space>", "<cmd>Obsidian quick_switch<CR>", desc = "Find Files" },
       { prefix .. "b", "<cmd>Obsidian backlinks<CR>", desc = "Backlinks" },
       { prefix .. "t", "<cmd>Obsidian tags<CR>", desc = "Tags" },
-      { prefix .. "t", "<cmd>Obsidian template<CR>", desc = "Template" },
+      { prefix .. "T", "<cmd>Obsidian template<CR>", desc = "Template" },
       { prefix .. "L", "<cmd>Obsidian link<CR>", mode = "v", desc = "Link" },
       { prefix .. "l", "<cmd>Obsidian links<CR>", desc = "Links" },
       { prefix .. "l", "<cmd>Obsidian link_new<CR>", mode = "v", desc = "New Link" },
@@ -87,7 +88,7 @@ return {
 
       templates = {
         subdir = "00 - Data/Plantillas",
-        date_format = "%Y-%m-%d-%a",
+        date_format = "%Y-%m-%d",
         time_format = "%H:%M",
       },
 
