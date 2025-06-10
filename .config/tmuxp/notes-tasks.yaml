@@ -1,0 +1,11 @@
+session_name: notes-tasks
+windows:
+  - window_name: notes
+    start_directory: ~/documents/obsidian/personal-brain/
+    panes:
+      - shell_command:
+          - nvim
+  - window_name: tasks
+    panes:
+      - shell_command:
+          - taskwarrior-tui
