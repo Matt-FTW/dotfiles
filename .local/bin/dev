@@ -19,14 +19,14 @@ yaml_config() {
 tmuxp_load() {
   launch_docs
   if [[ -n "$TMUX" ]]; then
-    tmuxp load -d "$selected_dir"
+    tmuxp load -y "$selected_dir"
     zoxide_score
   else
     tmuxp load "$selected_dir"
     zoxide_score
   fi
 
-  tmux switch-client -t "$tab_title"
+  # tmux switch-client -t "$tab_title"
 }
 
 handle_tmuxp() {
@@ -65,7 +65,9 @@ zoxide_score() {
 }
 
 launch_docs() {
-  tmuxp load -d notes-tasks # Doesn't load if it exists already
+  if ! tmux has-session -t "$SESSION_NOTES" 2>/dev/null; then
+    tmuxp load -d notes-tasks
+  fi
 }
 
 selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' \
