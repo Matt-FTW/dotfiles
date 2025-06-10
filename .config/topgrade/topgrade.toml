@@ -90,7 +90,7 @@ disable = ["poetry", "spicetify", "vim", "containers"]
 # "Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
 hyprpm = "hyprpm update -v"
-yazi = "ya pack -u"
+yazi = "ya pkg upgrade"
 
 
 [python]
