@@ -1,0 +1,23 @@
+#!/bin/bash
+
+TEMPLATE_DIR="$XDG_CONFIG_HOME/mise/templates"
+MISE_CONFIG=".mise.toml"
+
+if [ ! -d "$TEMPLATE_DIR" ]; then
+  exit 1
+fi
+
+selected_file=$(find "$TEMPLATE_DIR" -name "*.toml" -print0 |
+  xargs -0 -n 1 basename | sed 's/\.toml$//' |
+  fzf --preview "bat --style=numbers --color=always $TEMPLATE_DIR/{}.toml" \
+    --prompt="Select a template file: ")
+
+if [ -z "$selected_file" ]; then
+  exit 1
+fi
+
+if [ -f "$MISE_CONFIG" ]; then
+  cat "$TEMPLATE_DIR/$selected_file.toml" >>"$MISE_CONFIG"
+else
+  cp "$TEMPLATE_DIR/$selected_file.toml" "$MISE_CONFIG"
+fi
