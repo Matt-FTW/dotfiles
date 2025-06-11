@@ -6,6 +6,7 @@ ls="eza --header --icons --all --color=always --group-directories-first --hyperl
 projects_dir="$HOME/dev"
 projects_command="find $projects_dir -mindepth 2 -maxdepth 2 -type d"
 fzf_command="fzf --height=100%"
+zoxide_command="zoxide query -l"
 
 yaml_config() {
   local yaml_file="$1"
@@ -70,8 +71,14 @@ launch_docs() {
   fi
 }
 
-selected_dir=$($projects_command | $fzf_command --prompt='Select a directory: ' \
-  --preview "$gfetch {} && $ls {} || $ls {}")
+selected_dir=$(
+  $projects_command | $fzf_command \
+    --prompt='Select a directory: ' \
+    --bind "ctrl-r:reload($projects_command)+change-preview($gfetch {} && $ls {})" \
+    --bind "ctrl-z:reload($zoxide_command)+change-preview($ls {})" \
+    --header "ctrl-r: repos | ctrl-z: zoxide" \
+    --preview "$gfetch {} && $ls {}"
+)
 
 tab_title=$(basename "$selected_dir")
 
