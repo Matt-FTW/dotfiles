@@ -37,7 +37,7 @@ vim.g.neovide_cursor_antialiasing = false
 vim.g.neovide_cursor_vfx_mode = "pixiedust"
 vim.g.neovide_hide_mouse_when_typing = true
 
-vim.o.guifont = "JetBrainsMono Nerd Font:h10"
+vim.o.guifont = "Maple Mono NF:h10"
 
 vim.opt.winblend = 20
 vim.g.neovide_refresh_rate = 75

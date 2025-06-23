@@ -11,8 +11,8 @@ return {
   opts = {
     save_path = (os.getenv("HOME") .. "/pictures/screenshots/code"),
     title = "CodeSnap.nvim",
-    code_font_family = "JetBrainsMono Nerd Font",
-    watermark_font_family = "JetBrainsMono Nerd Font",
+    code_font_family = "Maple Mono NF",
+    watermark_font_family = "Maple Mono NF",
     watermark = "",
     bg_theme = "summer",
   },

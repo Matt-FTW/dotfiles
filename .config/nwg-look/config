@@ -2,5 +2,6 @@
  "export-settings-ini": true,
  "export-gtkrc-20": false,
  "export-index-theme": true,
- "export-xsettingsd": true
+ "export-xsettingsd": true,
+ "export-gtk4-symlinks": false
 }

@@ -1,7 +1,7 @@
 theme = catppuccin-macchiato
 background-blur-radius = 20
 
-font-family = JetBrainsMono Nerd Font
+font-family = Maple Mono NF
 font-feature = +ss02
 font-feature = +ss03
 font-feature = +ss05

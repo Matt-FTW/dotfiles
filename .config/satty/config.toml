@@ -10,7 +10,7 @@ default-hide-toolbars = false
 disable-notifications = true
 
 [font]
-family = "JetBrainsMono Nerd Font"
+family = "Maple Mono NF"
 style = "Regular"
 
 [color-palette]

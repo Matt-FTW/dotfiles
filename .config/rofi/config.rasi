@@ -8,7 +8,7 @@ configuration {
   normalize-match: true;
   show-icons: true;
   icon-theme: "Catppuccin-SE";
-  font: "JetBrainsMono Nerd Font 10";
+  font: "Maple Mono NF 10.5";
   steal-focus: false;
   hover-select: true;
 
