@@ -4,7 +4,7 @@ local keys = {}
 
 -- stylua: ignore start
 for i = 1, 9 do
-  table.insert(keys, { prefix .. i, "<cmd>Grapple select index=" .. i .. "<CR>", desc = "File " .. i })
+  table.insert(keys, { "<leader>" .. i, "<cmd>Grapple select index=" .. i .. "<CR>", desc = "File " .. i })
 end
 
 table.insert(keys, { prefix .. "a", "<cmd>Grapple tag<CR>", desc = "Add Mark" })
