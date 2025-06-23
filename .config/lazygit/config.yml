@@ -150,8 +150,8 @@ keybinding:
     fetchRemote: "f"
   commits:
     squashDown: "s"
-    renameCommit: "r"
-    renameCommitWithEditor: "R"
+    renameCommit: "R"
+    renameCommitWithEditor: "r"
     viewResetOptions: "g"
     markCommitAsFixup: "f"
     createFixupCommit: "F" # create fixup commit for this commit
