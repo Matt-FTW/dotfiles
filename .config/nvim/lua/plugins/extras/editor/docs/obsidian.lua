@@ -47,6 +47,8 @@ return {
         blink = true,
       },
 
+      create_new = false,
+
       picker = {
         name = "snacks.pick",
         note_mappings = {
@@ -122,11 +124,48 @@ return {
         img_folder = "00 - Data/Documentos",
       },
 
-      ui = { enable = true },
+      ui = { enable = false },
 
       statusline = {
         enabled = true,
         format = "{{backlinks}} backlinks | {{words}} words",
+      },
+    },
+  },
+  {
+    "folke/snacks.nvim",
+    keys = {
+      {
+        prefix .. "k",
+        function()
+          Snacks.picker.grep({
+            search = "^\\s*- \\[ \\]",
+            regex = true,
+            dirs = { vim.fn.getcwd() },
+            finder = "grep",
+            format = "file",
+            show_empty = true,
+            supports_live = false,
+            live = false,
+          })
+        end,
+        desc = "Tasks (Unfinished)",
+      },
+      {
+        prefix .. "K",
+        function()
+          Snacks.picker.grep({
+            search = "^\\s*- \\[x\\]:",
+            regex = true,
+            dirs = { vim.fn.getcwd() },
+            finder = "grep",
+            format = "file",
+            show_empty = true,
+            supports_live = false,
+            live = false,
+          })
+        end,
+        desc = "Tasks (Finished)",
       },
     },
   },
