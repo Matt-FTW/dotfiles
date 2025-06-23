@@ -44,7 +44,11 @@ return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
     opts = {
-      preset = "lazy",
+      render_modes = { "n", "c", "t" },
+      checkbox = {
+        enabled = true,
+      },
+      preset = "obsidian",
     },
   },
   {
