@@ -10,10 +10,19 @@ age = "latest"
 deno = "latest"
 go = "latest"
 watchexec = "latest"
+# Cargo Tools
 "cargo:cargo-cache" = "latest"
 "cargo:kanata" = "latest"
+
+# Go Tools
 "go:github.com/stefanlogue/meteor" = "latest"
+"go:github.com/rszyma/kanata-tray" = "latest"
+"go:github.com/jorgerojas26/lazysql" = "latest"
+
+# Python Tools
 "pipx:darrenburns/posting" = "latest"
+"pipx:pytest" = "latest"
+"pipx:b2" = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
