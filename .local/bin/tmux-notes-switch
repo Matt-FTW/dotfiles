@@ -3,11 +3,11 @@
 SESSION_NOTES="notes-tasks"
 
 if [ "$(tmux display-message -p '#S')" == "$SESSION_NOTES" ]; then
-  tmux switch-client -l
+  tmux switch-client -l &>/dev/null
 else
   if tmux has-session -t "$SESSION_NOTES" 2>/dev/null; then
-    tmux switch-client -t "$SESSION_NOTES"
+    tmux switch-client -t "$SESSION_NOTES" &>/dev/null
   else
-    tmuxp load -y "$SESSION_NOTES"
+    tmuxp load -y "$SESSION_NOTES" &>/dev/null
   fi
 fi
