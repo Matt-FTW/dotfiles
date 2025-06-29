@@ -1,7 +1,7 @@
 [
   {
     "include": "~/.config/waybar/bars/bar-1.jsonc",
-    "height": 50,
+    "height": 48,
     "layer": "top",
     "output": "DP-1",
     "mode": "dock",
@@ -15,7 +15,7 @@
   },
   {
     "include": "~/.config/waybar/bars/bar-2.jsonc",
-    "height": 50,
+    "height": 48,
     "position": "bottom",
     "layer": "top",
     "output": "DP-3",
@@ -30,7 +30,7 @@
   },
   {
     "include": "~/.config/waybar/bars/bar-3.jsonc",
-    "height": 50,
+    "height": 48,
     "layer": "top",
     "output": "HDMI-A-1",
     "mode": "dock",
