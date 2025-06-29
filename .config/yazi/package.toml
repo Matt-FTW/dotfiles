@@ -1,6 +1,6 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "86d28e4"
+rev = "7c174cc"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
@@ -15,7 +15,7 @@ hash = "4d441b38138ce6492a4e10fa349fd65"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "86d28e4"
+rev = "7c174cc"
 hash = "e01006bfb38951ea89031bd918b20dbb"
 
 [flavor]
