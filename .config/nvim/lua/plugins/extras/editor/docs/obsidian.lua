@@ -65,25 +65,15 @@ return {
         },
       },
 
-      mappings = {
-        ["gf"] = {
-          action = function()
-            return require("obsidian").util.gf_passthrough()
-          end,
-          opts = { noremap = false, expr = true, buffer = true },
-        },
-        ["<C-c>"] = {
-          action = function()
-            return require("obsidian").util.toggle_checkbox()
-          end,
-          opts = { buffer = true },
-        },
-        ["<cr>"] = {
-          action = function()
-            return require("obsidian").util.smart_action()
-          end,
-          opts = { buffer = true, expr = true },
-        },
+      callbacks = {
+        enter_note = function(_, note)
+          vim.keymap.set("n", "gf", "<cmd>ObsidianFollowLink<cr>", {
+            buffer = note.bufnr,
+            expr = note.expr,
+            noremap = note.noremap,
+            desc = "File Passthrough",
+          })
+        end,
       },
 
       new_notes_location = "notes_subdir",
