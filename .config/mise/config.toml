@@ -1,7 +1,6 @@
 [tools]
 usage = "latest"
 bun = "latest"
-"npm:five-server" = "latest"
 node = "latest"
 pnpm = "latest"
 uv = "latest"
@@ -10,6 +9,7 @@ age = "latest"
 deno = "latest"
 go = "latest"
 watchexec = "latest"
+
 # Cargo Tools
 "cargo:cargo-cache" = "latest"
 "cargo:kanata" = "latest"
@@ -23,6 +23,10 @@ watchexec = "latest"
 "pipx:darrenburns/posting" = "latest"
 "pipx:pytest" = "latest"
 "pipx:b2" = "latest"
+
+# Node Tools
+"npm:five-server" = "latest"
+"npm:opencode-ai" = "latest"
 
 [settings]
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
@@ -62,3 +66,4 @@ status = { missing_tools = "if_other_versions_installed", show_env = false, show
 cargo_binstall = true                                                                            # Install pre-compiled cargo packages
 pipx_uvx = true                                                                                  # Use uvx instead of pipx
 idiomatic_version_file_enable_tools = ["node"]
+npm.bun = true
