@@ -13,11 +13,13 @@ watchexec = "latest"
 # Cargo Tools
 "cargo:cargo-cache" = "latest"
 "cargo:kanata" = "latest"
+"cargo:atac" = "latest"
 
 # Go Tools
 "go:github.com/stefanlogue/meteor" = "latest"
-"go:github.com/rszyma/kanata-tray" = "latest"
+# "go:github.com/rszyma/kanata-tray" = "latest"
 "go:github.com/jorgerojas26/lazysql" = "latest"
+# "go:github.com/guyfedwards/nom" = "latest"
 
 # Python Tools
 "pipx:darrenburns/posting" = "latest"
