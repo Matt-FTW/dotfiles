@@ -73,6 +73,7 @@ return {
   },
   {
     "MeanderingProgrammer/py-requirements.nvim",
+    enabled = false,
     event = {
       "BufRead requirements.txt",
     },

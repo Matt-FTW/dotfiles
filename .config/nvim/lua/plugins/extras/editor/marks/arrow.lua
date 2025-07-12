@@ -2,9 +2,7 @@ return {
   {
     "otavioschwanck/arrow.nvim",
     event = "VeryLazy",
-    opts = {
-      show_icons = true,
-    },
+    opts = {},
     -- stylua: ignore
     keys = {
       { "<leader>m", function() require("arrow.ui").openMenu() end, desc = "Marks" },
