@@ -1,3 +1,5 @@
+/* Catppuccin Macchiato Lavender userContent.css*/
+
 @media (prefers-color-scheme: dark) {
   /* Common variables affecting all pages */
   @-moz-document url-prefix("about:") {
@@ -19,6 +21,7 @@
       --newtab-element-hover-color: #363a4f !important;
       --newtab-text-primary-color: #cad3f5 !important;
       --newtab-wordmark-color: #cad3f5 !important;
+      --newtab-primary-action-background: #b7bdf8 !important;
     }
 
     .icon {
@@ -82,6 +85,46 @@
 
     .main-content {
       background-color: #181926 !important;
+    }
+
+    .identity-color-blue {
+      --identity-tab-color: #8aadf4 !important;
+      --identity-icon-color: #8aadf4 !important;
+    }
+
+    .identity-color-turquoise {
+      --identity-tab-color: #8bd5ca !important;
+      --identity-icon-color: #8bd5ca !important;
+    }
+
+    .identity-color-green {
+      --identity-tab-color: #a6da95 !important;
+      --identity-icon-color: #a6da95 !important;
+    }
+
+    .identity-color-yellow {
+      --identity-tab-color: #eed49f !important;
+      --identity-icon-color: #eed49f !important;
+    }
+
+    .identity-color-orange {
+      --identity-tab-color: #f5a97f !important;
+      --identity-icon-color: #f5a97f !important;
+    }
+
+    .identity-color-red {
+      --identity-tab-color: #ed8796 !important;
+      --identity-icon-color: #ed8796 !important;
+    }
+
+    .identity-color-pink {
+      --identity-tab-color: #f5bde6 !important;
+      --identity-icon-color: #f5bde6 !important;
+    }
+
+    .identity-color-purple {
+      --identity-tab-color: #c6a0f6 !important;
+      --identity-icon-color: #c6a0f6 !important;
     }
   }
 
