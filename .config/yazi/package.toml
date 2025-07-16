@@ -18,5 +18,10 @@ use = "yazi-rs/plugins:git"
 rev = "b886025"
 hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
+[[plugin.deps]]
+use = "DreamMaoMao/searchjump"
+rev = "7fafec3"
+hash = "5337bf545993d8c4dec2c229031f49d"
+
 [flavor]
 deps = []
