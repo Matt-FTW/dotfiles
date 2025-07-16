@@ -50,15 +50,12 @@ return {
         "css-variables-language-server",
         "css-lsp",
         "htmlhint",
-        "stylelint",
       },
     },
   },
   {
     "mfussenegger/nvim-lint",
     opts = function(_, opts)
-      local stylelint = "stylelint"
-
       local function add_linters(tbl)
         for ft, linters in pairs(tbl) do
           if opts.linters_by_ft[ft] == nil then
@@ -71,10 +68,6 @@ return {
 
       add_linters({
         ["html"] = { "htmlhint" },
-        ["css"] = { stylelint },
-        ["scss"] = { stylelint },
-        ["less"] = { stylelint },
-        ["sugarss"] = { stylelint },
       })
       return opts
     end,
