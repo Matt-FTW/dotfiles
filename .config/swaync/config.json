@@ -1,9 +1,13 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
+  "ignore-gtk-theme": true,
   "positionX": "right",
   "positionY": "bottom",
-  "layer": "top",
-  "cssPriority": "application",
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "cssPriority": "highest",
+  "layer-shell-cover-screen": true,
   "control-center-margin-top": 0,
   "control-center-margin-bottom": 0,
   "control-center-margin-right": 0,
@@ -41,42 +45,6 @@
       "image-size": 96,
       "image-radius": 12,
       "blur": false
-    },
-    "buttons-grid": {
-      "actions": [
-        {
-          "label": "󰐥",
-          "command": "systemctl poweroff"
-        },
-        {
-          "label": "󰜉",
-          "command": "systemctl reboot"
-        },
-        {
-          "label": "󰌾",
-          "command": "$HOME/.config/sway/lock.sh"
-        },
-        {
-          "label": "󰍃",
-          "command": "swaymsg exit"
-        },
-        {
-          "label": "󰏥",
-          "command": "systemctl suspend"
-        },
-        {
-          "label": "󰛳",
-          "command": "nm-connection-editor"
-        },
-        {
-          "label": "󰂯",
-          "command": "blueman-manager"
-        },
-        {
-          "label": "",
-          "command": "kooha"
-        }
-      ]
     }
   }
 }
