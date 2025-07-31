@@ -19,7 +19,6 @@
     "plugins.extras.editor.trouble-extended",
     "plugins.extras.lang.docker-extended",
     "plugins.extras.lang.fish",
-    "plugins.extras.lang.go-extended",
     "plugins.extras.lang.markdown-extended",
     "plugins.extras.lang.python-extended",
     "plugins.extras.lang.web.html-css",
@@ -48,3 +47,4 @@
   },
   "version": 8
 }
+
