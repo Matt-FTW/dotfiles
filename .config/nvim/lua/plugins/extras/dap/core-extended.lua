@@ -1,15 +1,29 @@
+local prefix = "<leader>d"
+
 return {
   { import = "lazyvim.plugins.extras.dap.core" },
   {
     "mfussenegger/nvim-dap",
-    opts = {
-      defaults = {
-        fallback = {
-          external_terminal = {
-            command = "/usr/bin/kitty",
-            args = { "--class", "kitty-dap", "--hold", "--detach", "nvim-dap", "-c", "DAP" },
-          },
-        },
+    dependencies = {
+      "igorlfs/nvim-dap-view",
+      opts = {},
+      config = function(_, opts)
+        local dap = require("dap")
+        dap.listeners.before.attach.dapui_config = function()
+          vim.cmd("DapViewOpen")
+        end
+        dap.listeners.before.launch.dapui_config = function()
+          vim.cmd("DapViewOpen")
+        end
+        dap.listeners.before.event_terminated.dapui_config = function()
+          vim.cmd("DapViewClose")
+        end
+        dap.listeners.before.event_exited.dapui_config = function()
+          vim.cmd("DapViewClose")
+        end
+      end,
+      keys = {
+        { prefix .. "u", "<cmd>DapViewToggle<cr>", desc = "Dap UI" },
       },
     },
     -- stylua: ignore
@@ -23,11 +37,15 @@ return {
     },
   },
   {
+    "rcarriga/nvim-dap-ui",
+    enabled = false,
+  },
+  {
     "nvim-neotest/neotest",
     optional = true,
     -- stylua: ignore
     keys = {
-      { "<leader>tL", function() require("neotest").run.run_last({ strategy = "dap" }) end, desc = "Debug Last Test" },
+      { "<leader>tD", function() require("neotest").run.run_last({ strategy = "dap" }) end, desc = "Debug Last" },
     },
   },
 }
