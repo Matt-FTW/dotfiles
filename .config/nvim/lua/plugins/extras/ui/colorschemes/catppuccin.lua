@@ -14,30 +14,10 @@ return {
         dark = "macchiato",
       },
       term_colors = true,
-      custom_highlights = function()
-        return {
-          Visual = { bg = palette.surface2 },
-          FloatermBorder = { fg = palette.base },
-          TelescopeMatching = { fg = palette.blue },
-          TelescopeSelection = { fg = palette.text, bg = palette.surface0, bold = true },
-          TelescopePromptPrefix = { bg = palette.surface0 },
-          TelescopePromptNormal = { bg = palette.surface0 },
-          TelescopeResultsNormal = { bg = palette.mantle },
-          TelescopePreviewNormal = { bg = palette.mantle },
-          TelescopePromptBorder = { bg = palette.surface0, fg = palette.surface0 },
-          TelescopeResultsBorder = { bg = palette.mantle, fg = palette.mantle },
-          TelescopePreviewBorder = { bg = palette.mantle, fg = palette.mantle },
-          TelescopePromptTitle = { bg = palette.red, fg = palette.mantle },
-          TelescopeResultsTitle = { fg = palette.mantle },
-          TelescopePreviewTitle = { bg = palette.green, fg = palette.mantle },
-        }
-      end,
       auto_integrations = true,
-      integrations = {
-        snacks = {
-          enabled = true,
-          picker_style = "nvchad_outlined",
-        },
+      float = {
+        transparent = true, -- enables transparency on floating windows
+        solid = true, -- use nvchad styling for floating windows
       },
     },
   },
