@@ -8,8 +8,11 @@ return {
     },
     opts = {
       open_for_directories = true,
-      floating_window_scaling_factor = 0.8,
-      yazi_floating_window_border = "rounded",
+      floating_window_scaling_factor = {
+        height = 1,
+        width = 1,
+      },
+      yazi_floating_window_border = "none",
       integrations = {
         grep_in_selected_files = "snacks.picker",
         grep_in_directory = "snacks.picker",
