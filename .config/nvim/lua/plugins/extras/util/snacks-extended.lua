@@ -18,6 +18,10 @@ return {
     },
     lazygit = {
       configure = false,
+      win = {
+        width = 0,
+        height = 0,
+      },
     },
     notifier = {
       style = "fancy",
