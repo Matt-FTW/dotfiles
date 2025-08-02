@@ -7,7 +7,7 @@ font-feature = +ss03
 font-feature = +ss05
 font-feature = +ss07
 
-font-size = 13
+font-size = 14
 adjust-cell-height = 28%
 cursor-style = block
 cursor-style-blink = true
