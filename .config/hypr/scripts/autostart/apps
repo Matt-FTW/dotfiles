@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Apps
-spotify &
-obsidian &
+feishin &
 
 # Terminal Apps
 # kitty --class btop btop &
