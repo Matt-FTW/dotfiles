@@ -6,10 +6,12 @@ vim.loader.enable()
 
 -- Personal Config and LazyVim global options
 go.lualine_info_extras = false
+go.snacks_animate = false
 go.codeium_cmp_hide = false
 go.lazygit_config = false
 go.lazyvim_cmp = "blink"
 go.lazyvim_picker = "snacks"
+go.trouble_lualine = false
 
 -- Define leader key
 go.mapleader = " "
