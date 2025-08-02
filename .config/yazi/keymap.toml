@@ -15,14 +15,6 @@ prepend_keymap = [
   { on = "<A-k>", run = "arrow -5", desc = "Move cursor up half page" },
   { on = "<A-j>", run = "arrow 5", desc = "Move cursor down half page" },
   { on = [
-    "f",
-    "g",
-  ], run = "plugin fg", desc = "find file by content (fuzzy match)" },
-  { on = [
-    "f",
-    "f",
-  ], run = "filter --smart", desc = "Filter files" },
-  { on = [
     "s",
   ], run = "plugin searchjump --autocd", desc = "Flash" },
   { on = "S", run = "search --via=fd", desc = "Search files by name using fd" },
