@@ -1,10 +1,10 @@
 [mgr]
 cwd = { fg = "#8bd5ca" }
 
-hovered = { fg = "#24273a", bg = "#b7bdf8" }
-preview_hovered = { fg = "#24273a", bg = "#cad3f5" }
+hovered = { fg = "#24273a", bg = "#8aadf4" }
+preview_hovered = { underline = true }
 
-find_keyword = { fg = "#eed49f", italic = true }
+find_keyword = { fg = "#eed49f", bg = "#494d64", italic = true }
 find_position = { fg = "#f5bde6", bg = "reset", italic = true }
 
 marker_copied = { fg = "#a6da95", bg = "#a6da95" }
@@ -22,12 +22,12 @@ border_style = { fg = "#8087a2" }
 syntect_theme = "~/.config/bat/themes/Catppuccin-macchiato.tmTheme"
 
 [tabs]
-active = { fg = "#24273a", bg = "#cad3f5", bold = true }
+active = { fg = "#24273a", bg = "#b7bdf8", bold = true }
 inactive = { fg = "#cad3f5", bg = "#494d64" }
 
 [mode]
-normal_main = { fg = "#24273a", bg = "#b7bdf8", bold = true }
-normal_alt = { fg = "#b7bdf8", bg = "#363a4f" }
+normal_main = { fg = "#24273a", bg = "#8aadf4", bold = true }
+normal_alt = { fg = "#8aadf4", bg = "#363a4f" }
 
 select_main = { fg = "#24273a", bg = "#a6da95", bold = true }
 select_alt = { fg = "#a6da95", bg = "#363a4f" }
@@ -36,8 +36,9 @@ unset_main = { fg = "#24273a", bg = "#f0c6c6", bold = true }
 unset_alt = { fg = "#f0c6c6", bg = "#363a4f" }
 
 [status]
-separator_open = ""
-separator_close = ""
+overall = {}
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
 
 progress_label = { fg = "#ffffff", bold = true }
 progress_normal = { fg = "#8aadf4", bg = "#494d64" }
