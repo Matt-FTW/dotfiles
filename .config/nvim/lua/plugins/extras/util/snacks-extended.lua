@@ -3,6 +3,7 @@ return {
   opts = {
     dashboard = {
       preset = {
+        keys = {},
         header = [[
                                                                    
       ████ ██████           █████      ██                    
