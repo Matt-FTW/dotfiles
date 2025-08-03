@@ -40,6 +40,9 @@ return {
       matcher = {
         frecency = true,
       },
+      layout = {
+        fullscreen = true,
+      },
       win = {
         input = {
           keys = {
@@ -84,13 +87,6 @@ return {
       },
     }) end, desc = "Zoxide" },
     { "<leader>S", function() Snacks.picker.spelling() end, desc = "Spelling" },
-    { "<leader>B", function() Snacks.picker.buffers({
-      on_show = function()
-        vim.cmd.stopinsert()
-      end,
-      current = false,
-      sort_lastused = true,
-    }) end, desc = "Buffers" },
     { "<leader>,", function() Snacks.picker.buffers({
       on_show = function()
         vim.cmd.stopinsert()
