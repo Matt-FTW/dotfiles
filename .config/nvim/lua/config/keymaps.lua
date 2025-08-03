@@ -89,6 +89,7 @@ end, { desc = "Tabs" })
 map("n", "<leader>bf", "<cmd>bfirst<cr>", { desc = "First Buffer" })
 map("n", "<leader>ba", "<cmd>blast<cr>", { desc = "Last Buffer" })
 map("n", "<leader>b<tab>", "<cmd>tabnew %<cr>", { desc = "Current Buffer in New Tab" })
+map("n", "<M-CR>", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 
 -- Toggle statusline
 map("n", "<leader>uS", function()
