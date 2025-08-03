@@ -98,7 +98,6 @@ return {
       current = false,
       sort_lastused = true,
     }) end, desc = "Buffers" },
-    { "<leader>gB", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
     { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open Line" },
   },
 }
