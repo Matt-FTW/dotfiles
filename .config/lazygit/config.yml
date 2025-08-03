@@ -38,7 +38,7 @@ gui:
   showDivergenceFromBaseBranch: "arrowAndNumber"
   filterMode: "fuzzy"
   showPanelJumps: false
-  skipRewordInEditorWarning: false # for skipping the confirmation before launching the reword editor
+  skipRewordInEditorWarning: true # for skipping the confirmation before launching the reword editor
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
   statusPanelView: allBranchesLog
 git:
