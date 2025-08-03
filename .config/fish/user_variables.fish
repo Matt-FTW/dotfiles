@@ -70,9 +70,11 @@ set -xg GPG_TTY (tty)
 # FZF
 set -xg FZF_DEFAULT_COMMAND fd
 set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border rounded --margin=1 --padding=1 \
---color=bg+:#363a4f,spinner:#f4dbd6,hl:#ed8796 \
---color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
---color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796 \
+--color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
+--color=fg:#CAD3F5,header:#ED8796,info:#B7BDF8,pointer:#F4DBD6 \
+--color=marker:#B7BDF8,fg+:#CAD3F5,prompt:#B7BDF8,hl+:#ED8796 \
+--color=selected-bg:#494D64 \
+--color=border:#6E738D,label:#CAD3F5 \
 --bind 'ctrl-u:preview-half-page-up'
 --bind 'ctrl-d:preview-half-page-down'
 --bind 'ctrl-y:execute-silent(printf {} | cut -f 2- | wl-copy --trim-newline)'"
@@ -85,3 +87,4 @@ if type -q vivid
     set -xg LS_COLORS (vivid generate catppuccin-macchiato)
 end
 set -xg STARSHIP_LOG error
+set -xg ATAC_KEY_BINDINGS $XDG_CONFIG_HOME/atac/vim_key_bindings.toml
