@@ -6,7 +6,7 @@ vim.loader.enable()
 
 -- Personal Config and LazyVim global options
 go.lualine_info_extras = false
-go.snacks_animate = false
+go.snacks_animate = true
 go.codeium_cmp_hide = false
 go.lazygit_config = false
 go.lazyvim_cmp = "blink"
