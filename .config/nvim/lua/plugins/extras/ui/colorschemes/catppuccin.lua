@@ -13,6 +13,7 @@ return {
         light = "latte",
         dark = "macchiato",
       },
+      transparent_background = true,
       term_colors = true,
       auto_integrations = true,
       float = {
