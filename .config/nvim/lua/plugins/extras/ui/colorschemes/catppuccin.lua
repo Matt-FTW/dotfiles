@@ -10,10 +10,10 @@ return {
     opts = {
       custom_highlights = {
         -- Blink Menu
-        Pmenu = { bg = darken(palette.surface0, 0.8, palette.crust) },
+        Pmenu = { bg = palette.base },
         PmenuSel = { bg = palette.surface1, style = { "bold" } },
         PmenuBar = { bg = palette.surface1 },
-        BlinkCmpMenuBorder = { bg = darken(palette.surface0, 0.8, palette.crust) },
+        BlinkCmpMenuBorder = { bg = palette.base },
 
         -- Snacks
         SnacksNotifierInfo = { fg = palette.lavender },
