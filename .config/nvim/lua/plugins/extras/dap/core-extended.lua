@@ -28,6 +28,8 @@ return {
     },
     -- stylua: ignore
     keys = {
+      { prefix .. "O", function() require("dap").step_out() end, desc = "Debug: Step out" },
+      { prefix .. "o", function() require("dap").step_over() end, desc = "Debug: Step over" },
       { "<F5>", function() require("dap").continue() end, desc = "Debug: Continue" },
       { "<F10>", function() require("dap").step_over() end, desc = "Debug: Step over" },
       { "<F11>", function() require("dap").step_into() end, desc = "Debug: Step into" },
