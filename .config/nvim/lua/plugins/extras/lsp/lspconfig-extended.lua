@@ -21,21 +21,7 @@ return {
     end,
     opts = {
       diagnostics = {
-        signs = false,
-        virtual_text = {
-          float = {
-            border = {
-              { "┌", "FloatBorder" },
-              { "─", "FloatBorder" },
-              { "┐", "FloatBorder" },
-              { "│", "FloatBorder" },
-              { "┘", "FloatBorder" },
-              { "─", "FloatBorder" },
-              { "└", "FloatBorder" },
-              { "│", "FloatBorder" },
-            },
-          },
-        },
+        virtual_text = false,
       },
       inlay_hints = {
         enabled = nvim_0_10,
