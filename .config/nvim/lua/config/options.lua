@@ -58,27 +58,7 @@ end
 
 o.conceallevel = 2
 
--- Use the right clipboard when on WSL
-local function is_wsl()
-  local wsl_check = os.getenv("WSL_DISTRO_NAME") ~= nil
-  return wsl_check
-end
-
--- Install win32yank with cargo and then run:
--- sudo ln -s /mnt/c/Users/jared/.cargo/bin/win32yank.exe /usr/local/bin/win32yank
-if is_wsl() then
-  go.clipboard = {
-
-    name = "win32yank-wsl",
-    copy = {
-      ["+"] = "win32yank.exe -i --crlf",
-      ["*"] = "win32yank.exe -i --crlf",
-    },
-
-    paste = {
-      ["+"] = "win32yank.exe -o --lf",
-      ["*"] = "win32yank.exe -o --lf",
-    },
-    cache_enabled = 1,
-  }
+-- Fix the clipboard when using WSL. Install https://github.com/equalsraf/win32yank (https://github.com/microsoft/WSL/issues/4440#issuecomment-1212350183)
+if os.getenv("WSL_DISTRO_NAME") ~= nil then
+  o.clipboard = "unnamedplus"
 end
