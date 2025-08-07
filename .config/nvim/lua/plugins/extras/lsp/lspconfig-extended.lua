@@ -12,6 +12,7 @@ return {
       keys[#keys + 1] = { prefix .. "r", "<cmd>LspRestart<cr>", desc = "Restart Lsp" }
       keys[#keys + 1] = { prefix .. "s", "<cmd>LspStart<cr>", desc = "Start Lsp" }
       keys[#keys + 1] = { prefix .. "S", "<cmd>LspStop<cr>", desc = "Stop Lsp" }
+      keys[#keys + 1] = { "E", vim.diagnostic.open_float, desc = "Line Diagnostics" }
 
       -- stylua: ignore start
       keys[#keys + 1] = { prefix .. "W", function() vim.lsp.buf.remove_workspace_folder() end, desc = "Remove workspace" }
