@@ -8,9 +8,9 @@ unfocus = "hide"
 lazy = true
 
 [scratchpads.bluetooth]
-command = "overskride"
-animation = "fromRight"
-margin = 20
+command = "ghostty --class=com.ghostty-volume -e bluetui"
+position = "1% 8%"
+unfocus = "hide"
 lazy = true
 
 [scratchpads.wifi]
