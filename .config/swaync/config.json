@@ -6,7 +6,7 @@
   "layer": "overlay",
   "control-center-layer": "top",
   "layer-shell": true,
-  "cssPriority": "highest",
+  "cssPriority": "user",
   "layer-shell-cover-screen": true,
   "control-center-margin-top": 0,
   "control-center-margin-bottom": 0,
@@ -42,9 +42,10 @@
       "text": "Notification Center"
     },
     "mpris": {
-      "image-size": 96,
-      "image-radius": 12,
-      "blur": false
+      "blacklist": [],
+      "autohide": true,
+      "show-album-art": "always",
+      "loop-carousel": false
     }
   }
 }
