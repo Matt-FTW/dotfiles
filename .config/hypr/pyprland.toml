@@ -2,11 +2,10 @@
 plugins = ["scratchpads", "magnify"]
 
 [scratchpads.volume]
-command = "pavucontrol"
-unfocus = "hide"
+command = "ghostty --class=com.ghostty-volume -e wiremix"
 position = "1% 8%"
+unfocus = "hide"
 lazy = true
-force_monitor = "DP-1"
 
 [scratchpads.bluetooth]
 command = "overskride"
