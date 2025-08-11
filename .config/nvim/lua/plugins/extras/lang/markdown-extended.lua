@@ -48,6 +48,9 @@ return {
       checkbox = {
         enabled = true,
       },
+      heading = {
+        atx = false,
+      },
       preset = "obsidian",
     },
   },
