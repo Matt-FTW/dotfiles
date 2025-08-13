@@ -44,7 +44,7 @@ gui:
 git:
   paging:
     colorArg: always
-    pager: delta --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+    pager: delta --paging=never --dark --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' {{branchName}} --"
   parseEmoji: true
   allBranchesLogCmds:
