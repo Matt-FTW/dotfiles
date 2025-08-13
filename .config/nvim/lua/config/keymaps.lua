@@ -32,7 +32,7 @@ map("n", "<", "<<", { desc = "Deindent" })
 map("n", ">", ">>", { desc = "Indent" })
 
 -- Save without formatting
-map("n", "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save Without Formatting" })
+map({ "n", "i" }, "<A-s>", "<cmd>noautocmd w<CR>", { desc = "Save Without Formatting" })
 
 -- Cursor navigation on insert mode
 map("i", "<M-h>", "<left>", { desc = "Move Cursor Left" })
