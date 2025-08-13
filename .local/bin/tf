@@ -5,7 +5,7 @@ gfetch="gfetch -d churn contributors --no-color-palette --no-title"
 ls="eza --header --icons --all --color=always --group-directories-first --hyperlink"
 projects_dir="$HOME/dev"
 projects_command="find $projects_dir -mindepth 2 -maxdepth 2 -type d"
-fzf_command="fzf --height=100%"
+fzf_command="fzf -i --height=100%  --preview-window=65%"
 zoxide_command="zoxide query -l"
 
 yaml_config() {
