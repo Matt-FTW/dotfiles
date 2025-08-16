@@ -77,7 +77,8 @@ set -xg FZF_DEFAULT_OPTS "--height=90% --layout=reverse --info=inline --border r
 --color=border:#6E738D,label:#CAD3F5 \
 --bind 'ctrl-u:preview-half-page-up'
 --bind 'ctrl-d:preview-half-page-down'
---bind 'ctrl-y:execute-silent(printf {} | cut -f 2- | wl-copy --trim-newline)'"
+--bind 'ctrl-y:execute-silent(printf {} | cut -f 2- | wl-copy --trim-newline)'
+--bind 'alt-j:down+down+down+down+down' --bind 'alt-k:up+up+up+up+up'"
 set -xg fzf_preview_dir_cmd eza --long --header --icons --all --color=always --group-directories-first --hyperlink
 set -xg fzf_fd_opts --hidden --color=always
 set -xg _ZO_FZF_OPTS $FZF_DEFAULT_OPTS '--preview "{$fzf_preview_dir_cmd} {2}"'
