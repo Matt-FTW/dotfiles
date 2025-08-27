@@ -24,9 +24,9 @@ macos-option-as-alt = true
 mouse-hide-while-typing = true
 
 confirm-close-surface = false
-window-padding-x = 6
-window-padding-y = 5,5
-window-padding-balance = false
+window-padding-x = 4,5
+window-padding-y = 4,5
+window-padding-balance = true
 
 auto-update = check
 auto-update-channel = stable
