@@ -1,5 +1,4 @@
 local palette = require("catppuccin.palettes").get_palette("macchiato")
-local darken = require("catppuccin.utils.colors").darken
 local transparent_bg = require("catppuccin").options.transparent_background and "NONE" or palette.mantle
 
 return {
@@ -23,6 +22,8 @@ return {
         SnacksNotifierBorderInfo = { fg = palette.lavender },
         SnacksPickerPreviewTitle = { fg = palette.crust, bg = palette.lavender },
         SnacksDashboardHeader = { fg = palette.lavender },
+
+        ["@property"] = { fg = palette.lavender, style = require("catppuccin").options.styles.properties or {} },
       },
       styles = {
         comments = { "italic" },
@@ -49,7 +50,7 @@ return {
   {
     "akinsho/bufferline.nvim",
     opts = {
-      highlights = require("catppuccin.groups.integrations.bufferline").get({
+      highlights = require("catppuccin.groups.integrations.bufferline").get_theme({
         styles = { "italic", "bold" },
         custom = {
           all = {
