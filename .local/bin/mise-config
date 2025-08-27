@@ -1,0 +1,18 @@
+#!/bin/bash
+
+TEMPLATE_DIR="$XDG_CONFIG_HOME/mise/templates"
+MISE_CONFIG=".mise.toml"
+
+if [ ! -d "$TEMPLATE_DIR" ]; then
+  exit 1
+fi
+
+selected_file=$(fd . "$TEMPLATE_DIR" -e toml -x basename {} |
+  fzf --preview "bat $TEMPLATE_DIR/{}" \
+    --prompt="Select a template file: ")
+
+if [ -z "$selected_file" ]; then
+  exit 1
+fi
+
+cp -i "$TEMPLATE_DIR/$selected_file" "$MISE_CONFIG"
