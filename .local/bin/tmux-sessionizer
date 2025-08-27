@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Constants
+gfetch="onefetch -d churn contributors --no-color-palette --no-title"
+ls="eza --header --icons --all --color=always --group-directories-first --hyperlink"
+projects_dir="$HOME/dev"
+projects_command="fd --exact-depth 2 --type=directory . $projects_dir"
+config_command="fd --exact-depth 1 --type=directory . $HOME/.config"
+fzf_command="fzf -i --height=100% --preview-window=70% --with-nth -2,-1 -d /"
+zoxide_command="zoxide query -l"
+
+tmuxp_load() {
+  if [[ -n "$TMUX" ]]; then
+    tmuxp load -y "$selected_dir" --log-file "$XDG_DATA_HOME"/tmux/tmuxp.log
+    zoxide_score
+  else
+    tmuxp load "$selected_dir" --log-file "$XDG_DATA_HOME"/tmux/tmuxp.log
+    zoxide_score
+  fi
+}
+
+handle_tmuxp() {
+  if [[ -f "$selected_dir/.tmuxp.yaml" ]]; then
+    tmuxp_load
+  else
+    handle_tmux
+  fi
+}
+
+handle_tmux() {
+  if [[ -n "$TMUX" ]]; then
+    tmux new-session -ds "$tab_title" -c "$selected_dir"
+    tmux switch-client -t "$tab_title"
+  else
+    tmux new-session -s "$tab_title" -c "$selected_dir"
+  fi
+  zoxide_score
+}
+
+zoxide_score() {
+  if command -v zoxide &>/dev/null; then
+    zoxide add "$selected_dir"
+  fi
+}
+
+selected_dir=$(
+  $projects_command | $fzf_command \
+    --prompt='Select a directory: ' \
+    --bind "ctrl-p:reload($projects_command)+change-preview($gfetch {} && $ls {})" \
+    --bind "ctrl-o:reload($config_command)+change-preview($ls {})" \
+    --bind "ctrl-z:reload($zoxide_command)+change-preview($ls {})" \
+    --header "ctrl-p: projects | ctrl-o: config | ctrl-z: zoxide" \
+    --preview "$gfetch {} && $ls {}"
+)
+
+tab_title=$(basename "$selected_dir")
+
+if [[ -n "$selected_dir" ]]; then
+  if command -v tmuxp &>/dev/null; then
+    handle_tmuxp
+  else
+    handle_tmux
+  fi
+fi
