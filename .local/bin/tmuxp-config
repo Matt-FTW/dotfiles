@@ -1,0 +1,19 @@
+#!/bin/bash
+
+CONFIG_DIR="$XDG_CONFIG_HOME/tmuxp"
+TMUXP_CONFIG=".tmuxp.yaml"
+CURRENT_DIR="$(pwd)"
+
+if [ ! -d "$CONFIG_DIR" ]; then
+  exit 1
+fi
+
+selected_file=$(tmuxp ls |
+  fzf --preview "bat $CONFIG_DIR/{}.yaml" \
+    --prompt="Select a config file: ")
+
+if [ -z "$selected_file" ]; then
+  exit 1
+fi
+
+cp -i "$CONFIG_DIR/$selected_file.yaml" "$TMUXP_CONFIG" && sed -i "1i start_directory: $CURRENT_DIR\nsession_name: $(basename "$CURRENT_DIR")" "$TMUXP_CONFIG"
