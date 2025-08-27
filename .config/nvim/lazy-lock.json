@@ -63,5 +63,5 @@
   "vim-wakatime": { "branch": "master", "commit": "3403495670f0ee08887401a28f8430dc4ac67429" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" },
   "yanky.nvim": { "branch": "main", "commit": "04775cc6e10ef038c397c407bc17f00a2f52b378" },
-  "yazi.nvim": { "branch": "main", "commit": "30ce4d8464dfa51b2104d1a5505ecaab880af3db" }
+  "yazi.nvim": { "branch": "main", "commit": "e9ebb6826e646abd8948a1252685eeb649039ebd" }
 }
