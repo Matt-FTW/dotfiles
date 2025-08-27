@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SESSION_NAME=$1
+
+if [ -z "$SESSION_NAME" ]; then
+  tmux switch-client -l &>/dev/null
+fi
+
+if [ "$(tmux display-message -p '#S')" == "$SESSION_NAME" ]; then
+  tmux switch-client -l &>/dev/null
+else
+  if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
+    tmux switch-client -t "$SESSION_NAME" &>/dev/null
+  else
+    tmuxp load -y "$SESSION_NAME" &>/dev/null
+  fi
+fi
