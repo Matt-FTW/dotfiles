@@ -8,62 +8,6 @@ vim.g.lazyvim_python_ruff = "ruff"
 return {
   { import = "lazyvim.plugins.extras.lang.python" },
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        ---@type lspconfig.options.basedpyright
-        basedpyright = {
-          settings = {
-            basedpyright = {
-              analysis = {
-                diagnosticSeverityOverrides = {
-                  reportMissingTypeStubs = "information", -- import has no type stub file
-                  reportIgnoreCommentWithoutRule = "warning",
-                  reportUnreachable = "error",
-                  reportPrivateLocalImportUsage = "error",
-                  reportImplicitRelativeImport = "error",
-                  reportInvalidCast = "error",
-                  reportMissingSuperCall = false,
-                  reportUnusedCallResult = "information",
-                  reportUnusedExpression = "information",
-                  reportUnknownMemberType = "none",
-                  reportUnknownLambdaType = "none",
-                  reportUnknownParameterType = "none",
-                  reportMissingParameterType = "none",
-                  reportUnknownVariableType = "none",
-                  reportUnknownArgumentType = "none",
-                  reportAny = "none",
-                },
-              },
-            },
-          },
-        },
-        ---@type lspconfig.options.pyright
-        pyright = {
-          settings = {
-            verboseOutput = true,
-            autoImportCompletion = true,
-            python = {
-              analysis = {
-                diagnosticSeverityOverrides = {
-                  reportWildcardImportFromLibrary = "none",
-                  reportUnusedImport = "information",
-                  reportUnusedClass = "information",
-                  reportUnusedFunction = "information",
-                },
-                typeCheckingMode = "strict",
-                autoSearchPaths = true,
-                useLibraryCodeForTypes = true,
-                diagnosticMode = "openFilesOnly",
-                indexing = true,
-              },
-            },
-          },
-        },
-      },
-    },
-  },
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {

@@ -1,0 +1,23 @@
+{
+  "include": ["src"],
+  "exclude": ["**/node_modules", "**/__pycache__"],
+
+  "typeCheckingMode": "basic",
+  "reportUnusedImport": "none",
+  "reportMissingTypeStubs": "none",
+  "reportIgnoreCommentWithoutRule": "warning",
+  "reportUnreachable": "error",
+  "reportPrivateLocalImportUsage": "error",
+  "reportImplicitRelativeImport": "error",
+  "reportInvalidCast": "error",
+  "reportMissingSuperCall": false,
+  "reportUnusedCallResult": "information",
+  "reportUnusedExpression": "information",
+  "reportUnknownMemberType": "none",
+  "reportUnknownLambdaType": "none",
+  "reportUnknownParameterType": "none",
+  "reportMissingParameterType": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportAny": "none"
+}
