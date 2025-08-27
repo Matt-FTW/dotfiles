@@ -29,6 +29,7 @@ return {
     keys = keys,
     config = function()
       require("grapple").setup({
+        scope = "git_branch",
         win_opts = {
           footer = "",
         },
