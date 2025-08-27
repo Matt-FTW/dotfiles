@@ -1,0 +1,11 @@
+session_name: mail
+windows:
+  - window_name: neomutt
+    panes:
+      - shell_command:
+          - neomutt
+  - window_name: attachments
+    start_directory: ~/downloads/mail-attachments/
+    panes:
+      - shell_command:
+          - y

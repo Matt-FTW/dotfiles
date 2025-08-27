@@ -1,7 +1,7 @@
 session_name: notes-tasks
+start_directory: ~/documents/obsidian/personal-brain/vault/
 windows:
   - window_name: notes
-    start_directory: ~/documents/obsidian/personal-brain/vault/
     panes:
       - shell_command:
           - nvim
