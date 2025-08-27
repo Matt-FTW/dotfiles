@@ -63,6 +63,7 @@ fish_add_path $XDG_DATA_HOME/pnpm
 set -xg EDITOR nvim
 set -xg VISUAL $EDITOR
 set -xg SUDO_EDITOR $EDITOR
+set -xg PAGER bat
 
 # GPG/LANG
 set -xg GPG_TTY (tty)
