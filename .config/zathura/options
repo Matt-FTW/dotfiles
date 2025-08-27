@@ -1,0 +1,33 @@
+# vim: filetype=zathurarc
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+set adjust-open width
+
+# One page per row by default
+set pages-per-row 1
+
+# Stop at page boundries
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+# Zoom settings
+set zoom-min 10
+set guioptions ""
+set render-loading "false"
+
+# Font
+set font "Maple Mono NF 10.5"
+
+set selection-clipboard clipboard
+set window-title-page true
+
+set recolor "true"
+set recolor-reverse-video "true"
+set recolor-keephue "true"
+
+# Select sqlite instead of plain text
+set database sqlite
+
+set window-title-home-tilde true
+set statusbar-home-tilde true

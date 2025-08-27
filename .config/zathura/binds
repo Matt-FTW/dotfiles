@@ -1,0 +1,8 @@
+# vim: filetype=zathurarc
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+unmap a
+map a toggle_statusbar
+map c recolor
+map [fullscreen] c recolor
