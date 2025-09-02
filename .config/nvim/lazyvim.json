@@ -14,7 +14,6 @@
     "plugins.extras.editor.git.diffview",
     "plugins.extras.editor.gitsigns-extended",
     "plugins.extras.editor.marks.grapple",
-    "plugins.extras.editor.suda",
     "plugins.extras.editor.treesitter-extended",
     "plugins.extras.editor.trouble-extended",
     "plugins.extras.lang.docker-extended",
