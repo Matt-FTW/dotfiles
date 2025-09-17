@@ -3,16 +3,16 @@
     "~/.config/waybar/modules/custom-music.jsonc",
     "~/.config/waybar/modules/custom-notifications.jsonc",
     "~/.config/waybar/modules/hyprland-workspaces.jsonc",
-    "~/.config/waybar/modules/clock-1.jsonc",
     "~/.config/waybar/modules/hyprland-language.jsonc",
     "~/.config/waybar/modules/tray.jsonc",
+    "~/.config/waybar/modules/network.jsonc",
   ],
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["custom/music"],
   "modules-right": [
     "tray",
     "hyprland/language",
-    "clock#cl1",
+    "network",
     "custom/notifications",
   ],
 }

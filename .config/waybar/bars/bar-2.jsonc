@@ -6,15 +6,15 @@
     "~/.config/waybar/modules/temperature-gpu.jsonc",
     "~/.config/waybar/modules/temperature-cpu.jsonc",
     "~/.config/waybar/modules/hyprland-workspaces.jsonc",
-    "~/.config/waybar/modules/network.jsonc",
+    "~/.config/waybar/modules/clock.jsonc",
   ],
   "modules-left": ["hyprland/workspaces"],
   "modules-right": [
-    "network",
     "memory",
     "cpu",
     "temperature#cpu",
     "custom/gpu-usage",
     "temperature#gpu",
+    "clock#cl1",
   ],
 }
