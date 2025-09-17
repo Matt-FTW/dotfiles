@@ -3,6 +3,7 @@
     "lazyvim.plugins.extras.coding.mini-surround",
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.vue",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.treesitter-context",
     "lazyvim.plugins.extras.util.dot",
@@ -22,7 +23,6 @@
     "plugins.extras.lang.python-extended",
     "plugins.extras.lang.web.html-css",
     "plugins.extras.lang.web.typescript-extended",
-    "plugins.extras.lang.web.vue-3-extended",
     "plugins.extras.linting.eslint-extended",
     "plugins.extras.lsp.lspconfig-extended",
     "plugins.extras.lsp.mason-extended",
@@ -40,7 +40,8 @@
   ],
   "install_version": 7,
   "news": {
-    "NEWS.md": "10960"
+    "NEWS.md": "11866"
   },
   "version": 8
 }
+
