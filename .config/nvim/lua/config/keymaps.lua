@@ -86,7 +86,6 @@ map("n", "<C-e>", "gg<S-V>G", { desc = "Select all Text", silent = true, noremap
 map({ "n", "x" }, "<A-d>", '"_d', { desc = "Delete Without Yanking" })
 map({ "n", "x" }, "<A-c>", '"_c', { desc = "Change Without Yanking" })
 
-
 -- Dashboard
 map("n", "<leader>fd", function()
   if LazyVim.has("snacks.nvim") then
@@ -115,26 +114,6 @@ if not LazyVim.has("floaterm.nvim") or not LazyVim.has("toggleterm.nvim") then
   map("t", [[<c-\>]], "<cmd>close<cr>", { desc = "Hide Terminal" })
 end
 
--- Marks
-map("n", "dm", function()
-  local cur_line = vim.fn.line(".")
-  -- Delete buffer local mark
-  for _, mark in ipairs(vim.fn.getmarklist("%")) do
-    if mark.pos[2] == cur_line and mark.mark:match("[a-zA-Z]") then
-      vim.api.nvim_buf_del_mark(0, string.sub(mark.mark, 2, #mark.mark))
-      return
-    end
-  end
-  -- Delete global marks
-  local cur_buf = vim.api.nvim_win_get_buf(vim.api.nvim_get_current_win())
-  for _, mark in ipairs(vim.fn.getmarklist()) do
-    if mark.pos[1] == cur_buf and mark.pos[2] == cur_line and mark.mark:match("[a-zA-Z]") then
-      vim.api.nvim_buf_del_mark(0, string.sub(mark.mark, 2, #mark.mark))
-      return
-    end
-  end
-end, { noremap = true, desc = "Mark on Current Line" })
-
 -- Git
 map("n", "<leader>ghb", Snacks.git.blame_line, { desc = "Blame Line" })
 
@@ -160,3 +139,6 @@ if Snacks.scroll.enabled then
     return "<c-u>"
   end, { expr = true })
 end
+
+-- Select first option for spelling
+map("n", "<leader>S", "1z=", { desc = "Spelling (First Option)" })
