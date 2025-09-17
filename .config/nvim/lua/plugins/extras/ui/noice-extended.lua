@@ -1,6 +1,9 @@
 return {
   "folke/noice.nvim",
   opts = {
+    cmdline = {
+      view = "cmdline",
+    },
     lsp = {
       progress = {
         enabled = false,
@@ -8,7 +11,6 @@ return {
     },
     presets = {
       lsp_doc_border = true,
-      bottom_search = false,
     },
   },
 }
