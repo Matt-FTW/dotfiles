@@ -21,7 +21,7 @@ return {
   { import = "plugins.extras.lang.yaml-extended" },
   { import = "lazyvim.plugins.extras.lang.ansible" },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "ansible-language-server",

@@ -1,5 +1,5 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   dependencies = {
     "zapling/mason-lock.nvim",
     cmd = { "MasonLock", "MasonLockRestore" },

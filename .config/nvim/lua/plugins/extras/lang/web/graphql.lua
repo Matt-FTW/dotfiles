@@ -1,7 +1,7 @@
 return {
   { import = "plugins.extras.lang.web.typescript-extended" },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "graphql-language-service-cli",
