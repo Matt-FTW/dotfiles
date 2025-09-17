@@ -86,7 +86,6 @@ return {
         },
       },
     }) end, desc = "Zoxide" },
-    { "<leader>S", function() Snacks.picker.spelling() end, desc = "Spelling" },
     { "<leader>gb", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
     { "<leader>,", function() Snacks.picker.buffers({
       on_show = function()
