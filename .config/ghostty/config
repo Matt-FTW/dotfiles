@@ -1,4 +1,4 @@
-theme = catppuccin-macchiato
+theme = Catppuccin Macchiato
 background-blur-radius = 20
 
 font-family = Maple Mono NF
@@ -17,7 +17,6 @@ gtk-single-instance = true
 window-theme = system
 gtk-titlebar = false
 gtk-wide-tabs = false
-gtk-adwaita = false
 
 macos-titlebar-style = hidden
 macos-option-as-alt = true
