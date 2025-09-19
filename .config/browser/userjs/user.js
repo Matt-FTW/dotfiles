@@ -19,6 +19,14 @@ user_pref("font.name.serif.x-western", "Maple Mono NF");
 user_pref("signon.rememberSignons", false);
 user_pref("signon.autofillForms", false);
 user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.tabs.fadeOutUnloadedTabs", true);
+// Disable AI stuff
+user_pref("browser.ml.enable", false);
+user_pref("browser.ml.chat.enabled", false);
+user_pref("extensions.ml.enabled", false);
+user_pref("browser.ml.linkPreview.enabled ", false);
+user_pref("browser.tabs.groups.smart.enabled", false);
+user_pref("browser.tabs.groups.smart.userEnabled", false);
 
 // Zen Options
 user_pref("browser.urlbar.trimURLs", true);
