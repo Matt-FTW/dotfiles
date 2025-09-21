@@ -1,0 +1,16 @@
+# MS Word documents
+application/msword; xdg-open %s
+application/vnd.ms-excel; xdg-open %s
+application/vnd.openxmlformats-officedocument.presentationml.presentation; xdg-open %s
+application/vnd.oasis.opendocument.text; xdg-open %s
+
+# HTML
+text/html; w3m -o auto_image=TRUE -I %{charset} -T text/html; copiousoutput;
+text/plain; nvim %s
+
+# PDF
+application/pdf; xdg-open %s
+
+# Images
+image/png; xdg-open %s
+image/jpeg; xdg-open %s

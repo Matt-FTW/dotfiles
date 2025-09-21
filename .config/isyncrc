@@ -1,0 +1,22 @@
+# Remote Vault
+IMAPStore proton-remote
+Account proton
+
+# Local Vault
+MaildirStore proton-local
+Path ~/.mail/proton/
+Inbox ~/.mail/proton/INBOX
+Subfolders Verbatim
+
+# Sync Channel
+Channel proton-default
+Far :proton-remote:
+Near :proton-local:
+Patterns * !"All Mail"
+Create Both
+Expunge Both
+SyncState *
+
+# Sync Inbox
+Group proton
+Channel proton-default

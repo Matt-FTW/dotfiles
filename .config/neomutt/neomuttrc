@@ -1,0 +1,8 @@
+# vim: filetype=muttrc
+# Accounts
+source "~/.config/neomutt/accounts/account.com.example"
+
+# Source Files
+source "~/.config/neomutt/binds"
+source "~/.config/neomutt/options"
+source "~/.config/neomutt/theme"

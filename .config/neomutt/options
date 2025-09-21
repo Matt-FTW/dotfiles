@@ -1,0 +1,43 @@
+# vim: filetype=muttrc
+# General settings
+set editor='nvim'
+set attach_save_dir="~/downloads/mail-attachments"
+set mailcap_path = ~/.config/neomutt/mailcap
+
+# Open mails on html view by default
+auto_view text/html text/calendar
+alternative_order text/calendar text/plain text/enriched text/html text/*
+
+set sidebar_visible=yes
+set sidebar_width=30
+set sidebar_short_path=yes
+
+set pager_stop             # don't go to next message automatically
+set menu_scroll            # scroll in menus
+set pager_format="%4C %Z %[!%b %e at %I:%M %p]  %.20n  %s%* -- (%P)"
+set wait_key=no
+
+set smart_wrap
+set reflow_wrap=120
+set reflow_text
+
+set attach_format = '%u%D%I %t%4n %T%.40d%> [%.12m/%.12M, %.6e%?C?, %C?, %s] '
+set folder_format = '%4C %t %f'
+
+# Index View Options ---------------------------------
+set date_format = "%d/%m/%y at %H:%M"
+
+# Status Bar {{{
+set status_chars = '—+#~'
+set status_on_top = yes
+
+## status_format - format of summary on the current folder in the index
+# https://www.neomutt.org/guide/reference.html#status-format
+##
+## %?<sequence_char>?<optional_string>? optionally print string, if>0
+## Default: -%r-NeoMutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---
+# set status_format = "%f%r—[%?M?%M/?%m messages, %?n?%n new, ?%?d?%d deleted, ?%?F?%F important, ?%?t?%t selected, ?%?p?%p drafts, ?%l]———(%s/%S)—%>—(%P)———"
+set status_format = "%D %?u?[ %u] ?%?R?[ %R] ?%?d?[ %d] ?%?t?[ %t] ?%?F?[ %F] ?%?p?[ %p]? \n  \n"
+
+# Default is: Mutt with %?m?%m messages&no messages?%?n? [%n NEW]?
+set ts_status_format = 'mutt %m messages%?n?, %n new?'
