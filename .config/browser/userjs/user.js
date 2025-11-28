@@ -20,6 +20,7 @@ user_pref("signon.rememberSignons", false);
 user_pref("signon.autofillForms", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.tabs.fadeOutUnloadedTabs", true);
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 // Disable AI stuff
 user_pref("browser.ml.enable", false);
 user_pref("browser.ml.chat.enabled", false);
@@ -37,7 +38,7 @@ user_pref("zen.tabs.vertical.right-side", true);
 user_pref("zen.workspaces.open-new-tab-if-last-unpinned-tab-is-closed", false);
 user_pref("zen.theme.gradient", true);
 user_pref("zen.view.experimental-rounded-view", false);
-user_pref("zen.view.experimental-force-window-controls-left", false); // Using the sidebar at the right
+user_pref("zen.view.experimental-force-window-controls-left", true); // Using the sidebar at the right
 user_pref("zen.widget.linux.transparency", false);
 user_pref("zen.pinned-tab-manager.restore-pinned-tabs-to-pinned-url", true);
 user_pref("zen.splitView.change-on-hover", true);
