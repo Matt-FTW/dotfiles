@@ -55,9 +55,7 @@ o.backspace = { "start", "eol", "indent" }
 o.breakindent = true
 
 -- Smoothscroll
-if vim.fn.has("nvim-0.10") == 1 then
-  o.smoothscroll = true
-end
+o.smoothscroll = true
 
 o.conceallevel = 2
 
