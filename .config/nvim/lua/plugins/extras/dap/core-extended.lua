@@ -6,7 +6,21 @@ return {
     "mfussenegger/nvim-dap",
     dependencies = {
       "igorlfs/nvim-dap-view",
-      opts = {},
+      opts = {
+        winbar = {
+          sections = { "watches", "scopes", "exceptions", "breakpoints", "threads", "repl", "sessions", "console" },
+          default_section = "scopes",
+        },
+        windows = {
+          terminal = {
+            width = 0.2,
+            position = "left",
+            hide = {},
+            start_hidden = false,
+          },
+        },
+        auto_toggle = true,
+      },
       config = function(_, opts)
         local dap = require("dap")
         dap.listeners.before.attach.dapui_config = function()
