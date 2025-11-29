@@ -1,5 +1,6 @@
 [
   {
+    "start_hidden": true,
     "include": "~/.config/waybar/bars/bar-1.jsonc",
     "height": 48,
     "layer": "top",
@@ -14,6 +15,7 @@
     "margin-right": 5,
   },
   {
+    "start_hidden": true,
     "include": "~/.config/waybar/bars/bar-2.jsonc",
     "height": 48,
     "position": "bottom",
