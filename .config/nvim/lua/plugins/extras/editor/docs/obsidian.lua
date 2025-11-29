@@ -171,4 +171,14 @@ return {
       table.insert(opts.sections.lualine_x, 1, "g:obsidian")
     end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        marksman = {
+          enabled = false,
+        },
+      },
+    },
+  },
 }
