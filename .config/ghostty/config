@@ -33,3 +33,5 @@ auto-update-channel = stable
 # extras
 shell-integration-features = no-cursor
 copy-on-select = clipboard
+resize-overlay = never
+window-save-state = never
