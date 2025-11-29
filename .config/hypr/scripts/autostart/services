@@ -24,3 +24,6 @@ easyeffects --gapplication-service &
 # Screen sharing and portals
 "$HOME"/.config/hypr/scripts/portal &
 # xwaylandvideobridge & # Off when using Vesktop instead of Discord
+
+# Vicinae
+vicinae server &
