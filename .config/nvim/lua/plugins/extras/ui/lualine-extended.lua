@@ -22,7 +22,15 @@ return {
     opts.options.component_separators = { left = "", right = "" }
     opts.options.section_separators = { left = "", right = "" }
 
-    opts.sections.lualine_a = { { "mode", icon = "" } }
+    opts.sections.lualine_a = {
+      {
+        "mode",
+        icon = "",
+        fmt = function(text, context)
+          return string.sub(text, 1, 3)
+        end,
+      },
+    }
     opts.sections.lualine_c[4] = {
       LazyVim.lualine.pretty_path({
         filename_hl = "Bold",
