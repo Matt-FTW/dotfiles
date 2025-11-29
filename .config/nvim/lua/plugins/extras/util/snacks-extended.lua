@@ -86,16 +86,7 @@ return {
         },
       },
     }) end, desc = "Zoxide" },
-    {
-      "<leader>gb", function() Snacks.picker.git_log_line() end, { desc = "Blame Line"},
-    },
-    { "<leader>,", function() Snacks.picker.buffers({
-      on_show = function()
-        vim.cmd.stopinsert()
-      end,
-      current = false,
-      sort_lastused = true,
-    }) end, desc = "Buffers" },
+    { "<leader>gb", function() Snacks.picker.git_log_line() end, desc = "Blame Line"},
     { "<leader>cil", function() Snacks.picker.lsp_config() end, desc = "Lsp"},
     { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open Line" },
   },
