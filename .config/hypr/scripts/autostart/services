@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Wallpaper engine
-# swww-daemon --format xrgb &
-hyprpaper &
+swww-daemon --format argb &
 
 # Automounter for removable media
 udiskie &
@@ -30,9 +29,6 @@ wl-paste --watch cliphist store &
 
 # Audio
 easyeffects --gapplication-service &
-
-# Random Wallpaper
-"$HOME"/.config/hypr/scripts/random_wallpaper &
 
 # Screen sharing and portals
 "$HOME"/.config/hypr/scripts/portal &
