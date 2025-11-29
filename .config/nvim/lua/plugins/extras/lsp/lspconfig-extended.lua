@@ -14,7 +14,6 @@ return {
         ["*"] = {
           keys = {
             { prefix, false },
-            { "<leader>cil", "<cmd>LspInfo<cr>", desc = "Lsp" },
             { prefix .. "r", "<cmd>LspRestart<cr>", desc = "Restart Lsp" },
             { prefix .. "s", "<cmd>LspStart<cr>", desc = "Start Lsp" },
             { prefix .. "S", "<cmd>LspStop<cr>", desc = "Stop Lsp" },

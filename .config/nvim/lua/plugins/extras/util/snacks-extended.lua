@@ -96,6 +96,7 @@ return {
       current = false,
       sort_lastused = true,
     }) end, desc = "Buffers" },
+    { "<leader>cil", function() Snacks.picker.lsp_config() end, desc = "Lsp"},
     { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open Line" },
   },
 }
