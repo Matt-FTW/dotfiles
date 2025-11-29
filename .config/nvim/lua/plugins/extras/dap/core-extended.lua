@@ -22,20 +22,16 @@ return {
           vim.cmd("DapViewClose")
         end
       end,
+      -- stylua: ignore
       keys = {
         { prefix .. "u", "<cmd>DapViewToggle<cr>", desc = "Dap UI" },
+        { prefix .. "a", function() require("dap-view").add_expr() end, desc = "Add Expression" },
       },
     },
     -- stylua: ignore
     keys = {
       { prefix .. "O", function() require("dap").step_out() end, desc = "Debug: Step out" },
       { prefix .. "o", function() require("dap").step_over() end, desc = "Debug: Step over" },
-      { "<F5>", function() require("dap").continue() end, desc = "Debug: Continue" },
-      { "<F10>", function() require("dap").step_over() end, desc = "Debug: Step over" },
-      { "<F11>", function() require("dap").step_into() end, desc = "Debug: Step into" },
-      { "<F12>", function() require("dap").step_out() end, desc = "Debug: Step out" },
-      { "<F2>", function() require("dap").toggle_breakpoint() end, desc = "Debug: Toggle breakpoint" },
-      { "<S-F2>", function() require("dap").set_breakpoint(vim.fn.input('Breakpoint condition: ')) end, desc = "Breakpoint Condition" },
     },
   },
   {
