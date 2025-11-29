@@ -5,12 +5,13 @@ gui:
   scrollPastBottom: false # enable scrolling past the bottom
   sidePanelWidth: 0.22 # number from 0 to 1
   expandFocusedSidePanel: true
+  enlargedSideViewLocation: "top"
   theme:
     activeBorderColor:
-      - "#a6da95"
+      - "#b7bdf8"
       - bold
     inactiveBorderColor:
-      - "#a5adcb"
+      - "#8087a2"
     optionsTextColor:
       - "#8aadf4"
     selectedLineBgColor:
@@ -42,9 +43,9 @@ gui:
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
   statusPanelView: allBranchesLog
 git:
-  paging:
-    colorArg: always
-    pager: delta --paging=never --dark --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+  pagers:
+    - colorArg: always
+      pager: delta --paging=never --dark --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' {{branchName}} --"
   parseEmoji: true
   allBranchesLogCmds:
@@ -132,7 +133,7 @@ keybinding:
     viewResetOptions: "D"
     fetch: "f"
     toggleTreeView: "`"
-    openMergeTool: "M"
+    openMergeOptions: "M"
     openStatusFilter: "<c-b>"
   branches:
     createPullRequest: "o"
@@ -161,7 +162,7 @@ keybinding:
     amendToCommit: "A"
     pickCommit: "p" # pick commit (when mid-rebase)
     revertCommit: "t"
-    pasteCommits: "v"
+    pasteCommits: "V"
     tagCommit: "T"
     checkoutCommit: "<space>"
     resetCherryPick: "<c-R>"
