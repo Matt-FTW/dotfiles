@@ -176,7 +176,7 @@ return {
     opts = {
       servers = {
         marksman = {
-          enabled = false,
+          enabled = false, -- TODO: Make this dynamic and detect wether we are on an obsidian vault or a regular md file
         },
       },
     },
