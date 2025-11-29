@@ -114,9 +114,6 @@ if not LazyVim.has("floaterm.nvim") or not LazyVim.has("toggleterm.nvim") then
   map("t", [[<c-\>]], "<cmd>close<cr>", { desc = "Hide Terminal" })
 end
 
--- Git
-map("n", "<leader>ghb", Snacks.git.blame_line, { desc = "Blame Line" })
-
 -- Windows Split
 map("n", "<leader>_", "<C-W>s", { desc = "Split Window Below", remap = true })
 map("n", "<leader>\\", "<C-W>v", { desc = "Split Window Right", remap = true })

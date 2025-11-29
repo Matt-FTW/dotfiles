@@ -86,7 +86,9 @@ return {
         },
       },
     }) end, desc = "Zoxide" },
-    { "<leader>gb", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
+    {
+      "<leader>gb", function() Snacks.picker.git_log_line() end, { desc = "Blame Line"},
+    },
     { "<leader>,", function() Snacks.picker.buffers({
       on_show = function()
         vim.cmd.stopinsert()
