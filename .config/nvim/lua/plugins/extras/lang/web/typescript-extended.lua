@@ -2,26 +2,6 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   { import = "plugins.extras.lang.json-extended" },
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        vtsls = {
-          handlers = {
-            ["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
-              require("ts-error-translator").translate_diagnostics(err, result, ctx, config)
-              vim.lsp.diagnostic.on_publish_diagnostics(err, result, ctx, config)
-            end,
-          },
-          init_options = {
-            preferences = {
-              disableSuggestions = true,
-            },
-          },
-        },
-      },
-    },
-  },
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
