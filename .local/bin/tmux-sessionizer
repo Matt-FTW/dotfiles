@@ -11,10 +11,10 @@ zoxide_command="zoxide query -l"
 
 tmuxp_load() {
   if [[ -n "$TMUX" ]]; then
-    tmuxp load -y "$selected_dir" --log-file "$XDG_DATA_HOME"/tmux/tmuxp.log
+    tmuxp load -y "$selected_dir"
     zoxide_score
   else
-    tmuxp load "$selected_dir" --log-file "$XDG_DATA_HOME"/tmux/tmuxp.log
+    tmuxp load "$selected_dir"
     zoxide_score
   fi
 }
