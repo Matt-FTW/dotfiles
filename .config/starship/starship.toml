@@ -12,12 +12,11 @@ $git_branch\
 ${custom.giturl}\
 $git_commit\
 $git_state\
-$git_metrics\
 $git_status\
-$docker_context\
-${custom.docker}\
 $all
 """
+
+# right_format = """$all"""
 
 # Duration entry
 [cmd_duration]
@@ -31,20 +30,21 @@ deleted_style = "red"
 format = '(\([+$added]($added_style)/[-$deleted]($deleted_style)\))'
 
 [git_status]
-ahead = '[ $count](bold green) '
+ahead = '[](bold green) '
 conflicted = '[󱡂 ](bold red) '
-untracked = '[ $count](bold purple) '
-staged = '[ $count](bold green) '
-stashed = '[ $count](cyan) '
-deleted = '[ $count](bold red) '
-modified = '[ $count](bold yellow) '
-behind = '[ $count](bold yellow) '
-renamed = '[󰬴 $count](bold blue) '
-up_to_date = '[](bold green) '
-diverged = '[ $ahead_count  $behind_count ](bold red) '
+untracked = '[](bold purple) '
+staged = '[](bold green) '
+stashed = '[](cyan) '
+deleted = '[](bold red) '
+modified = '[ ](bold yellow) '
+behind = '[](bold yellow) '
+renamed = '[󰬴 ](bold blue) '
+up_to_date = ''
+diverged = '[󱓌 ](bold red) '
 format = '([$all_status$ahead_behind]($style))'
 
 [git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
 symbol = " "
 
 [hg_branch]
@@ -55,13 +55,13 @@ symbol = " "
 
 # Gcloud entry
 [gcloud]
-format = "on [$symbol]($style) "
+format = "[$symbol]($style) "
 symbol = " "
 style = "bold blue"
 
 # Directory entry
 [directory]
-read_only = " 󰌾 "
+read_only = " 󰌾"
 # home_symbol = " "
 truncation_length = 3
 
@@ -100,17 +100,21 @@ description = "Display symbol for remote Git server"
 command = "check-git-remote"
 when = 'git rev-parse --is-inside-work-tree 2> /dev/null'
 shell = ["bash", "--noprofile", "--norc"]
-format = "at $output  "
+format = "$output  "
 
 # Nerd fonts preset
 [aws]
 symbol = "  "
-disabled = true
 
 [buf]
 symbol = " "
 
+[bun]
+format = '[$symbol($version )]($style)'
+symbol = " "
+
 [c]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [conda]
@@ -120,6 +124,7 @@ symbol = " "
 symbol = " "
 
 [dart]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [docker_context]
@@ -135,6 +140,7 @@ symbol = " "
 symbol = " "
 
 [golang]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [guix_shell]
@@ -150,6 +156,7 @@ symbol = " "
 ssh_symbol = " "
 
 [java]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [julia]
@@ -159,6 +166,7 @@ symbol = " "
 symbol = " "
 
 [lua]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [memory_usage]
@@ -171,9 +179,11 @@ symbol = "󰔷 "
 symbol = "󰆥 "
 
 [nix_shell]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [nodejs]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 [ocaml]
@@ -237,6 +247,7 @@ symbol = " "
 symbol = " "
 
 [python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = " "
 
 [rlang]
@@ -246,6 +257,8 @@ symbol = "󰟔 "
 symbol = " "
 
 [rust]
+format = '[$symbol($version )]($style)'
+
 symbol = " "
 
 [scala]
@@ -254,7 +267,12 @@ symbol = " "
 [swift]
 symbol = " "
 
+[vagrant]
+format = '[$symbol($version )]($style)'
+symbol = " "
+
 [zig]
+format = '[$symbol($version )]($style)'
 symbol = " "
 
 # Theme
