@@ -33,7 +33,6 @@
     "plugins.extras.ui.noice-extended",
     "plugins.extras.ui.which-key-extended",
     "plugins.extras.util.persistence-extended",
-    "plugins.extras.util.rest-extended",
     "plugins.extras.util.snacks-extended",
     "plugins.extras.util.wakatime",
     "plugins.extras.util.yazi"
