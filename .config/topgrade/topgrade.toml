@@ -89,8 +89,6 @@ disable = ["poetry", "spicetify", "vim", "containers"]
 [commands]
 # "Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
-hyprpm = "hyprpm update -v"
-
 
 [python]
 # enable_pip_review = true                         ###disabled by default
