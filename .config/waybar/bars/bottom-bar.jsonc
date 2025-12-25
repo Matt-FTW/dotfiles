@@ -1,4 +1,10 @@
 {
+  "height": 48,
+  "position": "bottom",
+  "margin-top": 0,
+  "margin-left": 5,
+  "margin-bottom": 5,
+  "margin-right": 5,
   "include": [
     "~/.config/waybar/modules/cpu.jsonc",
     "~/.config/waybar/modules/memory.jsonc",
@@ -15,6 +21,6 @@
     "temperature#cpu",
     "custom/gpu-usage",
     "temperature#gpu",
-    "clock#cl1",
+    "clock#cl2",
   ],
 }

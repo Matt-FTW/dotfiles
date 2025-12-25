@@ -2,4 +2,13 @@
   "tray": {
     "spacing": 10,
   },
+  "group/tray": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 400,
+      "children-class": "extras",
+      "transition-left-to-right": false,
+    },
+    "modules": ["custom/menu", "tray"],
+  },
 }

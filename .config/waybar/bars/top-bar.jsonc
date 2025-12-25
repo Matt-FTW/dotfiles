@@ -1,4 +1,10 @@
 {
+  "position": "top",
+  "height": 48,
+  "margin-top": 5,
+  "margin-left": 5,
+  "margin-bottom": 0,
+  "margin-right": 5,
   "include": [
     "~/.config/waybar/modules/custom-music.jsonc",
     "~/.config/waybar/modules/custom-notifications.jsonc",

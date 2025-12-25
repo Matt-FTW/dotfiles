@@ -1,29 +1,132 @@
-/* Variables */
-@define-color mantle #1e2030;
-@define-color base rgb(36, 39, 58);
-@define-color text #cad3f5;
-@define-color surface0 #363a4f;
-@define-color surface2 #5b6078;
-@define-color blue #8aadf4;
-@define-color green #a6da95;
-@define-color peach #f5a97f;
-@define-color rosewater #f4dbd6;
-@define-color lavender #b7bdf8;
-@define-color yellow #eed49f;
-@define-color red #ed8796;
-@define-color maroon #ee99a0;
-@define-color teal #8bd5ca;
-@define-color sky #91d7e3;
-@define-color sapphire #7dc4e4;
-@define-color mauve #c6a0f6;
-@define-color pink #f5bde6;
-@define-color border rgba(183, 189, 248, 0.4);
-@define-color shadow rgb(30, 32, 48);
+@import "./colors.css";
 
 * {
-  font-family: Maple Mono NF;
-  font-size: 13.5px;
-  min-height: 0;
+  font-family: "Maple Mono NF";
+  font-size: 15px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+window#waybar {
+  background: @background;
+  /* border: 2px solid @border; */
+}
+
+#custom-cachy:hover,
+#cpu:hover,
+#network:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#pulseaudio.microphone:hover,
+#pulseaudio.sink-muted:hover,
+#custom-powermenu:hover {
+  opacity: 0.5;
+}
+
+#custom-cachy,
+#cpu,
+#clock,
+#mpris,
+#custom-menu,
+#tray,
+#privacy,
+#network,
+#bluetooth,
+#pulseaudio,
+#pulseaudio.microphone,
+#backlight,
+#battery,
+#custom-powermenu {
+  color: @foreground;
+  padding: 6px 0;
+}
+
+#workspaces button {
+  color: @foreground;
+  padding: 0;
+}
+#workspaces button.active {
+  color: @green;
+}
+
+#privacy {
+  margin: 4px;
+  color: @yellow;
+}
+
+#clock {
+  margin-top: 5px;
+  color: @blue;
+}
+
+#mpris {
+  color: @yellow;
+}
+
+#network.disabled {
+  color: @red;
+}
+#network.wifi {
+  color: @green;
+}
+#network.ethernet {
+  color: @yellow;
+}
+
+#bluetooth.disabled {
+  color: @red;
+}
+#bluetooth.connected {
+  color: @blue;
+}
+
+#pulseaudio.sink-muted:not(.microphone) {
+  color: @yellow;
+}
+#pulseaudio.microphone.source-muted {
+  color: @red;
+}
+
+#battery.plugged {
+  color: @blue;
+}
+#battery.charging {
+  color: @green;
+}
+#battery.critical {
+  color: @yellow;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid @foreground;
+}
+tooltip * {
+  color: @foreground;
+  margin: 2px;
+  background: @background;
+}
+
+#pulseaudio-slider,
+#backlight-slider {
+  min-height: 80px;
+}
+
+#pulseaudio-slider slider,
+#backlight-slider slider {
+  background: transparent;
+}
+
+#pulseaudio-slider trough,
+#backlight-slider trough {
+  min-width: 8px;
+}
+
+#pulseaudio-slider highlight {
+  background: @blue;
+}
+#backlight-slider highlight {
+  background: @yellow;
 }
 
 /* General Settings */
@@ -63,220 +166,16 @@
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-  background-color: alpha(@base, 0.9);
-  padding: 0 10px;
-  margin: 2px 4px 5px 4px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
-  border: 2px solid @border;
-  background-clip: padding-box;
-}
-
-window#waybar {
-  color: @text;
-  background: transparent;
-}
-
-window#waybar.hidden {
-  opacity: 0;
-}
-
-#workspaces * {
-  font-size: 14px;
-}
-#workspaces button label {
-  color: @lavender;
-  font-weight: bolder;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-}
-
-#workspaces button.active label {
-  color: @base;
-  font-weight: bolder;
-}
-
-#workspaces button.urgent {
-  background-color: @red;
-}
-
-#workspaces button.urgent label {
-  color: @base;
-  font-weight: bolder;
-}
-
-#workspaces {
-  background-color: alpha(@base, 0.9);
-  border: 2px solid @border;
-  padding: 0 10px;
-  margin: 2px 4px 5px 4px;
-  box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
-  border-radius: 10px;
-  background-clip: padding-box;
-}
-
-#workspaces button {
-  border-radius: 15px;
-  margin-right: 3px;
-  margin-left: 3px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  padding: 0 5px;
-  font-weight: bolder;
-  min-width: 20px;
-  color: @base;
-  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-}
-
-#workspaces button.active {
-  padding-right: 6px;
-  padding-left: 6px;
-  box-shadow: 3px 3px 1px 1px alpha(@shadow, 0.7);
-  padding-bottom: 3px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background: linear-gradient(
-    52deg,
-    rgba(139, 213, 202, 1) 0%,
-    rgba(138, 173, 244, 1) 30%,
-    rgba(183, 189, 248, 1) 48%,
-    rgba(198, 160, 246, 1) 77%,
-    rgba(238, 153, 160, 1) 100%
-  );
-  background-size: 400% 400%;
-  /* animation: gradient 15s ease infinite; */
-  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-  color: @mauve;
-  border-radius: 12px;
-}
-
-#workspaces button:hover {
-  background-color: @surface0;
-}
-
-#workspaces button.focused:hover {
-  background-color: alpha(@base, 0.9);
-}
-
-#workspaces button.focused:hover label {
-  color: @text;
-}
-
-/* Individual Modules */
-#battery {
-  color: @mauve;
-}
-
-#battery.warning {
-  color: @yellow;
-}
-
-#battery.critical {
-  color: @peach;
-}
-
-#battery.urgent {
-  color: @red;
-}
-
-#custom-cava {
-  color: @lavender;
-  border-radius: 12px;
-}
-
-#cpu {
-  color: @blue;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-}
-
-#memory {
-  color: @green;
-  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+  padding: 5 0 5 0;
 }
 
 #custom-notifications {
   color: @yellow;
-}
-
-#custom-weather {
-  color: @red;
-}
-
-#custom-updates {
-  color: @teal;
-}
-
-#custom-wf-recorder {
-  color: @red;
-}
-
-#custom-gpu-temp {
-  color: @peach;
-}
-
-#custom-gpu-usage {
-  color: @teal;
-}
-
-#custom-power-menu {
-  color: @red;
-}
-
-#temperature {
-  color: @peach;
-}
-
-#bluetooth {
-  color: @blue;
-}
-
-#window {
-  background: linear-gradient(
-    52deg,
-    rgba(139, 213, 202, 1) 0%,
-    rgba(138, 173, 244, 1) 30%,
-    rgba(183, 189, 248, 1) 48%,
-    rgba(198, 160, 246, 1) 77%,
-    rgba(238, 153, 160, 1) 100%
-  );
-  background-size: 400% 400%;
-  /* animation: gradient 15s ease infinite; */
-  text-shadow: 0px 0px 5px @lavender;
-  font-weight: bold;
-  color: @mantle;
-  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-  border: none;
-}
-
-#temperature.critical {
-  background-color: @red;
-  color: @mantle;
-}
-
-#custom-music {
-  background: @lavender;
-  background: linear-gradient(
-    52deg,
-    rgba(139, 213, 202, 1) 0%,
-    rgba(138, 173, 244, 1) 30%,
-    rgba(183, 189, 248, 1) 48%,
-    rgba(198, 160, 246, 1) 77%,
-    rgba(238, 153, 160, 1) 100%
-  );
-  background-size: 400% 400%;
-  /* animation: gradient 15s ease infinite; */
-  text-shadow: 0px 0px 5px @border;
-  font-weight: bold;
-  color: @mantle;
-  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-  border: none;
-}
-
-#custom-fans {
-  color: @green;
+  margin-bottom: 10px;
 }
 
 #clock {
-  color: @lavender;
+  color: @blue;
 }
 
 #language {
@@ -321,79 +220,12 @@ window#waybar.hidden {
   animation-direction: alternate;
 }
 
-#network {
+#network.disabled {
+  color: @red;
+}
+#network.wifi {
+  color: @peach;
+}
+#network.ethernet {
   color: @sky;
-}
-
-#network.disconnected {
-  background-color: @red;
-  color: @mantle;
-}
-
-#network.linked {
-  background-color: @peach;
-  color: @mantle;
-}
-
-#clock.cl2 {
-  background: @lavender;
-  background: linear-gradient(
-    52deg,
-    rgba(139, 213, 202, 1) 0%,
-    rgba(138, 173, 244, 1) 30%,
-    rgba(183, 189, 248, 1) 48%,
-    rgba(198, 160, 246, 1) 77%,
-    rgba(238, 153, 160, 1) 100%
-  );
-  background-size: 400% 400%;
-  /* animation: gradient 15s ease infinite; */
-  text-shadow: 0px 0px 5px @border;
-  font-weight: bold;
-  color: @mantle;
-  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
-  border: none;
-}
-
-/* Animation Keyframes */
-@keyframes blink {
-  to {
-    background-color: alpha(@base, 0.9);
-    color: @red;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient_f {
-  0% {
-    background-position: 0% 200%;
-  }
-
-  50% {
-    background-position: 200% 0%;
-  }
-
-  100% {
-    background-position: 400% 200%;
-  }
-}
-
-@keyframes gradient_f_nh {
-  0% {
-    background-position: 0% 200%;
-  }
-
-  100% {
-    background-position: 200% 200%;
-  }
 }
