@@ -3,9 +3,7 @@ local prefix = "<leader>o"
 return {
   { import = "plugins.extras.lang.markdown-extended" },
   {
-    -- "epwalsh/obsidian.nvim",
-    "obsidian-nvim/obsidian.nvim", -- NOTE: Using a fork from the community
-    -- ft = "markdown",
+    "obsidian-nvim/obsidian.nvim",
     event = "BufReadPre " .. vim.fn.expand("~") .. "/documents/obsidian/**.md",
     keys = {
       { prefix .. "o", "<cmd>Obsidian open<CR>", desc = "Open on App" },

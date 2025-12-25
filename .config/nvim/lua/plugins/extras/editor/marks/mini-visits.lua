@@ -2,7 +2,7 @@ local prefix = "<leader>m"
 
 return {
   {
-    "echasnovski/mini.visits",
+    "nvim-mini/mini.visits",
     event = "BufEnter",
     opts = {},
     -- stylua: ignore

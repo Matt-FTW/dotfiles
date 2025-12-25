@@ -1,5 +1,5 @@
 return {
-  { import = "lazyvim.plugins.extras.lang.omnisharp" },
+  { import = "lazyvim.plugins.extras.lang.dotnet" },
   {
     "nvim-neotest/neotest",
     optional = true,

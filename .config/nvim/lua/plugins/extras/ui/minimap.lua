@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.map",
+  "nvim-mini/mini.map",
   opts = function()
     local map = require("mini.map")
     return {
