@@ -8,6 +8,7 @@
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.treesitter-context",
     "lazyvim.plugins.extras.util.dot",
+    "plugins.extras.coding.ai.sidekick-extended",
     "plugins.extras.coding.blink-extended",
     "plugins.extras.coding.treesitter.node-action",
     "plugins.extras.coding.yanky-extended",
