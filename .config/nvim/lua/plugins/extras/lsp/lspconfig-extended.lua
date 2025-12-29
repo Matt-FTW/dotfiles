@@ -8,7 +8,7 @@ return {
         virtual_text = false,
       },
       codelens = {
-        enabled = true,
+        enabled = false,
       },
       servers = {
         ["*"] = {
