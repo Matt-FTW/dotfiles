@@ -40,8 +40,23 @@ return {
       matcher = {
         frecency = true,
       },
-      layout = {
-        fullscreen = true,
+      layouts = {
+        default = {
+          layout = {
+            box = "horizontal",
+            width = 0,
+            height = 0,
+            {
+              box = "vertical",
+              border = "rounded",
+              title = "{source} {live}",
+              title_pos = "center",
+              { win = "input", height = 1, border = "bottom" },
+              { win = "list", border = "none" },
+            },
+            { win = "preview", border = "rounded", width = 0.65 },
+          },
+        },
       },
       win = {
         input = {
