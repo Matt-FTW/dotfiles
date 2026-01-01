@@ -56,7 +56,7 @@ fallback = [
 
 [open]
 rules = [
-  { name = "*/", use = "folder" },
+  { url = "*/", use = "folder" },
 
   { mime = "text/*", use = "text" },
   { mime = "image/*", use = "image" },
@@ -82,10 +82,10 @@ rules = [
 
 [[plugin.prepend_fetchers]]
 id = "git"
-name = "*"
+url = "*"
 run = "git"
 
 [[plugin.prepend_fetchers]]
 id = "git"
-name = "*/"
+url = "*/"
 run = "git"
