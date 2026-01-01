@@ -102,6 +102,8 @@ return {
     }) end, desc = "Zoxide" },
     { "<leader>gb", function() Snacks.picker.git_log_line() end, desc = "Blame Line"},
     { "<leader>cil", function() Snacks.picker.lsp_config() end, desc = "Lsp"},
+    { "<leader>sn", function() Snacks.picker.notifications() end, desc = "Notifications" },
+    { "<leader>st", function() Snacks.picker.treesitter() end, desc = "Treesitter" },
     { "<leader>go", function() Snacks.gitbrowse() end, desc = "Git Open Line" },
   },
 }
