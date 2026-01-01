@@ -3,6 +3,8 @@ local disabled = {
   { "nvim-neo-tree/neo-tree.nvim" },
   { "folke/flash.nvim" },
   { "folke/todo-comments.nvim" },
+  { "folke/noice.nvim" },
+  { "folke/trouble.nvim" },
 }
 
 for i, plugin in ipairs(disabled) do
