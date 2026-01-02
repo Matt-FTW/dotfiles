@@ -28,7 +28,6 @@
     "plugins.extras.lsp.lspconfig-extended",
     "plugins.extras.lsp.mason-extended",
     "plugins.extras.ui.colorschemes.catppuccin",
-    "plugins.extras.ui.edgy-extended",
     "plugins.extras.ui.highlight-colors",
     "plugins.extras.ui.lualine-extended",
     "plugins.extras.ui.which-key-extended",
