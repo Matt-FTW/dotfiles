@@ -40,6 +40,21 @@ return {
           enabled = true,
           indent_scope_color = "lavender",
         },
+        lualine = {
+          macchiato = {
+            normal = {
+              a = { bg = palette.lavender, fg = palette.mantle, gui = "bold" },
+              b = { bg = palette.surface0, fg = palette.lavender },
+              c = { bg = transparent_bg, fg = palette.text },
+            },
+
+            inactive = {
+              a = { bg = transparent_bg, fg = palette.lavender },
+              b = { bg = transparent_bg, fg = palette.surface1, gui = "bold" },
+              c = { bg = transparent_bg, fg = palette.overlay0 },
+            },
+          },
+        },
       },
       float = {
         transparent = true, -- enables transparency on floating windows
@@ -97,51 +112,6 @@ return {
         lightness = 0.9,
         chroma = 1,
         hue = 0.7,
-      },
-    },
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = {
-      options = {
-        theme = {
-          normal = {
-            a = { bg = palette.lavender, fg = palette.mantle, gui = "bold" },
-            b = { bg = palette.surface0, fg = palette.lavender },
-            c = { bg = transparent_bg, fg = palette.text },
-          },
-
-          insert = {
-            a = { bg = palette.green, fg = palette.base, gui = "bold" },
-            b = { bg = palette.surface0, fg = palette.green },
-          },
-
-          terminal = {
-            a = { bg = palette.green, fg = palette.base, gui = "bold" },
-            b = { bg = palette.surface0, fg = palette.green },
-          },
-
-          command = {
-            a = { bg = palette.peach, fg = palette.base, gui = "bold" },
-            b = { bg = palette.surface0, fg = palette.peach },
-          },
-
-          visual = {
-            a = { bg = palette.mauve, fg = palette.base, gui = "bold" },
-            b = { bg = palette.surface0, fg = palette.mauve },
-          },
-
-          replace = {
-            a = { bg = palette.red, fg = palette.base, gui = "bold" },
-            b = { bg = palette.surface0, fg = palette.red },
-          },
-
-          inactive = {
-            a = { bg = transparent_bg, fg = palette.lavender },
-            b = { bg = transparent_bg, fg = palette.surface1, gui = "bold" },
-            c = { bg = transparent_bg, fg = palette.overlay0 },
-          },
-        },
       },
     },
   },
