@@ -1,17 +1,17 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "398796d"
+rev = "4e55902"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "398796d"
-hash = "73788c7dc5827ef4677c502c3ea8fa19"
+rev = "4e55902"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "DreamMaoMao/searchjump"
-rev = "7fafec3"
-hash = "5337bf545993d8c4dec2c229031f49d"
+rev = "cab627c"
+hash = "4df5f3783cbbfed60466f1aa9bc45b5e"
 
 [[plugin.deps]]
 use = "Rolv-Apneseth/starship"
