@@ -15,7 +15,7 @@ pre_sudo = true
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["poetry", "spicetify", "vim", "containers"]
+disable = ["poetry", "spicetify", "vim", "containers", "restarts"]
 
 # Ignore failures for these steps
 # ignore_failures = []
