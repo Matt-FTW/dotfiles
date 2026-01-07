@@ -13,7 +13,7 @@ return {
         },
         windows = {
           terminal = {
-            width = 0.2,
+            size = 0.2,
             position = "left",
             hide = {},
             start_hidden = false,
@@ -21,21 +21,6 @@ return {
         },
         auto_toggle = true,
       },
-      config = function(_, opts)
-        local dap = require("dap")
-        dap.listeners.before.attach.dapui_config = function()
-          vim.cmd("DapViewOpen")
-        end
-        dap.listeners.before.launch.dapui_config = function()
-          vim.cmd("DapViewOpen")
-        end
-        dap.listeners.before.event_terminated.dapui_config = function()
-          vim.cmd("DapViewClose")
-        end
-        dap.listeners.before.event_exited.dapui_config = function()
-          vim.cmd("DapViewClose")
-        end
-      end,
       -- stylua: ignore
       keys = {
         { prefix .. "u", "<cmd>DapViewToggle<cr>", desc = "Dap UI" },
