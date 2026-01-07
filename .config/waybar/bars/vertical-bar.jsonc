@@ -11,11 +11,12 @@
     "~/.config/waybar/modules/custom-notifications.jsonc",
     "~/.config/waybar/modules/hyprland-workspaces.jsonc",
     "~/.config/waybar/modules/hyprland-language.jsonc",
+    "~/.config/waybar/modules/hyprland-submap.jsonc",
     "~/.config/waybar/modules/tray.jsonc",
     "~/.config/waybar/modules/network.jsonc",
     "~/.config/waybar/modules/clock.jsonc",
   ],
-  "modules-left": ["clock#cl1"],
+  "modules-left": ["clock#cl1", "hyprland/submap"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",

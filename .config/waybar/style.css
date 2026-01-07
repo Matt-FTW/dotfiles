@@ -229,3 +229,7 @@ tooltip * {
 #network.ethernet {
   color: @sky;
 }
+
+#submap {
+  color: @peach;
+}
