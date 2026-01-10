@@ -1,0 +1,6 @@
+session_name: news
+windows:
+  - window_name: reader
+    panes:
+      - shell_command:
+          - eilmeldung

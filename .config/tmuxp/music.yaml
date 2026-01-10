@@ -1,0 +1,6 @@
+session_name: music
+windows:
+  - window_name: naviterm
+    panes:
+      - shell_command:
+          - naviterm
