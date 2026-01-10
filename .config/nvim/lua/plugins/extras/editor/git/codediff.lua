@@ -1,6 +1,5 @@
 return {
-  "esmuellert/vscode-diff.nvim",
-  branch = "next",
+  "esmuellert/codediff.nvim",
   opts = {},
   cmd = "CodeDiff",
   keys = {
