@@ -6,7 +6,6 @@ local disabled = {
   { "folke/noice.nvim" },
   { "folke/trouble.nvim" },
   { "folke/tokyonight.nvim" },
-  { "MunifTanjim/nui.nvim" },
   { "linux-cultist/venv-selector.nvim" },
 }
 
