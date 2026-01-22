@@ -16,7 +16,6 @@ return {
             size = 0.2,
             position = "left",
             hide = {},
-            start_hidden = false,
           },
         },
         auto_toggle = true,
