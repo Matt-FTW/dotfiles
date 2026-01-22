@@ -41,7 +41,7 @@ map("n", "-", "<C-x>")
 -- Buffers
 map("n", "<leader>bf", "<cmd>bfirst<cr>", { desc = "First Buffer" })
 map("n", "<leader>ba", "<cmd>blast<cr>", { desc = "Last Buffer" })
-map("n", "<M-CR>", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
+map("n", "<M-b>", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 
 -- Toggle statusline
 map("n", "<leader>uS", function()
