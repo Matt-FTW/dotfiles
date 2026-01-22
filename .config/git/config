@@ -42,10 +42,11 @@
   line-numbers = true
 
 [merge]
-  tool = nvimdiff
+  tool = codediff
   conflictstyle = diff3
 
 [diff]
+  tool = codediff
   colorMoved = default
 
 [pull]
@@ -62,3 +63,14 @@
   aliases = config --get-regexp alias
 
   lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+
+[http]
+  lowSpeedLimit = 1000
+  lowSpeedTime = 60
+  postBuffer = 524288000
+
+[mergetool "codediff"]
+  cmd = nvim \"$MERGED\" -c \"CodeDiff merge \\\"$MERGED\\\"\"
+
+[difftool "codediff"]
+  cmd = nvim \"$LOCAL\" \"$REMOTE\" +\"CodeDiff file $LOCAL $REMOTE\"
