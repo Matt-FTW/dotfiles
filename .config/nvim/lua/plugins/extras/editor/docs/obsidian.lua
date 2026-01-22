@@ -170,13 +170,6 @@ return {
     },
   },
   {
-    "nvim-lualine/lualine.nvim",
-    optional = true,
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, 1, "g:obsidian")
-    end,
-  },
-  {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
