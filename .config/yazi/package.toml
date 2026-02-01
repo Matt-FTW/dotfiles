@@ -1,11 +1,11 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "4e55902"
+rev = "6c71385"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "4e55902"
+rev = "6c71385"
 hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
