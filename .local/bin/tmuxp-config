@@ -8,7 +8,8 @@ if [ ! -d "$CONFIG_DIR" ]; then
   exit 1
 fi
 
-selected_file=$(tmuxp ls |
+selected_file=$(tmuxp ls --json |
+  jq -r '.workspaces[].name' |
   fzf --preview "bat $CONFIG_DIR/{}.yaml" \
     --prompt="Select a config file: ")
 
