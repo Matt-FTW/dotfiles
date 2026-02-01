@@ -10,6 +10,9 @@ return {
       codelens = {
         enabled = false,
       },
+      inlay_hints = {
+        enabled = false,
+      },
       servers = {
         ["*"] = {
           keys = {
