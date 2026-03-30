@@ -71,6 +71,10 @@ return {
         time_format = "%H:%M",
       },
 
+      note = {
+        template = os.getenv("HOME") .. "/documents/obsidian/personal-brain/vault/00 - Data/Plantillas/Nota.md",
+      },
+
       -- Optional, customize how note file names are generated given the ID, target directory, and title.
       ---@param spec { id: string, dir: obsidian.Path, title: string|? }
       ---@return string|obsidian.Path The full path to the new note.
