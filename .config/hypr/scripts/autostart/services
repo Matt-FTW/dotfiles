@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# xwayland
+# xwayland-satellite &
+
 # Wallpaper engine
-swww-daemon --format argb &
+awww-daemon --format argb &
 
 # Automounter for removable media
 udiskie &
