@@ -4,10 +4,6 @@ prepend_keymap = [
   { on = [
     "!",
   ], run = 'shell "$SHELL" --block', desc = "Open shell here" },
-  { on = [
-    "c",
-    "a",
-  ], run = "plugin compress", desc = "Archive selected files" },
   { on = "<C-u>", run = "seek -5", desc = "Seek up 5 units in the preview" },
   { on = "<C-d>", run = "seek 5", desc = "Seek down 5 units in the preview" },
   { on = "K", run = "arrow -50%", desc = "Move cursor up half page" },
@@ -30,6 +26,7 @@ prepend_keymap = [
   { on = "L", run = "tab_switch 1 --relative", desc = "Switch to the next tab" },
   { on = "<", run = "tab_swap -1", desc = "Swap current tab with previous tab" },
   { on = ">", run = "tab_swap 1", desc = "Swap current tab with next tab" },
+  { on = [ "c", "a" ], run = "plugin ouch", desc = "Archive selected files" }
 ]
 
 append_keymap = [

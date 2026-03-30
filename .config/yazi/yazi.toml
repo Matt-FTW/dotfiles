@@ -50,6 +50,10 @@ audio = [
   { run = 'vlc "$@"', orphan = true, desc = "vlc", for = "linux" },
 ]
 
+extract = [
+  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+]
+
 fallback = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
 ]
@@ -66,13 +70,7 @@ rules = [
   { mime = "inode/x-empty", use = "text" },
   { mime = "application/json", use = "text" },
 
-  { mime = "application/zip", use = "archive" },
-  { mime = "application/gzip", use = "archive" },
-  { mime = "application/x-bzip", use = "archive" },
-  { mime = "application/x-bzip2", use = "archive" },
-  { mime = "application/x-tar", use = "archive" },
-  { mime = "application/x-7z-compressed", use = "archive" },
-  { mime = "application/x-rar", use = "archive" },
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = [ "archive", "extract", "reveal" ] },
   { mime = "application/pdf", use = "document" },
   { mime = "application/epub+zip", use = "document" },
   { mime = "application/x-mobipocket-ebook", use = "document" },
@@ -80,12 +78,12 @@ rules = [
   { mime = "*", use = "fallback" },
 ]
 
-[[plugin.prepend_fetchers]]
-id = "git"
-url = "*"
-run = "git"
+[plugin]
+prepend_fetchers = [
+	{ id = "git", url = "*", run = "git" },
+	{ id = "git", url = "*/", run = "git" },
+]
 
-[[plugin.prepend_fetchers]]
-id = "git"
-url = "*/"
-run = "git"
+prepend_previewers = [
+  { mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}", run = "ouch --archive-icon=' ' --show-file-icons" },
+]
