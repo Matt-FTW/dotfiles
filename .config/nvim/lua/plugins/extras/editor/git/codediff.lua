@@ -48,6 +48,16 @@ return {
     enabled = false,
   },
   {
+    "NeogitOrg/neogit",
+    optional = true,
+    opts = {
+      integrations = {
+        codediff = true,
+      },
+      diff_viewer = "codediff"
+    },
+  },
+  {
     "folke/which-key.nvim",
     opts = {
       spec = {

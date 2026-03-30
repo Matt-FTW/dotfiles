@@ -73,6 +73,7 @@ return {
       integrations = {
         diffview = true,
       },
+      diff_viewer = "diffview"
     },
   },
   {
