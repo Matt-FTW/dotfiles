@@ -19,17 +19,29 @@ return {
           },
         },
         auto_toggle = true,
+        virtual_text = {
+          enabled = true,
+        },
       },
       -- stylua: ignore
       keys = {
         { prefix .. "u", "<cmd>DapViewToggle<cr>", desc = "Dap UI" },
         { prefix .. "a", function() require("dap-view").add_expr() end, desc = "Add Expression" },
+        { prefix .. "v", "<cmd>DapViewVirtualTextToggle<cr>", desc = "Toggle Virtual Line" },
       },
     },
     -- stylua: ignore
     keys = {
       { prefix .. "O", function() require("dap").step_out() end, desc = "Debug: Step out" },
       { prefix .. "o", function() require("dap").step_over() end, desc = "Debug: Step over" },
+    },
+  },
+  {
+    "theHamsta/nvim-dap-virtual-text",
+    enabled = false,
+    -- stylua: ignore
+    keys = {
+      { prefix .. "v", "<cmd>DapVirtualTextToggle<cr>", desc = "Toggle Virtual Line" },
     },
   },
   {
