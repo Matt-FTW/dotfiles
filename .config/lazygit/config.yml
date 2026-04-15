@@ -42,6 +42,7 @@ gui:
   skipRewordInEditorWarning: true # for skipping the confirmation before launching the reword editor
   border: "rounded" # one of 'single' | 'double' | 'rounded' | 'hidden'
   statusPanelView: allBranchesLog
+  fileTreeSortOrder: foldersFirst
 git:
   pagers:
     - colorArg: always
