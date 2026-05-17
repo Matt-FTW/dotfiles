@@ -1,2 +1,14 @@
 [flavor]
 dark = "catppuccin-macchiato"
+
+[git]
+modified = { fg = "yellow", bold = true }
+added = { fg = "green", bold = true }
+untracked = { fg = "magenta", bold = true }
+deleted = { fg = "red", bold = true }
+# Signs
+unknown_sign = " "
+modified_sign = " "
+deleted_sign = " "
+added_sign = " "
+untracked_sign = ""
