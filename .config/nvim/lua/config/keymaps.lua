@@ -162,7 +162,7 @@ map("n", "<A-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Wi
 map("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
 
 -- Incremental Selection
-map({ "n", "x", "o" }, "<A-o>", function()
+map({ "n", "x", "o" }, "<BS>", function()
 	if vim.treesitter.get_parser(nil, nil, { error = false }) then
 		require("vim.treesitter._select").select_parent(vim.v.count1)
 	else
@@ -170,7 +170,7 @@ map({ "n", "x", "o" }, "<A-o>", function()
 	end
 end, { desc = "Select parent treesitter node or outer incremental lsp selections" })
 
-map({ "n", "x", "o" }, "<A-i>", function()
+map({ "n", "x", "o" }, "<CR>", function()
 	if vim.treesitter.get_parser(nil, nil, { error = false }) then
 		require("vim.treesitter._select").select_child(vim.v.count1)
 	else
