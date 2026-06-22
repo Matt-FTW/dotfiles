@@ -25,6 +25,7 @@
     "plugins.extras.lang.fish",
     "plugins.extras.lang.markdown-extended",
     "plugins.extras.lang.python-extended",
+    "plugins.extras.lang.rust-extended",
     "plugins.extras.lang.web.html-css",
     "plugins.extras.lang.web.typescript-extended",
     "plugins.extras.linting.eslint-extended",
