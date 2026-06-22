@@ -139,3 +139,41 @@ end
 
 -- Select first option for spelling
 map("n", "<leader>S", "1z=", { desc = "Spelling (First Option)" })
+
+-- HJKL maps for arrow keys
+map("n", "<C-left>", "<C-w>h", { desc = "Go to Left Window", remap = true })
+map("n", "<C-down>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
+map("n", "<C-up>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
+map("n", "<C-right>", "<C-w>l", { desc = "Go to Right Window", remap = true })
+
+map("n", "<S-down>", "<cmd>execute 'move .+' . v:count1<cr>==", { desc = "Move Down" })
+map("n", "<S-up>", "<cmd>execute 'move .-' . (v:count1 + 1)<cr>==", { desc = "Move Up" })
+map("i", "<S-down>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
+map("i", "<S-up>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
+map("v", "<S-down>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
+map("v", "<S-up>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
+
+map("n", "<S-left>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
+map("n", "<S-right>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+
+map("n", "<A-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
+map("n", "<A-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
+map("n", "<A-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
+map("n", "<A-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window Width" })
+
+-- Incremental Selection
+map({ "n", "x", "o" }, "<A-o>", function()
+	if vim.treesitter.get_parser(nil, nil, { error = false }) then
+		require("vim.treesitter._select").select_parent(vim.v.count1)
+	else
+		vim.lsp.buf.selection_range(vim.v.count1)
+	end
+end, { desc = "Select parent treesitter node or outer incremental lsp selections" })
+
+map({ "n", "x", "o" }, "<A-i>", function()
+	if vim.treesitter.get_parser(nil, nil, { error = false }) then
+		require("vim.treesitter._select").select_child(vim.v.count1)
+	else
+		vim.lsp.buf.selection_range(-vim.v.count1)
+	end
+end, { desc = "Select child treesitter node or inner incremental lsp selections" })

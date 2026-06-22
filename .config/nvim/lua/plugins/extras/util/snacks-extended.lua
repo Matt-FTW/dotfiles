@@ -63,9 +63,11 @@ return {
             keys = {
               ["<c-u>"] = { "preview_scroll_up", mode = { "i", "n" } },
               ["<a-j>"] = { "list_scroll_down", mode = { "i", "n" } },
-              ["<c-d>"] = { "preview_scroll_down", mode = { "i", "n" } },
               ["<a-k>"] = { "list_scroll_up", mode = { "i", "n" } },
+              ["<c-d>"] = { "preview_scroll_down", mode = { "i", "n" } },
               ["<a-c>"] = { "cycle_preview", mode = { "i", "n" } },
+              ["<a-down>"] = { "list_scroll_down", mode = { "i", "n" } },
+              ["<a-up>"] = { "list_scroll_up", mode = { "i", "n" } },
             },
           },
         },
