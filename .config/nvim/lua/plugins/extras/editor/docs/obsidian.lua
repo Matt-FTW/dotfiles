@@ -40,11 +40,6 @@ return {
         template = "00 - Data/Plantillas/Diariamente.md",
       },
 
-      completion = {
-        nvim_cmp = false,
-        blink = true,
-      },
-
       create_new = false,
 
       picker = {
