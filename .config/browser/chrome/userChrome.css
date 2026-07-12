@@ -1,7 +1,10 @@
 /* Catppuccin Macchiato Lavender userChrome.css*/
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  :host,
+  :host *, :root *, *, * *,
+  .container, .sticky-container, #toolbar, #prefs {
     --zen-colors-primary: #363a4f !important;
     --zen-primary-color: #b7bdf8 !important;
     --zen-colors-secondary: #363a4f !important;
@@ -16,6 +19,7 @@
     --newtab-text-primary-color: #cad3f5 !important;
     --arrowpanel-color: #cad3f5 !important;
     --arrowpanel-background: #24273a !important;
+    --zen-dialog-background: #24273a !important;
     --sidebar-text-color: #cad3f5 !important;
     --lwt-sidebar-text-color: #cad3f5 !important;
     --lwt-sidebar-background-color: #181926 !important;
@@ -24,10 +28,16 @@
     --zen-themed-toolbar-bg: #1e2030 !important;
     --zen-main-browser-background: #1e2030 !important;
     --toolbox-bgcolor-inactive: #1e2030 !important;
+    --zen-themed-toolbar-bg-transparent: #1e2030 !important;
   }
 
   #permissions-granted-icon {
     color: #1e2030 !important;
+  }
+
+  #historySwipeAnimationPreviousArrow,#historySwipeAnimationNextArrow {
+    --swipe-nav-icon-primary-color: #b7bdf8 !important;
+    --swipe-nav-icon-accent-color: #24273a!important;
   }
 
   .sidebar-placesTree {
@@ -120,66 +130,34 @@
     --identity-icon-color: #c6a0f6 !important;
   }
 
-  hbox#titlebar {
-    background-color: #1e2030 !important;
+  #navigator-toolbox {
+    --zen-main-browser-background-toolbar: #1e2030 !important;
   }
 
   #zen-appcontent-navbar-container {
     background-color: #1e2030 !important;
   }
 
-  /* ── Fix Zen Twilight acrylic/blur bleeding through wrapper gaps ── */
+  #commonDialog {
+    background-color: #1e2030 !important;
+  }
 
-  /* Remove system appearance so CSS backgrounds take effect */
-  #zen-main-app-wrapper,
-  #zen-appcontent-wrapper,
-  #zen-sidebar-splitter,
+  #zen-toast-container .zen-toast label,
+  #zen-toast-container .zen-toast button .button-icon,
+  #urlbar-search-mode-indicator,
+  .urlbarView .urlbarView-row[selected] *,
+  .urlbarView .urlbarView-row[selected] .urlbarView-title-separator::before {
+    color: #24273a !important;
+  }
+
+  hbox#titlebar {
+    background-color: #24273a !important;
+    border-radius: 12px !important;
+  }
+
   #zen-browser-background {
-    appearance: unset !important;
-    -moz-default-appearance: none !important;
-  }
-
-  /* Paint every wrapper / splitter / gap element with Catppuccin Macchiato base */
-  #zen-main-app-wrapper,
-  #zen-appcontent-wrapper,
-  #zen-sidebar-splitter,
-  #zen-browser-background,
-  .zen-browser-generic-background,
-  .zen-toolbar-background,
-  #navigator-toolbox,
-  #tabbrowser-tabbox,
-  #main-window {
-    background: #1e2030 !important;
-    background-color: #1e2030 !important;
-  }
-
-  /* Style sidebar splitters */
-  #sidebar-splitter {
-    border: none !important;
-    background: #1e2030 !important;
-  }
-
-  #zen-sidebar-splitter {
-    border: none !important;
-    background: #1e2030 !important;
-    background-color: #1e2030 !important;
-    opacity: 1 !important;
-  }
-
-  #zen-sidebar-splitter:hover {
-    background: #363a4f !important;
-    background-color: #363a4f !important;
-  }
-
-  /* macOS-specific variable overrides */
-  @media (-moz-platform: macos) {
-    :root {
-      --zen-themed-toolbar-bg-transparent: #1e2030 !important;
-      --zen-main-browser-background-toolbar: #1e2030 !important;
-      --zen-main-browser-background-old: #1e2030 !important;
-      --zen-main-browser-background-toolbar-old: #1e2030 !important;
-      --zen-navigator-toolbox-background: #1e2030 !important;
-    }
+    --zen-main-browser-background: #1e2030 !important;
+    --zen-main-browser-background-old: #1e2030 !important;
   }
 }
 
