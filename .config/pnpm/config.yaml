@@ -1,0 +1,26 @@
+# npm security best practices
+# Source: https://github.com/lirantal/npm-security-best-practices
+
+# SECURITY: block packages newer than 2 days (2880 minutes)
+minimumReleaseAge: 2880
+
+# SECURITY: reject a version whose publishing trust signals regressed
+trustPolicy: no-downgrade
+
+# SECURITY: keep strict overrides only when necessary and vetted
+# trustPolicyExclude:
+#   - 'chokidar@4.0.3'
+#   - 'webpack@4.47.0 || 5.102.1'
+
+# SECURITY: pnpm blocks install scripts by default, enabled explicitly for:
+allowBuilds:
+  esbuild: true
+  rolldown: true
+  unrs-resolver: true
+
+# SECURITY: fail the install if a dependency wants to run a build
+# script that isn't in the allow-list above
+strictDepBuilds: true
+
+# SECURITY: reject dependencies sourced from git URLs
+blockExoticSubdeps: true

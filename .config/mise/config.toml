@@ -30,6 +30,7 @@ bitwarden = "latest"
 # plugins can read the versions files used by other version managers (if enabled by the plugin)
 # for example, .nvmrc in the case of node's nvm
 legacy_version_file = true # enabled by default (unlike asdf)
+minimum_release_age = "2d"  # only install versions released more than 7 days ago
 
 # configure `mise install` to always keep the downloaded archive
 always_keep_download = false # deleted after install by default
