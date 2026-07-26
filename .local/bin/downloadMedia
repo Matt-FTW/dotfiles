@@ -13,11 +13,11 @@ notify_error() {
 }
 
 download_images() {
-  gallery-dl -d "$image_folder" --download-archive "$image_folder/{$1}/archive.sqlite3" "$2" --filter "$3"
+  gallery-dl -d "$image_folder" --download-archive "$image_folder/$1/archive.sqlite3" "$2" --filter "$3"
 }
 
 download_videos() {
-  gallery-dl -d "$video_folder" --download-archive "$video_folder/{$1}/archive.sqlite3" "$2" --filter "$3"
+  gallery-dl -d "$video_folder" --download-archive "$video_folder/$1/archive.sqlite3" "$2" --filter "$3"
 }
 
 # Download Sites
@@ -42,6 +42,11 @@ download_reddit() {
   download_images "reddit" "$1" "extension not in ('mp4')"
   download_videos "reddit" "$1" "extension in ('mp4')"
   notify "Reddit ($1) Complete"
+}
+
+download_wallhaven() {
+  download_images "wallhaven" "$1"
+  notify "Wallhaven ($1) Complete"
 }
 
 download_unknown_site() {
@@ -77,6 +82,9 @@ while IFS= read -r url; do
     ;;
   *reddit.com*)
     download_reddit "$url"
+    ;;
+  *wallhaven.cc*)
+    download_wallhaven "$url"
     ;;
   *)
     download_unknown_site "$url"
