@@ -1,6 +1,7 @@
 ---
 runtime:
   threads: ~
+  networkSecurity: safe
 release:
   check: true
 manifest:
@@ -21,6 +22,8 @@ roots:
     path: ~/.local/share/dolphin-emu
   - store: other
     path: ~/.config/Ryujinx
+  - store: heroic
+    path: /home/matt/.var/app/com.heroicgameslauncher.hgl/config/heroic
 redirects: []
 backup:
   path: ~/games/gamesaves
@@ -77,4 +80,11 @@ apps:
   rclone:
     path: /usr/bin/rclone
     arguments: "--fast-list --ignore-checksum"
-customGames: []
+customGames:
+  - name: minecraft
+    integration: override
+    files:
+      - ~/games/minecraft/instances/*/minecraft/saves/
+    registry: []
+    installDir: []
+    winePrefix: []
