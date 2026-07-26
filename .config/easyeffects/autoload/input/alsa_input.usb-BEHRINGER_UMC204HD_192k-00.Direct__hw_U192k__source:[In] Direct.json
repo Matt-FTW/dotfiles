@@ -1,6 +1,0 @@
-{
-    "device": "alsa_input.usb-BEHRINGER_UMC204HD_192k-00.Direct__hw_U192k__source",
-    "device-description": "UMC204HD 192k Direct UMC204HD 192k",
-    "device-profile": "[In] Direct",
-    "preset-name": "Improved%20Microphone%20(Male%20voices,%20with%20Noise%20Reduction)"
-}
