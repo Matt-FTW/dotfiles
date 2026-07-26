@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # xwayland
-# xwayland-satellite &
+xwayland-satellite &
 
 # Wallpaper engine
 awww-daemon --format argb &
