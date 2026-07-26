@@ -1,6 +1,5 @@
 [tools]
 usage = "latest"
-bun = "latest"
 node = "latest"
 pnpm = "latest"
 uv = "latest"
@@ -9,7 +8,6 @@ age = "latest"
 deno = "latest"
 go = "latest"
 watchexec = "latest"
-bitwarden = "latest"
 
 # Cargo Tools
 "cargo:cargo-cache" = "latest"
