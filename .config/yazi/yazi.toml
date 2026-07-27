@@ -31,7 +31,7 @@ document = [
 
 image = [
   { run = 'xdg-open "$@"', orphan = true, desc = "xdg-open", for = "linux" },
-  { run = 'qimgv "$@"', orphan = true, desc = "qimgv", for = "linux" },
+  { run = 'gimp "$@"', orphan = true, desc = "gimp", for = "linux" },
   { run = 'krita "$@"', orphan = true, desc = "krita", for = "linux" },
   { run = 'satty --filename "$@"', orphan = true, desc = "satty", for = "linux" },
 ]

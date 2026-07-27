@@ -1,0 +1,70 @@
+# Default config for imv
+
+[options]
+
+# Suppress built-in key bindings, and specify them explicitly in this
+# config file.
+suppress_default_binds = true
+background = 24273a
+# overlay
+overlay_font = Maple Mono NF:14
+overlay_text_color = cad3f5
+overlay_background_color = 494d64
+overlay_position_bottom = true
+
+[aliases]
+# Define aliases here. Any arguments passed to an alias are appended to the
+# command.
+# alias = command to run
+
+[binds]
+q = quit
+
+# Image navigation
+<Left> = prev
+h = prev
+<bracketleft> = prev
+<Right> = next
+l = next
+<bracketright> = next
+gg = goto 1
+<Shift+G> = goto -1
+
+# Panning
+<Ctrl+j> = pan 0 -50
+<Ctrl+k> = pan 0 50
+<Ctrl+h> = pan 50 0
+<Ctrl+l> = pan -50 0
+<Ctrl+Down> = pan 0 -50
+<Ctrl+Up> = pan 0 50
+<Ctrl+Left> = pan 50 0
+<Ctrl+Right> = pan -50 0
+
+# Zooming
+<Up> = zoom 1
+<Shift+plus> = zoom 1
+k = zoom 1
+<Down> = zoom -1
+<minus> = zoom -1
+j = zoom -1
+
+# Rotate Clockwise by 90 degrees
+<Ctrl+r> = rotate by 90
+
+# Other commands
+x = close
+f = fullscreen
+i = overlay
+c = center
+s = scaling next
+<Shift+S> = upscaling next
+a = zoom actual
+r = reset
+
+# Gif playback
+<period> = next_frame
+<space> = toggle_playing
+
+# Slideshow control
+t = slideshow +3
+<Shift+T> = slideshow -3
