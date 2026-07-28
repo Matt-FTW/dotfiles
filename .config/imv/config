@@ -15,7 +15,7 @@ overlay_position_bottom = true
 [aliases]
 # Define aliases here. Any arguments passed to an alias are appended to the
 # command.
-# alias = command to run
+copy_to_clipboard = exec wl-copy --type=$(file --mime-type -b "$imv_current_file") < "$imv_current_file"
 
 [binds]
 q = quit
@@ -68,3 +68,6 @@ r = reset
 # Slideshow control
 t = slideshow +3
 <Shift+T> = slideshow -3
+
+# Clipboard
+<Ctrl+c> = copy_to_clipboard
