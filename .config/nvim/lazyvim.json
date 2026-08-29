@@ -20,6 +20,7 @@
     "plugins.extras.editor.git.codediff",
     "plugins.extras.editor.gitsigns-extended",
     "plugins.extras.editor.marks.grapple",
+    "plugins.extras.editor.suda",
     "plugins.extras.editor.treesitter-extended",
     "plugins.extras.lang.docker-extended",
     "plugins.extras.lang.fish",
