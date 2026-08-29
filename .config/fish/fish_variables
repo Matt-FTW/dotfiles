@@ -13,12 +13,12 @@ SETUVAR --export XDG_CACHE_HOME:/home/matt/\x2ecache
 SETUVAR --export XDG_CONFIG_HOME:/home/matt/\x2econfig
 SETUVAR --export XDG_DATA_HOME:/home/matt/\x2elocal/share
 SETUVAR --export XDG_SCRIPT_HOME:/home/matt/\x2elocal/script
-SETUVAR --export __ABBR_TIPS_KEYS:g\x1ed\x1ea__c\x1ea__cat\x1ea__catp\x1ea__cl\x1ea__dots\x1ea__i\x1ea__l\x1ea__ldh\x1ea__lg\x1ea__lh\x1ea__lm\x1ea__ls\x1ea__lsh\x1ea__lt\x1ea__lth\x1ea__lzd\x1ea__mail\x1ea__notes\x1ea__svn\x1ea__u\x1ea__up\x1ea__upall\x1ea__v\x1ea__wget\x1ea__yarn\x1ea__z\x1ea__zi
-SETUVAR --export __ABBR_TIPS_VALUES:git\x1edocker\x1ez\x1ebat\x1ebat\x20\x2d\x2dpaging\x3dalways\x1eclear\x1eyadm\x20enter\x20lazygit\x1eyay\x20\x2dS\x20\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2d\x2dicons\x20\x2dD\x20\x2d\x2dgit\x1elazygit\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1el\x3deza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dtree\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2d\x2dicons\x20\x2d\x2dtree\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1elazydocker\x1etmuxp\x20load\x20\x2dy\x20mail\x1etmuxp\x20load\x20\x2dy\x20notes\x2dtasks\x1esvn\x20\x2d\x2dconfig\x2ddir\x20\x5c\x5c\x5c\x5c\x22\x24XDG_CONFIG_HOME\x5c\x5c\x5c\x5c\x22/subversion\x1eyay\x20\x2dR\x20\x1eyay\x20\x2dSyu\x1etopgrade\x1envim\x1ewget\x20\x2d\x2dhsts\x2dfile\x3d\x22\x24XDG_DATA_HOME/wget\x2dhsts\x22\x1eyarn\x20\x2d\x2duse\x2dyarnrc\x20\x22\x24XDG_CONFIG_HOME/yarn/config\x22\x1e__zoxide_z\x1e__zoxide_zi
-SETUVAR __fish_initialized:3800
+SETUVAR --export __ABBR_TIPS_KEYS:g\x1ed\x1ea__c\x1ea__cat\x1ea__catp\x1ea__cl\x1ea__dots\x1ea__i\x1ea__l\x1ea__ldh\x1ea__lg\x1ea__lh\x1ea__lm\x1ea__ls\x1ea__lsh\x1ea__lt\x1ea__lth\x1ea__lzd\x1ea__mail\x1ea__music\x1ea__news\x1ea__notes\x1ea__svn\x1ea__tasks\x1ea__u\x1ea__up\x1ea__upall\x1ea__v\x1ea__wget\x1ea__yarn\x1ea__z\x1ea__zi
+SETUVAR --export __ABBR_TIPS_VALUES:git\x1edocker\x1ez\x1ebat\x1ebat\x20\x2d\x2dpaging\x3dalways\x1eclear\x1eyadm\x20enter\x20lazygit\x1eyay\x20\x2dS\x20\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2d\x2dicons\x20\x2dD\x20\x2d\x2dgit\x1elazygit\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1el\x3deza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dicons\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2da\x20\x2d\x2dicons\x20\x2d\x2dtree\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1eeza\x20\x2d\x2dlong\x20\x2d\x2dheader\x20\x2d\x2dicons\x20\x2d\x2dtree\x20\x2d\x2dgit\x20\x2d\x2dgroup\x2ddirectories\x2dfirst\x1elazydocker\x1etmuxp\x20load\x20\x2dy\x20mail\x1enotes\x3dtmuxp\x20load\x20\x2dy\x20music\x1enotes\x3dtmuxp\x20load\x20\x2dy\x20news\x1etmuxp\x20load\x20\x2dy\x20notes\x1esvn\x20\x2d\x2dconfig\x2ddir\x20\x5c\x5c\x5c\x5c\x22\x24XDG_CONFIG_HOME\x5c\x5c\x5c\x5c\x22/subversion\x1enotes\x3dtmuxp\x20load\x20\x2dy\x20tasks\x1eyay\x20\x2dR\x20\x1eyay\x20\x2dSyu\x1etopgrade\x1envim\x1ewget\x20\x2d\x2dhsts\x2dfile\x3d\x22\x24XDG_DATA_HOME/wget\x2dhsts\x22\x1eyarn\x20\x2d\x2duse\x2dyarnrc\x20\x22\x24XDG_CONFIG_HOME/yarn/config\x22\x1e__zoxide_z\x1e__zoxide_zi
+SETUVAR __fish_initialized:4300
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_g:git
-SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
+SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/catppuccin\x2dfrappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/catppuccin\x2dmacchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/catppuccin\x2dmocha\x2etheme\x1e\x7e/\x2econfig/fish/themes/static
 SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish
 SETUVAR _fisher_gazorby_2F_fish_2D_abbreviation_2D_tips_files:\x7e/\x2econfig/fish/functions/__abbr_tips_bind_newline\x2efish\x1e\x7e/\x2econfig/fish/functions/__abbr_tips_bind_space\x2efish\x1e\x7e/\x2econfig/fish/functions/__abbr_tips_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__abbr_tips_init\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/abbr_tips\x2efish
 SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
@@ -27,44 +27,5 @@ SETUVAR _fisher_nickeb96_2F_puffer_2D_fish_files:\x7e/\x2econfig/fish/functions/
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_sudope_files:\x7e/\x2econfig/fish/functions/sudope\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/plugin\x2dsudope\x2efish
 SETUVAR _fisher_plugins:catppuccin/fish\x1efranciscolourenco/done\x1egazorby/fish\x2dabbreviation\x2dtips\x1eoh\x2dmy\x2dfish/plugin\x2dsudope\x1enickeb96/puffer\x2dfish\x1ejorgebucaran/autopair\x2efish\x1ematt\x2dftw/fzf\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_color_autosuggestion:6e738d
-SETUVAR fish_color_cancel:ed8796
-SETUVAR fish_color_command:8aadf4
-SETUVAR fish_color_comment:8087a2
-SETUVAR fish_color_cwd:eed49f
-SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:f5a97f
-SETUVAR fish_color_error:ed8796
-SETUVAR fish_color_escape:ee99a0
-SETUVAR fish_color_gray:6e738d
-SETUVAR fish_color_history_current:\x2d\x2dbold
-SETUVAR fish_color_host:8aadf4
-SETUVAR fish_color_host_remote:a6da95
-SETUVAR fish_color_keyword:ed8796
-SETUVAR fish_color_normal:cad3f5
-SETUVAR fish_color_operator:f5bde6
-SETUVAR fish_color_option:a6da95
-SETUVAR fish_color_param:f0c6c6
-SETUVAR fish_color_quote:a6da95
-SETUVAR fish_color_redirection:f5bde6
-SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d363a4f
-SETUVAR fish_color_selection:\x2d\x2dbackground\x3d363a4f
-SETUVAR fish_color_status:ed8796
-SETUVAR fish_color_user:8bd5ca
-SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:
-SETUVAR fish_key_bindings:fish_default_key_bindings
-SETUVAR fish_pager_color_background:\x1d
-SETUVAR fish_pager_color_completion:cad3f5
-SETUVAR fish_pager_color_description:6e738d
-SETUVAR fish_pager_color_prefix:f5bde6
-SETUVAR fish_pager_color_progress:6e738d
-SETUVAR fish_pager_color_secondary_background:\x1d
-SETUVAR fish_pager_color_secondary_completion:\x1d
-SETUVAR fish_pager_color_secondary_description:\x1d
-SETUVAR fish_pager_color_secondary_prefix:\x1d
-SETUVAR fish_pager_color_selected_background:\x1d
-SETUVAR fish_pager_color_selected_completion:\x1d
-SETUVAR fish_pager_color_selected_description:\x1d
-SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_paths:/home/matt/\x2elocal/share/pnpm\x1e/home/matt/\x2elocal/share/nvim/mason/bin\x1e/home/matt/\x2eyarn/bin\x1e/home/matt/\x2elocal/share/npm/bin\x1e/home/matt/\x2elocal/share/bob/nvim\x2dbin\x1e/home/matt/\x2elocal/share/bun/bin\x1e/usr/lib/go/bin\x1e/usr/lib/rustup/bin\x1e/sbin\x1e/bin\x1e/usr/sbin\x1e/usr/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/home/matt/\x2elocal/share/cargo/bin\x1e/home/matt/\x2elocal/share/go/bin\x1e/home/matt/\x2elocal/bin/color\x2dscripts\x1e/home/matt/\x2elocal/bin
