@@ -83,7 +83,7 @@ title   = {}
 hovered = { fg = "#f5bde6", bold = true }
 
 [which]
-mask            = { bg = "#363a4f" }
+mask            = {}
 cand            = { fg = "#8bd5ca" }
 rest            = { fg = "#939ab7" }
 desc            = { fg = "#f5bde6" }
@@ -91,11 +91,10 @@ separator       = "  "
 separator_style = { fg = "#5b6078" }
 
 [help]
-on      = { fg = "#8bd5ca" }
-run     = { fg = "#f5bde6" }
-desc    = { fg = "#939ab7" }
+border  = { fg = "#b7bdf8" }
+chord   = { fg = "#8bd5ca" }
+action  = { fg = "#939ab7" }
 hovered = { bg = "#5b6078", bold = true }
-footer  = { fg = "#cad3f5", bg = "#494d64" }
 
 [notify]
 title_info  = { fg = "#8bd5ca" }
