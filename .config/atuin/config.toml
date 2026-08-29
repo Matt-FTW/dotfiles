@@ -102,3 +102,12 @@ records = true
 
 [theme]
 name = "catppuccin-macchiato-lavender"
+
+[daemon]
+enabled = true
+autostart = true
+
+[tmux]
+enabled = true
+width = "100%"
+height = "90%"
