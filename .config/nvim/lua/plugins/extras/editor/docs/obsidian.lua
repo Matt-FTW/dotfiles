@@ -43,7 +43,7 @@ return {
       create_new = false,
 
       picker = {
-        name = "snacks.pick",
+        name = "snacks.picker",
         note_mappings = {
           -- Create a new note from your query.
           new = "<C-x>",
@@ -147,14 +147,14 @@ return {
               if vim.uv.fs_stat(tmp) then
                 local lines = vim.fn.readfile(tmp)
                 if lines[1] then
-                  done { path = lines[1] }
+                  done({ path = lines[1] })
                   return
                 end
               end
               done(nil)
             end,
           })
-          vim.cmd "startinsert"
+          vim.cmd("startinsert")
         end,
       },
 
