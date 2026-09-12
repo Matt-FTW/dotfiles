@@ -1,5 +1,6 @@
 [flavor]
 dark = "catppuccin-macchiato"
+light = "catppuccin-macchiato"
 
 [git]
 modified = { fg = "yellow", bold = true }
