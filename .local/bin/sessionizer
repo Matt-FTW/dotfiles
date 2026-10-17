@@ -2,7 +2,7 @@
 
 # Constants
 gfetch="onefetch -d churn contributors --no-color-palette --no-title"
-ls="eza --header --icons --all --color=always --group-directories-first --hyperlink"
+ls="eza --header --icons --all --color=always --group-directories-first --hyperlink=always"
 projects_dir="$HOME/dev"
 projects_command="fd --exact-depth 2 --type=directory . $projects_dir"
 config_command="fd --exact-depth 1 --type=directory . $HOME/.config"
