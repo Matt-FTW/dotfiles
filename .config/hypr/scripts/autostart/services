@@ -30,3 +30,6 @@ easyeffects --gapplication-service &
 
 # Vicinae
 vicinae server &
+
+# Neru
+neru launch &

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 floating=$(hyprctl activewindow -j | jq '.floating')
-window=$(hyprctl activewindow -j | jq '.initialClass' | tr -d "\"")
 
 function toggle() {
   width=$1
@@ -25,7 +24,8 @@ function handle() {
   fi
 }
 
-case $window in
-kitty) handle "50%" "55%" ;;
-*) handle "70%" "70%" ;;
-esac
+if [ "$#" -lt 2 ]; then
+  exit 1
+fi
+
+handle "$1" "$2"

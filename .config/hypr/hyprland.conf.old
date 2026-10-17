@@ -1,0 +1,14 @@
+# Configs
+source = ~/.config/hypr/old/env.conf
+source = ~/.config/hypr/old/monitors.conf
+source = ~/.config/hypr/old/workspaces.conf
+source = ~/.config/hypr/old/binds.conf
+source = ~/.config/hypr/old/input.conf
+source = ~/.config/hypr/old/misc.conf
+source = ~/.config/hypr/old/layout.conf
+source = ~/.config/hypr/old/plugins.conf
+source = ~/.config/hypr/old/theme.conf
+
+# Autostart
+exec-once = $HOME/.config/hypr/scripts/autostart/services
+exec-once = $HOME/.config/hypr/scripts/autostart/apps
