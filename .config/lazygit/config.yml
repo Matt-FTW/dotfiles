@@ -26,12 +26,12 @@ gui:
       - "#cad3f5"
     searchingActiveBorderColor:
       - "#eed49f"
+    branchColorPatterns:
+      "^release(/|$)": "#eed49f"
+      "^hotfix(/|$)": "#ed8796"
+      "^feature(/|$)": "#a6da95"
   commitLength:
     show: true
-  branchColors:
-    "release": "#eed49f"
-    "hotfix": "#ed8796"
-    "feature": "#a6da95"
   showBottomLine: false # for hiding the bottom information line (unless it has important information to tell you)
   nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
   showNumstatInFilesView: true
