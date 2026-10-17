@@ -22,12 +22,13 @@ return {
       { prefix .. "r", "<cmd>Obsidian rename<CR>", desc = "Rename" },
       { prefix .. "i", "<cmd>Obsidian paste_img<CR>", desc = "Paste Image" },
       { prefix .. "d", "<cmd>Obsidian dailies<CR>", desc = "Daily Notes" },
+      { prefix .. "p", "<cmd>Obsidian properties<CR>", desc = "Properties" },
     },
     opts = {
       workspaces = {
         {
           name = "personal-brain",
-          path = "~/documents/obsidian/personal-brain/vault",
+          path = "~/documents/obsidian/personal-brain",
         },
       },
 
@@ -67,7 +68,7 @@ return {
       },
 
       note = {
-        template = os.getenv("HOME") .. "/documents/obsidian/personal-brain/vault/00 - Data/Plantillas/Nota.md",
+        template = os.getenv("HOME") .. "/documents/obsidian/personal-brain/00 - Data/Plantillas/Nota.md",
       },
 
       -- Optional, customize how note file names are generated given the ID, target directory, and title.
@@ -85,19 +86,7 @@ return {
 
       frontmatter = {
         func = function(note)
-          if note.id then
-            note:add_alias(note.id)
-          end
-
-          local out = { aliases = note.aliases }
-
-          if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
-            for k, v in pairs(note.metadata) do
-              out[k] = v
-            end
-          end
-
-          return out
+          return {}
         end,
       },
 
