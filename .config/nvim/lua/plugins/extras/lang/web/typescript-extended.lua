@@ -1,5 +1,9 @@
+---@type "vtsls" | "tsc"
+vim.g.lazyvim_ts_lsp = "tsc" -- currently the default
+
 return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
+  { import = "lazyvim.plugins.extras.lang.typescript.tsc" },
   { import = "plugins.extras.lang.json-extended" },
   {
     "nvim-treesitter/nvim-treesitter",
