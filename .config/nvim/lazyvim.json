@@ -6,7 +6,6 @@
     "lazyvim.plugins.extras.lang.go",
     "lazyvim.plugins.extras.lang.toml",
     "lazyvim.plugins.extras.lang.typst",
-    "lazyvim.plugins.extras.lang.vue",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.treesitter-context",
